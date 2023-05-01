@@ -1,0 +1,24 @@
+.related-products {
+  display: block;
+}
+
+.related-products__heading {
+  margin: 0 0 3rem;
+  text-transform: uppercase;
+  padding: 0 15px;
+}
+@media screen and (max-width: 768px) {
+  .related-products__heading {
+    text-align: left;
+    margin-bottom: 20px
+  }
+  product-recommendations slider-component .slider__slide {
+    width: calc(70% - var(--grid-mobile-horizontal-spacing) - 3rem)!important;
+  }
+  product-recommendations slider-component .slider-buttons {
+    display: none;
+  }
+}
+
+
+

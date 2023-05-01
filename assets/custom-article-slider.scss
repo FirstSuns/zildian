@@ -1,0 +1,96 @@
+[data-section-type="article-slider"] {
+  &.image-with-text {
+    .image-with-text__grid {
+      align-items: center!important;
+      @media screen and (max-width: 989px) {
+        flex-direction: column-reverse;
+      }
+      .image-with-text__media-item {
+        @media screen and (max-width: 989px) {
+          padding-left: 15px;
+          .splide__slide {
+            display: flex;
+            flex-direction: column;
+            .info {
+              height: 100%;
+              background: #F8F8F9;
+            }
+          }
+        }
+      }
+      .image-with-text__media {
+        @media screen and (max-width: 989px) {
+          min-height: auto;
+        }
+        .video-section {
+          height: 100%;
+          .video-section__media {
+            height: 100%;
+            @media screen and (max-width: 989px) {
+            }
+          }
+        }
+      }
+      .info {
+        width: 100%;
+        @media screen and (max-width: 989px) {
+          .article {
+            background: #F8F8F9;
+            border-radius: 4px;
+            display: flex;
+            padding: 20px;
+            border: none;
+            align-items: center;
+
+            &.is-active {
+              border: none;
+              background: var(--gradient-base-background-2);
+            }
+            img {
+              border-radius: 50%;
+              width: 80px;
+              height: 80px;
+              object-fit: cover;
+            }
+            .info {
+              display: block;
+              width: 100%;
+              padding-left: 20px;
+              margin: 0;
+
+              
+              .subtitlte {
+                width: 100%;
+                display: block;
+                margin-top: 10px;
+              }
+              .button {
+                margin-top: 10px;
+              }
+            }
+          }
+        }
+      }
+      .image-with-text__text-item {
+        .image-with-text__content {
+          
+          .info {
+            display: flex;
+            @media screen and (max-width: 989px) {
+              max-width: initial!important;
+            }
+            & > svg {
+              min-width: 42px;
+              margin-right: 20px;
+            }
+            .text {
+              .article-list {
+                margin-top: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

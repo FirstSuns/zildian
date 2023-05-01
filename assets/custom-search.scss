@@ -1,0 +1,77 @@
+html {
+  .predictive-search--header {
+    display: none!important;
+  }
+  #tagalys-namespace {
+    .search-suggestions {
+      margin-top: 5px!important;
+      transform: none!important;
+      position: absolute!important;
+      top: 100%!important;
+      .container {
+        padding-top: 20px;
+        .type-suggestions {
+          .products {
+            border-right: 1px solid #E4E5E6;
+            .product {
+              width: 100%;
+              margin-bottom: 10px;
+              .product-link {
+                display: flex;
+                .product-tag {
+                  right: auto;
+                  left: 0;
+                  font-size: 9px;
+                  padding: 5px;
+                  text-transform: uppercase;
+                  font-weight: 700;
+                }
+                .product-image-container {
+                  width: 80px;
+                  margin-right: 10px;
+                  margin-bottom: 0;
+                }
+                .product-details {
+                  .product-name {
+                    font-size: 16px;
+                    font-weight: normal;
+                  }
+                  .product-prices {
+                    margin-top: 10px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .view-more {
+          padding-bottom: 20px;
+          .button {
+            position: relative;
+            font-weight: 700!important;
+            min-width: 200px;
+            letter-spacing: 2px;
+            min-height: 45px;
+            text-transform: uppercase;
+            font-size: 16px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border: 0;
+            padding: 0 3rem;
+            cursor: pointer;
+            font: inherit;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: box-shadow var(--duration-short) ease;
+            -webkit-appearance: none;
+            appearance: none;
+            background-color: #cc9f53;
+            border-radius: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+

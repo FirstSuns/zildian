@@ -1,0 +1,89 @@
+[data-section-type="featured-artists"] {
+  .collection  {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    @media screen and (max-width: 989px) {
+      position: relative;
+      padding-bottom: 100px;
+    }
+    .collection__title {
+      width: 40%;
+      max-width: 440px;
+      padding: 0 20px;
+      @media screen and (max-width: 989px) {
+        width: 100%;
+        padding: 0 20px;
+        max-width: initial;
+      }
+      .title {
+        margin-bottom: 40px;
+        @media screen and (max-width: 989px) {
+          margin-bottom: 0;
+        }
+      }
+      .collection__view-all {
+        @media screen and (max-width: 989px) {
+          position: absolute;
+          bottom: 20px;
+          width: 100%;
+          text-align: center;
+          left: 0;
+        }
+      }
+    }
+    featured-article-component {
+      width: 60%;
+      @media screen and (max-width: 989px) {
+        width: 100%;
+        padding-left: 20px;
+      }
+      .splide__arrows {
+        display: flex;
+        column-gap: 20px;
+        position: absolute;
+        right: 20px;
+        top: -70px;
+        @media screen and (max-width: 989px) {
+          display: none;
+        }
+        .splide__arrow {
+          position: initial;
+          transform: none;
+          background: transparent;
+          border: 1px solid #5C5D60;
+          width: 44px;
+          height: 44px;
+          color: #5C5D60;
+        }
+      }
+      .artist-card {
+        a {
+          width: 100%;
+          text-decoration: none;
+          color: inherit;
+        }
+        img {
+          width: 100%;
+          height: auto;
+        }
+        .content {
+          text-align: center;
+          h4 {
+            margin: 10px 0;
+            margin-top: 20px;
+            text-transform: uppercase;
+          }
+          p {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 749px) {
+  .index .splide__slide{
+    max-width: 195px;
+  }
+}

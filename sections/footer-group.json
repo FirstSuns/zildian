@@ -1,0 +1,98 @@
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "c024f6a1-aad0-4cdb-9178-026bc06f06df": {
+      "type": "newsletter",
+      "blocks": {
+        "sections--18142515364132__c024f6a1-aad0-4cdb-9178-026bc06f06df-1680060005a4bdeb1f-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "icon": "shopify:\/\/shop_images\/zd-club_1.png",
+            "heading_size": "h1"
+          }
+        },
+        "sections--18142515364132__c024f6a1-aad0-4cdb-9178-026bc06f06df-1680060005a4bdeb1f-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Get exclusive access to Zildjian content, inside info on new products, news, your favorite Zildjian artists, and more.<\/p>"
+          }
+        },
+        "sections--18142515364132__c024f6a1-aad0-4cdb-9178-026bc06f06df-1680060005a4bdeb1f-2": {
+          "type": "email_form",
+          "settings": {
+            "popup": true
+          }
+        }
+      },
+      "block_order": [
+        "sections--18142515364132__c024f6a1-aad0-4cdb-9178-026bc06f06df-1680060005a4bdeb1f-0",
+        "sections--18142515364132__c024f6a1-aad0-4cdb-9178-026bc06f06df-1680060005a4bdeb1f-1",
+        "sections--18142515364132__c024f6a1-aad0-4cdb-9178-026bc06f06df-1680060005a4bdeb1f-2"
+      ],
+      "settings": {
+        "color_scheme": "accent-3",
+        "content_type": "inline",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "fbc2607a-eb6b-40fb-8c54-6d074de7db48": {
+          "type": "link_list",
+          "settings": {
+            "heading": "ABOUT",
+            "menu": "footer"
+          }
+        },
+        "e3c2bbb0-8bb6-45d9-992b-06cfb9764c52": {
+          "type": "link_list",
+          "settings": {
+            "heading": "SUPPORT",
+            "menu": "support"
+          }
+        },
+        "869bcecf-5e73-482e-a41c-c382720caf06": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": true,
+            "brand_image_1": "shopify:\/\/shop_images\/vicfirth-logo-2x_1.png",
+            "brand_link_1": "https:\/\/vicfirth.zildjian.com\/",
+            "brand_image_2": "shopify:\/\/shop_images\/webimage-E6F2FF3D-AE34-4EEB-AE090DB6F60AE984_1.png",
+            "brand_link_2": "\/",
+            "brand_image_3": "shopify:\/\/shop_images\/png-balter-mallets-white-logo_1_1_1_1.png",
+            "brand_link_3": "https:\/\/vicfirth.zildjian.com\/mallets\/keyboard\/balter-mallets.html?utm_source=google&utm_medium=cpc&utm_campaign=19643788775&utm_content=&utm_term=&gad=1&gclid=EAIaIQobChMIhe_E89vF_gIVPgitBh2biQ-sEAAYASAAEgLV7fD_BwE"
+          }
+        }
+      },
+      "block_order": [
+        "fbc2607a-eb6b-40fb-8c54-6d074de7db48",
+        "e3c2bbb0-8bb6-45d9-992b-06cfb9764c52",
+        "869bcecf-5e73-482e-a41c-c382720caf06"
+      ],
+      "settings": {
+        "color_scheme": "inverse-2",
+        "newsletter_enable": false,
+        "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": false,
+        "show_social": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "payment_enable": false,
+        "show_policy": true,
+        "margin_top": 0,
+        "padding_top": 72,
+        "padding_bottom": 36,
+        "bottom_links": "bottom-links"
+      }
+    }
+  },
+  "order": [
+    "c024f6a1-aad0-4cdb-9178-026bc06f06df",
+    "footer"
+  ]
+}

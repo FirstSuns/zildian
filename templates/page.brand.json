@@ -1,0 +1,951 @@
+{
+  "sections": {
+    "3141c904-b6a6-4f2b-a1fe-aa2b9e911af8": {
+      "type": "image-banner",
+      "blocks": {
+        "template--18142515003684__3141c904-b6a6-4f2b-a1fe-aa2b9e911af8-1679425999b0455fe5-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "THE ZILDJIAN BRAND JOURNEY",
+            "heading_size": "h0",
+            "uppercase": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18142515003684__3141c904-b6a6-4f2b-a1fe-aa2b9e911af8-1679425999b0455fe5-0"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.banner__box {max-width: 325px; padding-bottom: 50px; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Group_188.png",
+        "mobile_image": "shopify:\/\/shop_images\/hero_3.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "content_width": "700",
+        "padding_left": "150",
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false,
+        "center_mobile": false,
+        "full_mobile": false,
+        "content_padding": 20,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 60,
+        "padding_bottom": 100
+      }
+    },
+    "e427b33a-2362-4fe4-b789-75cbf5fbaf9e": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18284272845092__e427b33a-2362-4fe4-b789-75cbf5fbaf9e-1679426836c150e802-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>LIMITLESS MUSICAL EXPRESSION<\/p>",
+            "heading_size": "h1",
+            "max_width": ""
+          }
+        },
+        "template--18284272845092__e427b33a-2362-4fe4-b789-75cbf5fbaf9e-1679426836c150e802-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For 400 years, Zildjian has singularly focused on your limitless musical expression, by creating instruments with infinite sound capabilities. It's been our commitment to create the sounds that excite your imagination, and the tools that unleash your playing potential, that has kept us at the forefront of music across continents, across genres, and across centuries. From Avedis Zildjian's first strike of the anvil at the Sultan of the Ottoman Empire's palace, to the 15th generation of Zildjian Family members today, our pursuit to create the best and most relevant instruments and tools continues. From our factory floors, to our global Artist family, wherever you are on your musical journey, we hope to inspire you, and help you take your sound to the next level...and beyond.<\/p>",
+            "hide_mobile": false,
+            "max_width": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18284272845092__e427b33a-2362-4fe4-b789-75cbf5fbaf9e-1679426836c150e802-0",
+        "template--18284272845092__e427b33a-2362-4fe4-b789-75cbf5fbaf9e-1679426836c150e802-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "contnet_type": "list",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "max_width": "900"
+      }
+    },
+    "da8afc04-3a8f-4556-b966-69a77891978b": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "cover_image": "shopify:\/\/shop_images\/thumb_horizontal_1.jpg",
+        "video_url": "https:\/\/youtu.be\/pD4uTXmzkw0",
+        "description": "",
+        "full_width": false,
+        "mobile_full_width": true,
+        "color_scheme": "background-1",
+        "caption_color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "65653185-b0f5-4c3b-859f-b9372d3ae0a3": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18284272845092__65653185-b0f5-4c3b-859f-b9372d3ae0a3-1679426917804e2d0a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "THE GOLD STANDARD",
+            "heading_link": "",
+            "heading_size": "h2",
+            "heading_color": "",
+            "max_width": ""
+          }
+        },
+        "template--18284272845092__65653185-b0f5-4c3b-859f-b9372d3ae0a3-1679426917804e2d0a-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>When it comes to making cymbals, we are referred to as the “Gold Standard”. Which is ironic because in 1618, alchemist Avedis Zildjian was trying to make gold. Instead, he accidently formulated what's arguably the best cymbal material on the planet. Today at Zildjian, we still use that same secret alloy in every cast cymbal we craft. Avedis’ spirit of experimentation and discovery lives on in our factory; it continually drives us each day to create the highest quality instruments we can, so you can continually create, experiment and discover your own sound.<\/p>",
+            "text_style": "body",
+            "color": "#5c5d60"
+          }
+        }
+      },
+      "block_order": [
+        "template--18284272845092__65653185-b0f5-4c3b-859f-b9372d3ae0a3-1679426917804e2d0a-0",
+        "template--18284272845092__65653185-b0f5-4c3b-859f-b9372d3ae0a3-1679426917804e2d0a-1"
+      ],
+      "settings": {
+        "tag": "",
+        "side_banner": false,
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/img_1.jpg",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "container_image": false,
+        "media_max_width": "",
+        "desktop_content_position": "middle",
+        "content_align": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "background-2",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "overlay_section": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "quote": false,
+        "max_width": "556"
+      }
+    },
+    "bd639fdf-6df5-465b-88df-c4db0f1870fb": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18284272845092__bd639fdf-6df5-465b-88df-c4db0f1870fb-167942943557019b0e-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "ZILDJIAN LITERALLY MEANS\"CYMBAL MAKER\"",
+            "heading_link": "",
+            "heading_size": "h2",
+            "heading_color": "",
+            "max_width": "500"
+          }
+        },
+        "template--18284272845092__bd639fdf-6df5-465b-88df-c4db0f1870fb-167942943557019b0e-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In 1623, the Sultan granted Avedis the family name \"Zildjian,\" which literally means \"cymbal smith\". After leaving the palace and starting his own foundry, he spent years perfecting his cymbal making techniques. His process of combining copper, tin and silver is still a closely guarded family secret, and the casting it produces possess an extraordinary musical quality and tone. Our skilled craftsmen combine old world cymbal-making artistry with modern technology, and a dash of cutting-edge innovation to transform Avedis’ alloy into boundless varieties of superior-sounding cymbals for every genre of music.<\/p>",
+            "text_style": "body",
+            "color": "#5c5d60"
+          }
+        }
+      },
+      "block_order": [
+        "template--18284272845092__bd639fdf-6df5-465b-88df-c4db0f1870fb-167942943557019b0e-0",
+        "template--18284272845092__bd639fdf-6df5-465b-88df-c4db0f1870fb-167942943557019b0e-1"
+      ],
+      "settings": {
+        "tag": "",
+        "side_banner": false,
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/History-Photo-1_2_2.jpg",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "container_image": false,
+        "media_max_width": "",
+        "desktop_content_position": "middle",
+        "content_align": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "background-2",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "overlay_section": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "quote": false,
+        "max_width": "556"
+      }
+    },
+    "23ae5475-8239-4cdb-95a2-2316a60b8f68": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18284272845092__23ae5475-8239-4cdb-95a2-2316a60b8f68-167942943557019b0e-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "AT THE FOREFRONT",
+            "heading_link": "",
+            "heading_size": "h2",
+            "heading_color": "",
+            "max_width": ""
+          }
+        },
+        "template--18284272845092__23ae5475-8239-4cdb-95a2-2316a60b8f68-167942943557019b0e-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Through every major innovation in music we have worked with our diverse community of artists to create the sounds needed to meet the demands of the day, and establish the trends of the future. From the Sultan’s famed Jannisary bands, to the classical sounds of Mozart, to Jazz, Swing, Rock, Pop, Punk, Hip Hop, and EDM, we have listened and responded to the requests for sounds drummers were hearing in their head. We literally invented the cymbal vocabulary – Rides, Crashes, Effects were terms Avedis Zildjian III developed to help artists describe what they were looking for. Our deep partnerships and continued collaborations with today’s leading artists means that you will always be in front of new trends in recorded and live music, and maybe even the start of your own musical revolution.<\/p>",
+            "text_style": "body",
+            "color": "#5c5d60"
+          }
+        }
+      },
+      "block_order": [
+        "template--18284272845092__23ae5475-8239-4cdb-95a2-2316a60b8f68-167942943557019b0e-0",
+        "template--18284272845092__23ae5475-8239-4cdb-95a2-2316a60b8f68-167942943557019b0e-1"
+      ],
+      "settings": {
+        "tag": "",
+        "side_banner": false,
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/History-Photo-1_2_1_1.jpg",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "container_image": false,
+        "media_max_width": "",
+        "desktop_content_position": "middle",
+        "content_align": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "background-2",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "overlay_section": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "quote": false,
+        "max_width": "556"
+      }
+    },
+    "d826ba2e-2cc8-4bd8-ab5d-db1b9c29f309": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18284272845092__d826ba2e-2cc8-4bd8-ab5d-db1b9c29f309-167942943557019b0e-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "\"THEY GOT THE DANCIN'DEVILS IN 'EM\"",
+            "heading_link": "",
+            "heading_size": "h2",
+            "heading_color": "",
+            "max_width": "420"
+          }
+        },
+        "template--18284272845092__d826ba2e-2cc8-4bd8-ab5d-db1b9c29f309-167942943557019b0e-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>That’s what they used to say about great Ride Cymbals. And only \"great\" makes the cut. In our factory, everything we do has always been done in service of sound and aesthetic quality. A minimum of 15 people craft every Zildjian alloy cymbal. Certain series that replicate vintage sounds, including Kerope and K Constantinople cymbals, are meticulously handcrafted in small batches of 50–60 using a 14-step process. An expert team, whose combined cymbal testing experience is nearly 100 years, hits each cymbal to ensure it sonically fits within a certain range of sound, but at the same time, is unique enough to accommodate drummers' individual tastes. It’s not until a cymbal passes through “testing” that it is deemed a “Zildjian”. Only then will it be printed with a logo ….or as we say, “it gets a Zildjian kiss”.<\/p>",
+            "text_style": "body",
+            "color": "#5c5d60"
+          }
+        }
+      },
+      "block_order": [
+        "template--18284272845092__d826ba2e-2cc8-4bd8-ab5d-db1b9c29f309-167942943557019b0e-0",
+        "template--18284272845092__d826ba2e-2cc8-4bd8-ab5d-db1b9c29f309-167942943557019b0e-1"
+      ],
+      "settings": {
+        "tag": "",
+        "side_banner": false,
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/History-Photo-1_2_2_1.jpg",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "container_image": false,
+        "media_max_width": "",
+        "desktop_content_position": "middle",
+        "content_align": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "background-2",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "overlay_section": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "quote": false,
+        "max_width": "600"
+      }
+    },
+    "c3fb18d9-530c-4b49-8081-d4e101373040": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18284272845092__c3fb18d9-530c-4b49-8081-d4e101373040-167942943557019b0e-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "PAST AND FUTURE",
+            "heading_link": "",
+            "heading_size": "h2",
+            "heading_color": "",
+            "max_width": ""
+          }
+        },
+        "template--18284272845092__c3fb18d9-530c-4b49-8081-d4e101373040-167942943557019b0e-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Since our company’s start in Turkey in 1623, our factories today strive to make cymbals, drumsticks, mallets and alternative implements that are among the highest quality, most consistent you'll ever play. Our growing family of iconic brands now includes Vic Firth and Balter Mallets and we are honored to be the guardians of their legacies, while continuing to push forward the boundaries of design and performance. Whether playing in your basement, concert stage, studio, or marching field, we want to be part of your musical expression and that special moment you find and share your voice. We’ve been on this sound journey for 400 years, and you can trust us when we say, we’re just warming up. We’re excited about the future, and hope you’ll come along with us for the “Ride”.<\/p>",
+            "text_style": "body",
+            "color": "#5c5d60"
+          }
+        }
+      },
+      "block_order": [
+        "template--18284272845092__c3fb18d9-530c-4b49-8081-d4e101373040-167942943557019b0e-0",
+        "template--18284272845092__c3fb18d9-530c-4b49-8081-d4e101373040-167942943557019b0e-1"
+      ],
+      "settings": {
+        "tag": "",
+        "side_banner": false,
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/History-Photo-1_2_1_2.jpg",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "container_image": false,
+        "media_max_width": "",
+        "desktop_content_position": "middle",
+        "content_align": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "background-2",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "overlay_section": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "quote": false,
+        "max_width": "600"
+      }
+    },
+    "1e249419-e460-4cd8-a35e-69feb090af60": {
+      "type": "collapsible-content",
+      "blocks": {
+        "95c6da83-6d59-4b16-ad18-93465a1f8447": {
+          "type": "title",
+          "settings": {
+            "title": "ORIGINS"
+          }
+        },
+        "template--18284272845092__1e249419-e460-4cd8-a35e-69feb090af60-16794299678acfc186-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Discovering the Secret Process",
+            "icon_text": "1618",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/1618_Photo_1.jpg",
+            "image_caption": "Janisarry (Mehter) Band",
+            "row_content": "<h1>1618<\/h1><p>Avedis I, an Armenian alchemist living in Constantinople, discovers a secret process for treating alloys and applies it to the art of making cymbals of extraordinary clarity and sustain. The sultan's famed Janissary bands are quick to adopt Avedis' cymbals for daily calls to prayer, religious feasts, royal weddings, and the Ottoman army.<\/p>",
+            "page": ""
+          }
+        },
+        "template--18284272845092__1e249419-e460-4cd8-a35e-69feb090af60-16794299678acfc186-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "ZIL-DJ-IAN",
+            "icon_text": "1622",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/ZIL-DJ-IAN-Image.jpg",
+            "image_caption": "Osman II, Sultan (1616-1622)",
+            "row_content": "<h1>1622<\/h1><p>Sultan Osman II gives Avedis 80 gold pieces and the family name 'Zildjian', which means 'cymbal smith' in Armenian (Zil is Turkish for 'cymbal', dj means 'maker', and ian is the Armenian suffix meaning 'son of').<\/p>",
+            "page": ""
+          }
+        },
+        "template--18284272845092__1e249419-e460-4cd8-a35e-69feb090af60-16794299678acfc186-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "The First Cymbal Foundry",
+            "icon_text": "1623",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/First-Cymbal-Foundry-Image.jpg",
+            "image_caption": "Zildjian Foundry in Samatya",
+            "row_content": "<h1>1623<\/h1><p>In 1623, Avedis receives the Sultan’s blessing allowing him to leave the Ottoman palace to start his own cymbal foundry in the suburbs of Constantinople (Samatya).<\/p>",
+            "page": ""
+          }
+        },
+        "template--18284272845092__1e249419-e460-4cd8-a35e-69feb090af60-16794299678acfc186-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "The Secret Lives On",
+            "icon_text": "1651",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/Secret-Lives-On-Image.jpg",
+            "image_caption": "‘Zilzen’ (cymbal player) showing cymbals played both vertically and horizontally",
+            "row_content": "<h1>1651<\/h1><p>Avedis passes the secret process to his eldest son Ahkam, who succeeds Avedis in 1651.<\/p>",
+            "page": ""
+          }
+        },
+        "f290739e-5327-4d0e-b6d0-4725c433f3ed": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Classical Composers",
+            "icon_text": "1680",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/Classical-Composers-Image.jpg",
+            "image_caption": "Nicolaus Adams Strungkally",
+            "row_content": "<p>Classical composers begin to incorporate cymbals into their works, the first known example being German composer Strungk in his opera \"Esther\".<\/p>",
+            "page": ""
+          }
+        },
+        "bb7c2bc2-960b-4907-a47f-684da7053095": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "European Military Bands",
+            "icon_text": "1700s",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/European-Military-Bands-Image.jpg",
+            "image_caption": "Joseph Haydn and Wolfgang Amadeus Mozar",
+            "row_content": "<p>During the 18th Century, cymbals become increasingly popular in European military bands. In 1782, Mozart uses cymbals to represent the popular Janissary music in Il Seraglio. Twelve years later, Haydn uses cymbals in his 'Military Symphony'.<\/p>",
+            "page": ""
+          }
+        },
+        "f81ac902-7d01-49a1-a299-f2bc14976041": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Orchestras",
+            "icon_text": "1800s",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/Orchestras-Image.jpg",
+            "image_caption": "Hector Berlioz and Richard Wagner",
+            "row_content": "<p>During the mid to late nineteenth century, Berlioz and Wagner begin featuring an abundance of cymbals in their compositions and request that only Zildjian cymbals be used. Cymbals achieve an important and permanent position in orchestras.<\/p>",
+            "page": ""
+          }
+        },
+        "155ea9dd-77c9-4ee5-bcd7-967137ee0303": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Kerope Zildjian",
+            "icon_text": "1865",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/Kerope-Zildjian-Image.jpg",
+            "image_caption": "Kerope Zildjian",
+            "row_content": "<p>Upon the death of Avedis II in 1865, the business passes to Avedis' younger brother Kerope because Avedis' sons (Haroutune II and Aram) are too young. Kerope exports 1300 pairs of cymbals per year throughout Europe and continues to travel to exhibitions, winning honors in Paris (1867), Vienna (1873), Boston (1883), Bologna (1888) and Chicago (1893).<\/p>",
+            "page": ""
+          }
+        },
+        "490c2515-5a47-4186-939c-c12c97eac867": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "The Ottoman Empire",
+            "icon_text": "1868",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/Ottoman-Empire-Image.jpg",
+            "image_caption": "Abdul-aziz, Sultan of the Ottoman Empire (1861-1876)",
+            "row_content": "<p>After a series of disastrous fires, the Zildjian family is unable to pay their accumulated debts. The Zildjians receive attractive offers to transfer the business to Paris but do not want to leave their homeland... Sultan, Abdulaziz intercedes, ordering that “everything necessary is done to help the Zildjian family, whose quality of cymbals is unrivaled throughout the world”.<\/p>",
+            "page": ""
+          }
+        },
+        "cd5df98e-b05e-47ef-b93f-7e2eb8b9c48b": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "The Haroutune's Family",
+            "icon_text": "1909",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/Haroutune_s-Family-Image.jpg",
+            "image_caption": "Haroutune’s Family (Avedis III not pictured as he is already in America)",
+            "row_content": "<p>In 1909, the year of his death, Kerope passes the secret process back to Avedis' family. Avedis' older son Haroutune II declines his birthright in favor of entering a career in law and politics. The secret then goes to Haroutune’s younger brother Aram (the second son of Avedis II.)<\/p>",
+            "page": ""
+          }
+        },
+        "7fd75885-8b7d-462f-9ed3-d47e3bb94870": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Aram Zildjian",
+            "icon_text": "1910",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/Aram-Zildjian-Image.jpg",
+            "image_caption": "Aram Zildjian",
+            "row_content": "<p>Aram finds it difficult to continue manufacturing cymbals in Constantinople during a period of political upheaval. After joining the Armenian National Movement, he is forced to flee to Bucharest where he opens a second Zildjian factory. Eventually, Aram returns to his native country, where he exports cymbals around the world, especially to America, now the largest consumer of musical instruments in the world.<\/p>",
+            "page": ""
+          }
+        },
+        "a02673fe-641b-4239-9e8d-de0a8d19181a": {
+          "type": "title",
+          "settings": {
+            "title": "COMING TO AMERICA"
+          }
+        },
+        "db7a8c3f-0178-4904-80ae-e1935ff4e401": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "The First American Cymbal Factory",
+            "icon_text": "1927",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/First-American-Cymbal-Factory-Image.jpg",
+            "image_caption": "The First American Cymbal Factory",
+            "row_content": "<p>In 1927, Aram writes his nephew, Avedis III, who is already living in America, telling Avedis that it is now his turn to carry on the family business. Avedis III, the only surviving male in the direct line of succession, is now an American citizen, who owns a successful candy factory. Avedis tells Aram that he would not return to Turkey, but would like to relocate the family business here in America.<\/p>",
+            "page": ""
+          }
+        },
+        "0bc074e4-a188-4eee-ab55-b67c78002c4b": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Avedis III",
+            "icon_text": "1929",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/Avedis-III-Image.jpg",
+            "image_caption": "Avedis III",
+            "row_content": "<p>Aram agrees to come and help Avedis set up the first Zildjian cymbal foundry in America. The company is incorporated in Quincy, Massachusetts in 1929 just as the Jazz Era begins.<\/p>",
+            "page": ""
+          }
+        },
+        "97e2e4bd-4222-43af-9092-2ec4c188181c": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Avedis and Gene Krupa",
+            "icon_text": "1930",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/Avedis-_-Gene-Krupa-Image.jpg",
+            "image_caption": "Avedis and Gene Krupa",
+            "row_content": "<p>Avedis develops a life-long relationship with Gene Krupa, who helps Avedis adapt marching cymbals to the emerging drum set by encouraging Avedis to make thinner cymbals.<\/p>",
+            "page": ""
+          }
+        },
+        "4c4b9b08-8463-4b19-a5c3-39cb9457f376": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Armand Zildjian",
+            "icon_text": "1935",
+            "icon": "none",
+            "image": "shopify:\/\/shop_images\/1935_Photo_1.png",
+            "image_caption": "Armand Zildjian",
+            "row_content": "<p>Avedis passes along the secret process to his 14-year-old son, Armand, who begins learning every facet of the business.<\/p>",
+            "page": ""
+          }
+        },
+        "6231e449-18f9-4fe5-b208-f3e75267824a": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Chick Webb, Avedis, and Papa Jo Jones",
+            "icon_text": "1936",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/Chick-Webb-Image.jpg",
+            "image_caption": "Chick Webb, Avedis, and Papa Jo Jones",
+            "row_content": "<p>Avedis is also quick to embrace the talented African-American musicians who are leading the jazz movement. Having been discriminated during his own childhood as an Armenian living in Turkey, Avedis vows there will be no place for discrimination at the Zildjian Company. He works closely with artists like Chick Webb and Papa Jo Jones (who helps Avedis refine the HiHat.) During this period of innovation the \"Paper Thin Crash\", \"Ride\", \"Splash\", \"HiHat\" and \"Sizzle\" cymbals are all developed and named by Avedis.<\/p>",
+            "page": ""
+          }
+        },
+        "0fe29cf2-a5d2-4295-a334-69453205014a": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "WWII",
+            "icon_text": "1940",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/WII-Image.jpg",
+            "image_caption": "Armand and Avedis in the Melting Room",
+            "row_content": "<p>Once America enters the Second World War, both copper and tin are rationed by the War Production Board. Avedis, however, receives enough of an allocation to fill American and British military orders. This allows the business to continue through the tough war years even though Zildjian's group of highly trained metal-smiths is reduced to just three men.<\/p>",
+            "page": ""
+          }
+        },
+        "e47ae355-f837-4b46-ad5b-9bd9e2ee4ef9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "The Legacy Continues",
+            "icon_text": "1945",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/Legacy-Continues-Image.jpg",
+            "image_caption": "Armand at 39 Fayette Street, Quincy, MA",
+            "row_content": "<p>World War II also marks the only time the secret process is ever actually written down. Avedis keeps a copy of the formula in the company vault and another in his home in the event that his sons don't return from the war. In 1945, Armand Zildjian, the most musical of all the Zildjians, returns from the war ready to assume responsibility for the manufacturing side of the business. Armand can now experiment with developing new sounds, an opportunity he has looked forward to for many years.<\/p>",
+            "page": ""
+          }
+        },
+        "5712608f-62c4-46fd-9e7f-7fc304e7fec0": {
+          "type": "title",
+          "settings": {
+            "title": "FOLLOWING THE MUSIC"
+          }
+        },
+        "c00b9d06-add2-40ce-9b68-410cbd2ce612": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Modern Jazz",
+            "icon_text": "1950",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/Modern-Jazz-Image.jpg",
+            "image_caption": "Avedis and Armand with Shelly Manne",
+            "row_content": "<p>By 1950, Zildjian employs 15 workers, increasing output to 70,000 cymbals per year. The post-war economy and growing popularity of “modern jazz\" continues to grow sales.<\/p>",
+            "page": ""
+          }
+        },
+        "c51cab07-c984-48d9-8396-349e3f346c54": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Quality Hand Selection",
+            "icon_text": "1951",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/Quality-Hand-Selection-Image.jpg",
+            "image_caption": "Harold ‘Tommy’ Thompson (Boston Symphony Orchestra) and Joe Morello with Armand",
+            "row_content": "<p>In hand-selecting cymbals for all the top professional drummers, Armand acquires a keen sense of what drummers are looking for. He is able to manipulate the subtleties of cymbal making to create the sounds drummers want and to address the changes taking place in music.<\/p>",
+            "page": ""
+          }
+        },
+        "20fa5862-0c78-4621-9eb7-18c3ad9d8f32": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "The Father of Artist Relations",
+            "icon_text": "1954",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/Father-of-Artist-Relations-Image.jpg",
+            "image_caption": "Armand working with Max Roach",
+            "row_content": "<p>Following his father's lead, Armand Zildjian, also known as the \"Father of Artist Relations,\" develops close personal relationships with all the top drummers and percussionists of the day, such as Gene Krupa, Buddy Rich, Max Roach, Shelly Manne, Elvin Jones, and Tony Williams.<\/p>",
+            "page": ""
+          }
+        },
+        "dc5c0976-7316-47a8-a6e8-d9a8c1f08005": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Louie Bellson",
+            "icon_text": "1963",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/Louie-Bellson-Image.jpg",
+            "image_caption": "Louie Bellson",
+            "row_content": "<p>Inspired by Louie Bellson, Zildjian introduces 'New Beat' HiHats, matched with a lighter top cymbal but heavier bottom for a more pronounced \"chick\" sound. 'New Beats' become standard equipment for all drummers overnight.<\/p>",
+            "page": ""
+          }
+        },
+        "e87a3661-97d2-4ee3-90a3-7dcd117fd952": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "The Beatles",
+            "icon_text": "1964",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/Beatles-Image.jpg",
+            "image_caption": "The Beatles",
+            "row_content": "<p>The Beatles appear on The Ed Sullivan show and the demand for Zildjian cymbals explodes. The company ends the year with 90,000 cymbals on backorder<\/p>",
+            "page": ""
+          }
+        },
+        "b3eda35f-b90b-48e0-82c5-35f734317e69": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "A New Home",
+            "icon_text": "1973",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/A-New-Home-Image.jpg",
+            "image_caption": "Zildjian Headquarters, 22 Longwood Drive and Inside Zildjian’s Drummers Lounge, Norwell, MA",
+            "row_content": "<p>Zildjian opens its new state-of-the-art manufacturing facility in Norwell, Massachusetts in time to celebrate its 350th Anniversary (the facility is twice expanded in 1981, and again in 1998.)<\/p>",
+            "page": ""
+          }
+        },
+        "d6fa8ca3-88ca-46f7-bc8f-a0ede2bd5e6d": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Craigie Zildjian",
+            "icon_text": "1976",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/Craigie-Zildjian-Image.jpg",
+            "image_caption": "Craigie Zildjian",
+            "row_content": "<p>Breaking with tradition, Avedis invites his granddaughter Craigie Zildjian to join the family business. For the next three years, there are three generations of Zildjians working side-by-side in the family firm.<\/p>",
+            "page": ""
+          }
+        },
+        "b5409492-abe9-42d6-b215-b4c4be9890d1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Armand Zildjian",
+            "icon_text": "1977",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/Armand-as-President-Image.jpg",
+            "image_caption": "Armand Zildjian",
+            "row_content": "<p>In 1977, Avedis names Armand President of the company. Armand sets a company-wide mission to take cymbal making to the next level. He invests millions to update the manufacturing operation and expand R&D in the newly created 'Sound Lab'.<\/p>",
+            "page": ""
+          }
+        },
+        "86328854-8f32-4c43-88f4-402fbae12c5e": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Avedis Zildjian",
+            "icon_text": "1979",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/Avedis-Zildjian-Image.jpg",
+            "image_caption": "Avedis Zildjian",
+            "row_content": "<p>Sadly, Avedis passes away and Armand becomes Chairman of the Board.<\/p>",
+            "page": ""
+          }
+        },
+        "0797a07e-9bab-42a3-847d-2cc602f89936": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Revolutionary Advances",
+            "icon_text": "1980",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/Revolutionary-Advances-Image.jpg",
+            "image_caption": "Zildjian Factory",
+            "row_content": "<p>In the early 1980s, Armand reinvests profits to finance such revolutionary advances in manufacturing as the rotary hearth, double rolling mills, and computer-controlled random hammering. Armand now has the equipment he needs to find the new sounds he is looking for.<\/p>",
+            "page": ""
+          }
+        },
+        "69be56c0-c151-458c-b227-374e11a7740d": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "The Handcrafted New K",
+            "icon_text": "1981",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/Handcrafted-New-K-Image.jpg",
+            "image_caption": "Armand with Elvin Jones",
+            "row_content": "<p>Working with noted 'K' drummers Elvin Jones and Tony Williams, Zildjian re-launches the legendary, handcrafted 'K' line (named after Kerope Zildjian).<\/p>",
+            "page": ""
+          }
+        },
+        "fedbd4a3-43c6-4fe7-942b-d0f65f450e16": {
+          "type": "title",
+          "settings": {
+            "title": "INNOVATION"
+          }
+        },
+        "092c170d-28c3-42d1-8d66-e0d98d776f1c": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Zildjian Day",
+            "icon_text": "1986",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/Zildjian-Day-Image.jpg",
+            "image_caption": "The first \"Zildjian Day\"",
+            "row_content": "<p>Armand's son, Rab Zildjian, opens an Artist liaison office in Los Angeles, California and pioneers the first 'Zildjian Day' - a full-day drumming clinic, which quickly becomes a model for Percussion Days within the music industry. Zildjian also introduces the K\/Z combination HiHats, the first HiHats created through the matching of the top cymbal from one range with a bottom cymbal from another.<\/p>",
+            "page": ""
+          }
+        },
+        "cfe94bf7-4e1b-482c-8186-e0499c5e5d11": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Zildjian Drumsticks",
+            "icon_text": "1988",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/Zildjian-Drumsticks-Image.jpg",
+            "image_caption": "Cutting wood at the Zildjian Drumstick Factory, Moundville, AL",
+            "row_content": "<p>Zildjian sets up its own fully integrated Drumstick Manufacturing Facility in Alabama, the heart of hickory country. Zildjian drumsticks soon become the first choice of top drummers like Louie Bellson, Tony Williams, Vinnie Colaiuta (Sting), Dennis Chambers (Santana), and Joey Kramer (Aerosmith).<\/p>",
+            "page": ""
+          }
+        },
+        "c5cb7c04-464f-419c-9724-0c2360d16a5a": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "A Custom",
+            "icon_text": "1990",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/A-Custom-Image.jpg",
+            "image_caption": "Vinnie Colaiuta (Sting)",
+            "row_content": "<p>Vinnie Colaiuta (Sting) helps Zildjian develop the 'A Custom' range of cymbals. 'A Customs' set a new standard in modern cymbal making, soon becoming one of Zildjian's most popular models.<\/p>",
+            "page": ""
+          }
+        },
+        "99aa462e-6a69-4a69-874f-467145f0c8f3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "A Home for Orchestral",
+            "icon_text": "1995",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/A-Home-For-Orchestral-Image.jpg",
+            "image_caption": "Bill Platt (Cincinnati Symphony Orchestra) pairs cymbals in Zildjian’s new Orchestra Room",
+            "row_content": "<p>In 1995, the Zildjian Company designs a special room to assist orchestral players with their cymbal matching and selection process. Early visitors to this one-of-a-kind room include the Boston Symphony, London Symphony, and Royal Concertgebouw.<\/p>",
+            "page": ""
+          }
+        },
+        "b506c4e0-701d-4a18-9ca8-7954ebf54dcf": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "ISO Quality Certification",
+            "icon_text": "1996",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/ISO-Quality-Image.jpg",
+            "image_caption": "Debbie, Craigie and Armand with the ISO Quality Certification Team",
+            "row_content": "<p>Zildjian becomes the first Percussion Company in the world to obtain the prestigious ISO 9001 Quality Certification.  ISO 9001 is a quality system recognized worldwide for manufacturing facilities that pass rigorous quality standards.<\/p>",
+            "page": ""
+          }
+        },
+        "063465a9-d561-4ebc-8102-94a5e79361dc": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "The Next Generation",
+            "icon_text": "1999",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/The-Next-Generation-Image.jpg",
+            "image_caption": "Craigie, Armand, and Debbie",
+            "row_content": "<p>Armand Zildjian names his daughter Craigie, Chief Executive Officer. She becomes the first woman to ever hold the position. His younger daughter Debbie becomes Vice President of Human Resources and assumes responsibility for the same secret process of combining alloys.<\/p>",
+            "page": ""
+          }
+        },
+        "961b6e94-e7f1-44e5-9f97-c318e9173bd9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "K Constantinople",
+            "icon_text": "2002",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/K-Constantinople-Image.jpg",
+            "image_caption": "Armand with his wife Andy new Orchestra Room",
+            "row_content": "<p>The K Constantinople Cymbal is Armand's last R&D project. He begins by developing an orchestral line but finds that these orchestral models also make great Ride cymbals. Beloved Chairman, Armand Zildjian, passes away at his home in Scottsdale, Arizona on December 26, at the age of 81.<\/p>",
+            "page": ""
+          }
+        },
+        "b23679d2-e28a-4cd0-9e10-f01d9d6c6ab3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "The 15th Generation",
+            "icon_text": "2004",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/The-15th-Generation-Image.jpg",
+            "image_caption": "Cady and Emily Zildjian with Ringo Starr; Samantha Zildjian with Travis Barker",
+            "row_content": "<p>The 15th generation of Zildjians, Cady, and Emily (Debbie's daughters), and Samantha (Craigie's daughter) carry on the tradition of family participation in the oldest family-run business in the USA.<\/p>",
+            "page": ""
+          }
+        },
+        "1a22066a-6909-404a-8cfc-f9d37c1db06b": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "K Custom Hybrids",
+            "icon_text": "2006",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/K-Custom-Hybrids-Image.jpg",
+            "image_caption": "Akira Jimbo",
+            "row_content": "<p>Designed with Akira Jimbo, the K Custom Hybrid Series combines two distinct lathing patterns that create the possibility of two different sound dynamics depending where the cymbal is played. Praised for its versatility and ability to produce both dark and bright overtones, the K Custom Hybrid series is awarded top industry and consumer awards.<\/p>",
+            "page": ""
+          }
+        },
+        "49ef5410-ff29-41a3-b444-b51ffad43e5f": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Vic Firth",
+            "icon_text": "2010",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/Vic-Firth-Image.jpg",
+            "image_caption": "Craigie Zildjian and Vic Firth",
+            "row_content": "<p>The Avedis Zildjian Company, the world’s leading cymbal manufacturer, and the Vic Firth Company, the global market leader in drumsticks, join forces on December 20, 2010, bringing together two of the most respected legacy brands in the music industry.<\/p>",
+            "page": ""
+          }
+        },
+        "41f22805-b272-4b29-9a26-2058203f6259": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Balter Mallets",
+            "icon_text": "2018",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/Balter-Image.jpg",
+            "image_caption": "Craigie and Debbie Zildjian with Mike Balter",
+            "row_content": "<p>Zildjian acquires the leading percussion mallet manufacturer, Mike Balter Mallets. A new manufacturing facility in Newport, Maine is purchased to accommodate the company’s growing drumstick and mallet business.<\/p>",
+            "page": ""
+          }
+        },
+        "89029108-e64f-46a7-a968-39ef6eaaca2c": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "400th Anniversary",
+            "icon_text": "2023",
+            "icon": "check_mark",
+            "image": "shopify:\/\/shop_images\/400th-Anniversary-Image.jpg",
+            "image_caption": "",
+            "row_content": "<p>Zildjian celebrates its 400th Anniversary, continuing its legacy of creating sounds that inspire people to express themselves through music. <\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "95c6da83-6d59-4b16-ad18-93465a1f8447",
+        "template--18284272845092__1e249419-e460-4cd8-a35e-69feb090af60-16794299678acfc186-0",
+        "template--18284272845092__1e249419-e460-4cd8-a35e-69feb090af60-16794299678acfc186-1",
+        "template--18284272845092__1e249419-e460-4cd8-a35e-69feb090af60-16794299678acfc186-2",
+        "template--18284272845092__1e249419-e460-4cd8-a35e-69feb090af60-16794299678acfc186-3",
+        "f290739e-5327-4d0e-b6d0-4725c433f3ed",
+        "bb7c2bc2-960b-4907-a47f-684da7053095",
+        "f81ac902-7d01-49a1-a299-f2bc14976041",
+        "155ea9dd-77c9-4ee5-bcd7-967137ee0303",
+        "490c2515-5a47-4186-939c-c12c97eac867",
+        "cd5df98e-b05e-47ef-b93f-7e2eb8b9c48b",
+        "7fd75885-8b7d-462f-9ed3-d47e3bb94870",
+        "a02673fe-641b-4239-9e8d-de0a8d19181a",
+        "db7a8c3f-0178-4904-80ae-e1935ff4e401",
+        "0bc074e4-a188-4eee-ab55-b67c78002c4b",
+        "97e2e4bd-4222-43af-9092-2ec4c188181c",
+        "4c4b9b08-8463-4b19-a5c3-39cb9457f376",
+        "6231e449-18f9-4fe5-b208-f3e75267824a",
+        "0fe29cf2-a5d2-4295-a334-69453205014a",
+        "e47ae355-f837-4b46-ad5b-9bd9e2ee4ef9",
+        "5712608f-62c4-46fd-9e7f-7fc304e7fec0",
+        "c00b9d06-add2-40ce-9b68-410cbd2ce612",
+        "c51cab07-c984-48d9-8396-349e3f346c54",
+        "20fa5862-0c78-4621-9eb7-18c3ad9d8f32",
+        "dc5c0976-7316-47a8-a6e8-d9a8c1f08005",
+        "e87a3661-97d2-4ee3-90a3-7dcd117fd952",
+        "b3eda35f-b90b-48e0-82c5-35f734317e69",
+        "d6fa8ca3-88ca-46f7-bc8f-a0ede2bd5e6d",
+        "b5409492-abe9-42d6-b215-b4c4be9890d1",
+        "86328854-8f32-4c43-88f4-402fbae12c5e",
+        "0797a07e-9bab-42a3-847d-2cc602f89936",
+        "69be56c0-c151-458c-b227-374e11a7740d",
+        "fedbd4a3-43c6-4fe7-942b-d0f65f450e16",
+        "092c170d-28c3-42d1-8d66-e0d98d776f1c",
+        "cfe94bf7-4e1b-482c-8186-e0499c5e5d11",
+        "c5cb7c04-464f-419c-9724-0c2360d16a5a",
+        "99aa462e-6a69-4a69-874f-467145f0c8f3",
+        "b506c4e0-701d-4a18-9ca8-7954ebf54dcf",
+        "063465a9-d561-4ebc-8102-94a5e79361dc",
+        "961b6e94-e7f1-44e5-9f97-c318e9173bd9",
+        "b23679d2-e28a-4cd0-9e10-f01d9d6c6ab3",
+        "1a22066a-6909-404a-8cfc-f9d37c1db06b",
+        "49ef5410-ff29-41a3-b444-b51ffad43e5f",
+        "41f22805-b272-4b29-9a26-2058203f6259",
+        "89029108-e64f-46a7-a968-39ef6eaaca2c"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "400 YEARS OF ZILDJIAN",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "3141c904-b6a6-4f2b-a1fe-aa2b9e911af8",
+    "main",
+    "e427b33a-2362-4fe4-b789-75cbf5fbaf9e",
+    "da8afc04-3a8f-4556-b966-69a77891978b",
+    "65653185-b0f5-4c3b-859f-b9372d3ae0a3",
+    "bd639fdf-6df5-465b-88df-c4db0f1870fb",
+    "23ae5475-8239-4cdb-95a2-2316a60b8f68",
+    "d826ba2e-2cc8-4bd8-ab5d-db1b9c29f309",
+    "c3fb18d9-530c-4b49-8081-d4e101373040",
+    "1e249419-e460-4cd8-a35e-69feb090af60"
+  ]
+}

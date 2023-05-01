@@ -1,0 +1,32 @@
+{% assign product = all_products[article.metafields.global.featured_product_section.value.product] %}
+{% assign title = article.metafields.global.featured_product_section.value.title %}
+{% if product != blank %}
+<div class="featured-product-section page-width">
+  <div class="grid">
+    <h2 class="h1 large-up-hide" >{{title}}</h2>
+    <div class="image-item">
+      <div class="media" style="padding-bottom: 100%;">
+        {{
+          product.featured_image
+          | image_url: width: 1500
+          | image_tag: loading: 'lazy', sizes: sizes, widths: '165, 360, 535, 750, 1070, 1500'
+        }}
+      </div>
+    </div>
+    
+    <div class="content">
+      <div class="info">
+        <h2 class="h1 small-hide medium-hide">{{title}}</h2>
+        <p class="vendor">{{product.metafields.magento.family}}</p>
+        <h3>{{product.title}}</h3>
+        <div class="description">
+          {{product.metafields.magento.short_description}}
+        </div>
+        <a href="{{product.url}}" class="link animate-arrow">
+          SHOP NOW  <span class="icon-wrap">{% render 'icon-arrow' %}</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}

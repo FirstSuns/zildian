@@ -1,0 +1,65 @@
+{
+  "sections": {
+    "c289bafd-44a6-474f-a663-96d26e7f5138": {
+      "type": "image-banner",
+      "blocks": {
+        "template--18409333981476__c289bafd-44a6-474f-a663-96d26e7f5138-168029590568de2d12-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "WELCOME TO <br>THE FAMILY",
+            "heading_size": "h1",
+            "uppercase": false
+          }
+        },
+        "3d19765d-c286-4225-940c-b797aba4c039": {
+          "type": "article",
+          "settings": {
+            "article": "artist\/anderson-paak"
+          }
+        }
+      },
+      "block_order": [
+        "template--18409333981476__c289bafd-44a6-474f-a663-96d26e7f5138-168029590568de2d12-0",
+        "3d19765d-c286-4225-940c-b797aba4c039"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Zildjian-Artist-Section-Banner.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Zildjian-Artist-Section-Banner-Mobile.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "content_width": "480",
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "stack_images_on_mobile": true,
+        "show_text_below": false,
+        "center_mobile": false,
+        "full_mobile": false,
+        "content_padding": 20,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "main-blog",
+      "settings": {
+        "show_breadcrumbs": false,
+        "enable_filter": true,
+        "layout": "grid",
+        "show_image": true,
+        "image_height": "adapt",
+        "show_blog_title": true,
+        "show_date": false,
+        "show_author": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "c289bafd-44a6-474f-a663-96d26e7f5138",
+    "main"
+  ]
+}

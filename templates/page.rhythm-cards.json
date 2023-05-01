@@ -1,0 +1,215 @@
+{
+  "sections": {
+    "3141c904-b6a6-4f2b-a1fe-aa2b9e911af8": {
+      "type": "image-banner",
+      "blocks": {
+        "template--18142515003684__3141c904-b6a6-4f2b-a1fe-aa2b9e911af8-1679425999b0455fe5-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Zildjian Rhythm Cards",
+            "heading_size": "h1",
+            "uppercase": false
+          }
+        },
+        "6d0d1d2d-dc2f-4646-aec5-2ebc8119d529": {
+          "type": "text",
+          "settings": {
+            "text": "Check out our Educational Resource Library for video, lessons, play-along audio files, charts, articles and more.",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "template--18142515003684__3141c904-b6a6-4f2b-a1fe-aa2b9e911af8-1679425999b0455fe5-0",
+        "6d0d1d2d-dc2f-4646-aec5-2ebc8119d529"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/hero_7_e460ac17-fb37-45d7-b768-3ecc4cadf7dd.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/hero_8.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "content_width": "805",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false,
+        "center_mobile": false,
+        "full_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 60,
+        "padding_bottom": 100
+      }
+    },
+    "21f64e66-0b48-4b65-bf15-a4ca2741c593": {
+      "type": "education",
+      "blocks": {
+        "template--18431751291172__21f64e66-0b48-4b65-bf15-a4ca2741c593-1680470723e8579b75-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_5_e05e5c47-514f-4e00-ae95-f72123872a44.png",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_5_e05e5c47-514f-4e00-ae95-f72123872a44.png",
+            "badge": "",
+            "title": "MODERN JAZZ SOLOS FOR DRUM SET, LESSON SERIES WITH RICH THOMPSON",
+            "heading_size": "h3",
+            "heading_color": "",
+            "link": "shopify:\/\/blogs\/education",
+            "column_type": "Newest",
+            "instruments": "Educational",
+            "types": "Percussion 101"
+          }
+        },
+        "template--18431751291172__21f64e66-0b48-4b65-bf15-a4ca2741c593-1680470723e8579b75-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img_1.png",
+            "mobile_image": "shopify:\/\/shop_images\/img_1.png",
+            "badge": "",
+            "title": "NEW! ZILDJIAN DRUM SET METHOD",
+            "heading_size": "h3",
+            "heading_color": "",
+            "link": "",
+            "column_type": "Most popular",
+            "instruments": "Concert,\nDrumset",
+            "types": ""
+          }
+        },
+        "template--18431751291172__21f64e66-0b48-4b65-bf15-a4ca2741c593-1680470723e8579b75-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img_2.png",
+            "mobile_image": "shopify:\/\/shop_images\/img_2.png",
+            "badge": "",
+            "title": "IMPROVE YOUR FUNDAMENTAL SKILLS WITH ZILDJIAN WORKOUTS",
+            "heading_size": "h3",
+            "heading_color": "",
+            "link": "",
+            "column_type": "Newest",
+            "instruments": "Play-Along-Tracks",
+            "types": ""
+          }
+        },
+        "fd2e937a-da9d-414c-8e9e-23d87474e397": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_5_e05e5c47-514f-4e00-ae95-f72123872a44.png",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_5_e05e5c47-514f-4e00-ae95-f72123872a44.png",
+            "badge": "",
+            "title": "MODERN JAZZ SOLOS FOR DRUM SET, LESSON SERIES WITH RICH THOMPSON",
+            "heading_size": "h3",
+            "heading_color": "",
+            "link": "shopify:\/\/blogs\/education",
+            "column_type": "Newest",
+            "instruments": "Marching",
+            "types": ""
+          }
+        },
+        "4c0fa697-5fbb-417b-a244-a79fd4e84cec": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img_1.png",
+            "mobile_image": "shopify:\/\/shop_images\/img_1.png",
+            "badge": "",
+            "title": "NEW! ZILDJIAN DRUM SET METHOD",
+            "heading_size": "h3",
+            "heading_color": "",
+            "link": "",
+            "column_type": "Most popular",
+            "instruments": "Musical-Perspectives",
+            "types": ""
+          }
+        },
+        "c675aa49-ed33-4073-bc94-76ce91b515c0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img_2.png",
+            "mobile_image": "shopify:\/\/shop_images\/img_2.png",
+            "badge": "",
+            "title": "IMPROVE YOUR FUNDAMENTAL SKILLS WITH ZILDJIAN WORKOUTS",
+            "heading_size": "h3",
+            "heading_color": "",
+            "link": "",
+            "column_type": "",
+            "instruments": "",
+            "types": "Percussion 101"
+          }
+        },
+        "0ce985a9-e270-4b7f-8be8-ebbec19395fe": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_5_e05e5c47-514f-4e00-ae95-f72123872a44.png",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_5_e05e5c47-514f-4e00-ae95-f72123872a44.png",
+            "badge": "",
+            "title": "MODERN JAZZ SOLOS FOR DRUM SET, LESSON SERIES WITH RICH THOMPSON",
+            "heading_size": "h3",
+            "heading_color": "",
+            "link": "shopify:\/\/blogs\/education",
+            "column_type": "Newest",
+            "instruments": "",
+            "types": ""
+          }
+        },
+        "856cae8e-235e-4c0e-9d66-4e57d3494617": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img_1.png",
+            "mobile_image": "shopify:\/\/shop_images\/img_1.png",
+            "badge": "",
+            "title": "NEW! ZILDJIAN DRUM SET METHOD",
+            "heading_size": "h3",
+            "heading_color": "",
+            "link": "",
+            "column_type": "Most popular",
+            "instruments": "Educational",
+            "types": ""
+          }
+        },
+        "d7fc5197-213b-4f6f-a0a8-77ea99d0685e": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img_2.png",
+            "mobile_image": "shopify:\/\/shop_images\/img_2.png",
+            "badge": "",
+            "title": "IMPROVE YOUR FUNDAMENTAL SKILLS WITH ZILDJIAN WORKOUTS",
+            "heading_size": "h3",
+            "heading_color": "",
+            "link": "",
+            "column_type": "",
+            "instruments": "Play-Along-Tracks",
+            "types": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18431751291172__21f64e66-0b48-4b65-bf15-a4ca2741c593-1680470723e8579b75-0",
+        "template--18431751291172__21f64e66-0b48-4b65-bf15-a4ca2741c593-1680470723e8579b75-1",
+        "template--18431751291172__21f64e66-0b48-4b65-bf15-a4ca2741c593-1680470723e8579b75-2",
+        "fd2e937a-da9d-414c-8e9e-23d87474e397",
+        "4c0fa697-5fbb-417b-a244-a79fd4e84cec",
+        "c675aa49-ed33-4073-bc94-76ce91b515c0",
+        "0ce985a9-e270-4b7f-8be8-ebbec19395fe",
+        "856cae8e-235e-4c0e-9d66-4e57d3494617",
+        "d7fc5197-213b-4f6f-a0a8-77ea99d0685e"
+      ],
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 100,
+        "max_width": "1300"
+      }
+    }
+  },
+  "order": [
+    "3141c904-b6a6-4f2b-a1fe-aa2b9e911af8",
+    "main",
+    "21f64e66-0b48-4b65-bf15-a4ca2741c593"
+  ]
+}

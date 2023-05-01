@@ -1,0 +1,258 @@
+{% comment %}
+  Renders product buy-buttons.
+  Accepts:
+  - product: {Object} product object.
+  - block: {Object} passing the block information.
+  - product_form_id: {String} product form id.
+  - section_id: {String} id of section to which this snippet belongs.
+  - show_pickup_availability:: {Boolean} for the pickup availability. If true the pickup availability is rendered, false - not rendered (optional).
+
+  Usage:
+  {% render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, show_pickup_availability: true %}
+{% endcomment %}
+<div class="buy-buttons-box" {{ block.shopify_attributes }}>
+  {% if block.settings.quantity %}
+  <div
+    id="Quantity-Form-{{ section.id }}"
+    class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}"
+    {{ block.shopify_attributes }}
+  >
+    {% comment %} TODO: enable theme-check once `item_count_for_variant` is accepted as valid filter {% endcomment %}
+    {% # theme-check-disable %}
+    {%- assign cart_qty = cart | item_count_for_variant: product.selected_or_first_available_variant.id -%}
+    {% # theme-check-enable %}
+
+    <quantity-input class="quantity">
+      <button class="quantity__button no-js-hidden" name="minus" type="button">
+        <span class="visually-hidden">
+          {{- 'products.product.quantity.decrease' | t: product: product.title | escape -}}
+        </span>
+        {% render 'icon-minus' %}
+      </button>
+      <input
+        class="quantity__input"
+        type="number"
+        name="quantity"
+        id="Quantity-{{ section.id }}"
+        data-cart-quantity="{{ cart_qty }}"
+        data-min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
+        min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
+        {% if product.selected_or_first_available_variant.quantity_rule.max != null %}
+          data-max="{{ product.selected_or_first_available_variant.quantity_rule.max }}"
+          max="{{ product.selected_or_first_available_variant.quantity_rule.max }}"
+        {% endif %}
+        step="{{ product.selected_or_first_available_variant.quantity_rule.increment }}"
+        value="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
+        form="{{ product_form_id }}"
+      />
+      <button class="quantity__button no-js-hidden" name="plus" type="button">
+        <span class="visually-hidden">
+          {{- 'products.product.quantity.increase' | t: product: product.title | escape -}}
+        </span>
+        {% render 'icon-plus' %}
+      </button>
+    </quantity-input>
+    <div class="quantity__rules caption no-js-hidden">
+      {%- if product.selected_or_first_available_variant.quantity_rule.increment > 1 -%}
+        <span class="divider">
+          {{-
+            'products.product.quantity.multiples_of'
+            | t: quantity: product.selected_or_first_available_variant.quantity_rule.increment
+          -}}
+        </span>
+      {%- endif -%}
+      {%- if product.selected_or_first_available_variant.quantity_rule.min > 1 -%}
+        <span class="divider">
+          {{-
+            'products.product.quantity.minimum_of'
+            | t: quantity: product.selected_or_first_available_variant.quantity_rule.min
+          -}}
+        </span>
+      {%- endif -%}
+      {%- if product.selected_or_first_available_variant.quantity_rule.max != null -%}
+        <span class="divider">
+          {{-
+            'products.product.quantity.maximum_of'
+            | t: quantity: product.selected_or_first_available_variant.quantity_rule.max
+          -}}
+        </span>
+      {%- endif -%}
+    </div>
+  </div>
+  {% endif %}
+
+  {%- if product.available -%}
+    <product-form class="product-form">
+      <div class="product-form__error-message-wrapper" role="alert" hidden>
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          class="icon icon-error"
+          viewBox="0 0 13 13"
+        >
+          <circle cx="6.5" cy="6.50049" r="5.5" stroke="white" stroke-width="2"/>
+          <circle cx="6.5" cy="6.5" r="5.5" fill="#EB001B" stroke="#EB001B" stroke-width="0.7"/>
+          <path d="M5.87413 3.52832L5.97439 7.57216H7.02713L7.12739 3.52832H5.87413ZM6.50076 9.66091C6.88091 9.66091 7.18169 9.37267 7.18169 9.00504C7.18169 8.63742 6.88091 8.34917 6.50076 8.34917C6.12061 8.34917 5.81982 8.63742 5.81982 9.00504C5.81982 9.37267 6.12061 9.66091 6.50076 9.66091Z" fill="white"/>
+          <path d="M5.87413 3.17832H5.51535L5.52424 3.537L5.6245 7.58083L5.63296 7.92216H5.97439H7.02713H7.36856L7.37702 7.58083L7.47728 3.537L7.48617 3.17832H7.12739H5.87413ZM6.50076 10.0109C7.06121 10.0109 7.5317 9.57872 7.5317 9.00504C7.5317 8.43137 7.06121 7.99918 6.50076 7.99918C5.94031 7.99918 5.46982 8.43137 5.46982 9.00504C5.46982 9.57872 5.94031 10.0109 6.50076 10.0109Z" fill="white" stroke="#EB001B" stroke-width="0.7">
+        </svg>
+        <span class="product-form__error-message"></span>
+      </div>
+
+      {%- form 'product',
+        product,
+        id: product_form_id,
+        class: 'form',
+        novalidate: 'novalidate',
+        data-type: 'add-to-cart-form'
+      -%}
+        <input
+          type="hidden"
+          name="id"
+          value="{{ product.selected_or_first_available_variant.id }}"
+          disabled
+          class="product-variant-id"
+        >
+        <div class="product-form__buttons">
+          {%- liquid
+            assign check_against_inventory = true
+            if product.selected_or_first_available_variant.inventory_management != 'shopify' or  product.selected_or_first_available_variant.inventory_policy == 'continue'
+              assign check_against_inventory = false
+            endif
+            if product.selected_or_first_available_variant.quantity_rule.min > product.selected_or_first_available_variant.inventory_quantity and check_against_inventory
+              assign quantity_rule_soldout = true
+            endif
+          -%}
+          <button
+            id = "ProductSubmitButton-{{ section_id }}"
+            type="submit"
+            name="add"
+            class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
+            {% if product.selected_or_first_available_variant.available == false or quantity_rule_soldout %}
+              disabled
+            {% endif %}
+          >
+            <span>
+              {%- if product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
+                {{ 'products.product.sold_out' | t }}
+              {%- else -%}
+                {{ 'products.product.add_to_cart' | t }}
+              {%- endif -%}
+            </span>
+            <div class="loading-overlay__spinner hidden">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                class="spinner"
+                viewBox="0 0 66 66"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+              </svg>
+            </div>
+          </button>
+          {%- if block.settings.show_dynamic_checkout -%}
+            {{ form | payment_button }}
+          {%- endif -%}
+        </div>
+      {%- endform -%}
+    </product-form>
+    <div {{ block.shopify_attributes }}>
+      {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
+      {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
+        <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+        {{ form | payment_terms }}
+      {%- endform -%}
+    </div>
+  {%- else -%}
+    <div class="product-form">
+      <div class="product-form__buttons form">
+        <button
+          type="submit"
+          name="add"
+          class="product-form__submit button button--full-width button--primary"
+          disabled
+        >
+        Add to cart
+        </button>
+      </div>
+    </div>
+    <div class="notification-area">
+      <svg width="21" height="24" viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <mask id="path-1-inside-1_1378_12305" fill="white">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.66196 2.15294C6.63102 2.01242 6.58745 1.87084 6.53068 1.73035C6.11691 0.706209 5.1588 0.127556 4.3907 0.43789C3.62259 0.748225 3.33535 1.83003 3.74913 2.85417C3.83429 3.06495 3.94251 3.25686 4.06739 3.42604C1.32191 5.49947 0.206961 9.27894 1.58193 12.6821L2.36643 14.6238C2.91823 15.9896 3.06023 17.4865 2.77507 18.9316C2.65729 19.5285 2.71594 20.1468 2.94386 20.711L3.00955 20.8735C3.41467 21.8763 4.55594 22.3607 5.55865 21.9556L19.544 16.3051C20.5467 15.9 21.0312 14.7587 20.626 13.756L20.5604 13.5934C20.3324 13.0293 19.9451 12.5438 19.4458 12.1962C18.2367 11.3548 17.299 10.1793 16.7472 8.81359L15.9627 6.87189C14.442 3.10801 10.4107 1.12875 6.66196 2.15294ZM8.91499 21.0576C8.95714 21.2987 9.02586 21.5416 9.12272 21.7813C9.74338 23.3175 11.2843 24.1436 12.5645 23.6264C13.8447 23.1091 14.3793 21.4445 13.7586 19.9083C13.6618 19.6686 13.5425 19.4461 13.4053 19.2434L8.91499 21.0576Z"/>
+        </mask>
+        <path d="M6.66196 2.15294L4.70877 2.58308L5.16094 4.63634L7.18907 4.08223L6.66196 2.15294ZM4.06739 3.42604L5.27271 5.02203L6.8513 3.82985L5.6765 2.23829L4.06739 3.42604ZM1.58193 12.6821L-0.272437 13.4313L1.58193 12.6821ZM2.36643 14.6238L4.2208 13.8746L2.36643 14.6238ZM2.77507 18.9316L0.812908 18.5445L0.812908 18.5445L2.77507 18.9316ZM2.94386 20.711L4.79823 19.9617L2.94386 20.711ZM3.00955 20.8735L1.15519 21.6228L3.00955 20.8735ZM20.626 13.756L22.4804 13.0068L20.626 13.756ZM20.5604 13.5934L18.706 14.3426L20.5604 13.5934ZM19.4458 12.1962L20.5883 10.5547L20.5883 10.5547L19.4458 12.1962ZM16.7472 8.81359L14.8929 9.5628L16.7472 8.81359ZM15.9627 6.87189L17.8171 6.12267L15.9627 6.87189ZM8.91499 21.0576L8.16578 19.2032L6.66644 19.809L6.94486 21.4019L8.91499 21.0576ZM13.4053 19.2434L15.0617 18.1225L14.1554 16.7833L12.6561 17.389L13.4053 19.2434ZM4.67632 2.47956C4.69147 2.51706 4.70191 2.55193 4.70877 2.58308L8.61516 1.7228C8.56013 1.47291 8.48343 1.22463 8.38505 0.981135L4.67632 2.47956ZM5.13991 2.29226C4.98866 2.35337 4.84289 2.36251 4.73261 2.34814C4.62871 2.33461 4.57206 2.30321 4.5596 2.29568C4.54215 2.28514 4.61586 2.32992 4.67632 2.47956L8.38505 0.981135C8.03173 0.106633 7.4195 -0.649984 6.62753 -1.1283C5.8349 -1.60701 4.74007 -1.86034 3.64148 -1.41648L5.13991 2.29226ZM5.6035 2.10495C5.54304 1.95532 5.56496 1.8719 5.55973 1.8916C5.55599 1.90567 5.53706 1.96761 5.47172 2.04952C5.40236 2.13646 5.29116 2.23115 5.13991 2.29226L3.64148 -1.41648C2.54289 -0.972618 1.93131 -0.0298616 1.69369 0.865103C1.45625 1.75932 1.54144 2.72888 1.89476 3.60338L5.6035 2.10495ZM5.6765 2.23829C5.65256 2.20585 5.62635 2.16151 5.6035 2.10495L1.89476 3.60338C2.04224 3.96839 2.23247 4.30788 2.45827 4.61379L5.6765 2.23829ZM2.86207 1.83004C-0.606525 4.44958 -1.98556 9.1912 -0.272437 13.4313L3.4363 11.9329C2.39948 9.36669 3.25034 6.54936 5.27271 5.02203L2.86207 1.83004ZM-0.272437 13.4313L0.512063 15.373L4.2208 13.8746L3.4363 11.9329L-0.272437 13.4313ZM0.512063 15.373C0.918301 16.3785 1.02284 17.4805 0.812908 18.5445L4.73724 19.3188C5.09762 17.4924 4.91816 15.6006 4.2208 13.8746L0.512063 15.373ZM0.812908 18.5445C0.619903 19.5226 0.716015 20.5358 1.0895 21.4602L4.79823 19.9617C4.71588 19.7579 4.69468 19.5345 4.73724 19.3188L0.812908 18.5445ZM1.0895 21.4602L1.15519 21.6228L4.86392 20.1243L4.79823 19.9617L1.0895 21.4602ZM1.15519 21.6228C1.97408 23.6496 4.28102 24.6288 6.30786 23.8099L4.80944 20.1012C4.80943 20.1012 4.80958 20.1012 4.80989 20.101C4.81021 20.1009 4.81065 20.1008 4.81121 20.1006C4.81236 20.1003 4.81385 20.0999 4.8156 20.0996C4.81922 20.0989 4.82301 20.0986 4.82665 20.0987C4.83366 20.0988 4.83843 20.1002 4.84147 20.1015C4.84451 20.1028 4.84883 20.1052 4.85378 20.1102C4.85635 20.1128 4.85876 20.1157 4.8608 20.1188C4.86178 20.1203 4.86255 20.1216 4.86311 20.1227C4.86338 20.1232 4.86359 20.1236 4.86372 20.1239C4.86386 20.1242 4.86393 20.1243 4.86392 20.1243L1.15519 21.6228ZM6.30786 23.8099L20.2932 18.1595L18.7948 14.4508L4.80944 20.1012L6.30786 23.8099ZM20.2932 18.1595C22.3201 17.3406 23.2993 15.0337 22.4804 13.0068L18.7717 14.5052C18.7717 14.5052 18.7716 14.5051 18.7715 14.5048C18.7714 14.5045 18.7713 14.504 18.7711 14.5035C18.7708 14.5023 18.7704 14.5008 18.7701 14.4991C18.7694 14.4955 18.7691 14.4917 18.7692 14.488C18.7693 14.481 18.7707 14.4762 18.772 14.4732C18.7732 14.4702 18.7757 14.4658 18.7807 14.4609C18.7832 14.4583 18.7862 14.4559 18.7893 14.4539C18.7907 14.4529 18.7921 14.4521 18.7931 14.4516C18.7936 14.4513 18.7941 14.4511 18.7944 14.451C18.7947 14.4508 18.7948 14.4507 18.7948 14.4508L20.2932 18.1595ZM22.4804 13.0068L22.4147 12.8442L18.706 14.3426L18.7717 14.5052L22.4804 13.0068ZM22.4147 12.8442C22.0412 11.9198 21.4066 11.1242 20.5883 10.5547L18.3032 13.8378C18.4837 13.9634 18.6236 14.1388 18.706 14.3426L22.4147 12.8442ZM20.5883 10.5547C19.6982 9.93521 19.0078 9.06985 18.6016 8.06438L14.8929 9.5628C15.5902 11.2888 16.7753 12.7743 18.3032 13.8378L20.5883 10.5547ZM18.6016 8.06438L17.8171 6.12267L14.1084 7.6211L14.8929 9.5628L18.6016 8.06438ZM17.8171 6.12267C15.9239 1.43689 10.8807 -1.07296 6.13486 0.223652L7.18907 4.08223C9.94068 3.33047 12.9601 4.77914 14.1084 7.6211L17.8171 6.12267ZM10.9771 21.0321C10.9329 20.9227 10.903 20.8156 10.8851 20.7133L6.94486 21.4019C7.01127 21.7819 7.11883 22.1605 7.26835 22.5305L10.9771 21.0321ZM11.8153 21.772C11.809 21.7745 11.7258 21.8101 11.5412 21.7112C11.3517 21.6096 11.1213 21.389 10.9771 21.0321L7.26835 22.5305C8.16909 24.76 10.7072 26.5338 13.3137 25.4807L11.8153 21.772ZM11.9043 20.6575C12.0485 21.0144 12.0359 21.3332 11.9702 21.5379C11.9061 21.7373 11.8216 21.7695 11.8153 21.772L13.3137 25.4807C15.9202 24.4276 16.5137 21.3885 15.613 19.1591L11.9043 20.6575ZM11.7489 20.3643C11.8071 20.4503 11.8601 20.5481 11.9043 20.6575L15.613 19.1591C15.4635 18.789 15.2779 18.442 15.0617 18.1225L11.7489 20.3643ZM9.6642 22.912L14.1545 21.0978L12.6561 17.389L8.16578 19.2032L9.6642 22.912Z" fill="#CC9F53" mask="url(#path-1-inside-1_1378_12305)"/>
+      </svg>      
+      <p><a href="#" class="klaviyo-bis-trigger" >Request stock alerts</a>  and we'll let you know when the item is back in stock</p>  
+      <script src="https://a.klaviyo.com/media/js/onsite/onsite.js"></script>
+      <script>
+        var klaviyo = klaviyo || [];
+        klaviyo.init({
+          account: "UBRz8g",
+          platform: "shopify"
+        });
+        klaviyo.enable("backinstock",{ 
+        trigger: {
+          product_page_text: "NOTIFY ME WHEN AVAILABLE",
+          product_page_class: "product-form__submit",
+          product_page_text_align: "center",
+          product_page_margin: "0px",
+          replace_anchor: false
+        },
+        modal: {
+        headline: '{{product.title}}',
+        body_content: "Register to receive a notification when this item comes back in stock.",
+        email_field_label: "Email",
+        button_label: "NOTIFY ME WHEN AVAILABLE",
+        subscription_success_label: "You're in! We'll let you know when it's back.",
+        footer_content: '',
+        additional_styles: "@import url('https://fonts.googleapis.com/css?family=Helvetica+Neue');",
+        drop_background_color: "#000",
+        background_color: "#fff",
+        text_color: "#222",
+        button_text_color: "#fff",
+        button_background_color: "#cc9f53",
+        close_button_color: "#ccc",
+        error_background_color: "#fcd6d7",
+        error_text_color: "#C72E2F",
+        success_background_color: "#d3efcd",
+        success_text_color: "#1B9500"
+        }
+      });
+      </script>
+    </div>
+  {%- endif -%}
+
+  {%- if show_pickup_availability -%}
+    {{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}
+
+    {%- assign pick_up_availabilities = product.selected_or_first_available_variant.store_availabilities
+      | where: 'pick_up_enabled', true
+    -%}
+
+    <pickup-availability
+      class="product__pickup-availabilities no-js-hidden quick-add-hidden"
+      {% if product.selected_or_first_available_variant.available and pick_up_availabilities.size > 0 %}
+        available
+      {% endif %}
+      data-root-url="{{ routes.root_url }}"
+      data-variant-id="{{ product.selected_or_first_available_variant.id }}"
+      data-has-only-default-variant="{{ product.has_only_default_variant }}"
+    >
+      <template>
+        <pickup-availability-preview class="pickup-availability-preview">
+          {% render 'icon-unavailable' %}
+          <div class="pickup-availability-info">
+            <p class="caption-large">{{ 'products.product.pickup_availability.unavailable' | t }}</p>
+            <button class="pickup-availability-button link link--text underlined-link">
+              {{ 'products.product.pickup_availability.refresh' | t }}
+            </button>
+          </div>
+        </pickup-availability-preview>
+      </template>
+    </pickup-availability>
+
+    <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
+    
+  {%- endif -%}
+</div>

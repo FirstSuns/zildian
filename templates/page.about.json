@@ -1,0 +1,775 @@
+{
+  "sections": {
+    "3141c904-b6a6-4f2b-a1fe-aa2b9e911af8": {
+      "type": "image-banner",
+      "blocks": {
+        "template--18142515003684__3141c904-b6a6-4f2b-a1fe-aa2b9e911af8-1679425999b0455fe5-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "THE AVEDIS ZILDJIAN COMPANY",
+            "heading_size": "h1",
+            "uppercase": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18142515003684__3141c904-b6a6-4f2b-a1fe-aa2b9e911af8-1679425999b0455fe5-0"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/hero_4.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Rectangle_5_1.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "content_width": "638",
+        "padding_left": "",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false,
+        "center_mobile": false,
+        "full_mobile": false,
+        "content_padding": 20,
+        "padding_top": 0,
+        "padding_bottom": 68
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 60,
+        "padding_bottom": 100
+      }
+    },
+    "587be28a-eb3e-438b-b650-9bfad50200b8": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--18299388363044__587be28a-eb3e-438b-b650-9bfad50200b8-1679518273b8702dad-0": {
+          "type": "column",
+          "settings": {
+            "badge": "",
+            "title": "",
+            "heading_size": "h3",
+            "heading_color": "",
+            "download_label": "",
+            "download_link": "",
+            "text": "<p>The Zildjian Company has been synonymous with setting the standard for the development and manufacture of high performance musical instruments since 1623. As the world's leading maker of cymbals, drumsticks, and percussion mallets, Zildjian products are sold across the globe, under the Zildjian, Vic Firth, and Balter brands, and are the standard to which all other cymbals, drumsticks and mallets are measured. From the beginner to the world’s greatest rock stars, jazz performers and concert percussionists,<\/p>",
+            "link_label": "",
+            "link": "",
+            "full_link": false,
+            "link_list": "",
+            "blank_link": false
+          }
+        },
+        "template--18299388363044__587be28a-eb3e-438b-b650-9bfad50200b8-1679518273b8702dad-1": {
+          "type": "column",
+          "settings": {
+            "badge": "",
+            "title": "",
+            "heading_size": "h3",
+            "heading_color": "",
+            "download_label": "",
+            "download_link": "",
+            "text": "<p>amateurs and pros alike choose Zildjian, Vic Firth, and Balter products to allow them to experience and share the joy of music.<br\/>Headquartered in Norwell, Massachusetts with offices in Newport, ME, Los Angeles, CA, London, UK, and Singapore, Zildjian products are sold globally through distributors and via a network of dealers. All Zildjian instruments are made in the USA at our cymbal factory in Norwell, MA and drumstick\/mallet factory in Newport, ME.<\/p>",
+            "link_label": "",
+            "link": "",
+            "full_link": false,
+            "link_list": "",
+            "blank_link": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18299388363044__587be28a-eb3e-438b-b650-9bfad50200b8-1679518273b8702dad-0",
+        "template--18299388363044__587be28a-eb3e-438b-b650-9bfad50200b8-1679518273b8702dad-1"
+      ],
+      "settings": {
+        "side_banner": true,
+        "full_width": true,
+        "title": "THE WORLD'S LEADING MAKER OF CYMBALS, DRUMSTICKS, AND MALLETS",
+        "heading_size": "h1",
+        "heading_align": "left",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "mobile_image_ratio": "adapt",
+        "overlay_image": false,
+        "columns_desktop": 2,
+        "swipe_on_desktop": false,
+        "step_style": false,
+        "column_alignment": "left",
+        "no_gap": false,
+        "no_padding": true,
+        "number": false,
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "mobile_overlay": false,
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "max_width": "1200"
+      }
+    },
+    "49f4702e-b91f-4166-a532-1ea74b414ae9": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18299388363044__49f4702e-b91f-4166-a532-1ea74b414ae9-16795183920f39af42-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "OUR VISION",
+            "heading_link": "",
+            "heading_size": "h1",
+            "heading_color": "#000000",
+            "max_width": ""
+          }
+        },
+        "template--18299388363044__49f4702e-b91f-4166-a532-1ea74b414ae9-16795183920f39af42-1": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>WE INSPIRE PEOPLE TO EXPRESS THEMSELVES THROUGH MUSIC<\/h3>",
+            "text_style": "body",
+            "color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18299388363044__49f4702e-b91f-4166-a532-1ea74b414ae9-16795183920f39af42-0",
+        "template--18299388363044__49f4702e-b91f-4166-a532-1ea74b414ae9-16795183920f39af42-1"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.image-with-text.mobile-full-width--true .image-with-text__media-item {padding-left: 20px; padding-right: 20px; }}"
+      ],
+      "settings": {
+        "tag": "",
+        "side_banner": false,
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/Zildjian-Our-Vision.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Zildjian-Our-Vision-Mobile.jpg",
+        "side_image": "shopify:\/\/shop_images\/side_6b98a249-05a4-4c57-94a3-0d2a4cf3290e.jpg",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "container_image": false,
+        "media_max_width": "",
+        "desktop_content_position": "top",
+        "content_align": "left",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "accent-2",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "overlay_section": false,
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "quote": false,
+        "max_width": "347"
+      }
+    },
+    "89ecb92c-b40f-45f6-8d75-85800b4deabf": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--18299388363044__89ecb92c-b40f-45f6-8d75-85800b4deabf-1679518273b8702dad-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img_3.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/img_3.jpg",
+            "badge": "",
+            "title": "Own it!",
+            "heading_size": "h3",
+            "heading_color": "#cc9f53",
+            "download_label": "",
+            "download_link": "",
+            "text": "<p>Treat the company like it is your own. Everyone is accountable and responsible not only for their work but for the instruments and services we provide to the musical community, our partners and each other.<\/p>",
+            "link_label": "",
+            "link": "",
+            "full_link": false,
+            "link_list": "",
+            "blank_link": false
+          }
+        },
+        "template--18299388363044__89ecb92c-b40f-45f6-8d75-85800b4deabf-1679518273b8702dad-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img_4.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/img_4.jpg",
+            "badge": "",
+            "title": "Live to play",
+            "heading_size": "h3",
+            "heading_color": "#cc9f53",
+            "download_label": "",
+            "download_link": "",
+            "text": "<p>Work hard, play harder. Live to play embodies our passion for music and culture we choose to build together. We are driven to help everyone express themselves through music.<\/p>",
+            "link_label": "",
+            "link": "",
+            "full_link": false,
+            "link_list": "",
+            "blank_link": false
+          }
+        },
+        "template--18299388363044__89ecb92c-b40f-45f6-8d75-85800b4deabf-1679518273b8702dad-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Our-Values-Better-Together.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Our-Values-Better-Together-Mobile.jpg",
+            "badge": "",
+            "title": "Better together",
+            "heading_size": "h3",
+            "heading_color": "#cc9f53",
+            "download_label": "",
+            "download_link": "",
+            "text": "<p>We are at our best when we work, listen and collaborate together. Antone can contribuite a great idea. We embrace Diversity, as diverse percisions and results for everyone. Our relationships with artists, educators, and the broader music community are vital to spread the love of the music.<\/p>",
+            "link_label": "",
+            "link": "",
+            "full_link": false,
+            "link_list": "",
+            "blank_link": false
+          }
+        },
+        "4d89f675-0b01-482e-b133-57c1902b78c6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Our-Values-Innovation-Mobile.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Our-Values-Innovation-Mobile.jpg",
+            "badge": "",
+            "title": "A Tradition of Innovation",
+            "heading_size": "h3",
+            "heading_color": "#cc9f53",
+            "download_label": "",
+            "download_link": "",
+            "text": "<p>Continuous improvement and experimentation is in our DNA.  We are the culmination of hundreds of years of learnings and innovation.  By refusing to rest on our laurels, we will continue to be leaders.<\/p>",
+            "link_label": "",
+            "link": "",
+            "full_link": false,
+            "link_list": "",
+            "blank_link": false
+          }
+        },
+        "bd1641c3-0c37-444d-8ef6-8eb084fedd63": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Our-Values-Family.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Our-Values-Family-Mobile.jpg",
+            "badge": "",
+            "title": "Family",
+            "heading_size": "h3",
+            "heading_color": "#cc9f53",
+            "download_label": "",
+            "download_link": "",
+            "text": "<p>Family is everything. As the oldest family business in the US, we know that nothing we do is possible without our entire family of diverse musicians, employees, partners, artists, and educators.  Our family is committed to fostering a culture of integrity, inclusivity, and mutual respect.<\/p>",
+            "link_label": "",
+            "link": "",
+            "full_link": false,
+            "link_list": "",
+            "blank_link": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18299388363044__89ecb92c-b40f-45f6-8d75-85800b4deabf-1679518273b8702dad-0",
+        "template--18299388363044__89ecb92c-b40f-45f6-8d75-85800b4deabf-1679518273b8702dad-1",
+        "template--18299388363044__89ecb92c-b40f-45f6-8d75-85800b4deabf-1679518273b8702dad-2",
+        "4d89f675-0b01-482e-b133-57c1902b78c6",
+        "bd1641c3-0c37-444d-8ef6-8eb084fedd63"
+      ],
+      "settings": {
+        "side_banner": true,
+        "full_width": true,
+        "title": "OUR VALUES",
+        "heading_size": "h1",
+        "heading_align": "left",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "mobile_image_ratio": "adapt",
+        "overlay_image": false,
+        "columns_desktop": 2,
+        "swipe_on_desktop": true,
+        "step_style": false,
+        "column_alignment": "left",
+        "no_gap": false,
+        "no_padding": true,
+        "number": false,
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "mobile_overlay": false,
+        "padding_top": 56,
+        "padding_bottom": 36,
+        "max_width": ""
+      }
+    },
+    "582acd4e-23dd-44a7-b803-6169f54f51e0": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--18299388363044__582acd4e-23dd-44a7-b803-6169f54f51e0-167952150216234bf3-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Zildjian-Website.gif",
+            "mobile_image": "shopify:\/\/shop_images\/Zildjian-Website-Mobile.jpg",
+            "badge": "",
+            "title": "",
+            "heading_size": "h3",
+            "heading_color": "",
+            "download_label": "",
+            "download_link": "",
+            "text": "<p>The leader in cymbals dating back to 1623, Zildjian has been at the forefront of instrument-making for centuries. Zildjian continues to follow the music and deliver the best instruments and tools to deliver your sound.<\/p>",
+            "link_label": "THE BRAND JOURNEY",
+            "link": "shopify:\/\/pages\/brand",
+            "full_link": false,
+            "link_list": "",
+            "blank_link": false
+          }
+        },
+        "template--18299388363044__582acd4e-23dd-44a7-b803-6169f54f51e0-167952150216234bf3-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vic-Firth-Website.gif",
+            "mobile_image": "shopify:\/\/shop_images\/Vic-Firth-Website-Mobile.jpg",
+            "badge": "",
+            "title": "",
+            "heading_size": "h3",
+            "heading_color": "",
+            "download_label": "",
+            "download_link": "",
+            "text": "<p>For 60 years, Vic Firth has focused on developing and manufacturing your perfect pair, becoming the world's most popular drumsticks, mallets, alternative implements, and accessories offering the best durability, feel, and sound options across the widest variety of genres and style.<\/p>",
+            "link_label": "THE BRAND JOURNEY",
+            "link": "https:\/\/vicfirth.zildjian.com\/",
+            "full_link": false,
+            "link_list": "",
+            "blank_link": true
+          }
+        },
+        "template--18299388363044__582acd4e-23dd-44a7-b803-6169f54f51e0-167952150216234bf3-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Balter-Website_71da52c7-ba51-4b15-b028-8b58f8499816.gif",
+            "mobile_image": "shopify:\/\/shop_images\/Balter-Website-Mobile.jpg",
+            "badge": "",
+            "title": "",
+            "heading_size": "h3",
+            "heading_color": "",
+            "download_label": "",
+            "download_link": "https:\/\/www.mikebalter.com\/",
+            "text": "<p>Providing solutions to percussionists' problems in a straightforward way, Balter has developed essential keyboard instrument mallets for musicians dialing into their sound, and offering more nuanced options for those that want to expand and explore. These efforts and dedication to the craft established Balter as the leading mallet manufacturer world-wide.<br\/><\/p>",
+            "link_label": "ABOUT BALTER MALLETS",
+            "link": "https:\/\/www.mikebalter.com\/",
+            "full_link": false,
+            "link_list": "",
+            "blank_link": true
+          }
+        }
+      },
+      "block_order": [
+        "template--18299388363044__582acd4e-23dd-44a7-b803-6169f54f51e0-167952150216234bf3-0",
+        "template--18299388363044__582acd4e-23dd-44a7-b803-6169f54f51e0-167952150216234bf3-1",
+        "template--18299388363044__582acd4e-23dd-44a7-b803-6169f54f51e0-167952150216234bf3-2"
+      ],
+      "settings": {
+        "side_banner": true,
+        "full_width": true,
+        "title": "OUR BRANDS",
+        "heading_size": "h1",
+        "heading_align": "left",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "mobile_image_ratio": "adapt",
+        "overlay_image": false,
+        "columns_desktop": 3,
+        "swipe_on_desktop": false,
+        "step_style": true,
+        "column_alignment": "left",
+        "no_gap": false,
+        "no_padding": true,
+        "number": false,
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "mobile_overlay": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "max_width": ""
+      }
+    },
+    "9a9ca7d2-fc63-42ef-bea8-c8dd72542d69": {
+      "type": "rich-text",
+      "blocks": {
+        "d0129199-e6ef-42a5-977e-2c380c805d7b": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>OUR OFFICES<\/p>",
+            "heading_size": "h1",
+            "max_width": ""
+          }
+        }
+      },
+      "block_order": [
+        "d0129199-e6ef-42a5-977e-2c380c805d7b"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "contnet_type": "list",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "max_width": ""
+      }
+    },
+    "16c04585-bb7a-4568-a7f1-92e92a6e4cbe": {
+      "type": "map",
+      "blocks": {
+        "f6be0e5e-4e5d-479c-8f69-43568bd51f58": {
+          "type": "address",
+          "settings": {
+            "title": "Zildjian West at Centerstaging",
+            "text": "<p>Los Angeles\/ United States<\/p>",
+            "text_mob": "<p>Los Angeles<\/p><p>United States<\/p>",
+            "position_x": 14,
+            "position_y": 40,
+            "desktop_layout": "top",
+            "mobile_layout": "right"
+          }
+        },
+        "a653d44d-5ed0-4dd4-92ab-e9bf3aa5db19": {
+          "type": "address",
+          "settings": {
+            "title": "Avedis Zildjian Company Headquarters",
+            "text": "<p>Phone: 1-800-229-8672<br\/>22 Longwater Drive<br\/>Norwell, MA 02061<br\/>United States<\/p>",
+            "text_mob": "<p>Phone: 1-800-229-8672<br\/>22 Longwater Drive<br\/>Norwell, MA 02061<br\/>United States<\/p>",
+            "position_x": 28,
+            "position_y": 30,
+            "desktop_layout": "bottom",
+            "mobile_layout": "left"
+          }
+        },
+        "e7947143-56ed-4552-87d3-eb6dfc08d9ff": {
+          "type": "address",
+          "settings": {
+            "title": "Zildjian UK",
+            "text": "<p>London \/ United Kingdom<\/p>",
+            "text_mob": "<p>London<\/p><p>United Kingdom<\/p>",
+            "position_x": 51,
+            "position_y": 16,
+            "desktop_layout": "bottom",
+            "mobile_layout": "right"
+          }
+        },
+        "e0b6d281-58d8-4674-a025-0cf4ea0f30c3": {
+          "type": "address",
+          "settings": {
+            "title": "Zildjian Singapore",
+            "text": "<p>Singapore<\/p>",
+            "text_mob": "<p>Singapore<\/p>",
+            "position_x": 82,
+            "position_y": 84,
+            "desktop_layout": "top",
+            "mobile_layout": "right"
+          }
+        }
+      },
+      "block_order": [
+        "f6be0e5e-4e5d-479c-8f69-43568bd51f58",
+        "a653d44d-5ed0-4dd4-92ab-e9bf3aa5db19",
+        "e7947143-56ed-4552-87d3-eb6dfc08d9ff",
+        "e0b6d281-58d8-4674-a025-0cf4ea0f30c3"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Layer_1-2.png",
+        "mobile_image": "shopify:\/\/shop_images\/Group_543.png"
+      }
+    },
+    "09eca8f1-4ba1-44d8-92b7-2e6684159d59": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18299388363044__09eca8f1-4ba1-44d8-92b7-2e6684159d59-1679521880a0bec87d-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>OUR LEADERSHIP<\/p>",
+            "heading_size": "h1",
+            "max_width": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18299388363044__09eca8f1-4ba1-44d8-92b7-2e6684159d59-1679521880a0bec87d-0"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "contnet_type": "list",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 100,
+        "max_width": ""
+      }
+    },
+    "9627a3a4-d662-4e6b-b31d-d52fe4c4d0c3": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18299388363044__9627a3a4-d662-4e6b-b31d-d52fe4c4d0c3-1679521908245457a8-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "CRAIGIE ZILDJIAN",
+            "heading_link": "",
+            "heading_size": "h2",
+            "heading_color": "",
+            "max_width": ""
+          }
+        },
+        "5a0c4b2d-7c89-46d3-b8d6-c845192062a9": {
+          "type": "caption",
+          "settings": {
+            "caption": "Executive Chair \/ President",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "large"
+          }
+        },
+        "template--18299388363044__9627a3a4-d662-4e6b-b31d-d52fe4c4d0c3-1679521908245457a8-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In 1976, Craigie Zildjian joined her father (Armand) and grandfather (Avedis) in the family business. This was the first time three generations of Zildjians would work side by side in the family cymbal business. In another first, Craigie became the first woman to be appointed CEO of the company in 1999, a position she held for 20 years.<br\/><br\/>An active member in the musical community, Craigie has served on the New England Conservatory Board and the NAMM International Music Products Association Board, and is a Trustee Emeritus of Berklee College of Music. Currently, Craigie serves on the Advisory Panel for the National Black Musicians Coalition<br\/><br\/>Craigie has a daughter, Samantha.<\/p>",
+            "text_style": "body",
+            "color": "#5c5d60"
+          }
+        }
+      },
+      "block_order": [
+        "template--18299388363044__9627a3a4-d662-4e6b-b31d-d52fe4c4d0c3-1679521908245457a8-0",
+        "5a0c4b2d-7c89-46d3-b8d6-c845192062a9",
+        "template--18299388363044__9627a3a4-d662-4e6b-b31d-d52fe4c4d0c3-1679521908245457a8-1"
+      ],
+      "settings": {
+        "tag": "",
+        "side_banner": false,
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/History-Photo-1_2_1_3.jpg",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "container_image": false,
+        "media_max_width": "",
+        "desktop_content_position": "middle",
+        "content_align": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "background-2",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "overlay_section": false,
+        "padding_top": 0,
+        "padding_bottom": 40,
+        "quote": false,
+        "max_width": "556"
+      }
+    },
+    "572221fb-307b-4d9c-8242-ad44c32acd2c": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18299388363044__572221fb-307b-4d9c-8242-ad44c32acd2c-1679521908245457a8-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "JOHN STEPHANS",
+            "heading_link": "",
+            "heading_size": "h2",
+            "heading_color": "",
+            "max_width": ""
+          }
+        },
+        "011916c6-7f6a-4fc2-9580-730459f08847": {
+          "type": "caption",
+          "settings": {
+            "caption": "CEO",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "large"
+          }
+        },
+        "template--18299388363044__572221fb-307b-4d9c-8242-ad44c32acd2c-1679521908245457a8-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>John is our CEO, having joined Zildjian in 2017 after a series of Sr. Leadership roles at IdeaPaint, Ocean Spray and Gillette. Since joining the company, “John has already had a major impact on the development and execution of the roadmap for growing our family of brands including Zildjian, Vic Firth and Balter Mallets,” said Craigie Zildjian. John is passionate about everything Zildjian and importantly the impact our products have in helping musicians of all ages and skill levels to express themselves.<\/p>",
+            "text_style": "body",
+            "color": "#5c5d60"
+          }
+        }
+      },
+      "block_order": [
+        "template--18299388363044__572221fb-307b-4d9c-8242-ad44c32acd2c-1679521908245457a8-0",
+        "011916c6-7f6a-4fc2-9580-730459f08847",
+        "template--18299388363044__572221fb-307b-4d9c-8242-ad44c32acd2c-1679521908245457a8-1"
+      ],
+      "settings": {
+        "tag": "",
+        "side_banner": false,
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/History-Photo-1_2_2_2.jpg",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "container_image": false,
+        "media_max_width": "",
+        "desktop_content_position": "middle",
+        "content_align": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "background-2",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "overlay_section": false,
+        "padding_top": 0,
+        "padding_bottom": 40,
+        "quote": false,
+        "max_width": "556"
+      }
+    },
+    "73ee9d13-771b-48b9-868d-d1469320c468": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18299388363044__73ee9d13-771b-48b9-868d-d1469320c468-1679521908245457a8-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "DEBBIE ZILDJIAN",
+            "heading_link": "",
+            "heading_size": "h2",
+            "heading_color": "",
+            "max_width": ""
+          }
+        },
+        "d6171887-513b-415e-929f-06800128ffbc": {
+          "type": "caption",
+          "settings": {
+            "caption": "Member Of The Board Of Directors, Formerly Senior Vice President Of Human Resources.",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "large"
+          }
+        },
+        "template--18299388363044__73ee9d13-771b-48b9-868d-d1469320c468-1679521908245457a8-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Debbie’s career at Zildjian started in the factory, where she was taught the proprietary process for the secret alloy by her father Armand. Shortly thereafter, she assumed responsibility for that process, and continues in that oversight role to this day.<br\/><br\/>For the past twenty-two years, Debbie has been responsible for Zildjian’s Human Resources function. As such, she played a critical role in the integration of the Vic Firth and Balter acquisitions.<br\/><br\/>Debbie has two daughters, Cady and Emily, both 15th Generation shareholders.<\/p>",
+            "text_style": "body",
+            "color": "#5c5d60"
+          }
+        }
+      },
+      "block_order": [
+        "template--18299388363044__73ee9d13-771b-48b9-868d-d1469320c468-1679521908245457a8-0",
+        "d6171887-513b-415e-929f-06800128ffbc",
+        "template--18299388363044__73ee9d13-771b-48b9-868d-d1469320c468-1679521908245457a8-1"
+      ],
+      "settings": {
+        "tag": "",
+        "side_banner": false,
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/History-Photo-1_2_1_4.jpg",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "container_image": false,
+        "media_max_width": "",
+        "desktop_content_position": "middle",
+        "content_align": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "background-2",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "overlay_section": false,
+        "padding_top": 0,
+        "padding_bottom": 40,
+        "quote": false,
+        "max_width": "556"
+      }
+    },
+    "578c17c9-8e48-410b-a17a-ec597b1885a9": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18299388363044__578c17c9-8e48-410b-a17a-ec597b1885a9-1679521908245457a8-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "CADY ZILDJIAN",
+            "heading_link": "",
+            "heading_size": "h2",
+            "heading_color": "",
+            "max_width": ""
+          }
+        },
+        "52ebc7b9-107e-48fe-b064-a720f761cc9f": {
+          "type": "caption",
+          "settings": {
+            "caption": "Vice Chair, Board Of Directors",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "large"
+          }
+        },
+        "template--18299388363044__578c17c9-8e48-410b-a17a-ec597b1885a9-1679521908245457a8-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Cady is the daughter of Debbie Zildjian and the granddaughter of Armand Zildjian. She is the oldest of the 15th generation of Zildjian shareholders.<br\/><br\/>After graduating from Colgate University in 2002, Cady worked as Senior Account Manager at SmartPak, a fast-growing supplier of supplements and accessories for animals. Five years later, she joined the family business as Manager of Z Gear, the Zildjian line of apparel and accessories.<br\/><br\/>Upon earning an MBA from Babson College, Cady was appointed to the Board of Directors, and was later elevated to Vice Chair of the Board in 2021.<\/p>",
+            "text_style": "body",
+            "color": "#5c5d60"
+          }
+        }
+      },
+      "block_order": [
+        "template--18299388363044__578c17c9-8e48-410b-a17a-ec597b1885a9-1679521908245457a8-0",
+        "52ebc7b9-107e-48fe-b064-a720f761cc9f",
+        "template--18299388363044__578c17c9-8e48-410b-a17a-ec597b1885a9-1679521908245457a8-1"
+      ],
+      "settings": {
+        "tag": "",
+        "side_banner": false,
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/History-Photo-1_2_2_3.jpg",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "container_image": false,
+        "media_max_width": "",
+        "desktop_content_position": "middle",
+        "content_align": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "background-2",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "overlay_section": false,
+        "padding_top": 0,
+        "padding_bottom": 24,
+        "quote": false,
+        "max_width": "556"
+      }
+    }
+  },
+  "order": [
+    "3141c904-b6a6-4f2b-a1fe-aa2b9e911af8",
+    "main",
+    "587be28a-eb3e-438b-b650-9bfad50200b8",
+    "49f4702e-b91f-4166-a532-1ea74b414ae9",
+    "89ecb92c-b40f-45f6-8d75-85800b4deabf",
+    "582acd4e-23dd-44a7-b803-6169f54f51e0",
+    "9a9ca7d2-fc63-42ef-bea8-c8dd72542d69",
+    "16c04585-bb7a-4568-a7f1-92e92a6e4cbe",
+    "09eca8f1-4ba1-44d8-92b7-2e6684159d59",
+    "9627a3a4-d662-4e6b-b31d-d52fe4c4d0c3",
+    "572221fb-307b-4d9c-8242-ad44c32acd2c",
+    "73ee9d13-771b-48b9-868d-d1469320c468",
+    "578c17c9-8e48-410b-a17a-ec597b1885a9"
+  ]
+}

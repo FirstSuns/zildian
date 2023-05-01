@@ -1,0 +1,109 @@
+{{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
+{{ 'component-rte.css' | asset_url | stylesheet_tag }}
+{{ 'custom-image-text.scss.css' | asset_url | stylesheet_tag }}
+{%- style -%}
+  .section-{{ object.id }}-padding {
+    padding-top: {{ object.settings.padding_top | times: 0.35 | round: 0 }}px;
+    padding-bottom: {{ object.settings.padding_bottom | times: 0.25 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ object.id }}-padding {
+      padding-top: {{ object.settings.padding_top }}px;
+      padding-bottom: {{ object.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="image-with-text side-banner--{{object.settings.side_banner}} image-with-text--{{ object.settings.content_layout }}  {% if object.settings.full_width == false %}page-width{% endif %} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless object.settings.color_scheme == 'background-1' and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %} section-{{ object.id }}-padding">
+  <div class="image-with-text__grid adapted-image--{{object.settings.asapted_media}} grid grid--gapless grid--1-col width--{{object.settings.desktop_image_width}} {% if object.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %} {% if object.settings.mobile_layout == 'text_first' %} mobile_image-with-text__grid--reverse{% endif %}" style="align-items: center;">
+    <div class="image-with-text__media-item image-with-text__media-item--{{ object.settings.desktop_image_width }} image-with-text__media-item--{{ object.settings.desktop_content_position }} grid__item">
+      <div
+        class="image-with-text__media image-with-text__media--{{ object.settings.height }} gradient color-{{ object.settings.color_scheme }} global-media-settings {% if object.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
+        {% if object.settings.height == 'adapt' and object.settings.image != blank %}
+          style="padding-bottom: {{ 1 | divided_by: object.settings.image.aspect_ratio | times: 100 }}%;"
+        {% endif %}
+      >
+      
+        {%- if object.settings.image != blank -%}
+          {%- capture sizes -%}
+            (min-width: {{ settings.page_width }}px) 2048px,
+            (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
+          {%- endcapture -%}
+          {% if collection.metafields.global.banner_video != blank %}
+          {% include 'collection-video', section: object %}
+          {% else %}
+          {{
+            object.settings.image
+            | image_url: width: 1500
+            | image_tag: loading: 'lazy', sizes: sizes, widths: '165, 360, 535, 750, 1070, 1500'
+          }}
+          {% endif %}
+        {%- endif -%}
+      </div>
+    </div>
+    <div class="image-with-text__text-item grid__item">
+      <div
+        id="ImageWithText--{{ section.id }}"
+        class="image-with-text__content horizontal-align-content--{{object.settings.content_align}} image-with-text__content--{{ object.settings.desktop_content_position }} image-with-text__content--desktop-{{ object.settings.desktop_content_alignment }} image-with-text__content--mobile-{{ object.settings.mobile_content_alignment }} image-with-text__content--{{ object.settings.height }} gradient color-{{ object.settings.color_scheme }} content-container" 
+      >
+        <div class="info" style="max-width: {{object.settings.max_width}}px;">
+          {% if object.settings.quote %}
+          <svg width="42" height="36" viewBox="0 0 42 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15.9375 35.8125H0.1875V27.125C0.1875 21.6667 0.854167 16.9583 2.1875 13C3.5625 9 5.85417 4.91667 9.0625 0.75L15.1875 5.5625C13.6458 7.8125 12.5 9.75 11.75 11.375C11.0417 13 10.3333 15.1667 9.625 17.875H15.9375V35.8125ZM41.4375 35.8125H25.6875V27.125C25.6875 21.6667 26.3542 16.9583 27.6875 13C29.0208 9 31.3125 4.91667 34.5625 0.75L40.6875 5.5625C39.1458 7.8125 38 9.75 37.25 11.375C36.5417 13 35.8333 15.1667 35.125 17.875H41.4375V35.8125Z" fill="currentColor"/>
+          </svg>  
+          {% endif %}
+          <div class="text">
+              {% if object.settings.icon_image != blank  %}
+              <div class="icon">
+                {{
+                  object.settings.icon_image
+                  | image_url: width: 192
+                  | image_tag: loading: 'lazy'
+                }}
+              </div>
+              {% endif %}
+
+              {% if object.settings.caption != blank %}
+                <p
+                  class="image-with-text__text image-with-text__text--caption {{ object.settings.caption_text_style }} {{ object.settings.caption_text_style }}--{{ object.settings.text_size }} {{ object.settings.caption_text_style }}"
+                  {{ block.shopify_attributes }}
+                >
+                  {{ object.settings.caption | escape }}
+                </p>
+              {% endif %}
+
+              {% if object.settings.heading != blank  %}
+                <h2 class="image-with-text__heading {{ object.settings.heading_size }}" {{ block.shopify_attributes }} style="color:{{object.settings.heading_color}}">
+                  {{ object.settings.heading | escape }}
+                </h2>
+              {% endif %}
+              
+              {% if object.settings.text != blank %}
+                <div class="image-with-text__text rte {{ object.settings.text_style }}" {{ block.shopify_attributes }}>
+                  {{ object.settings.text }}
+                </div>
+              {% endif %}
+
+              {%- if object.settings.button_label != blank -%}
+                <a
+                  {% if object.settings.button_link == blank %}
+                    role="link" aria-disabled="true"
+                  {% else %}
+                    href="{{ object.settings.button_link }}"
+                  {% endif %}
+                  class="{% if object.settings.link %}link {% else %}button {% endif %}{% if object.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+                  {{ block.shopify_attributes }}
+                >
+                  {{ object.settings.button_label | escape }}
+                  {% if object.settings.link %}
+                  <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
+                  {% endif %}
+                </a>
+              {%- endif -%}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

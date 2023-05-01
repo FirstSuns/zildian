@@ -1,0 +1,540 @@
+{
+  "sections": {
+    "3141c904-b6a6-4f2b-a1fe-aa2b9e911af8": {
+      "type": "image-banner",
+      "blocks": {
+        "d88c72ac-a204-4931-9330-91b5bb6a11d4": {
+          "type": "heading",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/K_Zildjian_Series_Page_White_Logo_1.png",
+            "heading": "DARK & RICH",
+            "heading_size": "h1",
+            "uppercase": true
+          }
+        }
+      },
+      "block_order": [
+        "d88c72ac-a204-4931-9330-91b5bb6a11d4"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/K-Family-Hero-Banner-Collage.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/K-Family-Hero-Banner-Collage-Mobile_ac840064-ac16-4185-a82e-ae01797e681b.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "content_width": "",
+        "padding_left": "",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false,
+        "center_mobile": false,
+        "full_mobile": false,
+        "content_padding": 20,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "361823d1-2289-4ef5-b1fe-5918c1e7c9dc": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18433034322212__361823d1-2289-4ef5-b1fe-5918c1e7c9dc-1680479665bf930fb0-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "EXPRESS YOUR STYLE",
+            "heading_link": "",
+            "heading_size": "h2",
+            "heading_color": "",
+            "max_width": ""
+          }
+        },
+        "template--18433034322212__361823d1-2289-4ef5-b1fe-5918c1e7c9dc-1680479665bf930fb0-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With their lighter weight and lower pitch, K family cymbals offer a more robust sound perfect for acoustic performances and intimate settings.<\/p>",
+            "text_style": "body",
+            "color": ""
+          }
+        },
+        "template--18433034322212__361823d1-2289-4ef5-b1fe-5918c1e7c9dc-1680479665bf930fb0-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Find Your K",
+            "button_link": "shopify:\/\/collections\/default-category-cymbals-drum-set-k-family-k-zildjian",
+            "link": false,
+            "blank_button": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18433034322212__361823d1-2289-4ef5-b1fe-5918c1e7c9dc-1680479665bf930fb0-0",
+        "template--18433034322212__361823d1-2289-4ef5-b1fe-5918c1e7c9dc-1680479665bf930fb0-1",
+        "template--18433034322212__361823d1-2289-4ef5-b1fe-5918c1e7c9dc-1680479665bf930fb0-2"
+      ],
+      "settings": {
+        "tag": "",
+        "side_banner": false,
+        "full_width": false,
+        "image": "shopify:\/\/shop_images\/img_dd63672a-9c0a-44b0-8280-b8bc14d42375.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=Y4CwHKzByzY",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "container_image": false,
+        "media_max_width": "",
+        "desktop_content_position": "middle",
+        "content_align": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "accent-3",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "center",
+        "overlay_section": true,
+        "padding_top": 60,
+        "padding_bottom": 0,
+        "quote": false,
+        "max_width": "425"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 60,
+        "padding_bottom": 100
+      }
+    },
+    "df23a3ba-459d-45b3-9161-98d45e09d636": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18433034322212__df23a3ba-459d-45b3-9161-98d45e09d636-1680479665bf930fb0-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "K CONSTANTINOPLE",
+            "heading_link": "shopify:\/\/collections\/default-category-cymbals-drum-set-k-family-k-constantinople",
+            "heading_size": "h2",
+            "heading_color": "",
+            "max_width": ""
+          }
+        },
+        "template--18433034322212__df23a3ba-459d-45b3-9161-98d45e09d636-1680479665bf930fb0-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The legendary \"K Con\" is the pinnacle of the Zildjian cymbal line, renowned for its perfect blended sound quality. Complex hammering contributes to the cymbal's unique sonic identity and dark tones that can be at once cutting and smooth.<\/p>",
+            "text_style": "body",
+            "color": ""
+          }
+        },
+        "fae67601-dded-4172-a7d1-c9d0c8078769": {
+          "type": "tags",
+          "settings": {
+            "button_label_1": "Band & Orchestral",
+            "button_link_1": "shopify:\/\/collections\/cymbals-band-orchestral",
+            "button_label_2": "Crash",
+            "button_link_2": "shopify:\/\/collections\/cymbals-browse-by-types-crash",
+            "button_label_3": "Ride",
+            "button_link_3": "shopify:\/\/collections\/cymbals-browse-by-types-ride",
+            "button_label_4": "",
+            "button_link_4": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18433034322212__df23a3ba-459d-45b3-9161-98d45e09d636-1680479665bf930fb0-0",
+        "template--18433034322212__df23a3ba-459d-45b3-9161-98d45e09d636-1680479665bf930fb0-1",
+        "fae67601-dded-4172-a7d1-c9d0c8078769"
+      ],
+      "settings": {
+        "tag": "",
+        "side_banner": false,
+        "full_width": false,
+        "image": "shopify:\/\/shop_images\/K_Con_Series_Page_Logo_1.png",
+        "second_image": "shopify:\/\/shop_images\/k1116-angle-shot_1.png",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "container_image": false,
+        "media_max_width": "",
+        "desktop_content_position": "top",
+        "content_align": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "align_center",
+        "color_scheme": "background-1",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "overlay_section": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "quote": false,
+        "max_width": "600"
+      }
+    },
+    "a1c8156f-7006-49f9-b938-f700fa797764": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18433034322212__a1c8156f-7006-49f9-b938-f700fa797764-1680479665bf930fb0-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "K CUSTOM",
+            "heading_link": "shopify:\/\/collections\/default-category-cymbals-drum-set-k-family-k-custom",
+            "heading_size": "h2",
+            "heading_color": "",
+            "max_width": ""
+          }
+        },
+        "template--18433034322212__a1c8156f-7006-49f9-b938-f700fa797764-1680479665bf930fb0-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Drawing from the spirit of the legendary K Zildjian range, K Custom cymbals are dark, rich and dry and enable today's drummers to utilize complex K sounds in a more modern musical environment.<\/p>",
+            "text_style": "body",
+            "color": ""
+          }
+        },
+        "41e437d8-f33f-46df-8198-7bd982672c81": {
+          "type": "tags",
+          "settings": {
+            "button_label_1": "Band & Orchestral",
+            "button_link_1": "shopify:\/\/collections\/cymbals-band-orchestral",
+            "button_label_2": "Crash",
+            "button_link_2": "shopify:\/\/collections\/cymbals-browse-by-types-crash",
+            "button_label_3": "Ride",
+            "button_link_3": "shopify:\/\/collections\/cymbals-browse-by-types-ride",
+            "button_label_4": "",
+            "button_link_4": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18433034322212__a1c8156f-7006-49f9-b938-f700fa797764-1680479665bf930fb0-0",
+        "template--18433034322212__a1c8156f-7006-49f9-b938-f700fa797764-1680479665bf930fb0-1",
+        "41e437d8-f33f-46df-8198-7bd982672c81"
+      ],
+      "settings": {
+        "tag": "",
+        "side_banner": false,
+        "full_width": false,
+        "image": "shopify:\/\/shop_images\/k1419-angle-shot_1.png",
+        "second_image": "shopify:\/\/shop_images\/K_Custom_Series_Page_Logo_1.png",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "container_image": false,
+        "media_max_width": "",
+        "desktop_content_position": "top",
+        "content_align": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "overlay_section": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "quote": false,
+        "max_width": ""
+      }
+    },
+    "2f94319b-7a38-49c1-b9d2-b8fb6cdfd1e7": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18433034322212__2f94319b-7a38-49c1-b9d2-b8fb6cdfd1e7-1680479665bf930fb0-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "K ZILDJIAN",
+            "heading_link": "shopify:\/\/collections\/default-category-cymbals-drum-set-k-family-k-zildjian",
+            "heading_size": "h1",
+            "heading_color": "",
+            "max_width": ""
+          }
+        },
+        "template--18433034322212__2f94319b-7a38-49c1-b9d2-b8fb6cdfd1e7-1680479665bf930fb0-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>K Zildjian cymbals continue to inspire drummers today with their deep, warm and expressive sounds developed by Kerope Zildjian in 19th century Turkey.<\/p>",
+            "text_style": "body",
+            "color": ""
+          }
+        },
+        "05a33015-d1dc-4700-8e59-0dcc3e42025f": {
+          "type": "tags",
+          "settings": {
+            "button_label_1": "Band & Orchestral",
+            "button_link_1": "shopify:\/\/collections\/cymbals-band-orchestral",
+            "button_label_2": "Crash",
+            "button_link_2": "shopify:\/\/collections\/cymbals-browse-by-types-crash",
+            "button_label_3": "Ride",
+            "button_link_3": "shopify:\/\/collections\/cymbals-browse-by-types-ride",
+            "button_label_4": "",
+            "button_link_4": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18433034322212__2f94319b-7a38-49c1-b9d2-b8fb6cdfd1e7-1680479665bf930fb0-0",
+        "template--18433034322212__2f94319b-7a38-49c1-b9d2-b8fb6cdfd1e7-1680479665bf930fb0-1",
+        "05a33015-d1dc-4700-8e59-0dcc3e42025f"
+      ],
+      "settings": {
+        "tag": "",
+        "side_banner": false,
+        "full_width": false,
+        "image": "shopify:\/\/shop_images\/K_Zildjian_Series_Page_Logo_K_Zildjian_1.png",
+        "second_image": "shopify:\/\/shop_images\/k0723-angle-shot_1.png",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "container_image": false,
+        "media_max_width": "",
+        "desktop_content_position": "top",
+        "content_align": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "align_center",
+        "color_scheme": "background-1",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "overlay_section": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "quote": false,
+        "max_width": ""
+      }
+    },
+    "db45ecef-c3ed-40be-ac34-ad6d4d6819ec": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18433034322212__db45ecef-c3ed-40be-ac34-ad6d4d6819ec-1680479665bf930fb0-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "KEROPE",
+            "heading_link": "shopify:\/\/collections\/default-category-cymbals-drum-set-k-family-kerope",
+            "heading_size": "h2",
+            "heading_color": "",
+            "max_width": ""
+          }
+        },
+        "template--18433034322212__db45ecef-c3ed-40be-ac34-ad6d4d6819ec-1680479665bf930fb0-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The K Kerope line draws from Zildjian's rich history and cymbal making expertise to bring forth the most authentic vintage K recreation to date. These handcrafted cymbals look as they sound – dark, and complex.<\/p>",
+            "text_style": "body",
+            "color": ""
+          }
+        },
+        "24d10485-4691-4d97-bcca-f2627d3c3db3": {
+          "type": "tags",
+          "settings": {
+            "button_label_1": "Band & Orchestral",
+            "button_link_1": "shopify:\/\/collections\/cymbals-band-orchestral",
+            "button_label_2": "Crash",
+            "button_link_2": "shopify:\/\/collections\/cymbals-browse-by-types-crash",
+            "button_label_3": "Ride",
+            "button_link_3": "shopify:\/\/collections\/cymbals-browse-by-types-ride",
+            "button_label_4": "",
+            "button_link_4": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18433034322212__db45ecef-c3ed-40be-ac34-ad6d4d6819ec-1680479665bf930fb0-0",
+        "template--18433034322212__db45ecef-c3ed-40be-ac34-ad6d4d6819ec-1680479665bf930fb0-1",
+        "24d10485-4691-4d97-bcca-f2627d3c3db3"
+      ],
+      "settings": {
+        "tag": "",
+        "side_banner": false,
+        "full_width": false,
+        "image": "shopify:\/\/shop_images\/krm22r-old-angle_1.png",
+        "second_image": "shopify:\/\/shop_images\/Kerope_Series_Page_Logo_1.png",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "container_image": false,
+        "media_max_width": "",
+        "desktop_content_position": "top",
+        "content_align": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "overlay_section": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "quote": false,
+        "max_width": ""
+      }
+    },
+    "d8479897-2a83-48b5-818d-6a54f496d0a9": {
+      "type": "video",
+      "blocks": {
+        "f5f1c814-bcb6-4080-b2dc-13278e0f51f0": {
+          "type": "title",
+          "settings": {
+            "caption": "K cluster Crashes",
+            "title": "New Product Spotlight",
+            "button_label": "Shop now",
+            "button_link": "shopify:\/\/collections\/default-category-cymbals-drum-set-k-family-k-zildjian"
+          }
+        }
+      },
+      "block_order": [
+        "f5f1c814-bcb6-4080-b2dc-13278e0f51f0"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "cover_image": "shopify:\/\/shop_images\/K-Fat-Hats-Product-Spotlight_bcb7fe24-7d26-4a22-b4a1-a4747a694af4.jpg",
+        "cover_mobile_image": "shopify:\/\/shop_images\/K-Fat-Hats-Product-Spotlight-Mobile_4a7551cb-9500-4f54-a7a7-ca4919855bfe.jpg",
+        "video_url": "https:\/\/youtu.be\/Y4CwHKzByzY",
+        "description": "",
+        "full_width": true,
+        "mobile_full_width": false,
+        "color_scheme": "background-1",
+        "caption_color_scheme": "inverse",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "4803a757-7e31-4693-9d72-92244f5dfdfd": {
+      "type": "article-slider",
+      "blocks": {
+        "template--18433034322212__4803a757-7e31-4693-9d72-92244f5dfdfd-16804826455ecb7e3c-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "EXPRESSIONS OF",
+            "heading_link": "",
+            "heading_size": "h1",
+            "heading_color": ""
+          }
+        },
+        "template--18433034322212__4803a757-7e31-4693-9d72-92244f5dfdfd-16804826455ecb7e3c-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Zildjian’s classic sound is embodied by the K Family and immortalized in countless recordings by the greatest drummers.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "9e2e6553-9a0d-4afe-b6bc-9f4554c331e2": {
+          "type": "article",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sddefault_1_95d27931-771d-48dd-9867-8ab7647ddfb1.jpg",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=XFIYIySQK7M",
+            "article": "artist\/aaron-serfaty"
+          }
+        },
+        "1bcb4642-7bdf-475c-beb3-d36230fc61ac": {
+          "type": "article",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sddefault_1_202aafff-76ad-4d5f-a9d0-f72b0dd1dc2a.jpg",
+            "video_url": "https:\/\/youtu.be\/jDngvBMT2Zc",
+            "article": "artist\/aaron-gillespie"
+          }
+        },
+        "31276d17-fc8e-4fd5-a0e6-f44b1484be33": {
+          "type": "article",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sddefault_1_8460eb12-799c-46a1-a8ba-a9c7bf3a5ad2.jpg",
+            "video_url": "https:\/\/youtu.be\/wNRFHureecQ",
+            "article": "artist\/anderson-paak"
+          }
+        }
+      },
+      "block_order": [
+        "template--18433034322212__4803a757-7e31-4693-9d72-92244f5dfdfd-16804826455ecb7e3c-0",
+        "template--18433034322212__4803a757-7e31-4693-9d72-92244f5dfdfd-16804826455ecb7e3c-1",
+        "9e2e6553-9a0d-4afe-b6bc-9f4554c331e2",
+        "1bcb4642-7bdf-475c-beb3-d36230fc61ac",
+        "31276d17-fc8e-4fd5-a0e6-f44b1484be33"
+      ],
+      "settings": {
+        "side_banner": false,
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/img_vid.png",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "height": "adapt",
+        "desktop_image_width": "large",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "content_align": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "margin_top": 0,
+        "padding_top": 36,
+        "padding_bottom": 100,
+        "quote": false,
+        "max_width": "480"
+      }
+    },
+    "2b9870d7-eeab-4023-bbca-c833ed3b6f79": {
+      "type": "rich-text",
+      "blocks": {
+        "71d2dbc4-63e9-4448-948c-d5567ce1fced": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/K_Con_Series_Page_Logo_2.png"
+          }
+        },
+        "template--18433034322212__2b9870d7-eeab-4023-bbca-c833ed3b6f79-16804883853ea6d8c0-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>EMBRACE YOUR <br\/>DARKER SIDE<\/p>",
+            "heading_size": "h0",
+            "max_width": ""
+          }
+        },
+        "template--18433034322212__2b9870d7-eeab-4023-bbca-c833ed3b6f79-16804883853ea6d8c0-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Find Your K",
+            "button_link": "shopify:\/\/collections\/default-category-cymbals-drum-set-k-family-k-zildjian",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "blank": false
+          }
+        }
+      },
+      "block_order": [
+        "71d2dbc4-63e9-4448-948c-d5567ce1fced",
+        "template--18433034322212__2b9870d7-eeab-4023-bbca-c833ed3b6f79-16804883853ea6d8c0-0",
+        "template--18433034322212__2b9870d7-eeab-4023-bbca-c833ed3b6f79-16804883853ea6d8c0-2"
+      ],
+      "custom_css": [
+        ".rich-text {margin-bottom: 40px;}",
+        "@media screen and (max-width: 749px) {.rich-text .rich-text__blocks.contnet-type--inline .rich-text__heading {max-width: 200px; }}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "contnet_type": "inline",
+        "content_alignment": "left",
+        "color_scheme": "background-2",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "max_width": ""
+      }
+    }
+  },
+  "order": [
+    "3141c904-b6a6-4f2b-a1fe-aa2b9e911af8",
+    "361823d1-2289-4ef5-b1fe-5918c1e7c9dc",
+    "main",
+    "df23a3ba-459d-45b3-9161-98d45e09d636",
+    "a1c8156f-7006-49f9-b938-f700fa797764",
+    "2f94319b-7a38-49c1-b9d2-b8fb6cdfd1e7",
+    "db45ecef-c3ed-40be-ac34-ad6d4d6819ec",
+    "d8479897-2a83-48b5-818d-6a54f496d0a9",
+    "4803a757-7e31-4693-9d72-92244f5dfdfd",
+    "2b9870d7-eeab-4023-bbca-c833ed3b6f79"
+  ]
+}

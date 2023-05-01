@@ -1,0 +1,221 @@
+{
+  "sections": {
+    "3141c904-b6a6-4f2b-a1fe-aa2b9e911af8": {
+      "type": "image-banner",
+      "blocks": {
+        "template--18142515003684__3141c904-b6a6-4f2b-a1fe-aa2b9e911af8-1679425999b0455fe5-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "ZILDJIANUNDERGROUND",
+            "heading_size": "h1",
+            "uppercase": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18142515003684__3141c904-b6a6-4f2b-a1fe-aa2b9e911af8-1679425999b0455fe5-0"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Z-Underground-Page-Banner_1.png",
+        "mobile_image": "shopify:\/\/shop_images\/Z-Underground-Page-Banner_1.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "content_width": "",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false,
+        "center_mobile": true,
+        "full_mobile": false,
+        "content_padding": 20,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 100
+      }
+    },
+    "d5384b51-da84-42f6-ae5a-9a680c08a677": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18718031053092__d5384b51-da84-42f6-ae5a-9a680c08a677-168244574359a98456-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>AN UNDERGROUND MUSICAL ADVENTURE<\/p>",
+            "heading_size": "h1",
+            "max_width": ""
+          }
+        },
+        "template--18718031053092__d5384b51-da84-42f6-ae5a-9a680c08a677-168244574359a98456-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Dive in to Zildjian Underground, a revoluationary series from Zildjian, pairing six top Zildjian Artists with some of the hottest DJs in the industry, for an exclusive pop-up show.  Filmed at Le Poisson Rouge in New York City, this first series of Zildjian Underground episodes takes you on a musical adventure under the musical direction of Zildjian Artist, Karriem Riggins.  Explore new, alternative sounds and fresh beats, in these one-of-a-kind performances. <\/p>",
+            "hide_mobile": false,
+            "max_width": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18718031053092__d5384b51-da84-42f6-ae5a-9a680c08a677-168244574359a98456-0",
+        "template--18718031053092__d5384b51-da84-42f6-ae5a-9a680c08a677-168244574359a98456-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "contnet_type": "list",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "ccc832b0-18d4-49b3-b454-b004b12ae5e8": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "cover_image": "shopify:\/\/shop_images\/jpeg_zunderground_nate_smith_thumb_1.jpg",
+        "video_url": "https:\/\/youtu.be\/ak410L2Z5d8",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "caption_color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "0ad64e14-f6e6-4ed7-8f66-c32123372d8e": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "FEATURED PRODUCTS",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "best-sellers",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "92497ea8-71f4-43ce-ae10-22e1986a11fb": {
+      "type": "article-slider",
+      "blocks": {
+        "b8b1e7a5-168e-4aea-b30c-7cfbb74f1ed7": {
+          "type": "heading",
+          "settings": {
+            "heading": "PAST EPISODES",
+            "heading_link": "",
+            "heading_size": "h1",
+            "heading_color": ""
+          }
+        },
+        "841322b4-1340-4356-a2c5-368fa955ae53": {
+          "type": "article",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/jpeg_zildjian_underground_danziger_thumb_1.jpg",
+            "video_url": "https:\/\/youtu.be\/ZvbbWDoODEI",
+            "article": "artist\/zach-danziger-z"
+          }
+        },
+        "a2ac15a0-9a07-49a4-bc21-87d304ba9893": {
+          "type": "article",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/jpeg_zildjian_underground_fonville_thumb_1.jpg",
+            "video_url": "https:\/\/youtu.be\/fA_sszzNCMk",
+            "article": "artist\/alex-toff"
+          }
+        },
+        "757c154d-c2d3-44a5-ad79-9f5db0267c08": {
+          "type": "article",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2019-07-29_20_54_32-_47_Zildjian_Underground_-_Adam_Deitch_-_YouTube_1.png",
+            "video_url": "https:\/\/youtu.be\/2n1BSd1w96o",
+            "article": "artist\/adam-marcello"
+          }
+        },
+        "a8f3bb36-0867-4932-910a-1d80d94db07e": {
+          "type": "article",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/jpeg_zildjian_underground_colenburg_1.jpg",
+            "video_url": "https:\/\/youtu.be\/-AQednAWltA",
+            "article": "artist\/mark-clark"
+          }
+        },
+        "09154dac-15ba-4316-a8ba-8e22ea4d16bc": {
+          "type": "article",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/jpeg_zildjian_underground_riggins_1.jpg",
+            "video_url": "https:\/\/youtu.be\/ySbv301r02Q",
+            "article": "artist\/karriem-riggins"
+          }
+        },
+        "31564619-fd6d-4dae-b5ef-abe800bcb05e": {
+          "type": "button",
+          "settings": {
+            "button_label": "VIEW ALL IN THIS SERIES",
+            "button_link": "https:\/\/www.youtube.com\/playlist?list=PLpreW_E4-BQzJ6YzaKfScJBXoW6M6fFDs",
+            "link": true
+          }
+        }
+      },
+      "block_order": [
+        "b8b1e7a5-168e-4aea-b30c-7cfbb74f1ed7",
+        "841322b4-1340-4356-a2c5-368fa955ae53",
+        "a2ac15a0-9a07-49a4-bc21-87d304ba9893",
+        "757c154d-c2d3-44a5-ad79-9f5db0267c08",
+        "a8f3bb36-0867-4932-910a-1d80d94db07e",
+        "09154dac-15ba-4316-a8ba-8e22ea4d16bc",
+        "31564619-fd6d-4dae-b5ef-abe800bcb05e"
+      ],
+      "settings": {
+        "side_banner": false,
+        "full_width": true,
+        "height": "adapt",
+        "desktop_image_width": "large",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "content_align": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "margin_top": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "quote": false,
+        "max_width": "500"
+      }
+    }
+  },
+  "order": [
+    "3141c904-b6a6-4f2b-a1fe-aa2b9e911af8",
+    "main",
+    "d5384b51-da84-42f6-ae5a-9a680c08a677",
+    "ccc832b0-18d4-49b3-b454-b004b12ae5e8",
+    "0ad64e14-f6e6-4ed7-8f66-c32123372d8e",
+    "92497ea8-71f4-43ce-ae10-22e1986a11fb"
+  ]
+}

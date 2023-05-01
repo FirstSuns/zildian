@@ -1,0 +1,30 @@
+<div data-section-type="side-banner">
+  {{
+    section.settings.image
+    | image_url: width: 1420
+    | image_tag:
+      loading: 'lazy',
+      sizes: sizes,
+      widths: '275, 550, 710, 1420',
+      class: 'sidebanner-image'
+  }}
+</div>
+
+{% schema %}
+{
+  "name": "Side banner image",
+  "class": "side-banner-section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    }
+  ],
+  "presets": [
+    {
+      "name":"Side banner image"
+    }
+  ]
+}
+{% endschema %}

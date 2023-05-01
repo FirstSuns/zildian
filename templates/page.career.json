@@ -1,0 +1,487 @@
+{
+  "sections": {
+    "3141c904-b6a6-4f2b-a1fe-aa2b9e911af8": {
+      "type": "image-banner",
+      "blocks": {
+        "template--18142515003684__3141c904-b6a6-4f2b-a1fe-aa2b9e911af8-1679425999b0455fe5-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "CAREER OPPORTUNITIES",
+            "heading_size": "h1",
+            "uppercase": false
+          }
+        },
+        "c98427ae-7cc8-480b-9a5e-68cb3d5fba46": {
+          "type": "text",
+          "settings": {
+            "text": "Our team is at the heart of our culture. Come join our family.",
+            "text_style": "subtitle"
+          }
+        },
+        "d30ea954-0c11-47d3-b529-923bb3f717e0": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "See Job Openings",
+            "button_link_1": "https:\/\/recruiting.paylocity.com\/Recruiting\/Jobs\/All\/d11b52b1-5f1f-4f49-b717-27723027dfaf\/AZC-INC",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "blank_button": true
+          }
+        }
+      },
+      "block_order": [
+        "template--18142515003684__3141c904-b6a6-4f2b-a1fe-aa2b9e911af8-1679425999b0455fe5-0",
+        "c98427ae-7cc8-480b-9a5e-68cb3d5fba46",
+        "d30ea954-0c11-47d3-b529-923bb3f717e0"
+      ],
+      "custom_css": [
+        ".banner__box .banner__heading + * {margin-top: 0;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/hero_11.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/hero_12.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "content_width": "",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false,
+        "center_mobile": true,
+        "full_mobile": false,
+        "content_padding": 20,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "90041822-fc9a-4519-aa3c-4292a4625e08": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--18450609439012__90041822-fc9a-4519-aa3c-4292a4625e08-168059154715d07e5f-0": {
+          "type": "column",
+          "settings": {
+            "badge": "",
+            "title": "",
+            "heading_size": "h3",
+            "heading_color": "",
+            "download_label": "",
+            "download_link": "",
+            "text": "<p>The Zildjian Company has been synonymous with setting the standard for the development and manufacturing of high performance musical instruments since 1623. As the world’s leading maker of cymbals, drumsticks and percussion mallets, Zildjian products are sold across the globe, under the Zildjian, Vic Firth and Mike Balter brands, and are the standard to which all other cymbals, drumsticks and mallets are measured.<\/p>",
+            "link_label": "",
+            "link": "",
+            "full_link": false,
+            "link_list": "",
+            "blank_link": false
+          }
+        },
+        "template--18450609439012__90041822-fc9a-4519-aa3c-4292a4625e08-168059154715d07e5f-1": {
+          "type": "column",
+          "settings": {
+            "badge": "",
+            "title": "",
+            "heading_size": "h3",
+            "heading_color": "",
+            "download_label": "",
+            "download_link": "",
+            "text": "<p>The Zildjian Company is more than just leading instrument makers. We are also instrument players. We are music lovers. We believe in the power of music, and what it can do to change the lives of people and the world around us. That's why we're so passionate about our products, our brands, and our work together. See more about the Zildjian Company below. From our people, to our culture, to what makes us groove.<\/p>",
+            "link_label": "",
+            "link": "",
+            "full_link": false,
+            "link_list": "",
+            "blank_link": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18450609439012__90041822-fc9a-4519-aa3c-4292a4625e08-168059154715d07e5f-0",
+        "template--18450609439012__90041822-fc9a-4519-aa3c-4292a4625e08-168059154715d07e5f-1"
+      ],
+      "settings": {
+        "side_banner": false,
+        "full_width": false,
+        "title": "THANK YOU FOR YOUR INTEREST IN ZILDJIAN",
+        "heading_size": "h1",
+        "heading_align": "left",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "mobile_image_ratio": "adapt",
+        "overlay_image": false,
+        "columns_desktop": 2,
+        "swipe_on_desktop": false,
+        "step_style": false,
+        "column_alignment": "left",
+        "no_gap": false,
+        "no_padding": false,
+        "number": false,
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 20,
+        "padding_bottom": 52,
+        "max_width": "1200"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 60,
+        "padding_bottom": 100
+      }
+    },
+    "e17b1f36-86f9-4f87-be7c-b34442140e7e": {
+      "type": "image-banner",
+      "blocks": {
+        "template--18450609439012__e17b1f36-86f9-4f87-be7c-b34442140e7e-1680591655635f78ca-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "PEOPLE AND CULTURE",
+            "heading_size": "h1",
+            "uppercase": false
+          }
+        },
+        "template--18450609439012__e17b1f36-86f9-4f87-be7c-b34442140e7e-1680591655635f78ca-1": {
+          "type": "text",
+          "settings": {
+            "text": "We strive to hire and develop the best talent. People who are passionate about music and our vision. People who are dedicated to growing with our company and shaping the future of our brands. Our diverse team is made up of hardworking, driven, and forward-thinking individuals who really believe that our day-to-day work contributes to the greater good of inspiring musical expression.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--18450609439012__e17b1f36-86f9-4f87-be7c-b34442140e7e-1680591655635f78ca-0",
+        "template--18450609439012__e17b1f36-86f9-4f87-be7c-b34442140e7e-1680591655635f78ca-1"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.banner__heading {font-size: 20px; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/People-and-Culture-Image_2_1.png",
+        "mobile_image": "shopify:\/\/shop_images\/People-and-Culture-Image_2_1.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "content_width": "675",
+        "desktop_content_position": "bottom-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "inverse-2",
+        "mobile_content_alignment": "left",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "center_mobile": false,
+        "full_mobile": false,
+        "content_padding": 60,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "bb971613-28f6-40b2-8c87-e4f6cf6e064e": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18450609439012__bb971613-28f6-40b2-8c87-e4f6cf6e064e-1680591730cc09166e-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "OUR VALUES",
+            "heading_link": "",
+            "heading_size": "h1",
+            "heading_color": "",
+            "max_width": ""
+          }
+        },
+        "template--18450609439012__bb971613-28f6-40b2-8c87-e4f6cf6e064e-1680591730cc09166e-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our values are the pillars on which the Company and brands were built. We live these values each day in all that we do.<\/p>",
+            "text_style": "body",
+            "color": "#5c5d60"
+          }
+        },
+        "template--18450609439012__bb971613-28f6-40b2-8c87-e4f6cf6e064e-1680591730cc09166e-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "See our values",
+            "button_link": "shopify:\/\/pages\/about-us",
+            "link": true,
+            "blank_button": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18450609439012__bb971613-28f6-40b2-8c87-e4f6cf6e064e-1680591730cc09166e-0",
+        "template--18450609439012__bb971613-28f6-40b2-8c87-e4f6cf6e064e-1680591730cc09166e-1",
+        "template--18450609439012__bb971613-28f6-40b2-8c87-e4f6cf6e064e-1680591730cc09166e-2"
+      ],
+      "settings": {
+        "tag": "",
+        "side_banner": false,
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/Our-Values.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Our-Values-Mobile.jpg",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "container_image": false,
+        "media_max_width": "",
+        "desktop_content_position": "top",
+        "content_align": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "background-2",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "overlay_section": false,
+        "padding_top": 100,
+        "padding_bottom": 28,
+        "quote": false,
+        "max_width": "560"
+      }
+    },
+    "25906146-d197-4fc6-839a-161039930255": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18450609439012__25906146-d197-4fc6-839a-161039930255-1680591730cc09166e-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "LIFE AT ZILDJIAN",
+            "heading_link": "",
+            "heading_size": "h1",
+            "heading_color": "",
+            "max_width": ""
+          }
+        },
+        "template--18450609439012__25906146-d197-4fc6-839a-161039930255-1680591730cc09166e-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Life at Zildjian is more than working at one of the greatest cymbal and drumstick factories in the world. It's about embracing music and an occasional impromptu concert in the office or cymbal vault. It's about growth and how your work and your ideas contribute to sharing music with the generations to come. Headquartered just south of Boston, we have a people-first culture. Follow us on Linkedin to see more about Life at Zildjian. From our factory family, to our office, and the latest Zildjian Company news.<\/p>",
+            "text_style": "body",
+            "color": "#5c5d60"
+          }
+        },
+        "template--18450609439012__25906146-d197-4fc6-839a-161039930255-1680591730cc09166e-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "ZILDJIAN ON LINKEDIN",
+            "button_link": "https:\/\/www.linkedin.com\/company\/avedis-zildjian-company\/",
+            "link": true,
+            "blank_button": true
+          }
+        }
+      },
+      "block_order": [
+        "template--18450609439012__25906146-d197-4fc6-839a-161039930255-1680591730cc09166e-0",
+        "template--18450609439012__25906146-d197-4fc6-839a-161039930255-1680591730cc09166e-1",
+        "template--18450609439012__25906146-d197-4fc6-839a-161039930255-1680591730cc09166e-2"
+      ],
+      "settings": {
+        "tag": "",
+        "side_banner": false,
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/Life-At-Zildjian.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Life-At-Zildjian-Mobile.jpg",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "container_image": false,
+        "media_max_width": "",
+        "desktop_content_position": "top",
+        "content_align": "left",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "background-2",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "overlay_section": false,
+        "padding_top": 0,
+        "padding_bottom": 28,
+        "quote": false,
+        "max_width": "560"
+      }
+    },
+    "86478977-e775-4c19-91f2-3f5eff90badf": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18450609439012__86478977-e775-4c19-91f2-3f5eff90badf-1680591730cc09166e-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "YOUR DEVELOPMENT",
+            "heading_link": "",
+            "heading_size": "h1",
+            "heading_color": "",
+            "max_width": ""
+          }
+        },
+        "template--18450609439012__86478977-e775-4c19-91f2-3f5eff90badf-1680591730cc09166e-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The growth of our teams and team members are important to us. We evolve together. That's why we offer opportunities for learning and training programs, tuition reimbursement, and regular development check-ins with supervisors. See how we've grown over the years.<\/p>",
+            "text_style": "body",
+            "color": "#5c5d60"
+          }
+        },
+        "template--18450609439012__86478977-e775-4c19-91f2-3f5eff90badf-1680591730cc09166e-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "THE ZILDJIAN BRAND JOURNEY",
+            "button_link": "shopify:\/\/pages\/brand",
+            "link": true,
+            "blank_button": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18450609439012__86478977-e775-4c19-91f2-3f5eff90badf-1680591730cc09166e-0",
+        "template--18450609439012__86478977-e775-4c19-91f2-3f5eff90badf-1680591730cc09166e-1",
+        "template--18450609439012__86478977-e775-4c19-91f2-3f5eff90badf-1680591730cc09166e-2"
+      ],
+      "settings": {
+        "tag": "",
+        "side_banner": false,
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/History-Photo-1_2_1_1_353b39ba-9b72-491f-9e85-957bafb72723.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/History-Photo-1_2_1_1_353b39ba-9b72-491f-9e85-957bafb72723.jpg",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "container_image": false,
+        "media_max_width": "",
+        "desktop_content_position": "top",
+        "content_align": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "background-2",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "overlay_section": false,
+        "padding_top": 0,
+        "padding_bottom": 28,
+        "quote": false,
+        "max_width": "550"
+      }
+    },
+    "b205807b-4bb5-47c6-817a-62a6824ff286": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18450609439012__b205807b-4bb5-47c6-817a-62a6824ff286-168063532083cfcdf6-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "BENEFITS AT ZILDJIAN",
+            "heading_link": "",
+            "heading_size": "h1",
+            "heading_color": "",
+            "max_width": ""
+          }
+        },
+        "template--18450609439012__b205807b-4bb5-47c6-817a-62a6824ff286-168063532083cfcdf6-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>From medical, dental, 401k, to flex schedules and company events, our benefits exemplify and underscore our corporate values.<\/p>",
+            "text_style": "body",
+            "color": "#5c5d60"
+          }
+        },
+        "template--18450609439012__b205807b-4bb5-47c6-817a-62a6824ff286-168063532083cfcdf6-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "MORE ABOUT THE ZILDJIAN COMPANY",
+            "button_link": "shopify:\/\/pages\/about-us",
+            "link": true,
+            "blank_button": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18450609439012__b205807b-4bb5-47c6-817a-62a6824ff286-168063532083cfcdf6-0",
+        "template--18450609439012__b205807b-4bb5-47c6-817a-62a6824ff286-168063532083cfcdf6-1",
+        "template--18450609439012__b205807b-4bb5-47c6-817a-62a6824ff286-168063532083cfcdf6-2"
+      ],
+      "settings": {
+        "tag": "",
+        "side_banner": false,
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/Benefits.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Benefits.jpg",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "container_image": false,
+        "media_max_width": "",
+        "desktop_content_position": "top",
+        "content_align": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "background-2",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "overlay_section": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "quote": false,
+        "max_width": "556"
+      }
+    },
+    "d8fbed8e-6a1d-4d1b-af4d-a4775e32d570": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18450609439012__d8fbed8e-6a1d-4d1b-af4d-a4775e32d570-16805927052506f666-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>INTERESTED IN JOINING OUR TEAM? CHECK OUT OUR JOB OPENINGS<\/p>",
+            "heading_size": "h1",
+            "max_width": "800"
+          }
+        },
+        "template--18450609439012__d8fbed8e-6a1d-4d1b-af4d-a4775e32d570-16805927052506f666-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "See Job Openings",
+            "button_link": "https:\/\/recruiting.paylocity.com\/Recruiting\/Jobs\/All\/d11b52b1-5f1f-4f49-b717-27723027dfaf\/AZC-INC",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "blank": true
+          }
+        }
+      },
+      "block_order": [
+        "template--18450609439012__d8fbed8e-6a1d-4d1b-af4d-a4775e32d570-16805927052506f666-0",
+        "template--18450609439012__d8fbed8e-6a1d-4d1b-af4d-a4775e32d570-16805927052506f666-2"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.h1 {font-size: 24px; }}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "contnet_type": "list",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "3141c904-b6a6-4f2b-a1fe-aa2b9e911af8",
+    "90041822-fc9a-4519-aa3c-4292a4625e08",
+    "main",
+    "e17b1f36-86f9-4f87-be7c-b34442140e7e",
+    "bb971613-28f6-40b2-8c87-e4f6cf6e064e",
+    "25906146-d197-4fc6-839a-161039930255",
+    "86478977-e775-4c19-91f2-3f5eff90badf",
+    "b205807b-4bb5-47c6-817a-62a6824ff286",
+    "d8fbed8e-6a1d-4d1b-af4d-a4775e32d570"
+  ]
+}

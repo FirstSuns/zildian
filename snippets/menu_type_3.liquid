@@ -1,0 +1,111 @@
+<div data-title="{{block.settings.menu_title}}" class="submenu-content {{block.type}} {{cls}}" style="--grid-desktop-horizontal-spacing: 50px;">
+  <div class="grid">
+    <div class="menu-content">
+      <div class="grid {% if link.links != blank %}sublinks-container{% else %}grid--2-col{% endif %} grid--2-col-desktop grid--2-col-tablet ">
+        <div class="grid__item {% if link.links != blank %}sublinks{% endif %}">
+          {% for link in block.settings.menu.links %}
+            {% assign modulo = forloop.index | modulo: 2 %}
+            {% if modulo == 1  %}
+            <div class="block">
+              <a href="{{link.url}}" class="">
+                {% if link.object.metafields.global.menu_image != blank %}
+                  {% assign image = link.object.metafields.global.menu_image %}
+                {% elsif link.type == 'collection' %}
+                  {% assign image = link.object.products[0].image %}
+                {% endif %}
+                
+                {% if image != blank %}
+                {{
+                  image
+                  | image_url: width: 768
+                  | image_tag: loading: 'lazy', sizes: sizes, widths: '165, 360, 535, 750, 1070, 1500'
+                }}
+                {% endif %}
+                
+                <p class="h5">{{link.title}}</p>
+              </a>
+              {% if link.links != blank %}
+              <ul>
+                {% for sublink in link.links %}
+                <li>
+                  <a href="{{sublink.url}}">{{sublink.title}}</a>
+                </li>
+                {% endfor %}
+              </ul>
+              {% endif %}
+            </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+        <div class="grid__item {% if link.links != blank %}sublinks{% endif %}">
+          {% for link in block.settings.menu.links %}
+            {% assign modulo = forloop.index | modulo: 2 %}
+            {% if modulo == 0  %}
+            <div class="block">
+              <a href="{{link.url}}" class="">
+                {% if link.object.metafields.global.menu_image != blank %}
+                  {% assign image = link.object.metafields.global.menu_image %}
+                {% elsif link.type == 'collection' %}
+                  {% assign image = link.object.products[0].image %}
+                {% endif %}
+                
+                {% if image != blank %}
+                {{
+                  image
+                  | image_url: width: 768
+                  | image_tag: loading: 'lazy', sizes: sizes, widths: '165, 360, 535, 750, 1070, 1500'
+                }}
+                {% endif %}
+                
+                <p class="h5">{{link.title}}</p>
+              </a>
+              {% if link.links != blank %}
+              <ul>
+                {% for sublink in link.links %}
+                <li>
+                  <a href="{{sublink.url}}">{{sublink.title}}</a>
+                </li>
+                {% endfor %}
+              </ul>
+              {% endif %}
+            </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="banner-content">
+      {% if block.settings.banner_1 != blank %}
+      <div class="banner">
+        <a href="{{block.settings.link_1}}">
+          {{
+            block.settings.banner_1
+            | image_url: width: 768
+            | image_tag: loading: 'lazy', sizes: sizes, widths: '165, 360, 535, 750, 1070, 1500'
+          }}
+          <p class="h5">{{block.settings.title_1}}</p>
+          <p class="text">{{block.settings.text_1}}</p>
+        </a>
+      </div>
+      {% endif %}
+
+      {% if block.settings.new_link != blank %}
+        <a class="new-link" href="{{block.settings.new_link}}">New Arrivals</a>
+      {% endif %}
+      
+      {% if block.settings.banner_2 != blank %}
+      <div class="banner">
+        <a href="{{block.settings.link_2}}">
+          {{
+            block.settings.banner_2
+            | image_url: width: 768
+            | image_tag: loading: 'lazy', sizes: sizes, widths: '165, 360, 535, 750, 1070, 1500'
+          }}
+          <p class="h5">{{block.settings.title_2}}</p>
+          <p class="text">{{block.settings.text_2}}</p>
+        </a>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>

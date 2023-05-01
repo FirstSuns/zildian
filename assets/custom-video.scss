@@ -1,0 +1,36 @@
+[data-section-type="video"] {
+  .video-section {
+    &.mobile-full-width--true {
+      @media screen and (max-width: 749px) {
+        margin: 0 -20px;
+        width: calc(100% + 40px);
+      }
+    }
+    .text-content {
+      padding: 30px 0;
+      .info {
+        .title-wrapper-with-link {
+          margin: 0;
+          @media screen and (max-width: 749px) {
+            justify-content: center;
+            text-align: center;
+          }
+          .title {
+            .caption {
+              margin: 0;
+              color: white;
+              text-transform: uppercase;
+            }
+            h2 {
+              margin: 0;
+              text-transform: uppercase;
+              @media screen and (max-width: 749px) {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

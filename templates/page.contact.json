@@ -1,0 +1,107 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "b77198e3-a4ca-424a-85c2-2b7a2396dab4": {
+      "type": "image-banner",
+      "blocks": {
+        "template--18142514970916__b77198e3-a4ca-424a-85c2-2b7a2396dab4-1679417069d255e30b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "CONTACT US",
+            "heading_size": "h2",
+            "uppercase": false
+          }
+        },
+        "template--18142514970916__b77198e3-a4ca-424a-85c2-2b7a2396dab4-1679417069d255e30b-1": {
+          "type": "text",
+          "settings": {
+            "text": "Let us know how we can help. Check out our FAQs first to see if we've already got an answer for you.",
+            "text_style": "subtitle"
+          }
+        },
+        "template--18142514970916__b77198e3-a4ca-424a-85c2-2b7a2396dab4-1679417069d255e30b-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Browse Faqs",
+            "button_link_1": "shopify:\/\/pages\/frequently-asked-questions",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "blank_button": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18142514970916__b77198e3-a4ca-424a-85c2-2b7a2396dab4-1679417069d255e30b-0",
+        "template--18142514970916__b77198e3-a4ca-424a-85c2-2b7a2396dab4-1679417069d255e30b-1",
+        "template--18142514970916__b77198e3-a4ca-424a-85c2-2b7a2396dab4-1679417069d255e30b-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/hero.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Rectangle_5_2e8efde5-b738-4b68-8240-b2cc79942b3e.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "content_width": "720",
+        "padding_left": "",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false,
+        "center_mobile": true,
+        "full_mobile": false,
+        "content_padding": 20,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "blocks": {
+        "6b371672-3e52-4ff3-bb7d-df8eb851fbec": {
+          "type": "content",
+          "settings": {
+            "icon": "<svg width=\"30\" height=\"18\" viewbox=\"0 0 30 18\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<rect x=\"1.75\" y=\"0.75\" width=\"27.1875\" height=\"16.5\" stroke=\"#CC9F53\" stroke-width=\"1.5\"><\/rect>\n<path d=\"M1.28125 2.8125L13.6336 9.17274C14.7928 9.76964 16.1702 9.76405 17.3246 9.15778L29.4063 2.8125\" stroke=\"#CC9F53\" stroke-width=\"1.5\"><\/path>\n<\/svg>",
+            "title": "SEND US A NOTE",
+            "text": "<p>We continue to build on our legacy of listening to drummers’ needs. We welcome all questions, comments, and suggestions.<\/p><p><strong>Attn: Customer Service<br\/>Avedis Zildjian Company International Headquarters<\/strong><\/p><p>22 Longwater Drive<br\/>Norwell, MA 02061<\/p><p>United States of America<\/p>"
+          }
+        },
+        "5fc8b486-47db-4b78-95fe-b458ec7be2ea": {
+          "type": "content",
+          "settings": {
+            "icon": "<svg width=\"23\" height=\"35\" viewbox=\"0 0 23 35\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<rect x=\"0.75\" y=\"0.75\" width=\"21.5\" height=\"33.5\" rx=\"2.25\" stroke=\"#CC9F53\" stroke-opacity=\"0.99\" stroke-width=\"1.5\"><\/rect>\n<circle cx=\"11.5\" cy=\"28.5\" r=\"1.75\" stroke=\"#CC9F53\" stroke-opacity=\"0.99\" stroke-width=\"1.5\"><\/circle>\n<\/svg>",
+            "title": "GIVE US A CALL",
+            "text": "<p>For general assistance, order inquiries, or if you're having trouble with the site or logging in, our team is here to help.<br\/><br\/>For questions about your online order related to status or payment, please contact our fulfillment partner, Quivers.<\/p><ul><li><strong>Zildjian Customer Service<\/strong><br\/>Mon-Fri | 8:30AM-5PM EST<br\/>1-800-229-8672<\/li><li><strong>Quivers Customer Service<\/strong><br\/>Mon-Fri | 6AM-11PM EST<br\/>1-805-250-4555<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "6b371672-3e52-4ff3-bb7d-df8eb851fbec",
+        "5fc8b486-47db-4b78-95fe-b458ec7be2ea"
+      ],
+      "settings": {
+        "heading": "EMAIL US",
+        "heading_size": "h1",
+        "text": "<p>Get in touch with us at <strong>zcustomercare@zildjian.com<\/strong> or fill out the form below. We will get back to you within two business days.<\/p>",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "b77198e3-a4ca-424a-85c2-2b7a2396dab4",
+    "form"
+  ]
+}

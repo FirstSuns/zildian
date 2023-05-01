@@ -1,0 +1,84 @@
+{{ 'video-section.css' | asset_url | stylesheet_tag }}
+{{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
+
+{% comment %} First of all, we get last part of the URL that's supposedly the Youtube Video ID {% endcomment %}
+{% assign video_id = collection.metafields.global.banner_video | split: '/' | last %}
+
+{% comment %} but we need strip any extra URL params {% endcomment %}
+{% assign video_id = video_id | split: '?' | last %}
+
+{% comment %} Finally, remove any hash string {% endcomment %}
+{% assign video_id = video_id | split: '=' | last %}
+
+<div class="color-{{ object.settings.color_scheme }} gradient">
+  <div class="video-section isolate">
+    <noscript>
+      <div
+        class="video-section__media"
+      >
+        <a
+          href="{{ collection.metafields.global.banner_video }}"
+          class="video-section__poster media media--transparent media--landscape{% if collection.metafields.global.banner_image == blank %} video-section__placeholder{% endif %}"
+        >
+          {%- if collection.metafields.global.banner_image != blank -%}
+            {%- capture sizes -%}
+              100vw
+            {%- endcapture -%}
+            {%- assign alt = 'sections.video.load_video' | t: description: object.settings.description | escape -%}
+            {{
+              collection.metafields.global.banner_image
+              | image_url: width: 3840
+              | image_tag:
+                loading: 'lazy',
+                sizes: sizes,
+                widths: '375, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+                alt: alt
+            }}
+          {%- else -%}
+            {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+          {%- endif -%}
+        </a>
+      </div>
+    </noscript>
+    <deferred-media
+      class="video-section__media deferred-media no-js-hidden gradient global-media-settings global-media-settings--full-width"
+      data-media-id="{{ video_id }}"
+      {% if collection.metafields.global.banner_image != blank %}
+        style="padding-bottom: {{ 1 | divided_by: collection.metafields.global.banner_image.aspect_ratio | times: 100 }}%;"
+      {% endif %}
+    >
+      <button
+        id="Deferred-Poster-Modal-{{ video_id }}"
+        class="video-section__poster media deferred-media__poster media--landscape"
+        type="button"
+        aria-label="{{ 'sections.video.load_video' | t: description: object.settings.description | escape }}"
+      >
+        {%- if collection.metafields.global.banner_image != blank -%}
+          {%- capture sizes -%}
+              100vw
+          {%- endcapture -%}
+          {%- assign alt = 'sections.video.load_video' | t: description: object.settings.description | escape -%}
+          {{
+            collection.metafields.global.banner_image
+            | image_url: width: 3840
+            | image_tag: loading: 'lazy', sizes: sizes, widths: '375, 750, 1100, 1500, 1780, 2000, 3000, 3840', alt: alt
+          }}
+        {%- else -%}
+          {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+        {%- endif -%}
+        <span class="deferred-media__poster-button motion-reduce">
+          {%- render 'icon-play' -%}
+        </span>
+      </button>
+      <template>
+          <iframe
+            src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1"
+            class="js-youtube"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+            title="{{ object.settings.description | escape }}"
+          ></iframe>
+      </template>
+    </deferred-media>
+  </div>
+</div>

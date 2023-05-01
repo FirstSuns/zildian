@@ -1,0 +1,88 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "adapt"
+          }
+        },
+        "5b90492d-846d-4a73-bfdc-0437c6de4f04": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": false,
+            "blog_show_author": false
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        },
+        "543c39e1-2e95-4a79-9cb1-c4edf029d1f7": {
+          "type": "image_text",
+          "settings": {
+            "side_banner": false,
+            "full_width": true,
+            "height": "adapt",
+            "desktop_image_width": "medium",
+            "layout": "image_first",
+            "desktop_content_position": "top",
+            "content_align": "middle",
+            "desktop_content_alignment": "left",
+            "content_layout": "no-overlap",
+            "color_scheme": "background-2",
+            "mobile_layout": "image_first",
+            "mobile_content_alignment": "left",
+            "padding_top": 100,
+            "padding_bottom": 36,
+            "quote": false,
+            "max_width": "450"
+          }
+        },
+        "0668294f-ea6d-4c55-b965-4206b5e4208e": {
+          "type": "featured_product",
+          "settings": {}
+        },
+        "6b1dec1c-8a5a-4507-9932-dda22b937df2": {
+          "type": "about",
+          "settings": {}
+        },
+        "527a453f-7343-4051-869e-35f96d142bef": {
+          "type": "video",
+          "settings": {
+            "heading": "Video",
+            "heading_size": "h1",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": "",
+            "full_width": false,
+            "color_scheme": "background-1",
+            "padding_top": 36,
+            "padding_bottom": 36
+          }
+        },
+        "fa2456f8-54be-441b-932f-6679729a8f65": {
+          "type": "recent_post",
+          "settings": {
+            "title": "CHECK OUT OUR OTHER ARTISTS"
+          }
+        }
+      },
+      "block_order": [
+        "featured_image",
+        "5b90492d-846d-4a73-bfdc-0437c6de4f04",
+        "content",
+        "543c39e1-2e95-4a79-9cb1-c4edf029d1f7",
+        "0668294f-ea6d-4c55-b965-4206b5e4208e",
+        "6b1dec1c-8a5a-4507-9932-dda22b937df2",
+        "527a453f-7343-4051-869e-35f96d142bef",
+        "fa2456f8-54be-441b-932f-6679729a8f65"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

@@ -1,0 +1,303 @@
+{{ 'section-multicolumn.css' | asset_url | stylesheet_tag }}
+{{ 'component-rte.css' | asset_url | stylesheet_tag }}
+{{ 'custom-multicomlumn.scss.css' | asset_url | stylesheet_tag  }}
+{{ 'custom-education-list.scss.css' | asset_url | stylesheet_tag }}
+<link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.2 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.2 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+{% for block in section.blocks %}
+  {% if block.settings.column_type != blank %}
+  {% assign tabs = tabs | append: ',' | append: block.settings.column_type %}
+  {% endif %}
+  {% if block.settings.instruments != blank %}
+    {% assign instruments = instruments | append: ',' | append: block.settings.instruments %}
+  {% endif %}
+  {% if block.settings.types != blank %}
+    {% assign types = types | append: ',' | append: block.settings.types %}
+  {% endif %}
+{% endfor %}
+
+{% assign tabs = tabs | remove_first: ',' %}
+{% assign tab_list = tabs | split: ',' | uniq %}
+
+{% assign instruments = instruments | remove_first: ',' %}
+{% assign instruments_list = instruments | split: ',' | uniq %}
+
+{% assign types = types | remove_first: ',' %}
+{% assign types_list = types | split: ',' | uniq %}
+<education-component>
+  <div class="search-bar-container page-width">
+    <div class="search-bar">
+      <div class="grid">
+        <div id="search" class="grid__item">
+          <div class="field">
+            <input id="searchInput" required class="field__input" placeholder="Search" type="text">
+            <button class="search">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.9682 10.1776C14.9682 12.9421 12.727 15.1833 9.96248 15.1833C7.19791 15.1833 4.95679 12.9421 4.95679 10.1776C4.95679 7.413 7.19791 5.17188 9.96248 5.17188C12.727 5.17188 14.9682 7.413 14.9682 10.1776Z" stroke="black"/>
+                <path d="M17.5438 17.3271L13.6163 13.8887" stroke="black" stroke-linecap="square"/>
+              </svg>            
+            </button>
+          </div>
+        </div>
+        <div id="tabs" class="grid__item content_tabs">
+          <ul>
+            {% for tab_item in tab_list %}
+              <li data-tab="{{tab_item }}" class="tab-item {% if forloop.index == 1 %}active{% endif %} ">{{tab_item}}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div id="filters" class="filters-container">
+          <button class="toggle-menu">Filter  
+            <span class="icon">
+              <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L5.18359 5L10 1" stroke="white" stroke-width="2"/>
+              </svg>
+            </span>
+          </button>
+          <button class="clear-filter">Clear Filters (<span class="num">0</span>)
+            <span class="icon">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.57157 8.57059L1.42871 1.42773" stroke="white" stroke-width="2" stroke-linecap="square"/>
+                <path d="M1.42871 8.57059L8.57157 1.42773" stroke="#F8F8F9" stroke-width="2" stroke-linecap="square"/>
+              </svg>
+            </span>
+          </button>
+          <div class="menu-container">
+            <div class="header large-up-hide">
+              <h4 class="uppercase">Filter</h4>
+              <button class="close-menu">
+                <span class="icon">
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.57157 8.57059L1.42871 1.42773" stroke="black" stroke-linecap="square"/>
+                    <path d="M1.42871 8.57059L8.57157 1.42773" stroke="black" stroke-linecap="square"/>
+                  </svg>                  
+                </span>
+                Close  
+              </button>
+            </div>
+            <div class="row">
+              <h5>Instruments</h5>
+              <ul>
+                <li>
+                  <a href="" data-filter="all">All</a>
+                </li>
+                {% for filter in instruments_list %}
+                  <li>
+                    <a href="" data-filter="{{filter}}">{{filter}}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+            <div class="row">
+              <h5>Type</h5>
+              <ul>
+                {% for filter in types_list %}
+                  <li>
+                    <a href="" data-filter="{{filter}}">{{filter}}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+  <div class="multicolumn" style="max-width: {{section.settings.max_width}}px;margin: auto;">
+    <div class="page-width section-{{ section.id }}-padding isolate">
+      <ul
+          class="multicolumn-list no-gap--{{section.settings.no_gap}} contains-content-container grid grid--2-col-tablet-down grid--3-col-desktop"
+          id="Slider-{{ section.id }}"
+          role="list" 
+          style="{% if section.settings.no_gap %}--grid-desktop-horizontal-spacing: 0px;{% endif %}"
+        >
+  
+        {%- for block in section.blocks -%}
+          <li id="Slide-{{ section.id }}-{{ forloop.index }}"
+            class="multicolumn-list__item grid__item" {{ block.shopify_attributes }}
+            data-colum-type="{{block.settings.column_type}}" 
+            data-filters="{{block.settings.instruments | append: ',' | append: block.settings.types}}"
+          >
+            <div class="multicolumn-card no-padding--true overlay-image--false background-none">
+              <a href="{{block.settings.link}}" class="cover-link"></a>
+  
+              {%- if block.settings.image != blank -%}
+                <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--full-width">
+                  <div
+                    class="media media--transparent media--ratio" style="--padding-bottom: 100%;--mobile_padding-bottom: 100%;"
+                  >
+                    {%- capture sizes -%}
+                      (min-width: 990px) {% if section.blocks.size <= 2 %}1024x{% else %}1024x{% endif %}, (min-width:
+                      750px) {% if section.blocks.size == 1 %}990px{% else %}990px{% endif %}, calc(100vw - 30px)
+                    {%- endcapture -%}
+                    {{
+                      block.settings.image
+                      | image_url: width: 1420
+                      | image_tag:
+                        loading: 'lazy',
+                        sizes: sizes,
+                        widths: '275, 550, 710, 1420',
+                        class: 'multicolumn-card__image'
+                    }}
+                  </div>
+                </div>
+              {%- endif -%}
+              <div class="multicolumn-card__info">
+                {% if block.settings.badge != blank %}
+                <span class="badge large">{{block.settings.badge}}</span>
+                {% endif %}
+                
+                {%- if block.settings.title != blank -%}
+                  <h3 class="{{block.settings.heading_size}}" style="color: {{block.settings.heading_color}};">
+                    {{ block.settings.title | escape }}
+                  </h3>
+                {%- endif -%}
+              </div>
+            </div>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+  </div>
+</education-component>
+
+{{ 'custom-education.js' | asset_url | script_tag }}
+{% schema %}
+{
+  "name": "Education list",
+  "class": "section",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    },
+    {
+      "type": "text",
+      "id": "max_width",
+      "label": "Max width"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "t:sections.multicolumn.blocks.column.name",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.multicolumn.blocks.column.settings.image.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "mobile_image",
+          "label": "Mobile image"
+        },
+        {
+          "type": "text",
+          "id": "badge",
+          "label": "Badge"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "default": "Column",
+          "label": "t:sections.multicolumn.blocks.column.settings.title.label"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "label": "Heading size",
+          "options": [
+            {
+              "value": "h3",
+              "label": "Large"
+            },
+            {
+              "value": "h4",
+              "label": "Medium"
+            },
+            {
+              "value": "h5",
+              "label": "Small"
+            }
+          ]
+        },
+        {
+          "type": "color",
+          "id": "heading_color",
+          "label": "Heading color"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "t:sections.multicolumn.blocks.column.settings.link.label"
+        },
+        {
+          "type": "header",
+          "content": "type"
+        },
+        {
+          "type": "text",
+          "id": "column_type",
+          "label": "Column Type"
+        },
+        {
+          "type": "header",
+          "content": "filter"
+        },
+        {
+          "type": "textarea",
+          "id": "instruments",
+          "label": "Instruments"
+        },
+        {
+          "type": "textarea",
+          "id": "types",
+          "label": "Type"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

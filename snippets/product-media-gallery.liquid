@@ -1,0 +1,91 @@
+<product-gallery-component class="thumbs-{{section.settings.gallery_layout}}">
+  <div id="mainCarousel" class="splide">
+    <div class="splide__track">
+      <ul class="product__media-list splide__list " role="list">
+        {%- for media in product.media -%}
+        {%- unless 
+          media.id == product.selected_or_first_available_variant.featured_media.id 
+          or media.preview_image contains 'hqdefault' 
+          or media.preview_image contains 'taper_' 
+          or media.preview_image contains 'thumb' 
+          or media.preview_image contains 'productspotlight' 
+          or media.preview_image contains 'soundlab' 
+          or media.preview_image contains 'spotlight' 
+          or media.preview_image contains 'thumbnails'
+        -%}
+        <li class="splide__slide">
+          {% render 'product-thumbnail',
+                media: media,
+                media_count: media_count,
+                position: media_position,
+                desktop_layout: section.settings.gallery_layout,
+                mobile_layout: section.settings.mobile_thumbnails,
+                loop: section.settings.enable_video_looping,
+                modal_id: section.id,
+                xr_button: true,
+                media_width: media_width,
+                media_fit: section.settings.media_fit,
+                constrain_to_viewport: section.settings.constrain_to_viewport,
+                lazy_load: lazy_load
+          %}
+        </li>
+        {% endunless %}
+        {%- endfor -%}
+      </ul>
+    </div>
+  </div>
+
+  <div id="thumbsCarousel" class="splide">
+    <div class="splide__track">
+      <ul class="splide__list" role="list">
+        {%- for media in product.media -%}
+        {%- unless 
+          media.id == product.selected_or_first_available_variant.featured_media.id 
+          or media.preview_image contains 'hqdefault' 
+          or media.preview_image contains 'taper_' 
+          or media.preview_image contains 'thumb' 
+          or media.preview_image contains 'productspotlight' 
+          or media.preview_image contains 'soundlab' 
+          or media.preview_image contains 'spotlight' 
+          or media.preview_image contains 'thumbnails'
+        -%}
+        <li class="splide__slide">
+          <div class="product__media media" style="padding-top: 100%;">
+            <img
+              srcset="{% if media.preview_image.width >= 288 %}{{ media.preview_image | img_url: '288x' }} 288w,{% endif %}
+                {% if media.preview_image.width >= 576 %}{{ media.preview_image | img_url: '576x' }} 576w,{% endif %}
+                {% if media.preview_image.width >= 750 %}{{ media.preview_image | img_url: '750x' }} 750w,{% endif %}
+                {% if media.preview_image.width >= 1100 %}{{ media.preview_image | img_url: '1100x' }} 1100w,{% endif %}
+                {% if media.preview_image.width >= 1500 %}{{ media.preview_image | img_url: '1500x' }} 1500w,{% endif %}
+                {{ media.preview_image | img_url: 'master' }} {{ media.preview_image.width }}w"
+              src="{{ media | img_url: '1500x' }}"
+              sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | times: 0.64 | round }}px, (min-width: 750px) calc((100vw - 11.5rem) / 2), calc(100vw - 4rem)"
+              loading="lazy"
+              width="576"
+              height="{{ 576 | divided_by: media.preview_image.aspect_ratio | ceil }}"
+              alt="{{ media.preview_image.alt | escape }}"
+            >
+          </div>
+        </li>
+        {% endunless %}
+        {%- endfor -%}
+      </ul>
+    </div>
+  </div>
+  
+</product-gallery-component>
+
+{%- if first_3d_model -%}
+  <button
+    class="button button--full-width product__xr-button"
+    type="button"
+    aria-label="{{ 'products.product.xr_button_label' | t }}"
+    data-shopify-xr
+    data-shopify-model3d-id="{{ first_3d_model.id }}"
+    data-shopify-title="{{ product.title | escape }}"
+    data-shopify-xr-hidden
+  >
+    {% render 'icon-3d-model' %}
+    {{ 'products.product.xr_button' | t }}
+  </button>
+{%- endif -%}

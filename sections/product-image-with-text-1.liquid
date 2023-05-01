@@ -1,0 +1,1008 @@
+{{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
+{{ 'component-rte.css' | asset_url | stylesheet_tag }}
+{{ 'custom-image-text.scss.css' | asset_url | stylesheet_tag }}
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.35 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.25 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+{% unless product.has_only_default_variant  %}
+  {% for variant in product.variants %}
+  {%- if variant.metafields.magento.sound_demo_video != blank -%}
+  <div data-variant-id="{{variant.id}}" class="varaint_item {% if variant.id != product.selected_or_first_available_variant.id %}hide{% endif %}  image-with-text section-overlay--{{section.settings.overlay_section}} side-banner--{{section.settings.side_banner}} image-with-text--{{ section.settings.content_layout }} overlap--{{ section.settings.desktop_content_position }} {% if section.settings.desktop_full_width == true %}page-width-tablet-down{% endif %} {% if section.settings.full_width == false %}page-width{% endif %} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == 'background-1' and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %} section-{{ section.id }}-padding">
+    <div class="image-with-text__grid grid grid--gapless grid--1-col width--{{section.settings.desktop_image_width}} {% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %} {% if section.settings.mobile_layout == 'text_first' %} mobile_image-with-text__grid--reverse{% endif %}">
+      <div class="image-with-text__media-item image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item">
+        <div
+          class="image-with-text__media image-with-text__media--{{ section.settings.height }} gradient color-{{ section.settings.color_scheme }} global-media-settings media"
+          style="padding-bottom: 60%;"
+        >
+            {%- capture sizes -%}
+              (min-width: {{ settings.page_width }}px) 2048px,
+              (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
+            {%- endcapture -%}
+            {% if variant.metafields.global.sound_video_link != blank %}
+              {% include 'product-video' with context: variant %}
+            {% elsif variant.metafields.magento.sound_demo_video != blank and variant.metafields.magento.sound_demo_video != 'no_selection' %}
+              <img src="{{variant.metafields.magento.sound_demo_video}}" loading="lazy" width="1500" height="1500">
+            {% else %}
+              {{
+                section.settings.image
+                | image_url: width: 1500
+                | image_tag: loading: 'lazy', sizes: sizes, widths: '165, 360, 535, 750, 1070, 1500'
+              }}
+            {%- endif -%}
+        </div>
+      </div>
+      <div class="image-with-text__text-item grid__item">
+        <div
+          id="ImageWithText--{{ section.id }}"
+          class="image-with-text__content horizontal-align-content--{{section.settings.content_align}} image-with-text__content--{{ section.settings.desktop_content_position }} image-with-text__content--desktop-{{ section.settings.desktop_content_alignment }} image-with-text__content--mobile-{{ section.settings.mobile_content_alignment }} image-with-text__content--{{ section.settings.height }} gradient color-{{ section.settings.color_scheme }} content-container" 
+        >
+          <div class="info" style="max-width: {{section.settings.max_width}}px;">
+            {% if section.settings.quote %}
+            <svg width="42" height="36" viewBox="0 0 42 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.9375 35.8125H0.1875V27.125C0.1875 21.6667 0.854167 16.9583 2.1875 13C3.5625 9 5.85417 4.91667 9.0625 0.75L15.1875 5.5625C13.6458 7.8125 12.5 9.75 11.75 11.375C11.0417 13 10.3333 15.1667 9.625 17.875H15.9375V35.8125ZM41.4375 35.8125H25.6875V27.125C25.6875 21.6667 26.3542 16.9583 27.6875 13C29.0208 9 31.3125 4.91667 34.5625 0.75L40.6875 5.5625C39.1458 7.8125 38 9.75 37.25 11.375C36.5417 13 35.8333 15.1667 35.125 17.875H41.4375V35.8125Z" fill="currentColor"/>
+            </svg>  
+            {% endif %}
+            <div class="text">
+              {%- for block in section.blocks -%}
+              {% case block.type %}
+                {%- when 'heading' -%}
+                  <h2 class="image-with-text__heading {{ block.settings.heading_size }} {% if block.settings.icon != blank %}icon-title{% endif %}" {{ block.shopify_attributes }} style="color:{{block.settings.heading_color}}; max-width: {{block.settings.max_width}}px;">
+                    {% if block.settings.icon != blank %}
+                    {{
+                      block.settings.icon
+                      | image_url: width: 200
+                      | image_tag: loading: 'lazy'
+                    }}
+                    {% assign icon_status = true %}
+                    {% endif %}
+                    {% if block.settings.heading_link != blank %}
+                      <a href="{{block.settings.heading_link}}" class="link animate-arrow">
+                        {{ variant.metafields.global.image_with_text_section_1.value.titile | default: block.settings.heading }}  <span class="icon-wrap">{% render 'icon-arrow' %}</span>
+                      </a>
+                    {% else %}
+                      {{ variant.metafields.global.image_with_text_section_1.value.titile | default: block.settings.heading  }}
+                    {% endif %}
+                    
+                  </h2>
+                {%- when 'caption' -%}
+                  <p
+                    class="image-with-text__text image-with-text__text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }}"
+                    {{ block.shopify_attributes }}
+                  >
+                    {{ block.settings.caption | escape }}
+                  </p>
+                {%- when 'text' -%}
+                  <div class="image-with-text__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
+                    {% if icon_status %}
+                      <div class="side-content"></div>
+                    {% endif %}
+                    <div class="text-content">
+                      {{ variant.metafields.global.image_with_text_section_1.value.text | metafield_tag | default: block.settings.text  }}
+                    </div>
+                  </div>
+                {%- when 'button' -%}
+                  {%- if block.settings.button_label != blank -%}
+                    <a
+                      {% if block.settings.button_link == blank %}
+                        role="link" aria-disabled="true"
+                      {% else %}
+                        href="{{ block.settings.button_link }}"
+                      {% endif %}
+                      class="{% if block.settings.link %}link {% else %}button {% endif %}{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+                      {{ block.shopify_attributes }}
+                    >
+                      {{ block.settings.button_label | escape }}
+                      {% if block.settings.link %}
+                      <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
+                      {% endif %}
+                    </a>
+                  {%- endif -%}
+                {% when 'image_link' %}
+                    <div class="image-link">
+                      {{
+                        block.settings.image
+                        | image_url: width: 80
+                        | image_tag: loading: 'lazy'
+                      }}
+                      <div class="info">
+                        <a href="{{block.settings.button_link}}" class="link animate-arrow">{{block.settings.button_label}} <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span></a>
+                        <span class="subtitlte">{{block.settings.subtitle}}</span>
+                      </div>
+                    </div>
+                {% when 'icon' %}
+                  <div class="icon">
+                    {{
+                      block.settings.image
+                      | image_url: width: 192
+                      | image_tag: loading: 'lazy'
+                    }}
+                  </div>
+                {% when 'tags' %}
+                  <ul class="tags">
+                    {%- if block.settings.button_label_1 != blank -%}
+                    <li>
+                      <a
+                        {% if block.settings.button_link_1 == blank %}
+                          role="link" aria-disabled="true"
+                        {% else %}
+                          href="{{ block.settings.button_link_1 }}"
+                        {% endif %}
+                        class="button button--secondary"
+                        {{ block.shopify_attributes }}
+                      >
+                        {{ block.settings.button_label_1 | escape }}
+                      </a>
+                    </li>
+                    {%- endif -%}
+                    {%- if block.settings.button_label_2 != blank -%}
+                    <li>
+                      <a
+                        {% if block.settings.button_link_2 == blank %}
+                          role="link" aria-disabled="true"
+                        {% else %}
+                          href="{{ block.settings.button_link_2 }}"
+                        {% endif %}
+                        class="button button--secondary"
+                        {{ block.shopify_attributes }}
+                      >
+                        {{ block.settings.button_label_2 | escape }}
+                      </a>
+                    </li>
+                    {%- endif -%}
+                    {%- if block.settings.button_label_3 != blank -%}
+                    <li>
+                      <a
+                        {% if block.settings.button_link_3 == blank %}
+                          role="link" aria-disabled="true"
+                        {% else %}
+                          href="{{ block.settings.button_link_3 }}"
+                        {% endif %}
+                        class="button button--secondary"
+                        {{ block.shopify_attributes }}
+                      >
+                        {{ block.settings.button_label_3 | escape }}
+                      </a>
+                    </li>
+                    {%- endif -%}
+                    {%- if block.settings.button_label_4 != blank -%}
+                    <li>
+                      <a
+                        {% if block.settings.button_link_4 == blank %}
+                          role="link" aria-disabled="true"
+                        {% else %}
+                          href="{{ block.settings.button_link_4 }}"
+                        {% endif %}
+                        class="button button--secondary"
+                        {{ block.shopify_attributes }}
+                      >
+                        {{ block.settings.button_label_4 | escape }}
+                      </a>
+                    </li>
+                    {%- endif -%}
+                  </ul>
+                {% when 'spec' %}
+                  <div class="spec">
+                    <p class="link">
+                      {{block.settings.title}} 
+                      <span class="tooltip">
+                        <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="10" cy="12" r="10" fill="black"/>
+                          <path d="M8.69189 9.24756H7.91309C7.92025 8.52425 8.13509 7.95312 8.55762 7.53418C8.98372 7.11165 9.55306 6.90039 10.2656 6.90039C10.9674 6.90039 11.5189 7.07764 11.9199 7.43213C12.321 7.78662 12.5215 8.22705 12.5215 8.75342C12.5215 9.00407 12.466 9.23682 12.355 9.45166C12.2476 9.66292 12.0828 9.85449 11.8608 10.0264C11.6388 10.1947 11.2503 10.388 10.6953 10.6064C9.99707 10.8857 9.57454 11.0934 9.42773 11.2295C9.27734 11.3691 9.20215 11.5374 9.20215 11.7344C9.20215 11.9421 9.30241 12.1283 9.50293 12.293C9.70703 12.4577 9.97021 12.54 10.2925 12.54C10.647 12.54 10.9191 12.4505 11.1089 12.2715C11.2987 12.0889 11.415 11.7988 11.458 11.4014H12.2422C12.2171 11.9993 12.0309 12.4648 11.6836 12.7979C11.3398 13.1273 10.8761 13.292 10.2925 13.292C9.7124 13.292 9.25049 13.1416 8.90674 12.8408C8.56299 12.54 8.39111 12.1694 8.39111 11.729C8.39111 11.5142 8.43766 11.3118 8.53076 11.1221C8.62744 10.9287 8.76172 10.7676 8.93359 10.6387C9.10905 10.5098 9.43669 10.3468 9.9165 10.1499C10.6899 9.8348 11.1859 9.59847 11.4043 9.44092C11.6191 9.28337 11.7266 9.05778 11.7266 8.76416C11.7266 8.45264 11.5941 8.18945 11.3291 7.97461C11.0677 7.75977 10.7168 7.65234 10.2764 7.65234C9.73926 7.65234 9.3221 7.82959 9.0249 8.18408C8.81722 8.43115 8.70622 8.78564 8.69189 9.24756ZM10.2603 13.8184C10.4429 13.8184 10.5986 13.8828 10.7275 14.0117C10.8564 14.1406 10.9209 14.2982 10.9209 14.4844C10.9209 14.667 10.8564 14.8245 10.7275 14.957C10.5986 15.0859 10.4429 15.1504 10.2603 15.1504C10.0776 15.1504 9.92188 15.0859 9.79297 14.957C9.66406 14.8245 9.59961 14.667 9.59961 14.4844C9.59961 14.2982 9.66406 14.1406 9.79297 14.0117C9.92188 13.8828 10.0776 13.8184 10.2603 13.8184Z" fill="white"/>
+                        </svg>
+                        <span>{{block.settings.tooltip}}</span>
+                      </span>
+                    </p>
+                    <div class="range">
+                      {% assign handle = block.settings.title | downcase %}
+                      
+                      {% if variant.metafields.magento[handle] != blank %}
+                        {% assign range_val = variant.metafields.magento[handle] | times: 1 %}
+                      {% else %}
+                        {% assign range_val = block.settings.range %}
+                      {% endif %}
+                      
+                      {% for i in (1..10) %}
+                        <span class="bar {% if i > range_val %}no-active{% endif %}"></span>
+                      {% endfor %}
+                    </div>
+                  </div>
+              {%- endcase -%}
+            {%- endfor -%}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  {% endfor %}
+{% else %}
+  {%- if product.metafields.magento.sound_demo_video != blank -%}
+  <div class="image-with-text section-overlay--{{section.settings.overlay_section}} side-banner--{{section.settings.side_banner}} image-with-text--{{ section.settings.content_layout }} overlap--{{ section.settings.desktop_content_position }} {% if section.settings.desktop_full_width == true %}page-width-tablet-down{% endif %} {% if section.settings.full_width == false %}page-width{% endif %} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == 'background-1' and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %} section-{{ section.id }}-padding">
+    <div class="image-with-text__grid grid grid--gapless grid--1-col width--{{section.settings.desktop_image_width}} {% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %} {% if section.settings.mobile_layout == 'text_first' %} mobile_image-with-text__grid--reverse{% endif %}">
+      <div class="image-with-text__media-item image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item">
+        <div
+          class="image-with-text__media image-with-text__media--{{ section.settings.height }} gradient color-{{ section.settings.color_scheme }} global-media-settings media"
+          style="padding-bottom: 60%;"
+        >
+            {%- capture sizes -%}
+              (min-width: {{ settings.page_width }}px) 2048px,
+              (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
+            {%- endcapture -%}
+            {% if product.metafields.global.sound_video_link != blank %}
+            {% include 'product-video' with context: product %}
+            {% elsif product.metafields.magento.sound_demo_video != blank and product.metafields.magento.sound_demo_video != 'no_selection' %}
+              <img src="{{product.metafields.magento.sound_demo_video}}" loading="lazy" width="1500" height="1500">
+            {% else %}
+            {{
+              section.settings.image
+              | image_url: width: 1500
+              | image_tag: loading: 'lazy', sizes: sizes, widths: '165, 360, 535, 750, 1070, 1500'
+            }}
+            {% endif %}
+        </div>
+      </div>
+      <div class="image-with-text__text-item grid__item">
+        <div
+          id="ImageWithText--{{ section.id }}"
+          class="image-with-text__content horizontal-align-content--{{section.settings.content_align}} image-with-text__content--{{ section.settings.desktop_content_position }} image-with-text__content--desktop-{{ section.settings.desktop_content_alignment }} image-with-text__content--mobile-{{ section.settings.mobile_content_alignment }} image-with-text__content--{{ section.settings.height }} gradient color-{{ section.settings.color_scheme }} content-container" 
+        >
+          <div class="info" style="max-width: {{section.settings.max_width}}px;">
+            {% if section.settings.quote %}
+            <svg width="42" height="36" viewBox="0 0 42 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.9375 35.8125H0.1875V27.125C0.1875 21.6667 0.854167 16.9583 2.1875 13C3.5625 9 5.85417 4.91667 9.0625 0.75L15.1875 5.5625C13.6458 7.8125 12.5 9.75 11.75 11.375C11.0417 13 10.3333 15.1667 9.625 17.875H15.9375V35.8125ZM41.4375 35.8125H25.6875V27.125C25.6875 21.6667 26.3542 16.9583 27.6875 13C29.0208 9 31.3125 4.91667 34.5625 0.75L40.6875 5.5625C39.1458 7.8125 38 9.75 37.25 11.375C36.5417 13 35.8333 15.1667 35.125 17.875H41.4375V35.8125Z" fill="currentColor"/>
+            </svg>  
+            {% endif %}
+            <div class="text">
+              {%- for block in section.blocks -%}
+              {% case block.type %}
+                {%- when 'heading' -%}
+                  <h2 class="image-with-text__heading {{ block.settings.heading_size }} {% if block.settings.icon != blank %}icon-title{% endif %}" {{ block.shopify_attributes }} style="color:{{block.settings.heading_color}}; max-width: {{block.settings.max_width}}px;">
+                    {% if block.settings.icon != blank %}
+                    {{
+                      block.settings.icon
+                      | image_url: width: 200
+                      | image_tag: loading: 'lazy'
+                    }}
+                    {% assign icon_status = true %}
+                    {% endif %}
+                    {% if block.settings.heading_link != blank %}
+                      <a href="{{block.settings.heading_link}}" class="link animate-arrow">
+                        {{ product.metafields.global.image_with_text_section_1.value.titile | default: block.settings.heading }}  <span class="icon-wrap">{% render 'icon-arrow' %}</span>
+                      </a>
+                    {% else %}
+                      {{ product.metafields.global.image_with_text_section_1.value.titile | default: block.settings.heading  }}
+                    {% endif %}
+                    
+                  </h2>
+                {%- when 'caption' -%}
+                  <p
+                    class="image-with-text__text image-with-text__text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }}"
+                    {{ block.shopify_attributes }}
+                  >
+                    {{ block.settings.caption | escape }}
+                  </p>
+                {%- when 'text' -%}
+                  <div class="image-with-text__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
+                    {% if icon_status %}
+                      <div class="side-content"></div>
+                    {% endif %}
+                    <div class="text-content">
+                      {{ product.metafields.global.image_with_text_section_1.value.text | metafield_tag | default: block.settings.text  }}
+                    </div>
+                  </div>
+                {%- when 'button' -%}
+                  {%- if block.settings.button_label != blank -%}
+                    <a
+                      {% if block.settings.button_link == blank %}
+                        role="link" aria-disabled="true"
+                      {% else %}
+                        href="{{ block.settings.button_link }}"
+                      {% endif %}
+                      class="{% if block.settings.link %}link {% else %}button {% endif %}{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+                      {{ block.shopify_attributes }}
+                    >
+                      {{ block.settings.button_label | escape }}
+                      {% if block.settings.link %}
+                      <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
+                      {% endif %}
+                    </a>
+                  {%- endif -%}
+                {% when 'image_link' %}
+                    <div class="image-link">
+                      {{
+                        block.settings.image
+                        | image_url: width: 80
+                        | image_tag: loading: 'lazy'
+                      }}
+                      <div class="info">
+                        <a href="{{block.settings.button_link}}" class="link animate-arrow">{{block.settings.button_label}} <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span></a>
+                        <span class="subtitlte">{{block.settings.subtitle}}</span>
+                      </div>
+                    </div>
+                {% when 'icon' %}
+                  <div class="icon">
+                    {{
+                      block.settings.image
+                      | image_url: width: 192
+                      | image_tag: loading: 'lazy'
+                    }}
+                  </div>
+                {% when 'tags' %}
+                  <ul class="tags">
+                    {%- if block.settings.button_label_1 != blank -%}
+                    <li>
+                      <a
+                        {% if block.settings.button_link_1 == blank %}
+                          role="link" aria-disabled="true"
+                        {% else %}
+                          href="{{ block.settings.button_link_1 }}"
+                        {% endif %}
+                        class="button button--secondary"
+                        {{ block.shopify_attributes }}
+                      >
+                        {{ block.settings.button_label_1 | escape }}
+                      </a>
+                    </li>
+                    {%- endif -%}
+                    {%- if block.settings.button_label_2 != blank -%}
+                    <li>
+                      <a
+                        {% if block.settings.button_link_2 == blank %}
+                          role="link" aria-disabled="true"
+                        {% else %}
+                          href="{{ block.settings.button_link_2 }}"
+                        {% endif %}
+                        class="button button--secondary"
+                        {{ block.shopify_attributes }}
+                      >
+                        {{ block.settings.button_label_2 | escape }}
+                      </a>
+                    </li>
+                    {%- endif -%}
+                    {%- if block.settings.button_label_3 != blank -%}
+                    <li>
+                      <a
+                        {% if block.settings.button_link_3 == blank %}
+                          role="link" aria-disabled="true"
+                        {% else %}
+                          href="{{ block.settings.button_link_3 }}"
+                        {% endif %}
+                        class="button button--secondary"
+                        {{ block.shopify_attributes }}
+                      >
+                        {{ block.settings.button_label_3 | escape }}
+                      </a>
+                    </li>
+                    {%- endif -%}
+                    {%- if block.settings.button_label_4 != blank -%}
+                    <li>
+                      <a
+                        {% if block.settings.button_link_4 == blank %}
+                          role="link" aria-disabled="true"
+                        {% else %}
+                          href="{{ block.settings.button_link_4 }}"
+                        {% endif %}
+                        class="button button--secondary"
+                        {{ block.shopify_attributes }}
+                      >
+                        {{ block.settings.button_label_4 | escape }}
+                      </a>
+                    </li>
+                    {%- endif -%}
+                  </ul>
+                {% when 'spec' %}
+                  <div class="spec">
+                    <p class="link">
+                      {{block.settings.title}} 
+                      <span class="tooltip">
+                        <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="10" cy="12" r="10" fill="black"/>
+                          <path d="M8.69189 9.24756H7.91309C7.92025 8.52425 8.13509 7.95312 8.55762 7.53418C8.98372 7.11165 9.55306 6.90039 10.2656 6.90039C10.9674 6.90039 11.5189 7.07764 11.9199 7.43213C12.321 7.78662 12.5215 8.22705 12.5215 8.75342C12.5215 9.00407 12.466 9.23682 12.355 9.45166C12.2476 9.66292 12.0828 9.85449 11.8608 10.0264C11.6388 10.1947 11.2503 10.388 10.6953 10.6064C9.99707 10.8857 9.57454 11.0934 9.42773 11.2295C9.27734 11.3691 9.20215 11.5374 9.20215 11.7344C9.20215 11.9421 9.30241 12.1283 9.50293 12.293C9.70703 12.4577 9.97021 12.54 10.2925 12.54C10.647 12.54 10.9191 12.4505 11.1089 12.2715C11.2987 12.0889 11.415 11.7988 11.458 11.4014H12.2422C12.2171 11.9993 12.0309 12.4648 11.6836 12.7979C11.3398 13.1273 10.8761 13.292 10.2925 13.292C9.7124 13.292 9.25049 13.1416 8.90674 12.8408C8.56299 12.54 8.39111 12.1694 8.39111 11.729C8.39111 11.5142 8.43766 11.3118 8.53076 11.1221C8.62744 10.9287 8.76172 10.7676 8.93359 10.6387C9.10905 10.5098 9.43669 10.3468 9.9165 10.1499C10.6899 9.8348 11.1859 9.59847 11.4043 9.44092C11.6191 9.28337 11.7266 9.05778 11.7266 8.76416C11.7266 8.45264 11.5941 8.18945 11.3291 7.97461C11.0677 7.75977 10.7168 7.65234 10.2764 7.65234C9.73926 7.65234 9.3221 7.82959 9.0249 8.18408C8.81722 8.43115 8.70622 8.78564 8.69189 9.24756ZM10.2603 13.8184C10.4429 13.8184 10.5986 13.8828 10.7275 14.0117C10.8564 14.1406 10.9209 14.2982 10.9209 14.4844C10.9209 14.667 10.8564 14.8245 10.7275 14.957C10.5986 15.0859 10.4429 15.1504 10.2603 15.1504C10.0776 15.1504 9.92188 15.0859 9.79297 14.957C9.66406 14.8245 9.59961 14.667 9.59961 14.4844C9.59961 14.2982 9.66406 14.1406 9.79297 14.0117C9.92188 13.8828 10.0776 13.8184 10.2603 13.8184Z" fill="white"/>
+                        </svg>
+                        <span>{{block.settings.tooltip}}</span>
+                      </span>
+                    </p>
+                    <div class="range">
+                      {% assign handle = block.settings.title | downcase %}
+                      
+                      {% if product.metafields.magento[handle] != blank %}
+                        {% assign range_val = product.metafields.magento[handle] | times: 1 %}
+                      {% else %}
+                        {% assign range_val = block.settings.range %}
+                      {% endif %}
+                      
+                      {% for i in (1..10) %}
+                        <span class="bar {% if i > range_val %}no-active{% endif %}"></span>
+                      {% endfor %}
+                    </div>
+                  </div>
+              {%- endcase -%}
+            {%- endfor -%}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+{% endunless %}
+{% schema %}
+{
+  "name": "ZILDJIAN SOUND LAB",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "side_banner",
+      "label": "Side banner"
+    },
+    {
+      "type": "checkbox",
+      "id": "desktop_full_width",
+      "label": "Desktop Full width"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:sections.image-with-text.settings.image.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile image"
+    },
+    {
+      "type": "video_url",
+      "id": "video_url",
+      "accept": [
+        "youtube",
+        "vimeo"
+      ],
+      "label": "Video"
+    },
+    {
+      "type": "select",
+      "id": "height",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "t:sections.image-with-text.settings.height.options__1.label"
+        },
+        {
+          "value": "small",
+          "label": "t:sections.image-with-text.settings.height.options__2.label"
+        },
+        {
+          "value": "medium",
+          "label": "t:sections.image-with-text.settings.height.options__3.label"
+        },
+        {
+          "value": "large",
+          "label": "t:sections.image-with-text.settings.height.options__4.label"
+        }
+      ],
+      "default": "adapt",
+      "label": "t:sections.image-with-text.settings.height.label"
+    },
+    {
+      "type": "select",
+      "id": "desktop_image_width",
+      "options": [
+        {
+          "value": "small",
+          "label": "t:sections.image-with-text.settings.desktop_image_width.options__1.label"
+        },
+        {
+          "value": "medium",
+          "label": "t:sections.image-with-text.settings.desktop_image_width.options__2.label"
+        },
+        {
+          "value": "large",
+          "label": "t:sections.image-with-text.settings.desktop_image_width.options__3.label"
+        }
+      ],
+      "default": "medium",
+      "label": "t:sections.image-with-text.settings.desktop_image_width.label",
+      "info": "t:sections.image-with-text.settings.desktop_image_width.info"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "options": [
+        {
+          "value": "image_first",
+          "label": "t:sections.image-with-text.settings.layout.options__1.label"
+        },
+        {
+          "value": "text_first",
+          "label": "t:sections.image-with-text.settings.layout.options__2.label"
+        }
+      ],
+      "default": "image_first",
+      "label": "t:sections.image-with-text.settings.layout.label",
+      "info": "t:sections.image-with-text.settings.layout.info"
+    },
+    {
+      "type": "select",
+      "id": "desktop_content_position",
+      "options": [
+        {
+          "value": "top",
+          "label": "t:sections.image-with-text.settings.desktop_content_position.options__1.label"
+        },
+        {
+          "value": "middle",
+          "label": "t:sections.image-with-text.settings.desktop_content_position.options__2.label"
+        },
+        {
+          "value": "bottom",
+          "label": "t:sections.image-with-text.settings.desktop_content_position.options__3.label"
+        }
+      ],
+      "default": "top",
+      "label": "t:sections.image-with-text.settings.desktop_content_position.label"
+    },
+    {
+      "type": "select",
+      "id": "content_align",
+      "label": "Content align",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "middle",
+          "label": "Middle"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "middle"
+    },
+    {
+      "type": "select",
+      "id": "desktop_content_alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.image-with-text.settings.desktop_content_alignment.options__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.image-with-text.settings.desktop_content_alignment.options__2.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.image-with-text.settings.desktop_content_alignment.options__3.label"
+        }
+      ],
+      "default": "left",
+      "label": "t:sections.image-with-text.settings.desktop_content_alignment.label"
+    },
+    {
+      "type": "select",
+      "id": "content_layout",
+      "options": [
+        {
+          "value": "no-overlap",
+          "label": "t:sections.image-with-text.settings.content_layout.options__1.label"
+        },
+        {
+          "value": "overlap",
+          "label": "t:sections.image-with-text.settings.content_layout.options__2.label"
+        },
+        {
+          "value": "fit_content",
+          "label": "Fit content"
+        },
+        {
+          "value": "align_center",
+          "label": "Center align"
+        }
+      ],
+      "default": "no-overlap",
+      "label": "t:sections.image-with-text.settings.content_layout.label"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "accent-1",
+          "label": "t:sections.all.colors.accent_1.label"
+        },
+        {
+          "value": "accent-2",
+          "label": "t:sections.all.colors.accent_2.label"
+        },
+        {
+          "value": "accent-3",
+          "label": "Accent 3"
+        },
+        {
+          "value": "background-1",
+          "label": "t:sections.all.colors.background_1.label"
+        },
+        {
+          "value": "background-2",
+          "label": "t:sections.all.colors.background_2.label"
+        },
+        {
+          "value": "inverse",
+          "label": "t:sections.all.colors.inverse.label"
+        }
+      ],
+      "default": "background-1",
+      "label": "t:sections.all.colors.label"
+    },
+    {
+      "type": "header",
+      "content": "Mobile layout"
+    },
+    {
+      "type": "select",
+      "id": "mobile_layout",
+      "options": [
+        {
+          "value": "image_first",
+          "label": "t:sections.image-with-text.settings.layout.options__1.label"
+        },
+        {
+          "value": "text_first",
+          "label": "t:sections.image-with-text.settings.layout.options__2.label"
+        }
+      ],
+      "default": "image_first",
+      "label": "t:sections.image-with-text.settings.layout.label",
+      "info": "t:sections.image-with-text.settings.layout.info"
+    },
+    {
+      "type": "select",
+      "id": "mobile_content_alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.image-with-text.settings.mobile_content_alignment.options__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.image-with-text.settings.mobile_content_alignment.options__2.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.image-with-text.settings.mobile_content_alignment.options__3.label"
+        }
+      ],
+      "default": "left",
+      "label": "t:sections.image-with-text.settings.mobile_content_alignment.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "checkbox",
+      "id": "overlay_section",
+      "label": "Overlay section"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    },
+    {
+      "type": "checkbox",
+      "id": "quote",
+      "label": "Quote"
+    },
+    {
+      "type": "text",
+      "id": "max_width",
+      "label": "Max width"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "t:sections.image-with-text.blocks.heading.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Image with text",
+          "label": "t:sections.image-with-text.blocks.heading.settings.heading.label"
+        },
+        {
+          "type": "url",
+          "id": "heading_link",
+          "label": "Heading link"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "h3",
+              "label": "t:sections.all.heading_size.options__1.label"
+            },
+            {
+              "value": "h2",
+              "label": "t:sections.all.heading_size.options__2.label"
+            },
+            {
+              "value": "h1",
+              "label": "t:sections.all.heading_size.options__3.label"
+            }
+          ],
+          "default": "h1",
+          "label": "t:sections.all.heading_size.label"
+        },
+        {
+          "type": "color",
+          "id": "heading_color",
+          "label": "Heading color"
+        },
+        {
+          "type": "text",
+          "id": "max_width",
+          "label": "Max width"
+        }
+      ]
+    },
+    {
+      "type": "caption",
+      "name": "t:sections.image-with-text.blocks.caption.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "caption",
+          "default": "Add a tagline",
+          "label": "t:sections.image-with-text.blocks.caption.settings.text.label"
+        },
+        {
+          "type": "select",
+          "id": "text_style",
+          "options": [
+            {
+              "value": "subtitle",
+              "label": "t:sections.image-with-text.blocks.caption.settings.text_style.options__1.label"
+            },
+            {
+              "value": "caption-with-letter-spacing",
+              "label": "t:sections.image-with-text.blocks.caption.settings.text_style.options__2.label"
+            }
+          ],
+          "default": "caption-with-letter-spacing",
+          "label": "t:sections.image-with-text.blocks.caption.settings.text_style.label"
+        },
+        {
+          "type": "select",
+          "id": "text_size",
+          "options": [
+            {
+              "value": "small",
+              "label": "t:sections.image-with-text.blocks.caption.settings.caption_size.options__1.label"
+            },
+            {
+              "value": "medium",
+              "label": "t:sections.image-with-text.blocks.caption.settings.caption_size.options__2.label"
+            },
+            {
+              "value": "large",
+              "label": "t:sections.image-with-text.blocks.caption.settings.caption_size.options__3.label"
+            }
+          ],
+          "default": "medium",
+          "label": "t:sections.image-with-text.blocks.caption.settings.caption_size.label"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "t:sections.image-with-text.blocks.text.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+          "label": "t:sections.image-with-text.blocks.text.settings.text.label"
+        },
+        {
+          "type": "select",
+          "id": "text_style",
+          "options": [
+            {
+              "value": "body",
+              "label": "t:sections.image-with-text.blocks.text.settings.text_style.options__1.label"
+            },
+            {
+              "value": "subtitle",
+              "label": "t:sections.image-with-text.blocks.text.settings.text_style.options__2.label"
+            }
+          ],
+          "default": "body",
+          "label": "t:sections.image-with-text.blocks.text.settings.text_style.label"
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "t:sections.image-with-text.blocks.button.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label",
+          "default": "Button label",
+          "label": "t:sections.image-with-text.blocks.button.settings.button_label.label",
+          "info": "t:sections.image-with-text.blocks.button.settings.button_label.info"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "t:sections.image-with-text.blocks.button.settings.button_link.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "link",
+          "label": "Link style"
+        }
+      ]
+    },
+    {
+      "type": "image_link",
+      "name": "Image link",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Subtitle"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button label"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
+        }
+      ]
+    },
+    {
+      "type": "icon",
+      "name": "Icon",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    },
+    {
+      "type": "tags",
+      "name": "Tags",
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label_1",
+          "label": "Button label"
+        },
+        {
+          "type": "url",
+          "id": "button_link_1",
+          "label": "Button link"
+        },
+        {
+          "type": "text",
+          "id": "button_label_2",
+          "label": "Button label"
+        },
+        {
+          "type": "url",
+          "id": "button_link_2",
+          "label": "Button link"
+        },
+        {
+          "type": "text",
+          "id": "button_label_3",
+          "label": "Button label"
+        },
+        {
+          "type": "url",
+          "id": "button_link_3",
+          "label": "Button link"
+        },
+        {
+          "type": "text",
+          "id": "button_label_4",
+          "label": "Button label"
+        },
+        {
+          "type": "url",
+          "id": "button_link_4",
+          "label": "Button link"
+        }
+      ]
+    },
+    {
+      "type": "spec",
+      "name": "Spec",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "tooltip",
+          "label": "Tooltip"
+        },
+        {
+          "type": "range",
+          "id": "range",
+          "label": "Range",
+          "min": 1,
+          "max": 10,
+          "step": 1,
+          "default": 1
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

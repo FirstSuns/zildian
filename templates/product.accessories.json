@@ -1,0 +1,188 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "39f80811-4776-475e-a397-e6d3a25fa9d3": {
+          "type": "rating",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "11ad8c76-379b-4807-a15f-5e450da8a099": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<p class=\"subtitle\" >{{product.metafields.magento.short_description}}<\/p>"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "quantity": true,
+            "show_dynamic_checkout": false
+          }
+        },
+        "d4b13fe5-08a7-4886-9b05-263203878113": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "<p><strong>HEAR THIS CYMBAL<\/strong><\/p>",
+            "icon": "<svg width=\"30\" height=\"30\" viewbox=\"0 0 30 30\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M5 18.5714V12.4286C5 11.8763 5.44771 11.4286 6 11.4286H10.1212L16.4326 7.07994C17.096 6.62284 18 7.09775 18 7.9034V23.0966C18 23.9022 17.096 24.3772 16.4326 23.9201L10.1212 19.5714H6C5.44772 19.5714 5 19.1237 5 18.5714Z\" stroke=\"#CC9F53\" stroke-width=\"2\"><\/path>\n<path d=\"M23 9C24.8458 10.4972 26 12.6314 26 15C26 17.3686 24.8458 19.5028 23 21\" stroke=\"#CC9F53\" stroke-width=\"2\"><\/path>\n<path d=\"M20 10C21.2305 11.1229 22 12.7235 22 14.5C22 16.2765 21.2305 17.8771 20 19\" stroke=\"#CC9F53\" stroke-width=\"2\"><\/path>\n<\/svg>",
+            "content": "audio",
+            "page": ""
+          }
+        },
+        "e8253375-5e6b-46c3-a98e-d35f5ec0e252": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "<p><strong>DETAILS<\/strong><\/p>",
+            "icon": "<svg width=\"30\" height=\"30\" viewbox=\"0 0 30 30\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M2.17354 11.7483L5.94637 6.86738C6.86379 5.68059 8.24597 5 9.73858 5L12.2271 5C12.5721 5 12.8802 5.2172 12.9987 5.54383C13.3809 6.59778 14.3861 7.30593 15.5 7.30593C16.6139 7.30593 17.619 6.59778 18.0013 5.54383C18.1198 5.2172 18.4279 5 18.7729 5H21.2615C22.754 5 24.1363 5.68059 25.0537 6.8675L28.8265 11.7483C28.9904 11.9604 29.0421 12.2394 28.9648 12.4969C28.8876 12.7543 28.6913 12.9579 28.4381 13.0428L23.2087 14.799L23.2087 25.1719C23.2087 25.6292 22.8409 26 22.3872 26L8.61284 26C8.15912 26 7.79131 25.6292 7.79131 25.1719L7.79131 14.799L2.56189 13.0428C2.30874 12.9579 2.11239 12.7543 2.03517 12.4969C1.95794 12.2394 2.00958 11.9604 2.17354 11.7483ZM7.79131 13.0534V11.836C7.79131 11.3787 8.15912 11.0079 8.61284 11.0079C9.06656 11.0079 9.43438 11.3787 9.43438 11.836L9.43438 24.3438L21.5657 24.3438L21.5657 11.836C21.5657 11.3787 21.9336 11.0079 22.3873 11.0079C22.841 11.0079 23.2088 11.3787 23.2088 11.836V13.0534L26.8161 11.8419L23.7577 7.88548C23.1538 7.10422 22.2441 6.65622 21.2615 6.65622H19.3038C18.565 8.05596 17.102 8.96203 15.5001 8.96203C13.8982 8.96203 12.4352 8.05584 11.6963 6.65622L9.73858 6.65622C8.75614 6.65622 7.84635 7.10422 7.2424 7.88537L4.18395 11.8419L7.79131 13.0534Z\" fill=\"#CC9F53\"><\/path>\n<\/svg>",
+            "content": "{{product.description}}",
+            "page": ""
+          }
+        },
+        "cdf7bb7f-d55b-4a46-a7c0-822ce5dc0327": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "<p><strong>SPECS<\/strong><\/p>",
+            "icon": "<svg width=\"30\" height=\"30\" viewbox=\"0 0 30 30\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<rect x=\"1\" y=\"12\" width=\"28\" height=\"8\" stroke=\"#CC9F53\" stroke-width=\"2\"><\/rect>\n<path d=\"M7 20L7 16\" stroke=\"#CC9F53\"><\/path>\n<path d=\"M17 20L17 16\" stroke=\"#CC9F53\"><\/path>\n<line x1=\"11.5\" y1=\"20\" x2=\"11.5\" y2=\"15\" stroke=\"#CC9F53\"><\/line>\n<line x1=\"22.5\" y1=\"20\" x2=\"22.5\" y2=\"15\" stroke=\"#CC9F53\"><\/line>\n<\/svg>",
+            "content": "spec",
+            "page": ""
+          }
+        },
+        "fbe15e98-645b-4a45-9432-fa0face0b078": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "<p>Find a store near you in <\/p>",
+            "icon": "<svg width=\"14\" height=\"19\" viewbox=\"0 0 14 19\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M12.6618 6.81132C12.6618 7.57353 12.3083 8.67642 11.6869 9.98012C11.0781 11.2574 10.2594 12.6327 9.43015 13.9073C8.6026 15.1794 7.7737 16.3374 7.15099 17.1781C6.98683 17.3998 6.83719 17.5991 6.70588 17.7724C6.57458 17.5991 6.42493 17.3998 6.26078 17.1781C5.63806 16.3374 4.80916 15.1794 3.98161 13.9073C3.15237 12.6327 2.33363 11.2574 1.72483 9.98012C1.10345 8.67642 0.75 7.57353 0.75 6.81132C0.75 3.45267 3.42753 0.75 6.70588 0.75C9.98424 0.75 12.6618 3.45267 12.6618 6.81132Z\" stroke=\"#CC9F53\" stroke-width=\"1.5\"><\/path>\n<\/svg>",
+            "content": "location",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "39f80811-4776-475e-a397-e6d3a25fa9d3",
+        "price",
+        "11ad8c76-379b-4807-a15f-5e450da8a099",
+        "variant_picker",
+        "buy_buttons",
+        "d4b13fe5-08a7-4886-9b05-263203878113",
+        "e8253375-5e6b-46c3-a98e-d35f5ec0e252",
+        "cdf7bb7f-d55b-4a46-a7c0-822ce5dc0327",
+        "fbe15e98-645b-4a45-9432-fa0face0b078"
+      ],
+      "settings": {
+        "enable_sticky_info": false,
+        "media_size": "small",
+        "constrain_to_viewport": false,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "95308eb8-1792-44ae-a247-c898ce9a559e": {
+      "type": "image-with-text",
+      "blocks": {
+        "d69a7b00-9b6a-480a-b374-ff185510e9a6": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/webimage-C5234F1E-3F35-4CBD-905B66C5C0A0BC2F_1.png"
+          }
+        },
+        "template--18464411418916__95308eb8-1792-44ae-a247-c898ce9a559e-16806862328940c11a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Lifestyle with History",
+            "heading_link": "",
+            "heading_size": "h2",
+            "heading_color": "",
+            "max_width": ""
+          }
+        },
+        "template--18464411418916__95308eb8-1792-44ae-a247-c898ce9a559e-16806862328940c11a-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>",
+            "text_style": "body",
+            "color": ""
+          }
+        }
+      },
+      "block_order": [
+        "d69a7b00-9b6a-480a-b374-ff185510e9a6",
+        "template--18464411418916__95308eb8-1792-44ae-a247-c898ce9a559e-16806862328940c11a-0",
+        "template--18464411418916__95308eb8-1792-44ae-a247-c898ce9a559e-16806862328940c11a-1"
+      ],
+      "settings": {
+        "tag": "400th",
+        "side_banner": false,
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/Rectangle_27.png",
+        "mobile_image": "shopify:\/\/shop_images\/Rectangle_27.png",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "large",
+        "layout": "image_first",
+        "container_image": false,
+        "media_max_width": "",
+        "desktop_content_position": "top",
+        "content_align": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "center",
+        "overlay_section": false,
+        "padding_top": 64,
+        "padding_bottom": 64,
+        "quote": false,
+        "max_width": "430"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You May Like This Too",
+        "heading_size": "h1",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "7da9a285-737b-46c1-94d4-47b4316b962e": {
+      "type": "product-review",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "95308eb8-1792-44ae-a247-c898ce9a559e",
+    "related-products",
+    "7da9a285-737b-46c1-94d4-47b4316b962e"
+  ]
+}

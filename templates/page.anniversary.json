@@ -1,0 +1,382 @@
+{
+  "sections": {
+    "3141c904-b6a6-4f2b-a1fe-aa2b9e911af8": {
+      "type": "image-banner",
+      "blocks": {
+        "template--18142515003684__3141c904-b6a6-4f2b-a1fe-aa2b9e911af8-1679425999b0455fe5-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "THE Title of the promotion",
+            "heading_size": "h1",
+            "uppercase": false
+          }
+        },
+        "633eb824-4c8b-48aa-90e9-0cb1ebae4d91": {
+          "type": "text",
+          "settings": {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "template--18142515003684__3141c904-b6a6-4f2b-a1fe-aa2b9e911af8-1679425999b0455fe5-0",
+        "633eb824-4c8b-48aa-90e9-0cb1ebae4d91"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1_hero.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/hero_14.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "content_width": "850",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false,
+        "center_mobile": false,
+        "full_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "3ecbccab-bd42-4007-a0cf-7fdf878e010c": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18486377316644__3ecbccab-bd42-4007-a0cf-7fdf878e010c-16808183520973493f-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "LIMITLESS MUSICAL EXPRESSION",
+            "heading_link": "",
+            "heading_size": "h1",
+            "heading_color": "",
+            "max_width": "307"
+          }
+        },
+        "template--18486377316644__3ecbccab-bd42-4007-a0cf-7fdf878e010c-16808183520973493f-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For 400 years, Zildjian has singularly focused on your limitless musical expression, by creating instruments with infinite sound capabilities. It's been our commitment to create the sounds that excite your imagination, and the tools that unleash your playing potential, that has kept us at the forefront of music across continents, across genres, and across centuries. From Avedis Zildjian's first strike of the anvil at the Sultan of the Ottoman Empire's palace, to the 15th generation of Zildjian Family members today, our pursuit to create the best and most relevant instruments and tools continues.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--18486377316644__3ecbccab-bd42-4007-a0cf-7fdf878e010c-16808183520973493f-0",
+        "template--18486377316644__3ecbccab-bd42-4007-a0cf-7fdf878e010c-16808183520973493f-1"
+      ],
+      "settings": {
+        "side_banner": false,
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/Capture_2_acb0f833-16ad-48df-9041-03d97bff6a14.png",
+        "mobile_image": "shopify:\/\/shop_images\/Capture_2_acb0f833-16ad-48df-9041-03d97bff6a14.png",
+        "side_image": "shopify:\/\/shop_images\/side_6b98a249-05a4-4c57-94a3-0d2a4cf3290e.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=ShD0cfawLxk&t=2s",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "content_align": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "overlay_section": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "quote": false,
+        "max_width": "468"
+      }
+    },
+    "19693a89-f98a-4a1f-9a1c-f68a634df6a4": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18486377316644__19693a89-f98a-4a1f-9a1c-f68a634df6a4-16813318156dc4fd1e-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>TITLE GOES IN HERE<\/p>",
+            "heading_size": "h1",
+            "max_width": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18486377316644__19693a89-f98a-4a1f-9a1c-f68a634df6a4-16813318156dc4fd1e-0"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "contnet_type": "list",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "f81d1e15-14c5-437c-b871-d9075ab11355": {
+      "type": "multirow",
+      "blocks": {
+        "template--18486377316644__f81d1e15-14c5-437c-b871-d9075ab11355-1680818518029aee55-0": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Capture_2_1.png",
+            "side_image": "shopify:\/\/shop_images\/img_10.png",
+            "caption": "K Family",
+            "heading": "K COnstantinople",
+            "price": "$550.00",
+            "text": "<p>The legendary \"K Con\" is the pinnacle of the Zildjian cymbal line, renowned for its perfect blended sound quality. <\/p>",
+            "button_label": "Add to Cart",
+            "button_link": "",
+            "product": "k-constantinople-crashes"
+          }
+        },
+        "template--18486377316644__f81d1e15-14c5-437c-b871-d9075ab11355-1680818518029aee55-1": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Capture_2_acb0f833-16ad-48df-9041-03d97bff6a14.png",
+            "side_image": "shopify:\/\/shop_images\/img_10.png",
+            "caption": "K Family",
+            "heading": "K COnstantinople",
+            "price": "$550.00",
+            "text": "<p>The legendary \"K Con\" is the pinnacle of the Zildjian cymbal line, renowned for its perfect blended sound quality. <\/p>",
+            "button_label": "Shop  K Constantinople",
+            "button_link": "shopify:\/\/products\/17-gou-gong",
+            "product": ""
+          }
+        },
+        "template--18486377316644__f81d1e15-14c5-437c-b871-d9075ab11355-1680818518029aee55-2": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Capture_2_1.png",
+            "side_image": "shopify:\/\/shop_images\/img_10.png",
+            "caption": "K Family",
+            "heading": "K COnstantinople",
+            "price": "$550.00",
+            "text": "<p>The legendary \"K Con\" is the pinnacle of the Zildjian cymbal line, renowned for its perfect blended sound quality. <\/p>",
+            "button_label": "Add to Cart",
+            "button_link": "shopify:\/\/products\/crotales-low-octave-a440-tuning-13-notes-w-o-bar",
+            "product": "l80-low-volume-16-crash"
+          }
+        },
+        "41ec66e0-0c92-419e-90bc-899bfae6bc1a": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Capture_2_1.png",
+            "side_image": "shopify:\/\/shop_images\/img_10.png",
+            "caption": "K Family",
+            "heading": "K COnstantinople",
+            "price": "$550.00",
+            "text": "<p>The legendary \"K Con\" is the pinnacle of the Zildjian cymbal line, renowned for its perfect blended sound quality. <\/p>",
+            "button_label": "Add to Cart",
+            "button_link": "",
+            "product": "13-k-z-special-hi-hat-pair"
+          }
+        }
+      },
+      "block_order": [
+        "template--18486377316644__f81d1e15-14c5-437c-b871-d9075ab11355-1680818518029aee55-0",
+        "template--18486377316644__f81d1e15-14c5-437c-b871-d9075ab11355-1680818518029aee55-1",
+        "template--18486377316644__f81d1e15-14c5-437c-b871-d9075ab11355-1680818518029aee55-2",
+        "41ec66e0-0c92-419e-90bc-899bfae6bc1a"
+      ],
+      "settings": {
+        "header": "",
+        "image_height": "adapt",
+        "desktop_image_width": "small",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "background-1",
+        "row_color_scheme": "background-2",
+        "max_width": "420",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 60,
+        "padding_bottom": 100
+      }
+    },
+    "aa777a0a-0351-4f8d-a04e-a799f94ca33b": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18486377316644__aa777a0a-0351-4f8d-a04e-a799f94ca33b-16808183520973493f-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Title goes here",
+            "heading_link": "",
+            "heading_size": "h1",
+            "heading_color": "",
+            "max_width": ""
+          }
+        },
+        "template--18486377316644__aa777a0a-0351-4f8d-a04e-a799f94ca33b-16808183520973493f-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--18486377316644__aa777a0a-0351-4f8d-a04e-a799f94ca33b-16808183520973493f-0",
+        "template--18486377316644__aa777a0a-0351-4f8d-a04e-a799f94ca33b-16808183520973493f-1"
+      ],
+      "settings": {
+        "side_banner": false,
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/img_1_511efe88-3e47-4eed-96c7-2319b9ef7ef8.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/img_1_511efe88-3e47-4eed-96c7-2319b9ef7ef8.jpg",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "content_align": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "inverse",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "overlay_section": false,
+        "padding_top": 36,
+        "padding_bottom": 0,
+        "quote": false,
+        "max_width": "394"
+      }
+    },
+    "745fa191-ef7a-4e29-a7f0-35d61454f2b5": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--18486377316644__745fa191-ef7a-4e29-a7f0-35d61454f2b5-1680818826e8759ed0-0": {
+          "type": "column",
+          "settings": {
+            "badge": "",
+            "title": "Title WHAT INSPIRES YOU?",
+            "heading_size": "h3",
+            "heading_color": "",
+            "download_label": "",
+            "download_link": "",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>",
+            "link_label": "",
+            "link": "",
+            "full_link": false,
+            "link_list": ""
+          }
+        },
+        "template--18486377316644__745fa191-ef7a-4e29-a7f0-35d61454f2b5-1680818826e8759ed0-1": {
+          "type": "column",
+          "settings": {
+            "badge": "",
+            "title": "WHAT INSPIRES YOU?",
+            "heading_size": "h3",
+            "heading_color": "",
+            "download_label": "",
+            "download_link": "",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>",
+            "link_label": "",
+            "link": "",
+            "full_link": false,
+            "link_list": ""
+          }
+        },
+        "template--18486377316644__745fa191-ef7a-4e29-a7f0-35d61454f2b5-1680818826e8759ed0-2": {
+          "type": "column",
+          "settings": {
+            "badge": "",
+            "title": "WHAT INSPIRES YOU?",
+            "heading_size": "h3",
+            "heading_color": "",
+            "download_label": "",
+            "download_link": "",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>",
+            "link_label": "",
+            "link": "",
+            "full_link": false,
+            "link_list": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18486377316644__745fa191-ef7a-4e29-a7f0-35d61454f2b5-1680818826e8759ed0-0",
+        "template--18486377316644__745fa191-ef7a-4e29-a7f0-35d61454f2b5-1680818826e8759ed0-1",
+        "template--18486377316644__745fa191-ef7a-4e29-a7f0-35d61454f2b5-1680818826e8759ed0-2"
+      ],
+      "settings": {
+        "side_banner": false,
+        "full_width": true,
+        "title": "",
+        "heading_size": "h1",
+        "heading_align": "left",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "mobile_image_ratio": "adapt",
+        "overlay_image": false,
+        "columns_desktop": 3,
+        "swipe_on_desktop": false,
+        "step_style": false,
+        "column_alignment": "left",
+        "no_gap": false,
+        "no_padding": false,
+        "number": true,
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "inverse-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "max_width": "1500"
+      }
+    },
+    "78f32805-2aeb-48bd-aa74-be94ca7657f4": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "You May like these",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "cymbals-band-orchestral-a-orchestral",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": true,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 48,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "3141c904-b6a6-4f2b-a1fe-aa2b9e911af8",
+    "3ecbccab-bd42-4007-a0cf-7fdf878e010c",
+    "19693a89-f98a-4a1f-9a1c-f68a634df6a4",
+    "f81d1e15-14c5-437c-b871-d9075ab11355",
+    "main",
+    "aa777a0a-0351-4f8d-a04e-a799f94ca33b",
+    "745fa191-ef7a-4e29-a7f0-35d61454f2b5",
+    "78f32805-2aeb-48bd-aa74-be94ca7657f4"
+  ]
+}

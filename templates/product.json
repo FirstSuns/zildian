@@ -1,0 +1,337 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "39f80811-4776-475e-a397-e6d3a25fa9d3": {
+          "type": "rating",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "11ad8c76-379b-4807-a15f-5e450da8a099": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<p class=\"subtitle\" >{{product.metafields.magento.short_description}}<\/p>"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "quantity": true,
+            "show_dynamic_checkout": false
+          }
+        },
+        "d4b13fe5-08a7-4886-9b05-263203878113": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "<p><strong>HEAR THIS CYMBAL<\/strong><\/p>",
+            "icon": "<svg width=\"30\" height=\"30\" viewbox=\"0 0 30 30\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M5 18.5714V12.4286C5 11.8763 5.44771 11.4286 6 11.4286H10.1212L16.4326 7.07994C17.096 6.62284 18 7.09775 18 7.9034V23.0966C18 23.9022 17.096 24.3772 16.4326 23.9201L10.1212 19.5714H6C5.44772 19.5714 5 19.1237 5 18.5714Z\" stroke=\"#CC9F53\" stroke-width=\"2\"><\/path>\n<path d=\"M23 9C24.8458 10.4972 26 12.6314 26 15C26 17.3686 24.8458 19.5028 23 21\" stroke=\"#CC9F53\" stroke-width=\"2\"><\/path>\n<path d=\"M20 10C21.2305 11.1229 22 12.7235 22 14.5C22 16.2765 21.2305 17.8771 20 19\" stroke=\"#CC9F53\" stroke-width=\"2\"><\/path>\n<\/svg>",
+            "content": "audio",
+            "page": ""
+          }
+        },
+        "e8253375-5e6b-46c3-a98e-d35f5ec0e252": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "<p><strong>DETAILS<\/strong><\/p>",
+            "icon": "<svg width=\"30\" height=\"30\" viewbox=\"0 0 30 30\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M29 18.5C29 19.0632 28.7408 19.6808 28.1056 20.3316C27.4659 20.987 26.4914 21.6229 25.209 22.1786C22.6474 23.2887 19.0387 24 15 24C10.9613 24 7.35263 23.2887 4.79101 22.1786C3.50857 21.6229 2.53407 20.987 1.89439 20.3316C1.25919 19.6808 1 19.0632 1 18.5C1 17.9368 1.25919 17.3192 1.89439 16.6684C2.53407 16.013 3.50857 15.3771 4.79101 14.8214C7.35263 13.7113 10.9613 13 15 13C19.0387 13 22.6474 13.7113 25.209 14.8214C26.4914 15.3771 27.4659 16.013 28.1056 16.6684C28.7408 17.3192 29 17.9368 29 18.5Z\" fill=\"white\" stroke=\"#CC9F53\" stroke-width=\"2\"><\/path>\n<path d=\"M29 12.5C29 13.0632 28.7408 13.6808 28.1056 14.3316C27.4659 14.987 26.4914 15.6229 25.209 16.1786C22.6474 17.2887 19.0387 18 15 18C10.9613 18 7.35263 17.2887 4.79101 16.1786C3.50857 15.6229 2.53407 14.987 1.89439 14.3316C1.25919 13.6808 1 13.0632 1 12.5C1 11.9368 1.25919 11.3192 1.89439 10.6684C2.53407 10.013 3.50857 9.37708 4.79101 8.82136C7.35263 7.71133 10.9613 7 15 7C19.0387 7 22.6474 7.71133 25.209 8.82136C26.4914 9.37708 27.4659 10.013 28.1056 10.6684C28.7408 11.3192 29 11.9368 29 12.5Z\" fill=\"white\" stroke=\"#CC9F53\" stroke-width=\"2\"><\/path>\n<path d=\"M21 11.5C21 11.8837 20.663 12.5002 19.5025 13.0804C18.4019 13.6308 16.8114 14 15 14C13.1886 14 11.5981 13.6308 10.4975 13.0804C9.33702 12.5002 9 11.8837 9 11.5C9 11.1163 9.33702 10.4998 10.4975 9.91955C11.5981 9.36924 13.1886 9 15 9C16.8114 9 18.4019 9.36924 19.5025 9.91955C20.663 10.4998 21 11.1163 21 11.5Z\" fill=\"white\" stroke=\"#CC9F53\" stroke-width=\"2\"><\/path>\n<mask id=\"path-4-inside-1_1252_14547\" fill=\"white\">\n<ellipse cx=\"14.5\" cy=\"11\" rx=\"1.5\" ry=\"1\"><\/ellipse>\n<\/mask>\n<ellipse cx=\"14.5\" cy=\"11\" rx=\"1.5\" ry=\"1\" fill=\"white\"><\/ellipse>\n<path d=\"M14 11C14 10.3994 14.3651 10.1004 14.4513 10.043C14.5514 9.97627 14.5744 10 14.5 10V14C15.254 14 16.0271 13.7999 16.6701 13.3712C17.2991 12.9519 18 12.1529 18 11H14ZM14.5 10C14.4256 10 14.4486 9.97627 14.5487 10.043C14.6349 10.1004 15 10.3994 15 11H11C11 12.1529 11.7009 12.9519 12.3299 13.3712C12.9729 13.7999 13.746 14 14.5 14V10ZM15 11C15 11.6006 14.6349 11.8996 14.5487 11.957C14.4486 12.0237 14.4256 12 14.5 12V8C13.746 8 12.9729 8.20013 12.3299 8.62879C11.7009 9.04814 11 9.84709 11 11H15ZM14.5 12C14.5744 12 14.5514 12.0237 14.4513 11.957C14.3651 11.8996 14 11.6006 14 11H18C18 9.84709 17.2991 9.04814 16.6701 8.62879C16.0271 8.20013 15.254 8 14.5 8V12Z\" fill=\"#CC9F53\" mask=\"url(#path-4-inside-1_1252_14547)\"><\/path>\n<\/svg>",
+            "content": "{{product.description}}",
+            "page": ""
+          }
+        },
+        "cdf7bb7f-d55b-4a46-a7c0-822ce5dc0327": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "<p><strong>SPECS<\/strong><\/p>",
+            "icon": "<svg width=\"30\" height=\"30\" viewbox=\"0 0 30 30\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<rect x=\"1\" y=\"12\" width=\"28\" height=\"8\" stroke=\"#CC9F53\" stroke-width=\"2\"><\/rect>\n<path d=\"M7 20L7 16\" stroke=\"#CC9F53\"><\/path>\n<path d=\"M17 20L17 16\" stroke=\"#CC9F53\"><\/path>\n<line x1=\"11.5\" y1=\"20\" x2=\"11.5\" y2=\"15\" stroke=\"#CC9F53\"><\/line>\n<line x1=\"22.5\" y1=\"20\" x2=\"22.5\" y2=\"15\" stroke=\"#CC9F53\"><\/line>\n<\/svg>",
+            "content": "spec",
+            "page": ""
+          }
+        },
+        "125bc9fb-debc-449c-a53c-10226197f2d0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "<p><strong>DISCLAIMER<\/strong><\/p>",
+            "icon": "",
+            "content": "DISCLAIMER",
+            "page": ""
+          }
+        },
+        "fbe15e98-645b-4a45-9432-fa0face0b078": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "<p>Find a store near you in <\/p>",
+            "icon": "<svg width=\"14\" height=\"19\" viewbox=\"0 0 14 19\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M12.6618 6.81132C12.6618 7.57353 12.3083 8.67642 11.6869 9.98012C11.0781 11.2574 10.2594 12.6327 9.43015 13.9073C8.6026 15.1794 7.7737 16.3374 7.15099 17.1781C6.98683 17.3998 6.83719 17.5991 6.70588 17.7724C6.57458 17.5991 6.42493 17.3998 6.26078 17.1781C5.63806 16.3374 4.80916 15.1794 3.98161 13.9073C3.15237 12.6327 2.33363 11.2574 1.72483 9.98012C1.10345 8.67642 0.75 7.57353 0.75 6.81132C0.75 3.45267 3.42753 0.75 6.70588 0.75C9.98424 0.75 12.6618 3.45267 12.6618 6.81132Z\" stroke=\"#CC9F53\" stroke-width=\"1.5\"><\/path>\n<\/svg>",
+            "content": "location",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "39f80811-4776-475e-a397-e6d3a25fa9d3",
+        "price",
+        "11ad8c76-379b-4807-a15f-5e450da8a099",
+        "variant_picker",
+        "buy_buttons",
+        "d4b13fe5-08a7-4886-9b05-263203878113",
+        "e8253375-5e6b-46c3-a98e-d35f5ec0e252",
+        "cdf7bb7f-d55b-4a46-a7c0-822ce5dc0327",
+        "125bc9fb-debc-449c-a53c-10226197f2d0",
+        "fbe15e98-645b-4a45-9432-fa0face0b078"
+      ],
+      "settings": {
+        "enable_sticky_info": false,
+        "media_size": "small",
+        "constrain_to_viewport": false,
+        "media_fit": "contain",
+        "gallery_layout": "left",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "a02f37d8-1538-430d-bbd7-231ebfd102ae": {
+      "type": "product-image-with-text-1",
+      "blocks": {
+        "template--18142515069220__a02f37d8-1538-430d-bbd7-231ebfd102ae-1679471913d84465cb-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Zildjian SOund Lab",
+            "heading_link": "",
+            "heading_size": "h1",
+            "heading_color": "#cc9f53",
+            "max_width": ""
+          }
+        },
+        "template--18142515069220__a02f37d8-1538-430d-bbd7-231ebfd102ae-1679471913d84465cb-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use our Sound Lab meters for comparison, and finding the right sound profile and characteristics for your voice.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "74d4d945-b9a9-491f-a508-b530827d1417": {
+          "type": "spec",
+          "settings": {
+            "title": "Brightness",
+            "tooltip": "The pitch of the cymbal, spanning from low and dark, to high and bright",
+            "range": 10
+          }
+        },
+        "6830f10d-5d01-4562-80c8-d89686eae25d": {
+          "type": "spec",
+          "settings": {
+            "title": "Dryness",
+            "tooltip": "Drier cymbals have minimal overtones and also tend to have shorter sustain",
+            "range": 1
+          }
+        },
+        "98ee6ca1-ebd9-49da-8afb-30a04e8d19f8": {
+          "type": "spec",
+          "settings": {
+            "title": "Definition",
+            "tooltip": "From a soft, buttery sound to a solid, well defined note with a strong stick sound",
+            "range": 1
+          }
+        },
+        "d3e13dda-2ea7-46a5-9268-e3f2978d3fec": {
+          "type": "spec",
+          "settings": {
+            "title": "Sustain",
+            "tooltip": "The length of the note produced by the cymbal",
+            "range": 1
+          }
+        }
+      },
+      "block_order": [
+        "template--18142515069220__a02f37d8-1538-430d-bbd7-231ebfd102ae-1679471913d84465cb-0",
+        "template--18142515069220__a02f37d8-1538-430d-bbd7-231ebfd102ae-1679471913d84465cb-1",
+        "74d4d945-b9a9-491f-a508-b530827d1417",
+        "6830f10d-5d01-4562-80c8-d89686eae25d",
+        "98ee6ca1-ebd9-49da-8afb-30a04e8d19f8",
+        "d3e13dda-2ea7-46a5-9268-e3f2978d3fec"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.image-with-text__heading {font-size: 32px; }}"
+      ],
+      "settings": {
+        "side_banner": false,
+        "desktop_full_width": true,
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/Rectangle_36.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Rectangle_27.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "height": "adapt",
+        "desktop_image_width": "large",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "content_align": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_layout": "text_first",
+        "mobile_content_alignment": "left",
+        "overlay_section": false,
+        "padding_top": 64,
+        "padding_bottom": 64,
+        "quote": false,
+        "max_width": "325"
+      }
+    },
+    "95308eb8-1792-44ae-a247-c898ce9a559e": {
+      "type": "product-image-with-text-2",
+      "blocks": {
+        "template--18464411418916__95308eb8-1792-44ae-a247-c898ce9a559e-16806862328940c11a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "LIMITLESS MUSICAL EXPRESSION",
+            "heading_link": "",
+            "heading_size": "h1",
+            "heading_color": "",
+            "max_width": "350"
+          }
+        },
+        "template--18464411418916__95308eb8-1792-44ae-a247-c898ce9a559e-16806862328940c11a-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Combine old world cymbal-making artistry with modern technology, and a dash of cutting-edge innovation to transform Avedis’ alloy into boundless varieties of superior-sounding cymbals for every genre of music<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--18464411418916__95308eb8-1792-44ae-a247-c898ce9a559e-16806862328940c11a-0",
+        "template--18464411418916__95308eb8-1792-44ae-a247-c898ce9a559e-16806862328940c11a-1"
+      ],
+      "settings": {
+        "side_banner": false,
+        "desktop_full_width": false,
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/Rectangle_27.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Rectangle_27.jpg",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "large",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "content_align": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "center",
+        "overlay_section": false,
+        "padding_top": 64,
+        "padding_bottom": 64,
+        "quote": false,
+        "max_width": "420"
+      }
+    },
+    "95308eb8-1792-44ae-a247-c898ce9a559c": {
+      "type": "image-with-text",
+      "blocks": {
+        "d69a7b00-9b6a-480a-b374-ff185510e9a6": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/webimage-C5234F1E-3F35-4CBD-905B66C5C0A0BC2F_1.png"
+          }
+        },
+        "template--18464411418916__95308eb8-1792-44ae-a247-c898ce9a559e-16806862328940c11a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Lifestyle with History",
+            "heading_link": "",
+            "heading_size": "h2",
+            "heading_color": "",
+            "max_width": ""
+          }
+        },
+        "template--18464411418916__95308eb8-1792-44ae-a247-c898ce9a559e-16806862328940c11a-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>",
+            "text_style": "body",
+            "color": ""
+          }
+        }
+      },
+      "block_order": [
+        "d69a7b00-9b6a-480a-b374-ff185510e9a6",
+        "template--18464411418916__95308eb8-1792-44ae-a247-c898ce9a559e-16806862328940c11a-0",
+        "template--18464411418916__95308eb8-1792-44ae-a247-c898ce9a559e-16806862328940c11a-1"
+      ],
+      "settings": {
+        "tag": "400th",
+        "side_banner": false,
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/Rectangle_27.png",
+        "mobile_image": "shopify:\/\/shop_images\/Rectangle_27.png",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "large",
+        "layout": "image_first",
+        "container_image": false,
+        "media_max_width": "",
+        "desktop_content_position": "top",
+        "content_align": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "center",
+        "overlay_section": false,
+        "padding_top": 64,
+        "padding_bottom": 64,
+        "quote": false,
+        "max_width": "430"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You May Like This Too",
+        "heading_size": "h1",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "7da9a285-737b-46c1-94d4-47b4316b962e": {
+      "type": "product-review",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "a02f37d8-1538-430d-bbd7-231ebfd102ae",
+    "95308eb8-1792-44ae-a247-c898ce9a559e",
+    "95308eb8-1792-44ae-a247-c898ce9a559c",
+    "related-products",
+    "7da9a285-737b-46c1-94d4-47b4316b962e"
+  ]
+}

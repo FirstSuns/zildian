@@ -1,0 +1,284 @@
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement-bar-0": {
+          "type": "announcement",
+          "settings": {
+            "text": "Free Ground Shipping on Orders $50+ in US",
+            "text_alignment": "center",
+            "color_scheme": "accent-1",
+            "link": ""
+          }
+        },
+        "ff2f82f0-865a-4c46-8109-ac61b57a69f2": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "text": "Welcome to our store",
+            "text_alignment": "center",
+            "color_scheme": "accent-1",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement-bar-0",
+        "ff2f82f0-865a-4c46-8109-ac61b57a69f2"
+      ],
+      "settings": {}
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "69e69917-eeba-4df0-9bdb-7ad375582908": {
+          "type": "menu_1",
+          "settings": {
+            "menu_title": "Browse by types",
+            "menu": "browse-by-types",
+            "banner_1": "shopify:\/\/shop_images\/Rectangle_23.jpg",
+            "title_1": "Cymbal finder",
+            "text_1": "Fine-tune your search for the perfect cymbal",
+            "link_1": "shopify:\/\/collections\/cymbals",
+            "banner_2": "shopify:\/\/shop_images\/Rectangle_25_a470842b-9fdd-48ab-b72c-df106896788e.jpg",
+            "title_2": "Latest Concepts",
+            "text_2": "Shop Experimental, Small-Batch Cymbals",
+            "link_2": "shopify:\/\/collections\/cymbals-drum-set-concept-shop",
+            "new_link": "shopify:\/\/collections\/new-arrivals",
+            "show_mobile_new_link": false
+          }
+        },
+        "b1b3461b-0446-4ec0-899c-ee6c4d669879": {
+          "type": "menu_1",
+          "settings": {
+            "menu_title": "Drum Set",
+            "menu": "drum-set",
+            "banner_1": "shopify:\/\/shop_images\/Rectangle_23.jpg",
+            "title_1": "Cymbal finder",
+            "text_1": "Fine-tune your search for the perfect cymbal",
+            "link_1": "shopify:\/\/collections\/cymbals",
+            "banner_2": "shopify:\/\/shop_images\/Rectangle_25_a470842b-9fdd-48ab-b72c-df106896788e.jpg",
+            "title_2": "Latest Concepts",
+            "text_2": "Shop Experimental, Small-Batch Cymbals",
+            "link_2": "shopify:\/\/collections\/cymbals-drum-set-concept-shop",
+            "new_link": "shopify:\/\/collections\/new-arrivals",
+            "show_mobile_new_link": true
+          }
+        },
+        "79a9fac3-5618-4e53-8ffa-f664f4ed0dcc": {
+          "type": "menu_3",
+          "settings": {
+            "menu_title": "Band & orchestral",
+            "menu": "band-orchestral",
+            "banner_1": "shopify:\/\/shop_images\/Rectangle_23.jpg",
+            "title_1": "Cymbal finder",
+            "text_1": "Fine-tune your search for the perfect cymbal",
+            "link_1": "shopify:\/\/collections\/cymbals",
+            "banner_2": "shopify:\/\/shop_images\/Rectangle_25_a470842b-9fdd-48ab-b72c-df106896788e.jpg",
+            "title_2": "Latest Concepts",
+            "text_2": "Shop Experimental, Small-Batch Cymbals",
+            "link_2": "shopify:\/\/collections\/cymbals-drum-set-concept-shop",
+            "new_link": "shopify:\/\/collections\/new-arrivals",
+            "show_mobile_new_link": true
+          }
+        },
+        "01537a63-0358-4c6d-b7da-df8905e6d50b": {
+          "type": "menu_1",
+          "settings": {
+            "menu_title": "Sticks",
+            "menu": "sticks",
+            "banner_1": "shopify:\/\/shop_images\/Stick-Finder_1.png",
+            "title_1": "STICK FINDER",
+            "text_1": "Fine-tune your search for the perfect pair of sticks.",
+            "link_1": "shopify:\/\/collections\/sticks-mallets-sticks",
+            "title_2": "",
+            "text_2": "",
+            "link_2": "",
+            "new_link": "",
+            "show_mobile_new_link": false
+          }
+        },
+        "222e335a-7e14-4266-8fd4-57860ab4e3e8": {
+          "type": "menu_1",
+          "settings": {
+            "menu_title": "Mallets & more",
+            "menu": "mallets-more",
+            "title_1": "",
+            "text_1": "",
+            "link_1": "",
+            "title_2": "",
+            "text_2": "",
+            "link_2": "",
+            "new_link": "",
+            "show_mobile_new_link": false
+          }
+        },
+        "95b55abb-b8f9-47c1-a0b3-82ce0ef434cb": {
+          "type": "menu_1",
+          "settings": {
+            "menu_title": "Apparel & Lifestyle",
+            "menu": "apparel-lifestyle",
+            "banner_1": "shopify:\/\/shop_images\/Z-Risk-Featured-Image-Thumb_1.png",
+            "title_1": "ZILDJIAN X RISK",
+            "text_1": "Limited Edition Graffiti Art Collectibles",
+            "link_1": "shopify:\/\/collections\/gear-apparel-lifestyle-zildjian-x-risk",
+            "banner_2": "shopify:\/\/shop_images\/Clocks-and-colours-nav-thumbnail_1_1.jpg",
+            "title_2": "ZILDJIAN X CLOCKS AND COLOURS",
+            "text_2": "High Quality Jewelry Collection",
+            "link_2": "shopify:\/\/collections\/gear-apparel-lifestyle-zildjian-x-risk",
+            "new_link": "shopify:\/\/collections\/new-arrivals",
+            "show_mobile_new_link": false
+          }
+        },
+        "cf5f9719-04f0-48ef-be95-4e160490fcd8": {
+          "type": "menu_1",
+          "settings": {
+            "menu_title": "Accessories",
+            "menu": "accessories",
+            "title_1": "",
+            "text_1": "",
+            "link_1": "",
+            "title_2": "",
+            "text_2": "",
+            "link_2": "",
+            "new_link": "",
+            "show_mobile_new_link": false
+          }
+        },
+        "6c65f185-a438-4975-b481-b13b52711c0f": {
+          "type": "menu_1",
+          "settings": {
+            "menu_title": "GIft Guide",
+            "menu": "gift-guide",
+            "title_1": "Cymbal finder",
+            "text_1": "",
+            "link_1": "",
+            "title_2": "",
+            "text_2": "",
+            "link_2": "",
+            "new_link": "",
+            "show_mobile_new_link": false
+          }
+        },
+        "cdb15837-d3f0-433b-8a71-25ccacd07744": {
+          "type": "menu_2",
+          "settings": {
+            "menu_title": "Artists",
+            "max_width": "360",
+            "title": "Explore our zildjian family of artists",
+            "button_title": "Browse Artists",
+            "button_link": "shopify:\/\/blogs\/artist",
+            "sub_title": "Featured artists",
+            "sub_link": "",
+            "text_align": "center",
+            "image_1": "shopify:\/\/shop_images\/George-Kollias-Profile-Zildjian.jpg",
+            "title_1": "George Kollias",
+            "text_1": "<p>Nile<\/p>",
+            "link_1": "\/blogs\/artist\/george-kollias",
+            "image_2": "shopify:\/\/shop_images\/Jamison-Ross-Z-Profile.jpg",
+            "title_2": "Jamison Ross",
+            "text_2": "<p>Snarky Puppy<\/p>",
+            "link_2": "\/blogs\/artist\/jamison-ross",
+            "image_3": "shopify:\/\/shop_images\/Karl-BrazilL-Profile-Zildjian.jpg",
+            "title_3": "Karl Brazil",
+            "text_3": "<p>Robbie Williams<\/p>",
+            "link_3": "shopify:\/\/blogs\/artist\/karl-brazil",
+            "image_4": "shopify:\/\/shop_images\/Terri_Lyne_Carrington_Profile.jpg",
+            "title_4": "Terri Lyne",
+            "text_4": "<p>Band Leader<\/p>",
+            "link_4": "shopify:\/\/blogs\/artist\/terri-lyne-carrington"
+          }
+        },
+        "266ac942-ff6f-491b-958f-e149c41fb241": {
+          "type": "menu_2",
+          "settings": {
+            "menu_title": "Education",
+            "max_width": "360",
+            "title": "Take Your Playing to the next level",
+            "button_title": "Browse Topics",
+            "button_link": "shopify:\/\/pages\/education",
+            "sub_title": "Featured Topics",
+            "sub_link": "shopify:\/\/pages\/education",
+            "text_align": "left",
+            "image_1": "shopify:\/\/shop_images\/Zildjian-Drumset-Method_6b83e8bd-791f-45f7-b8bc-1c9249107774.jpg",
+            "title_1": "NEW! ZILDJIAN DRUM SET METHOD",
+            "text_1": "<p> Comprehensive lesson program for beginners and teachers, with easy-to-follow video lessons and play-along tracks<\/p>",
+            "link_1": "\/blogs\/education",
+            "image_2": "shopify:\/\/shop_images\/Zildjian-Rythm-Cards_f28541f6-9333-4c20-9bc8-25bf8e3a5da3.jpg",
+            "title_2": "LEARN NOTE READING WITH RHYTHM CARDS",
+            "text_2": "<p>Fun exercises in 5 engaging levels, with downloadable resources for the classroom<\/p>",
+            "link_2": "shopify:\/\/blogs\/zildjian-rhythm-cards",
+            "image_3": "shopify:\/\/shop_images\/Improve-Your-fundamental-Skills_657244c9-8ac3-4084-98d0-07dd54ce30cf.jpg",
+            "title_3": "IMPROVE YOUR FUNDAMENTAL SKILLS WITH ZILDJIAN WORKOUTS",
+            "text_3": "<p>Learn while you drum along with top Zildjian Artists<\/p>",
+            "link_3": "\/blogs\/zildjian-workout-practice-and-learn-from-the-zildjian-artists",
+            "image_4": "shopify:\/\/shop_images\/Inspirit-Education-Newsletter_600318ae-7966-4491-8317-c74ec92d190f.jpg",
+            "title_4": "Read the Latest Edition of inSpirit Digest",
+            "text_4": "<p>Bi-Monthly newsletter from the Zildjian Education Team, featuring perspectives of our artists and educators worldwide<\/p>",
+            "link_4": "\/blogs\/instalessonz-with-zildjian-artists"
+          }
+        },
+        "9427a8a8-10aa-48d7-bda6-f5d4364acc5e": {
+          "type": "menu_2",
+          "settings": {
+            "menu_title": "Brands",
+            "max_width": "270",
+            "title": "UNLEASH YOUR CREATIVITY AND ELEVATE YOUR SOUND",
+            "button_title": "",
+            "button_link": "",
+            "sub_title": "",
+            "sub_link": "",
+            "text_align": "center",
+            "image_1": "shopify:\/\/shop_images\/Group_193.png",
+            "title_1": "Infinite sounds, unlimited possibilities.",
+            "text_1": "",
+            "link_1": "https:\/\/zildjian.com\/",
+            "image_2": "shopify:\/\/shop_images\/Group_194.png",
+            "title_2": "It all kicks in with the perfect pair.",
+            "text_2": "",
+            "link_2": "https:\/\/vicfirth.zildjian.com\/",
+            "image_3": "shopify:\/\/shop_images\/Balter-Website.gif",
+            "title_3": "Precision with every note. Now part of the Vic Firth family.",
+            "text_3": "",
+            "link_3": "https:\/\/vicfirth.zildjian.com\/mallets\/keyboard\/balter-mallets.html",
+            "title_4": "",
+            "text_4": "",
+            "link_4": ""
+          }
+        }
+      },
+      "block_order": [
+        "69e69917-eeba-4df0-9bdb-7ad375582908",
+        "b1b3461b-0446-4ec0-899c-ee6c4d669879",
+        "79a9fac3-5618-4e53-8ffa-f664f4ed0dcc",
+        "01537a63-0358-4c6d-b7da-df8905e6d50b",
+        "222e335a-7e14-4266-8fd4-57860ab4e3e8",
+        "95b55abb-b8f9-47c1-a0b3-82ce0ef434cb",
+        "cf5f9719-04f0-48ef-be95-4e160490fcd8",
+        "6c65f185-a438-4975-b481-b13b52711c0f",
+        "cdb15837-d3f0-433b-8a71-25ccacd07744",
+        "266ac942-ff6f-491b-958f-e149c41fb241",
+        "9427a8a8-10aa-48d7-bda6-f5d4364acc5e"
+      ],
+      "settings": {
+        "color_scheme": "inverse-2",
+        "logo_position": "middle-left",
+        "menu": "main-menu",
+        "menu_type_desktop": "mega",
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": true,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}

@@ -1,0 +1,58 @@
+<!-- start_review_render_code_widget_section -->
+{{'custom-product-page-review.scss.css' | asset_url | stylesheet_tag }}
+<div data-section-type="product-page-review">
+	<div class="page-width">
+		<div id="pr-reviewdisplay" style=""></div>
+	</div>
+</div>
+
+<!-- end_review_render_code_widget_section -->  
+
+<script>
+  window.pwr = window.pwr || function () {
+    (pwr.q = pwr.q || []).push(arguments); 
+  };
+  pwr("render", {
+	api_key: "10803808-76df-4b55-b781-315a7e6c6f91",
+	locale: "en_US",
+	merchant_group_id: "1856964674",
+	merchant_id: "167086839",
+	page_id: "{{ product.id }}",
+	review_wrapper_url: "https://zildjianshop.myshopify.com/pages/write-a-review/?pr_page_id={{ product.id }}",
+	product: {
+		name: '{{ product.title | replace: "+", " " }}',
+		url: "https://zildjianshop.myshopify.com{{ product.url }}",
+		image_url: "https:{{ product.featured_image | product_img_url: "large" }}",
+		description: "{{ product.description | strip_html | strip_newlines | replace: "%0A", "%20" | replace: '"', '%27' | escape }}",
+		category_name: {% if product.type != '' %}"{{ product.type }}"{% else %} "Default" {% endif %},
+		upc: "{{ product.barcode }}",
+		brand_name: "{{ product.metafields.magento.family }}",
+		price: "{{ product.price | money_without_currency }}",
+		in_stock: "{{ product.available }}",
+               variants: [ {% for variant in product.variants %}
+               {% assign product_name = product.title %}
+               {% if product.variants.size > 1 %}{% assign product_name = variant.title %}{% endif %}
+		{
+		   name: '{{ product_name | replace: "+", " " }}',
+		   description: "{{ product_name | escape }}",
+		   page_id_variant: "{{variant.id}}",
+		   upc: "{{ variant.barcode }}"
+		}{% if forloop.last == false %}, {% endif %} {% endfor %}
+	]},
+       components: {
+				ReviewDisplay: "pr-reviewdisplay",
+     		ReviewSnippet: "pr-reviewsnippet"
+       }	
+  });
+</script> 
+
+{% schema %}
+{
+  "name": "Product page review",
+  "presets": [
+    {
+      "name":"Product page review"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,338 @@
+<link rel="stylesheet" href="{{ 'component-card.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
+<link
+  rel="stylesheet"
+  href="{{ 'section-related-products.css' | asset_url }}"
+  media="print"
+  onload="this.media='all'"
+>
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="section-{{ section.id }}-padding color-{{section.settings.color_scheme}}">
+  <div class="page-width--narrow tagalys-namespace exclude-tagalys-css-reset" data-recommendation="similar-products"></div>
+</div>
+
+
+<script>
+  function initSimilarProductsRecommendation() {
+    Tagalys.UIWidgets.Recommendations.init(
+      "[data-recommendation='similar-products']",
+      {
+        recommendationId: "4f2751e73ec50bf82f5c",
+        productId: '{{product.id}}',
+        templates: {
+          header: {
+            render: function (html, args) {
+              var props = args.props
+              var  widgetHeading = props.helpers.getAPIResponse().name
+              return html`
+                <div class="widget-header">
+                  <h1 class="widget-heading">You May like these too</h1>
+                </div>
+              `;
+            }
+          },
+          widget: {
+            options: {
+              displayFormat: "carousel",
+              carouselOptions: {
+                perPage: {
+                  300: 1.5,
+                  600: 1.5,
+                  900: 2,
+                  1200: 3,
+                  1440: 3,
+                  2560: 3
+                },
+                duration: 200,
+                easing: "ease-out",
+                startIndex: 0,
+                draggable: true,
+                onChange: function (siemaInstance) {
+                 
+                },
+              }
+            }
+          },
+          leftArrow: false,
+          rightArrow: false,
+          product: {
+            callbacks: {
+              afterEveryRender: function(helpers, args) {
+                var product = args.product;
+                window.pwr = window.pwr || function () {
+                  (pwr.q = pwr.q || []).push(arguments); 
+                };
+                pwr('render', [
+                  {
+                      api_key: '10803808-76df-4b55-b781-315a7e6c6f91',
+                      locale: 'en_US',
+                      merchant_group_id: '1856964674',
+                      merchant_id: '167086839',
+                      page_id: product.id,
+                      components: {
+                        CategorySnippet: `snippet-${product.id}`
+                      }
+                  }
+                ]);
+              }
+            },
+            render: function (html, args) {
+              var props = args.props;
+              var product = props.product;
+              console.log(product)
+              var helpers = props.helpers;
+              var badge = "";
+              if (product.available == false) {
+                badge = 'Sold Out'
+              } else if (product.compare_at_price > product.price) {
+                badge = 'Sale'
+              }
+              
+              return html`
+                <div class="product">
+                  <a
+                    class="product-link"
+                    href=${product.__tagalys_fields.link}
+                  >
+                    <div class="product-image-container">
+                      <span class="badge">${badge}</span>
+                      <img
+                        class="product-image"
+                        data-src=${product.__tagalys_fields.image_url}
+                        alt=${product.title}
+                      />
+                    </div>
+                    <div class="product-details">
+                      <span class="product-name">${product.title}</span>
+                      <div class="pwr-category-snippets" style="">
+                        <div id="snippet-${product.id}"></div>
+                      </div>
+                      <span
+                        class=${`product-prices${
+                          helpers.isProductOnSale(
+                            product.compare_at_price,
+                            product.price
+                          )
+                            ? " discounted"
+                            : " full-price"
+                        }`}
+                      >
+                        ${helpers.isProductOnSale(
+                          product.compare_at_price,
+                          product.price
+                        )
+                          ? html`
+                              <span class="product-price-discounted"
+                                >${helpers.formatCurrency(product.price)}</span
+                              >
+                            `
+                          : null}
+                        <span class="product-price-regular">
+                          ${helpers.formatCurrency(
+                            product.compare_at_price === null
+                              ? product.price
+                              : product.compare_at_price
+                          )}
+                        </span>
+                      </span>
+                    </div>
+                  </a>
+                </div>
+              `;
+            },
+          },
+        }
+      }
+    );
+  }
+  
+</script>
+
+
+{% schema %}
+{
+  "name": "t:sections.related-products.name",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "t:sections.related-products.settings.paragraph__1.content"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "You may also like",
+      "label": "t:sections.related-products.settings.heading.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "range",
+      "id": "products_to_show",
+      "min": 2,
+      "max": 10,
+      "step": 1,
+      "default": 4,
+      "label": "t:sections.related-products.settings.products_to_show.label"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 4,
+      "label": "t:sections.related-products.settings.columns_desktop.label"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "accent-1",
+          "label": "t:sections.all.colors.accent_1.label"
+        },
+        {
+          "value": "accent-2",
+          "label": "t:sections.all.colors.accent_2.label"
+        },
+        {
+          "value": "background-1",
+          "label": "t:sections.all.colors.background_1.label"
+        },
+        {
+          "value": "background-2",
+          "label": "t:sections.all.colors.background_2.label"
+        },
+        {
+          "value": "inverse",
+          "label": "t:sections.all.colors.inverse.label"
+        }
+      ],
+      "default": "background-1",
+      "label": "t:sections.all.colors.label",
+      "info": "t:sections.all.colors.has_cards_info"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.related-products.settings.header__2.content"
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "t:sections.related-products.settings.image_ratio.options__1.label"
+        },
+        {
+          "value": "portrait",
+          "label": "t:sections.related-products.settings.image_ratio.options__2.label"
+        },
+        {
+          "value": "square",
+          "label": "t:sections.related-products.settings.image_ratio.options__3.label"
+        }
+      ],
+      "default": "adapt",
+      "label": "t:sections.related-products.settings.image_ratio.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_secondary_image",
+      "default": false,
+      "label": "t:sections.related-products.settings.show_secondary_image.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_vendor",
+      "default": false,
+      "label": "t:sections.related-products.settings.show_vendor.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_rating",
+      "default": false,
+      "label": "t:sections.related-products.settings.show_rating.label",
+      "info": "t:sections.related-products.settings.show_rating.info"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.related-products.settings.header_mobile.content"
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "default": "2",
+      "label": "t:sections.related-products.settings.columns_mobile.label",
+      "options": [
+        {
+          "value": "1",
+          "label": "t:sections.related-products.settings.columns_mobile.options__1.label"
+        },
+        {
+          "value": "2",
+          "label": "t:sections.related-products.settings.columns_mobile.options__2.label"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ]
+}
+{% endschema %}

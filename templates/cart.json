@@ -1,0 +1,66 @@
+{
+  "sections": {
+    "cart-items": {
+      "type": "main-cart-items",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "cart-footer": {
+      "type": "main-cart-footer",
+      "blocks": {
+        "f0d80516-d4c6-4e07-9dc3-f91324255765": {
+          "type": "freeshipping",
+          "settings": {}
+        },
+        "subtotal": {
+          "type": "subtotal",
+          "settings": {}
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "f0d80516-d4c6-4e07-9dc3-f91324255765",
+        "subtotal",
+        "buttons"
+      ],
+      "settings": {}
+    },
+    "808a3ab4-e669-4da1-b5a3-019f7f861cd5": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "You may like this too",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "cymbals-band-orchestral-a-orchestral-symphonic-tone",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 100,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "cart-items",
+    "cart-footer",
+    "808a3ab4-e669-4da1-b5a3-019f7f861cd5"
+  ]
+}

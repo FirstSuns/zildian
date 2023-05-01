@@ -1,0 +1,85 @@
+<div data-title="{{block.settings.menu_title}}" class="submenu-content {{cls}}" style="--grid-desktop-horizontal-spacing: 10px;">
+  <div class="grid">
+    <div class="menu-content">
+      <div class="grid {% if link.links != blank %}sublinks-container{% else %}grid--3-col{% endif %} grid--3-col-desktop grid--4-col-wide grid--3-col-tablet ">
+        {% if block.settings.show_mobile_new_link %}
+          <div class="grid__item sublinks large-up-hide">
+            <a href="{{block.settings.new_link}}">
+              <p class="h5">New Arrivals</p>
+            </a>
+          </div>
+        {% endif %}
+        {% for link in block.settings.menu.links %}
+        <div class="grid__item {% if link.links != blank %}sublinks{% endif %}">
+          <a href="{{link.url}}" class="">
+            {% if link.object.metafields.global.menu_image != blank %}
+              {% assign image = link.object.metafields.global.menu_image %}
+            {% elsif link.type == 'collection' %}
+              {% assign image = link.object.products[0].image %}
+            {% endif %}
+            
+            {% if image != blank %}
+            {{
+              image
+              | image_url: width: 768
+              | image_tag: loading: 'lazy', sizes: sizes, widths: '165, 360, 535, 750, 1070, 1500'
+            }}
+            {% endif %}
+            
+            <p class="h5">{{link.title}}</p>
+          </a>
+          {% if link.links != blank %}
+          <ul>
+            {% for sublink in link.links %}
+            <li>
+              <a href="{{sublink.url}}">{{sublink.title}}</a>
+            </li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+        </div>
+        
+        {% endfor %}
+      </div>
+    </div>
+    {% capture banner_content %}
+      {% if block.settings.banner_1 != blank %}
+        <div class="banner">
+          <a href="{{block.settings.link_1}}">
+            {{
+              block.settings.banner_1
+              | image_url: width: 768
+              | image_tag: loading: 'lazy', sizes: sizes, widths: '165, 360, 535, 750, 1070, 1500'
+            }}
+            <p class="h5">{{block.settings.title_1}}</p>
+            <p class="text">{{block.settings.text_1}}</p>
+          </a>
+        </div>
+        {% endif %}
+
+        {% if block.settings.new_link != blank %}
+          <a class="new-link" href="{{block.settings.new_link}}">New Arrivals</a>
+        {% endif %}
+        
+        {% if block.settings.banner_2 != blank %}
+        <div class="banner">
+          <a href="{{block.settings.link_2}}">
+            {{
+              block.settings.banner_2
+              | image_url: width: 768
+              | image_tag: loading: 'lazy', sizes: sizes, widths: '165, 360, 535, 750, 1070, 1500'
+            }}
+            <p class="h5">{{block.settings.title_2}}</p>
+            <p class="text">{{block.settings.text_2}}</p>
+          </a>
+        </div>
+        {% endif %}
+    {% endcapture %}
+    {% if banner_content != blank %}
+    <div class="banner-content">
+      {{banner_content}}
+    </div>
+    {% endif %}
+    
+  </div>
+</div>

@@ -1,0 +1,398 @@
+{
+  "sections": {
+    "3141c904-b6a6-4f2b-a1fe-aa2b9e911af8": {
+      "type": "image-banner",
+      "blocks": {
+        "d88c72ac-a204-4931-9330-91b5bb6a11d4": {
+          "type": "heading",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/S-Family-Collection-Logo.png",
+            "heading": "VERSATILE & BOLD",
+            "heading_size": "h1",
+            "uppercase": true
+          }
+        }
+      },
+      "block_order": [
+        "d88c72ac-a204-4931-9330-91b5bb6a11d4"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/S-Family-Hero-Banner-Collage_ece65127-c159-4fd8-a5ed-fa740a1ffa7f.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/S-Family-Collection-Banner-Mobile.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "content_width": "",
+        "padding_left": "",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false,
+        "center_mobile": false,
+        "full_mobile": false,
+        "content_padding": 20,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "361823d1-2289-4ef5-b1fe-5918c1e7c9dc": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18433034322212__361823d1-2289-4ef5-b1fe-5918c1e7c9dc-1680479665bf930fb0-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "DYNAMIC AND DISTINCTIVE",
+            "heading_link": "",
+            "heading_size": "h2",
+            "heading_color": "",
+            "max_width": ""
+          }
+        },
+        "template--18433034322212__361823d1-2289-4ef5-b1fe-5918c1e7c9dc-1680479665bf930fb0-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>From explosive and bright to gritty and dark, the S Family is a dynamic collection of cymbals designed to command attention. With extensive hammering and lathing, a wide range of sizes and effects, and two distinct sound profiles, S Family not only gives you the freedom to find your voice, it delivers the power to make sure it’s heard.<\/p>",
+            "text_style": "body",
+            "color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18433034322212__361823d1-2289-4ef5-b1fe-5918c1e7c9dc-1680479665bf930fb0-0",
+        "template--18433034322212__361823d1-2289-4ef5-b1fe-5918c1e7c9dc-1680479665bf930fb0-1"
+      ],
+      "settings": {
+        "tag": "",
+        "side_banner": false,
+        "full_width": false,
+        "image": "shopify:\/\/shop_images\/S-intros_SFamily-Intro_1.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/S-Family-Video-Mobile.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=gKDro6BOERw",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "container_image": false,
+        "media_max_width": "",
+        "desktop_content_position": "middle",
+        "content_align": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "accent-3",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "center",
+        "overlay_section": true,
+        "padding_top": 60,
+        "padding_bottom": 0,
+        "quote": false,
+        "max_width": "425"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 60,
+        "padding_bottom": 100
+      }
+    },
+    "df23a3ba-459d-45b3-9161-98d45e09d636": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18433034322212__df23a3ba-459d-45b3-9161-98d45e09d636-1680479665bf930fb0-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "S ZILDJIAN",
+            "heading_link": "shopify:\/\/collections\/cymbals-drum-set-s-family-s-zildjian",
+            "heading_size": "h2",
+            "heading_color": "",
+            "max_width": ""
+          }
+        },
+        "template--18433034322212__df23a3ba-459d-45b3-9161-98d45e09d636-1680479665bf930fb0-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>S cymbals are bright and intense by nature. Symmetrical hammering and traditional lathing elicit a clean, pure sound – and a brilliant finish delivers a head-turning, classic aesthetic.<\/p>",
+            "text_style": "body",
+            "color": ""
+          }
+        },
+        "fae67601-dded-4172-a7d1-c9d0c8078769": {
+          "type": "tags",
+          "settings": {
+            "button_label_1": "Band & Orchestral",
+            "button_link_1": "shopify:\/\/collections\/cymbals-drum-set-s-family-s-zildjian",
+            "button_label_2": "Crash",
+            "button_link_2": "shopify:\/\/collections\/cymbals-drum-set-s-family-s-zildjian",
+            "button_label_3": "Ride",
+            "button_link_3": "shopify:\/\/collections\/cymbals-drum-set-s-family-s-zildjian",
+            "button_label_4": "",
+            "button_link_4": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18433034322212__df23a3ba-459d-45b3-9161-98d45e09d636-1680479665bf930fb0-0",
+        "template--18433034322212__df23a3ba-459d-45b3-9161-98d45e09d636-1680479665bf930fb0-1",
+        "fae67601-dded-4172-a7d1-c9d0c8078769"
+      ],
+      "settings": {
+        "tag": "",
+        "side_banner": false,
+        "full_width": false,
+        "image": "shopify:\/\/shop_images\/S-Trademark-Logo_1.png",
+        "second_image": "shopify:\/\/shop_images\/s390_s_performer_cymbal_pack_1.png",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "container_image": false,
+        "media_max_width": "",
+        "desktop_content_position": "top",
+        "content_align": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "align_center",
+        "color_scheme": "background-1",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "overlay_section": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "quote": false,
+        "max_width": "600"
+      }
+    },
+    "a1c8156f-7006-49f9-b938-f700fa797764": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18433034322212__a1c8156f-7006-49f9-b938-f700fa797764-1680479665bf930fb0-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "S DARK",
+            "heading_link": "shopify:\/\/collections\/cymbals-drum-set-s-family-s-dark",
+            "heading_size": "h2",
+            "heading_color": "",
+            "max_width": ""
+          }
+        },
+        "template--18433034322212__a1c8156f-7006-49f9-b938-f700fa797764-1680479665bf930fb0-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Random hammering and a proprietary finish push S Family in a rich and explosive direction. Darker, more complex, and slightly drier than S Zildjian, S Dark cymbals deliver the distinctive sound and look you want, with the intensity and projection your music demands.<\/p>",
+            "text_style": "body",
+            "color": ""
+          }
+        },
+        "41e437d8-f33f-46df-8198-7bd982672c81": {
+          "type": "tags",
+          "settings": {
+            "button_label_1": "Band & Orchestral",
+            "button_link_1": "shopify:\/\/collections\/cymbals-drum-set-s-family-s-dark",
+            "button_label_2": "Crash",
+            "button_link_2": "shopify:\/\/collections\/cymbals-drum-set-s-family-s-dark",
+            "button_label_3": "Ride",
+            "button_link_3": "shopify:\/\/collections\/cymbals-drum-set-s-family-s-dark",
+            "button_label_4": "",
+            "button_link_4": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18433034322212__a1c8156f-7006-49f9-b938-f700fa797764-1680479665bf930fb0-0",
+        "template--18433034322212__a1c8156f-7006-49f9-b938-f700fa797764-1680479665bf930fb0-1",
+        "41e437d8-f33f-46df-8198-7bd982672c81"
+      ],
+      "settings": {
+        "tag": "",
+        "side_banner": false,
+        "full_width": false,
+        "image": "shopify:\/\/shop_images\/S-Dark-Collection-Thumbnail.png",
+        "mobile_image": "shopify:\/\/shop_images\/S-Dark-Collection-Thumbnail-Mobile.png",
+        "second_image": "shopify:\/\/shop_images\/S-Dark-Logo_1.png",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "container_image": false,
+        "media_max_width": "",
+        "desktop_content_position": "top",
+        "content_align": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "overlay_section": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "quote": false,
+        "max_width": ""
+      }
+    },
+    "d8479897-2a83-48b5-818d-6a54f496d0a9": {
+      "type": "video",
+      "blocks": {
+        "f5f1c814-bcb6-4080-b2dc-13278e0f51f0": {
+          "type": "title",
+          "settings": {
+            "caption": "S Dark Cymbal Pack",
+            "title": "New Product Spotlight",
+            "button_label": "Shop now",
+            "button_link": "shopify:\/\/collections\/cymbals-drum-set-s-family"
+          }
+        }
+      },
+      "block_order": [
+        "f5f1c814-bcb6-4080-b2dc-13278e0f51f0"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "cover_image": "shopify:\/\/shop_images\/S-Dark-Cymbal-Pack-Product-Spotlight.jpg",
+        "cover_mobile_image": "shopify:\/\/shop_images\/S-Dark-Cymbal-Pack-Product-Spotlight-Mobile.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=rMYtJu7z1cc",
+        "description": "",
+        "full_width": true,
+        "mobile_full_width": false,
+        "color_scheme": "background-1",
+        "caption_color_scheme": "inverse",
+        "padding_top": 0,
+        "padding_bottom": 100
+      }
+    },
+    "4803a757-7e31-4693-9d72-92244f5dfdfd": {
+      "type": "article-slider",
+      "blocks": {
+        "template--18433034322212__4803a757-7e31-4693-9d72-92244f5dfdfd-16804826455ecb7e3c-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "EXPRESSIONS OF",
+            "heading_link": "",
+            "heading_size": "h1",
+            "heading_color": ""
+          }
+        },
+        "template--18433034322212__4803a757-7e31-4693-9d72-92244f5dfdfd-16804826455ecb7e3c-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>S Family not only gives you the freedom to find your voice, it delivers the power to make sure it’s heard.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "9e2e6553-9a0d-4afe-b6bc-9f4554c331e2": {
+          "type": "article",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Expressions-Of-Tosh-Perterson-Video-Thumbnail.jpg",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=1D6d9vSSXow",
+            "article": "artist\/aaron-smith"
+          }
+        },
+        "1bcb4642-7bdf-475c-beb3-d36230fc61ac": {
+          "type": "article",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Expressions-Of-Giulliana-Merello-Video-Thumbnail.jpg",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=HEcnchru1HI",
+            "article": "artist\/giulliana-merello"
+          }
+        },
+        "31276d17-fc8e-4fd5-a0e6-f44b1484be33": {
+          "type": "article",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Expressions-Of-Josh-Dun-Video-Thumbnail.jpg",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=RQRFU3Zmk_A",
+            "article": "artist\/josh-dun"
+          }
+        }
+      },
+      "block_order": [
+        "template--18433034322212__4803a757-7e31-4693-9d72-92244f5dfdfd-16804826455ecb7e3c-0",
+        "template--18433034322212__4803a757-7e31-4693-9d72-92244f5dfdfd-16804826455ecb7e3c-1",
+        "9e2e6553-9a0d-4afe-b6bc-9f4554c331e2",
+        "1bcb4642-7bdf-475c-beb3-d36230fc61ac",
+        "31276d17-fc8e-4fd5-a0e6-f44b1484be33"
+      ],
+      "settings": {
+        "side_banner": false,
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/img_vid.png",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "height": "adapt",
+        "desktop_image_width": "large",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "content_align": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "margin_top": 0,
+        "padding_top": 36,
+        "padding_bottom": 100,
+        "quote": false,
+        "max_width": "480"
+      }
+    },
+    "2b9870d7-eeab-4023-bbca-c833ed3b6f79": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "71d2dbc4-63e9-4448-948c-d5567ce1fced": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/K_Con_Series_Page_Logo_2.png"
+          }
+        },
+        "template--18433034322212__2b9870d7-eeab-4023-bbca-c833ed3b6f79-16804883853ea6d8c0-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>EMBRACE YOUR <br\/>DARKER SIDE<\/p>",
+            "heading_size": "h0",
+            "max_width": ""
+          }
+        },
+        "template--18433034322212__2b9870d7-eeab-4023-bbca-c833ed3b6f79-16804883853ea6d8c0-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Find Your K",
+            "button_link": "shopify:\/\/collections\/default-category-cymbals-drum-set-k-family-k-zildjian",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "blank": false
+          }
+        }
+      },
+      "block_order": [
+        "71d2dbc4-63e9-4448-948c-d5567ce1fced",
+        "template--18433034322212__2b9870d7-eeab-4023-bbca-c833ed3b6f79-16804883853ea6d8c0-0",
+        "template--18433034322212__2b9870d7-eeab-4023-bbca-c833ed3b6f79-16804883853ea6d8c0-2"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.rich-text .rich-text__blocks.contnet-type--inline .rich-text__heading {max-width: 200px; }}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "contnet_type": "inline",
+        "content_alignment": "left",
+        "color_scheme": "background-2",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "max_width": ""
+      }
+    }
+  },
+  "order": [
+    "3141c904-b6a6-4f2b-a1fe-aa2b9e911af8",
+    "361823d1-2289-4ef5-b1fe-5918c1e7c9dc",
+    "main",
+    "df23a3ba-459d-45b3-9161-98d45e09d636",
+    "a1c8156f-7006-49f9-b938-f700fa797764",
+    "d8479897-2a83-48b5-818d-6a54f496d0a9",
+    "4803a757-7e31-4693-9d72-92244f5dfdfd",
+    "2b9870d7-eeab-4023-bbca-c833ed3b6f79"
+  ]
+}

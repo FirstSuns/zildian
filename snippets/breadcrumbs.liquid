@@ -1,0 +1,189 @@
+{% style %}
+  .breadcrumbs__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .breadcrumbs__item {
+    display: inline-block;
+  }
+
+  .breadcrumbs__item a {
+    text-decoration: none!important;
+    color: #5C5D60;
+    position: relative;
+    font-size: 13px;
+    letter-spacing: 0;
+  }
+
+  .breadcrumbs__item:not(:last-child):after {
+    content: '-';
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    padding-right:5px;
+  }
+
+ 
+
+  .breadcrumbs__link {
+    text-decoration: none;
+    color:#686363;
+    position: relative;
+  }
+
+  .breadcrumbs__link[aria-current="page"] {
+    color: inherit;
+    font-weight: 700;
+    text-decoration: none;
+     color:#000000;
+  }
+
+  .breadcrumbs__link[aria-current="page"]:hover,
+  .breadcrumbs__link[aria-current="page"]:focus {
+    text-decoration: underline;
+  }
+  .breadcrumbs{
+    max-width: var(--page-width);
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px 60px;
+    position: relative;
+  }
+  .breadcrumbs::before{
+    content: " ";
+    width: 3px;
+    height: 3px;
+    display: block;
+    border-radius: 50%;
+    background: black;
+    position: absolute;
+    left: 50px;
+    top: 22px;
+    transform: translateY(-50%);
+  }
+  {% if template contains 'product' %}
+  .breadcrumbs::before, .breadcrumbs::after {
+    content: none!important;
+  }
+  {% endif %}
+  @media screen and (max-width: 989px) {
+    .breadcrumbs{
+      padding: 10px 20px;
+      padding-left: 40px;
+      margin: 0;
+    }
+    .breadcrumbs__item:not(:last-child):after {
+      content: none;
+    }
+    .breadcrumbs::before{
+      width: 5px;
+      height: 5px;
+      display: block;
+      border: 1px solid #5C5D60;
+      border-top: none;
+      border-left: none;
+      transform: rotate(135deg);
+      margin-right: 10px;
+      left: 25px;
+      top: 21px;
+      background: transparent;
+      border-radius: 0;
+    }
+    .breadcrumbs::after{
+      content: " ";
+      width: 15px;
+      height: 15px;
+      display: block;
+      border: 1px solid #5C5D60;
+      margin-right: 10px;
+      left: 19px;
+      top: 16px;
+      background: transparent;
+      border-radius: 50%;
+      position: absolute;
+    }
+  }
+{% endstyle %}
+
+
+{%- unless template == 'index' or template == 'cart' or template == 'list-collections' or template == '404' -%}
+{%- assign t = template | split: '.' | first -%}
+
+<nav class="breadcrumbs" role="navigation" aria-label="breadcrumbs">
+  <ol class="breadcrumbs__list">
+    {%- case t -%}
+      {%- when 'page' -%}
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link small-hide" href="{{ page.url }}" aria-current="page">{{ page.title }}</a>
+        </li>
+      {%- when 'product' -%}
+        {% if collection.title != blank %}
+        <li class="breadcrumbs__item">
+          {{ collection.title | link_to: collection.url }}
+        </li>
+        {% else %}
+        {% for collection in product.collections %}
+        {% if forloop.index == 1 %}
+        <li class="breadcrumbs__item">
+          {{ collection.title | link_to: collection.url }}
+        </li>
+        {% endif %}
+      {% endfor %}
+        {% endif %}
+        
+        <li class="breadcrumbs__item small-hide">
+          <a class="breadcrumbs__link" href="{{ product.url }}" aria-current="page">{{ product.title }}</a>
+        </li>
+      {%- when 'collection' and collection.handle -%}
+        {%- if current_tags -%}
+          <li class="breadcrumbs__item">
+            {{ collection.title | link_to: collection.url }}
+          </li>
+          <li class="breadcrumbs__item">
+            {%- capture tag_url -%}{{ collection.url }}/{{ current_tags | join: "+"}}{%- endcapture -%}
+            <a class="breadcrumbs__link small-hide" href="{{ tag_url }}" aria-current="page">{{ current_tags | join: " + "}}</a>
+          </li>
+        {%- else -%}
+          <li class="breadcrumbs__item small-hide">
+            <a class="breadcrumbs__link" href="{{ collection.url }}" aria-current="page">{{ collection.title }}</a>
+          </li>
+        {%- endif -%}
+      {%- when 'blog' -%}
+        {% if template == 'blog.education' %}
+        <li class="breadcrumbs__item large-up-hide">
+          <a class="breadcrumbs__link" href="/">Home</a>
+        </li>
+        <li class="breadcrumbs__item small-hide">
+          <a class="breadcrumbs__link" href="/pages/education">Education</a>
+        </li>
+        {% endif %}
+        {%- if current_tags -%}
+          <li class="breadcrumbs__item">
+            {{ blog.title | link_to: blog.url }}
+          </li>
+          <li class="breadcrumbs__item small-hide">
+            {%- capture tag_url -%}{{blog.url}}/tagged/{{ current_tags | join: "+" }}{%- endcapture -%}
+            <a class="breadcrumbs__link" href="{{ tag_url }}" aria-current="page">{{ current_tags | join: " + " }}</a>
+          </li>
+        {%- else -%}
+          <li class="breadcrumbs__item small-hide">
+            <a class="breadcrumbs__link" href="{{ blog.url }}" aria-current="page">{{ blog.title }}</a>
+          </li>
+        {%- endif -%}
+      {%- when 'article' -%}
+        <li class="breadcrumbs__item">
+          {{ blog.title | link_to: blog.url }}
+        </li>
+        <li class="breadcrumbs__item small-hide">
+          <a class="breadcrumbs__link" href="{{ article.url }}" aria-current="page">{{ article.title }}</a>
+        </li>
+      {%- else -%}
+        <li class="breadcrumbs__item small-hide">
+          <a class="breadcrumbs__link" href="{{ request.path }}" aria-current="page">{{ page_title }}</a>
+        </li>
+    {%- endcase -%}
+  </ol>
+</nav>
+{%- endunless -%}

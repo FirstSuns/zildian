@@ -1,0 +1,23 @@
+[data-section-type="featured-blog"] {
+  .blog__posts {
+    .blog__post {
+      @media screen and (max-width: 768px) {
+        width: 60%;
+      }
+    }
+  }
+  .slider-buttons {
+    display: none;
+  }
+  .title-wrapper-with-link {
+    .blog__title {
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      @media screen and (max-width: 750px) {
+        max-width: 269px;
+        margin: auto;
+      }
+    }
+  }
+}

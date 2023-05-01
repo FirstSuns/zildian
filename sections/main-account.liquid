@@ -1,0 +1,142 @@
+{{ 'customer.css' | asset_url | stylesheet_tag }}
+{{ 'dashboard.scss.css' | asset_url | stylesheet_tag }}
+<div class="page-width">
+  <div class="full-content">
+    <div class="menu">
+      <ul class="select-box-menu">
+        <li class="uppercase active">{{ 'customer.menu.dashboard' | t | link_to: "/account" }}</li>
+        <li class="uppercase">{{ 'customer.menu.account_detail' | t | link_to: "/account/addresses" }}</li>
+        <!-- <li class="uppercase">{{ 'customer.menu.track_order' | t | link_to: "#" }}</li> -->
+        <li class="uppercase">{{ 'customer.menu.return' | t | link_to: "/pages/shipping-and-returns" }}</li>
+        <li class="uppercase">{{ 'customer.menu.log_out' | t | link_to: "/account/logout" }}</li>
+      </ul>
+    </div>
+    <div class="account-dashborad content">
+      <div class="full">
+        <h2 class="title collapse active uppercase">
+          <a class="heading">{{ 'customer.orders.title' | t }}</a>
+          {%- if customer.orders.size > 2 -%}
+          <a class="expand">View all</a>
+          {%- endif -%}
+        </h2>
+        <div class="content-field">
+          {% paginate customer.orders by 20 %}
+            {% if customer.orders.size != 0 %}
+              <table class="responsive-table orders-list">
+                <thead>
+                  <tr>
+                    <th>{{ 'customer.orders.order_number' | t }}</th>
+                    <th>{{ 'customer.orders.date' | t }}</th>
+                    <th>{{ 'customer.orders.payment_status' | t }}</th>
+                    <th>{{ 'customer.orders.fulfillment_status' | t }}</th>
+                    <th>{{ 'customer.orders.total' | t }}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for order in customer.orders %}
+                    <tr class="responsive-table-row">
+                      <td data-label="{{ 'customer.orders.order_number' | t }}">{{ order.name | link_to: order.customer_url }}</td>
+                      <td data-label="{{ 'customer.orders.date' | t }}">{{ order.created_at | date: '%d/%m/%Y' }}</td>
+                      <td data-label="{{ 'customer.orders.payment_status' | t }}">{{ order.financial_status_label }}</td>
+                      <td data-label="{{ 'customer.orders.fulfillment_status' | t }}">{{ order.fulfillment_status_label }}</td>
+                      <td data-label="{{ 'customer.orders.total' | t }}">{{ order.total_price | money_without_trailing_zeros }}</td>
+                    </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            {% else %}
+              <p>{{ 'customer.orders.none' | t }}</p>
+            {% endif %}
+
+            {% if paginate.pages > 1 %}
+              {% include 'pagination' %}
+            {% endif %}
+
+          {% endpaginate %}
+        </div>
+      </div>
+      <div class="half">
+        <h2 class="title active uppercase">
+          <a class="heading">Details</a>
+          <a class="request-button" href="/account/addresses">Edit</a>
+        </h2>
+        <div class="content-field">
+          <p>
+            {{ customer.name }}
+            <br>
+            {{ customer.email }}
+            <br>
+            Accepts Marketing:
+            {% if custom.accepts_marketing %}
+              Yes
+            {% else %}
+              No{% endif %}
+          </p>
+        </div>
+      </div>
+      <div class="half">
+        <h2 class="title active uppercase">
+          <a class="heading">{{ 'customer.account.details' | t }}</a>
+          <a class="request-button" href="/account/addresses">{{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})</a>
+        </h2>
+        <div class="content-field">
+          {{ customer.default_address | format_address }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.querySelector('.expand').addEventListener('click', function(e) {
+    e.preventDefault();
+    if (e.target.textContent == 'View all') {
+      e.target.textContent = 'See less'
+      document.querySelector('.orders-list').classList.add('expand');
+    } else {
+      e.target.textContent = 'View all'
+      document.querySelector('.orders-list').classList.remove('expand');
+    }
+
+
+  });
+</script>
+
+{% schema %}
+  {
+    "name": "dashboard section",
+    "class": "dashbord-template",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "feature_image",
+        "label": "Feature image"
+      }, {
+        "type": "image_picker",
+        "id": "mobile_feature_image",
+        "label": "Mobile feature image"
+      }, {
+        "type": "color",
+        "id": "title_color",
+        "label": "Title color",
+        "default": "#030303"
+      }, {
+        "type": "select",
+        "id": "pos",
+        "label": "Hero banner title postion",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          }, {
+            "value": "right",
+            "label": "Right"
+          }, {
+            "value": "center",
+            "label": "Center"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

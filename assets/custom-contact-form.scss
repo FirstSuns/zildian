@@ -1,0 +1,169 @@
+[data-section-type="contact-form"] {
+  display: flex;
+  flex-wrap: wrap;
+  .contents {
+    width: 45%;
+    padding: 20px 100px 20px 70px;
+    background: #F2F2F2;
+    @media screen and (max-width: 989px) {
+      width: 100%;
+      padding: 0;
+      background: transparent;
+    }
+    .content {
+      margin: auto;
+      @media screen and (max-width: 989px) {
+        background: #F8F8F9;
+        margin-bottom: 10px;
+        padding: 10px 20px 20px;
+        max-width: initial;
+      }
+      &:last-child {
+        .accordion {
+          border-bottom: 0;
+        }
+      }
+      .accordion {
+        margin: 0;
+        border-top: none;
+        @media screen and (max-width: 989px) {
+          border: none;
+        }
+        details {
+          summary {
+            align-items: center;
+            @media screen and (min-width: 990px) {
+              padding-top: 56px;
+            }
+            svg {
+              margin-right: 10px;
+              &:first-child {
+                @media screen and (max-width: 749px) {
+                  max-height: 20px;
+                  width: 20px;
+                }
+              }
+            }
+            .accordion__title {
+              letter-spacing: 1px;
+            }
+            .icon-caret {
+              right: 0;
+              @media screen and (min-width: 990px) {
+                display: none;
+              }
+            }
+          }
+          .accordion__content {
+            padding-left: 0;
+            padding-right: 0;
+            @media screen and (min-width: 990px) {
+              padding-top: 10px;
+              padding-bottom: 30px;
+            }
+            ul {
+              padding: 0;
+              display: flex;
+              column-gap: 40px;
+              margin-top: 45px;
+              list-style: none;
+              li {
+                padding-left: 20px;
+                position: relative;
+                strong {
+                  text-transform: uppercase;
+                  margin-bottom: 10px;
+                  font-size: 13px;
+                }
+                &::before {
+                  content: " ";
+                  width: 8px;
+                  height: 8px;
+                  display: block;
+                  border: 2px solid #CC9F53;
+                  border-radius: 50%;
+                  position: absolute;
+                  left: 3px;
+                  top: 7px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .contact-form {
+    width: 55%;
+    padding: 20px 80px;
+    display: flex;
+    @media screen and (max-width: 989px) {
+      width: 100%;
+      padding: 20px;
+    }
+    .contact {
+      margin: 40px auto;
+      width: 100%;
+      position: relative;
+      padding-left: 50px;
+      @media screen and (max-width: 989px) {
+        padding-left: 0;
+      }
+      svg {
+        position: absolute;
+        left: 0;
+        top: 8px;
+        @media screen and (max-width: 989px) {
+          top: 0;
+          width: 20px;
+        }
+      }
+      .title {
+        @media screen and (max-width: 989px) {
+          padding-left: 30px;
+        }
+      }
+      .text {
+        margin-bottom: 30px;
+      }
+      #ContactForm {
+        .normal-field {
+          margin-bottom: 2rem;
+          label {
+            margin-bottom: 10px;
+            font-weight: 700;
+            font-size: 14px;
+            display: block;
+          }
+        }
+        .checkbox-field {
+          margin-bottom: 2rem;
+          display: flex;
+          input {
+            margin: 0;
+            min-width: 20px;
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+          }
+          input[type=checkbox]:checked {
+            accent-color: #000;
+          }
+          label {
+            font-size: 13px;
+            font-weight: 400;
+            letter-spacing: normal;
+          }
+        }
+      }
+    }
+  }
+}
+.fs-input-label{
+  color: #5C5D60;
+}
+@media screen and (max-width: 749px) {
+  .accordion__title{
+    font-size: 18px;
+  }
+}

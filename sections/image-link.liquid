@@ -1,0 +1,52 @@
+{{'custom-image-link.scss.css' | asset_url | stylesheet_tag }}
+
+<div data-section-type="image-link">
+  <div class="arrow-box">
+    <div class="arrow"></div>
+  </div>
+  <div class="image-link">
+    {{
+      section.settings.image
+      | image_url: width: 140
+      | image_tag: loading: 'lazy'
+    }}
+    <div class="info">
+      <span class="subtitlte">{{section.settings.vendor}}</span>
+      <p class="title">{{section.settings.title}}</p>
+      <a href="{{section.settings.link}}" class="link animate-arrow">SHOP NOW <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span></a>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "image link",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "vendor",
+      "label": "Vendor"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "LInk"
+    }
+  ],
+  "presets": [
+    {
+      "name":"Image link"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,132 @@
+{
+  "sections": {
+    "3141c904-b6a6-4f2b-a1fe-aa2b9e911af8": {
+      "type": "image-banner",
+      "blocks": {
+        "template--18142515003684__3141c904-b6a6-4f2b-a1fe-aa2b9e911af8-1679425999b0455fe5-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Zildjian Company Newsroom",
+            "heading_size": "h1",
+            "uppercase": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18142515003684__3141c904-b6a6-4f2b-a1fe-aa2b9e911af8-1679425999b0455fe5-0"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/hero_13.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Rectangle_5_1_71b3c239-f7d1-4367-b3c3-95ab9f5c09b2.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "content_width": "1200",
+        "padding_left": "",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false,
+        "center_mobile": true,
+        "full_mobile": false,
+        "content_padding": 20,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "343f0242-dc55-4e8b-bcf4-f25c1985fea0": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--18451450364196__343f0242-dc55-4e8b-bcf4-f25c1985fea0-1680595913aeac9796-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img_8.png",
+            "mobile_image": "shopify:\/\/shop_images\/img_8.png",
+            "badge": "",
+            "title": "Product press Releases",
+            "heading_size": "h3",
+            "heading_color": "",
+            "download_label": "",
+            "download_link": "",
+            "text": "<p>Get the details on the latest products for Zildjian, Vic Firth, and Balter Mallets.<\/p>",
+            "link_label": "",
+            "link": "",
+            "full_link": false,
+            "link_list": "<ul><li><a href=\"https:\/\/zildjian.com\/media\/2019_Product_Press_Releases.zip\" title=\"https:\/\/zildjian.com\/media\/2019_Product_Press_Releases.zip\">DOWNLOAD 2019 PRODUCT PRESS RELEASES<\/a><\/li><li><a href=\"https:\/\/drive.google.com\/file\/d\/1bhvwy0MH7cqt1hFM2NOpmwEKK5SoA5QT\/view?usp=share_link\" target=\"_blank\" title=\"https:\/\/drive.google.com\/file\/d\/1bhvwy0MH7cqt1hFM2NOpmwEKK5SoA5QT\/view?usp=share_link\">2019 ZILDJIAN EXTENDING THE K FAMILY RELEASE<\/a><\/li><li><a href=\"https:\/\/drive.google.com\/file\/d\/1KTV2bZnYwcIP7jVXFZRQjX1jZQWi6b9X\/view?usp=share_link\" target=\"_blank\" title=\"https:\/\/drive.google.com\/file\/d\/1KTV2bZnYwcIP7jVXFZRQjX1jZQWi6b9X\/view?usp=share_link\">2019 ZILDJIAN FX CYMBALS RELEASE<\/a><\/li><li><a href=\"https:\/\/drive.google.com\/file\/d\/1jeaZwC-ScYNpHNpLX3cfzeuaZ_-P30f0\/view?usp=share_link\" target=\"_blank\" title=\"https:\/\/drive.google.com\/file\/d\/1jeaZwC-ScYNpHNpLX3cfzeuaZ_-P30f0\/view?usp=share_link\">2019 ZILDJIAN CHROMA DRUMSTICKS RELEASE<\/a><\/li><li><a href=\"https:\/\/drive.google.com\/file\/d\/1zc8ZaSUp7DgrjahmR0BjY7DgagZsSwe4\/view?usp=share_link\" target=\"_blank\" title=\"https:\/\/drive.google.com\/file\/d\/1zc8ZaSUp7DgrjahmR0BjY7DgagZsSwe4\/view?usp=share_link\">2019 ZILDJIAN PROFESSIONAL IN-EAR MONITORS RELEASE<\/a><\/li><li><a href=\"https:\/\/drive.google.com\/file\/d\/1JgidLRcrrQMm8lj1YQ_k3039kq1bXZD3\/view?usp=share_link\" target=\"_blank\" title=\"https:\/\/drive.google.com\/file\/d\/1JgidLRcrrQMm8lj1YQ_k3039kq1bXZD3\/view?usp=share_link\">2019 VIC FIRTH FREESTYLE DRUMSTICK RELEASE<\/a><\/li><\/ul>",
+            "blank_link": false
+          }
+        },
+        "template--18451450364196__343f0242-dc55-4e8b-bcf4-f25c1985fea0-1680595913aeac9796-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img_9.png",
+            "mobile_image": "shopify:\/\/shop_images\/img_9.png",
+            "badge": "",
+            "title": "CORPORATE PRESS RELEASES",
+            "heading_size": "h3",
+            "heading_color": "",
+            "download_label": "",
+            "download_link": "",
+            "text": "<p>Get the latest news on the Zildjian Company, events, milestones, and more.<\/p>",
+            "link_label": "",
+            "link": "",
+            "full_link": false,
+            "link_list": "<ul><li><a href=\"https:\/\/zildjian.com\/media\/2019_Corporate_Press_Releases_2.zip\" title=\"https:\/\/zildjian.com\/media\/2019_Corporate_Press_Releases_2.zip\">DOWNLOAD 2019 CORPORATE PRESS RELEASES<\/a><\/li><li><a href=\"https:\/\/drive.google.com\/file\/d\/11adK3RzxY2wBmdfOS1IR4GEPGKUKmhLY\/view?usp=share_link\" target=\"_blank\" title=\"https:\/\/drive.google.com\/file\/d\/11adK3RzxY2wBmdfOS1IR4GEPGKUKmhLY\/view?usp=share_link\">2019 ENDOWED SCHOLARSHIP PROGRAMS<\/a><\/li><li><a href=\"https:\/\/drive.google.com\/file\/d\/147c-kemXfZhM9C3PVsY9ABYwYEtXs9KR\/view?usp=share_link\" target=\"_blank\" title=\"https:\/\/drive.google.com\/file\/d\/147c-kemXfZhM9C3PVsY9ABYwYEtXs9KR\/view?usp=share_link\">2019 CEO ANNOUNCEMENT RELEASE<\/a><\/li><li><a href=\"https:\/\/drive.google.com\/file\/d\/1PbcPgD8JBvhV9QwBz4WNPaFlxjC2BKAZ\/view?usp=share_link\" target=\"_blank\" title=\"https:\/\/drive.google.com\/file\/d\/1PbcPgD8JBvhV9QwBz4WNPaFlxjC2BKAZ\/view?usp=share_link\">2019 CADY ZILDJIAN MACPHERSON PRESS RELEASE<\/a><\/li><li><a href=\"https:\/\/drive.google.com\/file\/d\/1kvpKu4kGcB-ErljuF2ls8CZk-uOxJoLI\/view?usp=share_link\" target=\"_blank\" title=\"https:\/\/drive.google.com\/file\/d\/1kvpKu4kGcB-ErljuF2ls8CZk-uOxJoLI\/view?usp=share_link\">2019 ZILDJIAN FACTORY VISIT FROM SECRETARY OF LABOR<\/a><\/li><\/ul>",
+            "blank_link": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18451450364196__343f0242-dc55-4e8b-bcf4-f25c1985fea0-1680595913aeac9796-0",
+        "template--18451450364196__343f0242-dc55-4e8b-bcf4-f25c1985fea0-1680595913aeac9796-1"
+      ],
+      "custom_css": [
+        ".multicolumn-card__info {padding-top: 5px !important;}",
+        ".multicolumn-list {column-gap: 50px; --grid-desktop-horizontal-spacing: 50px;}"
+      ],
+      "settings": {
+        "side_banner": false,
+        "full_width": false,
+        "title": "2019 PRESS RELEASES",
+        "heading_size": "h1",
+        "heading_align": "center",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "mobile_image_ratio": "adapt",
+        "overlay_image": false,
+        "columns_desktop": 2,
+        "swipe_on_desktop": false,
+        "step_style": false,
+        "column_alignment": "left",
+        "no_gap": false,
+        "no_padding": true,
+        "number": false,
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "mobile_overlay": false,
+        "padding_top": 0,
+        "padding_bottom": 36,
+        "max_width": "1300"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 60,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "3141c904-b6a6-4f2b-a1fe-aa2b9e911af8",
+    "343f0242-dc55-4e8b-bcf4-f25c1985fea0",
+    "main"
+  ]
+}

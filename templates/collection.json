@@ -1,0 +1,112 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "blocks": {
+        "3597bd55-66ef-44fc-85e5-965facfec0c7": {
+          "type": "image_text",
+          "settings": {
+            "side_banner": false,
+            "adapted_media": true,
+            "full_width": true,
+            "image": "{{ collection.metafields.global.banner_image.value }}",
+            "video_url": "",
+            "height": "adapt",
+            "desktop_image_width": "large",
+            "layout": "image_first",
+            "desktop_content_position": "middle",
+            "content_align": "middle",
+            "desktop_content_alignment": "left",
+            "content_layout": "no-overlap",
+            "color_scheme": "background-1",
+            "mobile_layout": "image_first",
+            "mobile_content_alignment": "left",
+            "padding_top": 0,
+            "padding_bottom": 28,
+            "quote": false,
+            "max_width": "",
+            "caption": "",
+            "caption_text_style": "caption-with-letter-spacing",
+            "text_size": "medium",
+            "heading": "{{ collection.metafields.global.banner_title.value }}",
+            "heading_size": "h2",
+            "heading_color": "",
+            "text": "<p>{{ collection.metafields.global.banner_text | metafield_tag }}<\/p>",
+            "text_style": "body",
+            "button_label": "",
+            "button_link": "",
+            "link": false
+          }
+        }
+      },
+      "block_order": [
+        "3597bd55-66ef-44fc-85e5-965facfec0c7"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 990px) {.image-with-text__heading {max-width: 265px; }}"
+      ],
+      "settings": {
+        "products_per_page": 48,
+        "columns_desktop": 4,
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": true,
+        "enable_quick_add": false,
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "6d74cc0e-7a3a-4a75-9041-afbfeb922234": {
+      "type": "main-collection-collapsible-content",
+      "blocks": {
+        "54ecfd6c-5a79-4bda-ac81-26ec3eac2b4c": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon_text": "",
+            "icon": "check_mark",
+            "image_caption": "",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "54ecfd6c-5a79-4bda-ac81-26ec3eac2b4c"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "More about Cymbals",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "layout": "none",
+        "color_scheme": "background-2",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "6d74cc0e-7a3a-4a75-9041-afbfeb922234"
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "sections": {
+    "3141c904-b6a6-4f2b-a1fe-aa2b9e911af8": {
+      "type": "image-banner",
+      "blocks": {
+        "template--18142515003684__3141c904-b6a6-4f2b-a1fe-aa2b9e911af8-1679425999b0455fe5-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ page.title }}",
+            "heading_size": "h1",
+            "uppercase": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18142515003684__3141c904-b6a6-4f2b-a1fe-aa2b9e911af8-1679425999b0455fe5-0"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Zildjian-Downloadable-Content-Banner_b1cd51a3-1947-485b-bcd8-298cced2c3eb.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Zildjian-Downloadable-Content-Banner-Mobile_4818cfcd-28f5-4265-910c-1e79d4c65875.jpg",
+        "image_overlay_opacity": 60,
+        "image_height": "adapt",
+        "content_width": "",
+        "padding_left": "",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false,
+        "center_mobile": true,
+        "full_mobile": false,
+        "content_padding": 20,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "343f0242-dc55-4e8b-bcf4-f25c1985fea0": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--18451450364196__343f0242-dc55-4e8b-bcf4-f25c1985fea0-1680595913aeac9796-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_5_929921f1-ab39-4010-a73e-a337091f6cf8.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/img_5.png",
+            "badge": "",
+            "title": "2022 ZILDJIAN PRODUCT GUIDE",
+            "heading_size": "h3",
+            "heading_color": "",
+            "download_label": "DOWNLOAD PRODUCT GUIDE",
+            "download_link": "https:\/\/drive.google.com\/file\/d\/134zX4Ty6W7I6y0YDPx5d4-ww3-C-_IXL\/view?usp=share_link",
+            "text": "<p>Check out the latest product guide from Zildjian. Contains a full listing of products in 39 pages. <\/p>",
+            "link_label": "",
+            "link": "",
+            "full_link": false,
+            "link_list": "",
+            "blank_link": false
+          }
+        },
+        "template--18451450364196__343f0242-dc55-4e8b-bcf4-f25c1985fea0-1680595913aeac9796-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img_6.png",
+            "mobile_image": "shopify:\/\/shop_images\/img_6.png",
+            "badge": "",
+            "title": "2022 VIC FIRTH PRODUCT GUIDE",
+            "heading_size": "h3",
+            "heading_color": "",
+            "download_label": "DOWNLOAD PRODUCT GUIDE",
+            "download_link": "https:\/\/drive.google.com\/file\/d\/1TO0rckTvU78vH-PkDtVNsqPMXlFuD4Zg\/view?usp=share_link",
+            "text": "<p>Check out the latest product guide from Vic Firth. Giving you an in-depth look at this 33-page guide.<\/p>",
+            "link_label": "",
+            "link": "",
+            "full_link": false,
+            "link_list": "",
+            "blank_link": false
+          }
+        },
+        "template--18451450364196__343f0242-dc55-4e8b-bcf4-f25c1985fea0-1680595913aeac9796-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img_7.png",
+            "mobile_image": "shopify:\/\/shop_images\/img_7.png",
+            "badge": "",
+            "title": "2022 BALTER MALLETS PRODUCT GUIDE",
+            "heading_size": "h3",
+            "heading_color": "",
+            "download_label": "DOWNLOAD PRODUCT GUIDE",
+            "download_link": "https:\/\/drive.google.com\/file\/d\/1HC5am3tsfd8sc0LUgFtbsrme-aJJ0dAB\/view?usp=share_link",
+            "text": "<p>Check out the latest product guide from Balter Mallets. Catch up on all Balter models in this guide.<\/p>",
+            "link_label": "",
+            "link": "",
+            "full_link": false,
+            "link_list": "",
+            "blank_link": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18451450364196__343f0242-dc55-4e8b-bcf4-f25c1985fea0-1680595913aeac9796-0",
+        "template--18451450364196__343f0242-dc55-4e8b-bcf4-f25c1985fea0-1680595913aeac9796-1",
+        "template--18451450364196__343f0242-dc55-4e8b-bcf4-f25c1985fea0-1680595913aeac9796-2"
+      ],
+      "settings": {
+        "side_banner": false,
+        "full_width": false,
+        "title": "PRODUCT GUIDES",
+        "heading_size": "h1",
+        "heading_align": "center",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "mobile_image_ratio": "adapt",
+        "overlay_image": false,
+        "columns_desktop": 2,
+        "swipe_on_desktop": false,
+        "step_style": false,
+        "column_alignment": "left",
+        "no_gap": false,
+        "no_padding": true,
+        "number": false,
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "mobile_overlay": false,
+        "padding_top": 0,
+        "padding_bottom": 36,
+        "max_width": "1300"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 60,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "3141c904-b6a6-4f2b-a1fe-aa2b9e911af8",
+    "343f0242-dc55-4e8b-bcf4-f25c1985fea0",
+    "main"
+  ]
+}

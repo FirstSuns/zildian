@@ -1,0 +1,88 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "b77198e3-a4ca-424a-85c2-2b7a2396dab4": {
+      "type": "image-banner",
+      "blocks": {
+        "template--18142514970916__b77198e3-a4ca-424a-85c2-2b7a2396dab4-1679417069d255e30b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "FREQUENTLY ASKED QUESTIONS",
+            "heading_size": "h1",
+            "uppercase": false
+          }
+        },
+        "template--18142514970916__b77198e3-a4ca-424a-85c2-2b7a2396dab4-1679417069d255e30b-1": {
+          "type": "text",
+          "settings": {
+            "text": "Welcome to our Frequently Asked Questions (FAQs) page where you can find the answers to many questions we often hear from consumers, dealers and business partners of the Zildjian Company. If you don’t see your answer below or need further assistance",
+            "text_style": "subtitle"
+          }
+        },
+        "template--18142514970916__b77198e3-a4ca-424a-85c2-2b7a2396dab4-1679417069d255e30b-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "CONTACT US",
+            "button_link_1": "shopify:\/\/pages\/contact",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "blank_button": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18142514970916__b77198e3-a4ca-424a-85c2-2b7a2396dab4-1679417069d255e30b-0",
+        "template--18142514970916__b77198e3-a4ca-424a-85c2-2b7a2396dab4-1679417069d255e30b-1",
+        "template--18142514970916__b77198e3-a4ca-424a-85c2-2b7a2396dab4-1679417069d255e30b-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/hero.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Rectangle_5.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "content_width": "960",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false,
+        "center_mobile": true,
+        "full_mobile": false,
+        "content_padding": 20,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "a8e3b5bb-ea52-44a9-9596-0d63f1d1a897": {
+      "type": "faq-content",
+      "settings": {
+        "caption": "",
+        "heading": "FAQ TOPICS",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "tags": "ABOUT THE COMPANY, ZILDJIAN CYMBALS, ONLINE STORE, DRUMSTICKS, CYMBAL CARE, MALLETS",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "b77198e3-a4ca-424a-85c2-2b7a2396dab4",
+    "a8e3b5bb-ea52-44a9-9596-0d63f1d1a897"
+  ]
+}
