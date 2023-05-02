@@ -6,7 +6,7 @@
         "template--18409333981476__c289bafd-44a6-474f-a663-96d26e7f5138-168029590568de2d12-0": {
           "type": "heading",
           "settings": {
-            "heading": "WELCOME TO <br>THE FAMILY",
+            "heading": "WELCOME TO THE FAMILY",
             "heading_size": "h1",
             "uppercase": false
           }
@@ -22,12 +22,18 @@
         "template--18409333981476__c289bafd-44a6-474f-a663-96d26e7f5138-168029590568de2d12-0",
         "3d19765d-c286-4225-940c-b797aba4c039"
       ],
+      "custom_css": [
+        ".banner__content {max-width: 1440px;}",
+        ".banner__box {margin-left: 100px;}",
+        "@media screen and (max-width: 989px) {.banner__box {margin-left: 0px;}}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Zildjian-Artist-Section-Banner.jpg",
         "mobile_image": "shopify:\/\/shop_images\/Zildjian-Artist-Section-Banner-Mobile.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "content_width": "480",
+        "padding_left": "",
         "desktop_content_position": "middle-left",
         "show_text_box": false,
         "desktop_content_alignment": "left",

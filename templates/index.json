@@ -54,6 +54,9 @@
         "template--18142514905380__d75dd4ef-8e47-487d-9740-f50edc07b08d-16790924773f344ee0-0",
         "dfcc2a23-0043-442f-b782-0bbbaf4d30d6"
       ],
+      "custom_css": [
+        "@media screen and (max-width: 749px) {splide-slideshow-component .slideshow .slideshow__slide {max-height: 425px; } .banner__box {margin-bottom: 100px; }}"
+      ],
       "settings": {
         "layout": "full_bleed",
         "slide_height": "adapt_image",
@@ -312,7 +315,7 @@
             "box_align": "middle-right",
             "show_text_box": false,
             "text_alignment": "left",
-            "image_overlay_opacity": 60,
+            "image_overlay_opacity": 0,
             "color_scheme": "inverse",
             "text_alignment_mobile": "left"
           }
@@ -335,7 +338,7 @@
             "box_align": "middle-right",
             "show_text_box": false,
             "text_alignment": "left",
-            "image_overlay_opacity": 60,
+            "image_overlay_opacity": 0,
             "color_scheme": "inverse",
             "text_alignment_mobile": "left"
           }
@@ -358,7 +361,7 @@
             "box_align": "middle-right",
             "show_text_box": false,
             "text_alignment": "left",
-            "image_overlay_opacity": 60,
+            "image_overlay_opacity": 0,
             "color_scheme": "inverse",
             "text_alignment_mobile": "left"
           }
@@ -536,6 +539,9 @@
         "d1138699-f745-4ba0-a4fb-1359ebec7f35",
         "41cc7e3d-083e-46e8-a5ea-78149c603262"
       ],
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.splide__slide {max-width: 195px; }}"
+      ],
       "settings": {
         "title": "EXPLORE SOUND THROUGH OUR FAMILY OF ARTISTS",
         "heading_size": "h1",
@@ -699,6 +705,7 @@
       "block_order": [
         "cb08e9e4-3002-4a47-a4cc-30af16b92a3b"
       ],
+      "custom_css": [],
       "settings": {
         "include_margins": true
       }

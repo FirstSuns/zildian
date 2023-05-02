@@ -62,7 +62,7 @@
           "type": "button",
           "settings": {
             "button_label": "Find Your K",
-            "button_link": "shopify:\/\/collections\/default-category-cymbals-drum-set-k-family-k-zildjian",
+            "button_link": "https:\/\/zildjianshop.myshopify.com\/collections\/cymbals",
             "link": false,
             "blank_button": false
           }
@@ -124,7 +124,7 @@
           "settings": {
             "text": "<p>The legendary \"K Con\" is the pinnacle of the Zildjian cymbal line, renowned for its perfect blended sound quality. Complex hammering contributes to the cymbal's unique sonic identity and dark tones that can be at once cutting and smooth.<\/p>",
             "text_style": "body",
-            "color": ""
+            "color": "#5c5d60"
           }
         },
         "fae67601-dded-4172-a7d1-c9d0c8078769": {
@@ -190,7 +190,7 @@
           "settings": {
             "text": "<p>Drawing from the spirit of the legendary K Zildjian range, K Custom cymbals are dark, rich and dry and enable today's drummers to utilize complex K sounds in a more modern musical environment.<\/p>",
             "text_style": "body",
-            "color": ""
+            "color": "#5c5d60"
           }
         },
         "41e437d8-f33f-46df-8198-7bd982672c81": {
@@ -256,7 +256,7 @@
           "settings": {
             "text": "<p>K Zildjian cymbals continue to inspire drummers today with their deep, warm and expressive sounds developed by Kerope Zildjian in 19th century Turkey.<\/p>",
             "text_style": "body",
-            "color": ""
+            "color": "#5c5d60"
           }
         },
         "05a33015-d1dc-4700-8e59-0dcc3e42025f": {
@@ -322,7 +322,7 @@
           "settings": {
             "text": "<p>The K Kerope line draws from Zildjian's rich history and cymbal making expertise to bring forth the most authentic vintage K recreation to date. These handcrafted cymbals look as they sound – dark, and complex.<\/p>",
             "text_style": "body",
-            "color": ""
+            "color": "#5c5d60"
           }
         },
         "24d10485-4691-4d97-bcca-f2627d3c3db3": {
@@ -379,7 +379,7 @@
             "caption": "K cluster Crashes",
             "title": "New Product Spotlight",
             "button_label": "Shop now",
-            "button_link": "shopify:\/\/collections\/default-category-cymbals-drum-set-k-family-k-zildjian"
+            "button_link": "https:\/\/zildjianshop.myshopify.com\/products\/k-zildjian-cluster-crashes"
           }
         }
       },
@@ -452,6 +452,9 @@
         "1bcb4642-7bdf-475c-beb3-d36230fc61ac",
         "31276d17-fc8e-4fd5-a0e6-f44b1484be33"
       ],
+      "custom_css": [
+        ".image-with-text__text p {color: #5c5d60;}"
+      ],
       "settings": {
         "side_banner": false,
         "full_width": true,
@@ -495,7 +498,7 @@
           "type": "button",
           "settings": {
             "button_label": "Find Your K",
-            "button_link": "shopify:\/\/collections\/default-category-cymbals-drum-set-k-family-k-zildjian",
+            "button_link": "https:\/\/zildjianshop.myshopify.com\/collections\/cymbals",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",

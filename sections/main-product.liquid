@@ -462,7 +462,7 @@
                   {{product.metafields.magento.bullet | newline_to_br | replace: '<br />', '</li><li>' | prepend: '<li>' }}
                 </ul>
                 
-                <h6 >SKU : <span class="sku" >{{ product.selected_or_first_available_variant.sku }}</span></h6>
+                <h6 class="fs-sku">SKU : <span class="sku" >{{ product.selected_or_first_available_variant.sku }}</span></h6>
                 {% endif %}
               {% endcapture %}
               {% if content != blank %}

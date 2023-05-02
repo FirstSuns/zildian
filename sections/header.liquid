@@ -424,9 +424,12 @@
                             {% for block in section.blocks %}
                               {% if block.type == 'menu_2' and link.title == block.settings.menu_title %}
                                 <li>
-                                  <a href="{{ block.settings.sub_link }}" class="mega-menu__link mega-menu__link--level-2 link">
+                                  <a href="#" class="mega-menu__link mega-menu__link--level-2 link" style="cursor: text;">
                                     <span>{{ block.settings.sub_title | escape }}</span>
                                   </a>
+                                  {% comment %} <a href="{{ block.settings.sub_link }}" class="mega-menu__link mega-menu__link--level-2 link">
+                                    <span>{{ block.settings.sub_title | escape }}</span>
+                                  </a> {% endcomment %}
                                   <ul class="list-unstyled" role="list">
                                     {% for i in (1..4) %}
                                     {% assign title_handle = 'title_' | append: i  %}

@@ -332,11 +332,15 @@
                   top: 13px;
                   left: 0;
                 }
+                color: #000;
               }
               div {
                 &.intro {
                   row-gap: 10px;
                 }
+              }
+              strong{
+                color: #000;
               }
             }
             
@@ -472,4 +476,7 @@
       }
     }
   }
+}
+.fs-sku{
+  color: #B6B8BA;
 }

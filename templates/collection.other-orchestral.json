@@ -7,7 +7,7 @@
           "type": "heading",
           "settings": {
             "icon": "shopify:\/\/shop_images\/Other-Orchestral-Collection-Logo_c134e5af-51fe-45d2-b8d6-8a518b8e24cc.png",
-            "heading": "ADDITIONAL ORCHESTRAL",
+            "heading": "ADDITIONAL ORCHESTRAL LINES",
             "heading_size": "h1",
             "uppercase": true
           }
@@ -125,7 +125,7 @@
           "settings": {
             "text": "<p>The first choice of the world's leading symphony orchestras, drum corps and rock stars alike. One-piece cast construction crafted in China in a centuries-old tradition. A complex blend of highs and lows with beautiful warm overtones and plenty of attack when necessary. Predrilled and corded.<\/p>",
             "text_style": "body",
-            "color": ""
+            "color": "#5d5d60"
           }
         },
         "fae67601-dded-4172-a7d1-c9d0c8078769": {
@@ -191,7 +191,7 @@
           "settings": {
             "text": "<p>Bronze crotales also known as antique cymbals. Bright clear tones.<\/p>",
             "text_style": "body",
-            "color": ""
+            "color": "#5d5d60"
           }
         },
         "41e437d8-f33f-46df-8198-7bd982672c81": {
@@ -257,7 +257,7 @@
           "settings": {
             "text": "<p>S Family crash cymbal band pairs feature a full-bodied crash sound with capable stadium projection. This very controllable hand cymbal pair is suitable from concert band to indoor\/outdoor percussion ensembles. Cymbal straps and pads sold separately. S Family suspended cymbal is suitable from concert band to indoor\/outdoor percussion ensembles. Offering a full range of dynamics, this cymbal offers versatility from soft crescendos cymbal swells to a fortissimo crash. Cymbal mallets sold separately.<\/p>",
             "text_style": "body",
-            "color": ""
+            "color": "#5d5d60"
           }
         },
         "05a33015-d1dc-4700-8e59-0dcc3e42025f": {
@@ -323,7 +323,7 @@
           "settings": {
             "text": "<p>For entry level Band students, the updated Planet Z is the place to start the journey. Crafted in the U.S.A. from a nickel-silver alloy, Planet Z cymbals are sonically superior in their category and are truly worthy of bearing the Zildjian name.<\/p>",
             "text_style": "body",
-            "color": ""
+            "color": "#5d5d60"
           }
         },
         "24d10485-4691-4d97-bcca-f2627d3c3db3": {
@@ -389,7 +389,7 @@
           "settings": {
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "text_style": "body",
-            "color": ""
+            "color": "#5d5d60"
           }
         },
         "template--18723394683172__2e93c244-2e84-40f6-a104-ab14e373a7f0-168251309009543dc5-2": {
@@ -566,7 +566,7 @@
           "type": "heading",
           "settings": {
             "heading": "<p>EXPLORE RICH BAND AND ORCHESTRAL SOUNDS<\/p>",
-            "heading_size": "h0",
+            "heading_size": "h1",
             "max_width": ""
           }
         },
@@ -597,8 +597,8 @@
         "content_alignment": "left",
         "color_scheme": "background-2",
         "full_width": false,
-        "padding_top": 40,
-        "padding_bottom": 40,
+        "padding_top": 100,
+        "padding_bottom": 100,
         "max_width": ""
       }
     }

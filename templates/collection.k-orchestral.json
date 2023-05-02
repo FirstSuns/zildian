@@ -192,7 +192,7 @@
           "settings": {
             "text": "<p>The legendary \"K Con\" is renowned for its perfect blended sound quality. Complex hammering contributes to the cymbals' unique sonic identity and dark tones that can be at once cutting and smooth. Made in small batches using a 14-step hammering process, K Constantinople has its own signature voice.<\/p>",
             "text_style": "body",
-            "color": ""
+            "color": "#5c5d60"
           }
         },
         "fae67601-dded-4172-a7d1-c9d0c8078769": {
@@ -456,6 +456,9 @@
         "1bcb4642-7bdf-475c-beb3-d36230fc61ac",
         "31276d17-fc8e-4fd5-a0e6-f44b1484be33"
       ],
+      "custom_css": [
+        ".image-with-text__text p {color: #5c5d60;}"
+      ],
       "settings": {
         "side_banner": false,
         "full_width": true,
@@ -514,7 +517,8 @@
         "template--18433034322212__2b9870d7-eeab-4023-bbca-c833ed3b6f79-16804883853ea6d8c0-2"
       ],
       "custom_css": [
-        "@media screen and (max-width: 749px) {.rich-text .rich-text__blocks.contnet-type--inline .rich-text__heading {max-width: 200px; }}"
+        "@media screen and (max-width: 749px) {.rich-text .rich-text__blocks.contnet-type--inline .rich-text__heading {max-width: 200px; }}",
+        ".rich-text.content-container {padding-bottom: 140px;}"
       ],
       "settings": {
         "desktop_content_position": "center",
