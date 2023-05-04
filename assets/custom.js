@@ -281,17 +281,17 @@ document.querySelectorAll('.mega-menu').forEach(mega_menu => {
 });
 
 
-var country1 = 'US';
+// var country1 = 'US';
 
-fetch('https://ipapi.co/country/')
-  .then(function(response) {
-    return response.text();
-  })
-  .then(function(data) {
-    console.log(data)
-    if (data != country1) {
-      document.querySelector('body').classList.add('hide-price')
-    } else {
-      document.querySelector('body').classList.remove('hide-price')
-    }
-  });
+// fetch('https://ipapi.co/country/')
+//   .then(function(response) {
+//     return response.text();
+//   })
+//   .then(function(data) {
+//     console.log(data)
+//     if (data != country1) {
+//       document.querySelector('body').classList.add('hide-price')
+//     } else {
+//       document.querySelector('body').classList.remove('hide-price')
+//     }
+//   });

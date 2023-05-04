@@ -3073,3 +3073,12 @@ details-disclosure > details {
     outline: transparent solid 1px;
   }
 }
+/*=========== 02 cyber css start ==========*/
+
+@media(max-width:1439px){
+  html #tagalys-namespace.tagalys-namespace .search-suggestions{ overflow-y: scroll !important; height:500px; }
+}
+@media(max-width:767px){
+html #tagalys-namespace .search-suggestions{ height: 350px; overflow-y: scroll !important;  }
+}
+/*=========== 02 cyber css end ============*/

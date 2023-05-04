@@ -596,15 +596,22 @@ noscript .localization-selector.link {
 }
 
 .policies li::before {
-  content: '\00B7';
+  /* content: '\00B7'; */
+  content: ' ';
   padding: 0 0.8rem;
 }
 
+.policies li:last-child:before {
+  content: '|';
+  padding: 0 0.8rem;
+}
 .policies li a {
   padding: 0.6rem 0;
   display: block;
 }
-
+.policies li:first-child a{
+  margin-top: -7px;
+}
 @media screen and (min-width: 750px) {
   .policies li a {
     padding: 0;

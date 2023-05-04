@@ -677,6 +677,7 @@
       "blocks": {
         "cb08e9e4-3002-4a47-a4cc-30af16b92a3b": {
           "type": "shopify:\/\/apps\/shoppable-instagram-ugc\/blocks\/custom_minifeed\/e2616dfe-fbb6-4e7d-874d-d250b973556d",
+          "disabled": true,
           "settings": {
             "foreground_color": "#ffffff",
             "background_color": "#000000",
@@ -709,6 +710,15 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "471eed3a-57b7-4491-b520-c87d81ac19d6": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<script src=\"\/\/foursixty.com\/media\/scripts\/fs.slider.v2.5.js\" data-feed-id=\"zildjian-company\" data-theme=\"slider_v2_5\" data-open-links-in-same-page=\"true\" data-cell-size=\"20%\"><\/script>\n <style>.fs-has-links { display:none; } .fs-wrapper { height:auto; } .fs-slider_v2_5  .fs-entry-container { height:0 !important;width:20%!important;padding-top:20%!important; } .fs-wrapper div.fs-text-container .fs-entry-title, div.fs-detail-title { font-family:Times New Roman, serif;font-style:normal;font-weight:normal;font-size:14px; } div.fs-text-container .fs-entry-date, div.fs-detail-container .fs-post-info, div.fs-wrapper div.fs-has-links::after, .fs-text-product, .fs-overlink-text { font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:14px; } .fs-wrapper div.fs-text-container * { color:#ffffff; } .fs-wrapper div.fs-text-container { background-color:rgba(0, 0, 0, 0.8);margin:0px; } div.fs-entry-date { display:none; } div.fs-entry-title { display:none; } .fs-slider_v2_5 .fs-wrapper div.fs-timeline-entry { margin:1px; } <\/style>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -725,6 +735,7 @@
     "bc875eb4-7882-492d-85a6-b83721651163",
     "8185d5fb-14e0-4981-9c51-bc587ed44f9b",
     "f1c39c4f-7d93-46e2-a0aa-729a6c995c25",
-    "16793799636a54b011"
+    "16793799636a54b011",
+    "471eed3a-57b7-4491-b520-c87d81ac19d6"
   ]
 }

@@ -46,3 +46,12 @@
     }
   }
 }
+.fs-hp-gradient-layer{
+  display: block !important;
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  z-index: 100;
+  right: 0;
+  background: linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255,.1) 10%,white 100%);
+}

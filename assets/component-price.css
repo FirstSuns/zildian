@@ -3,7 +3,8 @@
   letter-spacing: normal;
   line-height: calc(1 + 0.5 / var(--font-body-scale));
   color: rgb(var(--color-foreground));
-  font-weight: bold;
+  /* font-weight: bold; */
+  font-weight: 400;
 }
 
 .price > * {

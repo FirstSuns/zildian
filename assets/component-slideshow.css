@@ -200,3 +200,7 @@ slideshow-component:not(.page-width) .slider-buttons {
   opacity: 0;
   transform: scale(.8)
 }
+
+.splide__pagination {
+  bottom: 20px !important;
+}

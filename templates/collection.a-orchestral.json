@@ -6,8 +6,8 @@
         "d88c72ac-a204-4931-9330-91b5bb6a11d4": {
           "type": "heading",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/K_Zildjian_Series_Page_White_Logo_1.png",
-            "heading": "DARK & RICH",
+            "icon": "shopify:\/\/shop_images\/A-Family-Collection-Logo_afc7eebe-3d26-4b33-9485-e7902d56c4e4.png",
+            "heading": "BRIGHT & RICH",
             "heading_size": "h1",
             "uppercase": true
           }
@@ -17,11 +17,12 @@
         "d88c72ac-a204-4931-9330-91b5bb6a11d4"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/K-Family-Hero-Banner-Collage.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/K-Family-Hero-Banner-Collage-Mobile_ac840064-ac16-4185-a82e-ae01797e681b.jpg",
+        "image": "shopify:\/\/shop_images\/A-Orchestral-Hero-Banner-Collage.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/A-Orchestral-Hero-Banner-Collage-Mobile.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "content_width": "",
+        "padding_left": "",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -38,6 +39,7 @@
     },
     "361823d1-2289-4ef5-b1fe-5918c1e7c9dc": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "template--18433034322212__361823d1-2289-4ef5-b1fe-5918c1e7c9dc-1680479665bf930fb0-0": {
           "type": "heading",
@@ -111,8 +113,8 @@
         "template--18433034322212__df23a3ba-459d-45b3-9161-98d45e09d636-1680479665bf930fb0-0": {
           "type": "heading",
           "settings": {
-            "heading": "K CONSTANTINOPLE",
-            "heading_link": "shopify:\/\/collections\/default-category-cymbals-drum-set-k-family-k-constantinople",
+            "heading": "SYMPHONIC TONE",
+            "heading_link": "shopify:\/\/collections\/zildjiancymbals-band-orchestral-a-orchestral-symphonic-tone",
             "heading_size": "h2",
             "heading_color": "",
             "max_width": ""
@@ -121,9 +123,9 @@
         "template--18433034322212__df23a3ba-459d-45b3-9161-98d45e09d636-1680479665bf930fb0-1": {
           "type": "text",
           "settings": {
-            "text": "<p>The legendary \"K Con\" is the pinnacle of the Zildjian cymbal line, renowned for its perfect blended sound quality. Complex hammering contributes to the cymbal's unique sonic identity and dark tones that can be at once cutting and smooth.<\/p>",
+            "text": "<p>The traditional A Zildjian sound. Bright, full bodied and natural - in light (French), medium (Viennese) and heavy (German) weights.<\/p>",
             "text_style": "body",
-            "color": ""
+            "color": "#5c5d60"
           }
         },
         "fae67601-dded-4172-a7d1-c9d0c8078769": {
@@ -149,7 +151,8 @@
         "tag": "",
         "side_banner": false,
         "full_width": false,
-        "image": "shopify:\/\/shop_images\/img_3.png",
+        "image": "shopify:\/\/shop_images\/A-Symphonic-Collection-Thumbnail_03835d6b-5db5-4141-97e1-d83feef6c69b.png",
+        "mobile_image": "shopify:\/\/shop_images\/A-Symphonic-Collection-Thumbnail-Mobile_7837a9aa-8042-453f-8e36-587e7902d175.png",
         "video_url": "",
         "height": "adapt",
         "desktop_image_width": "medium",
@@ -176,8 +179,8 @@
         "template--18433034322212__a1c8156f-7006-49f9-b938-f700fa797764-1680479665bf930fb0-0": {
           "type": "heading",
           "settings": {
-            "heading": "K CUSTOM",
-            "heading_link": "shopify:\/\/collections\/default-category-cymbals-drum-set-k-family-k-custom",
+            "heading": "CONCERT STAGE",
+            "heading_link": "shopify:\/\/collections\/cymbals-band-orchestral-a-orchestral-concert-stage",
             "heading_size": "h2",
             "heading_color": "",
             "max_width": ""
@@ -186,9 +189,9 @@
         "template--18433034322212__a1c8156f-7006-49f9-b938-f700fa797764-1680479665bf930fb0-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Drawing from the spirit of the legendary K Zildjian range, K Custom cymbals are dark, rich and dry and enable today's drummers to utilize complex K sounds in a more modern musical environment.<\/p>",
+            "text": "<p>A perfect blend of quick, responsive overtones over a wide sonic spectrum ideal for contemporary Concert Band composition. The profile offers a new shape that allows for easy \"playability\" for all levels of Concert Band performers.<\/p>",
             "text_style": "body",
-            "color": ""
+            "color": "#5c5d60"
           }
         },
         "41e437d8-f33f-46df-8198-7bd982672c81": {
@@ -214,7 +217,8 @@
         "tag": "",
         "side_banner": false,
         "full_width": false,
-        "image": "shopify:\/\/shop_images\/K-Custom--Collection-Thumbnail.png",
+        "image": "shopify:\/\/shop_images\/A-Concert-Stage-Collection-Thumbnail_5349cb77-b301-49d9-8ac2-4601944846a4.png",
+        "mobile_image": "shopify:\/\/shop_images\/A-Concert-Stage-Collection-Thumbnail-Mobile_8a0bd7a8-e901-4f4f-868f-349b200afb58.png",
         "video_url": "",
         "height": "adapt",
         "desktop_image_width": "medium",
@@ -241,8 +245,8 @@
         "template--18433034322212__2f94319b-7a38-49c1-b9d2-b8fb6cdfd1e7-1680479665bf930fb0-0": {
           "type": "heading",
           "settings": {
-            "heading": "K ZILDJIAN",
-            "heading_link": "shopify:\/\/collections\/default-category-cymbals-drum-set-k-family-k-zildjian",
+            "heading": "STADIUM",
+            "heading_link": "shopify:\/\/collections\/cymbals-band-orchestral-a-orchestral-stadium",
             "heading_size": "h1",
             "heading_color": "",
             "max_width": ""
@@ -251,9 +255,9 @@
         "template--18433034322212__2f94319b-7a38-49c1-b9d2-b8fb6cdfd1e7-1680479665bf930fb0-1": {
           "type": "text",
           "settings": {
-            "text": "<p>K Zildjian cymbals continue to inspire drummers today with their deep, warm and expressive sounds developed by Kerope Zildjian in 19th century Turkey.<\/p>",
+            "text": "<p>Specially designed in close association with the world's top drum corps specialists. Their warm, shimmering sound projects clearly into every corner of a stadium, with the ability for emphatic \"zing\" effects and a smooth, bright blend of overtones.<\/p>",
             "text_style": "body",
-            "color": ""
+            "color": "#5c5d60"
           }
         },
         "05a33015-d1dc-4700-8e59-0dcc3e42025f": {
@@ -279,7 +283,8 @@
         "tag": "",
         "side_banner": false,
         "full_width": false,
-        "image": "shopify:\/\/shop_images\/Group_61.png",
+        "image": "shopify:\/\/shop_images\/A-Stadium-Collection-Thumbnail_217f7911-c72c-47bf-8bcc-551641bb95ad.png",
+        "mobile_image": "shopify:\/\/shop_images\/A-Stadium-Collection-Thumbnail-Mobile_5b52c632-6266-4a64-a7c9-5f2b2b69b85f.png",
         "video_url": "",
         "height": "adapt",
         "desktop_image_width": "medium",
@@ -306,8 +311,8 @@
         "template--18433034322212__db45ecef-c3ed-40be-ac34-ad6d4d6819ec-1680479665bf930fb0-0": {
           "type": "heading",
           "settings": {
-            "heading": "KEROPE",
-            "heading_link": "shopify:\/\/collections\/default-category-cymbals-drum-set-k-family-kerope",
+            "heading": "Z-MAC",
+            "heading_link": "shopify:\/\/collections\/cymbals-band-orchestral-a-orchestral-z-mac",
             "heading_size": "h2",
             "heading_color": "",
             "max_width": ""
@@ -316,9 +321,9 @@
         "template--18433034322212__db45ecef-c3ed-40be-ac34-ad6d4d6819ec-1680479665bf930fb0-1": {
           "type": "text",
           "settings": {
-            "text": "<p>The K Kerope line draws from Zildjian's rich history and cymbal making expertise to bring forth the most authentic vintage K recreation to date. These handcrafted cymbals look as they sound – dark, and complex.<\/p>",
+            "text": "<p>Z-MAC, Zildjian Multi-Application Cymbals, provide the right sound and projection for a wide variety of educational uses, from the concert hall, on the marching field, to the jazz band. The A Zildjian Z-MAC is full, high-pitched, bright and rich in harmonic structure. Straps and pads not included<\/p>",
             "text_style": "body",
-            "color": ""
+            "color": "#5c5d60"
           }
         },
         "24d10485-4691-4d97-bcca-f2627d3c3db3": {
@@ -344,8 +349,8 @@
         "tag": "",
         "side_banner": false,
         "full_width": false,
-        "image": "shopify:\/\/shop_images\/Kerope-Collection-Thumbnail.png",
-        "mobile_image": "shopify:\/\/shop_images\/Kerope-Collection-Thumbnail.png",
+        "image": "shopify:\/\/shop_images\/A-Z-Mac-Collection-Thumbnail_63e08db8-6489-4350-a99a-42de38dda4e6.png",
+        "mobile_image": "shopify:\/\/shop_images\/A-Z-Mac-Collection-Thumbnail-Mobile_1.png",
         "video_url": "",
         "height": "adapt",
         "desktop_image_width": "medium",
@@ -366,14 +371,79 @@
         "max_width": ""
       }
     },
+    "f9cb819f-d6ea-4e80-af74-4399697608a5": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18723394322724__f9cb819f-d6ea-4e80-af74-4399697608a5-1683121976410aff19-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "CLASSIC ORCHESTRAL",
+            "heading_link": "shopify:\/\/collections\/cymbals-band-orchestral-a-orchestral-classic-orchestral",
+            "heading_size": "h1",
+            "heading_color": "",
+            "max_width": ""
+          }
+        },
+        "template--18723394322724__f9cb819f-d6ea-4e80-af74-4399697608a5-1683121976410aff19-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A perfect blend of brilliant overtones and harmonics in a size and weight that is manageable for articulate passages as well as long crashes. They incorporate control, feel, and playability. Recommended for use in all concert settings. Brilliant finish top, traditional finish bottom.<\/p>",
+            "text_style": "body",
+            "color": ""
+          }
+        },
+        "3c81625a-d498-41b3-8af1-518dbb3fe35a": {
+          "type": "tags",
+          "settings": {
+            "button_label_1": "Band & Orchestral",
+            "button_link_1": "shopify:\/\/collections\/cymbals-band-orchestral",
+            "button_label_2": "CRASH",
+            "button_link_2": "shopify:\/\/collections\/cymbals-browse-by-types-crash",
+            "button_label_3": "RIDE",
+            "button_link_3": "shopify:\/\/collections\/cymbals-browse-by-types-ride",
+            "button_label_4": "",
+            "button_link_4": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18723394322724__f9cb819f-d6ea-4e80-af74-4399697608a5-1683121976410aff19-0",
+        "template--18723394322724__f9cb819f-d6ea-4e80-af74-4399697608a5-1683121976410aff19-1",
+        "3c81625a-d498-41b3-8af1-518dbb3fe35a"
+      ],
+      "settings": {
+        "tag": "",
+        "side_banner": false,
+        "full_width": false,
+        "image": "shopify:\/\/shop_images\/A-Classic-Orchestral-Selection-Collection-Thumbnail_a338b4f2-1834-4506-afce-ffd21f8f5edc.png",
+        "mobile_image": "shopify:\/\/shop_images\/A-Classic-Orchestral-Selection-Collection-Thumbnail-Mobile_c4a93900-1873-4f8f-985a-b571eb9c6ed0.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "container_image": false,
+        "media_max_width": "",
+        "desktop_content_position": "top",
+        "content_align": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "overlay_section": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "quote": false,
+        "max_width": ""
+      }
+    },
     "d8479897-2a83-48b5-818d-6a54f496d0a9": {
       "type": "video",
       "blocks": {
         "f5f1c814-bcb6-4080-b2dc-13278e0f51f0": {
           "type": "title",
           "settings": {
-            "caption": "K Fat Hats",
-            "title": "New Product Spotlight",
+            "caption": "Educational Guidebook",
+            "title": "The Classic Orchestral Line",
             "button_label": "Shop now",
             "button_link": "shopify:\/\/collections\/default-category-cymbals-drum-set-k-family-k-zildjian"
           }
@@ -385,11 +455,12 @@
       "settings": {
         "heading": "",
         "heading_size": "h1",
-        "cover_image": "shopify:\/\/shop_images\/bg-ytb_1.png",
-        "cover_mobile_image": "shopify:\/\/shop_images\/bg-ytb_1.png",
-        "video_url": "https:\/\/youtu.be\/nV_3BKVjiE0",
+        "cover_image": "shopify:\/\/shop_images\/The-Classsic-Orchestral-Line-Guidebook_fe1362c6-e8df-40ef-a9ef-f2ff6a0f372d.jpg",
+        "cover_mobile_image": "shopify:\/\/shop_images\/The-Classsic-Orchestral-Line-Guidebook-Mobile_032fe2e6-1405-4d85-869b-53bb00d6e46b.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=toaT8nQPD3s",
         "description": "",
         "full_width": true,
+        "mobile_full_width": false,
         "color_scheme": "background-1",
         "caption_color_scheme": "inverse",
         "padding_top": 0,
@@ -402,7 +473,6 @@
         "template--18433034322212__4803a757-7e31-4693-9d72-92244f5dfdfd-16804826455ecb7e3c-0": {
           "type": "heading",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/logo_0c4c3d34-5f26-4fbb-9042-49c2bb5fc1e5.png",
             "heading": "EXPRESSIONS OF",
             "heading_link": "",
             "heading_size": "h1",
@@ -412,28 +482,29 @@
         "template--18433034322212__4803a757-7e31-4693-9d72-92244f5dfdfd-16804826455ecb7e3c-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Zildjian’s classic sound is embodied by the K Family and immortalized in countless recordings by the greatest drummers.<\/p>",
+            "text": "<p>With a broad spectrum of weights and a higher pitch, A family cymbals offer a wide variety of sound colors, ideal for all genres and reflecting today's musical styles.<\/p>",
             "text_style": "body"
           }
         },
         "9e2e6553-9a0d-4afe-b6bc-9f4554c331e2": {
           "type": "article",
           "settings": {
-            "image": "shopify:\/\/shop_images\/sddefault_1_95d27931-771d-48dd-9867-8ab7647ddfb1.jpg",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=XFIYIySQK7M",
+            "image": "shopify:\/\/shop_images\/Expression-Of-thumbnails-James-Campbell_c772afa5-d17e-4722-9acb-ee9119e86237.jpg",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=BoAGa0XBFhE",
             "article": "artist\/aaron-serfaty"
           }
         },
         "1bcb4642-7bdf-475c-beb3-d36230fc61ac": {
           "type": "article",
           "settings": {
-            "image": "shopify:\/\/shop_images\/sddefault_1_202aafff-76ad-4d5f-a9d0-f72b0dd1dc2a.jpg",
-            "video_url": "https:\/\/youtu.be\/jDngvBMT2Zc",
+            "image": "shopify:\/\/shop_images\/Expression-Of-thumbnails-Neil-Percy_1031fa94-1b58-4262-9284-457a08a9c01a.jpg",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=q7VVzj7HY4E",
             "article": "artist\/aaron-gillespie"
           }
         },
         "31276d17-fc8e-4fd5-a0e6-f44b1484be33": {
           "type": "article",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/sddefault_1_8460eb12-799c-46a1-a8ba-a9c7bf3a5ad2.jpg",
             "video_url": "https:\/\/youtu.be\/wNRFHureecQ",
@@ -448,11 +519,14 @@
         "1bcb4642-7bdf-475c-beb3-d36230fc61ac",
         "31276d17-fc8e-4fd5-a0e6-f44b1484be33"
       ],
+      "custom_css": [
+        ".image-with-text__text p {color: #5c5d60;}"
+      ],
       "settings": {
         "side_banner": false,
         "full_width": true,
-        "image": "shopify:\/\/shop_images\/img_vid.png",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "image": "shopify:\/\/shop_images\/Expression-Of-thumbnails-James-Campbell_c772afa5-d17e-4722-9acb-ee9119e86237.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=BoAGa0XBFhE",
         "height": "adapt",
         "desktop_image_width": "large",
         "layout": "text_first",
@@ -467,6 +541,7 @@
         "padding_top": 36,
         "padding_bottom": 100,
         "quote": false,
+        "icon": "shopify:\/\/shop_images\/422-X-369-PNG-A-Logo_87eb9aaa-1e04-455b-8d51-ec27379c275e.png",
         "max_width": "480"
       }
     },
@@ -476,13 +551,13 @@
         "71d2dbc4-63e9-4448-948c-d5567ce1fced": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/K_Con_Series_Page_Logo_2.png"
+            "icon": "shopify:\/\/shop_images\/166-X-156-PNG-A-Logo_b5d6e659-996d-4258-a7d1-518149a618d3.png"
           }
         },
         "template--18433034322212__2b9870d7-eeab-4023-bbca-c833ed3b6f79-16804883853ea6d8c0-0": {
           "type": "heading",
           "settings": {
-            "heading": "<p>EMBRACE YOUR <br\/>DARKER SIDE<\/p>",
+            "heading": "<p>LOOK AT THE BRIGHTER SIDE<\/p>",
             "heading_size": "h0",
             "max_width": ""
           }
@@ -490,8 +565,8 @@
         "template--18433034322212__2b9870d7-eeab-4023-bbca-c833ed3b6f79-16804883853ea6d8c0-2": {
           "type": "button",
           "settings": {
-            "button_label": "Find Your K",
-            "button_link": "shopify:\/\/collections\/default-category-cymbals-drum-set-k-family-k-zildjian",
+            "button_label": "Find Your A",
+            "button_link": "shopify:\/\/collections\/cymbals-drum-set-a-family",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -506,7 +581,8 @@
         "template--18433034322212__2b9870d7-eeab-4023-bbca-c833ed3b6f79-16804883853ea6d8c0-2"
       ],
       "custom_css": [
-        "@media screen and (max-width: 749px) {.rich-text .rich-text__blocks.contnet-type--inline .rich-text__heading {max-width: 200px; }}"
+        "@media screen and (max-width: 749px) {.rich-text .rich-text__blocks.contnet-type--inline .rich-text__heading {max-width: 200px; }}",
+        ".rich-text.content-container {margin-bottom: 50px;}"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -515,7 +591,8 @@
         "color_scheme": "background-2",
         "full_width": false,
         "padding_top": 40,
-        "padding_bottom": 40
+        "padding_bottom": 40,
+        "max_width": ""
       }
     }
   },
@@ -527,6 +604,7 @@
     "a1c8156f-7006-49f9-b938-f700fa797764",
     "2f94319b-7a38-49c1-b9d2-b8fb6cdfd1e7",
     "db45ecef-c3ed-40be-ac34-ad6d4d6819ec",
+    "f9cb819f-d6ea-4e80-af74-4399697608a5",
     "d8479897-2a83-48b5-818d-6a54f496d0a9",
     "4803a757-7e31-4693-9d72-92244f5dfdfd",
     "2b9870d7-eeab-4023-bbca-c833ed3b6f79"

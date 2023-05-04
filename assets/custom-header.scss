@@ -366,13 +366,16 @@
                     .mega-menu__sub_content {
                       .submenu-content {
                         & > .grid {
-                          flex-direction: column-reverse;
+                          // flex-direction: column-reverse; //FS changed
                           .banner-content {
                             display: flex;
                             justify-content: space-between;
-                            border-bottom: 1px solid #E4E5E6;
+                            // border-bottom: 1px solid #E4E5E6;
                             padding-bottom: 20px;
                             margin-bottom: 20px;
+                            border-top: 1px solid #E4E5E6;
+                            padding-top: 20px;
+                            margin-top: 20px;
                             .new-link {
                               display: none;
                             }
@@ -506,5 +509,10 @@
         }
       }
     }
+  }
+}
+@media screen and (max-width: 749px) {
+  .menu-content .grid__item {
+    width: calc(33.33% - var(--grid-mobile-horizontal-spacing) * 3 / 4);
   }
 }

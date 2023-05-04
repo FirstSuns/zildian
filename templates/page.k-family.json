@@ -6,7 +6,7 @@
         "d88c72ac-a204-4931-9330-91b5bb6a11d4": {
           "type": "heading",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/K_Zildjian_Series_Page_White_Logo_1.png",
+            "icon": "shopify:\/\/shop_images\/K-Family-Collection-Logo.png",
             "heading": "DARK & RICH",
             "heading_size": "h1",
             "uppercase": true
@@ -113,7 +113,7 @@
           "type": "heading",
           "settings": {
             "heading": "K CONSTANTINOPLE",
-            "heading_link": "shopify:\/\/collections\/default-category-cymbals-drum-set-k-family-k-constantinople",
+            "heading_link": "https:\/\/zildjianshop.myshopify.com\/collections\/cymbals-drum-set-k-family-k-constantinople",
             "heading_size": "h2",
             "heading_color": "",
             "max_width": ""
@@ -179,7 +179,7 @@
           "type": "heading",
           "settings": {
             "heading": "K CUSTOM",
-            "heading_link": "shopify:\/\/collections\/default-category-cymbals-drum-set-k-family-k-custom",
+            "heading_link": "https:\/\/zildjianshop.myshopify.com\/collections\/cymbals-drum-set-k-family-k-custom",
             "heading_size": "h2",
             "heading_color": "",
             "max_width": ""
@@ -245,7 +245,7 @@
           "type": "heading",
           "settings": {
             "heading": "K ZILDJIAN",
-            "heading_link": "shopify:\/\/collections\/default-category-cymbals-drum-set-k-family-k-zildjian",
+            "heading_link": "https:\/\/zildjianshop.myshopify.com\/collections\/cymbals-drum-set-k-family-k-zildjian",
             "heading_size": "h1",
             "heading_color": "",
             "max_width": ""
@@ -311,7 +311,7 @@
           "type": "heading",
           "settings": {
             "heading": "KEROPE",
-            "heading_link": "shopify:\/\/collections\/default-category-cymbals-drum-set-k-family-kerope",
+            "heading_link": "https:\/\/zildjianshop.myshopify.com\/collections\/cymbals-drum-set-k-family-kerope",
             "heading_size": "h2",
             "heading_color": "",
             "max_width": ""
@@ -453,7 +453,7 @@
         "31276d17-fc8e-4fd5-a0e6-f44b1484be33"
       ],
       "custom_css": [
-        ".image-with-text__text p {color: #5c5d60;}"
+        ".image-with-text__text p {color: #5c5d60; }"
       ],
       "settings": {
         "side_banner": false,
@@ -474,6 +474,7 @@
         "padding_top": 36,
         "padding_bottom": 100,
         "quote": false,
+        "icon": "shopify:\/\/shop_images\/K_Con_Series_Page_Logo_2_1.png",
         "max_width": "480"
       }
     },
@@ -483,7 +484,7 @@
         "71d2dbc4-63e9-4448-948c-d5567ce1fced": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/K_Con_Series_Page_Logo_2.png"
+            "icon": "shopify:\/\/shop_images\/K_Con_Series_Page_Logo_2_1.png"
           }
         },
         "template--18433034322212__2b9870d7-eeab-4023-bbca-c833ed3b6f79-16804883853ea6d8c0-0": {

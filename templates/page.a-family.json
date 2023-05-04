@@ -73,6 +73,9 @@
         "template--18433034322212__361823d1-2289-4ef5-b1fe-5918c1e7c9dc-1680479665bf930fb0-1",
         "template--18433034322212__361823d1-2289-4ef5-b1fe-5918c1e7c9dc-1680479665bf930fb0-2"
       ],
+      "custom_css": [
+        "@media screen and (min-width: 990px) {.image-with-text__content {padding: 3rem 5rem 2rem; }}"
+      ],
       "settings": {
         "tag": "",
         "side_banner": false,
@@ -125,7 +128,7 @@
           "settings": {
             "text": "<p>Reminiscent of cymbals from the 30's through the 60's, yet distinctly modern and relevant for today’s music, the A Avedis collection is a vintage recreation of the timeless sound and feel heard and played on thousands of top hits throughout the 20th century. Named in honor of Avedis Zildjian III, the father of the modern American cymbal, this collection is thin and loose with a played-in feel and immense musicality. Each cymbal features a patina finish that reproduces the look of a decades-old cymbal with gram weights written under the bell on every A Avedis.<\/p>",
             "text_style": "body",
-            "color": ""
+            "color": "#5c5d60"
           }
         },
         "fae67601-dded-4172-a7d1-c9d0c8078769": {
@@ -191,7 +194,7 @@
           "settings": {
             "text": "<p>Zildjian’s classic sound is embodied by A Zildjian and immortalized in countless recordings by the greatest drummers of all time. Known for their versatility, these bright cymbals range from thin and delicate to extra heavy and cutting.<\/p>",
             "text_style": "body",
-            "color": ""
+            "color": "#5c5d60"
           }
         },
         "41e437d8-f33f-46df-8198-7bd982672c81": {
@@ -257,7 +260,7 @@
           "settings": {
             "text": "<p>K Zildjian cymbals continue to inspire drummers today with their deep, warm and expressive sounds developed by Kerope Zildjian in 19th century Turkey.<\/p>",
             "text_style": "body",
-            "color": ""
+            "color": "#5c5d60"
           }
         },
         "05a33015-d1dc-4700-8e59-0dcc3e42025f": {
@@ -311,10 +314,10 @@
         "f5f1c814-bcb6-4080-b2dc-13278e0f51f0": {
           "type": "title",
           "settings": {
-            "caption": "",
+            "caption": "K cluster Crashes",
             "title": "New Product Spotlight",
             "button_label": "Shop now",
-            "button_link": "shopify:\/\/collections\/cymbals-drum-set-a-family"
+            "button_link": "https:\/\/zildjianshop.myshopify.com\/products\/a-avedis-crash-rides"
           }
         }
       },
@@ -387,6 +390,9 @@
         "1bcb4642-7bdf-475c-beb3-d36230fc61ac",
         "31276d17-fc8e-4fd5-a0e6-f44b1484be33"
       ],
+      "custom_css": [
+        ".image-with-text__text p {color: #5c5d60;}"
+      ],
       "settings": {
         "side_banner": false,
         "full_width": true,
@@ -416,7 +422,7 @@
         "71d2dbc4-63e9-4448-948c-d5567ce1fced": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/A_Zildjian_Series_Page_Logo_A_Zildjian_1.png"
+            "icon": "shopify:\/\/shop_images\/422-X-369-PNG-A-Logo_87eb9aaa-1e04-455b-8d51-ec27379c275e.png"
           }
         },
         "template--18433034322212__2b9870d7-eeab-4023-bbca-c833ed3b6f79-16804883853ea6d8c0-0": {
@@ -446,7 +452,8 @@
         "template--18433034322212__2b9870d7-eeab-4023-bbca-c833ed3b6f79-16804883853ea6d8c0-2"
       ],
       "custom_css": [
-        "@media screen and (max-width: 749px) {.rich-text .rich-text__blocks.contnet-type--inline .rich-text__heading {max-width: 200px; }}"
+        "@media screen and (max-width: 749px) {.rich-text .rich-text__blocks.contnet-type--inline .rich-text__heading {max-width: 200px; }}",
+        ".content-container {margin-bottom: 50px;}"
       ],
       "settings": {
         "desktop_content_position": "center",
