@@ -19,6 +19,7 @@
   }
   .menu{
       width: 30%;
+      margin-top: -10px;
       @media screen and (max-width: 1023px) {
         width: calc(100%);
         margin: 0;
@@ -98,6 +99,7 @@
                   text-decoration: none;
                   font-weight: 700;
                   font-family: var(--font-heading-family);
+                  font-size: 16px;
               }
               &.active{
                   a {

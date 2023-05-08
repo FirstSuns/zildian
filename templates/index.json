@@ -9,7 +9,7 @@
             "image": "shopify:\/\/shop_images\/Rectangle_4.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Mask_group.jpg",
             "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/962626d775c043f286bcf4827578ee2f.mp4",
-            "content_width": "355",
+            "content_width": "250",
             "heading": "celebrating 400 years",
             "uppercase": true,
             "heading_size": "h0",
@@ -55,7 +55,7 @@
         "dfcc2a23-0043-442f-b782-0bbbaf4d30d6"
       ],
       "custom_css": [
-        "@media screen and (max-width: 749px) {splide-slideshow-component .slideshow .slideshow__slide {max-height: 425px; } .banner__box {margin-bottom: 100px; }}"
+        "@media screen and (max-width: 749px) {splide-slideshow-component .slideshow .slideshow__slide {max-height: 450px; } .banner__box {margin-bottom: 100px; }}"
       ],
       "settings": {
         "layout": "full_bleed",
@@ -163,6 +163,10 @@
         "template--18142514905380__079b5030-d8b0-4d99-95f9-6e125c31b917-167909267389e267af-1",
         "template--18142514905380__079b5030-d8b0-4d99-95f9-6e125c31b917-167909267389e267af-2"
       ],
+      "custom_css": [
+        ".multicolumn .multicolumn-list .multicolumn-list__item .multicolumn-card .cover-link {background: linear-gradient( 180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 1) 100% );}",
+        ".multicolumn .multicolumn-list .multicolumn-list__item .multicolumn-card.overlay-image--true .multicolumn-card__info {z-index: 10;}"
+      ],
       "settings": {
         "side_banner": false,
         "full_width": true,
@@ -194,6 +198,7 @@
     },
     "a5608f55-88cd-40d5-bb3f-909f408e4027": {
       "type": "featured-collection",
+      "custom_css": [],
       "settings": {
         "title": "PLAYER FAVORITES",
         "heading_size": "h1",
@@ -227,7 +232,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Rectangle_5.png",
             "mobile_image": "shopify:\/\/shop_images\/Rectangle_5.png",
-            "badge": "IN STOCK NOW",
+            "badge": "K FAMILY",
             "title": "K FAT HATS",
             "heading_size": "h3",
             "heading_color": "",
@@ -246,7 +251,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/400th-New-Product-Right-Promo-Block_83cda2ce-a7de-4f47-8ede-0dd0b5542727.jpg",
             "mobile_image": "shopify:\/\/shop_images\/400th-New-Product-Right-Promo-Block_83cda2ce-a7de-4f47-8ede-0dd0b5542727.jpg",
-            "badge": "NEW PRODUCTS",
+            "badge": "NEW",
             "title": "400TH ANNIVERSARY APPAREL & STICKS",
             "heading_size": "h3",
             "heading_color": "",
@@ -264,6 +269,9 @@
       "block_order": [
         "template--18142514905380__8d3f9090-0426-40a2-92e9-140c7674d4a0-16793003475f89e7da-0",
         "template--18142514905380__8d3f9090-0426-40a2-92e9-140c7674d4a0-16793003475f89e7da-2"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.multicolumn .multicolumn-list .multicolumn-list__item .multicolumn-card .multicolumn-card__info .badge {background: #fff; border: 0; color: #000; padding-left: 0; font-size: 14px; }}"
       ],
       "settings": {
         "side_banner": false,
@@ -410,6 +418,9 @@
         "template--18142514905380__0d9c9063-66c1-42cb-88f8-730a36a4ec6d-1679302489fd352805-0",
         "0ebfe0a9-b0c4-439a-8b7e-284dfc4869b4"
       ],
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.image-with-text__media-item {padding: 0 20px; }}"
+      ],
       "settings": {
         "tag": "",
         "side_banner": false,
@@ -437,6 +448,10 @@
     },
     "aee3447b-9850-43d4-95b8-e89069b930d6": {
       "type": "image-link",
+      "custom_css": [
+        ".image-link {padding-left: 70px;}",
+        "@media screen and (max-width: 749px) {.image-link {padding-left: 20px; }}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/k0951-angle-shot_1.png",
         "vendor": "K Family",
@@ -564,7 +579,7 @@
         "template--18142514905380__bc875eb4-7882-492d-85a6-b83721651163-16793108005db86d8c-0": {
           "type": "heading",
           "settings": {
-            "heading": "ZILDJIAN COLLABORATION",
+            "heading": "ZILDJIAN UNDERGROUND",
             "heading_link": "",
             "heading_size": "h2",
             "heading_color": "",
@@ -574,9 +589,9 @@
         "template--18142514905380__bc875eb4-7882-492d-85a6-b83721651163-16793108005db86d8c-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Dive into Zildjian Collaborations, a series from Zildjian celebrating music togetherness and creativity. Featuring sharp performances, cutting edge jams, and real one-on-ones with top Zildjian artists, re-explore the power and potential of collaboration.<\/p>",
+            "text": "<p>Dive in to Zildjian Underground, a revolutionary series from Zildjian, pairing six top Zildjian Artists with some of the hottest DJs in the industry, for an exclusive pop-up show. Filmed at Le Poisson Rouge in New York City, this first series of Zildjian Underground episodes takes you on a musical adventure under the musical direction of Zildjian Artist, Karriem Riggins. Explore new, alternative sounds and fresh beats, in these one-of-a-kind performances.<\/p>",
             "text_style": "body",
-            "color": ""
+            "color": "#5c5d60"
           }
         },
         "template--18142514905380__bc875eb4-7882-492d-85a6-b83721651163-16793108005db86d8c-2": {
@@ -594,11 +609,16 @@
         "template--18142514905380__bc875eb4-7882-492d-85a6-b83721651163-16793108005db86d8c-1",
         "template--18142514905380__bc875eb4-7882-492d-85a6-b83721651163-16793108005db86d8c-2"
       ],
+      "custom_css": [
+        ".image-with-text__media img {object-fit: contain;}",
+        "@media screen and (min-width: 749px) and (max-width: 1100px) {.image-with-text {padding-top: 0; padding-bottom: 0; } .image-with-text__content {padding-top: 0; padding-bottom: 0; }}",
+        "@media screen and (max-width: 749px) {.image-with-text .image-with-text__grid .image-with-text__text-item .image-with-text__content .info {margin-top: 20px; }}"
+      ],
       "settings": {
         "tag": "",
         "side_banner": false,
         "full_width": true,
-        "image": "shopify:\/\/shop_images\/Zildjian-Collaborations-Larnel-_-Brown.jpg",
+        "image": "shopify:\/\/shop_images\/Z-Underground-Page-Banner_1.jpg",
         "video_url": "",
         "height": "adapt",
         "desktop_image_width": "medium",
@@ -613,10 +633,10 @@
         "mobile_layout": "image_first",
         "mobile_content_alignment": "left",
         "overlay_section": false,
-        "padding_top": 36,
+        "padding_top": 40,
         "padding_bottom": 100,
         "quote": false,
-        "max_width": "551"
+        "max_width": "600"
       }
     },
     "8185d5fb-14e0-4981-9c51-bc587ed44f9b": {
@@ -713,11 +733,14 @@
     },
     "471eed3a-57b7-4491-b520-c87d81ac19d6": {
       "type": "custom-liquid",
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.fs-slider-container {margin-bottom: -81px; }}"
+      ],
       "settings": {
         "custom_liquid": "<script src=\"\/\/foursixty.com\/media\/scripts\/fs.slider.v2.5.js\" data-feed-id=\"zildjian-company\" data-theme=\"slider_v2_5\" data-open-links-in-same-page=\"true\" data-cell-size=\"20%\"><\/script>\n <style>.fs-has-links { display:none; } .fs-wrapper { height:auto; } .fs-slider_v2_5  .fs-entry-container { height:0 !important;width:20%!important;padding-top:20%!important; } .fs-wrapper div.fs-text-container .fs-entry-title, div.fs-detail-title { font-family:Times New Roman, serif;font-style:normal;font-weight:normal;font-size:14px; } div.fs-text-container .fs-entry-date, div.fs-detail-container .fs-post-info, div.fs-wrapper div.fs-has-links::after, .fs-text-product, .fs-overlink-text { font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:14px; } .fs-wrapper div.fs-text-container * { color:#ffffff; } .fs-wrapper div.fs-text-container { background-color:rgba(0, 0, 0, 0.8);margin:0px; } div.fs-entry-date { display:none; } div.fs-entry-title { display:none; } .fs-slider_v2_5 .fs-wrapper div.fs-timeline-entry { margin:1px; } <\/style>",
         "color_scheme": "background-1",
         "padding_top": 40,
-        "padding_bottom": 52
+        "padding_bottom": 100
       }
     }
   },

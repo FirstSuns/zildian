@@ -811,6 +811,7 @@ class ProductGalleryComponent extends HTMLElement {
         },
       }
     });
+   
     var left_status = false;
     if (this.classList.contains('thumbs-left')) {
       left_status = 'ttb';
@@ -824,7 +825,7 @@ class ProductGalleryComponent extends HTMLElement {
       gap             : 10,
       pagination      : false,
       cover           : true,
-      arrows          : false,
+      arrows          : true,
       direction       : left_status,
       dragMinThreshold: {
         mouse: 4,
@@ -835,10 +836,13 @@ class ProductGalleryComponent extends HTMLElement {
     this.mainGallery.sync( this.thumbnailsGallery );
     this.mainGallery.mount();
     this.thumbnailsGallery.mount();
+    
   }
 }
 
 customElements.define('product-gallery-component', ProductGalleryComponent);
+
+
 
 class VariantSelects extends HTMLElement {
   constructor() {

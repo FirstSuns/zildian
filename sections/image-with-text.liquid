@@ -153,7 +153,7 @@
                     {% if block.settings.blank_button %}
                       target="_blank"
                     {% endif %}
-                    class="{% if block.settings.link %}link {% else %}button {% endif %}{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+                    class="{% if block.settings.link %}link animate-arrow {% else %}button {% endif %}{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
                     {{ block.shopify_attributes }}
                   >
                     {{ block.settings.button_label | escape }}

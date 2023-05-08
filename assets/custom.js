@@ -295,3 +295,8 @@ document.querySelectorAll('.mega-menu').forEach(mega_menu => {
 //       document.querySelector('body').classList.remove('hide-price')
 //     }
 //   });
+
+
+
+
+

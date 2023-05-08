@@ -261,7 +261,7 @@
       }
     },
     "cart": {
-      "title": "Your cart",
+      "title": "Your bag",
       "caption": "Cart items",
       "remove_title": "Remove {{ title }}",
       "subtotal": "Subtotal",

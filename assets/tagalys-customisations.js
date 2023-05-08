@@ -189,7 +189,6 @@ TagalysCustomizations.utilities.productRenderer = function (html, args, options 
       <a
         class="product-link"
         href=${productLink}
-        target="_blank"
       >
         ${productTagTemplateName ? html `
           <div class=${productTagClass}>

@@ -4,6 +4,7 @@
       .image-with-text__grid {
         &.grid--3-col-tablet .grid__item {
           width: calc(40.33% - var(--grid-desktop-horizontal-spacing) * 2 / 3);
+          max-width: initial;
         }
         &.image-with-text__grid--reverse {
           .image-with-text__text-item {

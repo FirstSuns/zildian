@@ -1,6 +1,6 @@
 <div data-title="{{block.settings.menu_title}}" class="submenu-content {{cls}}" style="--grid-desktop-horizontal-spacing: 10px;">
   <div class="grid">
-    <div class="menu-content">
+    <div class="menu-content" {% if block.settings.menu_title == "GIft Guide" %} style="width: 100%;" {% endif %}>
       <div class="grid {% if link.links != blank %}sublinks-container{% else %}grid--3-col{% endif %} grid--3-col-desktop grid--4-col-wide grid--3-col-tablet ">
         {% if block.settings.show_mobile_new_link %}
           <div class="grid__item sublinks large-up-hide">

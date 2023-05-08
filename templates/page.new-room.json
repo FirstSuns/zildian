@@ -84,7 +84,9 @@
       ],
       "custom_css": [
         ".multicolumn-card__info {padding-top: 5px !important;}",
-        ".multicolumn-list {column-gap: 50px; --grid-desktop-horizontal-spacing: 50px;}"
+        ".multicolumn .multicolumn-list .multicolumn-list__item .multicolumn-card .multicolumn-card__info h3 {margin-bottom: 0;}",
+        ".multicolumn-list {column-gap: 50px; --grid-desktop-horizontal-spacing: 50px;}",
+        "@media screen and (max-width: 989px){.multicolumn .multicolumn-list .multicolumn-list__item .multicolumn-card .multicolumn-card__info .download-list ul li:first-child {border-top: 0; }}"
       ],
       "settings": {
         "side_banner": false,

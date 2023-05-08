@@ -70,6 +70,9 @@
                     &.mega-menu__link--active {
                       background: white;
                       border-left: 4px solid #CC9F53;
+                      span {
+                        color: #CC9F53;
+                      }
                     }
                   }
                 }
@@ -336,8 +339,9 @@
                     right: 0;
                   }
                   img {
-                    width: auto;
-                    height: 21px;
+                    // width: auto;
+                    width: 19px;
+                    height: 19px;
                     margin-right: 10px;
                   }
                 }
@@ -376,6 +380,7 @@
                             border-top: 1px solid #E4E5E6;
                             padding-top: 20px;
                             margin-top: 20px;
+                            width: 100%;
                             .new-link {
                               display: none;
                             }
@@ -482,7 +487,7 @@
                 }
               }
               & > li.account {
-                border-top: 1px solid #E4E5E6;
+                // border-top: 1px solid #E4E5E6;
                 margin-top: 20px;
                 padding: 0;
                 padding-top: 20px;
@@ -514,5 +519,6 @@
 @media screen and (max-width: 749px) {
   .menu-content .grid__item {
     width: calc(33.33% - var(--grid-mobile-horizontal-spacing) * 3 / 4);
+    max-width: calc(33.33% - var(--grid-mobile-horizontal-spacing) * 3 / 4);
   }
 }

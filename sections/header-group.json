@@ -129,7 +129,7 @@
             "title_2": "ZILDJIAN X CLOCKS AND COLOURS",
             "text_2": "High Quality Jewelry Collection",
             "link_2": "shopify:\/\/collections\/gear-apparel-lifestyle-zildjian-x-risk",
-            "new_link": "shopify:\/\/collections\/new-arrivals",
+            "new_link": "",
             "show_mobile_new_link": false
           }
         },
@@ -206,7 +206,7 @@
             "image_1": "shopify:\/\/shop_images\/Zildjian-Drumset-Method_6b83e8bd-791f-45f7-b8bc-1c9249107774.jpg",
             "title_1": "NEW! ZILDJIAN DRUM SET METHOD",
             "text_1": "<p> Comprehensive lesson program for beginners and teachers, with easy-to-follow video lessons and play-along tracks<\/p>",
-            "link_1": "\/blogs\/education",
+            "link_1": "shopify:\/\/blogs\/new-zildjian-drum-set-method",
             "image_2": "shopify:\/\/shop_images\/Zildjian-Rythm-Cards_f28541f6-9333-4c20-9bc8-25bf8e3a5da3.jpg",
             "title_2": "LEARN NOTE READING WITH RHYTHM CARDS",
             "text_2": "<p>Fun exercises in 5 engaging levels, with downloadable resources for the classroom<\/p>",
@@ -225,7 +225,7 @@
           "type": "menu_2",
           "settings": {
             "menu_title": "Brands",
-            "max_width": "270",
+            "max_width": "340",
             "title": "UNLEASH YOUR CREATIVITY AND ELEVATE YOUR SOUND",
             "button_title": "",
             "button_link": "",

@@ -63,6 +63,9 @@
         "template--18433034322212__361823d1-2289-4ef5-b1fe-5918c1e7c9dc-1680479665bf930fb0-0",
         "template--18433034322212__361823d1-2289-4ef5-b1fe-5918c1e7c9dc-1680479665bf930fb0-1"
       ],
+      "custom_css": [
+        ".image-with-text__media img {object-fit: fill;}"
+      ],
       "settings": {
         "tag": "",
         "side_banner": false,
@@ -115,7 +118,7 @@
           "settings": {
             "text": "<p>S cymbals are bright and intense by nature. Symmetrical hammering and traditional lathing elicit a clean, pure sound – and a brilliant finish delivers a head-turning, classic aesthetic.<\/p>",
             "text_style": "body",
-            "color": ""
+            "color": "#5c5d60"
           }
         },
         "fae67601-dded-4172-a7d1-c9d0c8078769": {
@@ -181,7 +184,7 @@
           "settings": {
             "text": "<p>Random hammering and a proprietary finish push S Family in a rich and explosive direction. Darker, more complex, and slightly drier than S Zildjian, S Dark cymbals deliver the distinctive sound and look you want, with the intensity and projection your music demands.<\/p>",
             "text_style": "body",
-            "color": ""
+            "color": "#5c5d60"
           }
         },
         "41e437d8-f33f-46df-8198-7bd982672c81": {
@@ -202,6 +205,9 @@
         "template--18433034322212__a1c8156f-7006-49f9-b938-f700fa797764-1680479665bf930fb0-0",
         "template--18433034322212__a1c8156f-7006-49f9-b938-f700fa797764-1680479665bf930fb0-1",
         "41e437d8-f33f-46df-8198-7bd982672c81"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 749px) and (max-width: 1100px) {.image-with-text__grid {margin-top: -100px; }}"
       ],
       "settings": {
         "tag": "",
@@ -312,6 +318,10 @@
         "1bcb4642-7bdf-475c-beb3-d36230fc61ac",
         "31276d17-fc8e-4fd5-a0e6-f44b1484be33"
       ],
+      "custom_css": [
+        "@media screen and (min-width: 749px) and (max-width: 1100px) {.image-with-text {margin-top: -100px; padding-bottom: 0; }}",
+        ".image-with-text__text p {color: #5c5d60;}"
+      ],
       "settings": {
         "side_banner": false,
         "full_width": true,
@@ -328,7 +338,7 @@
         "mobile_layout": "image_first",
         "mobile_content_alignment": "left",
         "margin_top": 0,
-        "padding_top": 36,
+        "padding_top": 32,
         "padding_bottom": 100,
         "quote": false,
         "max_width": "480"

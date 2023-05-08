@@ -1,0 +1,61 @@
+{{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
+{{ 'component-rte.css' | asset_url | stylesheet_tag }}
+{{ 'custom-image-text.scss.css' | asset_url | stylesheet_tag }}
+{%- style -%}
+  .section-{{ block.id }}-padding {
+    padding-top: {{ block.settings.padding_top1 | times: 0.35 | round: 0 }}px;
+    padding-bottom: {{ block.settings.padding_bottom1 | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ block.id }}-padding {
+      padding-top: {{ block.settings.padding_top1 }}px;
+      padding-bottom: {{ block.settings.padding_bottom1 }}px;
+    }
+  }
+{%- endstyle -%}
+
+{% assign image1 = article.metafields.global.cymbal_setip_image1 %}
+{% assign text1 = article.metafields.global.cymbals_setp1 %}
+
+{% if image1 != blank %}
+<div class="image-with-text image-with-text--{{ block.settings.content_layout1 }}  {% if block.settings.full_width1 == false %}page-width{% endif %} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless block.settings.color_scheme1 == 'background-1' and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %} section-{{ block.id }}-padding">
+  <div class="image-with-text__grid grid grid--gapless grid--1-col width--{{block.settings.desktop_image_width1}} {% if block.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %} {% if block.settings.mobile_layout1 == 'text_first' %} mobile_image-with-text__grid--reverse{% endif %}">
+    <div class="image-with-text__media-item  gradient color-{{ block.settings.color_scheme1 }} image-with-text__media-item--{{ block.settings.desktop_image_width1 }} image-with-text__media-item--{{ block.settings.desktop_content_position1 }} grid__item">
+      <div
+        class="image-with-text__media image-with-text__media--{{ block.settings.height1 }} global-media-settings {% if image1 != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
+        {% if block.settings.height1 == 'adapt' and image1 != blank %}
+          style="padding-bottom: 55%;"
+        {% endif %}
+      >
+        
+        {%- if image1 != blank -%}
+         <img src="{{image1}}" loading="lazy">
+        {%- else -%}
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        {%- endif -%}
+      </div>
+    </div>
+    <div class="image-with-text__text-item grid__item">
+      <div
+        id="ImageWithText--{{ block.id }}"
+        class="image-with-text__content horizontal-align-content--{{block.settings.content_align1}} image-with-text__content--{{ block.settings.desktop_content_position1 }} image-with-text__content--desktop-{{ block.settings.desktop_content_alignment1 }} image-with-text__content--mobile-{{ block.settings.mobile_content_alignment1 }} image-with-text__content--{{ block.settings.height1 }} gradient color-{{ block.settings.color_scheme1 }} content-container" 
+      >
+        <div class="info" style="max-width: {{block.settings.max_width1}}px;">
+          <div class="text">
+            <h2 class="image-with-text__heading h2" {{ block.shopify_attributes }}>
+              {{ article.metafields.global.author1 }}
+            </h2>
+            <div class="image-with-text__text rte {{ block.settings.text_style1 }}" {{ block.shopify_attributes }}>
+              <div class="content">
+                {{ text1 }}
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}

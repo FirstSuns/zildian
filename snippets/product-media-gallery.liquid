@@ -13,7 +13,7 @@
           or media.preview_image contains 'spotlight' 
           or media.preview_image contains 'thumbnails'
         -%}
-        <li class="splide__slide">
+        <li class="splide__slide test" thumbnail-color="{{ media.alt }}">
           {% render 'product-thumbnail',
                 media: media,
                 media_count: media_count,
@@ -38,6 +38,7 @@
   {%assign media_size = 0 %}
   <div id="thumbsCarousel" class="splide">
     <div class="splide__track">
+      
       <ul class="splide__list" role="list">
         {%- for media in product.media -%}
         {%- unless 
@@ -51,7 +52,7 @@
           or media.preview_image contains 'thumbnails'
         -%}
         {% assign media_size = media_size | plus: 1 %}
-        <li class="splide__slide">
+        <li class="splide__slide tst" thumbnail-color="{{ media.alt }}" >
           <div class="product__media media" style="padding-top: 100%;">
             <img
               srcset="{% if media.preview_image.width >= 288 %}{{ media.preview_image | img_url: '288x' }} 288w,{% endif %}
@@ -72,6 +73,8 @@
         {% endunless %}
         {%- endfor -%}
       </ul>
+   
+     
     </div>
   </div>
   
@@ -94,7 +97,9 @@
 {% if media_size == 1 or media_size == 0 %}
 <style>
  #thumbsCarousel{
-  display: none !important;
+  display: block !important;
  }
 </style>
+
+
 {% endif %}

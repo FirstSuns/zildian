@@ -1,0 +1,23 @@
+{% if section.settings.title != blank %}
+<header class="page-width">
+          <h5 class="article-template__title" itemprop="headline">{{ section.settings.title }}</h5>
+</header>
+{% endif %}
+{% schema %}
+  {
+    "name": "Title",
+    "class":"titl-class-sec",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      }
+    ],
+    "presets":[
+      {
+        "name": "Title"
+      }
+    ]
+  }
+{% endschema %}

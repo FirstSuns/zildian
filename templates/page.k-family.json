@@ -6,7 +6,7 @@
         "d88c72ac-a204-4931-9330-91b5bb6a11d4": {
           "type": "heading",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/K-Family-Collection-Logo.png",
+            "icon": "shopify:\/\/shop_images\/K-Family-Collection-Logo_f50207d6-ae3f-4e93-8800-01c9f4846b87.png",
             "heading": "DARK & RICH",
             "heading_size": "h1",
             "uppercase": true
@@ -212,6 +212,9 @@
         "template--18433034322212__a1c8156f-7006-49f9-b938-f700fa797764-1680479665bf930fb0-1",
         "41e437d8-f33f-46df-8198-7bd982672c81"
       ],
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.image-with-text .image-with-text__grid .image-with-text__media-item.two-images {flex-direction: row-reverse; }}"
+      ],
       "settings": {
         "tag": "",
         "side_banner": false,
@@ -278,6 +281,7 @@
         "template--18433034322212__2f94319b-7a38-49c1-b9d2-b8fb6cdfd1e7-1680479665bf930fb0-1",
         "05a33015-d1dc-4700-8e59-0dcc3e42025f"
       ],
+      "custom_css": [],
       "settings": {
         "tag": "",
         "side_banner": false,
@@ -343,6 +347,9 @@
         "template--18433034322212__db45ecef-c3ed-40be-ac34-ad6d4d6819ec-1680479665bf930fb0-0",
         "template--18433034322212__db45ecef-c3ed-40be-ac34-ad6d4d6819ec-1680479665bf930fb0-1",
         "24d10485-4691-4d97-bcca-f2627d3c3db3"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.image-with-text .image-with-text__grid .image-with-text__media-item.two-images{flex-direction: row-reverse; }}"
       ],
       "settings": {
         "tag": "",
@@ -453,7 +460,7 @@
         "31276d17-fc8e-4fd5-a0e6-f44b1484be33"
       ],
       "custom_css": [
-        ".image-with-text__text p {color: #5c5d60; }"
+        ".image-with-text__text p {color: #5c5d60;}"
       ],
       "settings": {
         "side_banner": false,

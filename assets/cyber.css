@@ -1,0 +1,146 @@
+.mystique_sec2 p {
+    font-size: 16px;
+    font-weight: 400;
+}
+.mystique_sec ul li{
+    font-weight: 900;
+}
+.mystique_row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mystique_col{
+  width: 43%;
+  margin: 25px;
+}
+.setup_div ol li{
+  font-size: 14px;
+}
+.mystique_col h2{
+   font-size: 32px;
+  font-weight: 700;
+}
+.mystique_col h3{
+   font-size: 24px;
+  font-weight: 700;
+}
+.mystique_col a{
+  font-weight: 700;
+  text-decoration: none !important;
+}
+.mystique_col-2 {
+    width: 20%;
+}
+
+.mystique_col-3 {
+    width: 30%;
+}
+.mystique_col-4 {
+    width: 40%;
+}
+.mystique_col-5 {
+    width: 50%;
+}
+.mystique_col-12{
+  width: 100%;
+}
+.aaron_smith_in ul {
+    list-style-type: none;
+}
+li.list-type {
+    position: relative;
+}
+
+li.list-type span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #CC9F53;
+    width: 36px;
+    height: 36px;
+    border-radius: 22px;
+    line-height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+li.list-type h2, li.list-type p {
+       margin-left: 55px;
+    margin-top: 0px;
+  font-weight: 400;
+}
+.sec_space {
+    padding: 40px 0;
+}
+.btn-slider {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.left-slide-txt {
+    width: 79%;
+}
+.right-slide-btn {
+    width: 21%;
+}
+.left-slide-txt h2{
+  text-align:left !important;
+  font-size: 24px;
+}
+.left-slide-txt h3{
+  font-size: 16px;
+}
+.right-slide-btn h2{
+  text-align:right !important;
+  font-size: 24px;
+}
+.right-slide-btn h3{
+  text-align:right !important;
+  font-size: 16px;
+}
+.right-slide-btn {
+    display: flex;
+    justify-content: space-between;
+  align-items: center;
+}
+
+
+.video_slider_container .slick-prev {
+    left: 0 !important;
+  background-color: red !important;
+      color: #0000 !important;
+}
+.video_slider_container .slick-next {
+    right: 5%!important;
+/*     background-color: red!important; */
+    color: #0000!important;
+    bottom: -95px !important;
+    top: unset!important;
+    width: 45px!important;
+    height: 45px!important;
+    border-radius: 21px!important;
+}
+#shopify-section-template--18412851200292__main .blog{
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .banner__box.content-container.content-container--full-width-mobile.color-background-1.gradient {
+    margin-bottom: 0 !important;
+}
+  .rich-text__blocks.left.contnet-type--list {
+    padding: 20px;
+}
+  h2.rich-text__heading.rte.h4 {
+    font-size: 16px;
+}
+}
+
+

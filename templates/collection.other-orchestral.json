@@ -481,7 +481,6 @@
     },
     "4803a757-7e31-4693-9d72-92244f5dfdfd": {
       "type": "article-slider",
-      "disabled": true,
       "blocks": {
         "template--18433034322212__4803a757-7e31-4693-9d72-92244f5dfdfd-16804826455ecb7e3c-0": {
           "type": "heading",
@@ -530,6 +529,9 @@
         "9e2e6553-9a0d-4afe-b6bc-9f4554c331e2",
         "1bcb4642-7bdf-475c-beb3-d36230fc61ac",
         "31276d17-fc8e-4fd5-a0e6-f44b1484be33"
+      ],
+      "custom_css": [
+        ".image-with-text__text p {color: #5c5d60;}"
       ],
       "settings": {
         "side_banner": false,
@@ -590,7 +592,7 @@
       ],
       "custom_css": [
         "@media screen and (max-width: 749px) {.rich-text .rich-text__blocks.contnet-type--inline .rich-text__heading {max-width: 200px; }}",
-        ".content-container{margin-top:50px; margin-bottom:50px;}"
+        ".content-container {margin-top: 50px; margin-bottom: 50px;}"
       ],
       "settings": {
         "desktop_content_position": "center",

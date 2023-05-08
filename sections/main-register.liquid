@@ -165,17 +165,22 @@
             </span>
           {%- endif -%}
 
+          {% comment %}
           <div class="field">
             <input
               type="password"
+              value=""
+              name="customer[password_confirmation]"
               id="confirm-password"
               aria-required="true"
               placeholder="{{ 'customer.register.password' | t }}" required
             >
             <label for="confirm-password">
               Confirm Password
-            </label>
+            </label> 
           </div>
+          {% endcomment %}
+          
           
           <button>
             SIGN UP
@@ -186,7 +191,22 @@
     </div>
   </div>
 </div>
+{% comment %} <script>
+    function logSubmit(event) {
+      var password = document.getElementById("RegisterForm-password");
+      var confirm_password = document.getElementById("confirm-password");
+      if(password.value != confirm_password.value) {
+        event.preventDefault();
+        confirm_password.setCustomValidity("Passwords Don't Match");
+      }
+      else{
+      }
+    }
+    const form = document.getElementById("create_customer");
+    form.addEventListener("submit", logSubmit);
+</script> {% endcomment %}
 
+{% comment %} 
 <script>
 
   var password = document.getElementById("RegisterForm-password")
@@ -202,7 +222,7 @@
   password.onchange = validatePassword;
   confirm_password.onkeyup = validatePassword;
 
-</script>
+</script> {% endcomment %}
 
 {% schema %}
 {

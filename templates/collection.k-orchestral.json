@@ -6,7 +6,7 @@
         "c9c589a1-bce1-48a6-9a56-74c427c91d6f": {
           "type": "heading",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/K-Orchestral-Collection-Logo.png",
+            "icon": "shopify:\/\/shop_images\/K-Family-Collection-Logo_f50207d6-ae3f-4e93-8800-01c9f4846b87.png",
             "heading": "Well Balanced & Effortless",
             "heading_size": "h1",
             "uppercase": false
@@ -15,6 +15,9 @@
       },
       "block_order": [
         "c9c589a1-bce1-48a6-9a56-74c427c91d6f"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 990px) {.banner--desktop-transparent .banner__box {max-width: 1200px; }}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/K-Orchestral-Hero-Banner-Collage.jpg",
@@ -478,6 +481,7 @@
         "padding_top": 36,
         "padding_bottom": 48,
         "quote": false,
+        "icon": "shopify:\/\/shop_images\/K_Con_Series_Page_Logo_2_1.png",
         "max_width": "480"
       }
     },
@@ -494,7 +498,7 @@
           "type": "heading",
           "settings": {
             "heading": "<p>EMBRACE YOUR <br\/>DARKER SIDE<\/p>",
-            "heading_size": "h0",
+            "heading_size": "h1",
             "max_width": ""
           }
         },
@@ -502,7 +506,7 @@
           "type": "button",
           "settings": {
             "button_label": "Find Your K",
-            "button_link": "shopify:\/\/collections\/default-category-cymbals",
+            "button_link": "https:\/\/zildjianshop.myshopify.com\/collections\/cymbals",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -526,8 +530,8 @@
         "content_alignment": "left",
         "color_scheme": "background-2",
         "full_width": false,
-        "padding_top": 40,
-        "padding_bottom": 40,
+        "padding_top": 72,
+        "padding_bottom": 72,
         "max_width": ""
       }
     }

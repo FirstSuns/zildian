@@ -154,10 +154,10 @@
               <div class="menu-drawer__navigation-container">
                 <nav class="menu-drawer__navigation">
                   <ul class="menu-drawer__menu has-submenu list-menu" role="list">
-                    {%- for link in section.settings.menu.links -%}
+                    {%- for link in section.settings.menu.links -%}                     
                       {% if forloop.index == 1 %}
                       {%- for childlink in link.links -%}
-                        <li class="submenus" >
+                        <li class="submenus --" data-title="{{ link.title }}" >
                           <a href="{{ childlink.url }}" class="menu-drawer__menu-item top-menu link link--text list-menu__item focus-inset{% if childlink.current %} menu-drawer__menu-item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
                             {% include 'menu_icon' with title: childlink.title %} {{ childlink.title | escape }}
                           </a>
@@ -196,6 +196,42 @@
                           {%- endif -%}
                         </li>
                       {%- endfor -%}
+                        <!--Brands-->
+                      {%elsif forloop.index == 4 %}
+                        <li class="submenus brand" data-title="{{ link.title }}" >
+                          <details id="Details-menu-drawer-submenu-brand">
+                              <summary class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                {{ link.title | escape }}
+                                {% render 'icon-chevron' %}
+                                {% render 'icon-caret' %}
+                              </summary>
+
+                              <div id="childlink-{{ link.handle | escape }}" class="menu-drawer__submenu has-submenu gradient motion-reduce">
+                                <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
+                                  {% render 'icon-chevron' %}
+                                  BACK
+                                </button>
+                                <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
+                                  <div class="mega-menu__sub_content">
+                                    
+                                      {% for block in section.blocks %}
+                                        {% if block.type == 'menu_1'  and grandchildlink.title == block.settings.menu_title  %}
+                                          {% include 'menu_type_1', cls: cls %}
+                                        {% endif %}
+                                        {% if block.type == 'menu_2' and link.title == block.settings.menu_title %}
+                                          {% include 'menu_type_2_mob' %}
+                                        {% endif %}
+                                        {% if block.type == 'menu_3'  and grandchildlink.title == block.settings.menu_title  %}
+                                          {% include 'menu_type_3', cls: cls %}
+                                        {% endif %}
+                                      {% endfor %}
+                                    
+                                      
+                                  </div>
+                                </ul>
+                              </div>
+                          </details>
+                        </li>
                       {% else %}
                       <li>
                           <a href="{{ link.url }}" class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.current %} menu-drawer__menu-item--active{% endif %}"{% if link.current %} aria-current="page"{% endif %}>

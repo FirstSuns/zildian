@@ -15,6 +15,9 @@
       "block_order": [
         "template--18142515003684__3141c904-b6a6-4f2b-a1fe-aa2b9e911af8-1679425999b0455fe5-0"
       ],
+      "custom_css": [
+        ".banner__media {max-height: 549px;}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/hero_4.jpg",
         "mobile_image": "shopify:\/\/shop_images\/Rectangle_5_1.jpg",

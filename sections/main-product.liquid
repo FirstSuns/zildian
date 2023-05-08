@@ -262,7 +262,7 @@
                   {% endif %}
                 {% endcapture %}
                 {% if intro != blank %}
-                <ul class="spec">
+                <ul class="spec 1">
                   <li>
                     <div class="intro grid grid--1-col grid--2-col-desktop">
                       {{intro}}
@@ -282,8 +282,14 @@
                   </li>
                   {% endif %}
 
-                  {% comment %} template contains 'stick' {% endcomment %}
-                  {% if product.tags contains '400th' %}
+                  {% assign stick_spec_flag = true %}
+                  {% if product.tags contains 'Zildjian Category/Cymbals' or template contains 'cymbal'%}
+                    {% assign stick_spec_flag = false %}
+                  {% endif %}
+                  {% if template contains 'stick' %}
+                    {% assign stick_spec_flag = true %}
+                  {% endif %}
+                  {% if product.tags contains '400th' and stick_spec_flag == true %}
                   {% if product.metafields.magento.series != blank or product.metafields.magento.surface_coating != blank %}
                   <li class="grid grid--1-col heading">
                     <div class="grid__item">STICK</td>

@@ -152,7 +152,8 @@
         {%- endif -%}
       {%- when 'blog' -%}
         {% if template == 'blog.education' %}
-        <li class="breadcrumbs__item large-up-hide">
+        <li class="breadcrumbs__item ">
+        {% comment %} large-up-hide {% endcomment %}
           <a class="breadcrumbs__link" href="/">Home</a>
         </li>
         <li class="breadcrumbs__item small-hide">

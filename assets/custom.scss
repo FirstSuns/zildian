@@ -102,14 +102,16 @@ h5,
   font-weight: 700;
   text-transform: uppercase;
   &.animate-arrow {
-    display: inline;
+    // display: inline;
+    display: flex;
     align-items: center;
     .icon-wrap {
       display: inline-flex;
       width: 20px;
       line-height: 10px;
       position: relative;
-      top: -2px;
+      // margin-left: 20px;
+      // top: -2px; 
     }
   }
   .icon-wrap {
@@ -587,13 +589,22 @@ body.hide-price {
 }
 
 /*cybernauticstech */
+.card__badge.best-seller.top.left {
+    background: #E3D0A5;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 13px
+}
 #CollectionProductGrid .collection .boost-pfs-filter-left-col .boost-pfs-filter-tree .boost-pfs-filter-tree-content .boost-pfs-filter-refine-by-wrapper .boost-pfs-filter-refine-by .boost-pfs-filter-refine-by-items .refine-by-item .boost-pfs-filter-button .refine-by-value {
     font-weight: 400;
     color: #000;
     font-size: 14px !important;
 }
 .card__inner.color-background-1.ratio {
-    // background-color: #F8F8FA;
+    //  background-color: #F8F8FA; //Client asked this
 }
 .boost-pfs-filter-left-col {
     overflow-y: scroll;
@@ -660,3 +671,31 @@ body.hide-price .price, body.hide-price .buy-buttons-box, body.hide-price .produ
 }
 }
 /*cybernauticstech */
+
+/*zildjian-underground*/
+.zildjian-underground .custom-video-gall {
+    background-color: #F8F8F9;
+}.zildjian-underground .custom-video-gall .video_slider_container {
+    background-color: #F8F8F9;
+}.zildjian-underground .video_slider_title {
+    padding-top: 70px;
+}.zildjian-underground  .custom-video-gall .video_slider_container .color-background-1.gradient.slick-slide.slick-current.slick-active {
+    background-color: #F8F8F9;
+}.zildjian-underground  .custom-video-gall .video_slider_container .btn-slider {
+    padding-bottom: 70px;
+    max-width: 1040px;
+    padding-top: 36px;
+}.zildjian-underground  .page-width {
+    max-width: 1200px;
+}.zildjian-underground  .rich-text__wrapper.rich-text__wrapper--center {
+/*     margin: 0 !important; */
+    width: 100% !important;
+}.zildjian-underground .titl-class-sec .page-width {
+    max-width: var(--page-width);
+}.zildjian-underground .left-slide-txt {
+    width: 75%;
+}.zildjian-underground .right-slide-btn {
+    width: 25%;
+}.zildjian-underground .newsletter .page-width {
+    max-width: var(--page-width);
+}

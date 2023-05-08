@@ -84,6 +84,9 @@
     },
     "da8afc04-3a8f-4556-b966-69a77891978b": {
       "type": "video",
+      "custom_css": [
+        "@media screen and (max-width: 749px){[data-section-type=video] .video-section.mobile-full-width--true {margin: 0; width: 100%; padding-left: 0; padding-right: 0; }}"
+      ],
       "settings": {
         "heading": "",
         "heading_size": "h1",

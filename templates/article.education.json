@@ -1,27 +1,86 @@
 {
   "sections": {
+    "230bc92f-b8d9-46db-823f-3f07d0207a2e": {
+      "type": "image-banner",
+      "blocks": {
+        "template--18412851200292__230bc92f-b8d9-46db-823f-3f07d0207a2e-168320023775a68c6f-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "AARON SMITH",
+            "heading_size": "h1",
+            "uppercase": false
+          }
+        },
+        "template--18412851200292__230bc92f-b8d9-46db-823f-3f07d0207a2e-168320023775a68c6f-1": {
+          "type": "text",
+          "settings": {
+            "text": "THE AARON SMITH EXPERIENCE",
+            "text_style": "body"
+          }
+        },
+        "template--18412851200292__230bc92f-b8d9-46db-823f-3f07d0207a2e-168320023775a68c6f-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "blank_button": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18412851200292__230bc92f-b8d9-46db-823f-3f07d0207a2e-168320023775a68c6f-0",
+        "template--18412851200292__230bc92f-b8d9-46db-823f-3f07d0207a2e-168320023775a68c6f-1",
+        "template--18412851200292__230bc92f-b8d9-46db-823f-3f07d0207a2e-168320023775a68c6f-2"
+      ],
+      "custom_css": [
+        "h2 {color: #fff; font-size: 34px;}",
+        ".banner__box .banner__heading + * {margin-top: 10px; color: #fff; font-size: 17px; font-weight: 600; margin-bottom: 30px;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Artist_inner_2x_1.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Artist_inner_2x_1.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "content_width": "",
+        "padding_left": "",
+        "desktop_content_position": "bottom-left",
+        "show_text_box": true,
+        "desktop_content_alignment": "left",
+        "color_scheme": "accent-2",
+        "mobile_content_alignment": "left",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "center_mobile": false,
+        "full_mobile": false,
+        "content_padding": 20,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
     "main": {
       "type": "main-education",
       "blocks": {
+        "5b90492d-846d-4a73-bfdc-0437c6de4f04": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "blog_show_date": false,
+            "blog_show_author": false
+          }
+        },
         "featured_image": {
           "type": "featured_image",
           "settings": {
             "image_height": "small"
           }
         },
-        "5b90492d-846d-4a73-bfdc-0437c6de4f04": {
-          "type": "title",
-          "settings": {
-            "blog_show_date": false,
-            "blog_show_author": false
-          }
-        },
         "content": {
           "type": "content",
-          "settings": {}
-        },
-        "6b1dec1c-8a5a-4507-9932-dda22b937df2": {
-          "type": "about",
           "settings": {}
         },
         "543c39e1-2e95-4a79-9cb1-c4edf029d1f7": {
@@ -29,6 +88,7 @@
           "settings": {
             "side_banner": false,
             "full_width": true,
+            "image": "shopify:\/\/shop_images\/video_mobile.jpg",
             "height": "adapt",
             "desktop_image_width": "medium",
             "layout": "image_first",
@@ -45,20 +105,214 @@
             "max_width": "450"
           }
         },
+        "762867f9-ccdb-453e-967e-eade6cf405ad": {
+          "type": "new_image_text",
+          "settings": {
+            "side_banner1": false,
+            "full_width1": true,
+            "image1": "shopify:\/\/shop_images\/k1116-angle-shot_1_2e2b38d0-d547-4ad2-ac7b-888d2283bee7.png",
+            "height1": "adapt",
+            "desktop_image_width1": "medium",
+            "layout1": "image_first",
+            "desktop_content_position1": "top",
+            "content_align1": "middle",
+            "desktop_content_alignment1": "left",
+            "content_layout1": "no-overlap",
+            "color_scheme1": "background-1",
+            "mobile_layout1": "image_first",
+            "mobile_content_alignment1": "left",
+            "padding_top1": 36,
+            "padding_bottom1": 36,
+            "quote1": false,
+            "max_width1": ""
+          }
+        },
+        "6b1dec1c-8a5a-4507-9932-dda22b937df2": {
+          "type": "about",
+          "settings": {}
+        },
         "0668294f-ea6d-4c55-b965-4206b5e4208e": {
           "type": "featured_product",
           "settings": {}
+        },
+        "a4b74c12-3709-4159-951f-4a7fd60462df": {
+          "type": "recent_post",
+          "settings": {
+            "title": "CHECK OUT OUR OTHER ARTISTS"
+          }
         }
       },
       "block_order": [
-        "featured_image",
         "5b90492d-846d-4a73-bfdc-0437c6de4f04",
+        "featured_image",
         "content",
-        "6b1dec1c-8a5a-4507-9932-dda22b937df2",
         "543c39e1-2e95-4a79-9cb1-c4edf029d1f7",
-        "0668294f-ea6d-4c55-b965-4206b5e4208e"
+        "762867f9-ccdb-453e-967e-eade6cf405ad",
+        "6b1dec1c-8a5a-4507-9932-dda22b937df2",
+        "0668294f-ea6d-4c55-b965-4206b5e4208e",
+        "a4b74c12-3709-4159-951f-4a7fd60462df"
       ],
       "settings": {}
+    },
+    "c89c6cb8-b3ec-46c4-a7b5-2ca661ab91db": {
+      "type": "image-with-text",
+      "disabled": true,
+      "blocks": {
+        "template--18412851200292__c89c6cb8-b3ec-46c4-a7b5-2ca661ab91db-16832733011e85cb36-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "AARON SMITH'S SETUP:",
+            "heading_link": "",
+            "heading_size": "h1",
+            "heading_color": "",
+            "max_width": ""
+          }
+        },
+        "template--18412851200292__c89c6cb8-b3ec-46c4-a7b5-2ca661ab91db-16832733011e85cb36-1": {
+          "type": "text",
+          "settings": {
+            "text": "<ol><li>14\" HiHats - K Constantinople (top), K Custom Session (bottom) *<\/li><li>Stack - 9\" FX Oriental Trash Splash (bottom), 6\" Splash (top) *<\/li><li>19\" K Dark Thin Crashes<\/li><li>22\" K Custom High Definition Ride<\/li><li>10\" FX China Trash<\/li><li>15\" FX Azuka Latin Multi-Crash *<\/li><li>16\" K Dark Thin Crashes * May be prototype<\/li><\/ol>",
+            "text_style": "body",
+            "color": ""
+          }
+        },
+        "8c7c9be8-a0ab-43db-963d-f3d31ddeaeac": {
+          "type": "caption",
+          "settings": {
+            "caption": "* May be prototype",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "template--18412851200292__c89c6cb8-b3ec-46c4-a7b5-2ca661ab91db-16832733011e85cb36-0",
+        "template--18412851200292__c89c6cb8-b3ec-46c4-a7b5-2ca661ab91db-16832733011e85cb36-1",
+        "8c7c9be8-a0ab-43db-963d-f3d31ddeaeac"
+      ],
+      "settings": {
+        "tag": "",
+        "side_banner": false,
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/video_mobile.jpg",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "container_image": false,
+        "media_max_width": "",
+        "desktop_content_position": "top",
+        "content_align": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "overlay_section": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "quote": false,
+        "max_width": ""
+      }
+    },
+    "a553a349-4d29-47fb-9e9a-794c8718bf71": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18412851200292__a553a349-4d29-47fb-9e9a-794c8718bf71-1683290796f580e234-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "AARON SMITH’S GO-TO’S",
+            "heading_link": "",
+            "heading_size": "h1",
+            "heading_color": "",
+            "max_width": ""
+          }
+        },
+        "template--18412851200292__a553a349-4d29-47fb-9e9a-794c8718bf71-1683290796f580e234-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A Family<\/p><p>FX CRASHES OF DOOM<\/p><p>Monstrous, explosive FX cymbal that delivers booming trash crashes, dry stick sound, and a broad sustain rich with dark, exotic overtones.<\/p>",
+            "text_style": "body",
+            "color": ""
+          }
+        },
+        "template--18412851200292__a553a349-4d29-47fb-9e9a-794c8718bf71-1683290796f580e234-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop now",
+            "button_link": "",
+            "link": false,
+            "blank_button": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18412851200292__a553a349-4d29-47fb-9e9a-794c8718bf71-1683290796f580e234-0",
+        "template--18412851200292__a553a349-4d29-47fb-9e9a-794c8718bf71-1683290796f580e234-1",
+        "template--18412851200292__a553a349-4d29-47fb-9e9a-794c8718bf71-1683290796f580e234-2"
+      ],
+      "custom_css": [
+        ".image-with-text__text p:nth-child(2) {font-weight: 700;}",
+        "a.button.button--primary {background-color: #ffff; color: #000; opacity: unset; min-width: 0; padding: 0;}",
+        ".button:after {box-shadow: none !important;}"
+      ],
+      "settings": {
+        "tag": "",
+        "side_banner": false,
+        "full_width": false,
+        "image": "shopify:\/\/shop_images\/k1116-angle-shot_1_2e2b38d0-d547-4ad2-ac7b-888d2283bee7.png",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "container_image": false,
+        "media_max_width": "",
+        "desktop_content_position": "top",
+        "content_align": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "overlay_section": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "quote": false,
+        "max_width": ""
+      }
+    },
+    "85dc5fd4-4789-4842-880a-31e50467838f": {
+      "type": "video",
+      "disabled": true,
+      "blocks": {
+        "035c7af3-d72f-4d46-8224-c02d0a0870f8": {
+          "type": "title",
+          "settings": {
+            "caption": "",
+            "title": "\"Cali\" Evan Marien x Aaron Smith #EvanMarien #AaronSmith",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "035c7af3-d72f-4d46-8224-c02d0a0870f8"
+      ],
+      "custom_css": [
+        "h2.title.h1 {text-align: center;}"
+      ],
+      "settings": {
+        "heading": "BEHIND THE KIT",
+        "heading_size": "h1",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "mobile_full_width": false,
+        "color_scheme": "background-1",
+        "caption_color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     },
     "6c0669ad-94cc-40dd-8aca-4ef8667940f7": {
       "type": "featured-collection",
@@ -107,7 +361,11 @@
     }
   },
   "order": [
+    "230bc92f-b8d9-46db-823f-3f07d0207a2e",
     "main",
+    "c89c6cb8-b3ec-46c4-a7b5-2ca661ab91db",
+    "a553a349-4d29-47fb-9e9a-794c8718bf71",
+    "85dc5fd4-4789-4842-880a-31e50467838f",
     "6c0669ad-94cc-40dd-8aca-4ef8667940f7",
     "552513de-3e1b-4347-be33-6227568d2ff3"
   ]
