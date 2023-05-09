@@ -409,7 +409,11 @@ noscript .localization-selector.link {
 .footer__content-bottom-wrapper--center {
   justify-content: center;
 }
-
+@media screen and (max-width: 749px) {
+  .footer__content-bottom-wrapper--center{
+    justify-content: left;
+  }
+}
 .footer__copyright {
   text-align: center;
   margin-top: 1.5rem;

@@ -612,7 +612,7 @@
       "custom_css": [
         ".image-with-text__media img {object-fit: contain;}",
         "@media screen and (min-width: 749px) and (max-width: 1100px) {.image-with-text {padding-top: 0; padding-bottom: 0; } .image-with-text__content {padding-top: 0; padding-bottom: 0; }}",
-        "@media screen and (max-width: 749px) {.image-with-text .image-with-text__grid .image-with-text__text-item .image-with-text__content .info {margin-top: 20px; }}"
+        "@media screen and (max-width: 749px) {.image-with-text .image-with-text__grid .image-with-text__text-item .image-with-text__content .info {margin-top: 20px; } .image-with-text__heading {font-size: 20px; }}"
       ],
       "settings": {
         "tag": "",
@@ -704,8 +704,8 @@
             "background_color_alpha": 90,
             "post_spacing": 1,
             "hover_margin": 0,
-            "rows": 1,
-            "columns": 4,
+            "rows": 2,
+            "columns": 6,
             "target_blank": false,
             "show_icon": true,
             "show_text": false,
@@ -717,8 +717,8 @@
             "accent_font_size": 14,
             "accent_font": "helvetica_n4",
             "override_feed_id": "",
-            "arbitrary_attributes": "instafeed",
-            "custom_css": "[instafeed] {\npadding-bottom: 50px;\n}",
+            "arbitrary_attributes": "",
+            "custom_css": "",
             "custom_js": ""
           }
         }

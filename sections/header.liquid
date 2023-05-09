@@ -158,7 +158,7 @@
                       {% if forloop.index == 1 %}
                       {%- for childlink in link.links -%}
                         <li class="submenus --" data-title="{{ link.title }}" >
-                          <a href="{{ childlink.url }}" class="menu-drawer__menu-item top-menu link link--text list-menu__item focus-inset{% if childlink.current %} menu-drawer__menu-item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
+                          <a href="#" class="menu-drawer__menu-item top-menu link link--text list-menu__item focus-inset{% if childlink.current %} menu-drawer__menu-item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
                             {% include 'menu_icon' with title: childlink.title %} {{ childlink.title | escape }}
                           </a>
                           {%- if grandchildlink.links == blank -%}

@@ -6,13 +6,14 @@
         "template--18412851200292__230bc92f-b8d9-46db-823f-3f07d0207a2e-168320023775a68c6f-0": {
           "type": "heading",
           "settings": {
-            "heading": "AARON SMITH",
+            "heading": "John Riley's Art of Bop<br> Drumming Series",
             "heading_size": "h1",
             "uppercase": false
           }
         },
         "template--18412851200292__230bc92f-b8d9-46db-823f-3f07d0207a2e-168320023775a68c6f-1": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "THE AARON SMITH EXPERIENCE",
             "text_style": "body"
@@ -42,17 +43,17 @@
         ".banner__box .banner__heading + * {margin-top: 10px; color: #fff; font-size: 17px; font-weight: 600; margin-bottom: 30px;}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Artist_inner_2x_1.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/Artist_inner_2x_1.jpg",
+        "image": "shopify:\/\/shop_images\/hero_cef57bf8-2b34-4aab-9897-76ff4113cbd4.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Rectangle_5_77db9b9d-9a68-4d9b-9ddb-4e279bb6b80c.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "adapt",
         "content_width": "",
         "padding_left": "",
-        "desktop_content_position": "bottom-left",
+        "desktop_content_position": "middle-center",
         "show_text_box": true,
-        "desktop_content_alignment": "left",
+        "desktop_content_alignment": "center",
         "color_scheme": "accent-2",
-        "mobile_content_alignment": "left",
+        "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true,
         "center_mobile": false,
@@ -67,7 +68,6 @@
       "blocks": {
         "5b90492d-846d-4a73-bfdc-0437c6de4f04": {
           "type": "title",
-          "disabled": true,
           "settings": {
             "blog_show_date": false,
             "blog_show_author": false
@@ -82,28 +82,6 @@
         "content": {
           "type": "content",
           "settings": {}
-        },
-        "543c39e1-2e95-4a79-9cb1-c4edf029d1f7": {
-          "type": "image_text",
-          "settings": {
-            "side_banner": false,
-            "full_width": true,
-            "image": "shopify:\/\/shop_images\/video_mobile.jpg",
-            "height": "adapt",
-            "desktop_image_width": "medium",
-            "layout": "image_first",
-            "desktop_content_position": "top",
-            "content_align": "middle",
-            "desktop_content_alignment": "left",
-            "content_layout": "no-overlap",
-            "color_scheme": "background-2",
-            "mobile_layout": "image_first",
-            "mobile_content_alignment": "left",
-            "padding_top": 100,
-            "padding_bottom": 36,
-            "quote": false,
-            "max_width": "450"
-          }
         },
         "762867f9-ccdb-453e-967e-eade6cf405ad": {
           "type": "new_image_text",
@@ -131,6 +109,28 @@
           "type": "about",
           "settings": {}
         },
+        "543c39e1-2e95-4a79-9cb1-c4edf029d1f7": {
+          "type": "image_text",
+          "settings": {
+            "side_banner": false,
+            "full_width": true,
+            "image": "shopify:\/\/shop_images\/video_mobile.jpg",
+            "height": "adapt",
+            "desktop_image_width": "medium",
+            "layout": "image_first",
+            "desktop_content_position": "top",
+            "content_align": "middle",
+            "desktop_content_alignment": "left",
+            "content_layout": "no-overlap",
+            "color_scheme": "background-2",
+            "mobile_layout": "image_first",
+            "mobile_content_alignment": "left",
+            "padding_top": 100,
+            "padding_bottom": 36,
+            "quote": false,
+            "max_width": "450"
+          }
+        },
         "0668294f-ea6d-4c55-b965-4206b5e4208e": {
           "type": "featured_product",
           "settings": {}
@@ -146,9 +146,9 @@
         "5b90492d-846d-4a73-bfdc-0437c6de4f04",
         "featured_image",
         "content",
-        "543c39e1-2e95-4a79-9cb1-c4edf029d1f7",
         "762867f9-ccdb-453e-967e-eade6cf405ad",
         "6b1dec1c-8a5a-4507-9932-dda22b937df2",
+        "543c39e1-2e95-4a79-9cb1-c4edf029d1f7",
         "0668294f-ea6d-4c55-b965-4206b5e4208e",
         "a4b74c12-3709-4159-951f-4a7fd60462df"
       ],
@@ -217,6 +217,7 @@
     },
     "a553a349-4d29-47fb-9e9a-794c8718bf71": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "template--18412851200292__a553a349-4d29-47fb-9e9a-794c8718bf71-1683290796f580e234-0": {
           "type": "heading",

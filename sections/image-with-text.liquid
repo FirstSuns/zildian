@@ -21,6 +21,12 @@
     {% assign status = true %}
   {% endif %}
 {% endif %}
+
+{% if template contains "accessories" or template contains "sticks" %}
+  {% if product.metafields.custom.lifestyle_imagelarge == blank %}
+    {% assign status = false %}
+  {% endif %}
+{% endif %}
 {% if status %}
 <div class="image-with-text {% if section.settings.side_image != blank %}side-image--true{% endif %} mobile-full-width--true section-overlay--{{section.settings.overlay_section}} side-banner--{{section.settings.side_banner}} image-with-text--{{ section.settings.content_layout }} overlap--{{ section.settings.desktop_content_position }} {% if section.settings.full_width == false %}page-width{% endif %} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == 'background-1' and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %} section-{{ section.id }}-padding">
   {% if section.settings.side_image != blank %}
@@ -31,7 +37,7 @@
   }}
   {% endif %}
   <div class="image-with-text__grid grid grid--gapless grid--1-col width--{{section.settings.desktop_image_width}} {% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %} {% if section.settings.mobile_layout == 'text_first' %} mobile_image-with-text__grid--reverse{% endif %}">
-    <div class="image-with-text__media-item {% if section.settings.second_image != blank %} grid grid--2-col two-images {% else %} grid grid--1-col {% endif %} gradient color-{{ section.settings.color_scheme }} global-media-settings container-image--{{section.settings.container_image}} image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item">
+    <div 1 class="image-with-text__media-item {% if section.settings.second_image != blank %} grid grid--2-col two-images {% else %} grid grid--1-col {% endif %} gradient color-{{ section.settings.color_scheme }} global-media-settings container-image--{{section.settings.container_image}} image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item">
       <div class="grid__item" >
         <div
           class="image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
@@ -48,17 +54,33 @@
             {% if section.settings.video_url != blank %}
             {% include 'video' %}
             {% else %}
-            {{
-              section.settings.image
-              | image_url: width: 1500
-              | image_tag: loading: 'lazy', sizes: sizes, widths: '165, 360, 535, 750, 1070, 1500', class: 'small-hide'
-            }}
-            {{
-              section.settings.mobile_image
-              | default: section.settings.image
-              | image_url: width: 1500
-              | image_tag: loading: 'lazy', sizes: sizes, widths: '165, 360, 535, 750, 1070, 1500', class: 'medium-hide large-up-hide'
-            }}
+            
+            {% if product.metafields.custom.lifestyle_imagelarge != blank %}
+              {{
+                product.metafields.custom.lifestyle_imagelarge
+                | image_url: width: 1500
+                | image_tag: loading: 'lazy', sizes: sizes, widths: '165, 360, 535, 750, 1070, 1500', class: 'small-hide'
+              }}
+              {{
+                product.metafields.custom.lifestyle_imagelarge
+                | default: section.settings.image
+                | image_url: width: 1500
+                | image_tag: loading: 'lazy', sizes: sizes, widths: '165, 360, 535, 750, 1070, 1500', class: 'medium-hide large-up-hide'
+              }}
+            {% else %}
+              {{
+                section.settings.image
+                | image_url: width: 1500
+                | image_tag: loading: 'lazy', sizes: sizes, widths: '165, 360, 535, 750, 1070, 1500', class: 'small-hide'
+              }}
+              {{
+                section.settings.mobile_image
+                | default: section.settings.image
+                | image_url: width: 1500
+                | image_tag: loading: 'lazy', sizes: sizes, widths: '165, 360, 535, 750, 1070, 1500', class: 'medium-hide large-up-hide'
+              }}
+            {% endif %}
+            
             {% endif %}
           
           {%- else -%}
@@ -93,7 +115,7 @@
       </div>
       {% endif %}
     </div>
-    <div class="image-with-text__text-item grid__item">
+    <div 2 class="image-with-text__text-item grid__item">
       <div
         id="ImageWithText--{{ section.id }}"
         class="image-with-text__content horizontal-align-content--{{section.settings.content_align}} image-with-text__content--{{ section.settings.desktop_content_position }} image-with-text__content--desktop-{{ section.settings.desktop_content_alignment }} image-with-text__content--mobile-{{ section.settings.mobile_content_alignment }} image-with-text__content--{{ section.settings.height }} gradient color-{{ section.settings.color_scheme }} content-container" 
@@ -121,7 +143,11 @@
                       {{ block.settings.heading | escape }}  <span class="icon-wrap">{% render 'icon-arrow' %}</span>
                     </a>
                   {% else %}
+                    {% if product.metafields.custom.lifestyle_imagetitle != blank %}
+                    {{product.metafields.custom.lifestyle_imagetitle}}
+                    {% else %}
                     {{ block.settings.heading | escape }}
+                    {% endif %}
                   {% endif %}
                   
                 </h2>
@@ -138,7 +164,11 @@
                     <div class="side-content"></div>
                   {% endif %}
                   <div class="text-content" style="color: {{block.settings.color}};">
+                    {% if product.metafields.custom.lifestyle_imagecontent != blank %}
+                    {{ product.metafields.custom.lifestyle_imagecontent }}
+                    {% else %}
                     {{ block.settings.text }}
+                    {% endif %}
                   </div>
                   
                 </div>
@@ -175,12 +205,20 @@
                     </div>
                   </div>
               {% when 'icon' %}
-                <div class="icon">
+                <div 1 class="icon">
+                  {% if product.metafields.custom.lifestyle_imagelarge != blank %}
                   {{
                     block.settings.image
                     | image_url: width: 192
                     | image_tag: loading: 'lazy'
                   }}
+                  {% else %}
+                  {{
+                    block.settings.image
+                    | image_url: width: 192
+                    | image_tag: loading: 'lazy'
+                  }}
+                  {% endif %}
                 </div>
               {% when 'tags' %}
                 <ul class="tags">

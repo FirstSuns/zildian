@@ -3,7 +3,7 @@
     "banner": {
       "type": "main-collection-banner",
       "custom_css": [
-        "@media only screen and (max-width: 1100px) and (min-width: 749px) {.collection-hero__title img + span {-webkit-text-stroke: 1px black; text-align: left; font-size: 45px; }}"
+        "@media only screen and (max-width: 1100px) and (min-width: 749px) {.collection-hero__title span {-webkit-text-stroke: 1px black; text-align: left; font-size: 45px; }}"
       ],
       "settings": {
         "show_collection_description": true,

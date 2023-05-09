@@ -152,7 +152,7 @@
         {%- endif -%}
       {%- when 'blog' -%}
         {% if template == 'blog.education' %}
-        <li class="breadcrumbs__item ">
+        <li class="breadcrumbs__item t">
         {% comment %} large-up-hide {% endcomment %}
           <a class="breadcrumbs__link" href="/">Home</a>
         </li>
@@ -161,7 +161,7 @@
         </li>
         {% endif %}
         {%- if current_tags -%}
-          <li class="breadcrumbs__item">
+          <li class="breadcrumbs__item tt">
             {{ blog.title | link_to: blog.url }}
           </li>
           <li class="breadcrumbs__item small-hide">
@@ -169,17 +169,30 @@
             <a class="breadcrumbs__link" href="{{ tag_url }}" aria-current="page">{{ current_tags | join: " + " }}</a>
           </li>
         {%- else -%}
-          <li class="breadcrumbs__item small-hide">
+          <li class="breadcrumbs__item small-hide ttt">
             <a class="breadcrumbs__link" href="{{ blog.url }}" aria-current="page">{{ blog.title }}</a>
           </li>
         {%- endif -%}
       {%- when 'article' -%}
-        <li class="breadcrumbs__item">
+            <li class="breadcrumbs__item nth">
+               <a class="breadcrumbs__link small-hide" href="/">Home</a> <span class="small-hide" style="margin-left: 3px;">-</span> {% if article.handle contains 'education' %}<a class="breadcrumbs__link" href="/blogs/education">Education</a>{% else %}<a class="breadcrumbs__link" href="/blogs/artist">Artist</a>{% endif %} <span class="small-hide" style="margin-left: 3px;">-</span> <span class="small-hide">{{ blog.title | link_to: blog.url }}</span>
+            </li>
+            <li class="breadcrumbs__item small-hide nthh-lst">
+              <a class="breadcrumbs__link" href="{{ article.url }}" aria-current="page">{{ article.title }}</a>
+            </li>
+          <style>
+            .breadcrumbs__item:not(:last-child):after {
+                padding-right: 0;
+            }.breadcrumbs__item.nthh-lst:not(:last-child):after {
+                display: none
+            }
+          </style>
+       {% comment %} <li class="breadcrumbs__item nth">
           {{ blog.title | link_to: blog.url }}
         </li>
         <li class="breadcrumbs__item small-hide">
           <a class="breadcrumbs__link" href="{{ article.url }}" aria-current="page">{{ article.title }}</a>
-        </li>
+        </li>{% endcomment %}
       {%- else -%}
         <li class="breadcrumbs__item small-hide">
           <a class="breadcrumbs__link" href="{{ request.path }}" aria-current="page">{{ page_title }}</a>

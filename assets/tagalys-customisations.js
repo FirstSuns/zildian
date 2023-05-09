@@ -1260,7 +1260,7 @@ TagalysCustomizations.initSearchResults = function() {
       noResults: {
         options: {
           widgets: [{
-            widgetId: "2ef0142b50f3763431aa",
+            widgetId: "805ce09c3b12a5594dba",
             options: {
               templates: {
                 ...TagalysCustomizations.commonTemplates,

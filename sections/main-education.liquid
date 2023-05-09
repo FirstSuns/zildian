@@ -1,6 +1,7 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
 {{ 'custom-education.scss.css' | asset_url | stylesheet_tag  }}
 <article class="article-template" itemscope itemtype="http://schema.org/BlogPosting">
+   {% include 'breadcrumbs' %}
   {%- for block in section.blocks -%}
     {%- case block.type -%}
       {%- when '@app' -%}
@@ -60,13 +61,17 @@
             </div>
           </div>
         {%- endif -%}
-        {% include 'breadcrumbs' %}
       {%- when 'title' -%}
         <header class="page-width page-width--narrow" {{ block.shopify_attributes }}>
-          <h2 class="article-template__title center" itemprop="headline">{{ article.title | escape }}</h2>
+          <h2 class="article-template__title center" itemprop="headline">{% comment %}{{ article.title | escape }}{% endcomment %}
+               {{ article.metafields.custom.article_title }}
+          </h2>
           <div class="article-template__excerpt">
             <div class="excerpt">
               {{article.excerpt}}
+            </div>
+            <div class="large-hide mobile-vide-sec">
+                {{ article.metafields.custom.after_excerpt_video }}
             </div>
             <div class="narrow">
               <a href="{{blog.previous_article.url}}">
@@ -195,7 +200,15 @@
         {% include 'recent_articles' %}
     {%- endcase -%}
   {%- endfor -%}
-
+<div class="pagi-blg-nn">
+<div id="article-index-card-section" class="g-flex">
+  {% paginate blog.articles by 6 %}
+    <div>
+        {{ paginate | default_pagination: next: '>', previous: '<' }} 
+    </div>
+  {% endpaginate %}
+</div>
+</div>
   
   {%- if blog.comments_enabled? -%}
     <div class="article-template__comment-wrapper background-secondary">

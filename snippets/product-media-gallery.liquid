@@ -97,7 +97,13 @@
 {% if media_size == 1 or media_size == 0 %}
 <style>
  #thumbsCarousel{
-  display: block !important;
+  {% comment %} display: block !important; {% endcomment %}
+ }
+ [data-section-type=product] .product__media-wrapper product-gallery-component .splide__arrows .splide__arrow--prev{
+  display: none !important;
+ }
+ [data-section-type=product] .product__media-wrapper product-gallery-component .splide__arrows .splide__arrow--next{
+  display: none !important;
  }
 </style>
 

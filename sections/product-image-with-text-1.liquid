@@ -21,7 +21,7 @@
   <div data-variant-id="{{variant.id}}" class="varaint_item {% if variant.id != product.selected_or_first_available_variant.id %}hide{% endif %}  image-with-text section-overlay--{{section.settings.overlay_section}} side-banner--{{section.settings.side_banner}} image-with-text--{{ section.settings.content_layout }} overlap--{{ section.settings.desktop_content_position }} {% if section.settings.desktop_full_width == true %}page-width-tablet-down{% endif %} {% if section.settings.full_width == false %}page-width{% endif %} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == 'background-1' and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %} section-{{ section.id }}-padding">
     <div class="image-with-text__grid grid grid--gapless grid--1-col width--{{section.settings.desktop_image_width}} {% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %} {% if section.settings.mobile_layout == 'text_first' %} mobile_image-with-text__grid--reverse{% endif %}">
       <div class="image-with-text__media-item image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item">
-        <div
+        <div 1
           class="image-with-text__media image-with-text__media--{{ section.settings.height }} gradient color-{{ section.settings.color_scheme }} global-media-settings media"
           style="padding-bottom: 60%;"
         >
@@ -232,7 +232,7 @@
   <div class="image-with-text section-overlay--{{section.settings.overlay_section}} side-banner--{{section.settings.side_banner}} image-with-text--{{ section.settings.content_layout }} overlap--{{ section.settings.desktop_content_position }} {% if section.settings.desktop_full_width == true %}page-width-tablet-down{% endif %} {% if section.settings.full_width == false %}page-width{% endif %} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == 'background-1' and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %} section-{{ section.id }}-padding">
     <div class="image-with-text__grid grid grid--gapless grid--1-col width--{{section.settings.desktop_image_width}} {% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %} {% if section.settings.mobile_layout == 'text_first' %} mobile_image-with-text__grid--reverse{% endif %}">
       <div class="image-with-text__media-item image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item">
-        <div
+        <div p1 
           class="image-with-text__media image-with-text__media--{{ section.settings.height }} gradient color-{{ section.settings.color_scheme }} global-media-settings media"
           style="padding-bottom: 60%;"
         >
@@ -243,7 +243,7 @@
             {% if product.metafields.global.sound_video_link != blank %}
             {% include 'product-video' with context: product %}
             {% elsif product.metafields.magento.sound_demo_video != blank and product.metafields.magento.sound_demo_video != 'no_selection' %}
-              <img src="{{product.metafields.magento.sound_demo_video}}" loading="lazy" width="1500" height="1500">
+              <img p1 src="{{product.metafields.magento.sound_demo_video}}" loading="lazy" width="1500" height="1500">
             {% else %}
             {{
               section.settings.image

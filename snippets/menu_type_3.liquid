@@ -1,11 +1,9 @@
 <div data-title="{{block.settings.menu_title}}" class="submenu-content {{block.type}} {{cls}}" style="--grid-desktop-horizontal-spacing: 50px;">
   <div class="grid">
     <div class="menu-content">
-      <div class="grid {% if link.links != blank %}sublinks-container{% else %}grid--2-col{% endif %} grid--2-col-desktop grid--2-col-tablet ">
+      <div class="grid {% if link.links != blank %}sublinks-container{% else %}grid--3-col{% endif %} grid--3-col-desktop grid--3-col-tablet ">
+        {% for link in block.settings.menu.links %}
         <div class="grid__item {% if link.links != blank %}sublinks{% endif %}">
-          {% for link in block.settings.menu.links %}
-            {% assign modulo = forloop.index | modulo: 2 %}
-            {% if modulo == 1  %}
             <div class="block">
               <a href="{{link.url}}" class="">
                 {% if link.object.metafields.global.menu_image != blank %}
@@ -34,10 +32,9 @@
               </ul>
               {% endif %}
             </div>
-            {% endif %}
-          {% endfor %}
         </div>
-        <div class="grid__item {% if link.links != blank %}sublinks{% endif %}">
+        {% endfor %}
+        {% comment %} <div class="grid__item {% if link.links != blank %}sublinks{% endif %}">
           {% for link in block.settings.menu.links %}
             {% assign modulo = forloop.index | modulo: 2 %}
             {% if modulo == 0  %}
@@ -71,7 +68,7 @@
             </div>
             {% endif %}
           {% endfor %}
-        </div>
+        </div> {% endcomment %}
       </div>
     </div>
     <div class="banner-content">

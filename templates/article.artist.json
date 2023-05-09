@@ -1,5 +1,63 @@
 {
   "sections": {
+    "1d7f6cba-bed1-49a9-95ae-1250bcab6a90": {
+      "type": "artist-image-banner",
+      "blocks": {
+        "template--18305496580388__1d7f6cba-bed1-49a9-95ae-1250bcab6a90-16835208952a47cc13-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Aaron Smith",
+            "heading_size": "h1",
+            "uppercase": false
+          }
+        },
+        "template--18305496580388__1d7f6cba-bed1-49a9-95ae-1250bcab6a90-16835208952a47cc13-1": {
+          "type": "text",
+          "settings": {
+            "text": "The Aaron Smith Experience",
+            "text_style": "body"
+          }
+        },
+        "template--18305496580388__1d7f6cba-bed1-49a9-95ae-1250bcab6a90-16835208952a47cc13-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "blank_button": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18305496580388__1d7f6cba-bed1-49a9-95ae-1250bcab6a90-16835208952a47cc13-0",
+        "template--18305496580388__1d7f6cba-bed1-49a9-95ae-1250bcab6a90-16835208952a47cc13-1",
+        "template--18305496580388__1d7f6cba-bed1-49a9-95ae-1250bcab6a90-16835208952a47cc13-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/hero.png",
+        "mobile_image": "shopify:\/\/shop_images\/Rectangle_5_15ba9a85-8322-4b1c-bf00-746a6f8030da.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "content_width": "",
+        "padding_left": "",
+        "desktop_content_position": "bottom-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "stack_images_on_mobile": false,
+        "show_text_below": false,
+        "center_mobile": false,
+        "full_mobile": false,
+        "content_padding": 20,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
     "main": {
       "type": "main-article",
       "blocks": {
@@ -19,6 +77,27 @@
         "content": {
           "type": "content",
           "settings": {}
+        },
+        "bbe70fde-3d7a-4943-a377-15874fd8f567": {
+          "type": "new_image_text",
+          "settings": {
+            "side_banner1": false,
+            "full_width1": true,
+            "height1": "adapt",
+            "desktop_image_width1": "medium",
+            "layout1": "image_first",
+            "desktop_content_position1": "top",
+            "content_align1": "middle",
+            "desktop_content_alignment1": "left",
+            "content_layout1": "no-overlap",
+            "color_scheme1": "background-1",
+            "mobile_layout1": "image_first",
+            "mobile_content_alignment1": "left",
+            "padding_top1": 36,
+            "padding_bottom1": 36,
+            "quote1": false,
+            "max_width1": "450"
+          }
         },
         "543c39e1-2e95-4a79-9cb1-c4edf029d1f7": {
           "type": "image_text",
@@ -54,7 +133,8 @@
           "settings": {
             "heading": "Video",
             "heading_size": "h1",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "cover_image": "shopify:\/\/shop_images\/videoimg.png",
+            "video_url": "https:\/\/youtu.be\/ak410L2Z5d8",
             "description": "",
             "full_width": false,
             "color_scheme": "background-1",
@@ -64,25 +144,141 @@
         },
         "fa2456f8-54be-441b-932f-6679729a8f65": {
           "type": "recent_post",
+          "disabled": true,
           "settings": {
             "title": "CHECK OUT OUR OTHER ARTISTS"
           }
+        },
+        "0eaf8773-b360-4863-9ab2-007b409e00c4": {
+          "type": "featured_product",
+          "disabled": true,
+          "settings": {}
         }
       },
       "block_order": [
         "featured_image",
         "5b90492d-846d-4a73-bfdc-0437c6de4f04",
         "content",
+        "bbe70fde-3d7a-4943-a377-15874fd8f567",
         "543c39e1-2e95-4a79-9cb1-c4edf029d1f7",
         "0668294f-ea6d-4c55-b965-4206b5e4208e",
         "6b1dec1c-8a5a-4507-9932-dda22b937df2",
         "527a453f-7343-4051-869e-35f96d142bef",
-        "fa2456f8-54be-441b-932f-6679729a8f65"
+        "fa2456f8-54be-441b-932f-6679729a8f65",
+        "0eaf8773-b360-4863-9ab2-007b409e00c4"
       ],
       "settings": {}
+    },
+    "e540f275-c0cb-456e-9ebf-7125e1d7cd8a": {
+      "type": "video",
+      "settings": {
+        "heading": "BEHIND THE KIT",
+        "heading_size": "h1",
+        "cover_image": "shopify:\/\/shop_images\/videoimg.png",
+        "cover_mobile_image": "shopify:\/\/shop_images\/video_mobile.jpg",
+        "video_url": "https:\/\/youtu.be\/ak410L2Z5d8",
+        "description": "",
+        "full_width": false,
+        "mobile_full_width": false,
+        "color_scheme": "background-1",
+        "caption_color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "97e8c916-868c-40ca-bc78-69a8202d6384": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18305496580388__97e8c916-868c-40ca-bc78-69a8202d6384-1683531071464379f1-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>\"Cali\" Evan Marien x Aaron Smith #EvanMarien #AaronSmith<\/p>",
+            "heading_size": "h1",
+            "max_width": ""
+          }
+        },
+        "template--18305496580388__97e8c916-868c-40ca-bc78-69a8202d6384-1683531071464379f1-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "hide_mobile": false,
+            "max_width": ""
+          }
+        },
+        "template--18305496580388__97e8c916-868c-40ca-bc78-69a8202d6384-1683531071464379f1-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "blank": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18305496580388__97e8c916-868c-40ca-bc78-69a8202d6384-1683531071464379f1-0",
+        "template--18305496580388__97e8c916-868c-40ca-bc78-69a8202d6384-1683531071464379f1-1",
+        "template--18305496580388__97e8c916-868c-40ca-bc78-69a8202d6384-1683531071464379f1-2"
+      ],
+      "custom_css": [
+        "h2 {font-size: 24px;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "contnet_type": "list",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 24,
+        "padding_bottom": 52,
+        "max_width": ""
+      }
+    },
+    "4e376b5d-654c-4027-a078-b4fc0245f366": {
+      "type": "recent_articles",
+      "settings": {
+        "title": "CHECK OUT OUR OTHER ARTISTS"
+      }
+    },
+    "78d1b415-f34a-4ae8-a625-ebc64591daf2": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Artist’s products",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "sticks-mallets-sticks-hickory-series",
+        "products_to_show": 2,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "1d7f6cba-bed1-49a9-95ae-1250bcab6a90",
+    "main",
+    "e540f275-c0cb-456e-9ebf-7125e1d7cd8a",
+    "97e8c916-868c-40ca-bc78-69a8202d6384",
+    "4e376b5d-654c-4027-a078-b4fc0245f366",
+    "78d1b415-f34a-4ae8-a625-ebc64591daf2"
   ]
 }

@@ -22,10 +22,33 @@
       {{ block.shopify_attributes }}
     >
       {%- for option in product.options_with_values -%}
-        <fieldset class="js product-form__input">
-          <legend class="form__label">{{ option.name }} : <span class="value">{{product.selected_or_first_available_variant.options[forloop.index0]}}</span><span>{% if option.name == 'Diameter' %}"{% endif %}</span></legend>
-          {% render 'product-variant-options', product: product, option: option, block: block %}
-        </fieldset>
+        {%- if option.name == "Size" and product.metafields.magento.size_chart_media_images contains "cdn.shopify.com/s/files" -%}
+          <fieldset class="js product-form__input">
+            <div class="fs-include-size-modal">
+              <legend class="form__label">{{ option.name }} : <span class="value">{{product.selected_or_first_available_variant.options[forloop.index0]}}</span><span>{% if option.name == 'Diameter' %}"{% endif %}</span></legend>
+              <div class="fs-size-modal-btn" id="fs-size-modal-btn">Size chart</div>
+            </div>
+            <div id="fs-size-modal" class="fs-size-modal">
+              <!-- Modal content -->
+              <div class="fs-size-modal-content">
+                <div class="fs-size-modal-close-btn" id="fs-size-modal-close-btn">
+                  <svg aria-hidden="true" focusable="false" width="25" height="25" class="icon icon-close-small" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.48627 9.32917L2.82849 3.67098" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M2.88539 9.38504L8.42932 3.61524" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                {% assign size_img_name = product.metafields.magento.size_chart_media_images | split: "/"%}
+                <img src="{{size_img_name.last | file_url}}" />
+              </div>
+            </div>
+            {% render 'product-variant-options', product: product, option: option, block: block %}
+          </fieldset>
+        {%- else -%}
+          <fieldset class="js product-form__input">
+            <legend class="form__label">{{ option.name }} : <span class="value">{{product.selected_or_first_available_variant.options[forloop.index0]}}</span><span>{% if option.name == 'Diameter' %}"{% endif %}</span></legend>
+            {% render 'product-variant-options', product: product, option: option, block: block %}
+          </fieldset>
+        {%- endif -%}
       {%- endfor -%}
       <script type="application/json">
         {{ product.variants | json }}

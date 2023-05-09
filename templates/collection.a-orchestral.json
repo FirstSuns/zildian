@@ -417,6 +417,7 @@
         "full_width": false,
         "image": "shopify:\/\/shop_images\/A-Classic-Orchestral-Selection-Collection-Thumbnail_a338b4f2-1834-4506-afce-ffd21f8f5edc.png",
         "mobile_image": "shopify:\/\/shop_images\/A-Classic-Orchestral-Selection-Collection-Thumbnail-Mobile_c4a93900-1873-4f8f-985a-b571eb9c6ed0.png",
+        "video_url": "",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -520,7 +521,8 @@
         "31276d17-fc8e-4fd5-a0e6-f44b1484be33"
       ],
       "custom_css": [
-        ".image-with-text__text p {color: #5c5d60;}"
+        ".image-with-text__text p {color: #5c5d60;}",
+        "@media screen and (max-width: 749px) {.image-with-text__content .info {position: relative; } .image-with-text__content .info .heading-icon {position: absolute; left: 0; top: 0; width: 80px; } .image-with-text__content .info .text {margin-top: 20px; } .image-with-text__content .info .text .image-with-text__heading {margin-left: 65px; }}"
       ],
       "settings": {
         "side_banner": false,

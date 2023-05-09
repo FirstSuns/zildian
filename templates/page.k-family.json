@@ -349,7 +349,7 @@
         "24d10485-4691-4d97-bcca-f2627d3c3db3"
       ],
       "custom_css": [
-        "@media screen and (max-width: 749px) {.image-with-text .image-with-text__grid .image-with-text__media-item.two-images{flex-direction: row-reverse; }}"
+        "@media screen and (max-width: 749px) {.image-with-text .image-with-text__grid .image-with-text__media-item.two-images {flex-direction: row-reverse; }}"
       ],
       "settings": {
         "tag": "",
@@ -460,7 +460,8 @@
         "31276d17-fc8e-4fd5-a0e6-f44b1484be33"
       ],
       "custom_css": [
-        ".image-with-text__text p {color: #5c5d60;}"
+        ".image-with-text__text p {color: #5c5d60;}",
+        "@media screen and (max-width: 749px) {.image-with-text__content .info {position: relative; } .image-with-text__content .info .heading-icon {position: absolute; left: 0; top: 0; width: 80px; } .image-with-text__content .info .text {margin-top: 20px; } .image-with-text__content .info .text .image-with-text__heading {margin-left: 65px; }}"
       ],
       "settings": {
         "side_banner": false,
