@@ -66,11 +66,11 @@
             <br>
             {{ customer.email }}
             <br>
-            Accepts Marketing:
+            {% comment %} Accepts Marketing:
             {% if custom.accepts_marketing %}
               Yes
             {% else %}
-              No{% endif %}
+              No{% endif %} {% endcomment %}
           </p>
         </div>
       </div>

@@ -33,7 +33,7 @@
       }
     },
     "main": {
-      "type": "main-page",
+      "type": "main-locator",
       "settings": {
         "padding_top": 60,
         "padding_bottom": 100

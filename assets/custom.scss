@@ -659,6 +659,9 @@ body.hide-price .price, body.hide-price .buy-buttons-box, body.hide-price .produ
   .card-wrapper .card .card__content .card__information .vendor {
     font-size: 13px !important;
     
+}#shopify-section-template--18839560782116__de0c46b6-7298-4eaa-a3bf-f37193b0319a h2 {
+    font-size: 21px !important;
+    text-transform: uppercase;
 }
 #CollectionProductGrid .collection .boost-pfs-filter-right-col .product-grid .product-card-wrapper .card .card__content .card__information .card__heading {
     font-size: 14px !important;
@@ -697,6 +700,58 @@ body.hide-price .price, body.hide-price .buy-buttons-box, body.hide-price .produ
     width: 25%;
 }.zildjian-underground .newsletter .page-width {
     max-width: var(--page-width);
+}.zildjian-underground .video_slider_container .slick-next {
+    right: 21%!important;
+    bottom: -131px!important;
+}.zildjian-underground .video_slider_container .slick-next:before {
+    color: #5d5d5f;
+    height: 50px;
+    width: 50px;
+    background-image: url(https://cdn.shopify.com/s/files/1/0729/7938/2564/files/nav.png?v=1683283241);
+    display: block;
+    font-size: 0;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 767px){
+.zildjian-underground .page-width .rich-text {
+    margin: 0;
+    width: 100%;
+}.zildjian-underground .rich-text__blocks.left.contnet-type--list {
+    padding: 0;
+}.zildjian-underground .custom-video-gall .video_slider_container .btn-slider {
+    display: block;
+  padding-top: 0px;
+}.zildjian-underground .left-slide-txt {
+    width: 100%;
+}.zildjian-underground .right-slide-btn {
+    width: 100%;
+}.zildjian-underground .video_slider_title {
+    padding-top: 25px;
+}.zildjian-underground .video_slider_container .slick-next:before {
+    color: #5d5d5f;
+    height: 50px;
+    width: 50px;
+    background-image: url(https://cdn.shopify.com/s/files/1/0729/7938/2564/files/nav.png?v=1683283241);
+    display: block;
+    font-size: 0;
+    background-repeat: no-repeat;
+    position: absolute;
+  top: 61px;
+    opacity: unset;
+    left: inherit;
+    right: 149px;
+}.zildjian-underground .right-slide-btn .rght-txt-img {
+    display: none;
+}.zildjian-underground .right-slide-btn {
+    justify-content: initial;
+    align-items: center;
+}.zildjian-underground .right-slide-btn h2 {
+    text-align: left!important;
+}.right-slide-btn h3 {
+    display: none;
+}.zildjian-workout-practice-and-learn-from-the-zildjian-artists .top-content .page-width {
+    padding: 25px 10px;
+}
 }
 /*01-introduction-and-history-of-the-art-of-bop-drumming-method*/
 .large-hide.mobile-vide-sec {
@@ -717,6 +772,7 @@ body.hide-price .price, body.hide-price .buy-buttons-box, body.hide-price .produ
     padding: 0;
     border-top: none;
     border-bottom: none;
+  font-style: italic;
 }.Introduction.and.History.of.the.art.bop .article-template .about-artist-section {
     margin-top: 0;
 }
@@ -735,17 +791,20 @@ body.hide-price .price, body.hide-price .buy-buttons-box, body.hide-price .produ
 }
 
 /*level*/
-.Level .article-template__content.page-width.page-width--narrow.rte {
+.Level .article-template__content.page-width.page-width--narrow.rte, .zildjian-workout-practice-and-learn-from-the-zildjian-artists .top-content .page-width {
     max-width: 100%;
     background: #F8F8F9;
   padding: 40px 0;
-}.Level .article-template__content.page-width.page-width--narrow.rte h2 {
+}.Level .article-template__content.page-width.page-width--narrow.rte h2, .zildjian-workout-practice-and-learn-from-the-zildjian-artists .top-content h2 {
     text-align: center;
-}.Level .article-template__content.page-width.page-width--narrow.rte .topic-mm div {
+}.Level .article-template__content.page-width.page-width--narrow.rte .topic-mm div, .zildjian-workout-practice-and-learn-from-the-zildjian-artists .top-content .topic-mm div {
     flex: 0 48%;
-}.Level .article-template__content.page-width.page-width--narrow.rte .topic-mm {
+}.Level .article-template__content.page-width.page-width--narrow.rte .topic-mm, .zildjian-workout-practice-and-learn-from-the-zildjian-artists .top-content .topic-mm {
     display: flex;
     justify-content: space-between;
+}.zildjian-workout-practice-and-learn-from-the-zildjian-artists .top-content .page-width {
+    padding: 40px 185px;
+    margin-top: 20px;
 }
 
 /*form page*/
@@ -890,6 +949,49 @@ body.hide-price .price, body.hide-price .buy-buttons-box, body.hide-price .produ
             }
           }
         }
+      }
+    }
+  }
+}
+#shopify-section-template--18412851200292__230bc92f-b8d9-46db-823f-3f07d0207a2e h2 {
+    text-transform: inherit;
+}.Introduction.and.History.of.the.art.bop .card__inner.color-background-1.gradient.ratio {
+    background-color: #f5f8f8;
+}
+
+tab-component {
+  .tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    column-gap: 5px;
+    width: fit-content;
+    margin: auto;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 0!important;
+    margin-bottom: 50px;
+    li {
+      padding: 10px 40px;
+      background: #e4e5e6;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: center;
+      &.active {
+        background: black;
+        color: white;
+      }
+    }
+  }
+  .tab-content {
+    padding: 0 50px;
+    @media screen and (max-width: 768px) {
+      padding: 0 20px;
+    }
+    [data-tab-content] {
+      display: none;
+      &.active {
+        display: block;
       }
     }
   }

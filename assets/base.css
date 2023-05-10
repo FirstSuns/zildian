@@ -3075,7 +3075,7 @@ details-disclosure > details {
 }
 /*=========== 02 cyber css start ==========*/
 .nav-brand-img img.switcher-store {
-    height: 150px !important;
+    /* height: 150px !important; */
 }
 .info h2.h1 {
     text-align: center;

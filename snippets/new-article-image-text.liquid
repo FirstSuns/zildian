@@ -28,7 +28,9 @@
           style="padding-bottom: 55%;"
         {% endif %}
       >
-        
+        <h2 class="image-with-text__heading h2 large-up-hide" {{ block.shopify_attributes }}>
+              {{ article.metafields.custom.author1 }}
+        </h2>
         {%- if image != blank -%}
          <img src="{{image}}" loading="lazy">
         {%- else -%}
@@ -43,7 +45,7 @@
       >
         <div class="info" style="max-width: {{block.settings.max_width1}}px;">
           <div class="text">
-            <h2 class="image-with-text__heading h2" {{ block.shopify_attributes }}>
+            <h2 class="image-with-text__heading h2 small-hide" {{ block.shopify_attributes }}>
               {{ article.metafields.custom.author1 }}
             </h2>
             <div class="image-with-text__text rte {{ block.settings.text_style1 }}" {{ block.shopify_attributes }}>

@@ -35,7 +35,8 @@
   }
 
   .header__heading-logo {
-    max-width: {{ settings.logo_width }}px;
+    {% comment %} max-width: {{ settings.logo_width }}px; {% endcomment %}
+    max-width: 201px;
   }
 
   {%- if section.settings.sticky_header_type == 'reduce-logo-size' -%}
@@ -158,9 +159,12 @@
                       {% if forloop.index == 1 %}
                       {%- for childlink in link.links -%}
                         <li class="submenus --" data-title="{{ link.title }}" >
-                          <a href="#" class="menu-drawer__menu-item top-menu link link--text list-menu__item focus-inset{% if childlink.current %} menu-drawer__menu-item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
+                          {% comment %} <a href="#" class="menu-drawer__menu-item top-menu link link--text list-menu__item focus-inset{% if childlink.current %} menu-drawer__menu-item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
                             {% include 'menu_icon' with title: childlink.title %} {{ childlink.title | escape }}
-                          </a>
+                          </a> {% endcomment %}
+                          <div class="menu-drawer__menu-item top-menu link--text list-menu__item focus-inset{% if childlink.current %} menu-drawer__menu-item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
+                            {% include 'menu_icon' with title: childlink.title %} {{ childlink.title | escape }}
+                          </div>
                           {%- if grandchildlink.links == blank -%}
                           {%- for grandchildlink in childlink.links -%}
                           {% assign gchildlinktext = gchildlinktext | append: ',' | append: grandchildlink.title %}

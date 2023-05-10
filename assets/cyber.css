@@ -133,7 +133,7 @@ li.list-type h2, li.list-type p {
 
 @media screen and (max-width: 767px) {
   .banner__box.content-container.content-container--full-width-mobile.color-background-1.gradient {
-    margin-bottom: 0 !important;
+    /* margin-bottom: 0 !important; */
 }
   .rich-text__blocks.left.contnet-type--list {
     padding: 20px;

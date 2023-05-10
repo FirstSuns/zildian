@@ -198,7 +198,9 @@
     },
     "a5608f55-88cd-40d5-bb3f-909f408e4027": {
       "type": "featured-collection",
-      "custom_css": [],
+      "custom_css": [
+        "@media screen and (min-width: 749px) and (max-width: 1100px) {.card-wrapper .card .card__content .card__information .card__heading {font-size: 15px; }}"
+      ],
       "settings": {
         "title": "PLAYER FAVORITES",
         "heading_size": "h1",
@@ -341,7 +343,7 @@
             "heading_color": "#cc9f53",
             "subheading": "Zildjian is proud to welcome the newest member of Artist Family, Anderson .Paak of Anderson .Paak and Silk Sonic. See and hear from Anderson on his artist page. And check out the Artist section for the latest on our family.",
             "button_label": "",
-            "link": "shopify:\/\/blogs\/zildjian-workout-practice-and-learn-from-the-zildjian-artists",
+            "link": "https:\/\/zildjianshop.myshopify.com\/blogs\/artist",
             "button_style_secondary": false,
             "box_align": "middle-right",
             "show_text_box": false,
@@ -364,7 +366,7 @@
             "heading_color": "#cc9f53",
             "subheading": "Blending old world concepts and new world techniques, Zildjian has evolved with both music and technology, continuing to innovate the process of cymbal making. See more behind how a Zildjian cymbal is made.",
             "button_label": "",
-            "link": "shopify:\/\/blogs\/artist\/alejo-poveda",
+            "link": "https:\/\/www.youtube.com\/watch?v=mAfd-in2WaE",
             "button_style_secondary": false,
             "box_align": "middle-right",
             "show_text_box": false,
@@ -379,6 +381,9 @@
         "template--18142514905380__90bbc29b-56b6-44da-becd-4d6570d61f45-1679301649c3d673ee-0",
         "dcd8463d-c92e-4c2d-81d0-475dd32c3eb9",
         "40c78409-57fa-478e-99ed-bfc8aeecd9b5"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 749px) and (max-width: 1100px) {.slideshow__text.slideshow__text--left {max-width: calc(365px + 7rem) !important; }}"
       ],
       "settings": {
         "layout": "full_bleed",
@@ -419,6 +424,7 @@
         "0ebfe0a9-b0c4-439a-8b7e-284dfc4869b4"
       ],
       "custom_css": [
+        ".deferred-media__poster {background-color: #fff;}",
         "@media screen and (max-width: 749px) {.image-with-text__media-item {padding: 0 20px; }}"
       ],
       "settings": {
@@ -600,7 +606,7 @@
             "button_label": "CHECK IT",
             "button_link": "shopify:\/\/pages\/zildjian-underground",
             "link": true,
-            "blank_button": false
+            "blank_button": true
           }
         }
       },

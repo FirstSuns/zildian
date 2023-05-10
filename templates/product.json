@@ -110,6 +110,7 @@
     },
     "a02f37d8-1538-430d-bbd7-231ebfd102ae": {
       "type": "product-image-with-text-1",
+      "disabled": true,
       "blocks": {
         "template--18142515069220__a02f37d8-1538-430d-bbd7-231ebfd102ae-1679471913d84465cb-0": {
           "type": "heading",

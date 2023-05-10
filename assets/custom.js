@@ -253,6 +253,34 @@ class AudioPlayer extends HTMLElement{
 
 customElements.define('audio-player', AudioPlayer);
 
+class TabComponent extends HTMLElement {
+  constructor() {
+    super();
+    this.initPages();
+  }
+
+  initPages() {
+    const tabs = this.querySelectorAll('[data-tab-target]')
+    const tabContents = this.querySelectorAll('[data-tab-content]')
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const target = document.querySelector(tab.dataset.tabTarget)
+        tabContents.forEach(tabContent => {
+          tabContent.classList.remove('active')
+        })
+        tabs.forEach(tab => {
+          tab.classList.remove('active')
+        })
+        tab.classList.add('active')
+        target.classList.add('active')
+      })
+    })
+  }
+}
+
+customElements.define('tab-component', TabComponent);
+
 if (document.querySelector('.select-box-menu') != undefined) {
   document.querySelector('.select-box-menu').addEventListener('click', function(e) {
     e.preventDefault();
@@ -279,25 +307,6 @@ document.querySelectorAll('.mega-menu').forEach(mega_menu => {
     mega_menu.querySelector('.header__menu-item').click();
   })
 });
-
-
-// var country1 = 'US';
-
-// fetch('https://ipapi.co/country/')
-//   .then(function(response) {
-//     return response.text();
-//   })
-//   .then(function(data) {
-//     console.log(data)
-//     if (data != country1) {
-//       document.querySelector('body').classList.add('hide-price')
-//     } else {
-//       document.querySelector('body').classList.remove('hide-price')
-//     }
-//   });
-
-//=============size modal of PDP
-
 var size_modal = document.getElementById("fs-size-modal");
 var size_btn = document.getElementById("fs-size-modal-btn");
 var size_close = document.getElementById("fs-size-modal-close-btn");
@@ -312,6 +321,27 @@ window.onclick = function(event) {
     size_modal.style.display = "none";
   }
 }
+
+// var country1 = 'US';
+
+// fetch('https://ipapi.co/country/')
+//   .then(function(response) {
+//     ret//=============size modal of PDP
+
+
+
+// rn response.text();
+//   })
+//   .then(function(data) {
+//     console.log(data)
+//     if (data != country1) {
+//       document.querySelector('body').classList.add('hide-price')
+//     } else {
+//       document.querySelector('body').classList.remove('hide-price')
+//     }
+//   });
+
+
 
 
 
