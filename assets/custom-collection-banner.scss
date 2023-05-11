@@ -34,9 +34,12 @@
           align-items: center;
           justify-content: center;
           flex-direction: column;
+          @media screen and (max-width: 749px) {
+            min-height: 200px;
+          }
           img {
             @media screen and (max-width: 749px) {
-              width: 130px;
+              width: 124px;
             }
           }
           @media screen and (min-width: 750px) {

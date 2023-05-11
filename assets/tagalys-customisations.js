@@ -1282,7 +1282,22 @@ TagalysCustomizations.initSearchResults = function() {
                       widgetContext: "no-results"
                     })
                   }
-                }
+                },
+                widget: {
+                  options: {
+                    carouselOptions: {
+                      perPage: {
+                        // The keys of the option are screen width and values are the number of products to be displayed.
+                        300: 2,
+                        600: 3,
+                        900: 3,
+                        1200: 3,
+                        1440: 3,
+                        2560: 3
+                      },
+                    },
+                  },
+                },  
               }
             }
           }]

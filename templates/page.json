@@ -6,7 +6,7 @@
         "template--18142515003684__3141c904-b6a6-4f2b-a1fe-aa2b9e911af8-1679425999b0455fe5-0": {
           "type": "heading",
           "settings": {
-            "heading": "{{ page.title }}<br>{{ page.metafields.custom.page_subheading.value }}",
+            "heading": "{{ page.title }}<p>{{ page.metafields.custom.page_subheading.value }}<\/p>",
             "heading_size": "h1",
             "uppercase": false
           }

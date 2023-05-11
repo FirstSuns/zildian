@@ -199,7 +199,7 @@
     "a5608f55-88cd-40d5-bb3f-909f408e4027": {
       "type": "featured-collection",
       "custom_css": [
-        "@media screen and (min-width: 749px) and (max-width: 1100px) {.card-wrapper .card .card__content .card__information .card__heading {font-size: 15px; }}"
+        "@media screen and (min-width: 749px) and (max-width: 1100px) {.card-wrapper .card .card__content .card__information .card__heading {font-size: 15px; } .pr-star-v4 {width: 15px; height: 15px; } .p-w-r .pr-category-snippet__total {font-size: 11px; }}"
       ],
       "settings": {
         "title": "PLAYER FAVORITES",
@@ -273,7 +273,8 @@
         "template--18142514905380__8d3f9090-0426-40a2-92e9-140c7674d4a0-16793003475f89e7da-2"
       ],
       "custom_css": [
-        "@media screen and (max-width: 749px) {.multicolumn .multicolumn-list .multicolumn-list__item .multicolumn-card .multicolumn-card__info .badge {background: #fff; border: 0; color: #000; padding-left: 0; font-size: 14px; }}"
+        "@media screen and (max-width: 749px) {.multicolumn-card .multicolumn-card__info .badge {background: #fff; border: 0; color: #000; padding-left: 0; font-size: 14px; }}",
+        "@media screen and (min-width: 749px) and (max-width: 1100px) {.multicolumn-card .multicolumn-card__info h3.h3 {font-size: 20px; }}"
       ],
       "settings": {
         "side_banner": false,
@@ -320,7 +321,7 @@
             "heading_color": "#cc9f53",
             "subheading": "Everything you need to know to start drumming in no time. Whether you’re just starting out of have been drumming for a while, our free downloadable method book, easy-to-follow video lessons and play-along tracks makes learning fun!",
             "button_label": "",
-            "link": "https:\/\/zildjianshop.myshopify.com\/collections\/cymbals-drum-set",
+            "link": "https:\/\/zildjianshop.myshopify.com\/blogs\/drum-set-method",
             "button_style_secondary": false,
             "box_align": "middle-right",
             "show_text_box": false,
@@ -425,7 +426,8 @@
       ],
       "custom_css": [
         ".deferred-media__poster {background-color: #fff;}",
-        "@media screen and (max-width: 749px) {.image-with-text__media-item {padding: 0 20px; }}"
+        "@media screen and (max-width: 749px) {.image-with-text__media-item {padding: 0 20px; }}",
+        "@media screen and (min-width: 749px) and (max-width: 1100px) {.image-with-text {padding: 0; } .image-with-text__content {padding-bottom: 0; }}"
       ],
       "settings": {
         "tag": "",
@@ -561,7 +563,8 @@
         "41cc7e3d-083e-46e8-a5ea-78149c603262"
       ],
       "custom_css": [
-        "@media screen and (max-width: 749px) {.splide__slide {max-width: 195px; }}"
+        "@media screen and (max-width: 749px) {.splide__slide {max-width: 195px; }}",
+        "@media screen and (min-width: 749px) and (max-width: 1100px) {[data-section-type=\"featured-artists\"] .collection .collection__title .title {font-size: 25px; }}"
       ],
       "settings": {
         "title": "EXPLORE SOUND THROUGH OUR FAMILY OF ARTISTS",
@@ -604,7 +607,7 @@
           "type": "button",
           "settings": {
             "button_label": "CHECK IT",
-            "button_link": "shopify:\/\/pages\/zildjian-underground",
+            "button_link": "https:\/\/www.youtube.com\/watch?v=-4yqghMnjQs&list=PLpreW_E4-BQzwMKQhlhDc3HzM4kjoBP4M",
             "link": true,
             "blank_button": true
           }

@@ -38,7 +38,12 @@
                   </svg>
                 </div>
                 {% assign size_img_name = product.metafields.magento.size_chart_media_images | split: "/"%}
+                <div class="fs-size-modal-img-contain">
                 <img src="{{size_img_name.last | file_url}}" />
+                </div>
+                <div class="fs-size-modal-bottom">
+                  <button class="fs-size-model-ok-btn" id="fs-size-model-ok-btn">OK</button>
+                </div>
               </div>
             </div>
             {% render 'product-variant-options', product: product, option: option, block: block %}
@@ -143,3 +148,23 @@
     </div>
   </div>
 </noscript>
+<script>
+ var size_modal = document.getElementById("fs-size-modal"); var size_btn = document.getElementById("fs-size-modal-btn");
+ var size_close = document.getElementById("fs-size-modal-close-btn");
+ var size_ok = document.getElementById("fs-size-model-ok-btn");
+
+ size_btn.onclick = function() {
+   size_modal.style.display = "block";
+ }
+ size_close.onclick = function() {
+   size_modal.style.display = "none";
+ }
+ size_ok.onclick = function() {
+   size_modal.style.display = "none";
+ }
+ window.onclick = function(event) {
+   if (event.target == size_modal) {
+     size_modal.style.display = "none";
+   }
+ }
+</script>
