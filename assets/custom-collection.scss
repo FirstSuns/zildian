@@ -93,38 +93,34 @@
                 .boost-pfs-filter-option-content-inner {
                   .boost-pfs-filter-option-item-list {
                     .boost-pfs-filter-option-item {
-                      padding-left: 10px;
-                      &.selected {
-                        font-weight: normal;
-                        .boost-pfs-filter-button {
-                          background: #E3D0A5!important;
-                          .boost-pfs-filter-option-value {
-                            color: black!important;
-                          }
-                        }
-                      }
-                      .boost-pfs-filter-button {
-                        width: fit-content;
-                        padding: 2px 0px;
-                        border-radius: 50px;
-                        .boost-pfs-check-box {
-                          display: none;
-                          // margin-top: 3px;
-                        }
-                      }
+                      //padding-left: 10px;
+                      // &.selected {
+                      //   font-weight: normal;
+                      //   .boost-pfs-filter-button {
+                      //     background: #E3D0A5!important;
+                      //     .boost-pfs-filter-option-value {
+                      //       color: black!important;
+                      //     }
+                      //   }
+                      // }
+                      // .boost-pfs-filter-button {
+                      //   width: fit-content;
+                      //   padding: 2px 0px;
+                      //   border-radius: 50px;
+                      // }
                       
                     }
                     &.boost-pfs-filter-option-item-list-box {
                       .boost-pfs-filter-option-item {
-                        width: fit-content!important;
-                        min-width: initial;
-                        .boost-pfs-filter-button {
-                          border-radius: 0;
-                          margin: 0;
-                          background: #F8F8F9;
-                          border-color: #F8F8F9;
-                          padding: 0 10px;
-                        }
+                        // width: fit-content!important;
+                        // min-width: initial;
+                        // .boost-pfs-filter-button {
+                        //   border-radius: 0;
+                        //   margin: 0;
+                        //   background: #F8F8F9;
+                        //   border-color: #F8F8F9;
+                        //   padding: 0 10px;
+                        // }
                       }
                     }
                   }

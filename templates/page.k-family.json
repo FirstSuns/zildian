@@ -249,7 +249,7 @@
           "settings": {
             "heading": "K ZILDJIAN",
             "heading_link": "https:\/\/zildjianshop.myshopify.com\/collections\/cymbals-drum-set-k-family-k-zildjian",
-            "heading_size": "h1",
+            "heading_size": "h2",
             "heading_color": "",
             "max_width": ""
           }
@@ -404,8 +404,8 @@
         "mobile_full_width": false,
         "color_scheme": "background-1",
         "caption_color_scheme": "inverse",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     },
     "4803a757-7e31-4693-9d72-92244f5dfdfd": {
@@ -430,25 +430,25 @@
         "9e2e6553-9a0d-4afe-b6bc-9f4554c331e2": {
           "type": "article",
           "settings": {
-            "image": "shopify:\/\/shop_images\/sddefault_1_95d27931-771d-48dd-9867-8ab7647ddfb1.jpg",
+            "image": "shopify:\/\/shop_images\/Untitled-1.jpg",
             "video_url": "https:\/\/www.youtube.com\/watch?v=XFIYIySQK7M",
-            "article": "artist\/aaron-serfaty"
+            "article": "artist\/aaron-spears"
           }
         },
         "1bcb4642-7bdf-475c-beb3-d36230fc61ac": {
           "type": "article",
           "settings": {
-            "image": "shopify:\/\/shop_images\/sddefault_1_202aafff-76ad-4d5f-a9d0-f72b0dd1dc2a.jpg",
-            "video_url": "https:\/\/youtu.be\/jDngvBMT2Zc",
-            "article": "artist\/aaron-gillespie"
+            "image": "shopify:\/\/shop_images\/Expressions-Of-K-Family-Daniel-Fang_996c3d54-5a6c-4aaf-b1b0-f14e89b146e8.jpg",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_8ETAZfleH0",
+            "article": "artist\/daniel-fang"
           }
         },
         "31276d17-fc8e-4fd5-a0e6-f44b1484be33": {
           "type": "article",
           "settings": {
-            "image": "shopify:\/\/shop_images\/sddefault_1_8460eb12-799c-46a1-a8ba-a9c7bf3a5ad2.jpg",
-            "video_url": "https:\/\/youtu.be\/wNRFHureecQ",
-            "article": "artist\/anderson-paak"
+            "image": "shopify:\/\/shop_images\/Expressions-Of-K-Family-Senri-Kawaguchi_f999b16f-84d8-4a25-a2f3-918a1c9f1ff9.jpg",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=NvDsi-gohDo&t=52s",
+            "article": "artist\/senri-kawaguchi"
           }
         }
       },
@@ -461,7 +461,7 @@
       ],
       "custom_css": [
         ".image-with-text__text p {color: #5c5d60;}",
-        "@media screen and (max-width: 749px) {.image-with-text__content .info {position: relative; } .image-with-text__content .info .heading-icon {position: absolute; left: 0; top: 0; width: 80px; } .image-with-text__content .info .text {margin-top: 20px; } .image-with-text__content .info .text .image-with-text__heading {margin-left: 65px; }}"
+        "@media screen and (max-width: 749px) {.image-with-text__content .info {position: relative; } .image-with-text__content .info .heading-icon {position: absolute; left: 0; top: 0; width: 80px; } .image-with-text__content .info .text {margin-top: 20px; } .image-with-text__content .info .text .image-with-text__heading {margin-left: 65px; font-size: 25px; }}"
       ],
       "settings": {
         "side_banner": false,

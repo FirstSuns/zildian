@@ -6,8 +6,8 @@
         "template--18142514905380__d75dd4ef-8e47-487d-9740-f50edc07b08d-16790924773f344ee0-0": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_4.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Mask_group.jpg",
+            "image": "shopify:\/\/shop_images\/400th-Anniversary-Apparel-_-Sticks.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/400th-Anniversary-Apparel-_-Sticks-Mobile.jpg",
             "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/962626d775c043f286bcf4827578ee2f.mp4",
             "content_width": "250",
             "heading": "celebrating 400 years",
@@ -16,7 +16,30 @@
             "heading_color": "",
             "subheading": "",
             "button_label": "Learn More",
-            "link": "https:\/\/zildjianshop.myshopify.com\/pages\/brand",
+            "link": "https:\/\/zildjianshop.myshopify.com\/collections\/gear-apparel-lifestyle-400th-anniversary-apparel",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "1c0db94a-65c0-4189-a840-d44eba8c3c9a": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/400th-Anniversary-Apparel-_-Sticks_92e3971c-ff58-47ed-b7af-f59b4bec2bfa.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/400th-Anniversary-Apparel-_-Sticks-Mobile_26c7195a-fce0-4d48-bfcf-cd47f103b676.jpg",
+            "video": "",
+            "content_width": "450",
+            "heading": "NEW 400th Apparel & Sticks",
+            "uppercase": true,
+            "heading_size": "h0",
+            "heading_color": "",
+            "subheading": "",
+            "button_label": "SHOP NOW",
+            "link": "https:\/\/zildjianshop.myshopify.com\/collections\/gear-apparel-lifestyle-400th-anniversary-apparel",
             "button_style_secondary": false,
             "box_align": "middle-left",
             "show_text_box": false,
@@ -29,17 +52,17 @@
         "dfcc2a23-0043-442f-b782-0bbbaf4d30d6": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_4.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Mask_group.jpg",
+            "image": "shopify:\/\/shop_images\/Art-Blakey-Tee.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Art-Blakey-Tee-Mobile.jpg",
             "video": "",
             "content_width": "355",
-            "heading": "",
+            "heading": "Zildjian Legends Art Blakey Tee",
             "uppercase": true,
             "heading_size": "h0",
             "heading_color": "",
             "subheading": "",
-            "button_label": "",
-            "link": "shopify:\/\/collections",
+            "button_label": "SHOP NOW",
+            "link": "https:\/\/zildjianshop.myshopify.com\/products\/zildjian-legends-art-blakey-tee",
             "button_style_secondary": false,
             "box_align": "middle-left",
             "show_text_box": false,
@@ -52,10 +75,12 @@
       },
       "block_order": [
         "template--18142514905380__d75dd4ef-8e47-487d-9740-f50edc07b08d-16790924773f344ee0-0",
+        "1c0db94a-65c0-4189-a840-d44eba8c3c9a",
         "dfcc2a23-0043-442f-b782-0bbbaf4d30d6"
       ],
       "custom_css": [
-        "@media screen and (max-width: 749px) {splide-slideshow-component .slideshow .slideshow__slide {max-height: 450px; } .banner__box {margin-bottom: 100px; }}"
+        "@media screen and (max-width: 749px) {splide-slideshow-component .slideshow .slideshow__slide {max-height: 450px; } .banner__box {margin-bottom: 100px; }}",
+        "@media screen and (min-width: 750px) {.slideshow__text-wrapper.banner__content {padding: 10rem; }}"
       ],
       "settings": {
         "layout": "full_bleed",
@@ -93,7 +118,7 @@
         "color_scheme": "inverse",
         "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 52,
+        "padding_bottom": 40,
         "max_width": ""
       }
     },
@@ -164,8 +189,7 @@
         "template--18142514905380__079b5030-d8b0-4d99-95f9-6e125c31b917-167909267389e267af-2"
       ],
       "custom_css": [
-        ".multicolumn .multicolumn-list .multicolumn-list__item .multicolumn-card .cover-link {background: linear-gradient( 180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 1) 100% );}",
-        ".multicolumn .multicolumn-list .multicolumn-list__item .multicolumn-card.overlay-image--true .multicolumn-card__info {z-index: 10;}"
+        ".fs-cover-layer{display: block !important; position: absolute; width: 100%; height: 100%; z-index: 1; background: linear-gradient( 180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 1) 100% );}"
       ],
       "settings": {
         "side_banner": false,
@@ -199,7 +223,7 @@
     "a5608f55-88cd-40d5-bb3f-909f408e4027": {
       "type": "featured-collection",
       "custom_css": [
-        "@media screen and (min-width: 749px) and (max-width: 1100px) {.card-wrapper .card .card__content .card__information .card__heading {font-size: 15px; } .pr-star-v4 {width: 15px; height: 15px; } .p-w-r .pr-category-snippet__total {font-size: 11px; }}"
+        "@media screen and (min-width: 749px) and (max-width: 1100px) {.card-wrapper .card .card__content .card__information .card__heading {font-size: 15px; } .pr-star-v4 {width: 15px; height: 15px; } .p-w-r .pr-category-snippet__total {font-size: 11px; } .collection__title--desktop-slider .title {font-size: 30px; } .price__regular .price-item--regular {font-size: 15px; }}"
       ],
       "settings": {
         "title": "PLAYER FAVORITES",
@@ -384,7 +408,7 @@
         "40c78409-57fa-478e-99ed-bfc8aeecd9b5"
       ],
       "custom_css": [
-        "@media screen and (min-width: 749px) and (max-width: 1100px) {.slideshow__text.slideshow__text--left {max-width: calc(365px + 7rem) !important; }}"
+        "@media screen and (min-width: 749px) and (max-width: 1100px) {.slideshow__text.slideshow__text--left {max-width: calc(365px + 7rem) !important; padding-right: 0; padding-left: 80px; }}"
       ],
       "settings": {
         "layout": "full_bleed",
@@ -427,7 +451,7 @@
       "custom_css": [
         ".deferred-media__poster {background-color: #fff;}",
         "@media screen and (max-width: 749px) {.image-with-text__media-item {padding: 0 20px; }}",
-        "@media screen and (min-width: 749px) and (max-width: 1100px) {.image-with-text {padding: 0; } .image-with-text__content {padding-bottom: 0; }}"
+        "@media screen and (min-width: 749px) and (max-width: 1100px) {.image-with-text {padding: 20px; } .image-with-text__content {padding-bottom: 0; } .image-with-text__heading.h3 {font-size: 15px; line-height: 24px; }}"
       ],
       "settings": {
         "tag": "",
@@ -620,8 +644,9 @@
       ],
       "custom_css": [
         ".image-with-text__media img {object-fit: contain;}",
-        "@media screen and (min-width: 749px) and (max-width: 1100px) {.image-with-text {padding-top: 0; padding-bottom: 0; } .image-with-text__content {padding-top: 0; padding-bottom: 0; }}",
-        "@media screen and (max-width: 749px) {.image-with-text .image-with-text__grid .image-with-text__text-item .image-with-text__content .info {margin-top: 20px; } .image-with-text__heading {font-size: 20px; }}"
+        ".image-with-text__text-item {padding: 0;}",
+        "@media screen and (min-width: 749px) and (max-width: 1100px) {.image-with-text {padding-top: 0; padding-bottom: 0; } .image-with-text__content {padding-top: 0; padding-bottom: 0; } .image-with-text__text p {font-size: 13px; line-height: 20px; } .image-with-text__heading {font-size: 30px; }}",
+        "@media screen and (max-width: 749px) {.image-with-text__content .info {margin-top: 20px; } .image-with-text__heading {font-size: 20px; }}"
       ],
       "settings": {
         "tag": "",
@@ -650,6 +675,9 @@
     },
     "8185d5fb-14e0-4981-9c51-bc587ed44f9b": {
       "type": "featured-blog",
+      "custom_css": [
+        "@media screen and (min-width: 749px) and (max-width: 1100px) {.blog__title {font-size: 30px; } .card__heading {font-size: 15px; }}"
+      ],
       "settings": {
         "heading": "TAKE YOUR PLAYING TO THE NEXT LEVEL",
         "heading_size": "h1",
@@ -689,6 +717,9 @@
       "block_order": [
         "template--18142514905380__f1c39c4f-7d93-46e2-a0aa-729a6c995c25-1679380158c281d2e3-0",
         "template--18142514905380__f1c39c4f-7d93-46e2-a0aa-729a6c995c25-1679380158c281d2e3-1"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 749px) and (max-width: 1100px) {.rich-text__heading {font-size: 30px; }}"
       ],
       "settings": {
         "desktop_content_position": "center",

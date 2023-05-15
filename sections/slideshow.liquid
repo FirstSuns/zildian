@@ -58,7 +58,7 @@
           tabindex="-1"
         >
         {% if block.settings.link != blank and block.settings.button_label == blank %}
-        <a class="cover-link" href="{{block.settings.link}}"></a>
+        <a class="cover-link" href="{{block.settings.link}}" {% if block.settings.link contains 'www.youtube.com' %}target="_blank"{% endif %}></a>
         {% endif %}
           <div class="slideshow__media banner__media media{% if block.settings.image == blank %} placeholder{% endif %}">
             {%- if block.settings.image -%}

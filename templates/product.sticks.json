@@ -83,6 +83,9 @@
         "cdf7bb7f-d55b-4a46-a7c0-822ce5dc0327",
         "fbe15e98-645b-4a45-9432-fa0face0b078"
       ],
+      "custom_css": [
+        "@media screen and (min-width: 749px) and (max-width: 1100px) {.product__title .h3{font-size: 20px; } [data-section-type=product] .product__info-wrapper .product__info-container .subtitle{font-size: 12px; }}"
+      ],
       "settings": {
         "enable_sticky_info": false,
         "media_size": "small",

@@ -59,9 +59,9 @@
                   {{ settings.cart_success }}
                   {% endcapture %}
               {% endif %}
-              <span> {{ progress_text }} </span>
+              <span id="fs-cart-progress_text"> {{ progress_text }} </span>
               <div class="progress-bar">
-                <div class="free-shipping-progress" style="width: {{ progress }}%"></div>
+                <div class="free-shipping-progress" id="fs-cart-progress_bar" style="width: {{ progress }}%"></div>
               </div>
             </div>
             {%- else -%}
@@ -116,6 +116,30 @@
     document.querySelector('#checkout').addEventListener('click', function (event) {
       document.querySelector('#cart').submit();
     });
+  });
+  $(document).ready(function(){ 
+    setInterval (function sendRequest(){
+      var free_price={{settings.free_shipping_limit}};
+      $.ajax({
+        type: 'GET',
+        url: '/cart.js',
+        dataType: 'json',
+        success: function(cartdata){
+          //console.log("cartdata--",cartdata)
+          if( cartdata.total_price >= free_price * 100 ){
+            $('#fs-cart-progress_text').html("✓ Congratulations! You've earned FREE SHIPPING!");
+            $('#fs-cart-progress_bar').css('width', '100%');
+          }
+          else
+          {
+            var remain = "$" + parseFloat((free_price * 100 - cartdata.total_price ) / 100).toFixed(2);
+            $('#fs-cart-progress_text').html(remain + " until free shipping");
+            var progress_percent = cartdata.total_price / (free_price * 100) * 100 ;
+            $('#fs-cart-progress_bar').css('width', progress_percent+'%');
+          }
+        }
+      });     
+    },2000);
   });
 </script>
 

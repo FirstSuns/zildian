@@ -91,6 +91,7 @@
               {% endif %} 
             >
               <div class="multicolumn-card no-padding--{{section.settings.no_padding}} content-container overlay-image--{{section.settings.overlay_image}} mobile-overlay--{{section.settings.mobile_overlay}}">
+                <div class="fs-cover-layer"></div>
                 {% if block.settings.link != blank and block.settings.link_label == blank or block.settings.full_link %}
                   <a href="{{block.settings.link}}" class="cover-link"></a>
                 {% endif %}

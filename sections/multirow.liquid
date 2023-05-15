@@ -238,11 +238,14 @@
                   </div>
                 {% else %}
                   {%- if block.settings.button_label != blank -%}
-                  <a
+                  <a 1
                     {% if block.settings.button_link == blank %}
                       role="link" aria-disabled="true"
                     {% else %}
                       href="{{ block.settings.button_link }}"
+                    {% endif %}
+                    {% if block.settings.button_link contains 'clocksandcolours' %}
+                      target="_blank"
                     {% endif %}
                     class="button button--{{ section.settings.button_style }}"
                   >

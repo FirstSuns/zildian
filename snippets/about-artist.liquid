@@ -25,11 +25,12 @@
     {% endif %}
 {% endcapture %}
 
-{% if questions != blank %}
+{% if questions != blank and article.metafields.global.question_image !=blank %}
 <div class="about-artist-section page-width--narrow page-width">
   <div class="grid">
     <div class="title">
-      <h2 class="h1">{{article.metafields.global.author}}'s IN <span>FEW</span></h2>
+      {% comment %} <h2 class="h1">{{article.metafields.global.author}}'s IN <span>FEW</span></h2> {% endcomment %}
+      <h2 class="h1">{{article.title}}'s IN <span>FEW</span></h2>
     </div>
     <div class="image">
       <div class="media" style="padding-bottom: 130%;">

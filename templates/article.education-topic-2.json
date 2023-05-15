@@ -7,7 +7,7 @@
           "type": "heading",
           "settings": {
             "icon": "shopify:\/\/shop_images\/History-Photo-1_2_2_2edc093b-0621-4156-86f3-10a96a940c0d.jpg",
-            "heading": "Modern Jazz Solos for Drum Set,<br> Lesson Series with Rich Thompson",
+            "heading": "{{ article.metafields.global.author.value }}<br><span>{{ article.metafields.custom.author1.value }}<\/span>",
             "heading_size": "h2",
             "uppercase": false
           }
@@ -16,8 +16,8 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "text": "Lesson Series By {{ article.metafields.custom.author1.value }}",
+            "text_style": "caption-with-letter-spacing"
           }
         },
         "template--18142514774308__e2ccec93-4d4e-4dd3-a30c-d051d3a5a54a-16835454036b03464b-2": {

@@ -2,11 +2,12 @@
   "sections": {
     "1d7f6cba-bed1-49a9-95ae-1250bcab6a90": {
       "type": "artist-image-banner",
+      "disabled": true,
       "blocks": {
         "template--18305496580388__1d7f6cba-bed1-49a9-95ae-1250bcab6a90-16835208952a47cc13-0": {
           "type": "heading",
           "settings": {
-            "heading": "Aaron Smith",
+            "heading": "{{ article.title }}",
             "heading_size": "h1",
             "uppercase": false
           }
@@ -14,7 +15,7 @@
         "template--18305496580388__1d7f6cba-bed1-49a9-95ae-1250bcab6a90-16835208952a47cc13-1": {
           "type": "text",
           "settings": {
-            "text": "The Aaron Smith Experience",
+            "text": "The {{ article.title }} Experience",
             "text_style": "body"
           }
         },
@@ -37,6 +38,7 @@
         "template--18305496580388__1d7f6cba-bed1-49a9-95ae-1250bcab6a90-16835208952a47cc13-1",
         "template--18305496580388__1d7f6cba-bed1-49a9-95ae-1250bcab6a90-16835208952a47cc13-2"
       ],
+      "custom_css": [],
       "settings": {
         "image": "shopify:\/\/shop_images\/hero.png",
         "mobile_image": "shopify:\/\/shop_images\/Rectangle_5_15ba9a85-8322-4b1c-bf00-746a6f8030da.png",
@@ -166,6 +168,9 @@
         "527a453f-7343-4051-869e-35f96d142bef",
         "fa2456f8-54be-441b-932f-6679729a8f65",
         "0eaf8773-b360-4863-9ab2-007b409e00c4"
+      ],
+      "custom_css": [
+        ".breadcrumbs__list .nth {display: none;}"
       ],
       "settings": {}
     },

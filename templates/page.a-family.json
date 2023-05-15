@@ -216,6 +216,9 @@
         "template--18433034322212__a1c8156f-7006-49f9-b938-f700fa797764-1680479665bf930fb0-1",
         "41e437d8-f33f-46df-8198-7bd982672c81"
       ],
+      "custom_css": [
+        ".image-with-text__media img {object-fit: contain;}"
+      ],
       "settings": {
         "tag": "",
         "side_banner": false,
@@ -314,7 +317,7 @@
         "f5f1c814-bcb6-4080-b2dc-13278e0f51f0": {
           "type": "title",
           "settings": {
-            "caption": "K cluster Crashes",
+            "caption": "",
             "title": "New Product Spotlight",
             "button_label": "Shop now",
             "button_link": "https:\/\/zildjianshop.myshopify.com\/products\/a-avedis-crash-rides"
@@ -363,7 +366,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Expression-Of-Steve-Gadd-Video-Thumbnail.jpg",
             "video_url": "https:\/\/youtu.be\/qHP91qdb4FU",
-            "article": "artist\/aaron-smith"
+            "article": "artist\/steve-gadd"
           }
         },
         "1bcb4642-7bdf-475c-beb3-d36230fc61ac": {
@@ -371,7 +374,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Expression-Of-Kristina-Schiano-Video-Thumbnail_7c5083ee-ff36-41d9-a2a9-aaa231cf1ffc.jpg",
             "video_url": "https:\/\/www.youtube.com\/watch?v=h6psz_tJSEE",
-            "article": "artist\/aaron-gillespie"
+            "article": "artist\/kristina-schiano"
           }
         },
         "31276d17-fc8e-4fd5-a0e6-f44b1484be33": {
@@ -379,7 +382,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Expression-Of-Jay-Weinberg-Video-Thumbnail_7dce1ffe-7f2d-4885-a3e1-b38351b382c4.jpg",
             "video_url": "https:\/\/youtu.be\/n0PZlE4GkjQ",
-            "article": "artist\/anderson-paak"
+            "article": "artist\/jay-weinberg"
           }
         }
       },
@@ -391,7 +394,8 @@
         "31276d17-fc8e-4fd5-a0e6-f44b1484be33"
       ],
       "custom_css": [
-        ".image-with-text__text p {color: #5c5d60;}"
+        ".image-with-text__text p {color: #5c5d60;}",
+        "@media screen and (max-width: 749px) {.image-with-text__content .info {position: relative; } .image-with-text__content .info .heading-icon {position: absolute; left: 0; top: 0; width: 80px; } .image-with-text__content .info .text {margin-top: 20px; } .image-with-text__content .info .text .image-with-text__heading {margin-left: 65px; }}"
       ],
       "settings": {
         "side_banner": false,

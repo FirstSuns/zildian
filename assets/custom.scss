@@ -659,9 +659,6 @@ body.hide-price .price, body.hide-price .buy-buttons-box, body.hide-price .produ
   .card-wrapper .card .card__content .card__information .vendor {
     font-size: 13px !important;
     
-}#shopify-section-template--18839560782116__de0c46b6-7298-4eaa-a3bf-f37193b0319a h2 {
-    font-size: 21px !important;
-    text-transform: uppercase;
 }
 #CollectionProductGrid .collection .boost-pfs-filter-right-col .product-grid .product-card-wrapper .card .card__content .card__information .card__heading {
     font-size: 14px !important;
@@ -688,12 +685,23 @@ body.hide-price .price, body.hide-price .buy-buttons-box, body.hide-price .produ
     max-width: 1040px;
     padding-top: 36px;
 }.zildjian-underground  .page-width {
-    max-width: 1200px;
+    max-width: 1200px !important;
+}.zildjian-underground .banner__content.banner__content--bottom-left {
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    right: 323px;
+    top: 181px;
+}.zildjian-underground .banner__box .banner__heading+* {
+    margin-top: 11px;
+    font-size: 16px;
+    font-weight: 700;
 }.zildjian-underground  .rich-text__wrapper.rich-text__wrapper--center {
 /*     margin: 0 !important; */
     width: 100% !important;
 }.zildjian-underground .titl-class-sec .page-width {
     max-width: var(--page-width);
+    padding: 0;
 }.zildjian-underground .left-slide-txt {
     width: 75%;
 }.zildjian-underground .right-slide-btn {
@@ -701,7 +709,7 @@ body.hide-price .price, body.hide-price .buy-buttons-box, body.hide-price .produ
 }.zildjian-underground .newsletter .page-width {
     max-width: var(--page-width);
 }.zildjian-underground .video_slider_container .slick-next {
-    right: 21%!important;
+    right: 10%!important;
     bottom: -131px!important;
 }.zildjian-underground .video_slider_container .slick-next:before {
     color: #5d5d5f;
@@ -711,6 +719,17 @@ body.hide-price .price, body.hide-price .buy-buttons-box, body.hide-price .produ
     display: block;
     font-size: 0;
   background-repeat: no-repeat;
+}.zildjian-underground .rich-text .rich-text__blocks p {
+    font-size: 16px;
+    font-weight: 500;
+}.zildjian-underground .left-slide-txt, .zildjian-underground .right-slide-btn {
+    text-transform: uppercase;
+}.zildjian-underground .left-slide-txt h3, .zildjian-underground .right-slide-btn h3 {
+    margin-top: 0 !important;
+}.zildjian-underground .left-slide-txt h2, .zildjian-underground .right-slide-btn h2 {
+    margin-bottom: 12px;
+}.zildjian-underground .rght-txt-img {
+    display: none;
 }
 @media screen and (max-width: 767px){
 .zildjian-underground .page-width .rich-text {
@@ -736,10 +755,12 @@ body.hide-price .price, body.hide-price .buy-buttons-box, body.hide-price .produ
     font-size: 0;
     background-repeat: no-repeat;
     position: absolute;
-  top: 61px;
+    // top: 61px;
+    top: 50px;
     opacity: unset;
     left: inherit;
-    right: 149px;
+    // right: 149px;
+    right: 200px;
 }.zildjian-underground .right-slide-btn .rght-txt-img {
     display: none;
 }.zildjian-underground .right-slide-btn {
@@ -751,6 +772,59 @@ body.hide-price .price, body.hide-price .buy-buttons-box, body.hide-price .produ
     display: none;
 }.zildjian-workout-practice-and-learn-from-the-zildjian-artists .top-content .page-width {
     padding: 25px 10px;
+}.zildjian-underground .banner__content.banner__content--bottom-left {
+    right: 0 !Important;
+    top: 111px !Important;
+}
+.zildjian-underground .banner .banner__content .banner__box .banner__heading{
+  font-size: 24px;
+}
+.zildjian-underground .article-template__title{
+  position: relative;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.zildjian-underground .titl-class-sec .page-width{
+  padding: 0 20px;
+}
+.zildjian-underground .article-template__title::before{
+  content: " ";
+  // width: 5px;
+  // height: 5px;
+  // display: block;
+  // border: 1px solid #5C5D60;
+  // border-top: none;
+  // border-left: none;
+  // transform: rotate(135deg);
+  // margin-right: 10px;
+  // left: 25px;
+  // top: 21px;
+  // background: transparent;
+  // border-radius: 0;
+}
+.zildjian-underground .article-template__title::after{
+  content: " ";
+  // width: 15px;
+  // height: 15px;
+  // display: block;
+  // border: 1px solid #5C5D60;
+  // margin-right: 10px;
+  // left: 19px;
+  // top: 16px;
+  // background: transparent;
+  // border-radius: 50%;
+  // position: absolute;
+}
+.zildjian-underground .rich-text .rich-text__blocks p{
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+}
+
+@media screen and (max-width: 1024px){
+.zildjian-underground .banner__content.banner__content--bottom-left {
+    right: 140px;
+    top: 207px;
 }
 }
 /*01-introduction-and-history-of-the-art-of-bop-drumming-method*/
@@ -787,11 +861,13 @@ body.hide-price .price, body.hide-price .buy-buttons-box, body.hide-price .produ
   padding: 20px 0;
 }.mobile-vide-sec p {
     line-height: 19px;
+}#shopify-section-template--18305496580388__main .breadcrumbs__list .nth {
+    display: block !important;
 }
 }
 
 /*level*/
-.Level .article-template__content.page-width.page-width--narrow.rte, .zildjian-workout-practice-and-learn-from-the-zildjian-artists .top-content .page-width {
+.Level .article-template__content.page-width.page-width--narrow.rte {
     max-width: 100%;
     background: #F8F8F9;
   padding: 40px 0;
@@ -1000,4 +1076,81 @@ tab-component {
   .boost-pfs-filter-wrapper{
     padding: 0 40px;
   }
+}
+
+/*****Education topic 2*****/
+.edutopic2 .banner .banner__content .banner__box .banner__heading img+span span {
+    font-size: 20px;
+}.edutopic2 .banner .banner__content .banner__box .banner__heading img+span:before{
+  display: none;
+}.edutopic2 .banner .banner__content .banner__box .banner__heading img {
+    width: 200px;
+    height: 203px;
+}
+
+/*****Education topic 3****/
+.merg-cont {
+    display: flex;
+    justify-content: space-between;
+}.edu-tt-pp {
+    background: #F8F8F9;
+}.edu-art-two h2 {
+    text-align: center;
+    margin-top: 55px;
+    margin-bottom: 0;
+}
+
+/*****Education topic 1****/
+.edutopic11 .banner .banner__content .banner__box .banner__heading img+span:before{
+  display: none;
+}.edutopic11 .article-template__content {
+    background-color: #F8F8F9;
+  padding: 50px 0;
+}.edutopic11 .article-template .article-template__content ul{
+  display: inherit;
+}.edutopic11 .article-template .article-template__content ul {
+    padding: 0;
+    list-style: none;
+    display: inherit;
+    margin: 0 20px;
+}.mystique_col.first-edutop p {
+    text-align: center;
+    font-weight: 600;
+}
+
+/*****Education Topic 3*****/
+.edutopic13 .banner .banner__content .banner__box .banner__heading img+span:before{
+  display: none;
+}.edutopic13 .banner .banner__content .banner__box .banner__heading img {
+    width: 200px;
+    height: 203px;
+}.edutopic13 .article-template__content {
+    background: #F8F8F9;
+    padding: 40px 0px 60px 0;
+}.edutopic13 .article-template__content h2 {
+    text-align: center;
+}.edutopic13 .merg-cont .left-mmm {
+    padding-right: 60px;
+}.edutopic13 .merg-cont {
+    padding: 0 60px;
+    font-size: 16px;
+}.edutopic13 .breadcrumbs {
+    margin-top: 0;
+}.edutopic13 .card-wrapper .card .card__content .card__information .card__heading {
+    font-size: 20px;
+}
+@media screen and (max-width: 767px) {
+.edutopic13 .merg-cont {
+    padding: 0;
+    flex-wrap: wrap;
+}.edutopic13 .merg-cont .left-mmm {
+    padding-right: 0;
+}.edutopic13 .article-template__content {
+    padding: 30px 0 30px;
+}.edutopic13 .banner .banner__content .banner__box .banner__heading img{
+  display: none;
+}.edutopic13 .banner .banner__content .banner__box .banner__heading {
+    text-align: center;
+    padding-bottom: 57px;
+}
 }

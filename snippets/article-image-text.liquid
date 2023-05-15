@@ -44,7 +44,8 @@
         <div class="info" style="max-width: {{block.settings.max_width}}px;">
           <div class="text">
             <h2 class="image-with-text__heading h2" {{ block.shopify_attributes }}>
-              {{ article.metafields.global.author }}
+              {{article.title}}'s setup:
+              {% comment %} {{ article.metafields.global.author }} {% endcomment %}
             </h2>
             <div class="image-with-text__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
               <div class="content">

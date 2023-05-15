@@ -8,49 +8,41 @@
           {% render block %}
         </div>
       {%- when 'featured_image' -%} 
-        {%- if article.metafields.global.featured_image -%}
+        {%- if article.metafields.global.hero_image -%}
           <div class="article-template__hero-container" {{ block.shopify_attributes }}>
-            <div
+            <div 1
               class="article-template__hero-{{ block.settings.image_height }} media {{block.settings.image_height}}"
               itemprop="image"
             >
+              <div class="fs-cover-layer"></div>
               <img
-                srcset="
-                  {% if article.metafields.global.featured_image.width >= 350 %}{{ article.metafields.global.featured_image | image_url: width: 350 }} 350w,{% endif %}
-                  {% if article.metafields.global.featured_image.width >= 750 %}{{ article.metafields.global.featured_image | image_url: width: 750 }} 750w,{% endif %}
-                  {% if article.metafields.global.featured_image.width >= 1100 %}{{ article.metafields.global.featured_image | image_url: width: 1100 }} 1100w,{% endif %}
-                  {% if article.metafields.global.featured_image.width >= 1500 %}{{ article.metafields.global.featured_image | image_url: width: 1500 }} 1500w,{% endif %}
-                  {% if article.metafields.global.featured_image.width >= 2200 %}{{ article.metafields.global.featured_image | image_url: width: 2200 }} 2200w,{% endif %}
-                  {% if article.metafields.global.featured_image.width >= 3000 %}{{ article.metafields.global.featured_image | image_url: width: 3000 }} 3000w,{% endif %}
-                  {{ article.metafields.global.featured_image | image_url }} {{ article.metafields.global.featured_image.width }}w
-                "
                 sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw"
-                src="{{ article.metafields.global.featured_image | image_url: width: 1100 }}"
+                src="{{ article.metafields.global.hero_image | file_url }}"
                 loading="eager" 
                 class="small-hide medium-hide"
                 fetchpriority="high"
-                width="{{ article.metafields.global.featured_image.width }}"
-                height="{{ article.metafields.global.featured_image.height }}"
-                alt="{{ article.metafields.global.featured_image.alt | escape }}"
+                width="{{ article.metafields.global.hero_image.width }}"
+                height="{{ article.metafields.global.hero_image.height }}"
+                alt="{{ article.metafields.global.hero_image.alt | escape }}"
               >
               <img
                 srcset="
-                  {% if article.metafields.global.featured_mobile_image.width >= 350 %}{{ article.metafields.global.featured_mobile_image | image_url: width: 350 }} 350w,{% endif %}
-                  {% if article.metafields.global.featured_mobile_image.width >= 750 %}{{ article.metafields.global.featured_mobile_image | image_url: width: 750 }} 750w,{% endif %}
-                  {% if article.metafields.global.featured_mobile_image.width >= 1100 %}{{ article.metafields.global.featured_mobile_image | image_url: width: 1100 }} 1100w,{% endif %}
-                  {% if article.metafields.global.featured_mobile_image.width >= 1500 %}{{ article.metafields.global.featured_mobile_image | image_url: width: 1500 }} 1500w,{% endif %}
-                  {% if article.metafields.global.featured_mobile_image.width >= 2200 %}{{ article.metafields.global.featured_mobile_image | image_url: width: 2200 }} 2200w,{% endif %}
-                  {% if article.metafields.global.featured_mobile_image.width >= 3000 %}{{ article.metafields.global.featured_mobile_image | image_url: width: 3000 }} 3000w,{% endif %}
-                  {{ article.metafields.global.featured_mobile_image | image_url }} {{ article.metafields.global.featured_mobile_image.width }}w
+                  {% if article.metafields.global.hero_image.width >= 350 %}{{ article.metafields.global.hero_image | file_url: width: 350 }} 350w,{% endif %}
+                  {% if article.metafields.global.hero_image.width >= 750 %}{{ article.metafields.global.hero_image | file_url: width: 750 }} 750w,{% endif %}
+                  {% if article.metafields.global.hero_image.width >= 1100 %}{{ article.metafields.global.hero_image | file_url: width: 1100 }} 1100w,{% endif %}
+                  {% if article.metafields.global.hero_image.width >= 1500 %}{{ article.metafields.global.hero_image | file_url: width: 1500 }} 1500w,{% endif %}
+                  {% if article.metafields.global.hero_image.width >= 2200 %}{{ article.metafields.global.hero_image | file_url: width: 2200 }} 2200w,{% endif %}
+                  {% if article.metafields.global.hero_image.width >= 3000 %}{{ article.metafields.global.hero_image | file_url: width: 3000 }} 3000w,{% endif %}
+                  {{ article.metafields.global.hero_image | file_url }} {{ article.metafields.global.hero_image.width }}w
                 "
                 sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw"
-                src="{{ article.metafields.global.featured_mobile_image | image_url: width: 1100 }}"
+                src="{{ article.metafields.global.hero_image | file_url }}"
                 loading="eager" 
                 class="large-up-hide"
                 fetchpriority="high"
-                width="{{ article.metafields.global.featured_mobile_image.width }}"
-                height="{{ article.metafields.global.featured_mobile_image.height }}"
-                alt="{{ article.metafields.global.featured_mobile_image.alt | escape }}"
+                width="{{ article.metafields.global.hero_image.width }}"
+                height="{{ article.metafields.global.hero_image.height }}"
+                alt="{{ article.metafields.global.hero_image.alt | escape }}"
               >
             </div>
             <div class="content">
@@ -80,11 +72,17 @@
 
       {%- when 'content' -%}
         <div
-          class="article-template__content page-width page-width--narrow rte"
+          class="article-template__content {%if template contains 'education-topic-1' or template contains 'education-topic-3' %}{% else %}page-width page-width--narrow{% endif %} rte"
           itemprop="articleBody"
           {{ block.shopify_attributes }}
         >
+         {%if template contains 'education-topic-1' or template contains 'education-topic-3' %}
+         <div class="page-width">
+          {% endif %}
           {{ article.content }}
+          {%if template contains 'education-topic-1' or template contains 'education-topic-3' %}
+         </div>
+          {% endif %}
         </div>
 
       {%- when 'share' -%}
@@ -416,7 +414,7 @@
     font-family: 'Century Gothic';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 24px !important;
     line-height: 100%;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -482,9 +480,6 @@
 }.article-template .about-artist-section.page-width--narrow .grid {
     padding-bottom: 0px;
     border-bottom: none;
-}#shopify-section-template--18305496580388__97e8c916-868c-40ca-bc78-69a8202d6384 h2 {
-/*     font-size: 21px !important; */
-    text-transform: uppercase;
 }.artist-page-inn .bottom {
     color: #5C5D60;
 }#shopify-section-template--18305496580388__97e8c916-868c-40ca-bc78-69a8202d6384 h2 {

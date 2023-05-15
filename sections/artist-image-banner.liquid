@@ -93,12 +93,9 @@
         {%- case block.type -%}
           {%- when 'heading' -%}
             <h2 class="banner__heading {{ block.settings.heading_size }} text-uppercase--{{block.settings.uppercase}}" {{ block.shopify_attributes }}>
-              {% if block.settings.icon != blank %}
-                {{
-                  block.settings.icon
-                  | image_url: width: 200
-                  | image_tag: loading: 'lazy', sizes: sizes, widths: '200, 360, 535, 750, 1070, 1500'
-                }}
+              {% assign immicon = article.metafields.custom.article_image %}
+              {% if immicon != blank %}
+                <img loading='lazy' src="{{immicon}}">
               {% endif %}
               <span>{{ block.settings.heading }}</span>
             </h2>

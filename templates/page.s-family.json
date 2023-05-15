@@ -16,6 +16,9 @@
       "block_order": [
         "d88c72ac-a204-4931-9330-91b5bb6a11d4"
       ],
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.banner__box {margin-top: auto; margin-bottom: auto; height: auto; }}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/S-Family-Hero-Banner-Collage_ece65127-c159-4fd8-a5ed-fa740a1ffa7f.jpg",
         "mobile_image": "shopify:\/\/shop_images\/S-Family-Collection-Banner-Mobile.jpg",
@@ -31,7 +34,7 @@
         "stack_images_on_mobile": false,
         "show_text_below": false,
         "center_mobile": false,
-        "full_mobile": false,
+        "full_mobile": true,
         "content_padding": 20,
         "padding_top": 0,
         "padding_bottom": 0
@@ -206,16 +209,13 @@
         "template--18433034322212__a1c8156f-7006-49f9-b938-f700fa797764-1680479665bf930fb0-1",
         "41e437d8-f33f-46df-8198-7bd982672c81"
       ],
-      "custom_css": [
-        "@media screen and (min-width: 749px) and (max-width: 1100px) {.image-with-text__grid {margin-top: -100px; }}"
-      ],
+      "custom_css": [],
       "settings": {
         "tag": "",
         "side_banner": false,
         "full_width": false,
-        "image": "shopify:\/\/shop_images\/S-Dark-Collection-Thumbnail.png",
-        "mobile_image": "shopify:\/\/shop_images\/S-Dark-Collection-Thumbnail-Mobile.png",
-        "second_image": "shopify:\/\/shop_images\/S-Dark-Logo_1.png",
+        "image": "shopify:\/\/shop_images\/Untitled-1.png",
+        "second_image": "shopify:\/\/shop_images\/Untitled-2.png",
         "video_url": "",
         "height": "adapt",
         "desktop_image_width": "medium",
@@ -289,25 +289,25 @@
         "9e2e6553-9a0d-4afe-b6bc-9f4554c331e2": {
           "type": "article",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Expressions-Of-Tosh-Perterson-Video-Thumbnail.jpg",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=1D6d9vSSXow",
-            "article": "artist\/tosh-perterson"
+            "image": "shopify:\/\/shop_images\/Expressions-Of-Josh-Dun-Video-Thumbnail_60b5c641-396f-4288-939c-7a6bb482a77a.jpg",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=RQRFU3Zmk_A",
+            "article": "artist\/josh-dun"
           }
         },
         "1bcb4642-7bdf-475c-beb3-d36230fc61ac": {
           "type": "article",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Expressions-Of-Giulliana-Merello-Video-Thumbnail.jpg",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=HEcnchru1HI",
-            "article": "artist\/giulliana-merello"
+            "image": "shopify:\/\/shop_images\/Expressions-Of-Jonas-Kocnik-Video-Thumbnail.jpg",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=JAf68Xb7kNw&feature=youtu.be",
+            "article": "artist\/jonas-kocnik"
           }
         },
         "31276d17-fc8e-4fd5-a0e6-f44b1484be33": {
           "type": "article",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Expressions-Of-Josh-Dun-Video-Thumbnail.jpg",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=RQRFU3Zmk_A",
-            "article": "artist\/josh-dun"
+            "image": "shopify:\/\/shop_images\/Expressions-Of-Jay-Weinberg-Video-Thumbnail.jpg",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=PLkb3geo2jk",
+            "article": "artist\/jay-weinberg"
           }
         }
       },
@@ -319,8 +319,8 @@
         "31276d17-fc8e-4fd5-a0e6-f44b1484be33"
       ],
       "custom_css": [
-        "@media screen and (min-width: 749px) and (max-width: 1100px) {.image-with-text {margin-top: -100px; padding-bottom: 0; }}",
-        ".image-with-text__text p {color: #5c5d60;}"
+        ".image-with-text__text p {color: #5c5d60;}",
+        "@media screen and (max-width: 749px) {.image-with-text__content .info {position: relative; } .image-with-text__content .info .heading-icon {position: absolute; left: 0; top: 0; width: 80px; } .image-with-text__content .info .text {margin-top: 20px; } .image-with-text__content .info .text .image-with-text__heading {margin-left: 65px; font-size: 25px; }}"
       ],
       "settings": {
         "side_banner": false,
@@ -341,31 +341,31 @@
         "padding_top": 32,
         "padding_bottom": 100,
         "quote": false,
+        "icon": "shopify:\/\/shop_images\/s-family-logo_1213a685-a63d-4797-bbfc-2fa98eccb498.png",
         "max_width": "480"
       }
     },
     "2b9870d7-eeab-4023-bbca-c833ed3b6f79": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "71d2dbc4-63e9-4448-948c-d5567ce1fced": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/K_Con_Series_Page_Logo_2.png"
+            "icon": "shopify:\/\/shop_images\/422-X-396-PNG-S-Family-Logo_7842bd10-0103-4a22-a882-5f3cf3aa9492.png"
           }
         },
         "template--18433034322212__2b9870d7-eeab-4023-bbca-c833ed3b6f79-16804883853ea6d8c0-0": {
           "type": "heading",
           "settings": {
-            "heading": "<p>EMBRACE YOUR <br\/>DARKER SIDE<\/p>",
+            "heading": "<p>BE VERSATILE AND BOLD<\/p>",
             "heading_size": "h0",
-            "max_width": ""
+            "max_width": "400"
           }
         },
         "template--18433034322212__2b9870d7-eeab-4023-bbca-c833ed3b6f79-16804883853ea6d8c0-2": {
           "type": "button",
           "settings": {
-            "button_label": "Find Your K",
+            "button_label": "Find Your S",
             "button_link": "shopify:\/\/collections\/default-category-cymbals-drum-set-k-family-k-zildjian",
             "button_style_secondary": false,
             "button_label_2": "",
@@ -381,6 +381,7 @@
         "template--18433034322212__2b9870d7-eeab-4023-bbca-c833ed3b6f79-16804883853ea6d8c0-2"
       ],
       "custom_css": [
+        ".rich-text {margin-bottom: 40px;}",
         "@media screen and (max-width: 749px) {.rich-text .rich-text__blocks.contnet-type--inline .rich-text__heading {max-width: 200px; }}"
       ],
       "settings": {

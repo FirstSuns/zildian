@@ -1,0 +1,57 @@
+{
+  "sections": {
+    "c289bafd-44a6-474f-a663-96d26e7f5138": {
+      "type": "image-banner",
+      "blocks": {
+        "9aa25921-8649-42ae-b0c4-7a45488dd89d": {
+          "type": "education",
+          "settings": {
+            "education": ""
+          }
+        }
+      },
+      "block_order": [
+        "9aa25921-8649-42ae-b0c4-7a45488dd89d"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Education-Banner.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Education-Banner-Mobile.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "content_width": "950",
+        "padding_left": "",
+        "desktop_content_position": "bottom-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "stack_images_on_mobile": true,
+        "show_text_below": false,
+        "center_mobile": false,
+        "full_mobile": false,
+        "content_padding": 20,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "main-blog",
+      "settings": {
+        "show_breadcrumbs": false,
+        "enable_filter": false,
+        "layout": "grid",
+        "show_image": true,
+        "image_height": "adapt",
+        "show_blog_title": false,
+        "show_date": false,
+        "show_author": false,
+        "padding_top": 36,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "c289bafd-44a6-474f-a663-96d26e7f5138",
+    "main"
+  ]
+}

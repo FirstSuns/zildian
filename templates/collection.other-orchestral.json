@@ -213,6 +213,9 @@
         "template--18433034322212__a1c8156f-7006-49f9-b938-f700fa797764-1680479665bf930fb0-1",
         "41e437d8-f33f-46df-8198-7bd982672c81"
       ],
+      "custom_css": [
+        ".image-with-text__media img {object-fit: contain;}"
+      ],
       "settings": {
         "tag": "",
         "side_banner": false,
@@ -345,6 +348,9 @@
         "template--18433034322212__db45ecef-c3ed-40be-ac34-ad6d4d6819ec-1680479665bf930fb0-1",
         "24d10485-4691-4d97-bcca-f2627d3c3db3"
       ],
+      "custom_css": [
+        ".image-with-text__media img {object-fit: contain;}"
+      ],
       "settings": {
         "tag": "",
         "side_banner": false,
@@ -422,6 +428,9 @@
         "template--18723394683172__2e93c244-2e84-40f6-a104-ab14e373a7f0-168251309009543dc5-2",
         "306ed18c-abc3-4f60-8949-5da13142ac6b"
       ],
+      "custom_css": [
+        ".image-with-text__media img {object-fit: contain;}"
+      ],
       "settings": {
         "tag": "",
         "side_banner": false,
@@ -481,6 +490,7 @@
     },
     "4803a757-7e31-4693-9d72-92244f5dfdfd": {
       "type": "article-slider",
+      "disabled": true,
       "blocks": {
         "template--18433034322212__4803a757-7e31-4693-9d72-92244f5dfdfd-16804826455ecb7e3c-0": {
           "type": "heading",

@@ -7,7 +7,7 @@
           "type": "heading",
           "settings": {
             "icon": "shopify:\/\/shop_images\/A-Family-Collection-Logo_afc7eebe-3d26-4b33-9485-e7902d56c4e4.png",
-            "heading": "BRIGHT & RICH",
+            "heading": "BRIGHT & Sweet",
             "heading_size": "h1",
             "uppercase": true
           }
@@ -213,6 +213,9 @@
         "template--18433034322212__a1c8156f-7006-49f9-b938-f700fa797764-1680479665bf930fb0-1",
         "41e437d8-f33f-46df-8198-7bd982672c81"
       ],
+      "custom_css": [
+        ".image-with-text__media img {object-fit: contain;}"
+      ],
       "settings": {
         "tag": "",
         "side_banner": false,
@@ -345,6 +348,9 @@
         "template--18433034322212__db45ecef-c3ed-40be-ac34-ad6d4d6819ec-1680479665bf930fb0-1",
         "24d10485-4691-4d97-bcca-f2627d3c3db3"
       ],
+      "custom_css": [
+        ".image-with-text__media img {object-fit: contain;}"
+      ],
       "settings": {
         "tag": "",
         "side_banner": false,
@@ -389,7 +395,7 @@
           "settings": {
             "text": "<p>A perfect blend of brilliant overtones and harmonics in a size and weight that is manageable for articulate passages as well as long crashes. They incorporate control, feel, and playability. Recommended for use in all concert settings. Brilliant finish top, traditional finish bottom.<\/p>",
             "text_style": "body",
-            "color": ""
+            "color": "#5c5d60"
           }
         },
         "3c81625a-d498-41b3-8af1-518dbb3fe35a": {
@@ -410,6 +416,9 @@
         "template--18723394322724__f9cb819f-d6ea-4e80-af74-4399697608a5-1683121976410aff19-0",
         "template--18723394322724__f9cb819f-d6ea-4e80-af74-4399697608a5-1683121976410aff19-1",
         "3c81625a-d498-41b3-8af1-518dbb3fe35a"
+      ],
+      "custom_css": [
+        ".image-with-text__media img {object-fit: contain;}"
       ],
       "settings": {
         "tag": "",
@@ -446,7 +455,7 @@
             "caption": "Educational Guidebook",
             "title": "The Classic Orchestral Line",
             "button_label": "Shop now",
-            "button_link": "shopify:\/\/collections\/default-category-cymbals-drum-set-k-family-k-zildjian"
+            "button_link": "https:\/\/zildjianshop.myshopify.com\/collections\/cymbals-band-orchestral-a-orchestral-classic-orchestral"
           }
         }
       },
@@ -492,7 +501,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Expression-Of-thumbnails-James-Campbell_c772afa5-d17e-4722-9acb-ee9119e86237.jpg",
             "video_url": "https:\/\/www.youtube.com\/watch?v=BoAGa0XBFhE",
-            "article": "artist\/aaron-serfaty"
+            "article": "artist\/james-campbell"
           }
         },
         "1bcb4642-7bdf-475c-beb3-d36230fc61ac": {
@@ -500,7 +509,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Expression-Of-thumbnails-Neil-Percy_1031fa94-1b58-4262-9284-457a08a9c01a.jpg",
             "video_url": "https:\/\/www.youtube.com\/watch?v=q7VVzj7HY4E",
-            "article": "artist\/aaron-gillespie"
+            "article": "artist\/neil-percy"
           }
         },
         "31276d17-fc8e-4fd5-a0e6-f44b1484be33": {
@@ -559,7 +568,7 @@
         "template--18433034322212__2b9870d7-eeab-4023-bbca-c833ed3b6f79-16804883853ea6d8c0-0": {
           "type": "heading",
           "settings": {
-            "heading": "<p>LOOK AT THE BRIGHTER SIDE<\/p>",
+            "heading": "<p>LOOK AT THE BRIGHT SIDE<\/p>",
             "heading_size": "h0",
             "max_width": ""
           }

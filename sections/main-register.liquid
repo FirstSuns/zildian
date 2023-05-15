@@ -165,7 +165,6 @@
             </span>
           {%- endif -%}
 
-          {% comment %}
           <div class="field">
             <input
               type="password"
@@ -179,7 +178,6 @@
               Confirm Password
             </label> 
           </div>
-          {% endcomment %}
           
           
           <button>
@@ -191,7 +189,9 @@
     </div>
   </div>
 </div>
-{% comment %} <script>
+<script>
+    const form = document.getElementById("create_customer");
+    form.addEventListener("submit", logSubmit);
     function logSubmit(event) {
       var password = document.getElementById("RegisterForm-password");
       var confirm_password = document.getElementById("confirm-password");
@@ -202,27 +202,13 @@
       else{
       }
     }
-    const form = document.getElementById("create_customer");
-    form.addEventListener("submit", logSubmit);
-</script> {% endcomment %}
-
-{% comment %} 
-<script>
-
-  var password = document.getElementById("RegisterForm-password")
-  , confirm_password = document.getElementById("confirm-password");
-
-  function validatePassword(){
-    if(password.value != confirm_password.value) {
-      confirm_password.setCustomValidity("Passwords Don't Match");
-    } else {
-      confirm_password.setCustomValidity('');
-    }
-  }
-  password.onchange = validatePassword;
-  confirm_password.onkeyup = validatePassword;
-
-</script> {% endcomment %}
+    $(document).ready(function(){ 
+      setInterval (function updateFormSubmit(){
+         $('#create_customer').attr('onsubmit', '');
+         form.addEventListener("submit", logSubmit);
+      },1000);
+    });
+</script>
 
 {% schema %}
 {

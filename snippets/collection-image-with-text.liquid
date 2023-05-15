@@ -80,8 +80,14 @@
               {% endif %}
               
               {% if object.settings.text != blank %}
-                <div class="image-with-text__text rte {{ object.settings.text_style }}" {{ block.shopify_attributes }}>
+                <div 7 class="image-with-text__text rte  {{ object.settings.text_style }}" {{ block.shopify_attributes }}>
+                  <div class = "small-hide" >
                   {{ object.settings.text }}
+                  </div>
+                  <div class = "large-up-hide">
+                    <div id="fs_lessDesc1"><div>{{ object.settings.text | truncate: 200}}</div><span id="fs_moreDesc1" class="fs_moreDesc1">READ MORE</span></div>
+                    <div id="fs_fullDesc"><div>{{ object.settings.text }}</div><span id="fs_lessBtn" class="fs_lessBtn">LESS</span></div>
+                  </div>
                 </div>
               {% endif %}
 
@@ -107,3 +113,20 @@
     </div>
   </div>
 </div>
+
+<script>
+
+ var fs_lessDesc1 = document.getElementById("fs_lessDesc1"); 
+ var fs_fullDesc = document.getElementById("fs_fullDesc");
+ var fs_moreDesc1 = document.getElementById("fs_moreDesc1");
+ var fs_lessBtn = document.getElementById("fs_lessBtn");
+
+ fs_moreDesc1.onclick = function() {
+   fs_fullDesc.style.display = "block";
+   fs_lessDesc1.style.display = "none";
+ }
+ fs_lessBtn.onclick = function() {
+   fs_fullDesc.style.display = "none";
+   fs_lessDesc1.style.display = "block";
+ }
+</script>

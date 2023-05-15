@@ -80,3 +80,21 @@ a.pagination__item:hover::after {
 .pagination__item-arrow:hover::after {
   display: none;
 }
+
+.artist .pagination__item--next .icon {
+  margin-left: -0.2rem;
+  transform: rotate(-90deg);
+}
+
+.artist .pagination__item--next:hover .icon {
+  transform: rotate(-90deg) scale(1.07);
+}
+
+.artist .pagination__item--prev .icon {
+  margin-right: -0.2rem;
+  transform: rotate(90deg);
+}
+
+.artist .pagination__item--prev:hover .icon {
+  transform: rotate(90deg) scale(1.07);
+}

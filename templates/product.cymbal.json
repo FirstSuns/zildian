@@ -248,6 +248,7 @@
     },
     "95308eb8-1792-44ae-a247-c898ce9a559c": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "d69a7b00-9b6a-480a-b374-ff185510e9a6": {
           "type": "icon",
@@ -280,7 +281,7 @@
         "template--18464411418916__95308eb8-1792-44ae-a247-c898ce9a559e-16806862328940c11a-1"
       ],
       "settings": {
-        "tag": "400th",
+        "tag": "",
         "side_banner": false,
         "full_width": true,
         "image": "shopify:\/\/shop_images\/Rectangle_27.png",

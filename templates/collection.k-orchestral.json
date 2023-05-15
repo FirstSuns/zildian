@@ -172,7 +172,7 @@
         "mobile_content_alignment": "left",
         "overlay_section": false,
         "padding_top": 36,
-        "padding_bottom": 36,
+        "padding_bottom": 0,
         "quote": false,
         "max_width": ""
       }
@@ -237,7 +237,7 @@
         "mobile_layout": "image_first",
         "mobile_content_alignment": "left",
         "overlay_section": false,
-        "padding_top": 36,
+        "padding_top": 0,
         "padding_bottom": 36,
         "quote": false,
         "max_width": "600"
@@ -383,7 +383,7 @@
           "type": "title",
           "settings": {
             "caption": "K Constantinople Orchestral Hand Cymbals",
-            "title": "New Product Spotlight",
+            "title": "Sound Lab",
             "button_label": "Shop now",
             "button_link": "shopify:\/\/collections\/cymbals-band-orchestral-k-orchestral-k-constantinople-orchestral"
           }
@@ -422,7 +422,7 @@
         "template--18433034322212__4803a757-7e31-4693-9d72-92244f5dfdfd-16804826455ecb7e3c-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Zildjian’s classic sound is embodied by the K Family and immortalized in countless recordings by the greatest drummers.<\/p>",
+            "text": "<p>Brighter than K Constantinople and darker than A Classic Orchestral. A core sound that will cut through any ensemble with a well balanced attack and sustain. Effortless playability and a consistent sound color throughout all dynamic levels. K Symphonic Light – a lighter weight than the K Symphonic.<\/p>",
             "text_style": "body"
           }
         },
@@ -431,7 +431,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Expressions-Of-John-Will-Parks-IV-Thumbnail.jpg",
             "video_url": "https:\/\/www.youtube.com\/watch?v=0qMdRJtVxLU",
-            "article": "artist\/aaron-smith"
+            "article": "artist\/john-will-parks-iv"
           }
         },
         "1bcb4642-7bdf-475c-beb3-d36230fc61ac": {
@@ -439,16 +439,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Expressions-Of-Michael-Burrit-Thumbnail.jpg",
             "video_url": "https:\/\/www.youtube.com\/watch?v=94AlNjRRHgI",
-            "article": "artist\/aaron-gillespie"
-          }
-        },
-        "31276d17-fc8e-4fd5-a0e6-f44b1484be33": {
-          "type": "article",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/img_vid.png",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "article": "artist\/anderson-paak"
+            "article": "artist\/michael-burritt"
           }
         }
       },
@@ -456,11 +447,11 @@
         "template--18433034322212__4803a757-7e31-4693-9d72-92244f5dfdfd-16804826455ecb7e3c-0",
         "template--18433034322212__4803a757-7e31-4693-9d72-92244f5dfdfd-16804826455ecb7e3c-1",
         "9e2e6553-9a0d-4afe-b6bc-9f4554c331e2",
-        "1bcb4642-7bdf-475c-beb3-d36230fc61ac",
-        "31276d17-fc8e-4fd5-a0e6-f44b1484be33"
+        "1bcb4642-7bdf-475c-beb3-d36230fc61ac"
       ],
       "custom_css": [
         ".image-with-text__text p {color: #5c5d60;}",
+        "@media only screen and (max-width: 1100px) and (min-width: 750px){.image-with-text__text{margin-left: -100px; margin-top: 55px; }}",
         "@media screen and (max-width: 749px) {.image-with-text__content .info {position: relative; } .image-with-text__content .info .heading-icon {position: absolute; left: 0; top: 0; width: 80px; } .image-with-text__content .info .text {margin-top: 20px; } .image-with-text__content .info .text .image-with-text__heading {margin-left: 65px; }}"
       ],
       "settings": {
@@ -480,7 +471,7 @@
         "mobile_content_alignment": "left",
         "margin_top": 0,
         "padding_top": 36,
-        "padding_bottom": 48,
+        "padding_bottom": 40,
         "quote": false,
         "icon": "shopify:\/\/shop_images\/K_Con_Series_Page_Logo_2_1.png",
         "max_width": "480"
@@ -522,7 +513,7 @@
         "template--18433034322212__2b9870d7-eeab-4023-bbca-c833ed3b6f79-16804883853ea6d8c0-2"
       ],
       "custom_css": [
-        "@media screen and (max-width: 749px) {.rich-text .rich-text__blocks.contnet-type--inline .rich-text__heading {max-width: 200px; }}",
+        "@media screen and (max-width: 749px) {.rich-text .rich-text__blocks.contnet-type--inline .rich-text__heading {max-width: 200px; } .rich-text.content-container {margin-top: 50px; }}",
         ".rich-text.content-container {margin-bottom: 50px;}"
       ],
       "settings": {

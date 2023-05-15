@@ -150,12 +150,13 @@
               {% render 'icon-close' %}
             </span>
           </summary>
+          <div class="fs-menu-overlay"></div>
           <div id="menu-drawer" class="gradient color-background-1 menu-drawer motion-reduce" tabindex="-1">
             <div class="menu-drawer__inner-container">
               <div class="menu-drawer__navigation-container">
                 <nav class="menu-drawer__navigation">
                   <ul class="menu-drawer__menu has-submenu list-menu" role="list">
-                    {%- for link in section.settings.menu.links -%}                     
+                    {%- for link in section.settings.menu.links -%} 
                       {% if forloop.index == 1 %}
                       {%- for childlink in link.links -%}
                         <li class="submenus --" data-title="{{ link.title }}" >
@@ -200,9 +201,9 @@
                           {%- endif -%}
                         </li>
                       {%- endfor -%}
-                        <!--Brands-->
-                      {%elsif forloop.index == 4 %}
-                        <li class="submenus brand" data-title="{{ link.title }}" >
+                      <!-- Brands, Artist, Education for mobile -->
+                      {%elsif forloop.index == 2 or forloop.index == 3 or forloop.index == 4 %}
+                        <li class="submenus brand submenus-{{ link.title }}" data-title="{{ link.title }}" >
                           <details id="Details-menu-drawer-submenu-brand">
                               <summary class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
                                 {{ link.title | escape }}
@@ -421,6 +422,7 @@
                 {%- if link.links != blank -%}
                   <header-menu>
                     <details id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
+                      <div class="fs-menu-overlay"></div>
                       <summary class="header__menu-item list-menu__item link focus-inset">
                         <span {%- if link.child_active %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
                       </summary>

@@ -82,7 +82,7 @@
               background: white;
               padding-top: 50px;
               width: calc(100% - 400px);
-              padding: 50px 80px;
+              padding: 50px 80px 50px 10px; 
               min-width: 75%;
               @media screen and (max-width: 1400px) {
                 padding: 20px 20px;
@@ -98,14 +98,14 @@
                     .sublinks {
                       width: auto;
                       // flex-grow: initial;
-                      padding-right: 30px;
+                      // padding-right: 30px;
                       @media screen and (max-width: 1200px) {
                         padding-right: 0;
                       }
                       .block {
                         margin-bottom: 50px;
                         img {
-                          max-width: 130px;
+                          // max-width: 130px;
                         }
                       }
                     }
@@ -115,6 +115,7 @@
                   width: calc(70% - var(--grid-desktop-horizontal-spacing));
                   padding: 0;
                   margin-right: auto;
+                  margin-left: auto;
                   padding-bottom: 100px;
                   .grid__item {
                     text-decoration: none;
@@ -132,6 +133,9 @@
                           padding-bottom: 10px;
                           a {
                             font-size: 13px;
+                            @media screen and (min-width: 749px) and (max-width: 1100px) {
+                              font-size: 10px;
+                            }
                           }
                         }
                       }
@@ -143,7 +147,7 @@
                     img {
                       width: 100%;
                       height: auto;
-                      background-color: #F8F8F9;
+                      // background-color: #F8F8F9;
                     }
                     .h5 {
                       text-align: center;
@@ -226,8 +230,12 @@
                     color: black;
                     text-transform: uppercase;
                     margin-top: 0;
+                    text-align: left;
+                    font-size: 40px;
+                    line-height: 45px;
                     @media screen and (max-width: 1200px) {
                       font-size: 24px;
+                      line-height: 30px;
                     }
                   }
                 }
@@ -488,6 +496,42 @@
                           }
                         }
                       }
+                    }
+                  }
+                }
+              }
+              & > li.submenus-Artists{
+                border-bottom: 0;
+                padding-bottom: 0;
+                margin-bottom: 0;
+                @media screen and (max-width: 1400px) {
+                  .nav-brand-card{
+                    .card_title a{
+                      font-size: 15px;
+                      font-weight: 700;
+                    }
+                    p
+                    {
+                      text-align: center;
+                      margin-top: 0;
+                    }
+                  }
+                }
+              }
+              & > li.submenus-Education{
+                border-bottom: 0;
+                padding-bottom: 0;
+                margin-bottom: 0;
+                @media screen and (max-width: 1400px) {
+                  .nav-brand-card{
+                    .card_title a{
+                      font-size: 15px;
+                      font-weight: 700;
+                    }
+                    p
+                    {
+                      text-align: center;
+                      margin-top: 0;
                     }
                   }
                 }
