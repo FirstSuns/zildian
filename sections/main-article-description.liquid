@@ -1,0 +1,241 @@
+<article class="article-template">
+<div class="image-with-text image-with-text--no-overlap   isolate collapse-corners section-543c39e1-2e95-4a79-9cb1-c4edf029d1f7-padding">
+  <div class="image-with-text__grid grid grid--gapless grid--1-col width--medium  ">
+    <div class="image-with-text__media-item  gradient color-background-2 image-with-text__media-item--medium image-with-text__media-item--top grid__item">
+      <div class="image-with-text__media image-with-text__media--adapt global-media-settings media" style="padding-bottom: 55%;">
+        {% for block in section.blocks %}
+          {% assign getblog = block.settings.arti_blg %}
+          {% assign artttl = article.title %}
+          {% if getblog.title == getblog.title  %}
+            <img src="{{ block.settings.get_imm | img_url: 'master'}}" loading="lazy">
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    <div class="image-with-text__text-item grid__item">
+      <div id="ImageWithText--543c39e1-2e95-4a79-9cb1-c4edf029d1f7" class="image-with-text__content horizontal-align-content--middle image-with-text__content--top image-with-text__content--desktop-left image-with-text__content--mobile-left image-with-text__content--adapt gradient color-background-2 content-container">
+        <div class="info" style="max-width: 450px;">
+          <div class="text">
+            {% for block in section.blocks %}
+              {% assign getblog = block.settings.arti_blg %}
+              {% assign artttl = article.title %}
+              {% if getblog.title == getblog.title  %}
+                  <h2 class="image-with-text__heading h2">
+                    {{ block.settings.get_imm2 }}
+                    {% comment %} {{article.title}}'S IN {% endcomment %}
+                  </h2>
+                  <div class="image-with-text__text rte ">
+                    <div class="content">
+                      {{ block.settings.get_imm3 }}
+                    </div>
+                  </div>
+                {% endif %}
+              {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="new-art-imm image-with-text image-with-text--   isolate collapse-corners section-543c39e1-2e95-4a79-9cb1-c4edf029d1f7-padding">
+  <div class="image-with-text__grid grid grid--gapless width--  ">
+    <div class="image-with-text__media-item  gradient color- image-with-text__media-item-- image-with-text__media-item-- grid__item">
+      <div class="image-with-text__media image-with-text__media-- global-media-settings image-with-text__media--placeholder placeholder">
+        {% for block in section.blocks %}
+          {% assign getblog = block.settings.arti_blg %}
+          {% assign artttl = article.title %}
+          {% if getblog.title == getblog.title  %}
+              <h2 class="image-with-text__heading h2 large-up-hide">
+                    {{ block.settings.get_imm21 }}
+              </h2>
+              <img src="{{ block.settings.get_imm2_2 | img_url:'master' }}" loading="lazy">
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    <div class="image-with-text__text-item grid__item">
+      <div id="ImageWithText--543c39e1-2e95-4a79-9cb1-c4edf029d1f7" class="image-with-text__content horizontal-align-content-- image-with-text__content-- image-with-text__content--desktop- image-with-text__content--mobile- image-with-text__content-- gradient color- content-container">
+        <div class="info" style="max-width: px;">
+          <div class="text">
+            {% for block in section.blocks %}
+              {% assign getblog = block.settings.arti_blg %}
+              {% assign artttl = article.title %}
+              {% if getblog.title == getblog.title  %}
+                <h2 class="image-with-text__heading h2 small-hide">
+                  {{ block.settings.get_imm21 }}
+                </h2>
+                <div class="image-with-text__text rte ">
+                  <div class="content">
+                    {{ block.settings.get_imm32 }}
+                    <a href="{{ block.settings.get_imm34 }}">{{ block.settings.get_imm33 }}</a>
+                  </div>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="about-artist-section page-width--narrow page-width">
+  <div class="grid">
+    {% for block in section.blocks %}
+      {% assign getblog = block.settings.arti_blg %}
+      {% assign artttl = article.title %}
+      {% if getblog.title == getblog.title  %}
+        <div class="title">
+          <h2 class="h1">{{block.settings.Artists_Title}}'s IN <span>3</span></h2>
+        </div>
+        <div class="image">
+          <div class="media" style="padding-bottom: 130%;">
+            <img src="{{block.settings.artist_img | img_url: 'master'}}" loading="lazy" width="356" height="485" >
+          </div>
+        </div>
+        <div class="content">
+          <div class="info">
+            <ul>
+              <li>{{ block.settings.quest }}</li>
+              <li>{{ block.settings.quest2 }}</li>
+              <li>{{ block.settings.quest3 }}</li>
+            </ul>
+          </div>
+        </div>
+        {% endif %}
+    {% endfor %}
+  </div>
+</div>
+</article>
+<style>
+  .section-543c39e1-2e95-4a79-9cb1-c4edf029d1f7-padding{
+    padding-top: 100px;
+    padding-bottom: 36px;
+  }.isolate {
+    position: relative;
+    z-index: 0;
+}.image-with-text .image-with-text__grid.width--medium .image-with-text__media-item, .image-with-text .image-with-text__grid.width--medium .image-with-text__text-item {
+    width: 50%;
+}.image-with-text__content {
+    {% comment %} padding: 6rem 5rem 7rem; {% endcomment %}
+    padding: 1rem 5rem;
+}.image-with-text .image-with-text__grid .image-with-text__text-item .image-with-text__content.horizontal-align-content--middle .info {
+    margin: auto;
+}.image-with-text__media img {
+    object-fit: contain;
+}.new-art-imm .image-with-text__content {
+    padding-top: 20px;
+}.new-art-imm h2.image-with-text__heading.h2 {
+    margin-top: 0;
+}
+.article-template .image-with-text .image-with-text__grid .image-with-text__text-item{
+    margin-top: 0px;
+}
+.article-template .about-artist-section{
+  padding: 0 10px;
+}
+@media only screen and (max-width: 767px) {
+.image-with-text .image-with-text__grid.width--medium .image-with-text__media-item, .image-with-text .image-with-text__grid.width--medium .image-with-text__text-item {
+    width: 100%;
+}
+}
+</style>
+{% schema %}
+  {
+    "name": "Artist Decription",
+    "blocks": [
+        {
+          "type": "text",
+          "name": "Description Portion",
+          "settings":[
+            {
+              "type": "article",
+              "id": "arti_blg",
+              "label": "Select Article"
+            },
+            {
+              "type": "header",
+              "content": "Image With text"
+            },
+            {
+              "type": "image_picker",
+              "id": "get_imm",
+              "label": "Image"
+            },
+            {
+              "type": "text",
+              "id": "get_imm2",
+              "label": "Title"
+            },
+            {
+              "type": "richtext",
+              "id": "get_imm3",
+              "label": "Content"
+            },
+            {
+              "type": "header",
+              "content": "Image With text"
+            },
+            {
+              "type": "image_picker",
+              "id": "get_imm2_2",
+              "label": "Image"
+            },
+            {
+              "type": "text",
+              "id": "get_imm21",
+              "label": "Title"
+            },
+            {
+              "type": "html",
+              "id": "get_imm32",
+              "label": "Content"
+            },
+            {
+              "type": "text",
+              "id": "get_imm33",
+              "label": "BUtton Text"
+            },
+            {
+              "type": "url",
+              "id": "get_imm34",
+              "label": "Link"
+            },
+            {
+              "type": "header",
+              "content": "About Artist"
+            },
+            {
+              "type": "text",
+              "id": "Artists_Title",
+              "label": "Title"
+            },
+            {
+              "type": "image_picker",
+              "id": "artist_img",
+              "label": "Image"
+            },
+            {
+              "type": "html",
+              "id": "quest",
+              "label": "Question text 1"
+            },
+            {
+              "type": "html",
+              "id": "quest2",
+              "label": "Question text 2"
+            },
+            {
+              "type": "html",
+              "id": "quest3",
+              "label": "Question text 3"
+            }
+          ] 
+        }
+    ],
+    "presets":[
+      {
+        "name": "Main Artist Article"
+      }
+    ]
+  }
+{% endschema %}

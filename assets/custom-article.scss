@@ -6,6 +6,9 @@
       @media screen and (max-width: 989px) {
         padding-bottom: 100%;
       }
+      img{
+        object-position: top;
+      }
     }
     .content {
       position: absolute;

@@ -119,6 +119,7 @@
         max-width: 560px;
         text-align: center;
         margin: auto;
+        font-style: italic;
       }
     }
   }
@@ -271,7 +272,7 @@
               justify-content: center;
               background: var(--gradient-base-accent-1);
               border-radius: 50%;
-              top: -4px;
+              top: 3px;
               left: -50px;
               font-weight: 700;
             }

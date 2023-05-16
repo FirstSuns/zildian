@@ -416,8 +416,8 @@
         {% assign product_name = product.title %}
         {% if product.variants.size > 1 %}{% assign product_name = variant.title %}{% endif %}
 		{
-		   name: '{{ product_name | replace: "+", " " }}',
-		   description: "{{ product_name | escape }}",
+		   name: `{{ product_name | replace: "+", " " }}`,
+		   description: `{{ product_name | escape }}`,
 		   page_id_variant: "{{variant.id}}",
 		   upc: "{{ variant.barcode }}"
 		}{% if forloop.last == false %}, {% endif %} {% endfor %}

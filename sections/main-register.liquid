@@ -176,9 +176,12 @@
             >
             <label for="confirm-password">
               Confirm Password
-            </label> 
+            </label>
+            
           </div>
-          
+          <p id="confirm-password-lb" style="display:none;    text-align: left;    font-size: 11px;    color: #FF0000;">
+            Passwords Don't Match
+          </p>  
           
           <button>
             SIGN UP
@@ -198,8 +201,10 @@
       if(password.value != confirm_password.value) {
         event.preventDefault();
         confirm_password.setCustomValidity("Passwords Don't Match");
+        $('#confirm-password-lb').css('display','block');
       }
       else{
+         $('#confirm-password-lb').css('display','none');
       }
     }
     $(document).ready(function(){ 

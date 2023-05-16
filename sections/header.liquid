@@ -653,8 +653,8 @@
           -%}
         </span>
       </a>
-
-      <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
+      
+      <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble" {% unless template =='cart' %}  {% endunless %}>
         {%- liquid
           if cart == empty
             render 'icon-cart-empty'

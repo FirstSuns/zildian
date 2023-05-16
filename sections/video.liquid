@@ -24,6 +24,16 @@
       padding-bottom: {{ 1 | divided_by: section.settings.cover_image.aspect_ratio | times: 100 }}%!important;
     }
   }
+  {% comment %} {% if template == 'article.artist'%}
+    {% if article.metafields.custom.after_excerpt_video == blank %}
+      .video-section{
+          display: none;
+        }
+    {% else %}
+    {% endif %}
+  {% endif %}
+  {% if template == 'article.artist' and  article.metafields.custom.after_excerpt_video != blank %}
+  {% endif %} {% endcomment %}
 {%- endstyle -%}
 
 <div data-section-type="video" class="color-{{ section.settings.color_scheme }} gradient">

@@ -23,6 +23,9 @@
         "template--18142515003684__3141c904-b6a6-4f2b-a1fe-aa2b9e911af8-1679425999b0455fe5-0",
         "a3ac0576-b9aa-4349-a2ad-d335ddda5f42"
       ],
+      "custom_css": [
+        ".media > img {object-position: top;}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/hero.png",
         "mobile_image": "shopify:\/\/shop_images\/Rectangle_5_15ba9a85-8322-4b1c-bf00-746a6f8030da.png",
@@ -55,7 +58,7 @@
     "f891b902-2f1c-4e5e-85fa-82261c0b4e4d": {
       "type": "title-section",
       "settings": {
-        "title": "Aaron Smith"
+        "title": "• Aaron Smith"
       }
     },
     "d5384b51-da84-42f6-ae5a-9a680c08a677": {
@@ -127,9 +130,9 @@
         "template--18839560782116__de0c46b6-7298-4eaa-a3bf-f37193b0319a-1683264947df33e875-0"
       ],
       "custom_css": [
-        "h2 {font-size: 24px;}",
+        "h2 {font-size: 24px; margin-top: 0 !important; text-transform: uppercase;}",
         "h2.rich-text__heading.rte.h4 {display: none;}",
-        "h2 {margin-top: 0 !important;}"
+        "@media only screen and (max-width: 767px) {h2 {font-size: 15px; }}"
       ],
       "settings": {
         "desktop_content_position": "center",

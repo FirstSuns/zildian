@@ -62,7 +62,8 @@
       <div class="text">
         {{section.settings.text}}
       </div>
-      {%- form 'contact', id: 'ContactForm', class: 'isolate' -%}
+      <div style="margin:0 auto;" class="pxFormGenerator" id="8ErZyAXAKNFKC_BfobjPmg"></div>
+      {% comment %} {%- form 'contact', id: 'ContactForm', class: 'isolate' -%}
         {%- if form.posted_successfully? -%}
           <p class="form-status form-status-list form__message" tabindex="-1" autofocus>
             {% render 'icon-success' %}
@@ -169,7 +170,7 @@
             SEND MESSAGE
           </button>
         </div>
-      {%- endform -%}
+      {%- endform -%} {% endcomment %}
     </div>
   </div>
 </div>

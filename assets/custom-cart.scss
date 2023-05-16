@@ -174,7 +174,7 @@ cart-items {
     }
   }
   .cart__items {
-    border-top: 1px solid #D1D2D4;
+    // border-top: 1px solid #D1D2D4;
     .cart-items {
       thead {
         display: none;
@@ -188,6 +188,7 @@ cart-items {
           grid-template: repeat(2,auto)/1fr 1fr 1fr auto;
           gap: 1.5rem;
           margin-bottom: 0;
+          border-top: 1px solid #D1D2D4;
           .cart-item__details {
             grid-column: 1 / 4;
             width: 100%;

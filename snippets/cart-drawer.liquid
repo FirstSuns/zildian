@@ -74,7 +74,7 @@
         {% assign left_price = settings.free_shipping_limit | times: 100 | minus: total_price %}
         {% if left_price > 0 %}
             {% capture progress_text %}
-              {{ left_price | money }} more till free shipping
+              {{ left_price | money }} more until free shipping
             {% endcapture %}
         {% elsif left_price < 1 %}
             {% capture progress_text %}

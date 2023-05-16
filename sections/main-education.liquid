@@ -1,7 +1,7 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
 {{ 'custom-education.scss.css' | asset_url | stylesheet_tag  }}
 <article class="article-template" itemscope itemtype="http://schema.org/BlogPosting">
-   {% include 'breadcrumbs' %}
+   {% comment %}{% include 'breadcrumbs' %}{% endcomment %}
   {%- for block in section.blocks -%}
     {%- case block.type -%}
       {%- when '@app' -%}
@@ -63,7 +63,8 @@
         {%- endif -%}
       {%- when 'title' -%}
         <header class="page-width page-width--narrow" {{ block.shopify_attributes }}>
-          <h2 class="article-template__title center" itemprop="headline">{% comment %}{{ article.title | escape }}{% endcomment %}
+          <h2 class="article-template__title center" itemprop="headline">
+               {% comment %}{{ article.title | escape }}{% endcomment %}
                {{ article.metafields.custom.article_title }}
           </h2>
           <div class="article-template__excerpt">
