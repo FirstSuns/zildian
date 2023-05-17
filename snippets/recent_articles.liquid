@@ -59,7 +59,7 @@
                       {{ r_article.title | truncate: 50 | escape }}  <span class="icon-wrap">{% render 'icon-arrow' %}</span>
                     </a>
                   </h3>
-                  <p>{{r_article.metafields.global.author}}</p>
+                  {% comment %} <p>{{r_article.metafields.global.affiliation}}</p> {% endcomment %}
                 </div>
               </div>
             </div>

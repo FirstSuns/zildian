@@ -170,6 +170,7 @@
         "d3e13dda-2ea7-46a5-9268-e3f2978d3fec"
       ],
       "custom_css": [
+        ".image-with-text__text p{color: #5C5D60;}",
         "@media screen and (max-width: 749px) {.image-with-text__heading {font-size: 32px; }}"
       ],
       "settings": {

@@ -250,7 +250,7 @@
           "settings": {
             "heading": "STADIUM",
             "heading_link": "shopify:\/\/collections\/cymbals-band-orchestral-a-orchestral-stadium",
-            "heading_size": "h1",
+            "heading_size": "h2",
             "heading_color": "",
             "max_width": ""
           }
@@ -552,7 +552,7 @@
         "padding_top": 36,
         "padding_bottom": 100,
         "quote": false,
-        "icon": "shopify:\/\/shop_images\/422-X-369-PNG-A-Logo_87eb9aaa-1e04-455b-8d51-ec27379c275e.png",
+        "icon": "shopify:\/\/shop_images\/A-logo.png",
         "max_width": "480"
       }
     },

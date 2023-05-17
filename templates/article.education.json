@@ -39,8 +39,9 @@
         "template--18412851200292__230bc92f-b8d9-46db-823f-3f07d0207a2e-168320023775a68c6f-2"
       ],
       "custom_css": [
-        "h2 {color: #fff; font-size: 50px;}",
-        ".banner__box .banner__heading + * {margin-top: 10px; color: #fff; font-size: 17px; font-weight: 600; margin-bottom: 30px;}"
+        "h2 {color: #fff;}",
+        ".banner__box .banner__heading + * {margin-top: 10px; color: #fff; font-size: 17px; font-weight: 600; margin-bottom: 30px;}",
+        "@media screen and (min-width: 750px) {h2 {font-size: 50px; }}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/hero_cef57bf8-2b34-4aab-9897-76ff4113cbd4.jpg",
@@ -63,6 +64,23 @@
         "padding_bottom": 36
       }
     },
+    "bcdf90f1-4086-4928-badd-e926a4348af7": {
+      "type": "main-education-header",
+      "blocks": {
+        "bd2cf5a6-09fe-455c-9f4d-55c3c33349dd": {
+          "type": "text",
+          "settings": {
+            "arti_blg": "education\/01-introduction-and-history-of-the-art-of-bop-drumming-method",
+            "ifram_ttl": "LESSON 02: LEARN ABOUT DRUMSTICKS",
+            "ifram_ttl2": "<p>In Lesson Two, you'll learn everything you need to know about DRUMSTICKS. From which size might be best to start out with to the 5 determining factors that makes a stick feel the way it does.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "bd2cf5a6-09fe-455c-9f4d-55c3c33349dd"
+      ],
+      "settings": {}
+    },
     "1fe0e7e1-77d0-4ca4-8967-bec6be240369": {
       "type": "main-education-description",
       "blocks": {
@@ -70,8 +88,6 @@
           "type": "text",
           "settings": {
             "arti_blg": "education\/01-introduction-and-history-of-the-art-of-bop-drumming-method",
-            "ifram_ttl": "LESSON 02: LEARN ABOUT DRUMSTICKS",
-            "ifram_ttl2": "<p>In Lesson Two, you'll learn everything you need to know about DRUMSTICKS. From which size might be best to start out with to the 5 determining factors that makes a stick feel the way it does.<\/p>",
             "ifram_id": "https:\/\/www.youtube.com\/embed\/wvRCKBlESGg",
             "iframe_cap": "Image caption exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "desc_txt": "<h2>LESSON 02: LEARN ABOUT DRUMSTICKS<\/h2><h3>LESSON 02: LEARN ABOUT DRUMSTICKS<\/h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p><ul><li>Lorem ipsum dolor sit amet<\/li><li>Lorem ipsum dolor sit amet<\/li><li>Lorem ipsum dolor sit amet<\/li><li>Lorem ipsum dolor sit amet<\/li><\/ul>",
@@ -81,20 +97,50 @@
             "ifram_id4": "https:\/\/www.youtube.com\/embed\/wvRCKBlESGg",
             "ifram_id5": "https:\/\/www.youtube.com\/embed\/wvRCKBlESGg",
             "quote2": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
-            "quote3": "<p>“Caption\/quote Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”<\/p>",
-            "Artists_Title": "01: INTRODUCTION AND HISTORY OF THE ART OF BOP BRUMMING METHOD'S IN",
-            "artist_img": "shopify:\/\/shop_images\/cell_d481323b-25ef-4d04-b1f4-247edcd24b41.png",
-            "quest": "<ul><li>Critically acclaimed performer, author and teacher, John Riley has worked with the world's leading Jazz musicians for over 40 years. A four time GRAMMY award winner and 14 time nominee, John has played on hundreds of recordings and at major venues with Miles Davis, Dizzy Gillespie, Stan Getz, Woody Herman, John Scofield, Joe Lovano, Bob Mintzer, The Carnegie Hall Jazz Band, the Vanguard Jazz Orchestra and many others.<\/li><\/ul>",
-            "quest2": "<ul><li>John is the author of The Art of Bop Drumming, currently published in five languages, Beyond Bop Drumming, The Jazz Drummer's Workshop and the DVD The Master Drummer.<\/li><\/ul>",
-            "quest3": "<ul><li>John has a BM in Jazz Studies from the University of North Texas, 1975, and an MM in Jazz Studies from the Manhattan School of Music, 1985. He is on the faculty of Manhattan School of Music and Kutztown University, an Artist in Residence at the Amsterdam Conservatory in Holland and has given master classes around the world.<\/li><\/ul>",
-            "get_imm": "shopify:\/\/shop_images\/cell_1.png",
-            "get_imm2": "01: INTRODUCTION AND HISTORY OF THE ART OF BOP BRUMMING METHOD'S SETUP:",
-            "get_imm3": "<p>1. 14\" K Dark This Hihat(pair)*<br\/>2. 22\" K Custom Dry Complex Ride*<br\/>3. 22\" K Custom Dry Ride (Re-Lathed and Hammered) *<br\/>4. 1970'S 20\" Swish *<br\/>5. 22\" K Constantinople Renaissance Ride<br\/>6. John Riley Artist Series Drumsticks<br\/><br\/><br\/>* May be prototype<\/p>"
+            "quote3": "<p>“Caption\/quote Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”<\/p>"
           }
         }
       },
       "block_order": [
         "a9051126-0fa6-4b0f-b97e-58b9830a753b"
+      ],
+      "settings": {}
+    },
+    "f9a9ea75-a3fc-40a5-965f-6135c01a1bf6": {
+      "type": "main-education-question-section",
+      "blocks": {
+        "0bcf0836-a5f0-46c5-a962-4c34ffa2415a": {
+          "type": "text",
+          "settings": {
+            "arti_blg": "education\/01-introduction-and-history-of-the-art-of-bop-drumming-method",
+            "Artists_Title": "JOHN RILEY",
+            "artist_img": "shopify:\/\/shop_images\/cell_d481323b-25ef-4d04-b1f4-247edcd24b41.png",
+            "quest": "<ul><li>Critically acclaimed performer, author and teacher, John Riley has worked with the world's leading Jazz musicians for over 40 years. A four time GRAMMY award winner and 14 time nominee, John has played on hundreds of recordings and at major venues with Miles Davis, Dizzy Gillespie, Stan Getz, Woody Herman, John Scofield, Joe Lovano, Bob Mintzer, The Carnegie Hall Jazz Band, the Vanguard Jazz Orchestra and many others.<\/li><\/ul>",
+            "quest2": "<ul><li>John is the author of The Art of Bop Drumming, currently published in five languages, Beyond Bop Drumming, The Jazz Drummer's Workshop and the DVD The Master Drummer.<\/li><\/ul>",
+            "quest3": "<ul><li>John has a BM in Jazz Studies from the University of North Texas, 1975, and an MM in Jazz Studies from the Manhattan School of Music, 1985. He is on the faculty of Manhattan School of Music and Kutztown University, an Artist in Residence at the Amsterdam Conservatory in Holland and has given master classes around the world.<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "0bcf0836-a5f0-46c5-a962-4c34ffa2415a"
+      ],
+      "settings": {}
+    },
+    "7fc132ac-a586-451f-8a71-acec26bc3eab": {
+      "type": "main-education-image-with-text",
+      "blocks": {
+        "b427f0d3-a0fa-46b3-900d-710394508e89": {
+          "type": "text",
+          "settings": {
+            "arti_blg": "education\/01-introduction-and-history-of-the-art-of-bop-drumming-method",
+            "get_imm": "shopify:\/\/shop_images\/cell_1.png",
+            "get_imm2": "JOHN RILEY'S SETUP:",
+            "get_imm3": "<p>1. 14\" K Dark This Hihat(pair)*<br\/>2. 22\" K Custom Dry Complex Ride*<br\/>3. 22\" K Custom Dry Ride (Re-Lathed and Hammered) *<br\/>4. 1970'S 20\" Swish *<br\/>5. 22\" K Constantinople Renaissance Ride<br\/>6. John Riley Artist Series Drumsticks<br\/><br\/><br\/>* May be prototype<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "b427f0d3-a0fa-46b3-900d-710394508e89"
       ],
       "settings": {}
     },
@@ -243,7 +289,10 @@
   },
   "order": [
     "230bc92f-b8d9-46db-823f-3f07d0207a2e",
+    "bcdf90f1-4086-4928-badd-e926a4348af7",
     "1fe0e7e1-77d0-4ca4-8967-bec6be240369",
+    "f9a9ea75-a3fc-40a5-965f-6135c01a1bf6",
+    "7fc132ac-a586-451f-8a71-acec26bc3eab",
     "main",
     "6c0669ad-94cc-40dd-8aca-4ef8667940f7",
     "552513de-3e1b-4347-be33-6227568d2ff3"

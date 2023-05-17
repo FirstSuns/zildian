@@ -187,14 +187,47 @@
           "settings": {
             "arti_blg": "artist\/tosh-perterson",
             "get_imm": "shopify:\/\/shop_images\/History-Photo-1_2_2_cf135d1f-dfbe-464e-900b-6eb397682ff2.jpg",
-            "get_imm2": "TOSH PERTERSON'S SETUP:",
-            "get_imm3": "<p>1.14\" HiHats - K Constantinople (top), K Custom Session (bottom) *<br\/>2.Stack - 9\" FX Oriental Trash Splash (bottom), 6\" Splash (top) *<br\/><strong>3.19\" K Dark Thin Crashes<br\/>4.22\" K Custom High Definition Ride<br\/>5.10\" FX China Trash<\/strong><br\/>6.15\" FX Azuka Latin Multi-Crash *<br\/>7.16\" K Dark Thin Crashes<\/p><p>* May be prototype<\/p>",
+            "get_imm2": "{{ article.title }}'S SETUP:",
+            "get_imm3": "<p>1.14\" HiHats - K Constantinople (top), K Custom Session (bottom) *<br\/>2.Stack - 9\" FX Oriental Trash Splash (bottom), 6\" Splash (top) *<br\/><strong>3.19\" K Dark Thin Crashes<br\/>4.22\" K Custom High Definition Ride<br\/>5.10\" FX China Trash<\/strong><br\/>6.15\" FX Azuka Latin Multi-Crash *<br\/>7.16\" K Dark Thin Crashes<\/p><p>* May be prototype<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "85db0049-7e45-4a7e-9a88-57bcd7c069c3"
+      ],
+      "custom_css": [
+        ".image-with-text__heading.h2 {text-transform: uppercase;}"
+      ],
+      "settings": {}
+    },
+    "34758241-3bd5-42d4-9f75-11681aa19355": {
+      "type": "main-article-image-with-text",
+      "blocks": {
+        "1e484bb5-34aa-4b2d-b407-39972304e80d": {
+          "type": "text",
+          "settings": {
+            "arti_blg": "artist\/tosh-perterson",
             "get_imm2_2": "shopify:\/\/shop_images\/k1116-angle-shot_1_2e2b38d0-d547-4ad2-ac7b-888d2283bee7.png",
             "get_imm21": "TOSH PERTERSON’S GO-TO’S",
             "get_imm32": "<p class=\"fam0p\">A Family<\/p>\n<p class=\"fam0p-nth\">FX CRASHES OF DOOM<\/p>\n<p class=\"last-chll\">Monstrous, explosive FX cymbal that delivers booming trash crashes, dry stick sound, and a broad sustain rich with dark, exotic overtones.<\/p>",
             "get_imm33": "Shop Now 🡢",
-            "get_imm34": "",
-            "Artists_Title": "TOSH PERTERSON'S IN",
+            "get_imm34": "\/products\/fx-crashes-of-doom"
+          }
+        }
+      },
+      "block_order": [
+        "1e484bb5-34aa-4b2d-b407-39972304e80d"
+      ],
+      "settings": {}
+    },
+    "e7781307-f31f-4a54-95ff-5595afb29365": {
+      "type": "main-article-question-section",
+      "blocks": {
+        "1916c0ab-25a4-405d-acbf-b778c2e7f8f6": {
+          "type": "text",
+          "settings": {
+            "arti_blg": "artist\/tosh-perterson",
+            "Artists_Title": "TOSH PERTERSON",
             "artist_img": "shopify:\/\/shop_images\/cell_8b44a16f-1244-44b6-b421-56096833934d.png",
             "quest": "<p class=\"first-pp\">WHAT INSPIRES YOU?<\/p>\n<p>My wife and children inspire me the most. A strong second would be all of my close friends. They push me to be greater at what I do everyday.<\/p>",
             "quest2": "<p class=\"first-pp\">WORDS OF WISDOM FOR THE NEXT GENERATION OF DRUMMERS<\/p>\n<p>Never compare your gift to others! What's for you will always be for you. Just be ready when your time comes.<\/p>",
@@ -203,12 +236,13 @@
         }
       },
       "block_order": [
-        "85db0049-7e45-4a7e-9a88-57bcd7c069c3"
+        "1916c0ab-25a4-405d-acbf-b778c2e7f8f6"
       ],
       "settings": {}
     },
     "e540f275-c0cb-456e-9ebf-7125e1d7cd8a": {
       "type": "video",
+      "custom_css": [],
       "settings": {
         "heading": "BEHIND THE KIT",
         "heading_size": "h1",
@@ -264,7 +298,8 @@
         "template--18305496580388__97e8c916-868c-40ca-bc78-69a8202d6384-1683531071464379f1-2"
       ],
       "custom_css": [
-        "h2 {font-size: 24px;}"
+        "h2 {font-size: 24px;}",
+        "@media screen and (max-width: 767px) {h2 {font-size: 13px; font-weight: 400; text-transform: capitalize; margin-top: 15px; margin-bottom: 35px; max-width: 260px; }}"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -315,6 +350,8 @@
     "1d7f6cba-bed1-49a9-95ae-1250bcab6a90",
     "main",
     "739072ab-dc09-4b92-a996-7be196ed69cb",
+    "34758241-3bd5-42d4-9f75-11681aa19355",
+    "e7781307-f31f-4a54-95ff-5595afb29365",
     "e540f275-c0cb-456e-9ebf-7125e1d7cd8a",
     "97e8c916-868c-40ca-bc78-69a8202d6384",
     "4e376b5d-654c-4027-a078-b4fc0245f366",

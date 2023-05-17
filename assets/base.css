@@ -2885,7 +2885,8 @@ details-disclosure > details {
   border-color: rgba(var(--color-badge-border), var(--alpha-badge-border));
   color: rgb(var(--color-foreground));
   word-break: break-word;
-  text-transform: capitalize;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .gradient {

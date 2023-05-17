@@ -1,47 +1,39 @@
 <article class="article-template">
-<div class="image-with-text image-with-text--no-overlap   isolate collapse-corners section-543c39e1-2e95-4a79-9cb1-c4edf029d1f7-padding">
-  <div class="image-with-text__grid grid grid--gapless grid--1-col width--medium  ">
-    <div class="image-with-text__media-item  gradient color-background-2 image-with-text__media-item--medium image-with-text__media-item--top grid__item">
-      <div class="image-with-text__media image-with-text__media--adapt global-media-settings media" style="padding-bottom: 55%;">
+<div class="new-art-imm image-with-text image-with-text--   isolate collapse-corners section-543c39e1-2e95-4a79-9cb1-c4edf029d1f7-padding">
+  <div class="image-with-text__grid grid grid--gapless width--  ">
+    <div class="image-with-text__media-item  gradient color- image-with-text__media-item-- image-with-text__media-item-- grid__item">
+      <div class="image-with-text__media image-with-text__media-- global-media-settings image-with-text__media--placeholder placeholder">
         {% for block in section.blocks %}
           {% assign getblog = block.settings.arti_blg %}
           {% assign artttl = article.title %}
           {% if getblog.title == getblog.title  %}
-            <img src="{{ block.settings.get_imm | img_url: 'master'}}" loading="lazy">
+              <h2 class="image-with-text__heading h2 large-up-hide">
+                    {{ block.settings.get_imm21 }}
+              </h2>
+              <img src="{{ block.settings.get_imm2_2 | img_url:'master' }}" loading="lazy">
           {% endif %}
         {% endfor %}
       </div>
     </div>
     <div class="image-with-text__text-item grid__item">
-      <div id="ImageWithText--543c39e1-2e95-4a79-9cb1-c4edf029d1f7" class="image-with-text__content horizontal-align-content--middle image-with-text__content--top image-with-text__content--desktop-left image-with-text__content--mobile-left image-with-text__content--adapt gradient color-background-2 content-container">
-        <div class="info" style="max-width: 450px;">
+      <div id="ImageWithText--543c39e1-2e95-4a79-9cb1-c4edf029d1f7" class="image-with-text__content horizontal-align-content-- image-with-text__content-- image-with-text__content--desktop- image-with-text__content--mobile- image-with-text__content-- gradient color- content-container">
+        <div class="info" style="max-width: px;">
           <div class="text">
             {% for block in section.blocks %}
               {% assign getblog = block.settings.arti_blg %}
               {% assign artttl = article.title %}
               {% if getblog.title == getblog.title  %}
-                  <h2 class="image-with-text__heading h2">
-                    {{ block.settings.get_imm2 }}
-                    {% comment %} {{article.title}}'S IN {% endcomment %}
-                  </h2>
-                  <div class="image-with-text__text rte ">
-                    <div class="content" 1>
-                      {% if article.metafields.global.cymbals_setup != blank %}
-                        {% assign cymblas_list = article.metafields.global.cymbals_setup | split: ","  %}
-                        <ol>
-                        {% for cymblas_item in cymblas_list %}
-                          <li>{{cymblas_item}}</li>
-                        {% endfor %}
-                        </ol>
-                        <p>* May be prototype</p>
-                      {%  else %}
-                      {{ block.settings.get_imm3 }}
-                      {% endif %}
-                      
-                    </div>
+                <h2 class="image-with-text__heading h2 small-hide">
+                  {{ block.settings.get_imm21 }}
+                </h2>
+                <div class="image-with-text__text rte ">
+                  <div class="content">
+                    {{ block.settings.get_imm32 }}
+                    <a href="{{ block.settings.get_imm34 }}">{{ block.settings.get_imm33 }}</a>
                   </div>
-                {% endif %}
-              {% endfor %}
+                </div>
+              {% endif %}
+            {% endfor %}
           </div>
         </div>
       </div>
@@ -84,7 +76,7 @@
 </style>
 {% schema %}
   {
-    "name": "Artist Decription",
+    "name": "Artist Image Text",
     "blocks": [
         {
           "type": "text",
@@ -101,25 +93,35 @@
             },
             {
               "type": "image_picker",
-              "id": "get_imm",
+              "id": "get_imm2_2",
               "label": "Image"
             },
             {
               "type": "text",
-              "id": "get_imm2",
+              "id": "get_imm21",
               "label": "Title"
             },
             {
-              "type": "richtext",
-              "id": "get_imm3",
+              "type": "html",
+              "id": "get_imm32",
               "label": "Content"
+            },
+            {
+              "type": "text",
+              "id": "get_imm33",
+              "label": "BUtton Text"
+            },
+            {
+              "type": "url",
+              "id": "get_imm34",
+              "label": "Link"
             }
-          ] 
+          ]
         }
     ],
-    "presets":[
+    "presets": [
       {
-        "name": "Main Artist Article"
+        "name": "Artist New IMage With Text"
       }
     ]
   }

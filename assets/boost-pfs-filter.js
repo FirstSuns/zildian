@@ -107,7 +107,7 @@ if (typeof boostPFSThemeConfig !== 'undefined') {
 
     // Add Vendor
     itemHtml = itemHtml.replace(/{{itemVendor}}/g, buildVendor(data));
-    console.log(data.metafields)
+    //console.log(data.metafields)
     // Add main attribute (Always put at the end of this function)
     itemHtml = itemHtml.replace(/{{itemId}}/g, data.id);
     itemHtml = itemHtml.replace(/{{itemTitle}}/g, data.title);
@@ -125,7 +125,15 @@ if (typeof boostPFSThemeConfig !== 'undefined') {
   /************************** END BUILD PRODUCT LIST **************************/
   /************************** BUILD PRODUCT ITEM ELEMENTS **************************/
   function buildImages(data) {
+    
     var html = '';
+    for( var item in data.metafields )
+    {
+      if(data.metafields[item].key == 'product_flag' && data.metafields[item].value =='BEST SELLER'){
+        
+        html += '<div class="fs_flag_best_seller">BEST SELLER</div>';
+      }
+    }
     if (images && Array.isArray(images) && images.length > 0) {
       html += '<div class="card__media">';
       var aspectRatio = '',

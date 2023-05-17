@@ -189,7 +189,7 @@
         "template--18142514905380__079b5030-d8b0-4d99-95f9-6e125c31b917-167909267389e267af-2"
       ],
       "custom_css": [
-        ".fs-cover-layer{display: block !important; position: absolute; width: 100%; height: 100%; z-index: 1; background: linear-gradient( 180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 1) 100% );}"
+        ".fs-cover-layer {display: block !important; position: absolute; width: 100%; height: 100%; z-index: 1; background: linear-gradient( 180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 1) 100% );}"
       ],
       "settings": {
         "side_banner": false,
@@ -231,7 +231,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "player-favorites",
+        "collection": "400th-anniversary-apparel-stick",
         "products_to_show": 25,
         "columns_desktop": 3,
         "full_width": false,
@@ -732,52 +732,13 @@
         "max_width": ""
       }
     },
-    "16793799636a54b011": {
-      "type": "apps",
-      "blocks": {
-        "cb08e9e4-3002-4a47-a4cc-30af16b92a3b": {
-          "type": "shopify:\/\/apps\/shoppable-instagram-ugc\/blocks\/custom_minifeed\/e2616dfe-fbb6-4e7d-874d-d250b973556d",
-          "disabled": true,
-          "settings": {
-            "foreground_color": "#ffffff",
-            "background_color": "#000000",
-            "background_color_alpha": 90,
-            "post_spacing": 1,
-            "hover_margin": 0,
-            "rows": 2,
-            "columns": 6,
-            "target_blank": false,
-            "show_icon": true,
-            "show_text": false,
-            "show_date": false,
-            "call_to_action": "SHOP IT",
-            "shop_type": "button",
-            "body_font_size": 14,
-            "body_font": "helvetica_n4",
-            "accent_font_size": 14,
-            "accent_font": "helvetica_n4",
-            "override_feed_id": "",
-            "arbitrary_attributes": "",
-            "custom_css": "",
-            "custom_js": ""
-          }
-        }
-      },
-      "block_order": [
-        "cb08e9e4-3002-4a47-a4cc-30af16b92a3b"
-      ],
-      "custom_css": [],
-      "settings": {
-        "include_margins": true
-      }
-    },
     "471eed3a-57b7-4491-b520-c87d81ac19d6": {
       "type": "custom-liquid",
       "custom_css": [
         "@media screen and (max-width: 749px) {.fs-slider-container {margin-bottom: -81px; }}"
       ],
       "settings": {
-        "custom_liquid": "<script src=\"\/\/foursixty.com\/media\/scripts\/fs.slider.v2.5.js\" data-feed-id=\"zildjian-company\" data-theme=\"slider_v2_5\" data-open-links-in-same-page=\"true\" data-cell-size=\"20%\"><\/script>\n <style>.fs-has-links { display:none; } .fs-wrapper { height:auto; } .fs-slider_v2_5  .fs-entry-container { height:0 !important;width:20%!important;padding-top:20%!important; } .fs-wrapper div.fs-text-container .fs-entry-title, div.fs-detail-title { font-family:Times New Roman, serif;font-style:normal;font-weight:normal;font-size:14px; } div.fs-text-container .fs-entry-date, div.fs-detail-container .fs-post-info, div.fs-wrapper div.fs-has-links::after, .fs-text-product, .fs-overlink-text { font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:14px; } .fs-wrapper div.fs-text-container * { color:#ffffff; } .fs-wrapper div.fs-text-container { background-color:rgba(0, 0, 0, 0.8);margin:0px; } div.fs-entry-date { display:none; } div.fs-entry-title { display:none; } .fs-slider_v2_5 .fs-wrapper div.fs-timeline-entry { margin:1px; } <\/style>",
+        "custom_liquid": "<script src=\"\/\/foursixty.com\/media\/scripts\/fs.slider.v2.5.js\" data-feed-id=\"zildjian-company\" data-theme=\"slider_v2_5\" data-open-links-in-same-page=\"true\" data-connector-filter=\"53664\" data-cell-size=\"20%\"><\/script>\n<style>.fs-has-links::after { padding:5px 7.5px;background-color:#ffffff;color:rgba(0, 0, 0, 0.8);content:\"SHOP IT\"; } .fs-wrapper { height:auto; } .fs-slider_v2_5  .fs-entry-container { height:0 !important;width:20%!important;padding-top:20%!important; } .fs-wrapper div.fs-text-container .fs-entry-title, div.fs-detail-title { font-family:Times New Roman, serif;font-style:normal;font-weight:normal;font-size:14px; } div.fs-text-container .fs-entry-date, div.fs-detail-container .fs-post-info, div.fs-wrapper div.fs-has-links::after, .fs-text-product, .fs-overlink-text { font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:14px; } .fs-wrapper div.fs-text-container * { color:#ffffff; } .fs-wrapper div.fs-text-container { background-color:rgba(0, 0, 0, 0.8);margin:0px; } div.fs-entry-date { display:none; } div.fs-entry-title { display:none; } .fs-slider_v2_5 .fs-wrapper div.fs-timeline-entry { margin:1px; } <\/style>",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 100
@@ -798,7 +759,6 @@
     "bc875eb4-7882-492d-85a6-b83721651163",
     "8185d5fb-14e0-4981-9c51-bc587ed44f9b",
     "f1c39c4f-7d93-46e2-a0aa-729a6c995c25",
-    "16793799636a54b011",
     "471eed3a-57b7-4491-b520-c87d81ac19d6"
   ]
 }

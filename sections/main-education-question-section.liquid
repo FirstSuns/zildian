@@ -1,0 +1,81 @@
+<article class="article-template">
+<div class="about-artist-section page-width--narrow page-width">
+  <div class="grid">
+    {% for block in section.blocks %}
+    {% assign getblog = block.settings.arti_blg %}
+    {% assign artttl = article.title %}
+      {% if getblog.title == artttl %}
+    <div class="title">
+      <h2 class="h1">{{block.settings.Artists_Title}}'s IN <span>FEW</span></h2>
+    </div>
+    <div class="image">
+      <div class="media" style="padding-bottom: 130%;">
+        <img src="{{block.settings.artist_img | img_url: 'master'}}" loading="lazy" width="356" height="485" >
+      </div>
+    </div>
+    <div class="content">
+      <div class="info">
+        <ul>
+          {{ block.settings.quest }}
+          {{ block.settings.quest2 }}
+          {{ block.settings.quest3 }}
+        </ul>
+      </div>
+    </div>
+        {% endif %}
+      {% endfor %}
+  </div>
+</div>
+</article>
+{% schema %}
+  {
+    "name": "Question Section",
+    "blocks": [
+        {
+          "type": "text",
+          "name": "Description Portion",
+           "settings":[
+            {
+              "type": "article",
+              "id": "arti_blg",
+              "label": "Select Article"
+            },
+             {
+              "type": "header",
+              "content": "About Artist"
+            },
+            {
+              "type": "text",
+              "id": "Artists_Title",
+              "label": "Title"
+            },
+            {
+              "type": "image_picker",
+              "id": "artist_img",
+              "label": "Image"
+            },
+            {
+              "type": "richtext",
+              "id": "quest",
+              "label": "Question text 1"
+            },
+            {
+              "type": "richtext",
+              "id": "quest2",
+              "label": "Question text 2"
+            },
+            {
+              "type": "richtext",
+              "id": "quest3",
+              "label": "Question text 3"
+            }
+           ]
+        }
+    ],
+    "presets":[
+      {
+        "name": "Education Question Section"
+      }
+    ]
+  }
+{% endschema %}
