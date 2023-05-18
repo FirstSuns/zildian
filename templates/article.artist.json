@@ -1,65 +1,5 @@
 {
   "sections": {
-    "1d7f6cba-bed1-49a9-95ae-1250bcab6a90": {
-      "type": "artist-image-banner",
-      "disabled": true,
-      "blocks": {
-        "template--18305496580388__1d7f6cba-bed1-49a9-95ae-1250bcab6a90-16835208952a47cc13-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "{{ article.title }}",
-            "heading_size": "h1",
-            "uppercase": false
-          }
-        },
-        "template--18305496580388__1d7f6cba-bed1-49a9-95ae-1250bcab6a90-16835208952a47cc13-1": {
-          "type": "text",
-          "settings": {
-            "text": "The {{ article.title }} Experience",
-            "text_style": "body"
-          }
-        },
-        "template--18305496580388__1d7f6cba-bed1-49a9-95ae-1250bcab6a90-16835208952a47cc13-2": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false,
-            "blank_button": false
-          }
-        }
-      },
-      "block_order": [
-        "template--18305496580388__1d7f6cba-bed1-49a9-95ae-1250bcab6a90-16835208952a47cc13-0",
-        "template--18305496580388__1d7f6cba-bed1-49a9-95ae-1250bcab6a90-16835208952a47cc13-1",
-        "template--18305496580388__1d7f6cba-bed1-49a9-95ae-1250bcab6a90-16835208952a47cc13-2"
-      ],
-      "custom_css": [],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/hero.png",
-        "mobile_image": "shopify:\/\/shop_images\/Rectangle_5_15ba9a85-8322-4b1c-bf00-746a6f8030da.png",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "content_width": "",
-        "padding_left": "",
-        "desktop_content_position": "bottom-left",
-        "show_text_box": false,
-        "desktop_content_alignment": "left",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "stack_images_on_mobile": false,
-        "show_text_below": false,
-        "center_mobile": false,
-        "full_mobile": false,
-        "content_padding": 20,
-        "padding_top": 0,
-        "padding_bottom": 36
-      }
-    },
     "main": {
       "type": "main-article",
       "blocks": {
@@ -79,100 +19,12 @@
         "content": {
           "type": "content",
           "settings": {}
-        },
-        "bbe70fde-3d7a-4943-a377-15874fd8f567": {
-          "type": "new_image_text",
-          "disabled": true,
-          "settings": {
-            "side_banner1": false,
-            "full_width1": true,
-            "height1": "adapt",
-            "desktop_image_width1": "medium",
-            "layout1": "image_first",
-            "desktop_content_position1": "top",
-            "content_align1": "middle",
-            "desktop_content_alignment1": "left",
-            "content_layout1": "no-overlap",
-            "color_scheme1": "background-1",
-            "mobile_layout1": "image_first",
-            "mobile_content_alignment1": "left",
-            "padding_top1": 36,
-            "padding_bottom1": 36,
-            "quote1": false,
-            "max_width1": "450"
-          }
-        },
-        "543c39e1-2e95-4a79-9cb1-c4edf029d1f7": {
-          "type": "image_text",
-          "disabled": true,
-          "settings": {
-            "side_banner": false,
-            "full_width": true,
-            "height": "adapt",
-            "desktop_image_width": "medium",
-            "layout": "image_first",
-            "desktop_content_position": "top",
-            "content_align": "middle",
-            "desktop_content_alignment": "left",
-            "content_layout": "no-overlap",
-            "color_scheme": "background-2",
-            "mobile_layout": "image_first",
-            "mobile_content_alignment": "left",
-            "padding_top": 100,
-            "padding_bottom": 36,
-            "quote": false,
-            "max_width": "450"
-          }
-        },
-        "0668294f-ea6d-4c55-b965-4206b5e4208e": {
-          "type": "featured_product",
-          "disabled": true,
-          "settings": {}
-        },
-        "6b1dec1c-8a5a-4507-9932-dda22b937df2": {
-          "type": "about",
-          "disabled": true,
-          "settings": {}
-        },
-        "527a453f-7343-4051-869e-35f96d142bef": {
-          "type": "video",
-          "disabled": true,
-          "settings": {
-            "heading": "Video",
-            "heading_size": "h1",
-            "cover_image": "shopify:\/\/shop_images\/videoimg.png",
-            "video_url": "https:\/\/youtu.be\/ak410L2Z5d8",
-            "description": "",
-            "full_width": false,
-            "color_scheme": "background-1",
-            "padding_top": 36,
-            "padding_bottom": 36
-          }
-        },
-        "fa2456f8-54be-441b-932f-6679729a8f65": {
-          "type": "recent_post",
-          "disabled": true,
-          "settings": {
-            "title": "CHECK OUT OUR OTHER ARTISTS"
-          }
-        },
-        "0eaf8773-b360-4863-9ab2-007b409e00c4": {
-          "type": "featured_product",
-          "disabled": true,
-          "settings": {}
         }
       },
       "block_order": [
         "featured_image",
         "5b90492d-846d-4a73-bfdc-0437c6de4f04",
-        "content",
-        "bbe70fde-3d7a-4943-a377-15874fd8f567",
-        "543c39e1-2e95-4a79-9cb1-c4edf029d1f7",
-        "0668294f-ea6d-4c55-b965-4206b5e4208e",
-        "6b1dec1c-8a5a-4507-9932-dda22b937df2",
-        "527a453f-7343-4051-869e-35f96d142bef",
-        "fa2456f8-54be-441b-932f-6679729a8f65",
-        "0eaf8773-b360-4863-9ab2-007b409e00c4"
+        "content"
       ],
       "custom_css": [
         ".breadcrumbs__list .nth {display: none;}"
@@ -196,7 +48,9 @@
         "85db0049-7e45-4a7e-9a88-57bcd7c069c3"
       ],
       "custom_css": [
-        ".image-with-text__heading.h2 {text-transform: uppercase;}"
+        ".image-with-text__heading.h2 {text-transform: uppercase;}",
+        ".image-with-text__media img {object-fit: cover;}",
+        ".image-with-text__grid {align-items: end;}"
       ],
       "settings": {}
     },
@@ -208,7 +62,7 @@
           "settings": {
             "arti_blg": "artist\/tosh-perterson",
             "get_imm2_2": "shopify:\/\/shop_images\/k1116-angle-shot_1_2e2b38d0-d547-4ad2-ac7b-888d2283bee7.png",
-            "get_imm21": "TOSH PERTERSON’S GO-TO’S",
+            "get_imm21": "{{ article.title }}’S GO-TO’S",
             "get_imm32": "<p class=\"fam0p\">A Family<\/p>\n<p class=\"fam0p-nth\">FX CRASHES OF DOOM<\/p>\n<p class=\"last-chll\">Monstrous, explosive FX cymbal that delivers booming trash crashes, dry stick sound, and a broad sustain rich with dark, exotic overtones.<\/p>",
             "get_imm33": "Shop Now 🡢",
             "get_imm34": "\/products\/fx-crashes-of-doom"
@@ -227,7 +81,7 @@
           "type": "text",
           "settings": {
             "arti_blg": "artist\/tosh-perterson",
-            "Artists_Title": "TOSH PERTERSON",
+            "Artists_Title": "{{ article.title }}",
             "artist_img": "shopify:\/\/shop_images\/cell_8b44a16f-1244-44b6-b421-56096833934d.png",
             "quest": "<p class=\"first-pp\">WHAT INSPIRES YOU?<\/p>\n<p>My wife and children inspire me the most. A strong second would be all of my close friends. They push me to be greater at what I do everyday.<\/p>",
             "quest2": "<p class=\"first-pp\">WORDS OF WISDOM FOR THE NEXT GENERATION OF DRUMMERS<\/p>\n<p>Never compare your gift to others! What's for you will always be for you. Just be ready when your time comes.<\/p>",
@@ -238,17 +92,15 @@
       "block_order": [
         "1916c0ab-25a4-405d-acbf-b778c2e7f8f6"
       ],
+      "custom_css": [],
       "settings": {}
     },
-    "e540f275-c0cb-456e-9ebf-7125e1d7cd8a": {
-      "type": "video",
-      "custom_css": [],
+    "8e9a10d2-b668-46a5-b460-734a6e6191e3": {
+      "type": "video-artist",
       "settings": {
         "heading": "BEHIND THE KIT",
         "heading_size": "h1",
-        "cover_image": "shopify:\/\/shop_images\/videoimg.png",
-        "cover_mobile_image": "shopify:\/\/shop_images\/video_mobile.jpg",
-        "video_url": "https:\/\/youtu.be\/ak410L2Z5d8",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "description": "",
         "full_width": false,
         "mobile_full_width": false,
@@ -268,34 +120,10 @@
             "heading_size": "h1",
             "max_width": ""
           }
-        },
-        "template--18305496580388__97e8c916-868c-40ca-bc78-69a8202d6384-1683531071464379f1-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
-            "hide_mobile": false,
-            "max_width": ""
-          }
-        },
-        "template--18305496580388__97e8c916-868c-40ca-bc78-69a8202d6384-1683531071464379f1-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false,
-            "blank": false
-          }
         }
       },
       "block_order": [
-        "template--18305496580388__97e8c916-868c-40ca-bc78-69a8202d6384-1683531071464379f1-0",
-        "template--18305496580388__97e8c916-868c-40ca-bc78-69a8202d6384-1683531071464379f1-1",
-        "template--18305496580388__97e8c916-868c-40ca-bc78-69a8202d6384-1683531071464379f1-2"
+        "template--18305496580388__97e8c916-868c-40ca-bc78-69a8202d6384-1683531071464379f1-0"
       ],
       "custom_css": [
         "h2 {font-size: 24px;}",
@@ -314,6 +142,9 @@
     },
     "4e376b5d-654c-4027-a078-b4fc0245f366": {
       "type": "recent_articles",
+      "custom_css": [
+        "@media only screen and (min-width: 750px) and (max-width: 1100px) {.article-card .card__heading {font-size: 10px; } .card__information {padding: 0; }}"
+      ],
       "settings": {
         "title": "CHECK OUT OUR OTHER ARTISTS"
       }
@@ -347,12 +178,11 @@
     }
   },
   "order": [
-    "1d7f6cba-bed1-49a9-95ae-1250bcab6a90",
     "main",
     "739072ab-dc09-4b92-a996-7be196ed69cb",
     "34758241-3bd5-42d4-9f75-11681aa19355",
     "e7781307-f31f-4a54-95ff-5595afb29365",
-    "e540f275-c0cb-456e-9ebf-7125e1d7cd8a",
+    "8e9a10d2-b668-46a5-b460-734a6e6191e3",
     "97e8c916-868c-40ca-bc78-69a8202d6384",
     "4e376b5d-654c-4027-a078-b4fc0245f366",
     "78d1b415-f34a-4ae8-a625-ebc64591daf2"

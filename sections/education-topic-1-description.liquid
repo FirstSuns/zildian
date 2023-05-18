@@ -1,0 +1,93 @@
+<article class="article-template">
+{% include 'breadcrumbs' %}
+<div class="article-template__content rte">
+{% for block in section.blocks %}
+          {% assign getblog = block.settings.arti_blg %}
+          {% assign artttl = article.title %}
+          {% if getblog.title == getblog.title  %}
+              <div class="topic-1-main">
+                  <div class="page-width">
+                   <div class="topic-1-inner">
+                        <div class="topic1-innleft">
+                             <iframe 
+                              width="648" 
+                              height="359" 
+                              src="{{ block.settings.vid_lnk }}" 
+                              title="{{article.title}}" 
+                              frameborder="0" 
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                              allowfullscreen=""
+                            ></iframe>
+                            {{ block.settings.ttl_txt }}
+                        </div>
+                        <div class="topic1-innright">
+                              <h2>{{ block.settings.vid_ttl }}</h2>
+                              {{ block.settings.ttl_txt2 }}
+                        </div>
+                   </div>
+                  </div>
+              </div>
+          {% endif %}
+{% endfor %}
+</div>
+</article>
+{% schema %}
+  {
+    "name": "Topic 1 Content",
+    "blocks": [
+      {
+        "type": "text",
+        "name": "Add description",
+        "settings":[
+          {
+              "type": "article",
+              "id": "arti_blg",
+              "label": "Select Article"
+            },
+            {
+              "type": "header",
+              "content": "Title"
+            },
+            {
+              "type": "text",
+               "id": "headring",
+               "label": "Title"
+            },
+            {
+              "type": "header",
+              "content": "Topic 1 Left Side Content"
+            },
+            {
+              "type": "text",
+              "id": "vid_lnk",
+              "label": "Youtube Video Link"
+            },
+            {
+              "type": "richtext",
+              "id": "ttl_txt",
+              "label": "Content"
+            },
+            {
+              "type": "header",
+              "content": "Topic 1 Right Side Content"
+            },
+            {
+              "type": "text",
+              "id": "vid_ttl",
+              "label": "Title"
+            },
+            {
+              "type": "richtext",
+              "id": "ttl_txt2",
+              "label": "Content"
+            }
+        ]
+      }
+    ],
+    "presets":[
+      {
+        "name": "Topic 1 Content"
+      }
+    ]
+  }
+{% endschema %}

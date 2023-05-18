@@ -16,7 +16,7 @@ h1,
 @media only screen and (min-width: 750px) {
   h1,
   .h1 {
-    font-size: 40px;
+    font-size: 32px;
   }
 }
 
@@ -34,13 +34,13 @@ h2,
 
 h3,
 .h3 {
-  font-size: 16px;
+  font-size: 17px;
 }
 
 @media only screen and (min-width: 750px) {
   h3,
   .h3 {
-    font-size: 24px;
+    font-size: 16px;
   }
 }
 
@@ -648,6 +648,17 @@ body.hide-price .price, body.hide-price .buy-buttons-box, body.hide-price .produ
    
 }
 @media only screen and (max-width: 767px) {
+  .topic1-innright, .topic1-innleft {
+    width: calc(100% - 20px) !important;
+    margin: 0 10px;
+}.topic1-innleft iframe {
+    width: 100% !important;
+}.topic1-innleft p{
+    width: auto !important;
+    margin-bottom: 30px
+}.edutopic11 .banner--mobile-bottom .banner__media {
+/*     position: relative; */
+}
   .boost-pfs-filter-left-col{
     overflow-y: unset; 
     height: unset; 
@@ -1053,6 +1064,7 @@ tab-component {
       text-transform: uppercase;
       font-weight: bold;
       text-align: center;
+      cursor: pointer;
       &.active {
         background: black;
         color: white;
@@ -1116,6 +1128,59 @@ tab-component {
 }.mystique_col.first-edutop p {
     text-align: center;
     font-weight: 600;
+}.topic-1-inner {
+    display: flex;
+    flex-wrap: wrap;
+}.topic1-innright {
+    width: calc(50% - 20px);
+    margin: 0 10px;
+      padding-left: 5rem;
+   
+}.topic1-innleft {
+    width: calc(50% - 20px);
+    margin: 0 10px;
+}
+@media only screen and (max-width: 1500px) {
+  iframe {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  iframe {
+    width: 100%!important;
+    height: 260px !important;
+  }
+}
+.topic-1-inner h2 {
+    font-family: Century Gothic;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 1px;
+    text-align: left;
+    margin-top: 0;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  @media only screen and (max-width: 1200px) {
+    font-size: 23px;
+    line-height: 28px;
+  }
+}.edutopic11 .article-template .article-template__content ul li {
+    list-style: disc;
+    padding: 0;
+}.topic1-innleft p {
+    font-family: Century Gothic;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 531px;
+    margin: 0 auto;
+  @media screen and (max-width: 1500px) {  
+      width: 100%;
+  }
 }
 
 /*****Education Topic 3*****/
@@ -1152,5 +1217,31 @@ tab-component {
 }.edutopic13 .banner .banner__content .banner__box .banner__heading {
     text-align: center;
     padding-bottom: 57px;
+}
+}
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+.banner__content.banner__content--bottom-left {
+    margin-top: 43px;
+}
+  .topic1-innright {
+    padding-left: 0;
+    margin-top: 40px;
+}
+}
+
+@media only screen and (max-width: 480px) {
+article.article-template {
+    margin-top: 30px;
+}
+  .edutopic11 .article-template__content {
+    padding: 50px 0 50px;
+}
+  .breadcrumbs {
+    // margin: 69px 0 0 !important;
 }
 }

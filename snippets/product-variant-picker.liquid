@@ -22,7 +22,7 @@
       {{ block.shopify_attributes }}
     >
       {%- for option in product.options_with_values -%}
-        {%- if option.name == "Size" and product.metafields.magento.size_chart_media_images contains "cdn.shopify.com/s/files" -%}
+        {%- if option.name == "Size" and product.metafields.magento.size_chart_media_images != blank and product.metafields.magento.size_chart_media_images != "no_selection" -%}
           <fieldset class="js product-form__input">
             <div class="fs-include-size-modal">
               <legend class="form__label">{{ option.name }} : <span class="value">{{product.selected_or_first_available_variant.options[forloop.index0]}}</span><span>{% if option.name == 'Diameter' %}"{% endif %}</span></legend>

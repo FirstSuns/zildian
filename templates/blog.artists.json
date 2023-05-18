@@ -25,7 +25,7 @@
       "custom_css": [
         ".banner__content {max-width: 1440px;}",
         ".banner__box {margin-left: 100px;}",
-        "@media screen and (max-width: 989px) {.banner__box {margin-left: 0px;}}"
+        "@media screen and (max-width: 989px) {.banner__box {margin-left: 0px; }}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Zildjian-Artist-Section-Banner.jpg",
@@ -50,6 +50,9 @@
     },
     "main": {
       "type": "main-blog",
+      "custom_css": [
+        ".main-blog {max-width: 1300px;}"
+      ],
       "settings": {
         "show_breadcrumbs": false,
         "enable_filter": true,

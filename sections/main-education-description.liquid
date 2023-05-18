@@ -1,73 +1,105 @@
-<article class="article-template">
+<article class="article-template" ed1>
 <div class="article-template__content page-width page-width--narrow rte">
 {% for block in section.blocks %}
-{% assign getblog = block.settings.arti_blg %}
-{% assign artttl = article.title %}
-{% if getblog.title == artttl %}
-<iframe width="100%" height="600" src="{{ block.settings.ifram_id }}" title="John Riley: The Art of Bop Drumming, Series Introduction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" class="small-hide"></iframe>
-<span class="small-hide">
-  {{ block.settings.iframe_cap }}
-</span>
-{{ block.settings.desc_txt }}
-<ul class="content">
-              <li>
-                  <iframe 
-                    width="1220" 
-                    height="686" 
-                    src="{{ block.settings.ifram_id2}}" 
-                    title="{{article.title}}" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen=""
-                  ></iframe> 
-                  <iframe 
-                    width="1220" 
-                    height="686" 
-                    src="{{ block.settings.ifram_id3}}" 
-                    title="{{article.title}}" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen=""
-                  ></iframe> 
-              </li> 
-              <li>
-                  <div class="text">
-                       {{ block.settings.quote }}
-                  </div>
-                  <iframe 
-                    width="1220" 
-                    height="686" 
-                    src="{{ block.settings.ifram_id4}}" 
-                    title="{{article.title}}" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen=""
-                  ></iframe> 
-              </li> 
-              <li>
-                  <iframe 
-                    width="1220" 
-                    height="686" 
-                    src="{{ block.settings.ifram_id5}}" 
-                    title="{{article.title}}" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen=""
-                  ></iframe> 
-                <div class="text">
-                     {{ block.settings.quote2 }}
-                </div>
-              </li> 
-          </ul>
-          {% if block.settings.quote3 != blank %}
-          <div class="quote">
-            {{block.settings.quote3}}
+  {% assign getblog = block.settings.arti_blg %}
+  {% assign artttl = article.title %}
+  {% if getblog.title == artttl %}
+    <iframe width="100%" height="600" src="{{ block.settings.ifram_id }}" title="John Riley: The Art of Bop Drumming, Series Introduction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" class=""></iframe>
+    <span class="" style="color: #5C5D60;">
+      {{ block.settings.iframe_cap }}
+    </span>
+    <div class="article-template__excerpt large-up-hide medium-hide">
+      <div class="narrow">
+        <a href="{{blog.previous_article.url}}">
+          <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="22" cy="22" r="21.5" stroke="#5C5D60"/>
+            <path d="M26 14L18 22.5L26 31" stroke="#5C5D60" stroke-width="2" stroke-linecap="round"/>
+          </svg>                  
+        </a>
+        <span class="h5 uppercase">Lesson 2/{{blog.articles.size}} </span>
+        <a href="{{blog.next_article.url}}">
+          <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="22" cy="22" r="21.5" transform="rotate(-180 22 22)" stroke="#5C5D60"/>
+            <path d="M18 30L26 21.5L18 13" stroke="#5C5D60" stroke-width="2" stroke-linecap="round"/>
+          </svg>                                 
+        </a>
+      </div>
+    </div>
+    {{ block.settings.desc_txt }}
+    <ul class="content">
+      <li>
+          <iframe 
+            width="1220" 
+            height="686" 
+            src="{{ block.settings.ifram_id2}}" 
+            title="{{article.title}}" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen=""
+          ></iframe> 
+          <iframe 
+            width="1220" 
+            height="686" 
+            src="{{ block.settings.ifram_id3}}" 
+            title="{{article.title}}" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen=""
+          ></iframe> 
+      </li> 
+      <li>
+          <div class="text">
+                {{ block.settings.quote }}
           </div>
-          {% endif %}
+          <iframe 
+            width="1220" 
+            height="686" 
+            src="{{ block.settings.ifram_id4}}" 
+            title="{{article.title}}" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen=""
+          ></iframe> 
+      </li> 
+      <li>
+          <iframe 
+            width="1220" 
+            height="686" 
+            src="{{ block.settings.ifram_id5}}" 
+            title="{{article.title}}" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen=""
+          ></iframe> 
+        <div class="text">
+              {{ block.settings.quote2 }}
+        </div>
+      </li> 
+    </ul>
+    {% if block.settings.quote3 != blank %}
+    <div class="quote">
+      {{block.settings.quote3}}
+    </div>
+    {% endif %}
   {% endif %}
 {% endfor %}
 </div>
 </article>
+<style>
+@media screen and (min-width: 750px) {
+  .article-template__content h2{
+    font-size: 24px;
+  }
+  .article-template__content h3{
+    font-size: 18px;
+    color: #5C5D60;
+  }
+  .article-template__content ul li{
+    margin-bottom: 7px;
+    letter-spacing: 2px;
+  }
+}
+</style>
 {% schema %}
   {
     "name": "Education Decription",

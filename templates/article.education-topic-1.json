@@ -60,6 +60,26 @@
         "padding_bottom": 36
       }
     },
+    "37291654-8365-4cc6-aa0d-9efde76eb475": {
+      "type": "education-topic-1-description",
+      "blocks": {
+        "9eb759e0-d070-40b2-8c89-24e08922fa2b": {
+          "type": "text",
+          "settings": {
+            "arti_blg": "zildjian-workout-practice-and-learn-from-the-zildjian-artists\/marching-cymbals-101-with-music-city-mystique",
+            "headring": "",
+            "vid_lnk": "https:\/\/www.youtube.com\/embed\/wvRCKBlESGg",
+            "ttl_txt": "<p>INTRODUCTION TO THE SERIES FROM ZACH BLESSING, MUSIC CITY MYSTIQUE CYMBAL LINE INSTRUCTOr<\/p>",
+            "vid_ttl": "Welcome to the Zildjian Marching Cymbals 101 Instructional Guide",
+            "ttl_txt2": "<p>This comprehensive step-by-step approach will teach you everything you and your marching cymbal section needs to know to perform at the highest level. In this series, the 2023 Music City Mystique Cymbal Line Instructional Staff (Zach Blessing, Alex Queen & Kiiyaa’áanii Morgan) will cover:<\/p><ul><li>Cymbal Care and Maintenance<\/li><li>Positions<\/li><li>Flips<\/li><li>Crashes<\/li><li>Chokes<\/li><li>Auxiliary Sounds and Colors<\/li><li>Advanced Visual Skill Sets<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "9eb759e0-d070-40b2-8c89-24e08922fa2b"
+      ],
+      "settings": {}
+    },
     "main": {
       "type": "main-article",
       "blocks": {
@@ -136,6 +156,7 @@
   },
   "order": [
     "e2ccec93-4d4e-4dd3-a30c-d051d3a5a54a",
+    "37291654-8365-4cc6-aa0d-9efde76eb475",
     "main",
     "76c25874-d8b1-4efb-a2ee-ae604333fded",
     "41a69f5a-014f-4763-baf5-01eee508c98c"

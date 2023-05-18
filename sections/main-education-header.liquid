@@ -1,44 +1,44 @@
-<article class="article-template">
+<article class="article-template" ed1>
 {% include 'breadcrumbs' %}
 <header class="page-width page-width--narrow" {{ block.shopify_attributes }}>
-          {% for block in section.blocks %}
-          {% assign getblog = block.settings.arti_blg %}
-          {% assign artttl = article.title %}
-          {% if getblog.title == artttl %}
-          {% if block.settings.ifram_ttl != blank %}
-          <h2 class="article-template__title center" itemprop="headline">
-               {{ block.settings.ifram_ttl }}
-          </h2>
-          {% endif %}
-          <div class="article-template__excerpt">
-            {% if block.settings.ifram_ttl2 != blank %}
-            <div class="excerpt">
-              {{block.settings.ifram_ttl2}}
-            </div>
-            {% endif %}
-            {% if block.settings.ifram_id != blank %}
-            <div class="large-hide mobile-vide-sec">
-                <iframe width="100%" height="500" src="{{ block.settings.ifram_id }}" title="John Riley: The Art of Bop Drumming, Series Introduction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" class="small-hide"></iframe>
-            </div>
-            {% endif %}
-            <div class="narrow">
-              <a href="{{blog.previous_article.url}}">
-                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="22" cy="22" r="21.5" stroke="#5C5D60"/>
-                  <path d="M26 14L18 22.5L26 31" stroke="#5C5D60" stroke-width="2" stroke-linecap="round"/>
-                </svg>                  
-              </a>
-              <span class="h5 uppercase">Lesson 2/{{blog.articles.size}} </span>
-              <a href="{{blog.next_article.url}}">
-                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="22" cy="22" r="21.5" transform="rotate(-180 22 22)" stroke="#5C5D60"/>
-                  <path d="M18 30L26 21.5L18 13" stroke="#5C5D60" stroke-width="2" stroke-linecap="round"/>
-                </svg>                                 
-              </a>
-            </div>
-          </div>
-          {% endif %}
-          {% endfor %}
+  {% for block in section.blocks %}
+    {% assign getblog = block.settings.arti_blg %}
+    {% assign artttl = article.title %}
+    {% if getblog.title == artttl %}
+      {% if block.settings.ifram_ttl != blank %}
+      <h2 class="article-template__title center" itemprop="headline">
+            {{ block.settings.ifram_ttl }}
+      </h2>
+      {% endif %}
+      <div class="article-template__excerpt">
+        {% if block.settings.ifram_ttl2 != blank %}
+        <div class="excerpt">
+          {{block.settings.ifram_ttl2}}
+        </div>
+        {% endif %}
+        {% if block.settings.ifram_id != blank %}
+        <div class="large-hide mobile-vide-sec">
+            <iframe width="100%" height="500" src="{{ block.settings.ifram_id }}" title="John Riley: The Art of Bop Drumming, Series Introduction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" class="small-hide"></iframe>
+        </div>
+        {% endif %}
+        <div class="narrow small-hide">
+          <a href="{{blog.previous_article.url}}">
+            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="22" cy="22" r="21.5" stroke="#5C5D60"/>
+              <path d="M26 14L18 22.5L26 31" stroke="#5C5D60" stroke-width="2" stroke-linecap="round"/>
+            </svg>                  
+          </a>
+          <span class="h5 uppercase">Lesson 2/{{blog.articles.size}} </span>
+          <a href="{{blog.next_article.url}}">
+            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="22" cy="22" r="21.5" transform="rotate(-180 22 22)" stroke="#5C5D60"/>
+              <path d="M18 30L26 21.5L18 13" stroke="#5C5D60" stroke-width="2" stroke-linecap="round"/>
+            </svg>                                 
+          </a>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
 </header>
 </article>
 {% schema %}

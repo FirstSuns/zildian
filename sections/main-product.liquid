@@ -223,21 +223,37 @@
                 {% capture intro %}
                   {% if product.metafields.magento.dia_inches != blank %}
                   <div class="grid__item">Diameter: <strong>
-                    {% if product.metafields.magento.dia_inches != blank %}
-                    {{product.metafields.magento.dia_inches}}”
+                    {% if product.metafields.magento.dia_inches contains "."%}
+                      {% assign temp_str = product.metafields.magento.dia_inches | split : "." %}
+                      {{temp_str | first}}.{{temp_str | last | truncate: 2,"" }}”
+                    {% else %}
+                      {{product.metafields.magento.dia_inches}}”
                     {% endif %}
                     {% if product.metafields.magento.dia_cm != blank %}
-                      | {{product.metafields.magento.dia_cm}}cm
+                      {% if product.metafields.magento.dia_cm contains "."%}
+                        {% assign temp_str = product.metafields.magento.dia_cm | split : "." %}
+                        | {{temp_str | first}}.{{temp_str | last | truncate: 2,"" }}cm
+                      {% else %}
+                        | {{product.metafields.magento.dia_cm}}cm
+                      {% endif %}
                     {% endif %}</strong>
                   </div>
                   {% endif %}
                   {% if product.metafields.magento.length_inches != blank %}
                   <div class="grid__item">Length: <strong>
-                    {% if product.metafields.magento.length_inches != blank %}
-                    {{product.metafields.magento.length_inches}}”
+                    {% if product.metafields.magento.length_inches contains "."%}
+                      {% assign temp_str = product.metafields.magento.length_inches | split : "." %}
+                      {{temp_str | first}}.{{temp_str | last | truncate: 2,"" }}”
+                    {% else %}
+                      {{product.metafields.magento.length_inches}}”
                     {% endif %}
                     {% if product.metafields.magento.length_cm != blank %}
-                    | {{product.metafields.magento.length_cm}}cm
+                      {% if product.metafields.magento.length_cm contains "."%}
+                        {% assign temp_str = product.metafields.magento.length_cm | split : "." %}
+                        | {{temp_str | first}}.{{temp_str | last | truncate: 2,"" }}cm
+                      {% else %}
+                        | {{product.metafields.magento.length_cm}}cm
+                      {% endif %}
                     {% endif %}
                     </strong></div>
                   {% endif %}
@@ -277,7 +293,8 @@
                   {% if product.metafields.magento.taper_image != blank and product.metafields.magento.taper_image contains 'cdn.shopify' %}
                   <li class="grid grid--1-col">
                     <div class="">
-                      <img src="{{ product.metafields.magento.taper_image }}" alt="spec taper" width="469" height="82" loading="lazy" style="border: none;">
+                      {% assign img_name = product.metafields.magento.taper_image | split: "/" %}
+                      <img src="{{img_name.last | file_url}}"   alt="spec taper" width="469" height="82" loading="lazy" style="border: none;">
                     </div>
                   </li>
                   {% endif %}
@@ -286,10 +303,10 @@
                   {% if product.tags contains 'Zildjian Category/Cymbals' or template contains 'cymbal'%}
                     {% assign stick_spec_flag = false %}
                   {% endif %}
-                  {% if template contains 'stick' %}
+                  {% if template contains 'sticks' %}
                     {% assign stick_spec_flag = true %}
                   {% endif %}
-                  {% if product.tags contains '400th' and stick_spec_flag == true %}
+                  {% if product.tags contains '400th' or stick_spec_flag == true %}
                   {% if product.metafields.magento.series != blank or product.metafields.magento.surface_coating != blank %}
                   <li class="grid grid--1-col heading">
                     <div class="grid__item">STICK</td>
@@ -473,9 +490,11 @@
                   </script>
                 {% else %}
                 {{ block.settings.content }}
+                {% if product.metafields.magento.bullet != blank %}
                 <ul class="bullet">
                   {{product.metafields.magento.bullet | newline_to_br | replace: '<br />', '</li><li>' | prepend: '<li>' }}
                 </ul>
+                {% endif %}
                 
                 <h6 class="fs-sku">SKU : <span class="sku" >{{ product.selected_or_first_available_variant.sku }}</span></h6>
                 {% endif %}

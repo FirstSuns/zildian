@@ -91,6 +91,7 @@
         margin-bottom: 50px;
         align-items: center;
         flex-wrap: wrap;
+        justify-content: space-between;
         @media screen and (max-width: 749px) {
           margin-bottom: 0;
         }
@@ -105,6 +106,9 @@
         iframe {
           min-height: 288px;
           height: auto;
+          @media screen and (min-width: 750px) {
+            width: 45% !important;
+          }
           @media screen and (max-width: 749px) {
             min-height: 200px;
           }
@@ -146,9 +150,9 @@
           
           .info {
             p {
-              font-size: 14px;
+              font-size: 15px;
               letter-spacing: normal;
-              line-height: 18px;
+              line-height: 25px;
             }
           }
         }
