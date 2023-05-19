@@ -662,7 +662,7 @@ class SlideshowComponent extends SliderComponent {
     this.sliderControlLinksArray.forEach(link => link.addEventListener('click', this.linkToSlide.bind(this)));
     this.slider.addEventListener('scroll', this.setSlideVisibility.bind(this));
     this.setSlideVisibility();
-
+    
     if (this.slider.getAttribute('data-autoplay') === 'true') this.setAutoPlay();
   }
 
@@ -883,9 +883,9 @@ class VariantSelects extends HTMLElement {
   }
 
   updateMedia() {
+    
     if (!this.currentVariant) return;
     if (!this.currentVariant.featured_media) return;
-
     const mediaGalleries = document.querySelectorAll(`[id^="MediaGallery-${this.dataset.section}"]`);
     mediaGalleries.forEach(mediaGallery => mediaGallery.setActiveMedia(`${this.dataset.section}-${this.currentVariant.featured_media.id}`, true));
 
@@ -893,6 +893,15 @@ class VariantSelects extends HTMLElement {
     if (!modalContent) return;
     const newMediaModal = modalContent.querySelector( `[data-media-id="${this.currentVariant.featured_media.id}"]`);
     modalContent.prepend(newMediaModal);
+
+    //fs added
+    // console.log("updateMedia---",this.currentVariant);
+    const fs_mediaGalleries = document.querySelectorAll(`[fs-thumbnail-variant-id="${this.currentVariant.id}"]`);
+    if(fs_mediaGalleries && fs_mediaGalleries.length != 0)
+    {
+      fs_mediaGalleries[0].click();
+    }
+    // console.log("fs_mediaGalleries---",fs_mediaGalleries);
   }
 
   updateURL() {
@@ -1105,10 +1114,10 @@ class ProductRecommendations extends SliderComponent {
             const card = cards[i];
             
             var card_json = {
-              api_key: '10803808-76df-4b55-b781-315a7e6c6f91',
+              api_key: 'b873f7db-ee6b-4b2b-81e9-3df2ca4a11db',
               locale: 'en_US',
-              merchant_group_id: '1856964674',
-              merchant_id: '167086839',
+              merchant_group_id: '2006223440',
+              merchant_id: '1025714092',
               page_id: card.dataset.product_id,
               components: {
                 CategorySnippet: `snippet-${card.dataset.product_id}`

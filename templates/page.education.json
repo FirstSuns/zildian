@@ -64,7 +64,7 @@
             "title": "MARCHING CYMBALS 101 WITH MUSIC CITY MYSTIQUE",
             "heading_size": "h3",
             "heading_color": "",
-            "link": "shopify:\/\/blogs\/artist\/marching-cymbals-101-with-music-city-mystique",
+            "link": "shopify:\/\/blogs\/music-city-mystique",
             "column_type": "Newest",
             "instruments": "Educational",
             "types": "Percussion 101"
@@ -79,7 +79,7 @@
             "title": "MODERN JAZZ SOLOS FOR DRUM SET, LESSON SERIES WITH RICH THOMPSON",
             "heading_size": "h3",
             "heading_color": "",
-            "link": "",
+            "link": "shopify:\/\/blogs\/modern-jazz-solos-for-drum-set-lesson-series-with-rich-thompson",
             "column_type": "Most popular",
             "instruments": "Concert,\nDrumset",
             "types": ""
@@ -94,7 +94,7 @@
             "title": "ZILDJIAN INSPIRIT DIGEST",
             "heading_size": "h3",
             "heading_color": "",
-            "link": "",
+            "link": "shopify:\/\/blogs\/zildjian-inspirit-digest",
             "column_type": "Newest",
             "instruments": "Play-Along-Tracks",
             "types": ""
@@ -109,7 +109,7 @@
             "title": "ZILDJIAN RHYTHM CARDS",
             "heading_size": "h3",
             "heading_color": "",
-            "link": "shopify:\/\/blogs\/education",
+            "link": "shopify:\/\/blogs\/rhythm-cards",
             "column_type": "Newest",
             "instruments": "Marching",
             "types": ""
@@ -124,7 +124,7 @@
             "title": "ZILDJIAN WORKOUT: PRACTICE AND LEARN FROM THE ZILDJIAN ARTISTS!",
             "heading_size": "h3",
             "heading_color": "",
-            "link": "",
+            "link": "shopify:\/\/blogs\/zildjian-workout-practice-and-learn-from-the-zildjian-artists",
             "column_type": "Most popular",
             "instruments": "Musical-Perspectives",
             "types": ""
@@ -139,8 +139,8 @@
             "title": "#INSTALESSONZ WITH ZILDJIAN ARTISTS",
             "heading_size": "h3",
             "heading_color": "",
-            "link": "",
-            "column_type": "",
+            "link": "shopify:\/\/blogs\/instalessonz-with-zildjian-artists",
+            "column_type": "Newest",
             "instruments": "",
             "types": "Percussion 101"
           }
@@ -154,7 +154,7 @@
             "title": "MUSICAL PERSPECTIVES: A ZILDJIAN CHALLENGE",
             "heading_size": "h3",
             "heading_color": "",
-            "link": "shopify:\/\/blogs\/education",
+            "link": "shopify:\/\/blogs\/musical-perspectives-a-zildjian-challenge",
             "column_type": "Newest",
             "instruments": "",
             "types": ""
@@ -169,7 +169,7 @@
             "title": "ZILDJIAN LIVE! TRANSCRIPTIONS AND INTERVIEWS",
             "heading_size": "h3",
             "heading_color": "",
-            "link": "",
+            "link": "shopify:\/\/blogs\/zildjian-live-transcriptions-and-interviews",
             "column_type": "Most popular",
             "instruments": "Educational",
             "types": ""
@@ -184,8 +184,8 @@
             "title": "STANTON MOORE'S #IMPROVEYOURGROOVEZ SERIES",
             "heading_size": "h3",
             "heading_color": "",
-            "link": "",
-            "column_type": "",
+            "link": "shopify:\/\/blogs\/stanton-moores-improveyourgroovez-series",
+            "column_type": "Newest",
             "instruments": "Play-Along-Tracks",
             "types": ""
           }
@@ -199,8 +199,8 @@
             "title": "JOHN RILEY'S ART OF BOP DRUMMING SERIES",
             "heading_size": "h3",
             "heading_color": "",
-            "link": "",
-            "column_type": "",
+            "link": "shopify:\/\/blogs\/education",
+            "column_type": "Newest",
             "instruments": "",
             "types": ""
           }
@@ -214,8 +214,8 @@
             "title": "JAMES CAMPBELL: CONCERT CYMBALS 101",
             "heading_size": "h3",
             "heading_color": "",
-            "link": "",
-            "column_type": "",
+            "link": "shopify:\/\/blogs\/james-campbell-concert-cymbals-101",
+            "column_type": "Newest",
             "instruments": "",
             "types": ""
           }
@@ -226,11 +226,11 @@
             "image": "shopify:\/\/shop_images\/Marching-Cymbals-101-Thumbnail.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Marching-Cymbals-101-Thumbnail.jpg",
             "badge": "",
-            "title": "MARCHING CYMBALS 101 WITH MUSIC CITY MYSTIQUE",
+            "title": "MARCHING CYMBALS 101",
             "heading_size": "h3",
             "heading_color": "",
-            "link": "",
-            "column_type": "",
+            "link": "shopify:\/\/blogs\/marching-cymbals-101",
+            "column_type": "Newest",
             "instruments": "",
             "types": ""
           }
@@ -244,8 +244,8 @@
             "title": "JAZZ RHYTHM SECTION 101",
             "heading_size": "h3",
             "heading_color": "",
-            "link": "",
-            "column_type": "",
+            "link": "shopify:\/\/blogs\/jazz-rhythm-section-101",
+            "column_type": "Newest",
             "instruments": "",
             "types": ""
           }
@@ -259,8 +259,8 @@
             "title": "ZILDJIAN BEGINNING DRUM SET METHOD",
             "heading_size": "h3",
             "heading_color": "",
-            "link": "",
-            "column_type": "",
+            "link": "shopify:\/\/blogs\/drum-set-method",
+            "column_type": "Newest",
             "instruments": "",
             "types": ""
           }
@@ -283,7 +283,7 @@
         "6f3d7dad-919f-484e-b4cf-bdddddf1aa5e"
       ],
       "custom_css": [
-        "@media screen and (min-width: 750px) {.multicolumn>div {padding-bottom: 200px; }}"
+        "@media screen and (min-width: 750px) {.multicolumn > div {padding-bottom: 200px; }}"
       ],
       "settings": {
         "padding_top": 68,

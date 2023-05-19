@@ -116,7 +116,7 @@
         "template--18305496580388__97e8c916-868c-40ca-bc78-69a8202d6384-1683531071464379f1-0": {
           "type": "heading",
           "settings": {
-            "heading": "<p>\"Cali\" Evan Marien x Aaron Smith #EvanMarien #AaronSmith<\/p>",
+            "heading": "<p>\"Cali\" Evan Marien x {{ article.title }} #EvanMarien #{{ article.title }}<\/p>",
             "heading_size": "h1",
             "max_width": ""
           }

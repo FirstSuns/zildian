@@ -184,11 +184,13 @@ class SplideSlideshowComponent extends HTMLElement {
     this.slider = this.querySelector('.splide');
     this.initPages();
   }
-
+  
   initPages() {
     var main_slider = new Splide(this.slider, {
       type: 'loop',
-      perPage: 1
+      perPage: 1,
+      autoplay: true, //FS added code--
+      speed: 1000,
     });
 
     main_slider.mount();

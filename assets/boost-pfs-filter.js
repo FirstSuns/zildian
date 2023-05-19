@@ -107,13 +107,19 @@ if (typeof boostPFSThemeConfig !== 'undefined') {
 
     // Add Vendor
     itemHtml = itemHtml.replace(/{{itemVendor}}/g, buildVendor(data));
-    //console.log(data.metafields)
     // Add main attribute (Always put at the end of this function)
     itemHtml = itemHtml.replace(/{{itemId}}/g, data.id);
     itemHtml = itemHtml.replace(/{{itemTitle}}/g, data.title);
     itemHtml = itemHtml.replace(/{{itemHandle}}/g, data.handle);
+    var vendor = data.vendor;
     if (data.metafields.length > 0) {
-      itemHtml = itemHtml.replace(/{{itemVendorLabel}}/g, data.metafields[0].value);
+      for (let i = 0; i < data.metafields.length; i++) {
+        const metafield = data.metafields[i];
+        if (metafield.key == "family") {
+          vendor = metafield.value
+        }
+      }
+      itemHtml = itemHtml.replace(/{{itemVendorLabel}}/g, vendor);
     } else {
       itemHtml = itemHtml.replace(/{{itemVendorLabel}}/g, data.vendor);
     }
@@ -465,10 +471,10 @@ if (typeof boostPFSThemeConfig !== 'undefined') {
     for (let i = 0; i < data.length; i++) {
       const item = data[i];
       var item_data = {
-        api_key: '10803808-76df-4b55-b781-315a7e6c6f91',
+        api_key: 'b873f7db-ee6b-4b2b-81e9-3df2ca4a11db',
         locale: 'en_US',
-        merchant_group_id: '1856964674',
-        merchant_id: '167086839',
+        merchant_group_id: '2006223440',
+        merchant_id: '1025714092',
         page_id: `${item.id}`,
         components: {
           CategorySnippet: 'snippet-'+item.id
@@ -483,6 +489,17 @@ if (typeof boostPFSThemeConfig !== 'undefined') {
   // Build Additional Elements
   Filter.prototype.afterRender = function(data, eventType) {
     if (!data) data = this.data;
+    
+    for (let i = 0; i < data.filter.options.length; i++) {
+      const option = data.filter.options[i];
+      if (option.values != null && option.values.length == 1 && option.values[0].doc_count >= (data.total_product - 1)) {
+        document.querySelectorAll('.boost-pfs-filter-option').forEach(filter => {
+          if (filter.querySelector('.boost-pfs-filter-option-title-text').textContent == option.label) {
+            filter.classList.add('hide')
+          }
+        });
+      }
+    }
     jQ('.boost-pfs-filter-total-product').html(data.total_product + ' items'); 
   };
 

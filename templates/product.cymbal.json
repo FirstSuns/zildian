@@ -170,7 +170,7 @@
         "d3e13dda-2ea7-46a5-9268-e3f2978d3fec"
       ],
       "custom_css": [
-        ".image-with-text__text p{color: #5C5D60;}",
+        ".image-with-text__text p {color: #5c5d60;}",
         "@media screen and (max-width: 749px) {.image-with-text__heading {font-size: 32px; }}"
       ],
       "settings": {
@@ -203,6 +203,7 @@
       "blocks": {
         "template--18464411418916__95308eb8-1792-44ae-a247-c898ce9a559e-16806862328940c11a-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "LIMITLESS MUSICAL EXPRESSION",
             "heading_link": "",
@@ -213,6 +214,7 @@
         },
         "template--18464411418916__95308eb8-1792-44ae-a247-c898ce9a559e-16806862328940c11a-1": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Combine old world cymbal-making artistry with modern technology, and a dash of cutting-edge innovation to transform Avedis’ alloy into boundless varieties of superior-sounding cymbals for every genre of music<\/p>",
             "text_style": "body"
@@ -253,12 +255,14 @@
       "blocks": {
         "d69a7b00-9b6a-480a-b374-ff185510e9a6": {
           "type": "icon",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/webimage-C5234F1E-3F35-4CBD-905B66C5C0A0BC2F_1.png"
           }
         },
         "template--18464411418916__95308eb8-1792-44ae-a247-c898ce9a559e-16806862328940c11a-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Lifestyle with History",
             "heading_link": "",
@@ -269,6 +273,7 @@
         },
         "template--18464411418916__95308eb8-1792-44ae-a247-c898ce9a559e-16806862328940c11a-1": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>",
             "text_style": "body",

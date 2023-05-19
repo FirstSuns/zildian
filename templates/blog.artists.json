@@ -8,7 +8,7 @@
           "settings": {
             "heading": "WELCOME TO THE FAMILY",
             "heading_size": "h1",
-            "uppercase": false
+            "uppercase": true
           }
         },
         "3d19765d-c286-4225-940c-b797aba4c039": {
@@ -16,16 +16,24 @@
           "settings": {
             "article": "artist\/anderson-paak"
           }
+        },
+        "f483865c-cc19-49f1-a94a-1981465ae1dd": {
+          "type": "text",
+          "settings": {
+            "text": "Anderson .Paak, Silk Sonic",
+            "text_style": "body"
+          }
         }
       },
       "block_order": [
         "template--18409333981476__c289bafd-44a6-474f-a663-96d26e7f5138-168029590568de2d12-0",
-        "3d19765d-c286-4225-940c-b797aba4c039"
+        "3d19765d-c286-4225-940c-b797aba4c039",
+        "f483865c-cc19-49f1-a94a-1981465ae1dd"
       ],
       "custom_css": [
         ".banner__content {max-width: 1440px;}",
         ".banner__box {margin-left: 100px;}",
-        "@media screen and (max-width: 989px) {.banner__box {margin-left: 0px; }}"
+        "@media screen and (max-width: 989px) {.banner__box {margin-left: 0px; } .banner__heading.h1 {display: block; text-align: left; max-width: 200px; }}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Zildjian-Artist-Section-Banner.jpg",

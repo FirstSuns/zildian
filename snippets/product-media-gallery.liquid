@@ -51,8 +51,14 @@
           or media.preview_image contains 'spotlight' 
           or media.preview_image contains 'thumbnails'
         -%}
+        {% assign variant_id = "" %}
+        {% for variant in product.variants %}
+         {% if media.id == variant.featured_media.id %}
+          {% assign variant_id = variant.id %}
+         {% endif %}
+        {% endfor %}
         {% assign media_size = media_size | plus: 1 %}
-        <li class="splide__slide tst" thumbnail-color="{{ media.alt }}" >
+        <li class="splide__slide tst fs-slide-thumbnail" thumbnail-color="{{ media.alt }}" fs-thumbnail-variant-id="{{variant_id}}">
           <div class="product__media media" style="padding-top: 100%;">
             <img
               srcset="{% if media.preview_image.width >= 288 %}{{ media.preview_image | img_url: '288x' }} 288w,{% endif %}

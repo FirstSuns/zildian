@@ -10,33 +10,10 @@
             "heading_size": "h0",
             "uppercase": false
           }
-        },
-        "template--18412851200292__230bc92f-b8d9-46db-823f-3f07d0207a2e-168320023775a68c6f-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "THE AARON SMITH EXPERIENCE",
-            "text_style": "body"
-          }
-        },
-        "template--18412851200292__230bc92f-b8d9-46db-823f-3f07d0207a2e-168320023775a68c6f-2": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false,
-            "blank_button": false
-          }
         }
       },
       "block_order": [
-        "template--18412851200292__230bc92f-b8d9-46db-823f-3f07d0207a2e-168320023775a68c6f-0",
-        "template--18412851200292__230bc92f-b8d9-46db-823f-3f07d0207a2e-168320023775a68c6f-1",
-        "template--18412851200292__230bc92f-b8d9-46db-823f-3f07d0207a2e-168320023775a68c6f-2"
+        "template--18412851200292__230bc92f-b8d9-46db-823f-3f07d0207a2e-168320023775a68c6f-0"
       ],
       "custom_css": [
         "h2 {color: #fff;}",
@@ -103,6 +80,9 @@
       },
       "block_order": [
         "a9051126-0fa6-4b0f-b97e-58b9830a753b"
+      ],
+      "custom_css": [
+        ".article-template__content {margin-top: 0;}"
       ],
       "settings": {}
     },
