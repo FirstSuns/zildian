@@ -87,7 +87,7 @@
       }}
     </div>
   {%- endif -%}
-  <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width full-mobile--{{section.settings.full_mobile}} center-mobile--{{section.settings.center_mobile}}">
+  <div 2 class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width full-mobile--{{section.settings.full_mobile}} center-mobile--{{section.settings.center_mobile}}">
     <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient" style="max-width: {{section.settings.content_width}}px; padding-left:{{section.settings.padding_left}}px;">
       {%- for block in section.blocks -%}
         {%- case block.type -%}

@@ -1,35 +1,38 @@
 <article class="article-template">
 {% include 'breadcrumbs' %}
-<div class="article-template__content rte">
-{% for block in section.blocks %}
-          {% assign getblog = block.settings.arti_blg %}
-          {% assign artttl = article.title %}
-          {% if getblog.title == getblog.title  %}
-              <div class="topic-1-main">
-                  <div class="page-width">
-                   <div class="topic-1-inner">
-                        <div class="topic1-innleft">
-                             <iframe 
-                              width="648" 
-                              height="359" 
-                              src="{{ block.settings.vid_lnk }}" 
-                              title="{{article.title}}" 
-                              frameborder="0" 
-                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                              allowfullscreen=""
-                            ></iframe>
-                            {{ block.settings.ttl_txt }}
-                        </div>
-                        <div class="topic1-innright">
-                              <h2>{{ block.settings.vid_ttl }}</h2>
-                              {{ block.settings.ttl_txt2 }}
-                        </div>
-                   </div>
-                  </div>
+  <div class="article-template__content rte">
+    {% for block in section.blocks %}
+      {% assign getblog = block.settings.arti_blg %}
+        
+        <div class="topic-1-main">
+          <div class="page-width">
+            <div class="topic-1-inner">
+              {% if blog.metafields.custom.youtube_url != blank %}
+              <div class="topic1-innleft">
+                <iframe 
+                width="648" 
+                height="359" 
+                src="{{ blog.metafields.custom.youtube_url }}" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen=""
+              ></iframe>
+              {% endif %}
+              {% if blog.metafields.custom.youtube_title != blank %}
+              <p>{{ blog.metafields.custom.youtube_title }}</p>
+              {% endif %}
               </div>
-          {% endif %}
-{% endfor %}
-</div>
+              <div class="topic1-innright">
+                {% if blog.metafields.custom.blog_content != blank %}
+                <p>{{ blog.metafields.custom.blog_content }}</p>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    {% endfor %}
+  </div>
 </article>
 {% schema %}
   {

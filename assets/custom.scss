@@ -893,7 +893,12 @@ body.hide-price .price, body.hide-price .buy-buttons-box, body.hide-price .produ
     padding: 40px 185px;
     margin-top: 20px;
 }
-
+@media screen and (max-width: 749px) {
+  .zildjian-workout-practice-and-learn-from-the-zildjian-artists .top-content .page-width {
+    padding: 10px;
+    margin-top: 0;
+  }
+}
 /*form page*/
 .factory-tours-signup .banner .banner__content .banner__box .banner__heading.h1 p, .product-registeration .banner .banner__content .banner__box .banner__heading.h1 p, .return-authorization .banner .banner__content .banner__box .banner__heading.h1 p {
     font-size: 16px;
@@ -1237,13 +1242,13 @@ tab-component {
 }
 
 @media only screen and (max-width: 480px) {
-article.article-template {
-    margin-top: 30px;
-}
-  .edutopic11 .article-template__content {
-    padding: 50px 0 50px;
-}
-  .breadcrumbs {
-    // margin: 69px 0 0 !important;
-}
+  article.article-template {
+      // margin-top: 30px;
+  }
+    .edutopic11 .article-template__content {
+      padding: 50px 0 50px;
+  }
+    .breadcrumbs {
+      // margin: 69px 0 0 !important;
+  }
 }

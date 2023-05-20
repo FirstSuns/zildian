@@ -522,12 +522,14 @@ html
 @media (max-width: 768px) {
   html #tagalys-namespace.tagalys-namespace .plp .product,
   html #tagalys-namespace.tagalys-namespace .search-suggestions .product {
-    padding-left: 17px;
+    padding-left: 0px;
   }
   .tagalys-namespace .search-suggestions,
   #tagalys-namespace .search-suggestions,
   #tagalys-namespace.tagalys-namespace .search-suggestions {
     width: 100% !important;
+    max-width: 95%;
+    margin: 0 auto;
   }
 }
 

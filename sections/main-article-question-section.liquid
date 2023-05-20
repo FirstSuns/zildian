@@ -1,3 +1,18 @@
+
+{% if article.metafields.global.qestion_1 == blank %}
+<style>
+#shopify-section-{{ section.id }} .article-template{
+  display: none;
+}
+.rich-text.content-container{
+  display: none;
+}
+.new-art-imm{
+  display: none;
+}
+</style>
+{% endif %}
+
 <article class="article-template">
 <div class="about-artist-section page-width--narrow page-width">
   <div class="grid">

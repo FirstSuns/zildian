@@ -3,6 +3,13 @@
     "3141c904-b6a6-4f2b-a1fe-aa2b9e911af8": {
       "type": "image-banner",
       "blocks": {
+        "633eb824-4c8b-48aa-90e9-0cb1ebae4d91": {
+          "type": "text",
+          "settings": {
+            "text": "Introducing",
+            "text_style": "subtitle"
+          }
+        },
         "template--18142515003684__3141c904-b6a6-4f2b-a1fe-aa2b9e911af8-1679425999b0455fe5-0": {
           "type": "heading",
           "settings": {
@@ -10,22 +17,15 @@
             "heading_size": "h1",
             "uppercase": false
           }
-        },
-        "633eb824-4c8b-48aa-90e9-0cb1ebae4d91": {
-          "type": "text",
-          "settings": {
-            "text": "Introducing",
-            "text_style": "subtitle"
-          }
         }
       },
       "block_order": [
-        "template--18142515003684__3141c904-b6a6-4f2b-a1fe-aa2b9e911af8-1679425999b0455fe5-0",
-        "633eb824-4c8b-48aa-90e9-0cb1ebae4d91"
+        "633eb824-4c8b-48aa-90e9-0cb1ebae4d91",
+        "template--18142515003684__3141c904-b6a6-4f2b-a1fe-aa2b9e911af8-1679425999b0455fe5-0"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/1_hero.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/hero_14.jpg",
+        "image": "shopify:\/\/shop_images\/Clocks-_-Colours-Header.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Clocks-_-Colours-Header-Mobile.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "content_width": "850",
@@ -60,7 +60,7 @@
         "template--18486377316644__3ecbccab-bd42-4007-a0cf-7fdf878e010c-16808183520973493f-1": {
           "type": "text",
           "settings": {
-            "text": "<p>For nearly 400 years, Zildjian has been on the forefront of sound innovation by creating the highest quality cymbals and instruments used by iconic bands and drummers. <br\/>We’ve teamed up with the jewelry makers at Clocks + Colours to bring you a collection that highlights their passion for creating timeless, high-quality jewelry pieces and pays homage to Zildjian’s legacy of cymbal craftsmanship. <\/p>",
+            "text": "<p>For nearly 400 years, Zildjian has been on the forefront of sound innovation by creating the highest quality cymbals and instruments used by iconic bands and drummers. <br\/><br\/>We’ve teamed up with the jewelry makers at Clocks + Colours to bring you a collection that highlights their passion for creating timeless, high-quality jewelry pieces and pays homage to Zildjian’s legacy of cymbal craftsmanship. <\/p>",
             "text_style": "body",
             "color": ""
           }
@@ -133,8 +133,8 @@
         "template--18486377316644__f81d1e15-14c5-437c-b871-d9075ab11355-1680818518029aee55-0": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Capture_2_1.png",
-            "side_image": "shopify:\/\/shop_images\/FounderZildjian-ClocksAndColours-1_1.webp",
+            "image": "shopify:\/\/shop_images\/Clocks-_-Colours-Product-Background-Image.jpg",
+            "side_image": "shopify:\/\/shop_images\/FounderZildjian-ClocksAndColours-1.png",
             "caption": "new",
             "heading": "FOUNDER RING",
             "price": "",
@@ -147,8 +147,8 @@
         "template--18486377316644__f81d1e15-14c5-437c-b871-d9075ab11355-1680818518029aee55-1": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Capture_2_acb0f833-16ad-48df-9041-03d97bff6a14.png",
-            "side_image": "shopify:\/\/shop_images\/LegacyZildjian-ClocksAndColours-1_1.webp",
+            "image": "shopify:\/\/shop_images\/Clocks-_-Colours-Product-Background-Image.jpg",
+            "side_image": "shopify:\/\/shop_images\/LegacyZildjian-ClocksAndColours-1.png",
             "caption": "new",
             "heading": "LEGACY RING",
             "price": "",
@@ -161,8 +161,8 @@
         "template--18486377316644__f81d1e15-14c5-437c-b871-d9075ab11355-1680818518029aee55-2": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Capture_2_1.png",
-            "side_image": "shopify:\/\/shop_images\/ClassicZildjian-ClocksAndColours-1_1.webp",
+            "image": "shopify:\/\/shop_images\/Clocks-_-Colours-Product-Background-Image.jpg",
+            "side_image": "shopify:\/\/shop_images\/ClassicZildjian-ClocksAndColours-1.png",
             "caption": "new",
             "heading": "CLASSIC PENDANT",
             "price": "",
@@ -175,8 +175,8 @@
         "41ec66e0-0c92-419e-90bc-899bfae6bc1a": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Capture_2_1.png",
-            "side_image": "shopify:\/\/shop_images\/KeyZildjian-ClocksAndColours-2_1.webp",
+            "image": "shopify:\/\/shop_images\/Clocks-_-Colours-Product-Background-Image.jpg",
+            "side_image": "shopify:\/\/shop_images\/KeyZildjian-ClocksAndColours-2.png",
             "caption": "new",
             "heading": "KEY PENDANT",
             "price": "",
@@ -435,8 +435,8 @@
         "template--18888296792356__e91fbaef-4f78-4159-a199-5cec5e384032-16836258707033578d-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Clocks-and-Colors-Footer-test.webp",
-        "mobile_image": "shopify:\/\/shop_images\/Clocks-and-Colors-Footer-test.webp",
+        "image": "shopify:\/\/shop_images\/Clocks-_-Colours-Footer.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Clocks-_-Colours-Footer-Mobile.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "content_width": "",

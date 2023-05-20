@@ -2,7 +2,7 @@
 {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 
 {% comment %} First of all, we get last part of the URL that's supposedly the Youtube Video ID {% endcomment %}
-{% assign video_id = product.metafields.global.image_with_text_section_2.value.video_link | split: '/' | last %}
+{% assign video_id = product.metafields.custom.limitless_youtube_url | split: '/' | last %}
 
 {% comment %} but we need strip any extra URL params {% endcomment %}
 {% assign video_id = video_id | split: '?' | last %}
@@ -15,20 +15,22 @@
     <noscript>
       <div
         class="video-section__media"
-        {% if product.metafields.global.image_with_text_section_2.value.image != blank %}
+        {% if product.metafields.custom.limitless_image != blank %}
           style="padding-bottom: {{ 1 | divided_by: product.metafields.global.image_with_text_section_2.value.image.aspect_ratio | times: 100 }}%;"
         {% endif %}
       >
         <a
-          href="{{ product.metafields.global.image_with_text_section_2.value.video_link }}"
-          class="video-section__poster media media--transparent media--landscape{% if product.metafields.global.image_with_text_section_2.value.image == blank %} video-section__placeholder{% endif %}"
+          href="{{ product.metafields.custom.limitless_youtube_url }}"
+          class="video-section__poster media media--transparent media--landscape{% if product.metafields.custom.limitless_youtube_url == blank %} video-section__placeholder{% endif %}"
         >
-          {%- if product.metafields.global.image_with_text_section_2.value.image != blank -%}
+          {%- if product.metafields.custom.limitless_image != blank -%}
             {%- capture sizes -%}
               100vw
             {%- endcapture -%}
             {%- assign alt = 'sections.video.load_video' | t: description: section.settings.description | escape -%}
-            {{
+            {% assign img_name = product.metafields.custom.limitless_image | split: "/" %}
+            <img src="{{img_name.last | file_url}}"  loading="lazy" width="1500" height="1500">
+            {% comment %} {{
               product.metafields.global.image_with_text_section_2.value.image
               | image_url: width: 3840
               | image_tag:
@@ -36,7 +38,7 @@
                 sizes: sizes,
                 widths: '375, 750, 1100, 1500, 1780, 2000, 3000, 3840',
                 alt: alt
-            }}
+            }} {% endcomment %}
           {%- else -%}
             {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
           {%- endif -%}
@@ -46,7 +48,7 @@
     <deferred-media
       class="video-section__media deferred-media no-js-hidden gradient global-media-settings global-media-settings--full-width"
       data-media-id="{{ video_id }}"
-      {% if product.metafields.global.image_with_text_section_2.value.image != blank %}
+      {% if product.metafields.custom.limitless_image != blank %}
         style="padding-bottom: {{ 1 | divided_by: product.metafields.global.image_with_text_section_2.value.image.aspect_ratio | times: 100 }}%;"
       {% endif %}
     >
@@ -56,16 +58,18 @@
         type="button"
         aria-label="{{ 'sections.video.load_video' | t: description: section.settings.description | escape }}"
       >
-        {%- if product.metafields.global.image_with_text_section_2.value.image != blank -%}
+        {%- if product.metafields.custom.limitless_image != blank -%}
           {%- capture sizes -%}
               100vw
           {%- endcapture -%}
           {%- assign alt = 'sections.video.load_video' | t: description: section.settings.description | escape -%}
-          {{
+          {% assign img_name = product.metafields.custom.limitless_image | split: "/" %}
+          <img src="{{img_name.last | file_url}}"  loading="lazy" width="1500" height="1500">
+          {% comment %} {{
             product.metafields.global.image_with_text_section_2.value.image
             | image_url: width: 3840
             | image_tag: loading: 'lazy', sizes: sizes, widths: '375, 750, 1100, 1500, 1780, 2000, 3000, 3840', alt: alt
-          }}
+          }} {% endcomment %}
         {%- else -%}
           {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
         {%- endif -%}

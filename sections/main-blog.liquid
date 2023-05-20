@@ -15,24 +15,76 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+  {% if blog.metafields.custom.youtube_url == blank %}
+  .topic1-innright{
+    width: 100%;
+  }
+  .topic1-innright h2{
+    text-align: center
+  }
+  {% endif %}
+  {% if blog.metafields.global.text != blank %}
+  .fs-blog-content-ini{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .fs-blog-content-ini p{
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+  @media screen and (max-width: 749px) {
+    .fs-blog-content-ini p{
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+  {% endif %}
+  
 {%- endstyle -%}
-{% if blog.metafields.global.text != blank %}
+
 <div class="top-content">
   {% include 'breadcrumbs' %}
-  {% if template contains 'education-topic-3' %}
-  <div class="edu-tt-pp">
-  {% endif %}
-  <div class="page-width">
-    {{blog.metafields.global.text}}
-  </div>
-  {% if template contains 'education-topic-3' %}
-  </div>
+  {% if blog.metafields.custom.blog_content != blank %}
+    <div class="article-template__content rte">
+      <div class="topic-1-main">
+        <div class="page-width">
+          <div class="topic-1-inner">
+            {% if blog.metafields.custom.youtube_url != blank %}
+            <div class="topic1-innleft">
+              <iframe 
+                width="648" 
+                height="359" 
+                src="{{ blog.metafields.custom.youtube_url }}" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen=""
+              ></iframe>
+              {% if blog.metafields.custom.youtube_title != blank %}
+              <p>{{ blog.metafields.custom.youtube_title }}</p>
+              {% endif %}
+            </div>
+            {% endif %}
+            <div class="topic1-innright">
+              {% if blog.metafields.custom.blog_content_title != blank %}
+              <h2>{{blog.metafields.custom.blog_content_title}}</h2>
+              {% endif %}
+              <div class="fs-blog-content-ini">
+              {% if blog.metafields.custom.blog_content != blank %}
+                <p>{{ blog.metafields.custom.blog_content }}</p>
+              {% endif %}
+              {% if blog.metafields.global.text != blank %}
+                <p>{{ blog.metafields.global.text }}</p>
+              {% endif %}
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
   {% endif %}
 </div>
-{% endif %}
-{% if template contains 'education-topic-3' %}
-<div class="edu-art-two">
-<h2>{{ blog.metafields.custom.second_section_blogs }}</h2>
 <article-component>
   {% if section.settings.enable_filter %}
   <div class="search-bar-container page-width">
@@ -94,8 +146,7 @@
           </div>
         </div>
       </div>
-    </div>
-    
+    </div>  
   </div>
   {% endif %}
   
@@ -126,200 +177,10 @@
     </div>
   {%- endpaginate -%}
 </article-component>
-<h2>{{ blog.metafields.custom.first_section_blogs }}</h2>
-<article-component>
-  {% if section.settings.enable_filter %}
-  <div class="search-bar-container page-width">
-    <div class="search-bar">
-      <div class="grid search-bar-container">
-        <div id="search" class="grid__item">
-          <form action="{{ routes.search_url }}" method="get" role="search">
-            <input type="hidden" name="type" value="article" />
-            <div class="field">
-              <input id="searchInput" required name="q" class="field__input" placeholder="Find an Artist" type="text">
-              <button class="search">
-                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14.9682 10.1776C14.9682 12.9421 12.727 15.1833 9.96248 15.1833C7.19791 15.1833 4.95679 12.9421 4.95679 10.1776C4.95679 7.413 7.19791 5.17188 9.96248 5.17188C12.727 5.17188 14.9682 7.413 14.9682 10.1776Z" stroke="black"/>
-                  <path d="M17.5438 17.3271L13.6163 13.8887" stroke="black" stroke-linecap="square"/>
-                </svg>            
-              </button>
-            </div>
-          </form>
-          
-        </div>
-    
-        <div id="filters" class="filters-container">
-          <button class="toggle-menu">Filter  
-            <span class="icon">
-              <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 1L5.18359 5L10 1" stroke="white" stroke-width="2"/>
-              </svg>
-            </span>
-          </button>
-          <a href="/blogs/{{ blog.handle }}" class="clear-filter">Clear Filters (<span class="num">0</span>)
-            <span class="icon">
-              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8.57157 8.57059L1.42871 1.42773" stroke="white" stroke-width="2" stroke-linecap="square"/>
-                <path d="M1.42871 8.57059L8.57157 1.42773" stroke="#F8F8F9" stroke-width="2" stroke-linecap="square"/>
-              </svg>
-            </span>
-          </a>
-          <div class="menu-container">
-            <div class="header large-up-hide">
-              <h4 class="uppercase">Filter</h4>
-              <button class="close-menu">
-                <span class="icon">
-                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8.57157 8.57059L1.42871 1.42773" stroke="black" stroke-linecap="square"/>
-                    <path d="M1.42871 8.57059L8.57157 1.42773" stroke="black" stroke-linecap="square"/>
-                  </svg>                  
-                </span>
-                Close  
-              </button>
-            </div>
-            {%- for tag in blog.all_tags -%}
-              {% cycle '<div class="row"><ul>', '', '', '', '' %}
-              {% if tag contains "_" %}{%- assign tag_starts_with = tag | slice: 0 -%}{% if tag_starts_with == "_" %}{% if tag_count %}{%- assign tag_count = tag_count | minus: 1 | at_least: 0 -%}{% endif %}{% continue %}{% endif %}{% endif %}
-              <li>
-                <a href="/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" class="{% if current_tags contains tag %}active{% endif %}">{{ tag }}</a>
-              </li>
-              {% cycle '', '', '', '', '</ul></div>' %}
-            {%- endfor -%}
-          </div>
-        </div>
-      </div>
-    </div>
-    
-  </div>
-  {% endif %}
-  
-  
-  {%- paginate blog.articles by 15 -%}
-    <div class="main-blog page-width section-{{ section.id }}-padding">
-      <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
-        {%- for article in blog.articles -%}
-          <div class="blog-articles__article article">
-            {%- render 'article-card',
-              article: article,
-              media_height: section.settings.image_height,
-              media_aspect_ratio: article.image.aspect_ratio,
-              show_image: section.settings.show_image,
-              show_date: section.settings.show_date,
-              show_author: section.settings.show_author,
-              show_title: section.settings.show_blog_title,
-              vendor: blog.title,
-              show_excerpt: false
-            -%}
-          </div>
-        {%- endfor -%}
-      </div>
-  
-      {%- if paginate.pages > 1 -%}
-        {%- render 'pagination', paginate: paginate -%}
-      {%- endif -%}
-    </div>
-  {%- endpaginate -%}
-</article-component>
-</div>
-{% else %}
-<article-component>
-  {% if section.settings.enable_filter %}
-  <div class="search-bar-container page-width">
-    <div class="search-bar">
-      <div class="grid search-bar-container">
-        <div id="search" class="grid__item">
-          <form action="{{ routes.search_url }}" method="get" role="search">
-            <input type="hidden" name="type" value="article" />
-            <div class="field">
-              <input id="searchInput" required name="q" class="field__input" placeholder="Find an Artist" type="text">
-              <button class="search">
-                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14.9682 10.1776C14.9682 12.9421 12.727 15.1833 9.96248 15.1833C7.19791 15.1833 4.95679 12.9421 4.95679 10.1776C4.95679 7.413 7.19791 5.17188 9.96248 5.17188C12.727 5.17188 14.9682 7.413 14.9682 10.1776Z" stroke="black"/>
-                  <path d="M17.5438 17.3271L13.6163 13.8887" stroke="black" stroke-linecap="square"/>
-                </svg>            
-              </button>
-            </div>
-          </form>
-          
-        </div>
-    
-        <div id="filters" class="filters-container">
-          <button class="toggle-menu">Filter  
-            <span class="icon">
-              <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 1L5.18359 5L10 1" stroke="white" stroke-width="2"/>
-              </svg>
-            </span>
-          </button>
-          <a href="/blogs/{{ blog.handle }}" class="clear-filter">Clear Filters (<span class="num">0</span>)
-            <span class="icon">
-              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8.57157 8.57059L1.42871 1.42773" stroke="white" stroke-width="2" stroke-linecap="square"/>
-                <path d="M1.42871 8.57059L8.57157 1.42773" stroke="#F8F8F9" stroke-width="2" stroke-linecap="square"/>
-              </svg>
-            </span>
-          </a>
-          <div class="menu-container">
-            <div class="header large-up-hide">
-              <h4 class="uppercase">Filter</h4>
-              <button class="close-menu">
-                <span class="icon">
-                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8.57157 8.57059L1.42871 1.42773" stroke="black" stroke-linecap="square"/>
-                    <path d="M1.42871 8.57059L8.57157 1.42773" stroke="black" stroke-linecap="square"/>
-                  </svg>                  
-                </span>
-                Close  
-              </button>
-            </div>
-            {%- for tag in blog.all_tags -%}
-              {% cycle '<div class="row"><ul>', '', '', '', '' %}
-              {% if tag contains "_" %}{%- assign tag_starts_with = tag | slice: 0 -%}{% if tag_starts_with == "_" %}{% if tag_count %}{%- assign tag_count = tag_count | minus: 1 | at_least: 0 -%}{% endif %}{% continue %}{% endif %}{% endif %}
-              <li>
-                <a href="/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" class="{% if current_tags contains tag %}active{% endif %}">{{ tag }}</a>
-              </li>
-              {% cycle '', '', '', '', '</ul></div>' %}
-            {%- endfor -%}
-          </div>
-        </div>
-      </div>
-    </div>
-    
-  </div>
-  {% endif %}
-  
-  
-  {%- paginate blog.articles by 15 -%}
-    <div class="main-blog page-width section-{{ section.id }}-padding">
-      <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
-        {%- for article in blog.articles -%}
-          <div class="blog-articles__article article">
-            {%- render 'article-card',
-              article: article,
-              media_height: section.settings.image_height,
-              media_aspect_ratio: article.image.aspect_ratio,
-              show_image: section.settings.show_image,
-              show_date: section.settings.show_date,
-              show_author: section.settings.show_author,
-              show_title: section.settings.show_blog_title,
-              vendor: blog.title,
-              show_excerpt: false
-            -%}
-          </div>
-        {%- endfor -%}
-      </div>
-  
-      {%- if paginate.pages > 1 -%}
-        {%- render 'pagination', paginate: paginate -%}
-      {%- endif -%}
-    </div>
-  {%- endpaginate -%}
-</article-component>
-{% endif %}
 {{ 'custom-article.js' | asset_url | script_tag }}
 {% schema %}
 {
-  "name": "t:sections.main-blog.name",
+  "name": "Blog (Education Topic 1)",
   "tag": "section",
   "class": "section",
   "settings": [

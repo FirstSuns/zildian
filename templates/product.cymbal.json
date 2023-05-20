@@ -199,11 +199,9 @@
     },
     "95308eb8-1792-44ae-a247-c898ce9a559e": {
       "type": "product-image-with-text-2",
-      "disabled": true,
       "blocks": {
         "template--18464411418916__95308eb8-1792-44ae-a247-c898ce9a559e-16806862328940c11a-0": {
           "type": "heading",
-          "disabled": true,
           "settings": {
             "heading": "LIMITLESS MUSICAL EXPRESSION",
             "heading_link": "",
@@ -214,7 +212,6 @@
         },
         "template--18464411418916__95308eb8-1792-44ae-a247-c898ce9a559e-16806862328940c11a-1": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "text": "<p>Combine old world cymbal-making artistry with modern technology, and a dash of cutting-edge innovation to transform Avedis’ alloy into boundless varieties of superior-sounding cymbals for every genre of music<\/p>",
             "text_style": "body"

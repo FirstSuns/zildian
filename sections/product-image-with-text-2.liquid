@@ -14,13 +14,13 @@
     }
   }
 {%- endstyle -%}
-{%- if product.metafields.global.image_with_text_section_2.value.image != blank -%}
-<div class="image-with-text section-overlay--{{section.settings.overlay_section}} side-banner--{{section.settings.side_banner}} image-with-text--{{ section.settings.content_layout }} overlap--{{ section.settings.desktop_content_position }} {% if section.settings.desktop_full_width == true %}page-width-tablet-down{% endif %} {% if section.settings.full_width == false %}page-width{% endif %} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == 'background-1' and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %} section-{{ section.id }}-padding">
+{%- if product.metafields.custom.limitless_image != blank -%}
+<div limiless class="image-with-text section-overlay--{{section.settings.overlay_section}} side-banner--{{section.settings.side_banner}} image-with-text--{{ section.settings.content_layout }} overlap--{{ section.settings.desktop_content_position }} {% if section.settings.desktop_full_width == true %}page-width-tablet-down{% endif %} {% if section.settings.full_width == false %}page-width{% endif %} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == 'background-1' and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %} section-{{ section.id }}-padding">
   <div class="image-with-text__grid grid grid--gapless grid--1-col width--{{section.settings.desktop_image_width}} {% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %} {% if section.settings.mobile_layout == 'text_first' %} mobile_image-with-text__grid--reverse{% endif %}">
     <div class="image-with-text__media-item image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item">
       <div
         class="image-with-text__media image-with-text__media--{{ section.settings.height }} gradient color-{{ section.settings.color_scheme }} global-media-settings {% if product.metafields.global.image_with_text_section_2.value.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
-        {% if section.settings.height == 'adapt' and product.metafields.global.image_with_text_section_2.value.image != blank %}
+        {% if section.settings.height == 'adapt' and product.metafields.custom.limitless_image != blank %}
           style="padding-bottom: 60%;"
         {% endif %}
       >
@@ -28,14 +28,16 @@
             (min-width: {{ settings.page_width }}px) 2048px,
             (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
           {%- endcapture -%}
-          {% if product.metafields.global.image_with_text_section_2.value.video_link != blank %}
+          {% if product.metafields.custom.limitless_youtube_url != blank %}
           {% include 'product-video2' %}
           {% else %}
-          {{
+          {% assign img_name = product.metafields.custom.limitless_image | split: "/" %}
+          <img src="{{img_name.last | file_url}}"  loading="lazy" width="1500" height="1500">
+          {% comment %} {{
             product.metafields.global.image_with_text_section_2.value.image
             | image_url: width: 1500
             | image_tag: loading: 'lazy', sizes: sizes, widths: '165, 360, 535, 750, 1070, 1500'
-          }}
+          }} {% endcomment %}
           {% endif %}
       </div>
     </div>
@@ -65,10 +67,10 @@
                   {% endif %}
                   {% if block.settings.heading_link != blank %}
                     <a href="{{block.settings.heading_link}}" class="link animate-arrow">
-                      {{ product.metafields.global.image_with_text_section_2.value.titile | escape }}  <span class="icon-wrap">{% render 'icon-arrow' %}</span>
+                      {{ product.metafields.custom.limitless_title | escape }}  <span class="icon-wrap">{% render 'icon-arrow' %}</span>
                     </a>
                   {% else %}
-                    {{ product.metafields.global.image_with_text_section_2.value.titile }}
+                    {{ product.metafields.custom.limitless_title }}
                   {% endif %}
                   
                 </h2>
@@ -85,7 +87,7 @@
                     <div class="side-content"></div>
                   {% endif %}
                   <div class="text-content">
-                    {{ product.metafields.global.image_with_text_section_2.value.text | metafield_tag }}
+                    {{ product.metafields.custom.limitless_content | metafield_tag }}
                   </div>
                 </div>
               {%- when 'button' -%}
@@ -225,7 +227,7 @@
 {% endif %}
 {% schema %}
 {
-  "name": "Image with text (product)",
+  "name": "Image text(pdp limiless)",
   "class": "section",
   "disabled_on": {
     "groups": ["header", "footer"]

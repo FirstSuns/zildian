@@ -184,6 +184,10 @@ TagalysCustomizations.utilities.productRenderer = function (html, args, options 
 
   var productTagTemplateName = getProductTagTemplateName()
 
+  // if (product.title.length > 40) {
+  //   product.title=product.title.slice(0, 40) + '...'
+  // }
+
   return html`
     <div class="product" data-product-id=${product.id} aria-label="product">
       <a
@@ -215,7 +219,7 @@ TagalysCustomizations.utilities.productRenderer = function (html, args, options 
           })}
         </span>
         <div class="product-details">
-          <h3 class="product-name" dangerouslySetInnerHTML=${{ __html: product.title}}></h3>
+          <h3 class="product-name 2" dangerouslySetInnerHTML=${{ __html: product.title}}></h3>
           <div class="product-model">${modelName}</div>
           ${html `
             <div
