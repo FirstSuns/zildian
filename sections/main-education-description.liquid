@@ -2,8 +2,9 @@
 <div class="article-template__content page-width page-width--narrow rte">
 {% for block in section.blocks %}
   {% assign getblog = block.settings.arti_blg %}
-  {% assign artttl = article.title %}
-  {% if getblog.title == artttl %}
+  {% comment %} {% assign artttl = article.title %}
+  {% if getblog.title == artttl %} 
+  {% endif %}{% endcomment %}
     <iframe width="100%" height="600" src="{{ block.settings.ifram_id }}" title="John Riley: The Art of Bop Drumming, Series Introduction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" class=""></iframe>
     <span class="" style="color: #5C5D60;">
       {{ block.settings.iframe_cap }}
@@ -81,7 +82,7 @@
       {{block.settings.quote3}}
     </div>
     {% endif %}
-  {% endif %}
+  
 {% endfor %}
 </div>
 </article>

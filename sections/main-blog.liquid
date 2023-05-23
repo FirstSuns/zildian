@@ -40,6 +40,11 @@
     }
   }
   {% endif %}
+  .fs-blog-grid-title{
+    text-align: center;
+    color: #5C5D60;
+    font-size: 24px;
+  }
   
 {%- endstyle -%}
 
@@ -153,23 +158,53 @@
   
   {%- paginate blog.articles by 15 -%}
     <div class="main-blog page-width section-{{ section.id }}-padding">
-      <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
-        {%- for article in blog.articles -%}
-          <div class="blog-articles__article article">
-            {%- render 'article-card',
-              article: article,
-              media_height: section.settings.image_height,
-              media_aspect_ratio: article.image.aspect_ratio,
-              show_image: section.settings.show_image,
-              show_date: section.settings.show_date,
-              show_author: section.settings.show_author,
-              show_title: section.settings.show_blog_title,
-              vendor: blog.title,
-              show_excerpt: false
-            -%}
-          </div>
-        {%- endfor -%}
-      </div>
+      {% if blog.metafields.custom.blog_grid_title != blank %}
+      <h3 class="fs-blog-grid-title">{{blog.metafields.custom.blog_grid_title}}</h3>
+      {% endif %} 
+      {% if blog.metafields.custom.blogpost_category_list == blank %}
+        <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
+          {%- for article in blog.articles -%}
+            <div class="blog-articles__article article">
+              {%- render 'article-card',
+                article: article,
+                media_height: section.settings.image_height,
+                media_aspect_ratio: article.image.aspect_ratio,
+                show_image: section.settings.show_image,
+                show_date: section.settings.show_date,
+                show_author: section.settings.show_author,
+                show_title: section.settings.show_blog_title,
+                vendor: blog.title,
+                show_excerpt: false
+              -%}
+            </div>
+          {%- endfor -%}
+        </div>
+      {% else %}
+        {% assign blogpost_category_list =  blog.metafields.custom.blogpost_category_list | split: "," %}
+        {% for category in blogpost_category_list %}
+          <h3 class="fs-blog-grid-title" style="text-align: left;">{{category}}</h3>
+          <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
+            {%- for article in blog.articles -%}
+              {% if article.metafields.custom.blog_category == category %}
+              <div class="blog-articles__article article">
+                {%- render 'article-card',
+                  article: article,
+                  media_height: section.settings.image_height,
+                  media_aspect_ratio: article.image.aspect_ratio,
+                  show_image: section.settings.show_image,
+                  show_date: section.settings.show_date,
+                  show_author: section.settings.show_author,
+                  show_title: section.settings.show_blog_title,
+                  vendor: blog.title,
+                  show_excerpt: false
+                -%}
+              </div>
+              {% endif %}
+            {%- endfor -%}
+          </div>  
+        {% endfor %}
+      {% endif %}
+      
   
       {%- if paginate.pages > 1 -%}
         {%- render 'pagination', paginate: paginate -%}

@@ -3,8 +3,9 @@
 <header class="page-width page-width--narrow" {{ block.shopify_attributes }}>
   {% for block in section.blocks %}
     {% assign getblog = block.settings.arti_blg %}
-    {% assign artttl = article.title %}
+    {% comment %} {% assign artttl = article.title %}
     {% if getblog.title == artttl %}
+    {% endif %} {% endcomment %}
       {% if block.settings.ifram_ttl != blank %}
       <h2 class="article-template__title center" itemprop="headline">
             {{ block.settings.ifram_ttl }}
@@ -37,7 +38,7 @@
           </a>
         </div>
       </div>
-    {% endif %}
+    
   {% endfor %}
 </header>
 </article>

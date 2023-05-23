@@ -172,3 +172,47 @@
 .article-template__back:last-child {
   margin-bottom: 3.2rem;
 }
+
+
+/*===== original article html code====*/
+.full-description-contain-article{
+  color: #5c5d60;
+}
+.pagebuilder-mobile-hidden{
+
+}
+.pagebuilder-mobile-only{
+  display: none !important;
+}
+.full-description-contain-article hr{
+  margin: 0;
+}
+.pagebuilder-video-container iframe{
+  height: 520px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 749px) {
+  .pagebuilder-mobile-hidden{
+    display: none !important;
+  }
+  .pagebuilder-mobile-only{
+    display: block !important;
+  }
+  /* .full-description-contain-article > div > div{
+    margin: 0;
+  } */
+  [data-element="inner"]{
+    margin: 0 !important;
+  }
+  .pagebuilder-column-group {
+    flex-wrap: wrap;
+  }
+  .pagebuilder-column-group .pagebuilder-column
+  {
+    width: 100% !important;
+  }
+  .pagebuilder-video-container iframe{
+    height: 260px;
+  }
+}

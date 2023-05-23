@@ -55,48 +55,18 @@
     "21f64e66-0b48-4b65-bf15-a4ca2741c593": {
       "type": "education",
       "blocks": {
-        "template--18431751291172__21f64e66-0b48-4b65-bf15-a4ca2741c593-1680470723e8579b75-0": {
+        "6f3d7dad-919f-484e-b4cf-bdddddf1aa5e": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Marching-Cymbals-101-City-Mystique-Thumbnail.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Marching-Cymbals-101-City-Mystique-Thumbnail.jpg",
+            "image": "shopify:\/\/shop_images\/Zildjian-Drum-Set-Method-Thumbnail.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Zildjian-Drum-Set-Method-Thumbnail.jpg",
             "badge": "",
-            "title": "MARCHING CYMBALS 101 WITH MUSIC CITY MYSTIQUE",
+            "title": "ZILDJIAN BEGINNING DRUM SET METHOD",
             "heading_size": "h3",
             "heading_color": "",
-            "link": "shopify:\/\/blogs\/music-city-mystique",
+            "link": "shopify:\/\/blogs\/drum-set-method",
             "column_type": "Newest",
-            "instruments": "Educational",
-            "types": "Percussion 101"
-          }
-        },
-        "template--18431751291172__21f64e66-0b48-4b65-bf15-a4ca2741c593-1680470723e8579b75-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/rich-thompson-BIO.webp",
-            "mobile_image": "shopify:\/\/shop_images\/rich-thompson-BIO.webp",
-            "badge": "",
-            "title": "MODERN JAZZ SOLOS FOR DRUM SET, LESSON SERIES WITH RICH THOMPSON",
-            "heading_size": "h3",
-            "heading_color": "",
-            "link": "shopify:\/\/blogs\/modern-jazz-solos-for-drum-set-lesson-series-with-rich-thompson",
-            "column_type": "Most popular",
-            "instruments": "Concert,\nDrumset",
-            "types": ""
-          }
-        },
-        "template--18431751291172__21f64e66-0b48-4b65-bf15-a4ca2741c593-1680470723e8579b75-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/InSpirit-Thumbnail.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/InSpirit-Thumbnail.jpg",
-            "badge": "",
-            "title": "ZILDJIAN INSPIRIT DIGEST",
-            "heading_size": "h3",
-            "heading_color": "",
-            "link": "shopify:\/\/blogs\/zildjian-inspirit-digest",
-            "column_type": "Newest",
-            "instruments": "Play-Along-Tracks",
+            "instruments": "",
             "types": ""
           }
         },
@@ -130,8 +100,56 @@
             "types": ""
           }
         },
+        "template--18431751291172__21f64e66-0b48-4b65-bf15-a4ca2741c593-1680470723e8579b75-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/InSpirit-Thumbnail.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/InSpirit-Thumbnail.jpg",
+            "badge": "",
+            "title": "ZILDJIAN INSPIRIT DIGEST",
+            "heading_size": "h3",
+            "heading_color": "",
+            "link": "shopify:\/\/blogs\/zildjian-inspirit-digest",
+            "column_type": "Newest",
+            "instruments": "Play-Along-Tracks",
+            "types": ""
+          }
+        },
+        "template--18431751291172__21f64e66-0b48-4b65-bf15-a4ca2741c593-1680470723e8579b75-0": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Marching-Cymbals-101-City-Mystique-Thumbnail.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Marching-Cymbals-101-City-Mystique-Thumbnail.jpg",
+            "badge": "",
+            "title": "MARCHING CYMBALS 101 WITH MUSIC CITY MYSTIQUE",
+            "heading_size": "h3",
+            "heading_color": "",
+            "link": "shopify:\/\/blogs\/music-city-mystique",
+            "column_type": "Newest",
+            "instruments": "Educational",
+            "types": "Percussion 101"
+          }
+        },
+        "template--18431751291172__21f64e66-0b48-4b65-bf15-a4ca2741c593-1680470723e8579b75-1": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/rich-thompson-BIO.webp",
+            "mobile_image": "shopify:\/\/shop_images\/rich-thompson-BIO.webp",
+            "badge": "",
+            "title": "MODERN JAZZ SOLOS FOR DRUM SET, LESSON SERIES WITH RICH THOMPSON",
+            "heading_size": "h3",
+            "heading_color": "",
+            "link": "shopify:\/\/blogs\/modern-jazz-solos-for-drum-set-lesson-series-with-rich-thompson",
+            "column_type": "Most popular",
+            "instruments": "Concert,\nDrumset",
+            "types": ""
+          }
+        },
         "c675aa49-ed33-4073-bc94-76ce91b515c0": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Insta-Lessions-Thumbnail.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Insta-Lessions-Thumbnail.jpg",
@@ -147,6 +165,7 @@
         },
         "0ce985a9-e270-4b7f-8be8-ebbec19395fe": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Musical-Perspectives-Thumbnail.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Musical-Perspectives-Thumbnail.jpg",
@@ -162,6 +181,7 @@
         },
         "856cae8e-235e-4c0e-9d66-4e57d3494617": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Zildjian-Live-Thumbnail.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Zildjian-Live-Thumbnail.jpg",
@@ -177,6 +197,7 @@
         },
         "d7fc5197-213b-4f6f-a0a8-77ea99d0685e": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Stanton-Moore_s-Thumbnail.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Stanton-Moore_s-Thumbnail.jpg",
@@ -192,6 +213,7 @@
         },
         "6b56d3c8-3e2d-4208-9821-71353652faf2": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Art-of-Bop-Thumbnail.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Art-of-Bop-Thumbnail.jpg",
@@ -207,6 +229,7 @@
         },
         "59c64089-2d2b-47a0-943c-63bbd22ab6df": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/James-Campbell-Thumbnail.jpg",
             "mobile_image": "shopify:\/\/shop_images\/James-Campbell-Thumbnail.jpg",
@@ -222,6 +245,7 @@
         },
         "f81cdb5e-440f-41f5-ad99-be1292ae6f5d": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Marching-Cymbals-101-Thumbnail.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Marching-Cymbals-101-Thumbnail.jpg",
@@ -237,6 +261,7 @@
         },
         "3eb1cd7e-51ee-43cf-aced-9b9698ffa0a2": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Jazz-Rhythm-Section-101-Thumbnail.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Jazz-Rhythm-Section-101-Thumbnail.jpg",
@@ -249,29 +274,15 @@
             "instruments": "",
             "types": ""
           }
-        },
-        "6f3d7dad-919f-484e-b4cf-bdddddf1aa5e": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Zildjian-Drum-Set-Method-Thumbnail.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Zildjian-Drum-Set-Method-Thumbnail.jpg",
-            "badge": "",
-            "title": "ZILDJIAN BEGINNING DRUM SET METHOD",
-            "heading_size": "h3",
-            "heading_color": "",
-            "link": "shopify:\/\/blogs\/drum-set-method",
-            "column_type": "Newest",
-            "instruments": "",
-            "types": ""
-          }
         }
       },
       "block_order": [
-        "template--18431751291172__21f64e66-0b48-4b65-bf15-a4ca2741c593-1680470723e8579b75-0",
-        "template--18431751291172__21f64e66-0b48-4b65-bf15-a4ca2741c593-1680470723e8579b75-1",
-        "template--18431751291172__21f64e66-0b48-4b65-bf15-a4ca2741c593-1680470723e8579b75-2",
+        "6f3d7dad-919f-484e-b4cf-bdddddf1aa5e",
         "fd2e937a-da9d-414c-8e9e-23d87474e397",
         "4c0fa697-5fbb-417b-a244-a79fd4e84cec",
+        "template--18431751291172__21f64e66-0b48-4b65-bf15-a4ca2741c593-1680470723e8579b75-2",
+        "template--18431751291172__21f64e66-0b48-4b65-bf15-a4ca2741c593-1680470723e8579b75-0",
+        "template--18431751291172__21f64e66-0b48-4b65-bf15-a4ca2741c593-1680470723e8579b75-1",
         "c675aa49-ed33-4073-bc94-76ce91b515c0",
         "0ce985a9-e270-4b7f-8be8-ebbec19395fe",
         "856cae8e-235e-4c0e-9d66-4e57d3494617",
@@ -279,8 +290,7 @@
         "6b56d3c8-3e2d-4208-9821-71353652faf2",
         "59c64089-2d2b-47a0-943c-63bbd22ab6df",
         "f81cdb5e-440f-41f5-ad99-be1292ae6f5d",
-        "3eb1cd7e-51ee-43cf-aced-9b9698ffa0a2",
-        "6f3d7dad-919f-484e-b4cf-bdddddf1aa5e"
+        "3eb1cd7e-51ee-43cf-aced-9b9698ffa0a2"
       ],
       "custom_css": [
         "@media screen and (min-width: 750px) {.multicolumn > div {padding-bottom: 200px; }}"

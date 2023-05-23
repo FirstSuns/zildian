@@ -99,29 +99,18 @@
             </span>
           {%- endif -%}
         </header>
-        {%if template contains 'education-topic-1'%}
-        {% else %}
         {% include 'breadcrumbs' %}
-        {% endif %}
 
       {%- when 'content' -%}
-        {%if template contains 'education-topic-1' %}
 
-        {% else %}
         <div
-          class="article-template__content {%if template contains 'education-topic-1' or template contains 'education-topic-3' %}{% else %}page-width page-width--narrow{% endif %} rte"
+          class="article-template__content page-width page-width--narrow rte"
           itemprop="articleBody"
           {{ block.shopify_attributes }}
         >
-         {%if template contains 'education-topic-1' or template contains 'education-topic-3' %}
-         <div class="page-width">
-          {% endif %}
           {{ article.content }}
-          {%if template contains 'education-topic-1' or template contains 'education-topic-3' %}
-         </div>
-          {% endif %}
         </div>
-        {% endif %}
+
       {%- when 'share' -%}
         <div class="article-template__social-sharing page-width page-width--narrow" {{ block.shopify_attributes }}>
           {% assign share_url = request.origin | append: article.url %}

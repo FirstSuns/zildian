@@ -3,8 +3,9 @@
   <div class="grid">
     {% for block in section.blocks %}
     {% assign getblog = block.settings.arti_blg %}
-    {% assign artttl = article.title %}
-      {% if getblog.title == artttl %}
+    {% comment %} {% assign artttl = article.title %}
+    {% if getblog.title == artttl %} 
+     {% endif %}{% endcomment %}
     <div class="title">
       <h2 class="h1">{{block.settings.Artists_Title}}'s IN <span>FEW</span></h2>
     </div>
@@ -22,7 +23,7 @@
         </ul>
       </div>
     </div>
-        {% endif %}
+       
       {% endfor %}
   </div>
 </div>

@@ -100,7 +100,11 @@
                   | image_tag: loading: 'lazy', sizes: sizes, widths: '200, 360, 535, 750, 1070, 1500'
                 }}
               {% endif %}
+              {% if block.settings.heading != blank and block.settings.heading != "" %}
               <span>{{ block.settings.heading }}</span>
+              {% else %}
+              <span>{{article.title}}</span>
+              {% endif %}
             </h2>
           {% when 'icon' %}
             <div class="icon-title">
@@ -176,13 +180,14 @@
               <p>{{f_article.metafields.global.author}}</p>
             </div>
           {% when 'education' %}
-            <div class="education-content">
-              
+            <div class="education-content" 1>
+              {% if blog.metafields.global.featured_image != blank %}
               {{
                 blog.metafields.global.featured_image
                 | image_url: width: 200
                 | image_tag: loading: 'lazy'
               }}
+              {% endif %}
               <div class="info">
                 <h2 class="uppercase">
                   {{blog.metafields.global.title}}
