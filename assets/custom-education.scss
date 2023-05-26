@@ -385,3 +385,27 @@
     justify-content: center;
   }
 }
+
+.article-template  #article-index-card-section{
+  text-align: center;
+}
+.article-template  #article-index-card-section a {
+  color: #000;
+  padding: 5px 20px;
+  text-decoration: none;
+  font-weight: 700;
+}
+.article-template  #article-index-card-section .next a {
+  background: #CC9F53;
+  color: #fff;
+  font-weight: 500;
+}
+.article-template  #article-index-card-section .prev a {
+  background: #CC9F53;
+  color: #fff;
+  font-weight: 500;
+}
+.article-template  #article-index-card-section span{
+  margin-top: 10px;
+  display: inline-block;
+}

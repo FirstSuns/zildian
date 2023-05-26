@@ -6,7 +6,7 @@
         "template--18142515003684__3141c904-b6a6-4f2b-a1fe-aa2b9e911af8-1679425999b0455fe5-0": {
           "type": "heading",
           "settings": {
-            "heading": "CAREER OPPORTUNITIES",
+            "heading": "Sponsorship Opportunities",
             "heading_size": "h1",
             "uppercase": false
           }
@@ -45,6 +45,7 @@
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "content_width": "",
+        "padding_left": "",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -79,7 +80,7 @@
             "heading_color": "",
             "download_label": "",
             "download_link": "",
-            "text": "<p>The Zildjian Company has been synonymous with setting the standard for the development and manufacturing of high performance musical instruments since 1623. As the world’s leading maker of cymbals, drumsticks and percussion mallets, Zildjian products are sold across the globe, under the Zildjian, Vic Firth and Mike Balter brands, and are the standard to which all other cymbals, drumsticks and mallets are measured.<\/p>",
+            "text": "<p>For nearly 60 years, we at the Vic Firth Company have focused on developing and manufacturing what has become the world's most popular drumsticks, mallets, alternative implements, and accessories. A part of the Avedis Zildjian Company’s family of brands, Vic Firth continues to approach business and longevity as industries leaders in excellent company.<\/p>",
             "link_label": "",
             "link": "",
             "full_link": false,
@@ -96,7 +97,7 @@
             "heading_color": "",
             "download_label": "",
             "download_link": "",
-            "text": "<p>The Zildjian Company is more than just leading instrument makers. We are also instrument players. We are music lovers. We believe in the power of music, and what it can do to change the lives of people and the world around us. That's why we're so passionate about our products, our brands, and our work together. See more about the Zildjian Company below. From our people, to our culture, to what makes us groove.<\/p>",
+            "text": "<p>Vic Firth is more than just leading instrument makers. We are also instrument players. We are music lovers. We believe in the power of music, and what it can do to change the lives of people and the world around us. That's why we're so passionate about our products, our brands, and our work together. See more about Vic Firth below. From our people, to our culture, to what makes us groove.<\/p>",
             "link_label": "",
             "link": "",
             "full_link": false,
@@ -112,7 +113,7 @@
       "settings": {
         "side_banner": false,
         "full_width": false,
-        "title": "THANK YOU FOR YOUR INTEREST IN ZILDJIAN",
+        "title": "THANK YOU FOR YOUR INTEREST IN VIC FIRTH",
         "heading_size": "h1",
         "heading_align": "left",
         "image_width": "full",
@@ -132,6 +133,7 @@
         "color_scheme": "background-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
+        "mobile_overlay": false,
         "padding_top": 20,
         "padding_bottom": 52,
         "max_width": "1200"
@@ -169,6 +171,7 @@
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "content_width": "675",
+        "padding_left": "",
         "desktop_content_position": "bottom-left",
         "show_text_box": false,
         "desktop_content_alignment": "left",
@@ -223,8 +226,8 @@
         "tag": "",
         "side_banner": false,
         "full_width": true,
-        "image": "shopify:\/\/shop_images\/Our-Values.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/Our-Values-Mobile.jpg",
+        "image": "shopify:\/\/shop_images\/Our-Values_6b10d656-030b-4c41-88d1-26924715c096.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Our-Values-Mobile_e7673f79-ca9e-49fd-8205-2208d0e22547.jpg",
         "video_url": "",
         "height": "adapt",
         "desktop_image_width": "medium",
@@ -251,7 +254,7 @@
         "template--19042043822372__47129bfb-4f12-40f4-a4e8-98bf30e1acc6-168466256289770156-0": {
           "type": "heading",
           "settings": {
-            "heading": "LIFE AT ZILDJIAN",
+            "heading": "LIFE AT VIC FIRTH",
             "heading_link": "",
             "heading_size": "h1",
             "heading_color": "",
@@ -261,7 +264,7 @@
         "template--19042043822372__47129bfb-4f12-40f4-a4e8-98bf30e1acc6-168466256289770156-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Life at Zildjian is more than working at one of the greatest cymbal and drumstick factories in the world. It's about embracing music and an occasional impromptu concert in the office or cymbal vault. It's about growth and how your work and your ideas contribute to sharing music with the generations to come. Headquartered just south of Boston, we have a people-first culture. Follow us on Linkedin to see more about Life at Zildjian. From our factory family, to our office, and the latest Zildjian Company news.<\/p>",
+            "text": "<p>Life at Vic Firth is more than working at one of the greatest drumstick manufactors in the world. It's about embracing music and an occasional impromptu concert in the office. It's about growth and how your work and your ideas contribute to sharing music with the generations to come. Headquartered just south of Boston, we have a people-first culture. Follow us on Linkedin to see more about Life at Avedis Zildjian Company. From our factory family, to our office, and the latest company news.<\/p>",
             "text_style": "body",
             "color": "#5c5d60"
           }
@@ -469,7 +472,8 @@
         "color_scheme": "background-1",
         "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 52
+        "padding_bottom": 52,
+        "max_width": ""
       }
     }
   },

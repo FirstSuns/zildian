@@ -133,8 +133,7 @@
         "template--18486377316644__f81d1e15-14c5-437c-b871-d9075ab11355-1680818518029aee55-0": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Clocks-_-Colours-Product-Background-Image.jpg",
-            "side_image": "shopify:\/\/shop_images\/FounderZildjian-ClocksAndColours-1.png",
+            "image": "shopify:\/\/shop_images\/FounderZildjian-ClocksAndColours-1.png",
             "caption": "new",
             "heading": "FOUNDER RING",
             "price": "",
@@ -147,8 +146,7 @@
         "template--18486377316644__f81d1e15-14c5-437c-b871-d9075ab11355-1680818518029aee55-1": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Clocks-_-Colours-Product-Background-Image.jpg",
-            "side_image": "shopify:\/\/shop_images\/LegacyZildjian-ClocksAndColours-1.png",
+            "image": "shopify:\/\/shop_images\/LegacyZildjian-ClocksAndColours-1.png",
             "caption": "new",
             "heading": "LEGACY RING",
             "price": "",
@@ -161,8 +159,7 @@
         "template--18486377316644__f81d1e15-14c5-437c-b871-d9075ab11355-1680818518029aee55-2": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Clocks-_-Colours-Product-Background-Image.jpg",
-            "side_image": "shopify:\/\/shop_images\/ClassicZildjian-ClocksAndColours-1.png",
+            "image": "shopify:\/\/shop_images\/ClassicZildjian-ClocksAndColours-1.png",
             "caption": "new",
             "heading": "CLASSIC PENDANT",
             "price": "",
@@ -175,8 +172,7 @@
         "41ec66e0-0c92-419e-90bc-899bfae6bc1a": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Clocks-_-Colours-Product-Background-Image.jpg",
-            "side_image": "shopify:\/\/shop_images\/KeyZildjian-ClocksAndColours-2.png",
+            "image": "shopify:\/\/shop_images\/KeyZildjian-ClocksAndColours-2.png",
             "caption": "new",
             "heading": "KEY PENDANT",
             "price": "",
@@ -194,7 +190,9 @@
         "41ec66e0-0c92-419e-90bc-899bfae6bc1a"
       ],
       "custom_css": [
-        ".info-container .image-with-text__text {color: #5c5d60;}"
+        ".info-container .image-with-text__text {color: #5c5d60;}",
+        "@media screen and (min-width: 750px) and (max-width: 1200px) {.image-with-text__text-item .image-with-text__content {padding-left: 0px !important; padding-right: 0px !important; } .image-with-text__media-item {display: block !important; }}",
+        "@media screen and (max-width: 749px) {.image-with-text__text-item .image-with-text__content {padding-left: 0px !important; padding-right: 0px !important; } .image-with-text__media-item {display: block !important; width: 100% !important; }}"
       ],
       "settings": {
         "header": "",

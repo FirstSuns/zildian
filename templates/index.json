@@ -336,7 +336,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/Zildjian-Drumset-Method.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Zildjian-Drumset-Method-Oirginal-File.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Zildjian-Drumset-Method-Mobile_99a1cccd-2685-4b96-baca-37b9551fc6d7.jpg",
             "video": "",
             "content_width": "420",
             "heading": "Zildjian Beginning Drum Set Method",
@@ -359,7 +359,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/Our-Family.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_46.png",
+            "mobile_image": "shopify:\/\/shop_images\/Our-Family-Mobile.jpg",
             "video": "",
             "content_width": "420",
             "heading": "Our Family is Growing",
@@ -382,7 +382,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/The-Art-Behind-The-Sound.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/The-Art-Behind-The-Sound-Original-File.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/The-Art-Behind-The-Sound-Mobile.jpg",
             "video": "",
             "content_width": "420",
             "heading": "The Art Behind The Sound",
@@ -408,7 +408,8 @@
         "40c78409-57fa-478e-99ed-bfc8aeecd9b5"
       ],
       "custom_css": [
-        "@media screen and (min-width: 749px) and (max-width: 1100px) {.slideshow__text.slideshow__text--left {max-width: calc(365px + 7rem) !important; padding-right: 0; padding-left: 80px; }}"
+        "@media screen and (min-width: 770px) and (max-width: 1100px) {.slideshow__text.slideshow__text--left {max-width: calc(365px + 7rem) !important; padding-right: 0; padding-left: 80px; }}",
+        "@media screen and (max-width: 769px) {.slideshow__text-wrapper {background: #000; margin-top: -1px; min-height: 300px; } .banner__box .banner__heading + * {color: #fff; }}"
       ],
       "settings": {
         "layout": "full_bleed",

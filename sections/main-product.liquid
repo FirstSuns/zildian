@@ -219,7 +219,32 @@
               {{ block.settings.custom_liquid }}
             {%- when 'collapsible_tab' -%}
               {% capture content %}
-                {% if block.settings.content == 'spec' %}
+                {% if block.settings.content == 'demo_video' %}
+                  {% comment %} custom.demo_video_link {% endcomment %}
+                  <div class="fs-demo-video-modal-block">
+                    <div class="fs-demo-video-modal-btn" id="fs-demo-video-modal-btn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Demo Video</div>
+                  </div>
+                  <div id="fs-demo-video-modal" class="fs-demo-video-modal">
+                    <!-- Modal content -->
+                    <div class="fs-demo-video-modal-content">
+                      <div class="fs-demo-video-modal-close-btn" id="fs-demo-video-modal-close-btn">
+                        <svg aria-hidden="true" focusable="false" width="25" height="25" class="icon icon-close-small" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8.48627 9.32917L2.82849 3.67098" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <path d="M2.88539 9.38504L8.42932 3.61524" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                      </div>
+                      <div class="fs-demo-video-modal-contain">
+                      {% if product.metafields.custom.demo_video_link != blank%}
+                        {% include 'pdp-demo-video'  with context: product %}
+                        {% comment %} <iframe width="560" height="315" src="{{product.metafields.custom.demo_video_link}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> {% endcomment %}
+                      {% endif %}
+                      </div>
+                      <div class="fs-demo-video-modal-bottom">
+                        <button class="fs-demo-video-model-ok-btn" id="fs-demo-video-model-ok-btn">OK</button>
+                      </div>
+                    </div>
+                  </div>
+                {% elsif block.settings.content == 'spec' %}
                 {% capture intro %}
                   {% if product.metafields.magento.dia_inches != blank %}
                   <div class="grid__item">Diameter: <strong>
@@ -289,15 +314,21 @@
                     <div class="grid__item">Taper: <strong>{{product.metafields.magento.taper}}</strong></td>
                   </li>
                   {% endif %}
-                  
-                  {% if product.metafields.magento.taper_image != blank and product.metafields.magento.taper_image contains 'cdn.shopify' %}
+                  {% if template contains "sticks" %}
+                  <li class="grid grid--1-col">
+                    <div class="">
+                      <img src="{{'Group_101.png' | file_url}}"   alt="spec taper" width="469" height="82" loading="lazy" style="border: none;"> 
+                    </div>
+                  </li>
+                  {% endif %}
+                  {% comment %} {% if product.metafields.magento.taper_image != blank and product.metafields.magento.taper_image contains 'cdn.shopify' %}
                   <li class="grid grid--1-col">
                     <div class="">
                       {% assign img_name = product.metafields.magento.taper_image | split: "/" %}
                       <img src="{{img_name.last | file_url}}"   alt="spec taper" width="469" height="82" loading="lazy" style="border: none;">
                     </div>
                   </li>
-                  {% endif %}
+                  {% endif %} {% endcomment %}
 
                   {% assign stick_spec_flag = true %}
                   {% if product.tags contains 'Zildjian Category/Cymbals' or template contains 'cymbal'%}
@@ -505,7 +536,7 @@
                   <summary>
                     <div class="summary__title">
                       {{block.settings.icon}}
-                      <div class="accordion__title">
+                      <div p1 class="accordion__title">
                         {{ block.settings.heading | default: block.settings.page.title }} 
                         {% if block.settings.heading contains 'Find a store' %}
                         <span class="lcly-city-name"></span>? 
@@ -807,6 +838,26 @@
         hiddenInput.value = event.currentTarget.value;
       });
     });
+    
+    var demo_video_modal = document.getElementById("fs-demo-video-modal");
+    var demo_video_btn = document.getElementById("fs-demo-video-modal-btn");
+    var demo_video_close = document.getElementById("fs-demo-video-modal-close-btn");
+    var demo_video_ok = document.getElementById("fs-demo-video-model-ok-btn");
+
+    demo_video_btn.onclick = function() {
+      demo_video_modal.style.display = "block";
+    }
+    demo_video_close.onclick = function() {
+      demo_video_modal.style.display = "none";
+    }
+    demo_video_ok.onclick = function() {
+      demo_video_modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+      if (event.target == demo_video_modal) {
+        demo_video_modal.style.display = "none";
+      }
+    }
   </script>
 
   {%- liquid

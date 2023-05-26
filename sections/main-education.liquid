@@ -201,16 +201,36 @@
         {% include 'recent_articles' %}
     {%- endcase -%}
   {%- endfor -%}
-<div class="pagi-blg-nn">
-<div id="article-index-card-section" class="g-flex">
-  {% paginate blog.articles by 6 %}
-    <div>
-        {{ paginate | default_pagination: next: '>', previous: '<' }} 
+  <div class="pagi-blg-nn">
+    <div id="article-index-card-section" class="g-flex">
+      {% paginate blog.articles by 1 %}
+        <div>
+            {{ paginate | default_pagination: next: '>', previous: '<' }} 
+        </div>
+      {% endpaginate %}
     </div>
-  {% endpaginate %}
-</div>
-</div>
-  
+  </div>
+
+  {% comment %} <header class="page-width page-width--narrow">
+    <div class="article-template__excerpt">
+      <div class="narrow">
+        <a href="{{blog.previous_article.url}}">
+          <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="22" cy="22" r="21.5" stroke="#5C5D60"/>
+            <path d="M26 14L18 22.5L26 31" stroke="#5C5D60" stroke-width="2" stroke-linecap="round"/>
+          </svg>                  
+        </a>
+        <span class="h5 uppercase">Lesson 2/{{blog.articles.size}} </span>
+        <a href="{{blog.next_article.url}}">
+          <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="22" cy="22" r="21.5" transform="rotate(-180 22 22)" stroke="#5C5D60"/>
+            <path d="M18 30L26 21.5L18 13" stroke="#5C5D60" stroke-width="2" stroke-linecap="round"/>
+          </svg>                                 
+        </a>
+      </div>
+    </div>
+  </header> {% endcomment %}
+
   {%- if blog.comments_enabled? -%}
     <div class="article-template__comment-wrapper background-secondary">
       <div id="comments" class="page-width page-width--narrow">

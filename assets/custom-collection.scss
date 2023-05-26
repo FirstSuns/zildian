@@ -136,11 +136,10 @@
         margin-top: 1rem;
         .image-with-text__text-item {
           .image-with-text__content {
-            padding: 20px 5rem 20px;
+            padding: 0px 5rem;
             padding-right: 0;
             @media screen and (max-width: 749px) {
-              padding-left: 0;
-              padding-right: 0;
+              padding: 20px 0px;
             }
           }
         }

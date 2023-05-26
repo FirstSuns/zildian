@@ -1,3 +1,6 @@
+//FS added
+var tagalysDisableLegacyScript = true; // This will disable the default script included via Shopify app Script Tags, thereby preventing conflicts with the new code.
+
 // TAGALYS UTILITIES
 TagalysCustomizations = {}
 TagalysCustomizations.utilities = {}
@@ -1310,139 +1313,141 @@ TagalysCustomizations.initSearchResults = function() {
     },
   });
 }
-
-
 TagalysCustomizations.initSimilarProductsRecommendation = function () {
-  Tagalys.UIWidgets.Recommendations.init(
-    "[data-recommendation='similar-products']",
-    {
-      recommendationId: "4f2751e73ec50bf82f5c",
-      productId: '{{product.id}}',
-      templates: {
-        header: {
-          render: function (html, args) {
-            var props = args.props
-            var  widgetHeading = props.helpers.getAPIResponse().name
-            return html`
-              <div class="widget-header">
-                <h1 class="widget-heading">You May like these too</h1>
-              </div>
-            `;
-          }
-        },
-        widget: {
-          options: {
-            displayFormat: "carousel",
-            carouselOptions: {
-              perPage: {
-                300: 1.5,
-                600: 1.5,
-                900: 2,
-                1200: 3,
-                1440: 3,
-                2560: 3
-              },
-              duration: 200,
-              easing: "ease-out",
-              startIndex: 0,
-              draggable: true,
-              onChange: function (siemaInstance) {
-               
-              },
-            }
-          }
-        },
-        leftArrow: false,
-        rightArrow: false,
-        product: {
-          callbacks: {
-            afterEveryRender: function(helpers, args) {
-              var product = args.product;
-              window.pwr = window.pwr || function () {
-                (pwr.q = pwr.q || []).push(arguments); 
-              };
-              pwr('render', [
-                {
-                    api_key: 'b873f7db-ee6b-4b2b-81e9-3df2ca4a11db',
-                    locale: 'en_US',
-                    merchant_group_id: '2006223440',
-                    merchant_id: '1025714092',
-                    page_id: product.id,
-                    components: {
-                      CategorySnippet: `snippet-${product.id}`
-                    }
-                }
-              ]);
+  setTimeout(() => {
+    Tagalys.UIWidgets.Recommendations.init(
+      "[data-recommendation='similar-products']",
+      {
+        recommendationId: "4f2751e73ec50bf82f5c",
+        // productId: '{{product.id}}',
+        // productId: '8328211530020',
+        productId: window.pdp_product_id,
+        templates: {
+          header: {
+            render: function (html, args) {
+              var props = args.props
+              var  widgetHeading = props.helpers.getAPIResponse().name
+              return html`
+                <div class="widget-header">
+                  <h1 class="widget-heading">You May like these too</h1>
+                </div>
+              `;
             }
           },
-          render: function (html, args) {
-            var props = args.props;
-            var product = props.product;
-            console.log(product)
-            var helpers = props.helpers;
-            var badge = "";
-            if (product.available == false) {
-              badge = 'Sold Out'
-            } else if (product.compare_at_price > product.price) {
-              badge = 'Sale'
+          widget: {
+            options: {
+              displayFormat: "carousel",
+              carouselOptions: {
+                perPage: {
+                  300: 1.5,
+                  600: 1.5,
+                  900: 2,
+                  1200: 3,
+                  1440: 3,
+                  2560: 3
+                },
+                duration: 200,
+                easing: "ease-out",
+                startIndex: 0,
+                draggable: true,
+                onChange: function (siemaInstance) {
+                
+                },
+              }
             }
-            
-            return html`
-              <div class="product">
-                <a
-                  class="product-link"
-                  href=${product.__tagalys_fields.link}
-                >
-                  <div class="product-image-container">
-                    <span class="badge">${badge}</span>
-                    <img
-                      class="product-image"
-                      data-src=${product.__tagalys_fields.image_url}
-                      alt=${product.title}
-                    />
-                  </div>
-                  <div class="product-details">
-                    <span class="product-name">${product.title}</span>
-                    <div class="pwr-category-snippets" style="">
-                      <div id="snippet-${product.id}"></div>
+          },
+          leftArrow: false,
+          rightArrow: false,
+          product: {
+            callbacks: {
+              afterEveryRender: function(helpers, args) {
+                var product = args.product;
+                window.pwr = window.pwr || function () {
+                  (pwr.q = pwr.q || []).push(arguments); 
+                };
+                pwr('render', [
+                  {
+                      api_key: 'b873f7db-ee6b-4b2b-81e9-3df2ca4a11db',
+                      locale: 'en_US',
+                      merchant_group_id: '2006223440',
+                      merchant_id: '1025714092',
+                      page_id: product.id,
+                      components: {
+                        CategorySnippet: `snippet-${product.id}`
+                      }
+                  }
+                ]);
+              }
+            },
+            render: function (html, args) {
+              var props = args.props;
+              var product = props.product;
+              // console.log(product)
+              var helpers = props.helpers;
+              var badge = "";
+              if (product.available == false) {
+                badge = 'Sold Out'
+              } else if (product.compare_at_price > product.price) {
+                badge = 'Sale'
+              }
+              
+              return html`
+                <div class="product">
+                  <a
+                    class="product-link"
+                    href=${product.__tagalys_fields.link}
+                  >
+                    <div class="product-image-container">
+                      <span class="badge">${badge}</span>
+                      <img
+                        class="product-image"
+                        data-src=${product.__tagalys_fields.image_url}
+                        alt=${product.title}
+                      />
                     </div>
-                    <span
-                      class=${`product-prices${
-                        helpers.isProductOnSale(
+                    <div class="product-details">
+                      <span class="product-name">${product.title}</span>
+                      <div class="pwr-category-snippets" style="">
+                        <div id="snippet-${product.id}"></div>
+                      </div>
+                      <span
+                        class=${`product-prices${
+                          helpers.isProductOnSale(
+                            product.compare_at_price,
+                            product.price
+                          )
+                            ? " discounted"
+                            : " full-price"
+                        }`}
+                      >
+                        ${helpers.isProductOnSale(
                           product.compare_at_price,
                           product.price
                         )
-                          ? " discounted"
-                          : " full-price"
-                      }`}
-                    >
-                      ${helpers.isProductOnSale(
-                        product.compare_at_price,
-                        product.price
-                      )
-                        ? html`
-                            <span class="product-price-discounted"
-                              >${helpers.formatCurrency(product.price)}</span
-                            >
-                          `
-                        : null}
-                      <span class="product-price-regular">
-                        ${helpers.formatCurrency(
-                          product.compare_at_price === null
-                            ? product.price
-                            : product.compare_at_price
-                        )}
+                          ? html`
+                              <span class="product-price-discounted"
+                                >${helpers.formatCurrency(product.price)}</span
+                              >
+                            `
+                          : null}
+                        <span class="product-price-regular">
+                          ${helpers.formatCurrency(
+                            product.compare_at_price === null
+                              ? product.price
+                              : product.compare_at_price
+                          )}
+                        </span>
                       </span>
-                    </span>
-                  </div>
-                </a>
-              </div>
-            `;
+                    </div>
+                  </a>
+                </div>
+              `;
+            },
           },
-        },
+        }
       }
-    }
-  );
+    );
+  }, 2000);
 }
 
 function onTagalysReady(callback) {
@@ -1462,5 +1467,6 @@ onTagalysReady(function(){
   if (document.querySelector("[data-recommendation='similar-products']") != undefined) {
     TagalysCustomizations.initSimilarProductsRecommendation();
   }
+  Tagalys.Analytics.trackPlatformEvents();//FS added
 })
 

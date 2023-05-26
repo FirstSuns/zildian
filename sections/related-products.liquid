@@ -25,7 +25,11 @@
   <div class="page-width--narrow tagalys-namespace exclude-tagalys-css-reset" data-recommendation="similar-products"></div>
 </div>
 
-
+{% comment %} {{product.id}} {% endcomment %}
+<script>
+var pdp_product_id = {{product.id}};
+window.pdp_product_id = {{product.id}};
+</script>
 {% schema %}
 {
   "name": "t:sections.related-products.name",

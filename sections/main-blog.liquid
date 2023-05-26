@@ -156,7 +156,7 @@
   {% endif %}
   
   
-  {%- paginate blog.articles by 15 -%}
+  {%- paginate blog.articles by 50 -%} 
     <div class="main-blog page-width section-{{ section.id }}-padding">
       {% if blog.metafields.custom.blog_grid_title != blank %}
       <h3 class="fs-blog-grid-title">{{blog.metafields.custom.blog_grid_title}}</h3>

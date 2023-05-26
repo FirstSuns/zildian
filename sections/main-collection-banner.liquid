@@ -21,7 +21,8 @@
         {% if collection.metafields.global.header_banner_logo != blank %}
           <img class="collection-hero__icon" src="{{collection.metafields.global.header_banner_logo | img_url: '186x' }}" loading="lazy" >
         {% endif %}
-        <span>{{-  collection.metafields.global.header_banner_title | default: collection.title | escape -}}</span>
+        {% comment %} <span>{{-  collection.metafields.global.header_banner_title | default: collection.title | escape -}}</span> {% endcomment %}
+        <span>{{-  collection.metafields.global.header_banner_title | escape -}}</span>
       </h1>
 
       {%- if section.settings.show_collection_description -%}

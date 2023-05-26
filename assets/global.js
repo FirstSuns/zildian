@@ -895,8 +895,9 @@ class VariantSelects extends HTMLElement {
     modalContent.prepend(newMediaModal);
 
     //fs added
-    // console.log("updateMedia---",this.currentVariant);
-    const fs_mediaGalleries = document.querySelectorAll(`[fs-thumbnail-variant-id="${this.currentVariant.id}"]`);
+    //  console.log("updateMedia---",this.currentVariant);
+    //const fs_mediaGalleries = document.querySelectorAll(`[fs-thumbnail-variant-id="${this.currentVariant.id}"]`);
+    const fs_mediaGalleries = document.querySelectorAll(`[fs-thumbnail-media-id="${this.currentVariant.featured_media.id}"]`);
     if(fs_mediaGalleries && fs_mediaGalleries.length != 0)
     {
       fs_mediaGalleries[0].click();

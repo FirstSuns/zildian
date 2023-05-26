@@ -125,6 +125,7 @@
               {{ article.title }}
             </a>
           </h3>
+          <p>{{ article.metafields.global.affiliation }}</p> 
           <div class="article-card__info caption-with-letter-spacing h5">
             {%- if show_date -%}
               <span class="circle-divider">{{ article.published_at | time_tag: format: 'date' }}</span>

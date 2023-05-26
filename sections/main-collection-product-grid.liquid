@@ -107,7 +107,7 @@
               boost-pfs-filter-products
               grid product-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down
               grid--3-col-desktop grid--{{ section.settings.columns_desktop }}-col-wide">
-              {%- for product in collection.products -%}
+              {% comment %} {%- for product in collection.products -%}
                 {% assign lazy_load = false %}
                 {%- if forloop.index > 2 -%}
                   {%- assign lazy_load = true -%}
@@ -123,7 +123,7 @@
                     section_id: section.id
                   %}
                 </li>
-              {%- endfor -%}
+              {%- endfor -%} {% endcomment %} 
             </ul>
           </div>
           <div class="boost-pfs-filter-load-more"></div>

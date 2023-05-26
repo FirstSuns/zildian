@@ -34,6 +34,15 @@
             "show_dynamic_checkout": false
           }
         },
+        "6ddedd2e-5552-42d6-959a-1fa7de38ef82": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "<p><strong>HEAR THIS STICK<\/strong><\/p>",
+            "icon": "<svg width=\"30\" height=\"30\" viewbox=\"0 0 30 30\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M5 18.5714V12.4286C5 11.8763 5.44771 11.4286 6 11.4286H10.1212L16.4326 7.07994C17.096 6.62284 18 7.09775 18 7.9034V23.0966C18 23.9022 17.096 24.3772 16.4326 23.9201L10.1212 19.5714H6C5.44772 19.5714 5 19.1237 5 18.5714Z\" stroke=\"#CC9F53\" stroke-width=\"2\"><\/path>\n<path d=\"M23 9C24.8458 10.4972 26 12.6314 26 15C26 17.3686 24.8458 19.5028 23 21\" stroke=\"#CC9F53\" stroke-width=\"2\"><\/path>\n<path d=\"M20 10C21.2305 11.1229 22 12.7235 22 14.5C22 16.2765 21.2305 17.8771 20 19\" stroke=\"#CC9F53\" stroke-width=\"2\"><\/path>\n<\/svg>",
+            "content": "demo_video",
+            "page": ""
+          }
+        },
         "d4b13fe5-08a7-4886-9b05-263203878113": {
           "type": "collapsible_tab",
           "settings": {
@@ -78,13 +87,14 @@
         "11ad8c76-379b-4807-a15f-5e450da8a099",
         "variant_picker",
         "buy_buttons",
+        "6ddedd2e-5552-42d6-959a-1fa7de38ef82",
         "d4b13fe5-08a7-4886-9b05-263203878113",
         "e8253375-5e6b-46c3-a98e-d35f5ec0e252",
         "cdf7bb7f-d55b-4a46-a7c0-822ce5dc0327",
         "fbe15e98-645b-4a45-9432-fa0face0b078"
       ],
       "custom_css": [
-        "@media screen and (min-width: 749px) and (max-width: 1100px) {.product__title .h3{font-size: 20px; } [data-section-type=product] .product__info-wrapper .product__info-container .subtitle{font-size: 12px; }}"
+        "@media screen and (min-width: 749px) and (max-width: 1100px) {.product__title .h3 {font-size: 20px; } [data-section-type=\"product\"] .product__info-wrapper .product__info-container .subtitle {font-size: 12px; }}"
       ],
       "settings": {
         "enable_sticky_info": false,
@@ -246,6 +256,33 @@
         "max_width": "430"
       }
     },
+    "bf16a7b7-3fa2-4b02-82ef-2f9ed6cc3add": {
+      "type": "pdp-explorer-sec",
+      "settings": {
+        "side_banner": false,
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/Rectangle_80_f6bd8427-d8f0-448f-b0e9-99706ea33569.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Rectangle_80_f6bd8427-d8f0-448f-b0e9-99706ea33569.jpg",
+        "video_url": "https:\/\/youtu.be\/QriIRQu3ljM",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "container_image": false,
+        "media_max_width": "",
+        "desktop_content_position": "top",
+        "content_align": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "overlay_section": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "quote": false,
+        "max_width": ""
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -272,6 +309,7 @@
     "main",
     "a02f37d8-1538-430d-bbd7-231ebfd102ae",
     "95308eb8-1792-44ae-a247-c898ce9a559e",
+    "bf16a7b7-3fa2-4b02-82ef-2f9ed6cc3add",
     "related-products",
     "7da9a285-737b-46c1-94d4-47b4316b962e"
   ]

@@ -306,6 +306,33 @@
         "max_width": "430"
       }
     },
+    "c00f11f5-70f4-4def-b20d-ec01578ad822": {
+      "type": "pdp-explorer-sec",
+      "settings": {
+        "side_banner": false,
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/Rectangle_80_f6bd8427-d8f0-448f-b0e9-99706ea33569.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Rectangle_80_f6bd8427-d8f0-448f-b0e9-99706ea33569.jpg",
+        "video_url": "https:\/\/youtu.be\/QriIRQu3ljM",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "container_image": false,
+        "media_max_width": "",
+        "desktop_content_position": "top",
+        "content_align": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "overlay_section": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "quote": false,
+        "max_width": ""
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -333,6 +360,7 @@
     "a02f37d8-1538-430d-bbd7-231ebfd102ae",
     "95308eb8-1792-44ae-a247-c898ce9a559e",
     "95308eb8-1792-44ae-a247-c898ce9a559c",
+    "c00f11f5-70f4-4def-b20d-ec01578ad822",
     "related-products",
     "7da9a285-737b-46c1-94d4-47b4316b962e"
   ]

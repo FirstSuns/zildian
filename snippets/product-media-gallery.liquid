@@ -1,8 +1,9 @@
 <product-gallery-component class="thumbs-{{section.settings.gallery_layout}}">
-  <div id="mainCarousel" class="splide">
+  <div pdp1 id="mainCarousel" class="splide">
     <div class="splide__track">
       <ul class="product__media-list splide__list " role="list">
         {%- for media in product.media -%}
+        {% comment %} 
         {%- unless 
           media.id == product.selected_or_first_available_variant.featured_media.id 
           or media.preview_image contains 'hqdefault' 
@@ -13,6 +14,7 @@
           or media.preview_image contains 'spotlight' 
           or media.preview_image contains 'thumbnails'
         -%}
+        {% endunless %} {% endcomment %}
         <li class="splide__slide test" thumbnail-color="{{ media.alt }}">
           {% render 'product-thumbnail',
                 media: media,
@@ -29,7 +31,7 @@
                 lazy_load: lazy_load
           %}
         </li>
-        {% endunless %}
+        
         {%- endfor -%}
       </ul>
     </div>
@@ -41,7 +43,7 @@
       
       <ul class="splide__list" role="list">
         {%- for media in product.media -%}
-        {%- unless 
+        {% comment %} {%- unless 
           media.id == product.selected_or_first_available_variant.featured_media.id 
           or media.preview_image contains 'hqdefault' 
           or media.preview_image contains 'taper_' 
@@ -51,14 +53,17 @@
           or media.preview_image contains 'spotlight' 
           or media.preview_image contains 'thumbnails'
         -%}
-        {% assign variant_id = "" %}
+        {% endunless %} {% endcomment %}
+        {% comment %} {% assign variant_id = "" %}
         {% for variant in product.variants %}
          {% if media.id == variant.featured_media.id %}
           {% assign variant_id = variant.id %}
          {% endif %}
-        {% endfor %}
+        {% endfor %} {% endcomment %}
         {% assign media_size = media_size | plus: 1 %}
-        <li class="splide__slide tst fs-slide-thumbnail" thumbnail-color="{{ media.alt }}" fs-thumbnail-variant-id="{{variant_id}}">
+        <li class="splide__slide tst fs-slide-thumbnail" thumbnail-color="{{ media.alt }}"
+         {% comment %} fs-thumbnail-variant-id="{{variant_id}}" {% endcomment %}
+         fs-thumbnail-media-id="{{media.id}}">
           <div class="product__media media" style="padding-top: 100%;">
             <img
               srcset="{% if media.preview_image.width >= 288 %}{{ media.preview_image | img_url: '288x' }} 288w,{% endif %}
@@ -76,7 +81,7 @@
             >
           </div>
         </li>
-        {% endunless %}
+        
         {%- endfor -%}
       </ul>
    
