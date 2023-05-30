@@ -41,7 +41,7 @@
         style="--ratio-percent: {{ 1 | times: 100 }}%;"
       >
         {%- if show_image == true and article.image -%}
-          <div class="article-card__image-wrapper card__media">
+          <div 1 class="article-card__image-wrapper card__media">
             <div
               class="article-card__image media media--hover-effect"
               {% if section.settings.media_height == 'adapt' %}
@@ -74,7 +74,7 @@
           </div>
         {%- endif -%}
         <div class="card__content">
-          <div class="card__information">
+          <div class="card__information" blogpost>
             {% if show_title %}
             <p>{{ vendor }}</p>
             {% endif %}
@@ -84,9 +84,9 @@
               </a>
             </h3>
             <div class="article-card__info caption-with-letter-spacing h5">
-              {%- if show_date -%}
+              {% comment %} {%- if show_date -%}
                 <span class="circle-divider">{{ article.published_at | time_tag: format: 'date' }}</span>
-              {%- endif -%}
+              {%- endif -%} {% endcomment %}
               {%- if show_author -%}
                 <span>{{ article.metafields.global.author }}</span>
               {%- endif -%}
@@ -108,15 +108,15 @@
               </div>
             {%- endif -%}
           </div>
-          {%- if show_badge -%}
+          {% comment %} {%- if show_badge -%}
             <div class="card__badge {{ settings.badge_position }}">
               <span class="badge color-background-1">{{ 'blogs.article.blog' | t }}</span>
             </div>
-          {%- endif -%}
+          {%- endif -%} {% endcomment %}
         </div>
       </div>
       <div class="card__content">
-        <div class="card__information">
+        <div class="card__information" blogpost1>
           {% if show_title %}
             <p class="vendor no-margin">{{ vendor }}</p>
             {% endif %}
@@ -127,9 +127,9 @@
           </h3>
           <p>{{ article.metafields.global.affiliation }}</p> 
           <div class="article-card__info caption-with-letter-spacing h5">
-            {%- if show_date -%}
+            {% comment %} {%- if show_date -%}
               <span class="circle-divider">{{ article.published_at | time_tag: format: 'date' }}</span>
-            {%- endif -%}
+            {%- endif -%} {% endcomment %}
             {%- if show_author -%}
               <span>{{ article.metafields.global.author }}</span>
             {%- endif -%}

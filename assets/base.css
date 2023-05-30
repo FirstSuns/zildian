@@ -3111,9 +3111,8 @@ details-disclosure > details {
     width: 50%;
     padding: 8px;
 }
-@media(max-width:1439px){
   html #tagalys-namespace.tagalys-namespace .search-suggestions{ overflow-y: scroll !important; height:500px; }
-}
+
 @media(max-width:767px){
 html #tagalys-namespace .search-suggestions{ height: 350px; overflow-y: scroll !important;  }
 }

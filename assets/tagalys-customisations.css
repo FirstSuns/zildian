@@ -420,7 +420,12 @@ html
   z-index: 2;
   right: 0;
   line-height: 1;
-  padding: 7px 7px 7px 9px;
+  /* padding: 7px 7px 7px 9px; */
+
+  background: #000;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px 20px;
 }
 html
   #tagalys-namespace.tagalys-namespace
@@ -689,6 +694,15 @@ html #tagalys-namespace.tagalys-namespace .plp .filters {
   padding-right: 10px;
   transition-duration: 0.45s;
   margin: 0;
+}
+@media only screen and (min-width: 750px) {
+html #tagalys-namespace.tagalys-namespace .plp .filters {
+  width: 30% !important;
+}
+html #tagalys-namespace.tagalys-namespace .plp .products-list
+{
+  width: 70% !important;
+}
 }
 html
   #tagalys-namespace.tagalys-namespace
@@ -1180,7 +1194,7 @@ html #tagalys-namespace.tagalys-namespace .product .swatch-list {
   left: -4px;
 }
 html #tagalys-namespace.tagalys-namespace .plp .plp-header .plp-heading {
-  font-size: 44px;
+  font-size: 20px;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -1262,4 +1276,8 @@ html #tagalys-namespace.tagalys-namespace .plp .filters .noUi-connect{
 
 html #tagalys-namespace.tagalys-namespace .plp .filters .noUi-base{
   height: 2px;
+}
+
+[data-filter-id=_tags]{
+  display: none !important;
 }

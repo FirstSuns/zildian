@@ -879,8 +879,8 @@ body.hide-price .price, body.hide-price .buy-buttons-box, body.hide-price .produ
 
 /*level*/
 .Level .article-template__content.page-width.page-width--narrow.rte {
-    max-width: 100%;
-    background: #F8F8F9;
+    // max-width: 100%;
+    // background: #F8F8F9;
   padding: 40px 0;
 }.Level .article-template__content.page-width.page-width--narrow.rte h2, .zildjian-workout-practice-and-learn-from-the-zildjian-artists .top-content h2 {
     text-align: center;
@@ -1254,4 +1254,7 @@ tab-component {
 }
 .artists  .breadcrumbs{
   display: none;
+}
+.tagalys-search-suggestions .pwr-category-snippets{
+  display: none !important;
 }

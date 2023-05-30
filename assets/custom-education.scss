@@ -389,11 +389,16 @@
 .article-template  #article-index-card-section{
   text-align: center;
 }
+.article-template  #article-index-card-section .page.current{
+  color: #CC9F53;
+  font-weight: 700;
+}
 .article-template  #article-index-card-section a {
   color: #000;
   padding: 5px 20px;
   text-decoration: none;
   font-weight: 700;
+  display: block;
 }
 .article-template  #article-index-card-section .next a {
   background: #CC9F53;

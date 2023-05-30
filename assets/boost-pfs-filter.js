@@ -135,7 +135,7 @@ if (typeof boostPFSThemeConfig !== 'undefined') {
     var html = '';
     for( var item in data.metafields )
     {
-      if(data.metafields[item].key == 'product_flag' && data.metafields[item].value =='BEST SELLER'){
+      if(data.metafields[item].key == 'product_flag' && data.metafields[item].value =='BEST SELLER' && data.available){
         
         html += '<div class="fs_flag_best_seller">BEST SELLER</div>';
       }

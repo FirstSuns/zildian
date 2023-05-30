@@ -14,14 +14,24 @@
 {% endif %}
 
 <article class="article-template">
-<div class="about-artist-section page-width--narrow page-width">
+<div m1 class="about-artist-section page-width--narrow page-width">
   <div class="grid">
     {% for block in section.blocks %}
       {% assign getblog = block.settings.arti_blg %}
       {% assign artttl = article.title %}
       {% if getblog.title == getblog.title  %}
         <div class="title">
-          <h2 class="h1">{{block.settings.Artists_Title}}'s IN <span>3</span></h2>
+          {% assign q_num = 1 %}
+          {% if article.metafields.global.qestion_1 !=blank %}
+           {% assign q_num = 1 %}
+          {% endif %}
+          {% if article.metafields.global.qestion_2 !=blank %}
+           {% assign q_num = 2 %}
+          {% endif %}
+          {% if article.metafields.global.question_3 !=blank %}
+            {% assign q_num = 3 %}
+          {% endif %}
+          <h2 class="h1">{{block.settings.Artists_Title}}'s IN <span>{{q_num}}</span></h2>
         </div>
         <div class="image">
           <div class="media" style="padding-bottom: 130%;">

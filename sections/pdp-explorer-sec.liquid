@@ -2,6 +2,8 @@
 {{ 'component-rte.css' | asset_url | stylesheet_tag }}
 {{ 'custom-image-text.scss.css' | asset_url | stylesheet_tag }}
 {%- style -%}
+  #shopify-section-{{ section.id }} {
+  }
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.35 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.25 | round: 0 }}px;
@@ -13,13 +15,39 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+  #shopify-section-{{ section.id }} .image-with-text__grid{
+    justify-content: space-evenly;
+  }
+  .fs-image-with-text__media-item{
+    max-width: 45% !important;
+    padding: 10px;
+  }
+  .fs-exp-vid-title{
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 38px;
+    margin-bottom: 0;
+    font-size: 40px;
+  }
+  @media screen and (max-width: 749px) {
+    .fs-image-with-text__media-item{
+      max-width: 100% !important;
+    }
+    .fs-exp-vid-title{
+      font-size: 20px;
+    }
+    .fs-image-with-text__media-item h3{
+      text-align: center;
+      width: 100%;
+      font-size: 14px;
+    }
+  }
 {%- endstyle -%}
 {% if product.metafields.custom.more_to_explorer_video1 != blank %}
-<h2 style="text-align: center;  text-transform: uppercase;">More to explore</h2>
+<h2 class="fs-exp-vid-title" >More to explore</h2>
 <div class="image-with-text mobile-full-width--true section-overlay--{{section.settings.overlay_section}} side-banner--{{section.settings.side_banner}} image-with-text--{{ section.settings.content_layout }} overlap--{{ section.settings.desktop_content_position }} {% if section.settings.full_width == false %}page-width{% endif %} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == 'background-1' and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %} section-{{ section.id }}-padding">
   <div class="image-with-text__grid grid grid--gapless grid--1-col width--{{section.settings.desktop_image_width}} {% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %} {% if section.settings.mobile_layout == 'text_first' %} mobile_image-with-text__grid--reverse{% endif %}">
-    <div e1 class="image-with-text__media-item  grid grid--1-col gradient color-{{ section.settings.color_scheme }} global-media-settings container-image--{{section.settings.container_image}} image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item"
-      style="padding: 10px;">
+    <div e1 class="fs-image-with-text__media-item image-with-text__media-item  grid grid--1-col gradient color-{{ section.settings.color_scheme }} global-media-settings container-image--{{section.settings.container_image}} image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item">
       <div class="grid__item" >
         <div
           class="image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
@@ -59,8 +87,7 @@
       {% endif %}
     </div>
     {% if product.metafields.custom.more_to_explorer_video2 != blank %}
-    <div e1 class="image-with-text__media-item  grid grid--1-col gradient color-{{ section.settings.color_scheme }} global-media-settings container-image--{{section.settings.container_image}} image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item"
-      style="padding: 10px;">
+    <div e1 class="fs-image-with-text__media-item image-with-text__media-item  grid grid--1-col gradient color-{{ section.settings.color_scheme }} global-media-settings container-image--{{section.settings.container_image}} image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item">
       <div class="grid__item" >
         <div
           class="image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"

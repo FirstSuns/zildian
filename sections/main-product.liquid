@@ -220,9 +220,16 @@
             {%- when 'collapsible_tab' -%}
               {% capture content %}
                 {% if block.settings.content == 'demo_video' %}
+                  {% if product.metafields.custom.demo_video_link == blank%}
+                    <style>
+                    .demo_video{
+                      display: none;
+                    }
+                    </style>
+                  {% endif %}
                   {% comment %} custom.demo_video_link {% endcomment %}
                   <div class="fs-demo-video-modal-block">
-                    <div class="fs-demo-video-modal-btn" id="fs-demo-video-modal-btn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Demo Video</div>
+                    <div class="fs-demo-video-modal-btn" id="fs-demo-video-modal-btn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Demo Video</div>
                   </div>
                   <div id="fs-demo-video-modal" class="fs-demo-video-modal">
                     <!-- Modal content -->
@@ -501,7 +508,7 @@
                       "color_0": "#CC9F53",
                       "color_1": "#CC9F53",
                       "always_hide_button": "1",
-                      "upc": "{{product.metafields.magento.upc_code}}",
+                      "upc": "{{product.selected_or_first_available_variant.barcode}}",
                       "show_location_switcher": "1",
                       "show_location_prompt": "1",
                       "lang": "en-us",
@@ -531,7 +538,7 @@
                 {% endif %}
               {% endcapture %}
               {% if content != blank %}
-              <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
+              <div class="product__accordion accordion quick-add-hidden {% if block.settings.content == 'demo_video' %} demo_video {%endif%}" {{ block.shopify_attributes }}>
                 <details id="Details-{{ block.id }}-{{ section.id }}" open>
                   <summary>
                     <div class="summary__title">

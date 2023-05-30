@@ -408,8 +408,8 @@
         "40c78409-57fa-478e-99ed-bfc8aeecd9b5"
       ],
       "custom_css": [
-        "@media screen and (min-width: 770px) and (max-width: 1100px) {.slideshow__text.slideshow__text--left {max-width: calc(365px + 7rem) !important; padding-right: 0; padding-left: 80px; }}",
-        "@media screen and (max-width: 769px) {.slideshow__text-wrapper {background: #000; margin-top: -1px; min-height: 300px; } .banner__box .banner__heading + * {color: #fff; }}"
+        "@media screen and (min-width: 851px) and (max-width: 1100px) {.slideshow__text.slideshow__text--left {max-width: calc(365px + 7rem) !important; padding-right: 0; padding-left: 80px; }}",
+        "@media screen and (max-width: 850px) {.slideshow__text-wrapper {background: #000; margin-top: -1px; min-height: 300px; } .banner__box .banner__heading + * {color: #fff; }}"
       ],
       "settings": {
         "layout": "full_bleed",

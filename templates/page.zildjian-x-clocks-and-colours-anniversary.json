@@ -23,6 +23,9 @@
         "633eb824-4c8b-48aa-90e9-0cb1ebae4d91",
         "template--18142515003684__3141c904-b6a6-4f2b-a1fe-aa2b9e911af8-1679425999b0455fe5-0"
       ],
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.banner .banner__content .banner__box {padding-bottom: 130px !important; }}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Clocks-_-Colours-Header.jpg",
         "mobile_image": "shopify:\/\/shop_images\/Clocks-_-Colours-Header-Mobile.jpg",
@@ -71,6 +74,7 @@
         "template--18486377316644__3ecbccab-bd42-4007-a0cf-7fdf878e010c-16808183520973493f-1"
       ],
       "custom_css": [
+        "@media screen and (min-width: 750px) and (max-width: 989px) {.image-with-text__heading {max-width: 100% !important; line-height: 30px; }}",
         "@media screen and (max-width: 749px) {.image-with-text__media-item {padding: 0 20px; }}"
       ],
       "settings": {
