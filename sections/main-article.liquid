@@ -8,7 +8,8 @@
           {% render block %}
         </div>
       {%- when 'featured_image' -%} 
-        {%- if article.metafields.global.hero_image -%}
+        {% comment %} {%- if article.metafields.global.hero_image -%}
+        {%- endif -%} {% endcomment %}
           <div class="article-template__hero-container" {{ block.shopify_attributes }}>
             <div artist_1
               class="article-template__hero-{{ block.settings.image_height }} media {{block.settings.image_height}}"
@@ -83,7 +84,7 @@
               </div>
             </div>
           </div>
-        {%- endif -%}
+        
 
       {%- when 'title' -%}
         <header class="page-width small-hide" {{ block.shopify_attributes }} style="display:none">
@@ -356,7 +357,7 @@
     padding-bottom: 50px;
     border-bottom: 1px solid #D1D3D4;
 }.article-template .about-artist-section .title {
-    width: 170px;
+    width: 185px;
     margin: 0;
 }.article-template .about-artist-section .title .h1 {
     margin: 0;
@@ -364,7 +365,7 @@
 }.article-template .about-artist-section .image {
     width: calc(40% - var(--grid-desktop-horizontal-spacing));
 }.article-template .about-artist-section .content {
-    width: calc(60% - 170px - var(--grid-desktop-horizontal-spacing));
+    width: calc(60% - 185px - var(--grid-desktop-horizontal-spacing));
     counter-reset: my-awesome-counter;
     padding-left: 65px;
 }.article-template .about-artist-section .content ul {

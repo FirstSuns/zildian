@@ -104,6 +104,7 @@ if (!customElements.get('product-info')) {
           audio.classList.add('hide')
         }
       });
+      lcly_reload_0({ 'upc' : event.data.variant.upc }); 
     }
     changeSku(event) {
       document.querySelector('.sku').innerHTML = event.data.variant.sku;

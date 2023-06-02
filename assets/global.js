@@ -883,7 +883,17 @@ class VariantSelects extends HTMLElement {
   }
 
   updateMedia() {
-    
+
+    ///FS added
+    if (!this.currentVariant) return;
+    var media_img = this.currentVariant.featured_image.split("/").pop();
+    const [media_img_first, ...media_img_rest] = media_img.split('?');
+    const fs_mediaGalleries = document.querySelectorAll(`[fs-thumbnail-media-img="${media_img_first}"]`);
+    if(fs_mediaGalleries && fs_mediaGalleries.length != 0)
+    {
+      fs_mediaGalleries[0].click();
+    }
+    ///////
     if (!this.currentVariant) return;
     if (!this.currentVariant.featured_media) return;
     const mediaGalleries = document.querySelectorAll(`[id^="MediaGallery-${this.dataset.section}"]`);
@@ -893,16 +903,6 @@ class VariantSelects extends HTMLElement {
     if (!modalContent) return;
     const newMediaModal = modalContent.querySelector( `[data-media-id="${this.currentVariant.featured_media.id}"]`);
     modalContent.prepend(newMediaModal);
-
-    //fs added
-    //  console.log("updateMedia---",this.currentVariant);
-    //const fs_mediaGalleries = document.querySelectorAll(`[fs-thumbnail-variant-id="${this.currentVariant.id}"]`);
-    const fs_mediaGalleries = document.querySelectorAll(`[fs-thumbnail-media-id="${this.currentVariant.featured_media.id}"]`);
-    if(fs_mediaGalleries && fs_mediaGalleries.length != 0)
-    {
-      fs_mediaGalleries[0].click();
-    }
-    // console.log("fs_mediaGalleries---",fs_mediaGalleries);
   }
 
   updateURL() {

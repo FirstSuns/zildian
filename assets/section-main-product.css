@@ -1470,3 +1470,11 @@ a.product__text {
     padding: 0 0 0 10px;
   }
 }
+@media screen and (max-width: 749px) {
+  .media-type-external_video .product__modal-opener--external_video{
+    display: none !important;
+  }
+  .media-type-external_video .deferred-media{
+    display: block !important;
+  }
+}

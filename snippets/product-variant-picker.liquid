@@ -56,7 +56,34 @@
         {%- endif -%}
       {%- endfor -%}
       <script type="application/json">
-        {{ product.variants | json }}
+          [
+            {% for variant in product.variants %}
+              {
+                "id":{{variant.id}},
+                "title":"{{variant.title}}",
+                "option1":{{variant.option1 | json}},
+                "option2":{{variant.option2 | json}},
+                "option3":{{variant.option3 | json}},
+                "sku":{{variant.sku | json}},
+                "requires_shipping":{{variant.requires_shipping | json}},
+                "taxable":{{variant.taxable | json}},
+                "featured_image":{{variant.featured_image | json}},
+                "available":{{variant.available | json}},
+                "name":{{variant.name | json}},
+                "public_title":{{variant.public_title | json}},
+                "options":{{variant.options | json}},
+                "price":{{variant.price | json}},
+                "weight":{{variant.weight | json}},
+                "compare_at_price":{{variant.compare_at_price | json}},
+                "inventory_management":{{variant.inventory_management | json}},
+                "barcode":{{variant.barcode | json}},
+                "requires_selling_plan":{{variant.requires_selling_plan | json}},
+                "selling_plan_allocations":{{variant.selling_plan_allocations | json}},
+                "quantity_rule":{{variant.quantity_rule | json}},
+                "upc": {{variant.barcode | json }}
+              } {% if forloop.last != true %},{% endif %}
+            {% endfor %}
+          ]
       </script>
     </variant-radios>
   {%- else -%}

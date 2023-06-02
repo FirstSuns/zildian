@@ -1281,3 +1281,6 @@ html #tagalys-namespace.tagalys-namespace .plp .filters .noUi-base{
 [data-filter-id=_tags]{
   display: none !important;
 }
+html #tagalys-namespace.tagalys-namespace .plp .product .product-name{
+  min-height: 60px;
+}

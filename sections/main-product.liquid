@@ -508,7 +508,7 @@
                       "color_0": "#CC9F53",
                       "color_1": "#CC9F53",
                       "always_hide_button": "1",
-                      "upc": "{{product.selected_or_first_available_variant.barcode}}",
+                      "upc": "{% for variant in product.variants %}{{ variant.barcode }},{% endfor %}",
                       "show_location_switcher": "1",
                       "show_location_prompt": "1",
                       "lang": "en-us",

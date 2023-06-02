@@ -6,14 +6,16 @@
 </style>
 {% endif %}
 <article class="article-template">
-<div class="image-with-text image-with-text--no-overlap   isolate collapse-corners section-543c39e1-2e95-4a79-9cb1-c4edf029d1f7-padding">
+<div artist1 class="image-with-text image-with-text--no-overlap   isolate collapse-corners section-543c39e1-2e95-4a79-9cb1-c4edf029d1f7-padding">
   <div class="image-with-text__grid grid grid--gapless grid--1-col width--medium  ">
     <div class="image-with-text__media-item  gradient color-background-2 image-with-text__media-item--medium image-with-text__media-item--top grid__item">
       <div class="image-with-text__media image-with-text__media--adapt global-media-settings media" style="padding-bottom: 55%;">
         {% for block in section.blocks %}
           {% assign getblog = block.settings.arti_blg %}
           {% assign artttl = article.title %}
-          {% if getblog.title == getblog.title  %}
+          {% if article.metafields.global.cymbal_setip_image !=blank %}
+            <img src="{{article.metafields.global.cymbal_setip_image | file_url}}"  loading="lazy">
+          {% else %}
             <img src="{{ block.settings.get_imm | img_url: 'master'}}" loading="lazy">
           {% endif %}
         {% endfor %}

@@ -685,3 +685,12 @@
       font-size: 14px;
   }
 }
+
+.fs-slide-thumbnail .product__media-icon{
+  display: flex !important;
+  position: absolute !important;
+  height: 3rem !important;
+  width: 3rem !important;
+  left: 30px !important;
+  top: 30px !important;
+}

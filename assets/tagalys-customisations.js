@@ -240,7 +240,7 @@ TagalysCustomizations.utilities.productRenderer = function (html, args, options 
                 product.price
               )
                 ? html`
-                    <div class="product-price-regular">
+                    <div class="product-price-regular 1">
                       ${helpers.formatCurrency(
                         product.compare_at_price === null
                           ? product.price
@@ -252,7 +252,7 @@ TagalysCustomizations.utilities.productRenderer = function (html, args, options 
                     </div>
                   `
                 : html`
-                    <div class="product-price-regular">
+                    <div class="product-price-regular 2">Starting from   
                       ${helpers.formatCurrency(
                         product.compare_at_price === null
                           ? product.price
@@ -650,7 +650,7 @@ TagalysCustomizations.initSearchSuggestions = function () {
           var helpers = props.helpers;
           var width = helpers.getTargetNodeWidth()
           var style = props.inheritAlignmentElementWidth ? { width: width } : {}
-          console.log(document.querySelector('.search-modal__form .search__input').value)
+          // console.log(document.querySelector('.search-modal__form .search__input').value)
           if (props.products.length > 0) {
             return html`
               <div ref=${props.tagalysSearchSuggestionsPopoverRef} style=${style} class="search-suggestions">
@@ -716,6 +716,14 @@ TagalysCustomizations.initSearchSuggestions = function () {
           }
           var className = classes.join(" ")
 
+          textSuggestions.map((textSuggestionSection) => {
+            textSuggestionSection.items.map((item,index)=>{
+              if(item.displayString.includes("/"))
+              {
+                item.displayString = item.displayString.split("/").pop()
+              }
+            });
+          });
           return html`
             <div class=${className}>
               <${args.templates.products}
@@ -958,7 +966,7 @@ TagalysCustomizations.initSearchResults = function() {
               helpers.applyFilter(props.filterId, props.filterItem.id);
             }
           };
-
+          //${props.filterItem.name.replaceAll('Default Category/', '')}
           return html`
             <li
               class="filter-item${props.filterItem.selected ? " selected" : ""}"
@@ -969,7 +977,7 @@ TagalysCustomizations.initSearchResults = function() {
                 <span class="checkbox"></span>
                 <span class="filter-item-label-and-count">
                   <span class="filter-item-label"
-                    >${props.filterItem.name.replaceAll('Default Category/', '')}</span
+                    >${props.filterItem.name.includes("/") ? props.filterItem.name.split("/").pop() : props.filterItem.name }</span
                   >
                   ${props.showMatchingProductsCount
                     ? html`

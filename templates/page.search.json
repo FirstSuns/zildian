@@ -6,8 +6,9 @@
         "template--18142515003684__3141c904-b6a6-4f2b-a1fe-aa2b9e911af8-1679425999b0455fe5-0": {
           "type": "heading",
           "settings": {
-            "heading": "Search",
-            "heading_size": "h1"
+            "heading": "Search Results",
+            "heading_size": "h1",
+            "uppercase": false
           }
         }
       },
@@ -20,6 +21,7 @@
         "image_overlay_opacity": 0,
         "image_height": "small",
         "content_width": "",
+        "padding_left": "",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -27,7 +29,11 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false,
-        "center_mobile": false
+        "center_mobile": false,
+        "full_mobile": false,
+        "content_padding": 20,
+        "padding_top": 0,
+        "padding_bottom": 36
       }
     },
     "main": {

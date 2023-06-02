@@ -165,7 +165,7 @@
       
     }
       .title {
-        width: 170px;
+        width: 200px;
         margin: 0;
         @media screen and (max-width: 989px) {
           width: 100%;
@@ -187,7 +187,7 @@
         }
       }
       .content {
-        width: calc(60% - 170px - var(--grid-desktop-horizontal-spacing));
+        width: calc(60% - 200px - var(--grid-desktop-horizontal-spacing));
         counter-reset: my-awesome-counter;
         padding-left: 65px;
         @media screen and (max-width: 989px) {
