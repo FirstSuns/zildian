@@ -110,6 +110,9 @@
                 {% for content_val in content_list %}
                 {% if content_val contains 'youtu' %}
                   {% assign video_id = content_val | split: '/' | last %}
+                  {% if content_val contains '=' %}
+                    {% assign video_id = content_val | split: '=' | last %}
+                  {% endif %}
                   <iframe 
                     width="1220" 
                     height="686" 
@@ -133,6 +136,9 @@
                 {% for content_val in content_list %}
                 {% if content_val contains 'youtu' %}
                   {% assign video_id = content_val | split: '/' | last %}
+                  {% if content_val contains '=' %}
+                    {% assign video_id = content_val | split: '=' | last %}
+                  {% endif %}
                   <iframe 
                     width="1220" 
                     height="686" 
@@ -156,6 +162,9 @@
                 {% for content_val in content_list %}
                 {% if content_val contains 'youtu' %}
                   {% assign video_id = content_val | split: '/' | last %}
+                  {% if content_val contains '=' %}
+                    {% assign video_id = content_val | split: '=' | last %}
+                  {% endif %}
                   <iframe 
                     width="1220" 
                     height="686" 
@@ -210,7 +219,11 @@
       {% endpaginate %}
     </div>
   </div> {% endcomment %}
-  {% if blog.next_article or blog.previous_article %}
+  {% assign first_article = blank %}
+  {% for article in blog.articles %}
+    {% assign first_article = article %}
+  {% endfor %}
+  {% if blog.next_article or first_article %}
   <header class="page-width page-width--narrow">
     <div class="article-template__excerpt">
       <div class="narrow">
@@ -240,13 +253,13 @@
             </svg>                                 
           </a>
         </div>
-        {% elsif blog.previous_article %}
+        {% elsif first_article %}
         <div class="fs-article-narrow-cont">
           <h3>NEXT</h3>
-          <p>{{blog.previous_article.title}}</p>
+          <p>{{first_article.title}}</p>
         </div>
         <div>
-          <a href="{{blog.previous_article.url}}">
+          <a href="{{first_article.url}}">
             <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="22" cy="22" r="21.5" transform="rotate(-180 22 22)" stroke="#5C5D60"/>
               <path d="M18 30L26 21.5L18 13" stroke="#5C5D60" stroke-width="2" stroke-linecap="round"/>
@@ -258,7 +271,7 @@
     </div>
   </header>
   {% endif %}
-  
+
   {%- if blog.comments_enabled? -%}
     <div class="article-template__comment-wrapper background-secondary">
       <div id="comments" class="page-width page-width--narrow">

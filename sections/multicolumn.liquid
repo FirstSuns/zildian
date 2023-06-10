@@ -167,7 +167,7 @@
                   </span>
                   {% endcapture %}
                   {% if block.settings.download_label != blank %}
-                    <a href="{{block.settings.download_link}}" class="link download" download>
+                    <a href="{{block.settings.download_link}}" target="_blank" class="link download" download>
                       {{block.settings.download_label}} 
                       {{download_icon}}
                     </a>

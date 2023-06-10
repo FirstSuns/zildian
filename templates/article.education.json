@@ -52,6 +52,9 @@
       "block_order": [
         "content"
       ],
+      "custom_css": [
+        ".article-template__content {margin-top: 0 !important; padding-top: 0 !important;}"
+      ],
       "settings": {}
     },
     "bcdf90f1-4086-4928-badd-e926a4348af7": {
@@ -170,6 +173,7 @@
     },
     "552513de-3e1b-4347-be33-6227568d2ff3": {
       "type": "featured-blog",
+      "disabled": true,
       "settings": {
         "heading": "Choose other videos to learn more",
         "heading_size": "h1",

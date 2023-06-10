@@ -126,6 +126,7 @@
         },
         "fae67601-dded-4172-a7d1-c9d0c8078769": {
           "type": "tags",
+          "disabled": true,
           "settings": {
             "button_label_1": "Band & Orchestral",
             "button_link_1": "shopify:\/\/collections\/cymbals-drum-set-s-family-s-zildjian",
@@ -192,6 +193,7 @@
         },
         "41e437d8-f33f-46df-8198-7bd982672c81": {
           "type": "tags",
+          "disabled": true,
           "settings": {
             "button_label_1": "Band & Orchestral",
             "button_link_1": "shopify:\/\/collections\/cymbals-drum-set-s-family-s-dark",

@@ -101,6 +101,9 @@
         .info {
           h2 {
             margin: 0;
+            @media screen and (max-width: 749px) {
+              font-size: 24px;
+            }
           }
           h5 {
             margin-bottom: 0;

@@ -57,6 +57,9 @@
     
     {% if template == 'article.artist' and article.metafields.global.youtube != blank%}
       {% assign video_id = article.metafields.global.youtube | split: '/' | last %}
+      {% if article.metafields.global.youtube contains '=' %}
+        {% assign video_id = article.metafields.global.youtube | split: '=' | last %}
+      {% endif %}
       <iframe 
         class="fs-article-video-iframe"
         width="1220px" 
@@ -94,7 +97,17 @@
     {% endfor %}
   </div>
 </div>
-
+{% if article.title == "Aaron Smith" %}
+  <div class="isolate">
+    <div class="rich-text content-container color-background-1 gradient rich-text--full-width content-container--full-width section-template--18305496580388__97e8c916-868c-40ca-bc78-69a8202d6384-padding">
+      <div class="rich-text__wrapper rich-text__wrapper--center page-width">
+        <div class="rich-text__blocks center contnet-type--list" style=" margin: auto;"><h2 class="rich-text__heading rte h1" style=" margin: 0 auto 100px auto;">
+                  <span>"Cali" Evan Marien x Aaron Smith #EvanMarien #Aaron Smith</span>
+                </h2></div>
+      </div>
+    </div>
+  </div>
+{% endif %}
 {% schema %}
 {
   "name": "Video Artist",

@@ -846,6 +846,7 @@
       });
     });
     
+    {% if product.metafields.custom.demo_video_link != blank%}
     var demo_video_modal = document.getElementById("fs-demo-video-modal");
     var demo_video_btn = document.getElementById("fs-demo-video-modal-btn");
     var demo_video_close = document.getElementById("fs-demo-video-modal-close-btn");
@@ -865,6 +866,7 @@
         demo_video_modal.style.display = "none";
       }
     }
+    {% endif %}
   </script>
 
   {%- liquid

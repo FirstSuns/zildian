@@ -130,9 +130,9 @@
             {% comment %} {%- if show_date -%}
               <span class="circle-divider">{{ article.published_at | time_tag: format: 'date' }}</span>
             {%- endif -%} {% endcomment %}
-            {%- if show_author -%}
+            {% comment %} {%- if show_author -%}
               <span>{{ article.metafields.global.author }}</span>
-            {%- endif -%}
+            {%- endif -%} {% endcomment %}
           </div>
           {%- if show_excerpt -%}
             {%- if article.excerpt.size > 0 or article.content.size > 0 -%}

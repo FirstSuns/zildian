@@ -30,7 +30,7 @@
     assign posts_displayed = section.settings.post_limit
   endif
 -%}
-
+{% assign current_article = article %}
 <div data-section-type="featured-blog" class="blog color-{{ section.settings.color_scheme }} gradient{% if section.settings.heading == blank %} no-heading{% endif %}">
   <div class="page-width--narrow isolate section-{{ section.id }}-padding">
     {%- unless section.settings.heading == blank -%}
@@ -48,6 +48,7 @@
           role="list"
         >
           {%- for article in blog.articles limit: section.settings.post_limit -%}
+            {% unless current_article.title == article.title %}
             <li
               id="Slide-{{ section.id }}-{{ forloop.index }}"
               class="blog__post grid__item article slider__slide slider__slide--full-width"
@@ -62,6 +63,7 @@
                 show_excerpt: false
               %}
             </li>
+            {% endunless %}
           {%- endfor -%}
         </ul>
         {%- if posts_exceed_limit -%}

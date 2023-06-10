@@ -6,7 +6,7 @@
         "template--18142515003684__3141c904-b6a6-4f2b-a1fe-aa2b9e911af8-1679425999b0455fe5-0": {
           "type": "heading",
           "settings": {
-            "heading": "Sponsorship Opportunities",
+            "heading": "BE APART OF ZILDJIAN'S",
             "heading_size": "h1",
             "uppercase": false
           }
@@ -14,34 +14,21 @@
         "fcda1b36-4f0c-4742-b3a6-6f381c333ee2": {
           "type": "text",
           "settings": {
-            "text": "Our team is at the heart of our culture. Come join our family.",
+            "text": "400 YEARS OF HISTORY",
             "text_style": "subtitle"
-          }
-        },
-        "6a56272f-48aa-4e6f-8279-5034e0ddc558": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "See Job Openings",
-            "button_link_1": "https:\/\/recruiting.paylocity.com\/Recruiting\/Jobs\/All\/d11b52b1-5f1f-4f49-b717-27723027dfaf\/AZC-INC",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false,
-            "blank_button": true
           }
         }
       },
       "block_order": [
         "template--18142515003684__3141c904-b6a6-4f2b-a1fe-aa2b9e911af8-1679425999b0455fe5-0",
-        "fcda1b36-4f0c-4742-b3a6-6f381c333ee2",
-        "6a56272f-48aa-4e6f-8279-5034e0ddc558"
+        "fcda1b36-4f0c-4742-b3a6-6f381c333ee2"
       ],
       "custom_css": [
         ".banner__box .banner__heading + * {margin-top: 0;}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/hero_11.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/hero_12.jpg",
+        "image": "shopify:\/\/shop_images\/400th-Celebration-Sponorship-Hero-Banner.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/400th-Celebration-Sponorship-Hero-Banner-Mobile.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "content_width": "",
@@ -68,26 +55,58 @@
         "padding_bottom": 100
       }
     },
+    "dba55eb0-9090-4ecd-bcdd-60fd780c959a": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19042043822372__dba55eb0-9090-4ecd-bcdd-60fd780c959a-16862207273b358c05-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>SPONSORSHIPS INQUIRIES<\/p>",
+            "heading_size": "h1",
+            "max_width": ""
+          }
+        },
+        "template--19042043822372__dba55eb0-9090-4ecd-bcdd-60fd780c959a-16862207273b358c05-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Contact Nancy Smith at nsmith@zildjian.com <br\/>781-427-6939 | Line Extension: (402)<br\/>22 Longwater Drive, Norwell, MA 02061<\/p>",
+            "hide_mobile": false,
+            "max_width": ""
+          }
+        },
+        "template--19042043822372__dba55eb0-9090-4ecd-bcdd-60fd780c959a-16862207273b358c05-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "blank": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19042043822372__dba55eb0-9090-4ecd-bcdd-60fd780c959a-16862207273b358c05-0",
+        "template--19042043822372__dba55eb0-9090-4ecd-bcdd-60fd780c959a-16862207273b358c05-1",
+        "template--19042043822372__dba55eb0-9090-4ecd-bcdd-60fd780c959a-16862207273b358c05-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "contnet_type": "list",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "max_width": ""
+      }
+    },
     "e07b17f6-47e3-47e4-b76c-66172e4060a1": {
       "type": "multicolumn",
       "blocks": {
-        "template--19042043822372__e07b17f6-47e3-47e4-b76c-66172e4060a1-1684662487b3dc82be-0": {
-          "type": "column",
-          "settings": {
-            "badge": "",
-            "title": "",
-            "heading_size": "h3",
-            "heading_color": "",
-            "download_label": "",
-            "download_link": "",
-            "text": "<p>For nearly 60 years, we at the Vic Firth Company have focused on developing and manufacturing what has become the world's most popular drumsticks, mallets, alternative implements, and accessories. A part of the Avedis Zildjian Company’s family of brands, Vic Firth continues to approach business and longevity as industries leaders in excellent company.<\/p>",
-            "link_label": "",
-            "link": "",
-            "full_link": false,
-            "link_list": "",
-            "blank_link": false
-          }
-        },
         "template--19042043822372__e07b17f6-47e3-47e4-b76c-66172e4060a1-1684662487b3dc82be-1": {
           "type": "column",
           "settings": {
@@ -97,7 +116,7 @@
             "heading_color": "",
             "download_label": "",
             "download_link": "",
-            "text": "<p>Vic Firth is more than just leading instrument makers. We are also instrument players. We are music lovers. We believe in the power of music, and what it can do to change the lives of people and the world around us. That's why we're so passionate about our products, our brands, and our work together. See more about Vic Firth below. From our people, to our culture, to what makes us groove.<\/p>",
+            "text": "<p>Join Zildjian in celebrating our 400th Anniversary. Founded in 1623, Zildjian has been changing the sound of music across decades, centuries and genre's. Join us as we celebrate by honoring 8 living legends of music. Hosted by Fred Armisen and featuring today's hottest drummers hand selected by our Hall of Fame inductees, it's bound to be a night to remember. So join the audience full of amazing people. Our partners from around the globe, our major retailers, hundreds of our signed artists, the worlds greatest music afficiandos and 3 generations of Zildjians.<\/p>",
             "link_label": "",
             "link": "",
             "full_link": false,
@@ -107,15 +126,14 @@
         }
       },
       "block_order": [
-        "template--19042043822372__e07b17f6-47e3-47e4-b76c-66172e4060a1-1684662487b3dc82be-0",
         "template--19042043822372__e07b17f6-47e3-47e4-b76c-66172e4060a1-1684662487b3dc82be-1"
       ],
       "settings": {
         "side_banner": false,
         "full_width": false,
-        "title": "THANK YOU FOR YOUR INTEREST IN VIC FIRTH",
+        "title": "ZILDJIAN'S 400TH ANNIVERSARY EVENT",
         "heading_size": "h1",
-        "heading_align": "left",
+        "heading_align": "center",
         "image_width": "full",
         "image_ratio": "adapt",
         "mobile_image_ratio": "adapt",
@@ -139,8 +157,80 @@
         "max_width": "1200"
       }
     },
+    "b6193c33-b037-4344-b1a4-e6a1756b4752": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--19042043822372__b6193c33-b037-4344-b1a4-e6a1756b4752-1686220806041c50d0-0": {
+          "type": "column",
+          "settings": {
+            "badge": "",
+            "title": "EVENT DETAILS",
+            "heading_size": "h3",
+            "heading_color": "",
+            "download_label": "",
+            "download_link": "",
+            "text": "<p><strong>VIP Pre-Party:<\/strong><\/p><p>Wednesday Sept. 20that 5:00 p.m.- 7:00 p.m.<\/p><p><strong>400th Celebration Event:<\/strong><\/p><p>Wednesday Sept. 20that 7:00 p.m. - 11:00 p.m.<\/p>",
+            "link_label": "",
+            "link": "",
+            "full_link": false,
+            "link_list": "",
+            "blank_link": false
+          }
+        },
+        "template--19042043822372__b6193c33-b037-4344-b1a4-e6a1756b4752-1686220806041c50d0-1": {
+          "type": "column",
+          "settings": {
+            "badge": "",
+            "title": "LOCATION & DATE",
+            "heading_size": "h3",
+            "heading_color": "",
+            "download_label": "",
+            "download_link": "",
+            "text": "<p><strong>Date:<\/strong><\/p><p>September 20th 2023<br\/>Wednesday<\/p><p><br\/><strong>Location:<\/strong><\/p><p>Roadrunner Theatre Boston<br\/>781-472-6939<br\/>89 Guest Street Boston<\/p>",
+            "link_label": "",
+            "link": "",
+            "full_link": false,
+            "link_list": "",
+            "blank_link": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19042043822372__b6193c33-b037-4344-b1a4-e6a1756b4752-1686220806041c50d0-0",
+        "template--19042043822372__b6193c33-b037-4344-b1a4-e6a1756b4752-1686220806041c50d0-1"
+      ],
+      "settings": {
+        "side_banner": false,
+        "full_width": false,
+        "title": "",
+        "heading_size": "h1",
+        "heading_align": "center",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "mobile_image_ratio": "adapt",
+        "overlay_image": false,
+        "columns_desktop": 2,
+        "swipe_on_desktop": false,
+        "step_style": false,
+        "column_alignment": "left",
+        "no_gap": false,
+        "no_padding": false,
+        "number": false,
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "mobile_overlay": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "max_width": ""
+      }
+    },
     "b921e32f-6c86-4cd1-9c28-51599b6bf8bf": {
       "type": "image-banner",
+      "disabled": true,
       "blocks": {
         "template--19042043822372__b921e32f-6c86-4cd1-9c28-51599b6bf8bf-16846625169927cc7b-0": {
           "type": "heading",
@@ -186,13 +276,63 @@
         "padding_bottom": 36
       }
     },
+    "7a943954-1fa4-4dae-bd9c-dfe6d0b5c793": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19042043822372__7a943954-1fa4-4dae-bd9c-dfe6d0b5c793-16862207273b358c05-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>SPECIAL PERFORMANCES<\/p>",
+            "heading_size": "h0",
+            "max_width": ""
+          }
+        },
+        "template--19042043822372__7a943954-1fa4-4dae-bd9c-dfe6d0b5c793-16862207273b358c05-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "hide_mobile": false,
+            "max_width": ""
+          }
+        },
+        "template--19042043822372__7a943954-1fa4-4dae-bd9c-dfe6d0b5c793-16862207273b358c05-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "blank": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19042043822372__7a943954-1fa4-4dae-bd9c-dfe6d0b5c793-16862207273b358c05-0",
+        "template--19042043822372__7a943954-1fa4-4dae-bd9c-dfe6d0b5c793-16862207273b358c05-1",
+        "template--19042043822372__7a943954-1fa4-4dae-bd9c-dfe6d0b5c793-16862207273b358c05-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "contnet_type": "list",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "max_width": ""
+      }
+    },
     "d00001f0-06ae-4173-a192-491dc4a7eda3": {
       "type": "image-with-text",
       "blocks": {
         "template--19042043822372__d00001f0-06ae-4173-a192-491dc4a7eda3-168466256289770156-0": {
           "type": "heading",
           "settings": {
-            "heading": "OUR VALUES",
+            "heading": "HOSTED BY FRED ARMISEN",
             "heading_link": "",
             "heading_size": "h1",
             "heading_color": "",
@@ -202,13 +342,14 @@
         "template--19042043822372__d00001f0-06ae-4173-a192-491dc4a7eda3-168466256289770156-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Our values are the pillars on which the Company and brands were built. We live these values each day in all that we do.<\/p>",
+            "text": "<p>The incredibly talented quadruple threat will bring his acting, producing, and writing skills in both comedy and music to create a night to remember.<\/p>",
             "text_style": "body",
             "color": "#5c5d60"
           }
         },
         "template--19042043822372__d00001f0-06ae-4173-a192-491dc4a7eda3-168466256289770156-2": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "See our values",
             "button_link": "shopify:\/\/pages\/about-us",
@@ -226,8 +367,8 @@
         "tag": "",
         "side_banner": false,
         "full_width": true,
-        "image": "shopify:\/\/shop_images\/Our-Values_6b10d656-030b-4c41-88d1-26924715c096.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/Our-Values-Mobile_e7673f79-ca9e-49fd-8205-2208d0e22547.jpg",
+        "image": "shopify:\/\/shop_images\/Fred-Armisen.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Fred-Armisen.jpg",
         "video_url": "",
         "height": "adapt",
         "desktop_image_width": "medium",
@@ -254,7 +395,7 @@
         "template--19042043822372__47129bfb-4f12-40f4-a4e8-98bf30e1acc6-168466256289770156-0": {
           "type": "heading",
           "settings": {
-            "heading": "LIFE AT VIC FIRTH",
+            "heading": "SPECIAL GUESTS",
             "heading_link": "",
             "heading_size": "h1",
             "heading_color": "",
@@ -264,13 +405,14 @@
         "template--19042043822372__47129bfb-4f12-40f4-a4e8-98bf30e1acc6-168466256289770156-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Life at Vic Firth is more than working at one of the greatest drumstick manufactors in the world. It's about embracing music and an occasional impromptu concert in the office. It's about growth and how your work and your ideas contribute to sharing music with the generations to come. Headquartered just south of Boston, we have a people-first culture. Follow us on Linkedin to see more about Life at Avedis Zildjian Company. From our factory family, to our office, and the latest company news.<\/p>",
+            "text": "<p>The list of special guests is growing daily, this event will bring together musicians, artists, and pop culture icons.<\/p>",
             "text_style": "body",
             "color": "#5c5d60"
           }
         },
         "template--19042043822372__47129bfb-4f12-40f4-a4e8-98bf30e1acc6-168466256289770156-2": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "ZILDJIAN ON LINKEDIN",
             "button_link": "https:\/\/www.linkedin.com\/company\/avedis-zildjian-company\/",
@@ -288,8 +430,8 @@
         "tag": "",
         "side_banner": false,
         "full_width": true,
-        "image": "shopify:\/\/shop_images\/Life-At-Zildjian.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/Life-At-Zildjian-Mobile.jpg",
+        "image": "shopify:\/\/shop_images\/Aaron-Spears.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Aaron-Spears.jpg",
         "video_url": "",
         "height": "adapt",
         "desktop_image_width": "medium",
@@ -316,7 +458,7 @@
         "template--19042043822372__4727ef57-76ba-48fc-a3a3-b382c8f6566d-168466256289770156-0": {
           "type": "heading",
           "settings": {
-            "heading": "YOUR DEVELOPMENT",
+            "heading": "HONORING 8 LIVING LEGENDS",
             "heading_link": "",
             "heading_size": "h1",
             "heading_color": "",
@@ -326,13 +468,14 @@
         "template--19042043822372__4727ef57-76ba-48fc-a3a3-b382c8f6566d-168466256289770156-1": {
           "type": "text",
           "settings": {
-            "text": "<p>The growth of our teams and team members are important to us. We evolve together. That's why we offer opportunities for learning and training programs, tuition reimbursement, and regular development check-ins with supervisors. See how we've grown over the years.<\/p>",
+            "text": "<p>8 of the worlds most iconic drummers will be honored by today top touring drummers!<br\/><br\/>Shelia E. | Eddie Bayers | Dennis Chambers  | Terri Lyne Carrington | Omar Hakim | Steve Smith | Peter Erskine | Ringo Starr<\/p>",
             "text_style": "body",
             "color": "#5c5d60"
           }
         },
         "template--19042043822372__4727ef57-76ba-48fc-a3a3-b382c8f6566d-168466256289770156-2": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "THE ZILDJIAN BRAND JOURNEY",
             "button_link": "shopify:\/\/pages\/brand",
@@ -350,8 +493,8 @@
         "tag": "",
         "side_banner": false,
         "full_width": true,
-        "image": "shopify:\/\/shop_images\/History-Photo-1_2_1_1_353b39ba-9b72-491f-9e85-957bafb72723.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/History-Photo-1_2_1_1_353b39ba-9b72-491f-9e85-957bafb72723.jpg",
+        "image": "shopify:\/\/shop_images\/Hero-Shot.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Hero-Shot.jpg",
         "video_url": "",
         "height": "adapt",
         "desktop_image_width": "medium",
@@ -372,13 +515,63 @@
         "max_width": "550"
       }
     },
+    "1e4eeb5c-b1d7-419d-b7f4-d9f5eef2ba25": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19042043822372__1e4eeb5c-b1d7-419d-b7f4-d9f5eef2ba25-16862207273b358c05-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>INTERACTIVE ACTIVITY<\/p>",
+            "heading_size": "h0",
+            "max_width": ""
+          }
+        },
+        "template--19042043822372__1e4eeb5c-b1d7-419d-b7f4-d9f5eef2ba25-16862207273b358c05-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "hide_mobile": false,
+            "max_width": ""
+          }
+        },
+        "template--19042043822372__1e4eeb5c-b1d7-419d-b7f4-d9f5eef2ba25-16862207273b358c05-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "blank": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19042043822372__1e4eeb5c-b1d7-419d-b7f4-d9f5eef2ba25-16862207273b358c05-0",
+        "template--19042043822372__1e4eeb5c-b1d7-419d-b7f4-d9f5eef2ba25-16862207273b358c05-1",
+        "template--19042043822372__1e4eeb5c-b1d7-419d-b7f4-d9f5eef2ba25-16862207273b358c05-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "contnet_type": "list",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "max_width": ""
+      }
+    },
     "4aa0d38a-eef4-489c-bccb-200b9ee21311": {
       "type": "image-with-text",
       "blocks": {
         "template--19042043822372__4aa0d38a-eef4-489c-bccb-200b9ee21311-168466256289770156-0": {
           "type": "heading",
           "settings": {
-            "heading": "BENEFITS AT ZILDJIAN",
+            "heading": "MUSIC MEMORABILIA",
             "heading_link": "",
             "heading_size": "h1",
             "heading_color": "",
@@ -388,13 +581,14 @@
         "template--19042043822372__4aa0d38a-eef4-489c-bccb-200b9ee21311-168466256289770156-1": {
           "type": "text",
           "settings": {
-            "text": "<p>From medical, dental, 401k, to flex schedules and company events, our benefits exemplify and underscore our corporate values.<\/p>",
+            "text": "<p>Check out some of the amazing music memorabilia Zildjian's has curated over 400 years<\/p>",
             "text_style": "body",
             "color": "#5c5d60"
           }
         },
         "template--19042043822372__4aa0d38a-eef4-489c-bccb-200b9ee21311-168466256289770156-2": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "MORE ABOUT THE ZILDJIAN COMPANY",
             "button_link": "shopify:\/\/pages\/about-us",
@@ -412,8 +606,8 @@
         "tag": "",
         "side_banner": false,
         "full_width": true,
-        "image": "shopify:\/\/shop_images\/Benefits.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/Benefits.jpg",
+        "image": "shopify:\/\/shop_images\/Music-Memorabilia.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Music-Memorabilia.jpg",
         "video_url": "",
         "height": "adapt",
         "desktop_image_width": "medium",
@@ -434,19 +628,608 @@
         "max_width": "556"
       }
     },
+    "05064312-c9e7-4de7-8b74-f49f6906a2aa": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--19042043822372__05064312-c9e7-4de7-8b74-f49f6906a2aa-168622136299a30cf9-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "VIP EXPERIENCE",
+            "heading_link": "",
+            "heading_size": "h1",
+            "heading_color": "",
+            "max_width": ""
+          }
+        },
+        "template--19042043822372__05064312-c9e7-4de7-8b74-f49f6906a2aa-168622136299a30cf9-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A VIP experience like no other, spend time with your drumming heroes at our VIP pre-party, enjoy VIP seating and extras.<\/p>",
+            "text_style": "body",
+            "color": ""
+          }
+        },
+        "template--19042043822372__05064312-c9e7-4de7-8b74-f49f6906a2aa-168622136299a30cf9-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "link": false,
+            "blank_button": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19042043822372__05064312-c9e7-4de7-8b74-f49f6906a2aa-168622136299a30cf9-0",
+        "template--19042043822372__05064312-c9e7-4de7-8b74-f49f6906a2aa-168622136299a30cf9-1",
+        "template--19042043822372__05064312-c9e7-4de7-8b74-f49f6906a2aa-168622136299a30cf9-2"
+      ],
+      "settings": {
+        "tag": "",
+        "side_banner": false,
+        "full_width": false,
+        "image": "shopify:\/\/shop_images\/VIP-Event.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/VIP-Event.jpg",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "container_image": false,
+        "media_max_width": "",
+        "desktop_content_position": "top",
+        "content_align": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "overlay_section": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "quote": false,
+        "max_width": ""
+      }
+    },
+    "a70e8f86-c43b-4bba-970b-7d6db22cfe5f": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--19042043822372__a70e8f86-c43b-4bba-970b-7d6db22cfe5f-168622136299a30cf9-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "CHARITY AUCTION",
+            "heading_link": "",
+            "heading_size": "h1",
+            "heading_color": "",
+            "max_width": ""
+          }
+        },
+        "template--19042043822372__a70e8f86-c43b-4bba-970b-7d6db22cfe5f-168622136299a30cf9-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Help us raise money for Music Cares through both an in-person and online auction<\/p>",
+            "text_style": "body",
+            "color": ""
+          }
+        },
+        "template--19042043822372__a70e8f86-c43b-4bba-970b-7d6db22cfe5f-168622136299a30cf9-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "link": false,
+            "blank_button": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19042043822372__a70e8f86-c43b-4bba-970b-7d6db22cfe5f-168622136299a30cf9-0",
+        "template--19042043822372__a70e8f86-c43b-4bba-970b-7d6db22cfe5f-168622136299a30cf9-1",
+        "template--19042043822372__a70e8f86-c43b-4bba-970b-7d6db22cfe5f-168622136299a30cf9-2"
+      ],
+      "settings": {
+        "tag": "",
+        "side_banner": false,
+        "full_width": false,
+        "image": "shopify:\/\/shop_images\/Music-Cares.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Music-Cares.jpg",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "container_image": false,
+        "media_max_width": "",
+        "desktop_content_position": "top",
+        "content_align": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "overlay_section": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "quote": false,
+        "max_width": ""
+      }
+    },
+    "66c2b6d0-a6ed-4061-b763-7fc31b26bbdd": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--19042043822372__66c2b6d0-a6ed-4061-b763-7fc31b26bbdd-1686222299077580c7-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SHEILA-E.jpg",
+            "badge": "",
+            "title": "SHEILA E",
+            "heading_size": "h3",
+            "heading_color": "",
+            "download_label": "",
+            "download_link": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "full_link": false,
+            "link_list": "",
+            "blank_link": false
+          }
+        },
+        "template--19042043822372__66c2b6d0-a6ed-4061-b763-7fc31b26bbdd-1686222299077580c7-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/STEVE-SMITH.jpg",
+            "badge": "",
+            "title": "STEVE SMITH",
+            "heading_size": "h3",
+            "heading_color": "",
+            "download_label": "",
+            "download_link": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "full_link": false,
+            "link_list": "",
+            "blank_link": false
+          }
+        },
+        "template--19042043822372__66c2b6d0-a6ed-4061-b763-7fc31b26bbdd-1686222299077580c7-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TERRI-LYNE-CARRINGTON.jpg",
+            "badge": "",
+            "title": "TERRI LYNE CARRINGTON",
+            "heading_size": "h3",
+            "heading_color": "",
+            "download_label": "",
+            "download_link": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "full_link": false,
+            "link_list": "",
+            "blank_link": false
+          }
+        },
+        "6c829150-8037-4aff-9171-2ff46764f607": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DENNIS-CHAMBERS.jpg",
+            "badge": "",
+            "title": "DENNIS CHAMBERS",
+            "heading_size": "h3",
+            "heading_color": "",
+            "download_label": "",
+            "download_link": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "full_link": false,
+            "link_list": "",
+            "blank_link": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19042043822372__66c2b6d0-a6ed-4061-b763-7fc31b26bbdd-1686222299077580c7-0",
+        "template--19042043822372__66c2b6d0-a6ed-4061-b763-7fc31b26bbdd-1686222299077580c7-1",
+        "template--19042043822372__66c2b6d0-a6ed-4061-b763-7fc31b26bbdd-1686222299077580c7-2",
+        "6c829150-8037-4aff-9171-2ff46764f607"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 770px) {.multicolumn-card__info{position: relative; } .multicolumn-card__info h3{color: #000; }}"
+      ],
+      "settings": {
+        "side_banner": false,
+        "full_width": true,
+        "title": "ZILDJIAN HALL OF FAME HONOREES",
+        "heading_size": "h1",
+        "heading_align": "center",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "mobile_image_ratio": "adapt",
+        "overlay_image": true,
+        "columns_desktop": 4,
+        "swipe_on_desktop": false,
+        "step_style": false,
+        "column_alignment": "left",
+        "no_gap": false,
+        "no_padding": false,
+        "number": false,
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "mobile_overlay": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "max_width": ""
+      }
+    },
+    "3ff34e09-f9ac-40b1-babc-85f50028d668": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--19042043822372__3ff34e09-f9ac-40b1-babc-85f50028d668-1686222299077580c7-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/RINGO-STARR.jpg",
+            "badge": "",
+            "title": "RINGO STARR",
+            "heading_size": "h3",
+            "heading_color": "",
+            "download_label": "",
+            "download_link": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "full_link": false,
+            "link_list": "",
+            "blank_link": false
+          }
+        },
+        "template--19042043822372__3ff34e09-f9ac-40b1-babc-85f50028d668-1686222299077580c7-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/OMAR-HAKIM.jpg",
+            "badge": "",
+            "title": "OMAR HAKIM",
+            "heading_size": "h3",
+            "heading_color": "",
+            "download_label": "",
+            "download_link": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "full_link": false,
+            "link_list": "",
+            "blank_link": false
+          }
+        },
+        "template--19042043822372__3ff34e09-f9ac-40b1-babc-85f50028d668-1686222299077580c7-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PETER-ERSKINE.jpg",
+            "badge": "",
+            "title": "PETER ERSKINE",
+            "heading_size": "h3",
+            "heading_color": "",
+            "download_label": "",
+            "download_link": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "full_link": false,
+            "link_list": "",
+            "blank_link": false
+          }
+        },
+        "607a6041-cebf-4e98-a36b-62e258919a10": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/EDDIE-BAYERS.jpg",
+            "badge": "",
+            "title": "EDDIE BAYERS",
+            "heading_size": "h3",
+            "heading_color": "",
+            "download_label": "",
+            "download_link": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "full_link": false,
+            "link_list": "",
+            "blank_link": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19042043822372__3ff34e09-f9ac-40b1-babc-85f50028d668-1686222299077580c7-0",
+        "template--19042043822372__3ff34e09-f9ac-40b1-babc-85f50028d668-1686222299077580c7-1",
+        "template--19042043822372__3ff34e09-f9ac-40b1-babc-85f50028d668-1686222299077580c7-2",
+        "607a6041-cebf-4e98-a36b-62e258919a10"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 770px) {.multicolumn-card__info {position: relative; } .multicolumn-card__info h3 {color: #000; }}"
+      ],
+      "settings": {
+        "side_banner": false,
+        "full_width": false,
+        "title": "",
+        "heading_size": "h1",
+        "heading_align": "left",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "mobile_image_ratio": "adapt",
+        "overlay_image": true,
+        "columns_desktop": 4,
+        "swipe_on_desktop": false,
+        "step_style": false,
+        "column_alignment": "left",
+        "no_gap": false,
+        "no_padding": false,
+        "number": false,
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "mobile_overlay": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "max_width": ""
+      }
+    },
+    "da823f7b-0858-4e43-9747-29d978c04a22": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19042043822372__da823f7b-0858-4e43-9747-29d978c04a22-168622207121272d94-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>THE BEST OF THE BEST<\/p>",
+            "heading_size": "h1",
+            "max_width": ""
+          }
+        },
+        "template--19042043822372__da823f7b-0858-4e43-9747-29d978c04a22-168622207121272d94-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our honorees and tribute artists have played with (or are in their own right) some of the biggest names in music. With thousands of hit songs, countless awards and fans across the globe, this never before assembled line-up creates a once in a lifetime opportunity for you.<\/p>",
+            "hide_mobile": false,
+            "max_width": ""
+          }
+        },
+        "template--19042043822372__da823f7b-0858-4e43-9747-29d978c04a22-168622207121272d94-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "blank": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19042043822372__da823f7b-0858-4e43-9747-29d978c04a22-168622207121272d94-0",
+        "template--19042043822372__da823f7b-0858-4e43-9747-29d978c04a22-168622207121272d94-1",
+        "template--19042043822372__da823f7b-0858-4e43-9747-29d978c04a22-168622207121272d94-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "contnet_type": "list",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "max_width": ""
+      }
+    },
+    "78b4ab7a-ab3c-40b1-9cfb-6e62c209c76e": {
+      "type": "image-banner",
+      "blocks": {
+        "template--19042043822372__78b4ab7a-ab3c-40b1-9cfb-6e62c209c76e-168622200491a3b4bc-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1",
+            "uppercase": false
+          }
+        },
+        "template--19042043822372__78b4ab7a-ab3c-40b1-9cfb-6e62c209c76e-168622200491a3b4bc-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "template--19042043822372__78b4ab7a-ab3c-40b1-9cfb-6e62c209c76e-168622200491a3b4bc-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "blank_button": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19042043822372__78b4ab7a-ab3c-40b1-9cfb-6e62c209c76e-168622200491a3b4bc-0",
+        "template--19042043822372__78b4ab7a-ab3c-40b1-9cfb-6e62c209c76e-168622200491a3b4bc-1",
+        "template--19042043822372__78b4ab7a-ab3c-40b1-9cfb-6e62c209c76e-168622200491a3b4bc-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Artist-Groups.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Artist-Groups.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "content_width": "",
+        "padding_left": "",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "center_mobile": false,
+        "full_mobile": false,
+        "content_padding": 20,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "6e4a8862-83be-49ea-b26e-b39fd38dcae0": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19042043822372__6e4a8862-83be-49ea-b26e-b39fd38dcae0-168622207121272d94-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>AVAILABLE SPONSORSHIPS<\/p>",
+            "heading_size": "h1",
+            "max_width": ""
+          }
+        },
+        "template--19042043822372__6e4a8862-83be-49ea-b26e-b39fd38dcae0-168622207121272d94-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "hide_mobile": false,
+            "max_width": ""
+          }
+        },
+        "template--19042043822372__6e4a8862-83be-49ea-b26e-b39fd38dcae0-168622207121272d94-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "blank": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19042043822372__6e4a8862-83be-49ea-b26e-b39fd38dcae0-168622207121272d94-0",
+        "template--19042043822372__6e4a8862-83be-49ea-b26e-b39fd38dcae0-168622207121272d94-1",
+        "template--19042043822372__6e4a8862-83be-49ea-b26e-b39fd38dcae0-168622207121272d94-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "contnet_type": "list",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "max_width": ""
+      }
+    },
+    "68c942e6-c365-41b7-9949-5dc3f589d49d": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--19042043822372__68c942e6-c365-41b7-9949-5dc3f589d49d-1686220806041c50d0-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Sponosorship-Info-1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Sponosorship-Info-1.jpg",
+            "badge": "",
+            "title": "",
+            "heading_size": "h3",
+            "heading_color": "",
+            "download_label": "",
+            "download_link": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "full_link": false,
+            "link_list": "",
+            "blank_link": false
+          }
+        },
+        "template--19042043822372__68c942e6-c365-41b7-9949-5dc3f589d49d-1686220806041c50d0-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Sponosorship-Info-2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Sponosorship-Info-2.jpg",
+            "badge": "",
+            "title": "",
+            "heading_size": "h3",
+            "heading_color": "",
+            "download_label": "",
+            "download_link": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "full_link": false,
+            "link_list": "",
+            "blank_link": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19042043822372__68c942e6-c365-41b7-9949-5dc3f589d49d-1686220806041c50d0-1",
+        "template--19042043822372__68c942e6-c365-41b7-9949-5dc3f589d49d-1686220806041c50d0-0"
+      ],
+      "settings": {
+        "side_banner": false,
+        "full_width": true,
+        "title": "",
+        "heading_size": "h1",
+        "heading_align": "left",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "mobile_image_ratio": "adapt",
+        "overlay_image": false,
+        "columns_desktop": 2,
+        "swipe_on_desktop": false,
+        "step_style": false,
+        "column_alignment": "center",
+        "no_gap": false,
+        "no_padding": false,
+        "number": false,
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "mobile_overlay": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "max_width": ""
+      }
+    },
     "6183ac13-1753-43c5-bd7e-c56fcabcc6db": {
       "type": "rich-text",
       "blocks": {
         "template--19042043822372__6183ac13-1753-43c5-bd7e-c56fcabcc6db-1684662601b8b1f698-0": {
           "type": "heading",
           "settings": {
-            "heading": "<p>INTERESTED IN JOINING OUR TEAM? CHECK OUT OUR JOB OPENINGS<\/p>",
+            "heading": "<p>SPONSORSHIPS INQUIRIES<\/p>",
             "heading_size": "h1",
             "max_width": "800"
           }
         },
         "template--19042043822372__6183ac13-1753-43c5-bd7e-c56fcabcc6db-1684662601b8b1f698-2": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "See Job Openings",
             "button_link": "https:\/\/recruiting.paylocity.com\/Recruiting\/Jobs\/All\/d11b52b1-5f1f-4f49-b717-27723027dfaf\/AZC-INC",
@@ -456,11 +1239,20 @@
             "button_style_secondary_2": false,
             "blank": true
           }
+        },
+        "df5b0c08-a475-4032-aa63-4eb8b08d635c": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Contact Nancy Smith at nsmith@zildjian.com<br\/> 781-427-6939 | Line Extension: (402)<br\/>22 Longwater Drive, Norwell, MA 02061<\/p>",
+            "hide_mobile": false,
+            "max_width": ""
+          }
         }
       },
       "block_order": [
         "template--19042043822372__6183ac13-1753-43c5-bd7e-c56fcabcc6db-1684662601b8b1f698-0",
-        "template--19042043822372__6183ac13-1753-43c5-bd7e-c56fcabcc6db-1684662601b8b1f698-2"
+        "template--19042043822372__6183ac13-1753-43c5-bd7e-c56fcabcc6db-1684662601b8b1f698-2",
+        "df5b0c08-a475-4032-aa63-4eb8b08d635c"
       ],
       "custom_css": [
         "@media screen and (max-width: 749px) {.h1 {font-size: 24px; }}"
@@ -480,12 +1272,24 @@
   "order": [
     "3141c904-b6a6-4f2b-a1fe-aa2b9e911af8",
     "main",
+    "dba55eb0-9090-4ecd-bcdd-60fd780c959a",
     "e07b17f6-47e3-47e4-b76c-66172e4060a1",
+    "b6193c33-b037-4344-b1a4-e6a1756b4752",
     "b921e32f-6c86-4cd1-9c28-51599b6bf8bf",
+    "7a943954-1fa4-4dae-bd9c-dfe6d0b5c793",
     "d00001f0-06ae-4173-a192-491dc4a7eda3",
     "47129bfb-4f12-40f4-a4e8-98bf30e1acc6",
     "4727ef57-76ba-48fc-a3a3-b382c8f6566d",
+    "1e4eeb5c-b1d7-419d-b7f4-d9f5eef2ba25",
     "4aa0d38a-eef4-489c-bccb-200b9ee21311",
+    "05064312-c9e7-4de7-8b74-f49f6906a2aa",
+    "a70e8f86-c43b-4bba-970b-7d6db22cfe5f",
+    "66c2b6d0-a6ed-4061-b763-7fc31b26bbdd",
+    "3ff34e09-f9ac-40b1-babc-85f50028d668",
+    "da823f7b-0858-4e43-9747-29d978c04a22",
+    "78b4ab7a-ab3c-40b1-9cfb-6e62c209c76e",
+    "6e4a8862-83be-49ea-b26e-b39fd38dcae0",
+    "68c942e6-c365-41b7-9949-5dc3f589d49d",
     "6183ac13-1753-43c5-bd7e-c56fcabcc6db"
   ]
 }

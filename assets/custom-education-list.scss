@@ -130,6 +130,7 @@
           display: flex;
           @media screen and (max-width: 989px) {
             flex-direction: column;
+            overflow: scroll;
           }
         }
         .header {
@@ -151,11 +152,34 @@
             font-size: 11px;
           }
         }
+        
+        .fs-art-filter-cont{
+          display: flex;
+          width: 100%;
+          @media screen and (max-width: 989px) {
+            flex-wrap: wrap;
+          }
+          .fs-art-filter-cont-block{
+            width: 100%;
+          }
+          h3{
+            width: 140px;    margin-top: 20px;
+          }
+        }
+        .fs-art-filter-cont-sub{
+          display: flex;
+          justify-content: space-between;
+          @media screen and (max-width: 1100px) {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+          }
+        }
         .row {
           max-width: 200px;
-          @media screen and (max-width: 989px) {
+          @media screen and (max-width: 1100px) {
             max-width: initial;
-            width: 100%;
+            // width: 100%;
+            flex: 1 1 33%;
           }
           h5 {
             font-size: 16px;

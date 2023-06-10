@@ -159,6 +159,10 @@ h5,
           margin-top: 10px;
           text-transform: uppercase;
           letter-spacing: normal;
+          font-size: 24px;
+          @media only screen and (max-width: 749px) {
+            font-size: 13px;
+          }
         }
       }
     }
@@ -640,13 +644,17 @@ body.hide-price .price, body.hide-price .buy-buttons-box, body.hide-price .produ
     margin-top: 5px;
     font-size: 18px !important;
 }
-  }
-@media (max-width: 1199px){
 .boost-pfs-action-list-enabled {
-    padding-bottom: 0px !important;
+  padding-bottom: 0px !important;
 }
-   
 }
+
+@media (max-width: 1100px){
+  .boost-pfs-filter-right-col {
+      padding-left: unset !important;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .topic1-innright, .topic1-innleft {
     width: calc(100% - 20px) !important;
@@ -1242,14 +1250,8 @@ tab-component {
 }
 
 @media only screen and (max-width: 480px) {
-  article.article-template {
-      // margin-top: 30px;
-  }
-    .edutopic11 .article-template__content {
+  .edutopic11 .article-template__content {
       padding: 50px 0 50px;
-  }
-    .breadcrumbs {
-      // margin: 69px 0 0 !important;
   }
 }
 .artists  .breadcrumbs{

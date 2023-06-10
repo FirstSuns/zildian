@@ -140,14 +140,56 @@
                 Close  
               </button>
             </div>
-            {%- for tag in blog.all_tags -%}
-              {% cycle '<div class="row"><ul>', '', '', '', '' %}
-              {% if tag contains "_" %}{%- assign tag_starts_with = tag | slice: 0 -%}{% if tag_starts_with == "_" %}{% if tag_count %}{%- assign tag_count = tag_count | minus: 1 | at_least: 0 -%}{% endif %}{% continue %}{% endif %}{% endif %}
-              <li>
-                <a href="/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" class="{% if current_tags contains tag %}active{% endif %}">{{ tag }}</a>
-              </li>
-              {% cycle '', '', '', '', '</ul></div>' %}
-            {%- endfor -%}
+            <div class="fs-art-filter-cont">
+              <div class="">
+                <h3>Category</h3>
+                <div class="fs-art-filter-cont-sub">
+                  <div class="row"><ul>
+                  {%- for tag in blog.all_tags -%}
+                    {% if tag contains "category_" %}
+                      {%- assign tag_name = tag | split: '_' | last  -%}
+                      {% if tag contains "_" %}
+                        {%- assign tag_starts_with = tag | slice: 0 -%}
+                        {% if tag_starts_with == "_" %}
+                          {% if tag_count %}
+                            {%- assign tag_count = tag_count | minus: 1 | at_least: 0 -%}
+                          {% endif %}
+                          {% continue %}
+                        {% endif %}
+                      {% endif %}
+                      <li>
+                        <a href="/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" class="{% if current_tags contains tag %}active{% endif %}">{{ tag_name }}</a>
+                      </li>
+                    {% endif %}
+                  {%- endfor -%}
+                  </ul></div>
+                </div>
+              </div>
+              <div class="fs-art-filter-cont-block">
+                <h3>Country</h3>
+                <div class="fs-art-filter-cont-sub">
+                  {%- for tag in blog.all_tags -%}
+                    {% if tag contains "country_" %}
+                    {%- assign tag_name = tag | split: '_' | last  -%}
+                      {% cycle '<div class="row"><ul>', '','','','','','', '', '', '' %}
+                      {% if tag contains "_" %}
+                        {%- assign tag_starts_with = tag | slice: 0 -%}
+                        {% if tag_starts_with == "_" %}
+                          {% if tag_count %}
+                            {%- assign tag_count = tag_count | minus: 1 | at_least: 0 -%}
+                          {% endif %}
+                          {% continue %}
+                        {% endif %}
+                      {% endif %}
+                      <li>
+                        <a href="/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" class="{% if current_tags contains tag %}active{% endif %}">{{ tag_name }}</a>
+                      </li>
+                      {% cycle '','','','','','', '', '', '', '</ul></div>' %}
+                    {% endif %}
+                  {%- endfor -%}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -182,7 +224,7 @@
       {% else %}
         {% assign blogpost_category_list =  blog.metafields.custom.blogpost_category_list | split: "," %}
         {% for category in blogpost_category_list %}
-          <h3 class="fs-blog-grid-title" style="text-align: left;">{{category}}</h3>
+          <h3 class="fs-blog-grid-title" style="text-align: center;">{{category}}</h3>
           <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
             {%- for article in blog.articles -%}
               {% if article.metafields.custom.blog_category == category %}

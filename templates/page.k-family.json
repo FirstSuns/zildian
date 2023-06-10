@@ -129,6 +129,7 @@
         },
         "fae67601-dded-4172-a7d1-c9d0c8078769": {
           "type": "tags",
+          "disabled": true,
           "settings": {
             "button_label_1": "Band & Orchestral",
             "button_link_1": "shopify:\/\/collections\/cymbals-band-orchestral",
@@ -195,6 +196,7 @@
         },
         "41e437d8-f33f-46df-8198-7bd982672c81": {
           "type": "tags",
+          "disabled": true,
           "settings": {
             "button_label_1": "Band & Orchestral",
             "button_link_1": "shopify:\/\/collections\/cymbals-band-orchestral",
@@ -264,6 +266,7 @@
         },
         "05a33015-d1dc-4700-8e59-0dcc3e42025f": {
           "type": "tags",
+          "disabled": true,
           "settings": {
             "button_label_1": "Band & Orchestral",
             "button_link_1": "shopify:\/\/collections\/cymbals-band-orchestral",
@@ -331,6 +334,7 @@
         },
         "24d10485-4691-4d97-bcca-f2627d3c3db3": {
           "type": "tags",
+          "disabled": true,
           "settings": {
             "button_label_1": "Band & Orchestral",
             "button_link_1": "shopify:\/\/collections\/cymbals-band-orchestral",

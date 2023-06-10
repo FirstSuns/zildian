@@ -886,6 +886,7 @@ class VariantSelects extends HTMLElement {
 
     ///FS added
     if (!this.currentVariant) return;
+    if (!this.currentVariant.featured_image) return;
     var media_img = this.currentVariant.featured_image.split("/").pop();
     const [media_img_first, ...media_img_rest] = media_img.split('?');
     const fs_mediaGalleries = document.querySelectorAll(`[fs-thumbnail-media-img="${media_img_first}"]`);
@@ -1043,6 +1044,7 @@ class VariantSelects extends HTMLElement {
   }
 
   getVariantData() {
+    // console.log("this.variantData==",this.querySelector('[type="application/json"]').textContent);
     this.variantData = this.variantData || JSON.parse(this.querySelector('[type="application/json"]').textContent);
     return this.variantData;
   }
@@ -1115,10 +1117,10 @@ class ProductRecommendations extends SliderComponent {
             const card = cards[i];
             
             var card_json = {
-              api_key: 'b873f7db-ee6b-4b2b-81e9-3df2ca4a11db',
+              api_key: '76a29117-f53a-4a2c-b341-b715b976ec82',
               locale: 'en_US',
-              merchant_group_id: '2006223440',
-              merchant_id: '1025714092',
+              merchant_group_id: '49888431',
+              merchant_id: '60819357',
               page_id: card.dataset.product_id,
               components: {
                 CategorySnippet: `snippet-${card.dataset.product_id}`

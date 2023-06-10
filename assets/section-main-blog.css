@@ -1,7 +1,8 @@
 .blog-articles {
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: 50% 50%;
   column-gap: var(--grid-mobile-horizontal-spacing);
   row-gap: var(--grid-mobile-vertical-spacing);
 }
@@ -15,6 +16,9 @@
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: var(--grid-desktop-horizontal-spacing);
     row-gap: var(--grid-desktop-vertical-spacing); 
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .blog-articles--collage > *:nth-child(3n + 1),

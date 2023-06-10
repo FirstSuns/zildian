@@ -50,7 +50,8 @@
       "custom_css": [
         ".image-with-text__heading.h2 {text-transform: uppercase;}",
         ".image-with-text__media img {object-fit: cover;}",
-        ".image-with-text__grid {align-items: end;}"
+        ".image-with-text__grid {align-items: end;}",
+        "@media screen and (min-width: 990px) {.image-with-text__media-item {padding-bottom: 0; }}"
       ],
       "settings": {}
     },
@@ -97,6 +98,11 @@
     },
     "8e9a10d2-b668-46a5-b460-734a6e6191e3": {
       "type": "video-artist",
+      "custom_css": [
+        ".rich-text__heading {font-size: 24px;}",
+        "@media screen and (min-width: 750px) and (max-width: 989px) {.rich-text__heading {font-size: 20px; }}",
+        "@media screen and (max-width: 767px) {.rich-text__heading {font-size: 13px; font-weight: 400; text-transform: capitalize; }}"
+      ],
       "settings": {
         "heading": "BEHIND THE KIT",
         "heading_size": "h1",
@@ -112,6 +118,7 @@
     },
     "97e8c916-868c-40ca-bc78-69a8202d6384": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "template--18305496580388__97e8c916-868c-40ca-bc78-69a8202d6384-1683531071464379f1-0": {
           "type": "heading",
@@ -143,7 +150,8 @@
     "4e376b5d-654c-4027-a078-b4fc0245f366": {
       "type": "recent_articles",
       "custom_css": [
-        "@media only screen and (min-width: 750px) and (max-width: 1100px) {.article-card .card__heading {font-size: 10px; } .card__information {padding: 0; }}"
+        ".blog {margin-top: 100px;}",
+        "@media only screen and (min-width: 750px) and (max-width: 1100px) {.card__heading {font-size: 10px; } .card__information {padding: 0; } .card__information p {font-size: 10px; line-height: 15px; }}"
       ],
       "settings": {
         "title": "CHECK OUT OUR OTHER ARTISTS"

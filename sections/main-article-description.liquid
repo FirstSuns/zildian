@@ -1,4 +1,4 @@
-{% if article.metafields.global.cymbals_setup == blank %}
+{% if article.metafields.global.cymbal_setip_image == blank %}
 <style>
 #shopify-section-{{ section.id }} .article-template{
   display: none;
@@ -14,7 +14,8 @@
           {% assign getblog = block.settings.arti_blg %}
           {% assign artttl = article.title %}
           {% if article.metafields.global.cymbal_setip_image !=blank %}
-            <img src="{{article.metafields.global.cymbal_setip_image | file_url}}"  loading="lazy">
+            {% assign img_name = article.metafields.global.cymbal_setip_image | split: "/" %}
+            <img src="{{img_name.last | file_url}}"  loading="lazy">
           {% else %}
             <img src="{{ block.settings.get_imm | img_url: 'master'}}" loading="lazy">
           {% endif %}

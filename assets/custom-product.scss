@@ -2,9 +2,8 @@
   margin: 0;
   margin-top: 20px;
   @media screen and (max-width: 989px) {
-    margin: 0;
-    padding: 10px 20px;
-    padding-bottom: 0;
+    margin: 20px 0 0 10px;
+    padding: 10px 20px 0px 20px;
   }
   @media screen and (max-width: 749px) {
     .breadcrumbs__list {
@@ -39,14 +38,9 @@
       position: absolute;
       z-index: 1;
     }
-    @media screen and (min-width: 1100px) {
+    @media screen and (min-width: 989px) {
       .card__badge.top.left {
         left: 110px;
-      }
-    }
-    @media screen and (max-width: 1099px) {
-      .card__badge.top.left {
-        right: 0;
       }
     }
     product-gallery-component {

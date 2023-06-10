@@ -60,7 +60,7 @@
                       {{ r_article.title | truncate: 50 | escape }}  <span class="icon-wrap">{% render 'icon-arrow' %}</span>
                     </a>
                   </h3>
-                  {% comment %} <p>{{r_article.metafields.global.affiliation}}</p> {% endcomment %}
+                   <p style="overflow-wrap: anywhere; ">{{r_article.metafields.global.affiliation | truncate: 100 | escape}}</p> 
                 </div>
               </div>
             </div>
@@ -156,6 +156,11 @@
 }
 .artist-page-inn .card__heading a:after{
   content: unset !important;
+}
+@media only screen and (min-width: 750px) and (max-width: 1100px) {
+  .artist-page-inn{
+    padding: 0 30px;
+  }
 }
 </style>
 {% schema %}

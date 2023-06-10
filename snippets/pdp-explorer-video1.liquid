@@ -61,7 +61,7 @@
               100vw
           {%- endcapture -%}
           {%- assign alt = 'sections.video.load_video' | t: description: section.settings.description | escape -%}
-          <img src="{{thumbnail_url}}" loading="lazy" alt="{{alt}}">
+          <img src="{{thumbnail_url}}" loading="lazy" alt="{{alt}}"> 
         {%- else -%}
           {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
         {%- endif -%}

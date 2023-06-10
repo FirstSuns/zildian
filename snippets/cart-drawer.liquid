@@ -220,7 +220,7 @@
                                     <dt>{{ option.name }}:</dt>
                                     <dd>
                                       {{ option.value -}}
-                                      {%- unless forloop.last %}, {% endunless %}
+                                      {% comment %} {%- unless forloop.last %}, {% endunless %} {% endcomment %}
                                     </dd>
                                   </div>
                                 {%- endfor -%}
