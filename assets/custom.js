@@ -309,39 +309,23 @@ document.querySelectorAll('.mega-menu').forEach(mega_menu => {
     mega_menu.querySelector('.header__menu-item').click();
   })
 });
-// var size_modal = document.getElementById("fs-size-modal");
-// var size_btn = document.getElementById("fs-size-modal-btn");
-// var size_close = document.getElementById("fs-size-modal-close-btn");
-// size_btn.onclick = function() {
-//   size_modal.style.display = "block";
-// }
-// size_close.onclick = function() {
-//   size_modal.style.display = "none";
-// }
-// window.onclick = function(event) {
-//   if (event.target == size_modal) {
-//     size_modal.style.display = "none";
-//   }
-// }
 
-// var country1 = 'US';
+var country1 = 'US';
 
-// fetch('https://ipapi.co/country/')
-//   .then(function(response) {
-//     ret//=============size modal of PDP
+fetch('/browsing_context_suggestions.json')
+.then(function(response) {
+  return response.json();
+})
+.then(function(e) {
+  console.log(e)
+  if (e.detected_values.country.handle == country1) {
+    document.querySelector('body').classList.remove('hide-price')
+  } else {
+    document.querySelector('body').classList.add('hide-price')
+  }
+    
+});
 
-
-
-// rn response.text();
-//   })
-//   .then(function(data) {
-//     console.log(data)
-//     if (data != country1) {
-//       document.querySelector('body').classList.add('hide-price')
-//     } else {
-//       document.querySelector('body').classList.remove('hide-price')
-//     }
-//   });
 
 
 

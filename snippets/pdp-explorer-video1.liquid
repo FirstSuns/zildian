@@ -56,7 +56,7 @@
           {% assign img_name = context.metafields.custom.more_to_explorer_image1 | split: "/" %} 
           <img src="{{img_name.last | file_url}}" loading="lazy" alt="{{alt}}">
         {%- elsif video_id != blank -%}
-          {% assign thumbnail_url = 'http://img.youtube.com/vi/' | append: video_id | append: '/maxresdefault.jpg' %}
+          {% assign thumbnail_url = 'http://img.youtube.com/vi/' | append: video_id | append: '/hqdefault.jpg' %}
           {%- capture sizes -%}
               100vw
           {%- endcapture -%}

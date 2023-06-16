@@ -153,6 +153,7 @@
         "show_description": false,
         "description_style": "body",
         "collection": "sticks-mallets-sticks",
+        "new_blank": true,
         "products_to_show": 2,
         "columns_desktop": 4,
         "full_width": false,

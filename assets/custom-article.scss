@@ -7,7 +7,7 @@
         padding-bottom: 100%;
       }
       img{
-        object-position: top right;
+        object-position: top center;
       }
     }
     .content {
@@ -37,6 +37,14 @@
         @media screen and (max-width: 989px) {
           font-size: 20px;
         }
+      }
+    }
+  }
+  .breadcrumbs {
+    @media screen and (min-width: 989px) {
+      padding: 10px 86px;
+      &::before {
+        left: 73px;
       }
     }
   }
@@ -154,26 +162,33 @@
     &.page-width--narrow {
       .grid {
         padding-bottom: 50px;
+        flex-wrap: nowrap;
         // border-bottom: 1px solid #D1D3D4;
         @media screen and (max-width: 989px) {
           padding-bottom: 0;
           border-top: none;
           border-bottom: none;
           padding-top: 20px;
+          flex-wrap: wrap;
         }
       }
       
     }
       .title {
-        width: 200px;
+        width: fit-content;
         margin: 0;
         @media screen and (max-width: 989px) {
           width: 100%;
         }
         .h1 {
+          text-align: right;
+          white-space: nowrap;
           margin: 0;
           @media screen and (max-width: 989px) {
             text-align: center;
+            br {
+              display: none;
+            }
           }
           span {
             color: var(--gradient-base-accent-1);
@@ -182,7 +197,7 @@
       }
       .image {
         width: calc(40% - var(--grid-desktop-horizontal-spacing));
-        @media screen and (max-width: 989px) {
+        @media screen and (max-width: 749px) {
           width: 100%;
         }
       }
@@ -191,9 +206,35 @@
         counter-reset: my-awesome-counter;
         padding-left: 65px;
         @media screen and (max-width: 989px) {
+          width: calc(60% - var(--grid-desktop-horizontal-spacing));
+        }
+        @media screen and (max-width: 749px) {
           width: 100%;
           padding-left: 50px;
           margin-top: 20px;
+        }
+        ul {
+          list-style: none;
+          padding: 0;
+          li {
+            counter-increment: my-awesome-counter;
+            margin: 0 0 50px;
+            position: relative;
+            &:before {
+              content: counter(my-awesome-counter);
+              position: absolute;
+              width: 36px;
+              height: 36px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background: var(--gradient-base-accent-1);
+              border-radius: 50%;
+              top: -4px;
+              left: -50px;
+              font-weight: 700;
+          }
+          }
         }
         h4 {
           counter-increment: my-awesome-counter;

@@ -3111,10 +3111,10 @@ details-disclosure > details {
     width: 50%;
     padding: 8px;
 }
-  html #tagalys-namespace.tagalys-namespace .search-suggestions{ overflow-y: scroll !important; height:500px; }
+  html #tagalys-namespace.tagalys-namespace .search-suggestions{ overflow-y: scroll !important; max-height:500px; }
 
 @media(max-width:767px){
-html #tagalys-namespace .search-suggestions{ height: 350px; overflow-y: scroll !important;  }
+html #tagalys-namespace .search-suggestions{ max-height: 350px; overflow-y: scroll !important;  }
 }
 /*=========== 02 cyber css end ============*/
 

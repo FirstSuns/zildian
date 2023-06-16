@@ -387,10 +387,10 @@
         "f5f1c814-bcb6-4080-b2dc-13278e0f51f0": {
           "type": "title",
           "settings": {
-            "caption": "K cluster Crashes",
+            "caption": "K Fat Hats",
             "title": "New Product Spotlight",
             "button_label": "Shop now",
-            "button_link": "https:\/\/zildjianshop.myshopify.com\/products\/k-zildjian-cluster-crashes"
+            "button_link": "shopify:\/\/products\/k-zildjian-fat-hats"
           }
         }
       },
@@ -402,7 +402,7 @@
         "heading_size": "h1",
         "cover_image": "shopify:\/\/shop_images\/K-Fat-Hats-Product-Spotlight_bcb7fe24-7d26-4a22-b4a1-a4747a694af4.jpg",
         "cover_mobile_image": "shopify:\/\/shop_images\/K-Fat-Hats-Product-Spotlight-Mobile_4a7551cb-9500-4f54-a7a7-ca4919855bfe.jpg",
-        "video_url": "https:\/\/youtu.be\/Y4CwHKzByzY",
+        "video_url": "https:\/\/youtu.be\/b1KDbGYxbmo",
         "description": "",
         "full_width": true,
         "mobile_full_width": false,

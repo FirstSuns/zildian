@@ -131,15 +131,7 @@ if (typeof boostPFSThemeConfig !== 'undefined') {
   /************************** END BUILD PRODUCT LIST **************************/
   /************************** BUILD PRODUCT ITEM ELEMENTS **************************/
   function buildImages(data) {
-    
     var html = '';
-    for( var item in data.metafields )
-    {
-      if(data.metafields[item].key == 'product_flag' && data.metafields[item].value =='BEST SELLER' && data.available){
-        
-        html += '<div class="fs_flag_best_seller">BEST SELLER</div>';
-      }
-    }
     if (images && Array.isArray(images) && images.length > 0) {
       html += '<div class="card__media">';
       var aspectRatio = '',
@@ -468,9 +460,7 @@ if (typeof boostPFSThemeConfig !== 'undefined') {
       (pwr.q = pwr.q || []).push(arguments); 
     };
     var json = [];
-    
     for (let i = 0; i < data.length; i++) {
-      // console.log("data[i]==",data[i]);
       const item = data[i];
       var item_data = {
         api_key: '76a29117-f53a-4a2c-b341-b715b976ec82',
@@ -491,19 +481,23 @@ if (typeof boostPFSThemeConfig !== 'undefined') {
   // Build Additional Elements
   Filter.prototype.afterRender = function(data, eventType) {
     if (!data) data = this.data;
-    console.log("data===", data);
-    if(data.filter){
+    console.log(data)
+    if (data.filter != undefined) {
       for (let i = 0; i < data.filter.options.length; i++) {
         const option = data.filter.options[i];
-        if (option.values != null && option.values.length == 1 && option.values[0].doc_count >= (data.total_product - 1)) {
-          document.querySelectorAll('.boost-pfs-filter-option').forEach(filter => {
-            if (filter.querySelector('.boost-pfs-filter-option-title-text').textContent == option.label) {
-              filter.classList.add('hide')
-            }
-          });
+        console.log(option)
+        if (option.displayType == 'list') {
+          if (option.values != null && option.values.length == 1 && option.values[0].doc_count == data.total_product) {
+            document.querySelectorAll('.boost-pfs-filter-option').forEach(filter => {
+              if (filter.querySelector('.boost-pfs-filter-option-title-text').textContent == option.label) {
+                filter.classList.add('hide')
+              }
+            });
+          }
         }
       }
     }
+    
     jQ('.boost-pfs-filter-total-product').html(data.total_product + ' items'); 
   };
 

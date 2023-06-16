@@ -31,7 +31,7 @@
           {% if article.metafields.global.question_3 !=blank %}
             {% assign q_num = 3 %}
           {% endif %}
-          <h2 class="h1">{{block.settings.Artists_Title}}'s IN <span>{{q_num}}</span></h2>
+          <h2 class="h1">{{block.settings.Artists_Title | replace: ' ', '<br>'}}'s<br> IN <span>{{q_num}}</span></h2>
         </div>
         <div class="image">
           <div class="media" style="padding-bottom: 130%;">

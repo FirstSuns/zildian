@@ -16,7 +16,30 @@
             "heading_color": "",
             "subheading": "",
             "button_label": "Learn More",
-            "link": "https:\/\/zildjianshop.myshopify.com\/collections\/gear-apparel-lifestyle-400th-anniversary-apparel",
+            "link": "https:\/\/zildjianshop.myshopify.com\/pages\/brand",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "d550508a-b88a-4dff-a7ad-bb1c6d27c684": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Zildjian_Website_Horizontal.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Zildjian_Website_Vertical.jpg",
+            "video": "",
+            "content_width": "450",
+            "heading": "Dark and Rich",
+            "uppercase": true,
+            "heading_size": "h0",
+            "heading_color": "",
+            "subheading": "",
+            "button_label": "Shop K Family",
+            "link": "shopify:\/\/pages\/k-family-category",
             "button_style_secondary": false,
             "box_align": "middle-left",
             "show_text_box": false,
@@ -53,7 +76,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/Art-Blakey-Tee.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Art-Blakey-Tee-Mobile.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Art-Blakey-Tee-Mobile-Resized.jpg",
             "video": "",
             "content_width": "355",
             "heading": "Zildjian Legends Art Blakey Tee",
@@ -67,7 +90,7 @@
             "box_align": "middle-left",
             "show_text_box": false,
             "text_alignment": "left",
-            "image_overlay_opacity": 0,
+            "image_overlay_opacity": 10,
             "color_scheme": "background-1",
             "text_alignment_mobile": "center"
           }
@@ -75,6 +98,7 @@
       },
       "block_order": [
         "template--18142514905380__d75dd4ef-8e47-487d-9740-f50edc07b08d-16790924773f344ee0-0",
+        "d550508a-b88a-4dff-a7ad-bb1c6d27c684",
         "1c0db94a-65c0-4189-a840-d44eba8c3c9a",
         "dfcc2a23-0043-442f-b782-0bbbaf4d30d6"
       ],
@@ -157,7 +181,7 @@
             "download_link": "",
             "text": "",
             "link_label": "",
-            "link": "shopify:\/\/collections\/sticks-mallets",
+            "link": "https:\/\/zildjianshop.myshopify.com\/collections\/sticks-mallets-sticks",
             "full_link": false,
             "link_list": "",
             "blank_link": false
@@ -189,7 +213,7 @@
         "template--18142514905380__079b5030-d8b0-4d99-95f9-6e125c31b917-167909267389e267af-2"
       ],
       "custom_css": [
-        ".fs-cover-layer {display: block !important; position: absolute; width: 100%; height: 100%; z-index: 1; background: linear-gradient( 180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 1) 100% );}"
+        ".fs-cover-layer {display: block !important; position: absolute; width: 100%; height: 100%; z-index: 1; background: linear-gradient( 180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.3) 75%, rgba(0, 0, 0, 0.6) 100% );}"
       ],
       "settings": {
         "side_banner": false,
@@ -232,6 +256,7 @@
         "show_description": false,
         "description_style": "body",
         "collection": "400th-anniversary-apparel-stick",
+        "new_blank": false,
         "products_to_show": 25,
         "columns_desktop": 3,
         "full_width": false,
@@ -345,7 +370,7 @@
             "heading_color": "#cc9f53",
             "subheading": "Everything you need to know to start drumming in no time. Whether you’re just starting out of have been drumming for a while, our free downloadable method book, easy-to-follow video lessons and play-along tracks makes learning fun!",
             "button_label": "",
-            "link": "https:\/\/zildjianshop.myshopify.com\/blogs\/drum-set-method",
+            "link": "https:\/\/zildjianshop.myshopify.com\/blogs\/zildjian-beginning-drum-set-method",
             "button_style_secondary": false,
             "box_align": "middle-right",
             "show_text_box": false,
@@ -559,7 +584,7 @@
             "featured_media": "shopify:\/\/shop_images\/Jamison-Ross-Z-Profile.jpg",
             "title": "Jamison Ross",
             "job": "Snarky Puppy",
-            "link": "shopify:\/\/blogs\/artist\/jamison-ross"
+            "link": "shopify:\/\/blogs\/artist\/jamison-ross-z"
           }
         },
         "d1138699-f745-4ba0-a4fb-1359ebec7f35": {
@@ -613,7 +638,7 @@
         "template--18142514905380__bc875eb4-7882-492d-85a6-b83721651163-16793108005db86d8c-0": {
           "type": "heading",
           "settings": {
-            "heading": "ZILDJIAN UNDERGROUND",
+            "heading": "ZILDJIAN COLLABORATIONS",
             "heading_link": "",
             "heading_size": "h2",
             "heading_color": "",
@@ -623,7 +648,7 @@
         "template--18142514905380__bc875eb4-7882-492d-85a6-b83721651163-16793108005db86d8c-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Dive in to Zildjian Underground, a revolutionary series from Zildjian, pairing six top Zildjian Artists with some of the hottest DJs in the industry, for an exclusive pop-up show. Filmed at Le Poisson Rouge in New York City, this first series of Zildjian Underground episodes takes you on a musical adventure under the musical direction of Zildjian Artist, Karriem Riggins. Explore new, alternative sounds and fresh beats, in these one-of-a-kind performances.<\/p>",
+            "text": "<p>Discover Zildjian Collaborations, a series by Zildjian that celebrates collaboration, creativity, and the power of music. The series features impressive performances, cutting-edge jams, and insightful one-on-one conversations with top Zildjian artists, allowing you to explore the endless possibilities of collaboration.<\/p>",
             "text_style": "body",
             "color": "#5c5d60"
           }
@@ -653,7 +678,7 @@
         "tag": "",
         "side_banner": false,
         "full_width": true,
-        "image": "shopify:\/\/shop_images\/Z-Underground-Page-Banner_1.jpg",
+        "image": "shopify:\/\/shop_images\/Zildjian-Collaborations-Larnel-_-Brown_a96c5e37-7079-4117-8163-d09c16dadd91.jpg",
         "video_url": "",
         "height": "adapt",
         "desktop_image_width": "medium",
@@ -682,7 +707,7 @@
       "settings": {
         "heading": "TAKE YOUR PLAYING TO THE NEXT LEVEL",
         "heading_size": "h1",
-        "blog": "zildjian-workout-practice-and-learn-from-the-zildjian-artists",
+        "blog": "rhythm-cards",
         "post_limit": 3,
         "columns_desktop": 3,
         "color_scheme": "background-1",

@@ -108,7 +108,10 @@
               {% endif %}
             >
               <a
-                href="{{ card_product.url }}"
+                href="{{ card_product.url }}" 
+                {% if _blank %}
+                target="_blank"
+                {% endif %}
                 id="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }}"
                 class="full-unstyled-link"
                 aria-labelledby="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }} NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
@@ -158,6 +161,9 @@
           >
             <a
               href="{{ card_product.url }}"
+              {% if _blank %}
+                target="_blank"
+                {% endif %}
               id="CardLink-{{ section_id }}-{{ card_product.id }}"
               class="full-unstyled-link"
               aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}"
@@ -380,10 +386,10 @@
   };
   pwr('render', [
     {
-        api_key: '76a29117-f53a-4a2c-b341-b715b976ec82',
-        locale: 'en_US',
-        merchant_group_id: '49888431',
-        merchant_id: '60819357',
+      api_key: '76a29117-f53a-4a2c-b341-b715b976ec82',
+      locale: 'en_US',
+      merchant_group_id: '49888431',
+      merchant_id: '60819357',
         page_id: '{{ card_product.id }}',
         components: {
           CategorySnippet: 'snippet-{{ card_product.id }}'

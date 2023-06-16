@@ -302,7 +302,7 @@
   {{'custom-search.scss.css' | asset_url | stylesheet_tag }}
 </head>
 
-  <body class="gradient {{ page.handle }} {{ article.title }} {{ blog.handle }} ">
+  <body class="gradient {{ page.handle }} {{ article.title }} {{ blog.handle }} hide-price">
 
     {{ 'tagalys-customisations.js' | asset_url | script_tag }}
     {% comment %} <script src="https://storage.googleapis.com/tagalys-front-end-components/tagalys-ui-widgets-1.3.1.min.js"></script> {% endcomment %}
@@ -368,7 +368,7 @@
       }
     </script>
 
-    <script> (function(){ var s = document.createElement('script'); var h = document.querySelector('head') || document.body; s.src = 'https://acsbapp.com/apps/app/dist/js/app.js'; s.async = true; s.onload = function(){ acsbJS.init({ statementLink : '', footerHtml : '', hideMobile : false, hideTrigger : false, disableBgProcess : false, language : 'en', position : 'right', leadColor : '#146FF8', triggerColor : '#146FF8', triggerRadius : '50%', triggerPositionX : 'right', triggerPositionY : 'bottom', triggerIcon : 'people', triggerSize : 'bottom', triggerOffsetX : 105, triggerOffsetY : 30, mobile : { triggerSize : 'small', triggerPositionX : 'right', triggerPositionY : 'bottom', triggerOffsetX : 100, triggerOffsetY : 35, triggerRadius : '20' } }); }; h.appendChild(s); })(); </script>
+    <script> (function(){ var s = document.createElement('script'); var h = document.querySelector('head') || document.body; s.src = 'https://acsbapp.com/apps/app/dist/js/app.js'; s.async = true; s.onload = function(){ acsbJS.init({ statementLink : '', footerHtml : '', hideMobile : false, hideTrigger : false, disableBgProcess : false, language : 'en', position : 'right', leadColor : '#146FF8', triggerColor : '#146FF8', triggerRadius : '50%', triggerPositionX : 'right', triggerPositionY : 'bottom', triggerIcon : 'people', triggerSize : 'bottom', triggerOffsetX : 30, triggerOffsetY : 30, mobile : { triggerSize : 'small', triggerPositionX : 'right', triggerPositionY : 'bottom', triggerOffsetX : 10, triggerOffsetY : 35, triggerRadius : '20' } }); }; h.appendChild(s); })(); </script>
  <!--begin-boost-pfs-js-->
    
  <!--end-boost-pfs-js-->
@@ -399,10 +399,10 @@
     (pwr.q = pwr.q || []).push(arguments); 
   };
   pwr("render", {
-	api_key: "76a29117-f53a-4a2c-b341-b715b976ec82",
-	locale: "en_US",
-	merchant_group_id: "49888431",
-	merchant_id: "60819357",
+    api_key: '76a29117-f53a-4a2c-b341-b715b976ec82',
+    locale: 'en_US',
+    merchant_group_id: '49888431',
+    merchant_id: '60819357',
 	page_id: "{{ product.id }}",
 	review_wrapper_url: "https://zildjianshop.myshopify.com/pages/write-a-review/?pr_page_id={{ product.id }}",
 	product: {

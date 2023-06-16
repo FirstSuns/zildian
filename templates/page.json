@@ -48,7 +48,7 @@
       "type": "main-page",
       "settings": {
         "padding_top": 0,
-        "padding_bottom": 100
+        "padding_bottom": 0
       }
     }
   },

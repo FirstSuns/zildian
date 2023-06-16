@@ -78,7 +78,7 @@
               {% endif %}
             </div>
             <div class="content">
-              <div class="page-width--narrow">
+              <div class="page-width">
                 <h1 class="h2">{{article.title}}</h1>
                 <p class="h5">{{ article.metafields.global.affiliation }}</p>
               </div>
@@ -351,43 +351,6 @@
 }.mystique_col {
     width: 48%;
     margin: 0;
-}.article-template .about-artist-section {
-    margin-top: 100px;
-}.article-template .about-artist-section.page-width--narrow .grid {
-    padding-bottom: 50px;
-    {% comment %} border-bottom: 1px solid #D1D3D4; {% endcomment %}
-}.article-template .about-artist-section .title {
-    width: 185px;
-    margin: 0;
-}.article-template .about-artist-section .title .h1 {
-    margin: 0;
-    text-transform: uppercase;
-}.article-template .about-artist-section .image {
-    width: calc(40% - var(--grid-desktop-horizontal-spacing));
-}.article-template .about-artist-section .content {
-    width: calc(60% - 185px - var(--grid-desktop-horizontal-spacing));
-    counter-reset: my-awesome-counter;
-    padding-left: 65px;
-}.article-template .about-artist-section .content ul {
-    list-style: none;
-    padding: 0;
-}.article-template .about-artist-section .content ul li {
-    counter-increment: my-awesome-counter;
-    margin: 0 0 50px;
-    position: relative;
-}.article-template .about-artist-section .content ul li:before {
-    content: counter(my-awesome-counter);
-    position: absolute;
-    width: 36px;
-    height: 36px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--gradient-base-accent-1);
-    border-radius: 50%;
-    top: -4px;
-    left: -50px;
-    font-weight: 700;
 }p.first-pp {
     font-family: 'Century Gothic';
     font-style: normal;

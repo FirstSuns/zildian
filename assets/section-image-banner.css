@@ -461,9 +461,7 @@
     background: transparent !important;
      width: 100%;
 }
-  .banner .banner__content .banner__box .banner__heading img {
-    display: none;
-}
+  
 .banner .banner__content .banner__box .banner__heading {
     text-align: center;
     font-size: 23px;

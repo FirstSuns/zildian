@@ -376,6 +376,43 @@
                 {% endif %}
                 
                 {% elsif block.settings.content == 'audio' %}
+                  {% if product.metafields.global.sound_video_link != blank %}
+                    <modal-dialog id="PopupModal-sound_video_{{variant.id}}" class="product-popup-modal" {{ block.shopify_attributes }}>
+                      <div
+                        role="dialog"
+                        aria-label="{{ block.settings.text }}"
+                        aria-modal="true"
+                        class="product-popup-modal__content"
+                        tabindex="-1"
+                      >
+                        <button
+                          id="ModalClose-sound_video_{{product.id}}"
+                          type="button"
+                          class="product-popup-modal__toggle"
+                          aria-label="{{ 'accessibility.close' | t }}"
+                        >
+                          {% render 'icon-close' %}
+                        </button>
+                        <div class="product-popup-modal__content-info">
+                          {% include 'product-video' with context: product %}
+                        </div>
+                      </div>
+                    </modal-dialog>
+                    <modal-opener data-variant-id="{{variant.id}}"
+                      class="varaint_item product-popup-modal__opener no-js-hidden quick-add-hidden {% if variant.id != product.selected_or_first_available_variant.id%}hide{% endif %}"
+                      data-modal="#PopupModal-sound_video_{{variant.id}}"
+                      {{ block.shopify_attributes }}
+                    >
+                      <button
+                        id="ProductPopup-sound_video_{{variant.id}}"
+                        class="product-popup-modal__button link"
+                        type="button"
+                        aria-haspopup="dialog"
+                      >
+                        Demo Video
+                      </button>
+                    </modal-opener>
+                  {% endif %}
                   {% unless product.has_only_default_variant %}
                     {% for variant in product.variants %}
                       {% if variant.metafields.magento.audio_1_title != blank %}

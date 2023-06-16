@@ -323,10 +323,10 @@ TagalysCustomizations.utilities.initProductRatings = function(helpers, options =
   for (let i = 0; i < apiResponse.products.length; i++) {
     const product = apiResponse.products[i];
     var json = {
-      api_key: 'ea86d570-8331-45c7-a38b-107ca54b89b3',
+      api_key: '76a29117-f53a-4a2c-b341-b715b976ec82',
       locale: 'en_US',
-      merchant_group_id: '47546',
-      merchant_id: '37684',
+      merchant_group_id: '49888431',
+      merchant_id: '60819357',
       page_id: product.id,
       components: {
         CategorySnippet: `${options.widgetContext}-snippet-${product.id}`
@@ -1078,8 +1078,8 @@ TagalysCustomizations.initSearchResults = function() {
       },
       filters: {
         options: {
-          autoCollapse: true,
-          expandTopNFiltersByDefault: 1
+          autoCollapse: false,
+          expandTopNFiltersByDefault: 100
         },
         render: function (html, args) {
           var props = args.props;
@@ -1343,7 +1343,9 @@ TagalysCustomizations.initSimilarProductsRecommendation = function () {
             }
           },
           widget: {
+            
             options: {
+              limit: 3,
               displayFormat: "carousel",
               carouselOptions: {
                 perPage: {
@@ -1458,6 +1460,271 @@ TagalysCustomizations.initSimilarProductsRecommendation = function () {
   }, 2000);
 }
 
+
+TagalysCustomizations.initCrossSell = function () {
+  Tagalys.UIWidgets.Recommendations.init(
+    "[data-recommendation='cross-selling']",
+    {
+      recommendationId: "98c78f2192f7b6613b30",
+      productId: document.querySelector("[data-recommendation='cross-selling']").dataset.productId,
+      templates: {
+        header: {
+          render: function (html, args) {
+            var props = args.props
+            var  widgetHeading = props.helpers.getAPIResponse().name
+            return html`
+              <div class="widget-header">
+                <h1 class="widget-heading">Cross Selling</h1>
+              </div>
+            `;
+          }
+        },
+        widget: {
+          options: {
+            displayFormat: "carousel",
+            carouselOptions: {
+              perPage: {
+                300: 1.5,
+                600: 1.5,
+                900: 2,
+                1200: 3,
+                1440: 3,
+                2560: 3
+              },
+              duration: 200,
+              easing: "ease-out",
+              startIndex: 0,
+              draggable: true,
+              onChange: function (siemaInstance) {
+               
+              },
+            }
+          }
+        },
+        leftArrow: false,
+        rightArrow: false,
+        product: {
+          callbacks: {
+            afterEveryRender: function(helpers, args) {
+              var product = args.product;
+              window.pwr = window.pwr || function () {
+                (pwr.q = pwr.q || []).push(arguments); 
+              };
+              pwr('render', [
+                {
+                  api_key: '76a29117-f53a-4a2c-b341-b715b976ec82',
+                  locale: 'en_US',
+                  merchant_group_id: '49888431',
+                  merchant_id: '467303409',
+                    page_id: product.id,
+                    components: {
+                      CategorySnippet: `snippet-${product.id}`
+                    }
+                }
+              ]);
+            }
+          },
+          render: function (html, args) {
+            var props = args.props;
+            var product = props.product;
+            var helpers = props.helpers;
+            var badge = "";
+            if (product.available == false) {
+              badge = 'Sold Out'
+            } else if (product.compare_at_price > product.price) {
+              badge = 'Sale'
+            }
+            
+            return html`
+              <div class="product">
+                <a
+                  class="product-link"
+                  href=${product.__tagalys_fields.link}
+                >
+                  <div class="product-image-container">
+                    <span class="badge">${badge}</span>
+                    <img
+                      class="product-image"
+                      src=${product.__tagalys_fields.image_url}
+                      alt=${product.title}
+                    />
+                  </div>
+                  <div class="product-details">
+                    <span class="product-name">${product.title}</span>
+                    <div class="pwr-category-snippets" style="">
+                      <div id="snippet-${product.id}"></div>
+                    </div>
+                    <span
+                      class=${`product-prices${
+                        helpers.isProductOnSale(
+                          product.compare_at_price,
+                          product.price
+                        )
+                          ? " discounted"
+                          : " full-price"
+                      }`}
+                    >
+                      ${helpers.isProductOnSale(
+                        product.compare_at_price,
+                        product.price
+                      )
+                        ? html`
+                            <span class="product-price-discounted"
+                              >${helpers.formatCurrency(product.price)}</span
+                            >
+                          `
+                        : null}
+                      <span class="product-price-regular">
+                        ${helpers.formatCurrency(
+                          product.compare_at_price === null
+                            ? product.price
+                            : product.compare_at_price
+                        )}
+                      </span>
+                    </span>
+                  </div>
+                </a>
+              </div>
+            `;
+          },
+        },
+      }
+    }
+  );
+}
+
+
+TagalysCustomizations.initSmatwidget = function () {
+  Tagalys.UIWidgets.SmartWidget.init(
+    "[data-widget='smart-widget']",
+    {
+      widgetId: "805ce09c3b12a5594dba",
+      templates: {
+        header: {
+          render: function (html, args) {
+            var props = args.props
+            var  widgetHeading = props.helpers.getAPIResponse().name
+            return html`
+              <div class="widget-header">
+                <h1 class="widget-heading center">PLAYER FAVORITES</h1>
+              </div>
+            `;
+          }
+        },
+        widget: {
+          options: {
+            displayFormat: "carousel",
+            carouselOptions: {
+              perPage: {
+                300: 1.5,
+                600: 1.5,
+                900: 2,
+                1200: 3,
+                1440: 3,
+                2560: 3
+              },
+              duration: 200,
+              easing: "ease-out",
+              startIndex: 0,
+              draggable: true,
+              onChange: function (siemaInstance) {
+               
+              },
+            }
+          }
+        },
+        leftArrow: false,
+        rightArrow: false,
+        product: {
+          callbacks: {
+            afterEveryRender: function(helpers, args) {
+              var product = args.product;
+              window.pwr = window.pwr || function () {
+                (pwr.q = pwr.q || []).push(arguments); 
+              };
+              pwr('render', [
+                {
+                  api_key: '76a29117-f53a-4a2c-b341-b715b976ec82',
+                  locale: 'en_US',
+                  merchant_group_id: '49888431',
+                  merchant_id: '467303409',
+                    page_id: product.id,
+                    components: {
+                      CategorySnippet: `snippet-${product.id}`
+                    }
+                }
+              ]);
+            }
+          },
+          render: function (html, args) {
+            var props = args.props;
+            var product = props.product;
+            var helpers = props.helpers;
+            var badge = "";
+            if (product.available == false) {
+              badge = 'Sold Out'
+            } else if (product.compare_at_price > product.price) {
+              badge = 'Sale'
+            }
+            
+            return html`
+              <div class="product">
+                <a
+                  class="product-link"
+                  href=${product.__tagalys_fields.link}
+                >
+                  <div class="product-image-container">
+                    <span class="badge">${badge}</span>
+                    <img
+                      class="product-image"
+                      src=${product.__tagalys_fields.image_url}
+                      alt=${product.title}
+                    />
+                  </div>
+                  <div class="product-details">
+                    <span class="product-name">${product.title}</span>
+                    <div class="pwr-category-snippets" style="">
+                      <div id="snippet-${product.id}"></div>
+                    </div>
+                    <span
+                      class=${`product-prices${
+                        helpers.isProductOnSale(
+                          product.compare_at_price,
+                          product.price
+                        )
+                          ? " discounted"
+                          : " full-price"
+                      }`}
+                    >
+                      ${helpers.isProductOnSale(
+                        product.compare_at_price,
+                        product.price
+                      )
+                        ? html`
+                            <span class="product-price-discounted"
+                              >${helpers.formatCurrency(product.price)}</span
+                            >
+                          `
+                        : null}
+                      <span class="product-price-regular">
+                        ${helpers.formatCurrency(
+                          product.compare_at_price === null
+                            ? product.price
+                            : product.compare_at_price
+                        )}
+                      </span>
+                    </span>
+                  </div>
+                </a>
+              </div>
+            `;
+          },
+        },
+      }
+    }
+  );
+}
+
 function onTagalysReady(callback) {
   if (window.Tagalys) {
     TagalysCustomizations.utilities.setConfiguration();
@@ -1471,10 +1738,21 @@ function onTagalysReady(callback) {
 }
 
 onTagalysReady(function(){
+  Tagalys.Analytics.trackPlatformEvents();
   TagalysCustomizations.initSearchSuggestions();
   if (document.querySelector("[data-recommendation='similar-products']") != undefined) {
+    
     TagalysCustomizations.initSimilarProductsRecommendation();
   }
-  Tagalys.Analytics.trackPlatformEvents();//FS added
+
+  if (document.querySelector("[data-recommendation='cross-selling']") != undefined) {
+    TagalysCustomizations.initCrossSell();
+  }
+
+  if (document.querySelector("[data-widget='smart-widget']") != undefined) {
+    TagalysCustomizations.initSmatwidget();
+  }
+
+  
 })
 

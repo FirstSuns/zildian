@@ -1,3 +1,22 @@
+.breadcrumbs {
+  max-width: initial!important;
+  margin: auto 70px!important;
+  margin-top: 20px!important;
+  padding: 10px 20px!important;
+  position: relative!important;
+  margin-bottom: 50px!important;
+  @media screen and (max-width: 989px) {
+    margin: auto!important;
+    .breadcrumbs__link {
+      padding-left: 26px;
+    }
+  }
+  @media screen and (min-width: 990px) {
+    &::before {
+      content: none!important;
+    }
+  }
+}
 .search-bar-container {
   margin-top: 20px;
   z-index: 2;
@@ -31,7 +50,7 @@
       }
     }
   }
-  .grid {
+  .search-bar-container {
     padding: 13px 15px;
     background: var(--gradient-base-accent-1);
     position: relative;
@@ -56,7 +75,7 @@
       button {
         background: transparent;
         border: none;
-        border-left: 1px solid #B6B8BA;
+        border-left: 1px solid #5C5D60;
         margin: 10px 0;
         padding: 0 10px;
       } 
@@ -130,7 +149,6 @@
           display: flex;
           @media screen and (max-width: 989px) {
             flex-direction: column;
-            overflow: scroll;
           }
         }
         .header {
@@ -152,34 +170,44 @@
             font-size: 11px;
           }
         }
-        
-        .fs-art-filter-cont{
-          display: flex;
+        .fs-art-filter-cont {
           width: 100%;
-          @media screen and (max-width: 989px) {
-            flex-wrap: wrap;
-          }
-          .fs-art-filter-cont-block{
-            width: 100%;
-          }
-          h3{
-            width: 140px;    margin-top: 20px;
-          }
-        }
-        .fs-art-filter-cont-sub{
           display: flex;
-          justify-content: space-between;
-          @media screen and (max-width: 1100px) {
-            flex-wrap: wrap;
-            justify-content: flex-start;
+          @media screen and (max-width: 989px) {
+            flex-direction: column;
+            height: 90vh;
+            overflow: auto;
+          }
+          .fs-art-filter-cont-block {
+            padding-right: 20px;
+            min-width: 200px;
+            @media screen and (max-width: 989px) {
+              padding-right: 0;
+            }
+            h3 {
+              font-size: 16px;
+              text-transform: uppercase;
+              @media screen and (max-width: 989px) {
+                padding-left: 20px;
+              }
+            }
+            .fs-art-filter-cont-sub {
+              display: flex;
+              @media screen and (max-width: 989px) {
+                flex-direction: column;
+                padding-left: 20px;
+              }
+              .row {
+                padding-right: 10px;
+              }
+            }
           }
         }
         .row {
           max-width: 200px;
-          @media screen and (max-width: 1100px) {
+          @media screen and (max-width: 989px) {
             max-width: initial;
-            // width: 100%;
-            flex: 1 1 33%;
+            width: 100%;
           }
           h5 {
             font-size: 16px;
@@ -198,7 +226,7 @@
                 margin-left: -10px;
                 font-size: 14px;
                 &.active {
-                  background: #E3D0A5;
+                  background: #E4E5E6;
                 }
               }
             }

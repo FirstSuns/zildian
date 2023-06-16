@@ -281,7 +281,7 @@ html {
             @media screen and (max-width: 749px) {
               display: none;
             }
-            display: none;
+            //display: none;
           }
           .products {
             .product {
@@ -628,13 +628,13 @@ body.hide-price {
 }
 
 .header-wrapper .header {
-    max-width: 1600px !important;
+ 
 }
 .boost-pfs-filter-right-col {
     padding-left: 60px !important;
 }
 body.hide-price .price, body.hide-price .buy-buttons-box, body.hide-price .product-prices{
-  display: block !important;
+  // display: block !important;
 }
 #CollectionProductGrid .collection .boost-pfs-filter-right-col .product-grid .product-card-wrapper .card .card__content .card__information .card__heading {
     min-height: 48px;
@@ -1259,4 +1259,20 @@ tab-component {
 }
 .tagalys-search-suggestions .pwr-category-snippets{
   display: none !important;
+}
+
+.product-and-text-suggestions {
+  align-items: flex-start;
+}
+
+.p-w-r .pr-snippet-stars-reco-inline .pr-snippet-stars-reco-stars {
+  float: none!important;
+}
+
+.tagalys-namespace .widget .carousel-btn.btn-disabled, #tagalys-namespace .widget .carousel-btn.btn-disabled, #tagalys-namespace.tagalys-namespace .widget .carousel-btn.btn-disabled {
+  display: none;
+}
+
+[data-testid="review-image-display"] {
+  max-width: 500px;
 }

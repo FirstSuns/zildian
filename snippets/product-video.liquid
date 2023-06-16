@@ -69,7 +69,7 @@
           {% assign img_name = context.metafields.magento.sound_demo_video | split: "/" %} 
           <img src="{{img_name.last | file_url}}" loading="lazy" alt="{{alt}}">
         {%- elsif video_id != blank -%}
-          {% assign thumbnail_url = 'http://img.youtube.com/vi/' | append: video_id | append: '/maxresdefault.jpg' %}
+          {% assign thumbnail_url = 'http://img.youtube.com/vi/' | append: video_id | append: '/hqdefault.jpg' %}
           {%- capture sizes -%}
               100vw
           {%- endcapture -%}
@@ -83,6 +83,7 @@
         </span>
       </button>
       <template>
+          {%- if context.metafields.global.sound_video_link contains 'youtu' -%}
           <iframe
             src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1"
             class="js-youtube"
@@ -90,6 +91,15 @@
             allowfullscreen
             title="{{ section.settings.description | escape }}"
           ></iframe>
+          {%- else -%}
+          <iframe
+            src="https://player.vimeo.com/video/{{ video_id }}"
+            class="js-vimeo"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+            title="{{ section.settings.description | escape }}"
+          ></iframe>
+        {%- endif -%}
       </template>
     </deferred-media>
   </div>

@@ -204,9 +204,9 @@
       <h3 class="fs-blog-grid-title">{{blog.metafields.custom.blog_grid_title}}</h3>
       {% endif %} 
       {% if blog.metafields.custom.blogpost_category_list == blank %}
-        <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
+        <div class="blog-articles grid grid--2-col grid--3-col-desktop {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
           {%- for article in blog.articles -%}
-            <div class="blog-articles__article article">
+            <div class="blog-articles__article grid__item article">
               {%- render 'article-card',
                 article: article,
                 media_height: section.settings.image_height,
@@ -225,10 +225,10 @@
         {% assign blogpost_category_list =  blog.metafields.custom.blogpost_category_list | split: "," %}
         {% for category in blogpost_category_list %}
           <h3 class="fs-blog-grid-title" style="text-align: center;">{{category}}</h3>
-          <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
+          <div class="blog-articles  grid grid--2-col grid--3-col-desktop {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
             {%- for article in blog.articles -%}
               {% if article.metafields.custom.blog_category == category %}
-              <div class="blog-articles__article article">
+              <div class="blog-articles__article grid__item article">
                 {%- render 'article-card',
                   article: article,
                   media_height: section.settings.image_height,
