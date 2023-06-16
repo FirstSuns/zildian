@@ -1,10 +1,17 @@
-<product-gallery-component class="thumbs-{{section.settings.gallery_layout}}">
-  <div pdp1 id="mainCarousel" class="splide">
-    <div class="splide__track">
-      <ul class="product__media-list splide__list " role="list">
+<product-gallery-component
+  class="thumbs-{{section.settings.gallery_layout}}">
+  <div
+    pdp1
+    id="mainCarousel"
+    class="splide">
+    <div
+      class="splide__track">
+      <ul
+        class="product__media-list splide__list "
+        role="list">
         {%- for media in product.media -%}
-        {% comment %} 
-        {%- unless 
+          {% comment %} 
+          {%- unless 
           media.id == product.selected_or_first_available_variant.featured_media.id 
           or media.preview_image contains 'hqdefault' 
           or media.preview_image contains 'taper_' 
@@ -13,68 +20,87 @@
           or media.preview_image contains 'soundlab' 
           or media.preview_image contains 'spotlight' 
           or media.preview_image contains 'thumbnails'
-        -%}
-        {% endunless %} {% endcomment %}
-        <li class="splide__slide test" thumbnail-color="{{ media.alt }}">
-          {% render 'product-thumbnail',
-                media: media,
-                media_count: media_count,
-                position: media_position,
-                desktop_layout: section.settings.gallery_layout,
-                mobile_layout: section.settings.mobile_thumbnails,
-                loop: section.settings.enable_video_looping,
-                modal_id: section.id,
-                xr_button: true,
-                media_width: media_width,
-                media_fit: section.settings.media_fit,
-                constrain_to_viewport: section.settings.constrain_to_viewport,
-                lazy_load: lazy_load
-          %}
-        </li>
-        
+          -%}
+          {% endunless %} {% endcomment %}
+          <li
+            class="splide__slide test"
+            thumbnail-color="{{ media.alt }}">
+            {% render 'product-thumbnail'
+             , media: media,
+             media_count: media_count,
+             position: media_position,
+             desktop_layout: section.settings.gallery_layout,
+             mobile_layout: section.settings.mobile_thumbnails,
+             loop: section.settings.enable_video_looping,
+             modal_id: section.id,
+             xr_button: true,
+             media_width: media_width,
+             media_fit: section.settings.media_fit,
+             constrain_to_viewport: section.settings.constrain_to_viewport,
+             lazy_load: lazy_load %}
+          </li>
+
         {%- endfor -%}
       </ul>
     </div>
   </div>
 
-  {%assign media_size = 0 %}
-  <div id="thumbsCarousel" class="splide">
-    <div class="splide__track">
-      
-      <ul class="splide__list" role="list">
+  {% assign media_size = 0 %}
+  <div
+    id="thumbsCarousel"
+    class="splide">
+    <div
+      class="splide__track">
+
+      <ul
+        class="splide__list"
+        role="list">
         {%- for media in product.media -%}
-        {% assign media_size = media_size | plus: 1 %}
-        {% assign media-img = media.preview_image | split: '/' | last %}
-        <li class="splide__slide tst fs-slide-thumbnail" thumbnail-color="{{ media.alt }}"
-         fs-thumbnail-media-img="{{media-img}}">
-          <div class="product__media media" style="padding-top: 100%;">
-            {% if media.media_type == 'video' or media.media_type == 'external_video' %}
-            <span class="product__media-icon">{% render 'icon-play' %}</span>
-            {% endif %}
-            <img
-              srcset="{% if media.preview_image.width >= 288 %}{{ media.preview_image | img_url: '288x' }} 288w,{% endif %}
-                {% if media.preview_image.width >= 576 %}{{ media.preview_image | img_url: '576x' }} 576w,{% endif %}
-                {% if media.preview_image.width >= 750 %}{{ media.preview_image | img_url: '750x' }} 750w,{% endif %}
-                {% if media.preview_image.width >= 1100 %}{{ media.preview_image | img_url: '1100x' }} 1100w,{% endif %}
-                {% if media.preview_image.width >= 1500 %}{{ media.preview_image | img_url: '1500x' }} 1500w,{% endif %}
-                {{ media.preview_image | img_url: 'master' }} {{ media.preview_image.width }}w"
-              src="{{ media | img_url: '1500x' }}"
-              sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | times: 0.64 | round }}px, (min-width: 750px) calc((100vw - 11.5rem) / 2), calc(100vw - 4rem)"
-              loading="lazy"
-              width="576"
-              height="{{ 576 | divided_by: media.preview_image.aspect_ratio | ceil }}"
-              alt="{{ media.preview_image.alt | escape }}"
-            >
-          </div>
-        </li>
-        
+          {% assign media_size = media_size | plus: 1 %}
+          {% assign media-img = media.preview_image | split: '/' | last %}
+          <li
+            class="splide__slide tst fs-slide-thumbnail"
+            thumbnail-color="{{ media.alt }}"
+            fs-thumbnail-media-img="{{media-img}}">
+            <div
+              class="product__media media"
+              style="padding-top: 100%;">
+              {% if media.media_type == 'video' or media.media_type == 'external_video' %}
+                <span
+                  class="product__media-icon">{% render 'icon-play' %}</span>
+              {% endif %}
+
+              {% comment %}
+              srcset="
+              {% if media.preview_image.width >= 288 %}
+              {{ media.preview_image | img_url: '288x' }} 288w,{% endif %}
+              {% if media.preview_image.width >= 576 %}
+              {{ media.preview_image | img_url: '576x' }} 576w,{% endif %}
+              {% if media.preview_image.width >= 750 %}
+              {{ media.preview_image | img_url: '750x' }} 750w,{% endif %}
+              {% if media.preview_image.width >= 1100 %}
+              {{ media.preview_image | img_url: '1100x' }} 1100w,{% endif %}
+              {% if media.preview_image.width >= 1500 %}
+              {{ media.preview_image | img_url: '1500x' }} 1500w,{% endif %}
+              {{ media.preview_image | img_url: 'master' }} {{ media.preview_image.width }}w"
+              {% endcomment %}
+              <img
+                src="{{ media | img_url: '1500x' }}"
+                sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | times: 0.64 | round }}px, (min-width: 750px) calc((100vw - 11.5rem) / 2), calc(100vw - 4rem)"
+                loading="lazy"
+                width="576"
+                height="{{ 576 | divided_by: media.preview_image.aspect_ratio | ceil }}"
+                alt="{{ media.preview_image.alt | escape }}">
+            </div>
+          </li>
+
         {%- endfor -%}
       </ul>
-   
-     
+
+
     </div>
   </div>
-  
+
 </product-gallery-component>
 
 {%- if first_3d_model -%}
@@ -85,24 +111,23 @@
     data-shopify-xr
     data-shopify-model3d-id="{{ first_3d_model.id }}"
     data-shopify-title="{{ product.title | escape }}"
-    data-shopify-xr-hidden
-  >
+    data-shopify-xr-hidden>
     {% render 'icon-3d-model' %}
     {{ 'products.product.xr_button' | t }}
   </button>
 {%- endif -%}
 {% if media_size == 1 or media_size == 0 %}
-<style>
- #thumbsCarousel{
-  display: none !important; 
- }
- [data-section-type=product] .product__media-wrapper product-gallery-component .splide__arrows .splide__arrow--prev{
-  display: none !important;
- }
- [data-section-type=product] .product__media-wrapper product-gallery-component .splide__arrows .splide__arrow--next{
-  display: none !important;
- }
-</style>
+  <style>
+    #thumbsCarousel {
+      display: none !important;
+    }
+    [data-section-type=product] .product__media-wrapper product-gallery-component .splide__arrows .splide__arrow--prev {
+      display: none !important;
+    }
+    [data-section-type=product] .product__media-wrapper product-gallery-component .splide__arrows .splide__arrow--next {
+      display: none !important;
+    }
+  </style>
 
 
 {% endif %}

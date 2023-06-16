@@ -1,0 +1,52 @@
+{% assign title = article.metafields.global.about_artist.value.title %}
+{% assign image = article.metafields.global.about_artist.value.artist_image %}
+{% assign text = article.metafields.global.about_artist.value.text %}
+
+{% capture questions %}
+  {% if article.metafields.global.qestion_1 != blank %}
+    <li>
+    {{article.metafields.global.qestion_1}}
+    </li>
+    {% endif %}
+    {% if article.metafields.global.qestion_2 != blank %}
+    <li>
+    {{article.metafields.global.qestion_2}}
+    </li>
+    {% endif %}
+    {% if article.metafields.global.question_3 != blank %}
+    <li>
+    {{article.metafields.global.question_3}}
+    </li>
+    {% endif %}
+    {% if article.metafields.global.question_4 != blank %}
+    <li>
+    {{article.metafields.global.question_4}}
+    </li>
+    {% endif %}
+{% endcapture %}
+
+{% if questions != blank %}
+<div class="about-artist-section page-width--narrow page-width">
+  <div class="grid">
+    <div class="title">
+      <h2 class="h2 uppercase">{{article.metafields.global.questoion_title | replace: ' ', ' <br>'}}</h2>
+    </div>
+    <div class="image">
+      <div class="media" style="padding-bottom: 130%;">
+        {% if article.metafields.global.question_image != blank %}
+        <img src="{{article.metafields.global.question_image }}" loading="lazy" width="356" height="485" >
+        {% else %}
+        <img src="{{article.image | img_url: '768x' }}" loading="lazy" width="356" height="485" >    
+        {% endif %}
+      </div>
+    </div>
+    <div class="content">
+      <div class="info">
+        <ul>
+          {{questions}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}

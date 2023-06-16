@@ -8,7 +8,8 @@
         <li class="uppercase">{{ 'customer.menu.account_detail' | t | link_to: "/account/addresses" }}</li>
         <!-- <li class="uppercase">{{ 'customer.menu.track_order' | t | link_to: "#" }}</li> -->
         {% comment %} <li class="uppercase">{{ 'customer.menu.return' | t | link_to: "/pages/shipping-and-returns" }}</li> {% endcomment %}
-        <li class="uppercase">{{ 'customer.menu.log_out' | t | link_to: "/account/logout" }}</li>
+        <li
+          class="uppercase">{{ 'customer.menu.log_out' | t | link_to: "/account/logout" }}</li>
       </ul>
     </div>
     <div class="account-dashborad content">
@@ -16,7 +17,7 @@
         <h2 class="title collapse active uppercase">
           <a class="heading">{{ 'customer.orders.title' | t }}</a>
           {%- if customer.orders.size > 2 -%}
-          <a class="expand">View all</a>
+            <a class="expand">View all</a>
           {%- endif -%}
         </h2>
         <div class="content-field">
@@ -36,7 +37,7 @@
                   {% for order in customer.orders %}
                     <tr class="responsive-table-row">
                       <td data-label="{{ 'customer.orders.order_number' | t }}">{{ order.name | link_to: order.customer_url }}</td>
-                      <td data-label="{{ 'customer.orders.date' | t }}">{{ order.created_at | date: '%d/%m/%Y' }}</td>
+                      <td data-label="{{ 'customer.orders.date' | t }}">{{ order.created_at | date: '%m/%d/%Y' }}</td>
                       <td data-label="{{ 'customer.orders.payment_status' | t }}">{{ order.financial_status_label }}</td>
                       <td data-label="{{ 'customer.orders.fulfillment_status' | t }}">{{ order.fulfillment_status_label }}</td>
                       <td data-label="{{ 'customer.orders.total' | t }}">{{ order.total_price | money_without_trailing_zeros }}</td>
@@ -68,9 +69,9 @@
             <br>
             {% comment %} Accepts Marketing:
             {% if custom.accepts_marketing %}
-              Yes
+            Yes
             {% else %}
-              No{% endif %} {% endcomment %}
+            No{% endif %} {% endcomment %}
           </p>
         </div>
       </div>

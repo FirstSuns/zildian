@@ -1,7 +1,7 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
 {{ 'custom-education.scss.css' | asset_url | stylesheet_tag  }}
+
 <article class="article-template" itemscope itemtype="http://schema.org/BlogPosting">
-   {% comment %}{% include 'breadcrumbs' %}{% endcomment %}
   {%- for block in section.blocks -%}
     {%- case block.type -%}
       {%- when '@app' -%}
@@ -9,80 +9,74 @@
           {% render block %}
         </div>
       {%- when 'featured_image' -%} 
-        {%- if article.metafields.global.featured_image -%}
+        {%- if article.metafields.global.hero_image != blank -%}
           <div class="article-template__hero-container" {{ block.shopify_attributes }}>
             <div
               class="article-template__hero-{{ block.settings.image_height }} media {{block.settings.image_height}}"
               itemprop="image"
             >
-              <img
-                srcset="
-                  {% if article.metafields.global.featured_image.width >= 350 %}{{ article.metafields.global.featured_image | image_url: width: 350 }} 350w,{% endif %}
-                  {% if article.metafields.global.featured_image.width >= 750 %}{{ article.metafields.global.featured_image | image_url: width: 750 }} 750w,{% endif %}
-                  {% if article.metafields.global.featured_image.width >= 1100 %}{{ article.metafields.global.featured_image | image_url: width: 1100 }} 1100w,{% endif %}
-                  {% if article.metafields.global.featured_image.width >= 1500 %}{{ article.metafields.global.featured_image | image_url: width: 1500 }} 1500w,{% endif %}
-                  {% if article.metafields.global.featured_image.width >= 2200 %}{{ article.metafields.global.featured_image | image_url: width: 2200 }} 2200w,{% endif %}
-                  {% if article.metafields.global.featured_image.width >= 3000 %}{{ article.metafields.global.featured_image | image_url: width: 3000 }} 3000w,{% endif %}
-                  {{ article.metafields.global.featured_image | image_url }} {{ article.metafields.global.featured_image.width }}w
-                "
-                sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw"
-                src="{{ article.metafields.global.featured_image | image_url: width: 1100 }}"
+              <img src="{{ article.metafields.global.hero_image | file_url }}"
                 loading="eager" 
                 class="small-hide medium-hide"
                 fetchpriority="high"
-                width="{{ article.metafields.global.featured_image.width }}"
-                height="{{ article.metafields.global.featured_image.height }}"
-                alt="{{ article.metafields.global.featured_image.alt | escape }}"
-              >
-              <img
-                srcset="
-                  {% if article.metafields.global.featured_mobile_image.width >= 350 %}{{ article.metafields.global.featured_mobile_image | image_url: width: 350 }} 350w,{% endif %}
-                  {% if article.metafields.global.featured_mobile_image.width >= 750 %}{{ article.metafields.global.featured_mobile_image | image_url: width: 750 }} 750w,{% endif %}
-                  {% if article.metafields.global.featured_mobile_image.width >= 1100 %}{{ article.metafields.global.featured_mobile_image | image_url: width: 1100 }} 1100w,{% endif %}
-                  {% if article.metafields.global.featured_mobile_image.width >= 1500 %}{{ article.metafields.global.featured_mobile_image | image_url: width: 1500 }} 1500w,{% endif %}
-                  {% if article.metafields.global.featured_mobile_image.width >= 2200 %}{{ article.metafields.global.featured_mobile_image | image_url: width: 2200 }} 2200w,{% endif %}
-                  {% if article.metafields.global.featured_mobile_image.width >= 3000 %}{{ article.metafields.global.featured_mobile_image | image_url: width: 3000 }} 3000w,{% endif %}
-                  {{ article.metafields.global.featured_mobile_image | image_url }} {{ article.metafields.global.featured_mobile_image.width }}w
-                "
-                sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw"
-                src="{{ article.metafields.global.featured_mobile_image | image_url: width: 1100 }}"
+                width="1700"
+                height="595" 
+                onerror="this.style.display='none'"
+                alt="{{ article.title }}"
+              > 
+              <img 
+                src="{{ article.metafields.global.hero_image | file_url }}"
                 loading="eager" 
                 class="large-up-hide"
                 fetchpriority="high"
-                width="{{ article.metafields.global.featured_mobile_image.width }}"
-                height="{{ article.metafields.global.featured_mobile_image.height }}"
-                alt="{{ article.metafields.global.featured_mobile_image.alt | escape }}"
+                width="1700"
+                height="595" 
+                onerror="this.style.display='none'"
+                alt="{{ article.title }}"
               >
             </div>
             <div class="content">
-              <div class="page-width--narrow center">
-                <h1 class="h0">{{blog.title}}</h1>
+              <div class="page-width--narrow">
+                <h1 class="h2">{{article.title}}</h1>
+                <p class="h5">The {{article.title}} experience</p>
               </div>
             </div>
           </div>
         {%- endif -%}
+        {% include 'breadcrumbs' %}
       {%- when 'title' -%}
         <header class="page-width page-width--narrow" {{ block.shopify_attributes }}>
-          <h2 class="article-template__title center" itemprop="headline">
-               {% comment %}{{ article.title | escape }}{% endcomment %}
-               {{ article.metafields.custom.article_title }}
-          </h2>
+          <h2 class="article-template__title center" itemprop="headline">{{ article.title | escape }}</h2>
           <div class="article-template__excerpt">
             <div class="excerpt">
               {{article.excerpt}}
             </div>
-            <div class="large-hide mobile-vide-sec">
-                {{ article.metafields.custom.after_excerpt_video }}
-            </div>
             <div class="narrow">
-              <a href="{{blog.previous_article.url}}">
+              {% for ar in blog.articles %}
+                {% if ar.title == article.title %}
+                  {% assign num = forloop.index %}
+                  {% assign next = num | plus: 1 %}
+                  {% assign prev = num | minus: 1 %}
+                {% endif %}
+                
+              {% endfor %}
+              {% for ar in blog.articles %}
+                {% if next == forloop.index %}
+                  {% assign next_url = ar.url %}
+                {% endif %}
+                {% if prev == forloop.index %}
+                  {% assign prev_url = ar.url %}
+                {% endif %}
+              {% endfor %}
+              
+              <a href="{{prev_url}}" {% if prev_url == blank %}disabled{% endif %} >
                 <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="22" cy="22" r="21.5" stroke="#5C5D60"/>
                   <path d="M26 14L18 22.5L26 31" stroke="#5C5D60" stroke-width="2" stroke-linecap="round"/>
                 </svg>                  
               </a>
-              <span class="h5 uppercase">Lesson 2/{{blog.articles.size}} </span>
-              <a href="{{blog.next_article.url}}">
+              <span class="h5 uppercase">Lesson {{num}}/{{blog.articles.size}} </span>
+              <a href="{{next_url}}" {% if next_url == blank %}disabled{% endif %}>
                 <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="22" cy="22" r="21.5" transform="rotate(-180 22 22)" stroke="#5C5D60"/>
                   <path d="M18 30L26 21.5L18 13" stroke="#5C5D60" stroke-width="2" stroke-linecap="round"/>
@@ -95,14 +89,13 @@
           </div>
         </header>
 
-      {%- when 'content' -%}
+      {%- when 'content' -%} 
         <div
           class="article-template__content page-width page-width--narrow rte"
           itemprop="articleBody"
           {{ block.shopify_attributes }}
         >
           {{ article.content }}
-         {% if article.metafields.global.education_video_text_3 != blank or article.metafields.global.education_video_text_2 != blank or article.metafields.global.education_video_text_1 != blank %}
           <ul class="content">
             {% if article.metafields.global.education_video_text_1 != blank %}
               {% assign content_list = article.metafields.global.education_video_text_1 | split: '<--/-->' %}
@@ -110,9 +103,6 @@
                 {% for content_val in content_list %}
                 {% if content_val contains 'youtu' %}
                   {% assign video_id = content_val | split: '/' | last %}
-                  {% if content_val contains '=' %}
-                    {% assign video_id = content_val | split: '=' | last %}
-                  {% endif %}
                   <iframe 
                     width="1220" 
                     height="686" 
@@ -122,6 +112,8 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                     allowfullscreen=""
                   ></iframe> 
+                {% elsif content_val contains '.png' or content_val contains '.jpg' %}
+                  <img src="{{content_val}}" loading="lazy">
                 {% else %}
                   <div class="text">
                     <p>{{content_val}}</p>
@@ -136,9 +128,6 @@
                 {% for content_val in content_list %}
                 {% if content_val contains 'youtu' %}
                   {% assign video_id = content_val | split: '/' | last %}
-                  {% if content_val contains '=' %}
-                    {% assign video_id = content_val | split: '=' | last %}
-                  {% endif %}
                   <iframe 
                     width="1220" 
                     height="686" 
@@ -148,6 +137,8 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                     allowfullscreen=""
                   ></iframe> 
+                {% elsif content_val contains '.png' or content_val contains '.jpg' %}
+                  <img src="{{content_val}}" loading="lazy">
                 {% else %}
                 <div class="text">
                   <p>{{content_val}}</p>
@@ -162,9 +153,6 @@
                 {% for content_val in content_list %}
                 {% if content_val contains 'youtu' %}
                   {% assign video_id = content_val | split: '/' | last %}
-                  {% if content_val contains '=' %}
-                    {% assign video_id = content_val | split: '=' | last %}
-                  {% endif %}
                   <iframe 
                     width="1220" 
                     height="686" 
@@ -174,6 +162,8 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                     allowfullscreen=""
                   ></iframe> 
+                {% elsif content_val contains '.png' or content_val contains '.jpg' %}
+                  <img src="{{content_val}}" loading="lazy">
                 {% else %}
                 <div class="text">
                   <p>{{content_val}}</p>
@@ -183,7 +173,6 @@
               </li> 
             {% endif %}
           </ul>
-          {% endif %}
           {% if article.metafields.global.quote != blank %}
           <div class="quote">
             <p>{{article.metafields.global.quote}}</p>
@@ -198,63 +187,20 @@
         </div>
       {% when 'image_text' %}
         {% render 'article-image-text', block: block, article: article %}
-      {% when 'new_image_text' %}
-        {% render 'new-article-image-text', block: block, article: article %}
       {% when 'featured_product' %}
         {% include 'featured_product', block: block %}
       {% when 'about' %}
-        {% include 'about-artist' %}
+        {% include 'education-about-artist' %}
       {% when 'video' %}
         {% include 'artist-video' with video_url: article.metafields.global.video.value.video_url %}
       {% when 'recent_post' %}
         {% include 'recent_articles' %}
+      {% when 'audio_list' %}
+        {% include 'audio_list' %}
     {%- endcase -%}
   {%- endfor -%}
-  {% comment %} <div class="pagi-blg-nn">
-    <div id="article-index-card-section" class="g-flex">
-      {% paginate blog.articles by 1 %}
-        <div>
-            {{ paginate | default_pagination: next: '>', previous: '<' }} 
-        </div>
-      {% endpaginate %}
-    </div>
-  </div> {% endcomment %}
-  {% assign first_article = blank %}
-  {% for article in blog.articles %}
-    {% assign first_article = article %}
-  {% endfor %}
-  {% if blog.next_article or first_article %}
-  <header class="page-width page-width--narrow">
-    <div class="article-template__excerpt">
-      <div class="narrow">
-        {% for ar in blog.articles %}
-          {% if ar.title == article.title %}
-            {% assign next_num = forloop.index | plus: 1 %}
-          {% endif %}
-          {% if forloop.index == next_num %}
-            {% assign nex_article = ar %}
 
-          {% endif %}
-        {% endfor %}
-        {% if nex_article != blank %}
-        <div class="fs-article-narrow-cont">
-          <h3>NEXT</h3>
-          <p>{{nex_article.title}}</p>
-        </div>
-        <div>
-          <a href="{{nex_article.url}}">
-            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="22" cy="22" r="21.5" transform="rotate(-180 22 22)" stroke="#5C5D60"/>
-              <path d="M18 30L26 21.5L18 13" stroke="#5C5D60" stroke-width="2" stroke-linecap="round"/>
-            </svg>                                 
-          </a>
-        </div>
-        {% endif %}
-      </div>
-    </div>
-  </header>
-  {% endif %}
-
+  
   {%- if blog.comments_enabled? -%}
     <div class="article-template__comment-wrapper background-secondary">
       <div id="comments" class="page-width page-width--narrow">
@@ -801,272 +747,6 @@
       ]
     },
     {
-      "name": "New image with text",
-      "type": "new_image_text",
-      "settings": [
-        {
-          "type": "checkbox",
-          "id": "side_banner1",
-          "label": "Side banner"
-        },
-        {
-          "type": "checkbox",
-          "id": "full_width1",
-          "label": "Full width"
-        },
-        {
-          "type": "image_picker",
-          "id": "image1",
-          "label": "t:sections.image-with-text.settings.image.label"
-        },
-        {
-          "type": "select",
-          "id": "height1",
-          "options": [
-            {
-              "value": "adapt",
-              "label": "t:sections.image-with-text.settings.height.options__1.label"
-            },
-            {
-              "value": "small",
-              "label": "t:sections.image-with-text.settings.height.options__2.label"
-            },
-            {
-              "value": "medium",
-              "label": "t:sections.image-with-text.settings.height.options__3.label"
-            },
-            {
-              "value": "large",
-              "label": "t:sections.image-with-text.settings.height.options__4.label"
-            }
-          ],
-          "default": "adapt",
-          "label": "t:sections.image-with-text.settings.height.label"
-        },
-        {
-          "type": "select",
-          "id": "desktop_image_width1",
-          "options": [
-            {
-              "value": "small",
-              "label": "t:sections.image-with-text.settings.desktop_image_width.options__1.label"
-            },
-            {
-              "value": "medium",
-              "label": "t:sections.image-with-text.settings.desktop_image_width.options__2.label"
-            },
-            {
-              "value": "large",
-              "label": "t:sections.image-with-text.settings.desktop_image_width.options__3.label"
-            }
-          ],
-          "default": "medium",
-          "label": "t:sections.image-with-text.settings.desktop_image_width.label",
-          "info": "t:sections.image-with-text.settings.desktop_image_width.info"
-        },
-        {
-          "type": "select",
-          "id": "layout1",
-          "options": [
-            {
-              "value": "image_first",
-              "label": "t:sections.image-with-text.settings.layout.options__1.label"
-            },
-            {
-              "value": "text_first",
-              "label": "t:sections.image-with-text.settings.layout.options__2.label"
-            }
-          ],
-          "default": "image_first",
-          "label": "t:sections.image-with-text.settings.layout.label",
-          "info": "t:sections.image-with-text.settings.layout.info"
-        },
-        {
-          "type": "select",
-          "id": "desktop_content_position1",
-          "options": [
-            {
-              "value": "top",
-              "label": "t:sections.image-with-text.settings.desktop_content_position.options__1.label"
-            },
-            {
-              "value": "middle",
-              "label": "t:sections.image-with-text.settings.desktop_content_position.options__2.label"
-            },
-            {
-              "value": "bottom",
-              "label": "t:sections.image-with-text.settings.desktop_content_position.options__3.label"
-            }
-          ],
-          "default": "top",
-          "label": "t:sections.image-with-text.settings.desktop_content_position.label"
-        },
-        {
-          "type": "select",
-          "id": "content_align1",
-          "label": "Content align",
-          "options": [
-            {
-              "value": "left",
-              "label": "Left"
-            },
-            {
-              "value": "middle",
-              "label": "Middle"
-            },
-            {
-              "value": "right",
-              "label": "Right"
-            }
-          ],
-          "default": "middle"
-        },
-        {
-          "type": "select",
-          "id": "desktop_content_alignment1",
-          "options": [
-            {
-              "value": "left",
-              "label": "t:sections.image-with-text.settings.desktop_content_alignment.options__1.label"
-            },
-            {
-              "value": "center",
-              "label": "t:sections.image-with-text.settings.desktop_content_alignment.options__2.label"
-            },
-            {
-              "value": "right",
-              "label": "t:sections.image-with-text.settings.desktop_content_alignment.options__3.label"
-            }
-          ],
-          "default": "left",
-          "label": "t:sections.image-with-text.settings.desktop_content_alignment.label"
-        },
-        {
-          "type": "select",
-          "id": "content_layout1",
-          "options": [
-            {
-              "value": "no-overlap",
-              "label": "t:sections.image-with-text.settings.content_layout.options__1.label"
-            },
-            {
-              "value": "overlap",
-              "label": "t:sections.image-with-text.settings.content_layout.options__2.label"
-            },
-            {
-              "value": "fit_content",
-              "label": "Fit content"
-            }
-          ],
-          "default": "no-overlap",
-          "label": "t:sections.image-with-text.settings.content_layout.label"
-        },
-        {
-          "type": "select",
-          "id": "color_scheme1",
-          "options": [
-            {
-              "value": "accent-1",
-              "label": "t:sections.all.colors.accent_1.label"
-            },
-            {
-              "value": "accent-2",
-              "label": "t:sections.all.colors.accent_2.label"
-            },
-            {
-              "value": "background-1",
-              "label": "t:sections.all.colors.background_1.label"
-            },
-            {
-              "value": "background-2",
-              "label": "t:sections.all.colors.background_2.label"
-            },
-            {
-              "value": "inverse",
-              "label": "t:sections.all.colors.inverse.label"
-            }
-          ],
-          "default": "background-1",
-          "label": "t:sections.all.colors.label"
-        },
-        {
-          "type": "header",
-          "content": "Mobile layout"
-        },
-        {
-          "type": "select",
-          "id": "mobile_layout1",
-          "options": [
-            {
-              "value": "image_first",
-              "label": "t:sections.image-with-text.settings.layout.options__1.label"
-            },
-            {
-              "value": "text_first",
-              "label": "t:sections.image-with-text.settings.layout.options__2.label"
-            }
-          ],
-          "default": "image_first",
-          "label": "t:sections.image-with-text.settings.layout.label",
-          "info": "t:sections.image-with-text.settings.layout.info"
-        },
-        {
-          "type": "select",
-          "id": "mobile_content_alignment1",
-          "options": [
-            {
-              "value": "left",
-              "label": "t:sections.image-with-text.settings.mobile_content_alignment.options__1.label"
-            },
-            {
-              "value": "center",
-              "label": "t:sections.image-with-text.settings.mobile_content_alignment.options__2.label"
-            },
-            {
-              "value": "right",
-              "label": "t:sections.image-with-text.settings.mobile_content_alignment.options__3.label"
-            }
-          ],
-          "default": "left",
-          "label": "t:sections.image-with-text.settings.mobile_content_alignment.label"
-        },
-        {
-          "type": "header",
-          "content": "t:sections.all.padding.section_padding_heading"
-        },
-        {
-          "type": "range",
-          "id": "padding_top1",
-          "min": 0,
-          "max": 100,
-          "step": 4,
-          "unit": "px",
-          "label": "t:sections.all.padding.padding_top",
-          "default": 36
-        },
-        {
-          "type": "range",
-          "id": "padding_bottom1",
-          "min": 0,
-          "max": 100,
-          "step": 4,
-          "unit": "px",
-          "label": "t:sections.all.padding.padding_bottom",
-          "default": 36
-        },
-        {
-          "type": "checkbox",
-          "id": "quote1",
-          "label": "Quote"
-        },
-        {
-          "type": "text",
-          "id": "max_width1",
-          "label": "Max width"
-        }
-      ]
-    },
-    {
       "type": "featured_product",
       "name": "Featured product"
     },
@@ -1203,6 +883,13 @@
           "type": "paragraph",
           "content": "t:sections.main-article.blocks.share.settings.title_info.content"
         }
+      ]
+    },
+    {
+      "type": "audio_list",
+      "name": "Audio list",
+      "settings": [
+        
       ]
     },
     {

@@ -1,202 +1,82 @@
 {
   "sections": {
-    "230bc92f-b8d9-46db-823f-3f07d0207a2e": {
-      "type": "education-image-banner",
-      "blocks": {
-        "template--18412851200292__230bc92f-b8d9-46db-823f-3f07d0207a2e-168320023775a68c6f-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "{{ article.metafields.custom.article_title.value }}",
-            "heading_size": "h0",
-            "uppercase": false
-          }
-        }
-      },
-      "block_order": [
-        "template--18412851200292__230bc92f-b8d9-46db-823f-3f07d0207a2e-168320023775a68c6f-0"
-      ],
-      "custom_css": [
-        "h2 {color: #fff;}",
-        ".banner__box .banner__heading + * {margin-top: 10px; color: #fff; font-size: 17px; font-weight: 600; margin-bottom: 30px;}",
-        "@media screen and (min-width: 750px) {h2 {font-size: 50px; }}"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/hero_cef57bf8-2b34-4aab-9897-76ff4113cbd4.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/Rectangle_5_77db9b9d-9a68-4d9b-9ddb-4e279bb6b80c.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "content_width": "",
-        "padding_left": "",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "accent-2",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true,
-        "center_mobile": false,
-        "full_mobile": false,
-        "content_padding": 20,
-        "padding_top": 0,
-        "padding_bottom": 36
-      }
-    },
     "main": {
       "type": "main-education",
       "blocks": {
+        "b9cc609f-41f6-4e81-9b23-842b59076e11": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": false
+          }
+        },
         "content": {
           "type": "content",
+          "settings": {}
+        },
+        "2a66733c-3e60-4fb6-a211-a548e11c7966": {
+          "type": "audio_list",
+          "settings": {}
+        },
+        "6b1dec1c-8a5a-4507-9932-dda22b937df2": {
+          "type": "about",
+          "settings": {}
+        },
+        "543c39e1-2e95-4a79-9cb1-c4edf029d1f7": {
+          "type": "image_text",
+          "settings": {
+            "side_banner": false,
+            "full_width": true,
+            "height": "adapt",
+            "desktop_image_width": "medium",
+            "layout": "image_first",
+            "desktop_content_position": "top",
+            "content_align": "middle",
+            "desktop_content_alignment": "left",
+            "content_layout": "no-overlap",
+            "color_scheme": "background-2",
+            "mobile_layout": "image_first",
+            "mobile_content_alignment": "left",
+            "padding_top": 100,
+            "padding_bottom": 36,
+            "quote": false,
+            "max_width": "450"
+          }
+        },
+        "0668294f-ea6d-4c55-b965-4206b5e4208e": {
+          "type": "featured_product",
           "settings": {}
         }
       },
       "block_order": [
-        "content"
-      ],
-      "custom_css": [
-        ".article-template__content {margin-top: 0 !important; padding-top: 0 !important;}"
-      ],
-      "settings": {}
-    },
-    "bcdf90f1-4086-4928-badd-e926a4348af7": {
-      "type": "main-education-header",
-      "disabled": true,
-      "blocks": {
-        "bd2cf5a6-09fe-455c-9f4d-55c3c33349dd": {
-          "type": "text",
-          "settings": {
-            "arti_blg": "education\/01-introduction-and-history-of-the-art-of-bop-drumming-method",
-            "ifram_ttl": "LESSON 02: LEARN ABOUT DRUMSTICKS",
-            "ifram_ttl2": "<p>In Lesson Two, you'll learn everything you need to know about DRUMSTICKS. From which size might be best to start out with to the 5 determining factors that makes a stick feel the way it does.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "bd2cf5a6-09fe-455c-9f4d-55c3c33349dd"
+        "b9cc609f-41f6-4e81-9b23-842b59076e11",
+        "content",
+        "2a66733c-3e60-4fb6-a211-a548e11c7966",
+        "6b1dec1c-8a5a-4507-9932-dda22b937df2",
+        "543c39e1-2e95-4a79-9cb1-c4edf029d1f7",
+        "0668294f-ea6d-4c55-b965-4206b5e4208e"
       ],
       "settings": {}
     },
-    "1fe0e7e1-77d0-4ca4-8967-bec6be240369": {
-      "type": "main-education-description",
-      "disabled": true,
-      "blocks": {
-        "a9051126-0fa6-4b0f-b97e-58b9830a753b": {
-          "type": "text",
-          "settings": {
-            "arti_blg": "education\/01-introduction-and-history-of-the-art-of-bop-drumming-method",
-            "ifram_id": "https:\/\/www.youtube.com\/embed\/wvRCKBlESGg",
-            "iframe_cap": "Image caption exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            "desc_txt": "<h2>LESSON 02: LEARN ABOUT DRUMSTICKS<\/h2><h3>LESSON 02: LEARN ABOUT DRUMSTICKS<\/h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p><ul><li>Lorem ipsum dolor sit amet<\/li><li>Lorem ipsum dolor sit amet<\/li><li>Lorem ipsum dolor sit amet<\/li><li>Lorem ipsum dolor sit amet<\/li><\/ul>",
-            "ifram_id2": "https:\/\/www.youtube.com\/embed\/wvRCKBlESGg",
-            "ifram_id3": "https:\/\/www.youtube.com\/embed\/wvRCKBlESGg",
-            "quote": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
-            "ifram_id4": "https:\/\/www.youtube.com\/embed\/wvRCKBlESGg",
-            "ifram_id5": "https:\/\/www.youtube.com\/embed\/wvRCKBlESGg",
-            "quote2": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
-            "quote3": "<p>“Caption\/quote Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "a9051126-0fa6-4b0f-b97e-58b9830a753b"
-      ],
-      "custom_css": [
-        ".article-template__content {margin-top: 0;}"
-      ],
-      "settings": {}
-    },
-    "f9a9ea75-a3fc-40a5-965f-6135c01a1bf6": {
-      "type": "main-education-question-section",
-      "disabled": true,
-      "blocks": {
-        "0bcf0836-a5f0-46c5-a962-4c34ffa2415a": {
-          "type": "text",
-          "settings": {
-            "arti_blg": "education\/01-introduction-and-history-of-the-art-of-bop-drumming-method",
-            "Artists_Title": "JOHN RILEY",
-            "artist_img": "shopify:\/\/shop_images\/cell_d481323b-25ef-4d04-b1f4-247edcd24b41.png",
-            "quest": "<ul><li>Critically acclaimed performer, author and teacher, John Riley has worked with the world's leading Jazz musicians for over 40 years. A four time GRAMMY award winner and 14 time nominee, John has played on hundreds of recordings and at major venues with Miles Davis, Dizzy Gillespie, Stan Getz, Woody Herman, John Scofield, Joe Lovano, Bob Mintzer, The Carnegie Hall Jazz Band, the Vanguard Jazz Orchestra and many others.<\/li><\/ul>",
-            "quest2": "<ul><li>John is the author of The Art of Bop Drumming, currently published in five languages, Beyond Bop Drumming, The Jazz Drummer's Workshop and the DVD The Master Drummer.<\/li><\/ul>",
-            "quest3": "<ul><li>John has a BM in Jazz Studies from the University of North Texas, 1975, and an MM in Jazz Studies from the Manhattan School of Music, 1985. He is on the faculty of Manhattan School of Music and Kutztown University, an Artist in Residence at the Amsterdam Conservatory in Holland and has given master classes around the world.<\/li><\/ul>"
-          }
-        }
-      },
-      "block_order": [
-        "0bcf0836-a5f0-46c5-a962-4c34ffa2415a"
-      ],
-      "settings": {}
-    },
-    "7fc132ac-a586-451f-8a71-acec26bc3eab": {
-      "type": "main-education-image-with-text",
-      "disabled": true,
-      "blocks": {
-        "b427f0d3-a0fa-46b3-900d-710394508e89": {
-          "type": "text",
-          "settings": {
-            "arti_blg": "education\/01-introduction-and-history-of-the-art-of-bop-drumming-method",
-            "get_imm": "shopify:\/\/shop_images\/cell_1.png",
-            "get_imm2": "JOHN RILEY'S SETUP:",
-            "get_imm3": "<p>1. 14\" K Dark This Hihat(pair)*<br\/>2. 22\" K Custom Dry Complex Ride*<br\/>3. 22\" K Custom Dry Ride (Re-Lathed and Hammered) *<br\/>4. 1970'S 20\" Swish *<br\/>5. 22\" K Constantinople Renaissance Ride<br\/>6. John Riley Artist Series Drumsticks<br\/><br\/><br\/>* May be prototype<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "b427f0d3-a0fa-46b3-900d-710394508e89"
-      ],
-      "settings": {}
-    },
-    "6c0669ad-94cc-40dd-8aca-4ef8667940f7": {
-      "type": "featured-collection",
+    "837bd2e7-89f9-478f-bdd4-a9e053e10c90": {
+      "type": "featured-collection-tagalys",
       "settings": {
-        "title": "Artist’s products",
+        "title": "ARTIST’S PRODUCTS",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "sticks-mallets-sticks",
-        "new_blank": true,
-        "products_to_show": 2,
-        "columns_desktop": 4,
         "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
         "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "show_vendor": true,
-        "show_rating": true,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
     },
     "552513de-3e1b-4347-be33-6227568d2ff3": {
-      "type": "featured-blog",
-      "disabled": true,
+      "type": "related-blog",
       "settings": {
         "heading": "Choose other videos to learn more",
         "heading_size": "h1",
-        "blog": "zildjian-inspirit-digest",
-        "post_limit": 3,
-        "columns_desktop": 3,
-        "color_scheme": "background-1",
-        "show_image": true,
-        "show_date": false,
-        "show_author": false,
-        "button_label": "",
-        "button_link": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "030ccc9c-2903-431d-ae0b-d62cfd346162": {
-      "type": "education-featured-blog",
-      "settings": {
-        "heading": "Choose other videos to learn more",
-        "heading_size": "h1",
-        "blog": "zildjian-inspirit-digest",
         "post_limit": 3,
         "columns_desktop": 3,
         "color_scheme": "background-1",
@@ -211,14 +91,8 @@
     }
   },
   "order": [
-    "230bc92f-b8d9-46db-823f-3f07d0207a2e",
     "main",
-    "bcdf90f1-4086-4928-badd-e926a4348af7",
-    "1fe0e7e1-77d0-4ca4-8967-bec6be240369",
-    "f9a9ea75-a3fc-40a5-965f-6135c01a1bf6",
-    "7fc132ac-a586-451f-8a71-acec26bc3eab",
-    "6c0669ad-94cc-40dd-8aca-4ef8667940f7",
-    "552513de-3e1b-4347-be33-6227568d2ff3",
-    "030ccc9c-2903-431d-ae0b-d62cfd346162"
+    "837bd2e7-89f9-478f-bdd4-a9e053e10c90",
+    "552513de-3e1b-4347-be33-6227568d2ff3"
   ]
 }

@@ -26,29 +26,6 @@
             "text_alignment_mobile": "center"
           }
         },
-        "d550508a-b88a-4dff-a7ad-bb1c6d27c684": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Zildjian_Website_Horizontal.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Zildjian_Website_Vertical.jpg",
-            "video": "",
-            "content_width": "450",
-            "heading": "Dark and Rich",
-            "uppercase": true,
-            "heading_size": "h0",
-            "heading_color": "",
-            "subheading": "",
-            "button_label": "Shop K Family",
-            "link": "shopify:\/\/pages\/k-family-category",
-            "button_style_secondary": false,
-            "box_align": "middle-left",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
-          }
-        },
         "1c0db94a-65c0-4189-a840-d44eba8c3c9a": {
           "type": "slide",
           "settings": {
@@ -76,7 +53,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/Art-Blakey-Tee.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Art-Blakey-Tee-Mobile-Resized.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Art-Blakey-Tee-Mobile.jpg",
             "video": "",
             "content_width": "355",
             "heading": "Zildjian Legends Art Blakey Tee",
@@ -90,7 +67,7 @@
             "box_align": "middle-left",
             "show_text_box": false,
             "text_alignment": "left",
-            "image_overlay_opacity": 10,
+            "image_overlay_opacity": 0,
             "color_scheme": "background-1",
             "text_alignment_mobile": "center"
           }
@@ -98,7 +75,6 @@
       },
       "block_order": [
         "template--18142514905380__d75dd4ef-8e47-487d-9740-f50edc07b08d-16790924773f344ee0-0",
-        "d550508a-b88a-4dff-a7ad-bb1c6d27c684",
         "1c0db94a-65c0-4189-a840-d44eba8c3c9a",
         "dfcc2a23-0043-442f-b782-0bbbaf4d30d6"
       ],
@@ -707,7 +683,7 @@
       "settings": {
         "heading": "TAKE YOUR PLAYING TO THE NEXT LEVEL",
         "heading_size": "h1",
-        "blog": "rhythm-cards",
+        "blog": "zildjian-workout-practice-and-learn-from-the-zildjian-artists",
         "post_limit": 3,
         "columns_desktop": 3,
         "color_scheme": "background-1",

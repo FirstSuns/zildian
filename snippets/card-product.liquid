@@ -139,7 +139,7 @@
             {% for tag in card_product.tags %}
               {% if tag contains '_label:' %}
                 {% assign badge = tag | remove: '_label:' %}
-                <span class="badge badge--top-right {{badge | handleize }} color-{{ settings.sale_badge_color_scheme }}">
+                <span class="badge 2 badge--top-right {{badge | handleize }} color-{{ settings.sale_badge_color_scheme }}">
                   {{badge}}
                 </span>
               {% endif %}
@@ -315,13 +315,13 @@
             </span>
           {%- endif -%}
           {% for tag in card_product.tags %}
-              {% if tag contains '_label:' %}
-                {% assign badge = tag | remove: '_label:' %}
-                <span class="badge badge--top-right {{badge | handleize }} color-{{ settings.sale_badge_color_scheme }}">
-                  {{badge}}
-                </span>
-              {% endif %}
-            {% endfor %}
+            {% if tag contains '_label:' %}
+              {% assign badge = tag | remove: '_label:' %}
+              <span class="badge 1 badge--top-right {{badge | handleize }} color-{{ settings.sale_badge_color_scheme }}">
+                {{badge}}
+              </span>
+            {% endif %}
+          {% endfor %}
         </div>
       </div>
     </div>

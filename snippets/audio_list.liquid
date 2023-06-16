@@ -1,0 +1,216 @@
+
+{% if article.metafields.global.audio_1 != blank %}
+{{'custom-audio-playlist.scss.css' | asset_url | stylesheet_tag }}
+{% assign audio_lists = article.metafields.global.audio_1 | newline_to_br | split: '<--/--><br />' %} 
+<div class="player-size page-width page-width--narrow">
+  <div class="player-wrap track-view light" data-url="https://vicfirth.zildjian.com/media/sounds/01bronzeapp.mp3" data-title="All This Is - Joe L.'s Studio" data-artist="Mythium">
+    <h2 class="title center">{{article.metafields.global.audio_title_1 | newline_to_br | replace: '<br />', '<span>' | append: '</span>' }}</h2>
+    {% if article.metafields.global.audio_title_image_1 != blank %}
+      <img src="{{article.metafields.global.audio_title_image_1 | img_url: '2048x'}}" loading="lazy">
+    {% endif %}
+    <audio preload></audio>
+    <div class="player">
+      <div class="controls">
+        <div class="play-pause">
+          <div class="play-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150">
+              <path d="M43.3,11.1C36.6,7.1 30.3,9.6 30.3,18.6C30.3,27.6 30.3,121.3 30.3,131.7C30.3,142.1 35.6,144 43.6,139.7C51.6,134.7 133.5,87.5 141.5,83C149.3,78.5 149,72.5 141.5,68.2C134,63.8 52.2,16.4 43.3,11.1Z"/>
+            </svg>
+          </div>
+          <div class="pause-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+              <rect width="18%" height="90%" x="22.5%" y="5%" rx="5%" ry="5%"/>
+              <rect width="18%" height="90%" x="62.5%" y="5%" rx="5%" ry="5%"/>
+            </svg>
+          </div>
+        </div>
+        <div class="content">
+          <div class="info">
+            <p class="artist-text ellipsis"></p>
+            <p class="title-text"></p>
+          </div>
+          <div class="prev-next">
+            <div class="prev-button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M8.7 12L22 18.9V5.1L8.7 12z"/>
+                <path d="M0 12l11.3 6.9V5.1L0 12z"/>
+              </svg>
+            </div>
+            <div class="next-button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M15.3 12L2 18.9V5.1L15.3 12z"/>
+                <path d="M24 12l-11.3 6.9V5.1L24 12z"/>
+              </svg>
+            </div>
+            <div class="duration">
+              <div class="current-time">0:00:00</div> / <div class="duration-time">0:00:00</div>
+            </div>
+          </div>
+        </div>
+        <div class="seek-wrap"><input type="range" min="0" max="100" step=".1" value="0" class="seek-bar"></div>     
+      </div>
+    </div>
+    <div class="playlist-wrap">
+      <ol>
+        {% for audio_info_text in audio_lists %}
+          {% assign content = audio_info_text | split: '<br />' %}
+          {% assign audios_title = content[0] %}
+          {% if content.size > 3 and forloop.last != true %}
+            {% assign audios_text = content[1] %}
+            {% assign audios_url = content[2] %}
+          {% else %}
+          {% assign audios_text = '' %}
+          {% assign audios_url = content[1] %}
+          {% endif %}
+          <li><a href="{{audios_url}}" data-artist="{{audios_text}}">{{audios_title}}</a></li>
+        {% endfor %}
+        
+      </ol>
+    </div>
+  </div>
+</div>
+{% endif %}
+<div class="player-size page-width">
+  <div class="sub-lists">
+    {% if article.metafields.global.audio_2 != blank %}
+    {% assign audio_lists = article.metafields.global.audio_2 | newline_to_br | split: '<--/--><br />' %} 
+    <div class="player-wrap track-view light" data-url="https://vicfirth.zildjian.com/media/sounds/01bronzeapp.mp3" data-title="All This Is - Joe L.'s Studio" data-artist="Mythium">
+      <h2 class="title center">{{article.metafields.global.audito_title_2 | newline_to_br | replace: '<br />', '<span>' | append: '</span>' }}</h2>
+      {% if article.metafields.global.audio_title_image_2 != blank %}
+        <img src="{{article.metafields.global.audio_title_image_2 | img_url: '2048x'}}" loading="lazy">
+      {% endif %}
+      <audio preload></audio>
+      <div class="player">
+        <div class="controls">
+          <div class="play-pause">
+            <div class="play-button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150">
+                <path d="M43.3,11.1C36.6,7.1 30.3,9.6 30.3,18.6C30.3,27.6 30.3,121.3 30.3,131.7C30.3,142.1 35.6,144 43.6,139.7C51.6,134.7 133.5,87.5 141.5,83C149.3,78.5 149,72.5 141.5,68.2C134,63.8 52.2,16.4 43.3,11.1Z"/>
+              </svg>
+            </div>
+            <div class="pause-button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                <rect width="18%" height="90%" x="22.5%" y="5%" rx="5%" ry="5%"/>
+                <rect width="18%" height="90%" x="62.5%" y="5%" rx="5%" ry="5%"/>
+              </svg>
+            </div>
+          </div>
+          <div class="content">
+            <div class="info">
+              <p class="artist-text ellipsis"></p>
+              <p class="title-text"></p>
+            </div>
+            <div class="prev-next">
+              <div class="prev-button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M8.7 12L22 18.9V5.1L8.7 12z"/>
+                  <path d="M0 12l11.3 6.9V5.1L0 12z"/>
+                </svg>
+              </div>
+              <div class="next-button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M15.3 12L2 18.9V5.1L15.3 12z"/>
+                  <path d="M24 12l-11.3 6.9V5.1L24 12z"/>
+                </svg>
+              </div>
+              <div class="duration">
+                <div class="current-time">0:00:00</div> / <div class="duration-time">0:00:00</div>
+              </div>
+            </div>
+          </div>
+          <div class="seek-wrap"><input type="range" min="0" max="100" step=".1" value="0" class="seek-bar"></div>     
+        </div>
+      </div>
+      <div class="playlist-wrap">
+        <ol>
+          {% for audio_info_text in audio_lists %}
+            {% assign content = audio_info_text | split: '<br />' %}
+            {% assign audios_title = content[0] %}
+            {% if content.size > 3 and forloop.last != true %}
+              {% assign audios_text = content[1] %}
+              {% assign audios_url = content[2] %}
+            {% else %}
+            {% assign audios_text = '' %}
+            {% assign audios_url = content[1] %}
+            {% endif %}
+            <li><a href="{{audios_url}}" data-artist="{{audios_text}}">{{audios_title}}</a></li>
+          {% endfor %}
+          
+        </ol>
+      </div>
+    </div>
+    {% endif %}
+    {% if article.metafields.global.audio_3 != blank %}
+    {% assign audio_lists = article.metafields.global.audio_3 | newline_to_br | split: '<--/--><br />' %} 
+    <div class="player-wrap track-view light" data-url="https://vicfirth.zildjian.com/media/sounds/01bronzeapp.mp3" data-title="All This Is - Joe L.'s Studio" data-artist="Mythium">
+      <h2 class="title center">{{article.metafields.global.audio_title_3 | newline_to_br | replace: '<br />', '<span>' | append: '</span>' }}</h2>
+      {% if article.metafields.global.audio_title_image_3 != blank %}
+        <img src="{{article.metafields.global.audio_title_image_3 | img_url: '2048x' }}" loading="lazy">
+      {% endif %}
+      <audio preload></audio>
+      <div class="player">
+        <div class="controls">
+          <div class="play-pause">
+            <div class="play-button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150">
+                <path d="M43.3,11.1C36.6,7.1 30.3,9.6 30.3,18.6C30.3,27.6 30.3,121.3 30.3,131.7C30.3,142.1 35.6,144 43.6,139.7C51.6,134.7 133.5,87.5 141.5,83C149.3,78.5 149,72.5 141.5,68.2C134,63.8 52.2,16.4 43.3,11.1Z"/>
+              </svg>
+            </div>
+            <div class="pause-button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                <rect width="18%" height="90%" x="22.5%" y="5%" rx="5%" ry="5%"/>
+                <rect width="18%" height="90%" x="62.5%" y="5%" rx="5%" ry="5%"/>
+              </svg>
+            </div>
+          </div>
+          <div class="content">
+            <div class="info">
+              <p class="artist-text ellipsis"></p>
+              <p class="title-text"></p>
+            </div>
+            <div class="prev-next">
+              <div class="prev-button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M8.7 12L22 18.9V5.1L8.7 12z"/>
+                  <path d="M0 12l11.3 6.9V5.1L0 12z"/>
+                </svg>
+              </div>
+              <div class="next-button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M15.3 12L2 18.9V5.1L15.3 12z"/>
+                  <path d="M24 12l-11.3 6.9V5.1L24 12z"/>
+                </svg>
+              </div>
+              <div class="duration">
+                <div class="current-time">0:00:00</div> / <div class="duration-time">0:00:00</div>
+              </div>
+            </div>
+          </div>
+          <div class="seek-wrap"><input type="range" min="0" max="100" step=".1" value="0" class="seek-bar"></div>     
+        </div>
+      </div>
+      <div class="playlist-wrap">
+        <ol>
+          {% for audio_info_text in audio_lists %}
+            {% assign content = audio_info_text | split: '<br />' %}
+            {% assign audios_title = content[0] %}
+            {% if content.size > 3 and forloop.last != true %}
+              {% assign audios_text = content[1] %}
+              {% assign audios_url = content[2] %}
+            {% else %}
+            {% assign audios_text = '' %}
+            {% assign audios_url = content[1] %}
+            {% endif %}
+            <li><a href="{{audios_url}}" data-artist="{{audios_text}}">{{audios_title}}</a></li>
+          {% endfor %}
+          
+        </ol>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</div>
+{{ 'custom-audio-playlist.js' | asset_url | script_tag }}
+
+
+

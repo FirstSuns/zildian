@@ -92,7 +92,7 @@
         {% for tag in product.tags %}
           {% if tag contains '_label:' %}
             {% assign badge = tag | remove: '_label:' %}
-            <span class="badge badge--top-right {{badge | handleize }} color-{{ settings.sale_badge_color_scheme }}">
+            <span class="badge p1 badge--top-right {{badge | handleize }} color-{{ settings.sale_badge_color_scheme }}">
               {{badge}}
             </span>
           {% endif %}

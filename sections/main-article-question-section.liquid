@@ -1,123 +1,128 @@
-
 {% if article.metafields.global.qestion_1 == blank %}
-<style>
-#shopify-section-{{ section.id }} .article-template{
-  display: none;
-}
-.rich-text.content-container{
-  display: none;
-}
-.new-art-imm{
-  display: none;
-}
-</style>
+  <style>
+    #shopify-section-{{ section.id }}.article-template {
+      display: none;
+    }
+    .rich-text.content-container {
+      display: none;
+    }
+    .new-art-imm {
+      display: none;
+    }
+  </style>
 {% endif %}
 
 <article class="article-template">
-<div m1 class="about-artist-section page-width--narrow page-width">
-  <div class="grid">
-    {% for block in section.blocks %}
-      {% assign getblog = block.settings.arti_blg %}
-      {% assign artttl = article.title %}
-      {% if getblog.title == getblog.title  %}
-        <div class="title">
-          {% assign q_num = 1 %}
-          {% if article.metafields.global.qestion_1 !=blank %}
-           {% assign q_num = 1 %}
-          {% endif %}
-          {% if article.metafields.global.qestion_2 !=blank %}
-           {% assign q_num = 2 %}
-          {% endif %}
-          {% if article.metafields.global.question_3 !=blank %}
-            {% assign q_num = 3 %}
-          {% endif %}
-          <h2 class="h1">{{block.settings.Artists_Title | replace: ' ', '<br>'}}'s<br> IN <span>{{q_num}}</span></h2>
-        </div>
-        <div class="image">
-          <div class="media" style="padding-bottom: 130%;">
-            {% comment %} <img src="{{block.settings.artist_img | img_url: 'master'}}" loading="lazy" width="356" height="485" > {% endcomment %}
-            <img src="{{article.image | img_url: 'master'}}" loading="lazy" width="356" height="485" >
+  <div m1 class="about-artist-section page-width--narrow page-width">
+    <div class="grid">
+      {% for block in section.blocks %}
+        {% assign getblog = block.settings.arti_blg %}
+        {% assign artttl = article.title %}
+        {% if getblog.title == getblog.title %}
+          <div class="title">
+            {% assign q_num = 1 %}
+            {% if article.metafields.global.qestion_1 != blank %}
+              {% assign q_num = 1 %}
+            {% endif %}
+            {% if article.metafields.global.qestion_2 != blank %}
+              {% assign q_num = 2 %}
+            {% endif %}
+            {% if article.metafields.global.question_3 != blank %}
+              {% assign q_num = 3 %}
+            {% endif %}
+            <h2 class="h1 small-hide medium-hide">{{ block.settings.Artists_Title | replace: ' ', '<br>' }}'s<br> IN
+              <span>{{ q_num }}</span>
+            </h2>
+            <h2 class="h1 large-up-hide">{{ block.settings.Artists_Title }}'s<br> IN
+              <span>{{ q_num }}</span>
+            </h2>
           </div>
-        </div>
-        <div class="content">
-          <div class="info">
-            <ul>
-              {% if article.metafields.global.qestion_1 !=blank %}
-                <li>
-                <p class="first-pp">WHAT INSPIRES YOU?</p>
-                <p>{{article.metafields.global.qestion_1}}</p>
-                </li>
-              {% endif %}
-              {% if article.metafields.global.qestion_2 !=blank %}
-                <li>
-                <p class="first-pp">WORDS OF WISDOM FOR THE NEXT GENERATION OF DRUMMERS</p>
-                <p>{{article.metafields.global.qestion_2}}</p>
-                </li>
-              {% endif %}
-              {% if article.metafields.global.question_3 !=blank %}
-                <li>
-                <p class="first-pp">FAVORITE ZILDJIAN CYMBAL/COMBO</p>
-                <p>{{article.metafields.global.question_3}}</p>
-                </li>
-              {% endif %}
-          
-              {% comment %} <li>{{ block.settings.quest }}</li>
-              <li>{{ block.settings.quest2 }}</li>
-              <li>{{ block.settings.quest3 }}</li> {% endcomment %}
-            </ul>
+          <div class="image">
+            <div class="media" style="padding-bottom: 130%;">
+              {% comment %} <img src="{{block.settings.artist_img | img_url: 'master'}}" loading="lazy" width="356" height="485" > {% endcomment %}
+              <img
+                src="{{article.image | img_url: 'master'}}"
+                loading="lazy"
+                width="356"
+                height="485">
+            </div>
           </div>
-        </div>
+          <div class="content">
+            <div class="info">
+              <ul>
+                {% if article.metafields.global.qestion_1 != blank %}
+                  <li>
+                    <p class="first-pp">WHAT INSPIRES YOU?</p>
+                    <p>{{ article.metafields.global.qestion_1 }}</p>
+                  </li>
+                {% endif %}
+                {% if article.metafields.global.qestion_2 != blank %}
+                  <li>
+                    <p class="first-pp">WORDS OF WISDOM FOR THE NEXT GENERATION OF DRUMMERS</p>
+                    <p>{{ article.metafields.global.qestion_2 }}</p>
+                  </li>
+                {% endif %}
+                {% if article.metafields.global.question_3 != blank %}
+                  <li>
+                    <p class="first-pp">FAVORITE ZILDJIAN CYMBAL/COMBO</p>
+                    <p>{{ article.metafields.global.question_3 }}</p>
+                  </li>
+                {% endif %}
+
+                {% comment %} <li>{{ block.settings.quest }}</li>
+                <li>{{ block.settings.quest2 }}</li>
+                <li>{{ block.settings.quest3 }}</li> {% endcomment %}
+              </ul>
+            </div>
+          </div>
         {% endif %}
-    {% endfor %}
+      {% endfor %}
+    </div>
   </div>
-</div>
 </article>
 {% schema %}
   {
     "name": "Artist Question",
     "blocks": [
-        {
-          "type": "text",
-          "name": "Description Portion",
-          "settings":[
-            {
-              "type": "article",
-              "id": "arti_blg",
-              "label": "Select Article"
-            },
-            {
-              "type": "header",
-              "content": "About Artist"
-            },
-            {
-              "type": "text",
-              "id": "Artists_Title",
-              "label": "Title"
-            },
-            {
-              "type": "image_picker",
-              "id": "artist_img",
-              "label": "Image"
-            },
-            {
-              "type": "html",
-              "id": "quest",
-              "label": "Question text 1"
-            },
-            {
-              "type": "html",
-              "id": "quest2",
-              "label": "Question text 2"
-            },
-            {
-              "type": "html",
-              "id": "quest3",
-              "label": "Question text 3"
-            }
-          ]
-        }
+      {
+        "type": "text",
+        "name": "Description Portion",
+        "settings": [
+          {
+            "type": "article",
+            "id": "arti_blg",
+            "label": "Select Article"
+          },
+          {
+            "type": "header",
+            "content": "About Artist"
+          },
+          {
+            "type": "text",
+            "id": "Artists_Title",
+            "label": "Title"
+          },
+          {
+            "type": "image_picker",
+            "id": "artist_img",
+            "label": "Image"
+          }, {
+            "type": "html",
+            "id": "quest",
+            "label": "Question text 1"
+          }, {
+            "type": "html",
+            "id": "quest2",
+            "label": "Question text 2"
+          }, {
+            "type": "html",
+            "id": "quest3",
+            "label": "Question text 3"
+          }
+        ]
+      }
     ],
-    "presets":[
+    "presets": [
       {
         "name": "Artist About Section"
       }
