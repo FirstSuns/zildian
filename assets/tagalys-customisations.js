@@ -1351,7 +1351,8 @@ TagalysCustomizations.initSimilarProductsRecommendation = function () {
                 perPage: {
                   300: 1.5,
                   600: 1.5,
-                  900: 2,
+                  700: 3,
+                  900: 3,
                   1200: 3,
                   1440: 3,
                   2560: 3

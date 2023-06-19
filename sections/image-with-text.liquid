@@ -59,13 +59,7 @@
               {{
                 product.metafields.custom.lifestyle_imagelarge
                 | image_url: width: 1500
-                | image_tag: loading: 'lazy', sizes: sizes, widths: '165, 360, 535, 750, 1070, 1500', class: 'small-hide'
-              }}
-              {{
-                product.metafields.custom.lifestyle_imagelarge
-                | default: section.settings.image
-                | image_url: width: 1500
-                | image_tag: loading: 'lazy', sizes: sizes, widths: '165, 360, 535, 750, 1070, 1500', class: 'medium-hide large-up-hide'
+                | image_tag: loading: 'lazy', sizes: sizes, widths: '165, 360, 535, 750, 1070, 1500'
               }}
             {% else %}
               {{

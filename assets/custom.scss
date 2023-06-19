@@ -329,6 +329,7 @@ html {
                     .pr-snippet-stars {
                       .pr-rating-stars {
                         margin-left: -2px;
+                        white-space: nowrap;
                         .pr-star-v4 {
                           &.pr-star-v4-0-filled {
                             background-image: url('./empty-star.png');
@@ -397,6 +398,7 @@ html {
     .pr-snippet-stars {
       .pr-rating-stars {
         margin-left: -2px;
+        white-space: nowrap;
         .pr-star-v4 {
           &.pr-star-v4-0-filled {
             background-image: url('./empty-star.png');
@@ -427,6 +429,7 @@ html {
         .pr-snippet-stars {
           .pr-rating-stars {
             margin-left: -2px;
+            white-space: nowrap;
             .pr-star-v4 {
               &.pr-star-v4-0-filled {
                 background-image: url('./empty-star.png');
@@ -647,12 +650,6 @@ body.hide-price .price, body.hide-price .buy-buttons-box, body.hide-price .produ
 .boost-pfs-action-list-enabled {
   padding-bottom: 0px !important;
 }
-}
-
-@media (max-width: 1100px){
-  .boost-pfs-filter-right-col {
-      padding-left: unset !important;
-  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1015,6 +1012,7 @@ body.hide-price .price, body.hide-price .buy-buttons-box, body.hide-price .produ
                     .pr-snippet-stars {
                       .pr-rating-stars {
                         margin-left: -2px;
+                        white-space: nowrap;
                         .pr-star-v4 {
                           &.pr-star-v4-0-filled {
                             background-image: url('./empty-star.png');
@@ -1275,4 +1273,8 @@ tab-component {
 
 [data-testid="review-image-display"] {
   // max-width: 500px;
+}
+
+.pr-category-snippet__total {
+  white-space: nowrap;
 }

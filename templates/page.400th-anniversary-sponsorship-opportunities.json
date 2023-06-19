@@ -1147,27 +1147,8 @@
         "template--19042043822372__68c942e6-c365-41b7-9949-5dc3f589d49d-1686220806041c50d0-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Sponosorship-Info-2.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Sponosorship-Info-2.jpg",
-            "badge": "",
-            "title": "",
-            "heading_size": "h3",
-            "heading_color": "",
-            "download_label": "",
-            "download_link": "",
-            "text": "",
-            "link_label": "",
-            "link": "",
-            "full_link": false,
-            "link_list": "",
-            "blank_link": false
-          }
-        },
-        "template--19042043822372__68c942e6-c365-41b7-9949-5dc3f589d49d-1686220806041c50d0-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Sponosorship-Info-1.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Sponosorship-Info-1.jpg",
+            "image": "shopify:\/\/shop_images\/Untitled-3.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Untitled-3.jpg",
             "badge": "",
             "title": "",
             "heading_size": "h3",
@@ -1184,8 +1165,7 @@
         }
       },
       "block_order": [
-        "template--19042043822372__68c942e6-c365-41b7-9949-5dc3f589d49d-1686220806041c50d0-0",
-        "template--19042043822372__68c942e6-c365-41b7-9949-5dc3f589d49d-1686220806041c50d0-1"
+        "template--19042043822372__68c942e6-c365-41b7-9949-5dc3f589d49d-1686220806041c50d0-0"
       ],
       "settings": {
         "side_banner": false,
@@ -1224,7 +1204,7 @@
           "settings": {
             "heading": "<p>SPONSORSHIPS INQUIRIES<\/p>",
             "heading_size": "h1",
-            "max_width": "800"
+            "max_width": ""
           }
         },
         "template--19042043822372__6183ac13-1753-43c5-bd7e-c56fcabcc6db-1684662601b8b1f698-2": {
@@ -1243,7 +1223,7 @@
         "df5b0c08-a475-4032-aa63-4eb8b08d635c": {
           "type": "text",
           "settings": {
-            "text": "<p>Contact Nancy Smith at nsmith@zildjian.com<br\/> 781-427-6939 | Line Extension: (402)<br\/>22 Longwater Drive, Norwell, MA 02061<\/p>",
+            "text": "<h3>Contact Nancy Smith at nsmith@zildjian.com <\/h3><h3>781-427-6939 | Line Extension: (402)<\/h3><h3>22 Longwater Drive, Norwell, MA 02061<\/h3>",
             "hide_mobile": false,
             "max_width": ""
           }
@@ -1254,9 +1234,7 @@
         "template--19042043822372__6183ac13-1753-43c5-bd7e-c56fcabcc6db-1684662601b8b1f698-2",
         "df5b0c08-a475-4032-aa63-4eb8b08d635c"
       ],
-      "custom_css": [
-        "@media screen and (max-width: 749px) {.h1 {font-size: 24px; }}"
-      ],
+      "custom_css": [],
       "settings": {
         "desktop_content_position": "center",
         "contnet_type": "list",

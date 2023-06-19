@@ -39,7 +39,8 @@
           }
           img {
             @media screen and (max-width: 749px) {
-              width: 186px;
+              width: 93px;
+              image-rendering: -webkit-optimize-contrast;
             }
           }
           @media screen and (min-width: 750px) {

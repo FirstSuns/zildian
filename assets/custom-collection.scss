@@ -1,6 +1,10 @@
 #CollectionProductGrid {
   .collection  {
     .boost-pfs-filter-left-col {
+      @media screen and (min-width: 768px) {
+        min-width: 300px;
+      }
+      
       .filter-heading {
         @media screen and (max-width: 749px) {
           display: none;
@@ -118,6 +122,9 @@
       }
     }
     .boost-pfs-filter-right-col {
+      @media screen and (min-width: 768px) {
+        max-width: calc(100% - 300px);
+      }
       .image-with-text {
         margin-top: 1rem;
         .image-with-text__text-item {
