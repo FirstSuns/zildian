@@ -914,7 +914,8 @@
         "607a6041-cebf-4e98-a36b-62e258919a10"
       ],
       "custom_css": [
-        "@media screen and (min-width: 770px) {.multicolumn-card__info {position: relative; } .multicolumn-card__info h3 {color: #000; }}"
+        "@media screen and (min-width: 770px) {.multicolumn-card__info {position: relative; } .multicolumn-card__info h3 {color: #000; }}",
+        "@media screen and (max-width: 768px) {.multicolumn .multicolumn-list .multicolumn-list__item .multicolumn-card .multicolumn-card__image-wrapper .media {padding-bottom: 100%; }}"
       ],
       "settings": {
         "side_banner": false,

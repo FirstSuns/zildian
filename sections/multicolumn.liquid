@@ -104,8 +104,10 @@
                           {% if section.settings.image_ratio == 'adapt' %}
                           --padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;
                           {% endif %}
-                          {% if section.settings.mobile_image_ratio == 'adapt' %}
-                          --mobile_padding-bottom: {{ 1 | divided_by: mobile_highest_ratio | times: 100 }}%;
+                          {% if block.settings.mobile_image != blank %}
+                            {% if section.settings.mobile_image_ratio == 'adapt' %}
+                            --mobile_padding-bottom: {{ 1 | divided_by: mobile_highest_ratio | times: 100 }}%;
+                            {% endif %}
                           {% endif %}
                         "
                     >
@@ -122,6 +124,7 @@
                           widths: '275, 550, 710, 1420',
                           class: 'multicolumn-card__image small-hide'
                       }}
+                      {% if block.settings.mobile_image != blank %}
                       {{
                         block.settings.mobile_image
                         | image_url: width: 1420
@@ -131,6 +134,17 @@
                           widths: '275, 550, 710, 1420',
                           class: 'multicolumn-card__image medium-hide large-up-hide'
                       }}
+                      {% else %}
+                      {{
+                        block.settings.image
+                        | image_url: width: 1420
+                        | image_tag:
+                          loading: 'lazy',
+                          sizes: sizes,
+                          widths: '275, 550, 710, 1420',
+                          class: 'multicolumn-card__image medium-hide large-up-hide'
+                      }}
+                      {% endif %}
                     </div>
                   </div>
                 {%- endif -%}
