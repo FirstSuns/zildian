@@ -47,21 +47,30 @@
           class="blog__posts articles-wrapper contains-card contains-card--article{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid grid--peek grid--2-col-tablet grid--{{ section.settings.columns_desktop }}-col-desktop slider {% if posts_displayed > 2 %}slider--tablet{% else %}slider--mobile{% endif %}"
           role="list"
         >
+          {% assign cur_article = article %}
+          {% assign cur_limit = section.settings.post_limit %}
           {%- for article in blog.articles limit: section.settings.post_limit -%}
-            <li
-              id="Slide-{{ section.id }}-{{ forloop.index }}"
-              class="blog__post grid__item article slider__slide slider__slide--full-width"
-            >
-              {% render 'article-card',
-                blog: section.settings.blog,
-                article: article,
-                media_aspect_ratio: 1.66,
-                show_image: section.settings.show_image,
-                show_date: section.settings.show_date,
-                show_author: section.settings.show_author,
-                show_excerpt: false
-              %}
-            </li>
+            {% if article.title == cur_article.title %}
+              {% assign cur_limit = cur_limit | plus: 1 %}
+            {% endif %}
+          {%- endfor -%}
+          {%- for article in blog.articles limit: cur_limit -%}
+           {% unless article.title == cur_article.title %}
+              <li
+                id="Slide-{{ section.id }}-{{ forloop.index }}"
+                class="blog__post grid__item article slider__slide slider__slide--full-width"
+              >
+                {% render 'article-card',
+                  blog: section.settings.blog,
+                  article: article,
+                  media_aspect_ratio: 1.66,
+                  show_image: section.settings.show_image,
+                  show_date: section.settings.show_date,
+                  show_author: section.settings.show_author,
+                  show_excerpt: false
+                %}
+              </li>
+            {% endunless %}
           {%- endfor -%}
         </ul>
         {%- if posts_exceed_limit -%}

@@ -485,7 +485,6 @@ if (typeof boostPFSThemeConfig !== 'undefined') {
     if (data.filter != undefined) {
       for (let i = 0; i < data.filter.options.length; i++) {
         const option = data.filter.options[i];
-        console.log(option)
         if (option.displayType == 'list') {
           if (option.values != null && option.values.length == 1 && option.values[0].doc_count == data.total_product) {
             document.querySelectorAll('.boost-pfs-filter-option').forEach(filter => {
@@ -501,5 +500,14 @@ if (typeof boostPFSThemeConfig !== 'undefined') {
     jQ('.boost-pfs-filter-total-product').html(data.total_product + ' items'); 
   };
 
+  var originalApplyFilter = FilterOptionItem.prototype.onApplyFilter;
+  FilterOptionItem.prototype.onApplyFilter = function() {
+    originalApplyFilter.call(this);
+console.log(this.$productList);
+    window.scrollTo({
+        top: jQ('.boost-pfs-filter-products').offset().top - 150,
+        behavior: 'smooth'
+    });
+  }
   /************************** END BUILD TOOLBAR **************************/
 })();

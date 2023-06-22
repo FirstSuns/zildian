@@ -115,6 +115,76 @@
       {% endif %}
     </div>
     {% endif %}
+    {% if product.metafields.custom.more_to_explorer_video3 != blank %}
+    <div e1 class="fs-image-with-text__media-item image-with-text__media-item  grid grid--1-col gradient color-{{ section.settings.color_scheme }} global-media-settings container-image--{{section.settings.container_image}} image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item">
+      <div class="grid__item" >
+        <div
+          class="image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
+          {% if section.settings.height == 'adapt' and section.settings.image != blank %}
+            style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%; max-width: {{section.settings.media_max_width}}px;"
+          {% endif %}
+        >
+          {%- if section.settings.image != blank -%}
+            {%- capture sizes -%}
+              (min-width: {{ settings.page_width }}px) 2048px,
+              (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
+            {%- endcapture -%}
+            {% if product.metafields.custom.more_to_explorer_video3 != blank %}
+              {% include 'pdp-explorer-video2'  with context: product %}
+            {% else %}
+              {% if product.metafields.custom.more_to_explorer_image3 != blank %}
+                {{
+                  product.metafields.custom.more_to_explorer_image3
+                  | image_url: width: 1500
+                  | image_tag: loading: 'lazy', sizes: sizes, widths: '165, 360, 535, 750, 1070, 1500'
+                }}
+              {% endif %}
+            {% endif %}
+          {%- else -%}
+            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }} 
+          {%- endif -%}
+        </div>
+      </div>
+      {% if product.metafields.custom.more_to_explorer_text3 != blank %}
+      <h3 style="margin-top: 0;">{{product.metafields.custom.more_to_explorer_text3}}</h3>
+      {% endif %}
+    </div>
+    {% endif %}
+    {% if product.metafields.custom.more_to_explorer_video4 != blank %}
+    <div e1 class="fs-image-with-text__media-item image-with-text__media-item  grid grid--1-col gradient color-{{ section.settings.color_scheme }} global-media-settings container-image--{{section.settings.container_image}} image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item">
+      <div class="grid__item" >
+        <div
+          class="image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
+          {% if section.settings.height == 'adapt' and section.settings.image != blank %}
+            style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%; max-width: {{section.settings.media_max_width}}px;"
+          {% endif %}
+        >
+          {%- if section.settings.image != blank -%}
+            {%- capture sizes -%}
+              (min-width: {{ settings.page_width }}px) 2048px,
+              (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
+            {%- endcapture -%}
+            {% if product.metafields.custom.more_to_explorer_video4 != blank %}
+              {% include 'pdp-explorer-video2'  with context: product %}
+            {% else %}
+              {% if product.metafields.custom.more_to_explorer_image4 != blank %}
+                {{
+                  product.metafields.custom.more_to_explorer_image4
+                  | image_url: width: 1500
+                  | image_tag: loading: 'lazy', sizes: sizes, widths: '165, 360, 535, 750, 1070, 1500'
+                }}
+              {% endif %}
+            {% endif %}
+          {%- else -%}
+            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }} 
+          {%- endif -%}
+        </div>
+      </div>
+      {% if product.metafields.custom.more_to_explorer_text4 != blank %}
+      <h3 style="margin-top: 0;">{{product.metafields.custom.more_to_explorer_text4}}</h3>
+      {% endif %}
+    </div>
+    {% endif %}
   </div>
 </div>
 {% endif %}
