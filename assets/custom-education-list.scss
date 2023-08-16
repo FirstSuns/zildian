@@ -50,7 +50,7 @@
       }
     }
   }
-  .grid {
+  .search-bar .grid {
     padding: 13px 15px;
     background: var(--gradient-base-accent-1);
     position: relative;
@@ -193,12 +193,17 @@
             }
             .fs-art-filter-cont-sub {
               display: flex;
+              flex-wrap: wrap;
               @media screen and (max-width: 989px) {
                 flex-direction: column;
                 padding-left: 20px;
               }
               .row {
                 padding-right: 10px;
+                width: calc(100%/7);
+                @media screen and (max-width: 1400px) {
+                  width: calc(100%/4);
+                }
               }
             }
           }
@@ -219,6 +224,7 @@
             li {
               margin-bottom: 10px;
               a {
+                white-space: nowrap;
                 color: black;
                 text-decoration: none;
                 padding: 5px 10px;

@@ -56,10 +56,8 @@
     </div>
     
     {% if template == 'article.artist' and article.metafields.global.youtube != blank%}
-      {% assign video_id = article.metafields.global.youtube | split: '/' | last %}
-      {% if article.metafields.global.youtube contains '=' %}
-        {% assign video_id = article.metafields.global.youtube | split: '=' | last %}
-      {% endif %}
+      {% assign video_id = article.metafields.global.youtube | split: '/' | last | split: '?v=' | last | replace: ' ', '' | split: '&' | first %}
+
       <iframe 
         class="fs-article-video-iframe"
         width="1220px" 

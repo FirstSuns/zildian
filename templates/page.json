@@ -24,8 +24,8 @@
         "fcda1b36-4f0c-4742-b3a6-6f381c333ee2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Shipping-and-Returns-Banner_4c99e89f-007f-486e-a102-0071e93fee77.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/Shipping-and-Returns-Banner-Mobile_0d190886-3531-4f5e-bb71-28658695ec6e.jpg",
+        "image": "{{ page.metafields.global.banner_image.value }}",
+        "mobile_image": "{{ page.metafields.global.mobile_banner.value }}",
         "image_overlay_opacity": 60,
         "image_height": "adapt",
         "content_width": "",

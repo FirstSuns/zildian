@@ -30,7 +30,7 @@
               (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
             {%- endcapture -%}
             {% if variant.metafields.global.sound_video_link != blank %}
-              {% include 'product-video' with context: variant %}
+              {% include 'product-video' with context: variant, adapted_height: true %}
             {% elsif variant.metafields.magento.sound_demo_video != blank and variant.metafields.magento.sound_demo_video != 'no_selection' %}
               {% assign img_name = variant.metafields.magento.sound_demo_video | split: "/" %}
               <img src="{{img_name.last | file_url}}"  loading="lazy" width="1500" height="1500">

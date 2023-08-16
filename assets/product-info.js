@@ -107,7 +107,6 @@ if (!customElements.get('product-info')) {
       lcly_reload_0({ 'upc' : event.data.variant.upc }); 
     }
     changeSku(event) {
-      document.querySelector('.sku').innerHTML = event.data.variant.sku;
       document.querySelectorAll('.product-form__input .form__label span.value').forEach((element, index) => {
         element.textContent = event.data.variant.options[index];
       });

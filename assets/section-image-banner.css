@@ -300,7 +300,7 @@
 }
 
 .banner__box {
-  padding: 3.5rem;
+  padding: 50px 20px;
   position: relative;
   height: fit-content;
   align-items: center;
@@ -463,15 +463,13 @@
 }
   
 .banner .banner__content .banner__box .banner__heading {
-    text-align: center;
-    font-size: 23px;
     justify-content: center;
     width: 100% !important;
     color: #fff;
     padding: 0 !important;
 }
 .banner__content.banner__content--bottom-left {
-    align-items: center !important;
+    align-items: center;
 }
   .banner .banner__content .banner__box .banner__heading img+span {
     padding: 0;

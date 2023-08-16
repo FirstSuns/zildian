@@ -1,5 +1,6 @@
 splide-slideshow-component {
   .slideshow {
+    visibility: visible!important;
     .slideshow__slide {
       width: 100%;
       .cover-link {
@@ -21,8 +22,18 @@ splide-slideshow-component {
       }
       .slideshow__text-wrapper {
         position: absolute;
+        height: 100%;
         @media screen and (max-width: 989px) {
-          align-items: flex-end;
+          &.mobile_banner__content--top {
+            align-items: flex-start;
+          }
+          &.mobile_banner__content--middle {
+            align-items: center;
+          }
+          &.mobile_banner__content--bottom {
+            align-items: flex-end;
+          }
+          
         }
         .slideshow__text {
           .banner__heading {

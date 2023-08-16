@@ -11,6 +11,24 @@
       position: absolute;
       z-index: 1;
     }
+    &.original-banner-height--true {
+        padding: 0;
+        .collection-hero__inner {
+          display: flex;
+          align-items: center;
+          padding: 0;
+          max-width: initial;
+          .collection-hero__text-wrapper {
+            position: absolute;
+          }
+          .collection-hero__image-container {
+            position: initial;
+            img {
+              position: initial;
+            }
+          }
+        }
+    }
     .collection-hero__inner {
       justify-content: center;
       align-items: center;
@@ -20,6 +38,7 @@
       @media screen and (max-width: 749px) {
         min-height: initial;
       }
+      
       .collection-hero__text-wrapper {
         position: relative;
         z-index: 2;

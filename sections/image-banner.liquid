@@ -43,7 +43,11 @@
 
 {%- style -%}
   #Banner-{{ section.id }}::after {
+    {% if page.metafields.global.hide_page_header == true %}
+    opacity: 0;
+    {% else %}
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
+    {% endif %}
   }
 {%- endstyle -%}
 <div class="section-{{ section.id }}-padding ">
@@ -87,6 +91,7 @@
       }}
     </div>
   {%- endif -%}
+  {% unless page.metafields.global.hide_page_header == true %}
   <div 3 class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width full-mobile--{{section.settings.full_mobile}} center-mobile--{{section.settings.center_mobile}}">
     <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient" style="max-width: {{section.settings.content_width}}px; padding-left:{{section.settings.padding_left}}px;">
       {%- for block in section.blocks -%}
@@ -195,6 +200,7 @@
       {%- endfor -%}
     </div>
   </div>
+  {% endunless %}
 </div>
 </div>
 

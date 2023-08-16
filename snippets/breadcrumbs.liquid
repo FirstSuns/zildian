@@ -131,13 +131,13 @@
       {%- when 'product' -%}
         {% if collection.title != blank %}
         <li class="breadcrumbs__item">
-          {{ collection.title | link_to: collection.url }}
+          {{ collection.title | split: '/' | last | link_to: collection.url }}
         </li>
         {% else %}
         {% for collection in product.collections %}
         {% if forloop.index == 1 %}
         <li class="breadcrumbs__item">
-          {{ collection.title | link_to: collection.url }}
+          {{ collection.title | split: '/' | last | link_to: collection.url }}
         </li>
         {% endif %}
       {% endfor %}
@@ -187,7 +187,7 @@
             <li class="breadcrumbs__item nth">
                <a class="breadcrumbs__link small-hide" href="/">Home</a> <span class="small-hide" style="margin-left: 3px;">-</span> {% if article.handle contains 'education' %}<a class="breadcrumbs__link" href="/blogs/education">Education</a>{% else %}<a class="breadcrumbs__link" href="/blogs/artist">Artist</a>{% endif %} <span class="small-hide" style="margin-left: 3px;">-</span> <span class="small-hide">{{ blog.title | link_to: blog.url }}</span>
             </li>
-            <li class="breadcrumbs__item small-hide nthh-lst">
+            <li class="breadcrumbs__item nthh-lst">
               <a class="breadcrumbs__link" href="{{ article.url }}" aria-current="page">{{ article.title }}</a>
             </li>
           <style>

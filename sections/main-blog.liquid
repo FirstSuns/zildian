@@ -141,8 +141,8 @@
               </button>
             </div>
             <div class="fs-art-filter-cont">
-              <div class="">
-                <h3>Category</h3>
+              <div class="fs-art-filter-cont-block">
+                <h3>Percussion Genre</h3>
                 <div class="fs-art-filter-cont-sub">
                   <div class="row"><ul>
                   {%- for tag in blog.all_tags -%}
@@ -158,14 +158,14 @@
                         {% endif %}
                       {% endif %}
                       <li>
-                        <a href="/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" class="{% if current_tags contains tag %}active{% endif %}">{{ tag_name }}</a>
+                        <a href="/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" class="{% if current_tags contains tag %}active{% endif %}">{{ tag_name | replace: 'US', 'USA' }}</a>
                       </li>
                     {% endif %}
                   {%- endfor -%}
                   </ul></div>
                 </div>
               </div>
-              <div class="fs-art-filter-cont-block">
+              <div class="fs-art-filter-cont-block" style="width: 100%;">
                 <h3>Country</h3>
                 <div class="fs-art-filter-cont-sub">
                   {%- for tag in blog.all_tags -%}
@@ -182,7 +182,7 @@
                         {% endif %}
                       {% endif %}
                       <li>
-                        <a href="/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" class="{% if current_tags contains tag %}active{% endif %}">{{ tag_name }}</a>
+                        <a href="/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" class="{% if current_tags contains tag %}active{% endif %}">{{ tag_name | replace: 'US', 'USA' }}</a>
                       </li>
                       {% cycle '','','','','','', '', '', '', '</ul></div>' %}
                     {% endif %}

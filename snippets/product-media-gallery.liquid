@@ -10,18 +10,6 @@
         class="product__media-list splide__list "
         role="list">
         {%- for media in product.media -%}
-          {% comment %} 
-          {%- unless 
-          media.id == product.selected_or_first_available_variant.featured_media.id 
-          or media.preview_image contains 'hqdefault' 
-          or media.preview_image contains 'taper_' 
-          or media.preview_image contains 'thumb' 
-          or media.preview_image contains 'productspotlight' 
-          or media.preview_image contains 'soundlab' 
-          or media.preview_image contains 'spotlight' 
-          or media.preview_image contains 'thumbnails'
-          -%}
-          {% endunless %} {% endcomment %}
           <li
             class="splide__slide test"
             thumbnail-color="{{ media.alt }}">
@@ -37,7 +25,7 @@
              media_width: media_width,
              media_fit: section.settings.media_fit,
              constrain_to_viewport: section.settings.constrain_to_viewport,
-             lazy_load: lazy_load %}
+             lazy_load: false %}
           </li>
 
         {%- endfor -%}

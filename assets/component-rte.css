@@ -31,6 +31,9 @@
   border-radius: var(--media-radius);
   box-shadow: var(--media-shadow-horizontal-offset) var(--media-shadow-vertical-offset) var(--media-shadow-blur-radius) rgba(var(--color-shadow), var(--media-shadow-opacity));
   margin-bottom: var(--media-shadow-vertical-offset);
+  margin: 0;
+  margin-right: 5px;
+  margin-bottom: -2px;
 }
 
 .rte ul,

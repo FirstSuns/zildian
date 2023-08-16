@@ -481,7 +481,6 @@ if (typeof boostPFSThemeConfig !== 'undefined') {
   // Build Additional Elements
   Filter.prototype.afterRender = function(data, eventType) {
     if (!data) data = this.data;
-    console.log(data)
     if (data.filter != undefined) {
       for (let i = 0; i < data.filter.options.length; i++) {
         const option = data.filter.options[i];
@@ -500,14 +499,5 @@ if (typeof boostPFSThemeConfig !== 'undefined') {
     jQ('.boost-pfs-filter-total-product').html(data.total_product + ' items'); 
   };
 
-  var originalApplyFilter = FilterOptionItem.prototype.onApplyFilter;
-  FilterOptionItem.prototype.onApplyFilter = function() {
-    originalApplyFilter.call(this);
-console.log(this.$productList);
-    window.scrollTo({
-        top: jQ('.boost-pfs-filter-products').offset().top - 150,
-        behavior: 'smooth'
-    });
-  }
   /************************** END BUILD TOOLBAR **************************/
 })();

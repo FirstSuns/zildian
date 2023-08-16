@@ -21,6 +21,12 @@
             "custom_liquid": "<p class=\"subtitle\" >{{product.metafields.magento.short_description}}<\/p>"
           }
         },
+        "9147fd86-669f-4601-8991-24bf836168ae": {
+          "type": "sku",
+          "settings": {
+            "text_style": "body"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -76,6 +82,7 @@
         "39f80811-4776-475e-a397-e6d3a25fa9d3",
         "price",
         "11ad8c76-379b-4807-a15f-5e450da8a099",
+        "9147fd86-669f-4601-8991-24bf836168ae",
         "variant_picker",
         "buy_buttons",
         "6ddedd2e-5552-42d6-959a-1fa7de38ef82",

@@ -9,17 +9,14 @@
                 <div id="Slide-{{ section.id }}-{{ forloop.index }}" class="announcement-bar splide__slide color-{{ block.settings.color_scheme }} gradient" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
                   {%- if block.settings.text != blank -%}
                     {%- if block.settings.link != blank -%}
-                      <a href="{{ block.settings.link }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
+                      <a href="{{ block.settings.link }}" class="announcement-bar__link">
                     {%- endif -%}
                         <div class="page-width">
                           <p class="announcement-bar__message {{ block.settings.text_alignment }} h5">
                             <span>{{ block.settings.text | escape }}</span>
-                            {%- if block.settings.link != blank -%}
-                              {% render 'icon-arrow' %}
-                            {%- endif -%}
                           </p>
                         </div>
-                    {%- if block.settings.link != blank -%}
+                    {%- if block.settings.link != blank -%} 
                       </a>
                     {%- endif -%}
                   {%- endif -%}

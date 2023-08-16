@@ -108,6 +108,27 @@ class ArticleSliderComponent extends HTMLElement {
 
 customElements.define('article-slider', ArticleSliderComponent);
 
+class EpisodeSliderComponent extends HTMLElement {
+  constructor() {
+    super();
+    this.slider = this.querySelector('.splide');
+    this.initPages();
+  }
+
+  initPages() {
+    var main_slider = new Splide(this.slider, {
+      type: 'loop',
+      perPage: 1,
+      arrows: true,
+      pagination: false
+    });
+
+    main_slider.mount();
+  }
+}
+
+customElements.define('episode-slider', EpisodeSliderComponent);
+
 class SplideComponent extends HTMLElement {
   constructor() {
     super();
@@ -148,6 +169,50 @@ class SplideComponent extends HTMLElement {
 
 customElements.define('splide-component', SplideComponent);
 
+class FeaturedCollectionComponent extends HTMLElement {
+  constructor() {
+    super();
+    this.slider = this.querySelector('.splide');
+    this.initPages();
+  }
+
+  initPages() {
+    var desktop_break = false;
+    var mobile_break = false;
+    if (!this.slider.classList.contains('splide-desktop')) {
+      desktop_break = true
+    }
+    if (!this.slider.classList.contains('splide-mobile')) {
+      mobile_break = true
+    }
+    var main_slider = new Splide(this.slider, {
+      perPage: 4,
+      perMove: 1,
+      gap: 10,
+      pagination: false,
+      destroy: desktop_break,
+      breakpoints: {
+        990: {
+          perPage: 2,
+          destroy: mobile_break,
+          gap    : '10px',
+          padding: {right:'160px'},
+        },
+        749: {
+          perPage: 1,
+          destroy: mobile_break,
+          gap    : '10px',
+          padding: {right:'160px'},
+        }
+      }
+    });
+
+    main_slider.mount();
+  }
+}
+
+customElements.define('featured-collection-component', FeaturedCollectionComponent);
+
 class articleComponent extends HTMLElement {
   constructor() {
     super();
@@ -164,8 +229,13 @@ class articleComponent extends HTMLElement {
       pagination: false,
       breakpoints: {
         990: {
+          perPage: 2,
+          padding: {'right': '160px'},
+          gap    : '10px'
+        },
+        749: {
           perPage: 1,
-          padding: {'right': 100},
+          padding: {'right': '160px'},
           gap    : '10px'
         }
       }
@@ -184,15 +254,73 @@ class SplideSlideshowComponent extends HTMLElement {
     this.slider = this.querySelector('.splide');
     this.initPages();
   }
-  
+
   initPages() {
+    var $this = this;
     var main_slider = new Splide(this.slider, {
       type: 'loop',
       perPage: 1,
-      autoplay: true, //FS added code--
-      speed: 1000,
+      autoplay: true,
+      lazyLoad: 'sequential'
     });
+    main_slider.on( 'mounted move', function (newIndex) {
+      
+      var slide = $this.slider.querySelectorAll('.slideshow__slide')[newIndex];
+      console.log(slide)
+      if (slide != undefined) {
+        var lazyVideos = slide.querySelectorAll("video.lazy");
 
+        if ("IntersectionObserver" in window) {
+          var lazyVideoObserver = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(function(video) {
+              if (video.isIntersecting) {
+                for (var source in video.target.children) {
+                  var videoSource = video.target.children[source];
+                  if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
+                    videoSource.src = videoSource.dataset.src;
+                  }
+                }
+
+                video.target.load();
+                video.target.classList.remove("lazy");
+                lazyVideoObserver.unobserve(video.target);
+              }
+            });
+          });
+
+          lazyVideos.forEach(function(lazyVideo) {
+            lazyVideoObserver.observe(lazyVideo);
+          });
+        }
+      } else {
+        var slide = $this.slider.querySelectorAll('.slideshow__slide')[0];
+        var lazyVideos = slide.querySelectorAll("video.lazy");
+
+        if ("IntersectionObserver" in window) {
+          var lazyVideoObserver = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(function(video) {
+              if (video.isIntersecting) {
+                for (var source in video.target.children) {
+                  var videoSource = video.target.children[source];
+                  if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
+                    videoSource.src = videoSource.dataset.src;
+                  }
+                }
+
+                video.target.load();
+                video.target.classList.remove("lazy");
+                lazyVideoObserver.unobserve(video.target);
+              }
+            });
+          });
+
+          lazyVideos.forEach(function(lazyVideo) {
+            lazyVideoObserver.observe(lazyVideo);
+          });
+        }
+      }
+      
+    });
     main_slider.mount();
   }
 }

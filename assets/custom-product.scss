@@ -4,7 +4,7 @@
   padding: 10px 80px;
   @media screen and (max-width: 989px) {
     margin: 20px 0 0 10px;
-    padding: 10px 20px 0px 20px;
+    padding: 10px 0px 0px;
   }
   @media screen and (max-width: 749px) {
     .breadcrumbs__list {
@@ -53,12 +53,19 @@
       &.thumbs-left {
         display: flex;
         flex-direction: row-reverse;
+        @media screen and (max-width: 989px) {
+          padding-top: 110%;
+          position: relative;
+        }
         #mainCarousel {
           width: calc(100% - 110px);
           margin-left: 10px;
+          visibility: visible!important;
           @media screen and (max-width: 989px) {
             margin-left: 0;
             width: 100%;
+            position: absolute;
+            top: 0;
           }
         }
         #thumbsCarousel {
@@ -101,6 +108,7 @@
       }
       #pwr-snippets {
         margin-bottom: 1.5rem;
+        min-height: 25px;
       }
       .price-container {
         margin: 0;

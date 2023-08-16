@@ -12,6 +12,27 @@
   </style>
 {% endif %}
 
+{% capture questions %}
+  {% if article.metafields.global.qestion_1 != blank %}
+  <li>
+    <p class="first-pp">WHAT INSPIRES YOU?</p>
+    <p>{{ article.metafields.global.qestion_1 }}</p>
+  </li>
+  {% endif %}
+  {% if article.metafields.global.qestion_2 != blank %}
+  <li>
+    <p class="first-pp">WORDS OF WISDOM FOR THE NEXT GENERATION OF DRUMMERS</p>
+    <p>{{ article.metafields.global.qestion_2 }}</p>
+  </li>
+  {% endif %}
+  {% if article.metafields.global.question_3 != blank %}
+  <li>
+    <p class="first-pp">FAVORITE ZILDJIAN CYMBAL/COMBO</p>
+    <p>{{ article.metafields.global.question_3 }}</p>
+  </li>
+  {% endif %}
+{% endcapture %}
+{% if questions != blank %}
 <article class="article-template">
   <div m1 class="about-artist-section page-width--narrow page-width">
     <div class="grid">
@@ -50,28 +71,7 @@
           <div class="content">
             <div class="info">
               <ul>
-                {% if article.metafields.global.qestion_1 != blank %}
-                  <li>
-                    <p class="first-pp">WHAT INSPIRES YOU?</p>
-                    <p>{{ article.metafields.global.qestion_1 }}</p>
-                  </li>
-                {% endif %}
-                {% if article.metafields.global.qestion_2 != blank %}
-                  <li>
-                    <p class="first-pp">WORDS OF WISDOM FOR THE NEXT GENERATION OF DRUMMERS</p>
-                    <p>{{ article.metafields.global.qestion_2 }}</p>
-                  </li>
-                {% endif %}
-                {% if article.metafields.global.question_3 != blank %}
-                  <li>
-                    <p class="first-pp">FAVORITE ZILDJIAN CYMBAL/COMBO</p>
-                    <p>{{ article.metafields.global.question_3 }}</p>
-                  </li>
-                {% endif %}
-
-                {% comment %} <li>{{ block.settings.quest }}</li>
-                <li>{{ block.settings.quest2 }}</li>
-                <li>{{ block.settings.quest3 }}</li> {% endcomment %}
+                {{questions}}
               </ul>
             </div>
           </div>
@@ -80,6 +80,8 @@
     </div>
   </div>
 </article>
+{% endif %}
+
 {% schema %}
   {
     "name": "Artist Question",

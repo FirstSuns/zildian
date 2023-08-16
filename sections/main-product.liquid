@@ -213,7 +213,7 @@
                 role="status"
                 {{ block.shopify_attributes }}
               >
-                <span class="visually-hidden">{{ 'products.product.sku' | t }}:</span> {{- product.selected_or_first_available_variant.sku -}}
+                <span>{{ 'products.product.sku' | t }}: </span> {{- product.selected_or_first_available_variant.sku -}}
               </p>
             {%- when 'custom_liquid' -%}
               {{ block.settings.custom_liquid }}
@@ -570,8 +570,6 @@
                   {{product.metafields.magento.bullet | newline_to_br | replace: '<br />', '</li><li>' | prepend: '<li>' }}
                 </ul>
                 {% endif %}
-                
-                <h6 class="fs-sku">SKU : <span class="sku" >{{ product.selected_or_first_available_variant.sku }}</span></h6>
                 {% endif %}
               {% endcapture %}
               {% if content != blank %}
@@ -817,6 +815,43 @@
     {%- endif -%}
   </div>
 
+  <script src="https://a.klaviyo.com/media/js/onsite/onsite.js"></script>
+  <script>
+    var klaviyo = klaviyo || [];
+    klaviyo.init({
+      account: "UBRz8g",
+      platform: "shopify"
+    });
+    klaviyo.enable("backinstock",{ 
+    trigger: {
+      product_page_text: "NOTIFY ME WHEN AVAILABLE",
+      product_page_class: "product-form__submit",
+      product_page_text_align: "center",
+      product_page_margin: "0px",
+      replace_anchor: false
+    },
+    modal: {
+    headline: '{{product.title}}',
+    body_content: "Register to receive a notification when this item comes back in stock.",
+    email_field_label: "Email",
+    button_label: "NOTIFY ME WHEN AVAILABLE",
+    subscription_success_label: "You're in! We'll let you know when it's back.",
+    footer_content: '',
+    additional_styles: "@import url('https://fonts.googleapis.com/css?family=Helvetica+Neue');",
+    drop_background_color: "#000",
+    background_color: "#fff",
+    text_color: "#222",
+    button_text_color: "#fff",
+    button_background_color: "#cc9f53",
+    close_button_color: "#ccc",
+    error_background_color: "#fcd6d7",
+    error_text_color: "#C72E2F",
+    success_background_color: "#d3efcd",
+    success_text_color: "#1B9500"
+    }
+  });
+  </script>
+
   {% render 'product-media-modal' variant_images: variant_images %}
 
   {% assign popups = section.blocks | where: 'type', 'popup' %}
@@ -959,6 +994,94 @@
     }
   </script>
 </section>
+
+
+
+<script>
+  window.pwr = window.pwr || function () {
+    (pwr.q = pwr.q || []).push(arguments); 
+  };
+  pwr("render", {
+    api_key: '76a29117-f53a-4a2c-b341-b715b976ec82',
+    locale: 'en_US',
+    merchant_group_id: '49888431',
+    merchant_id: '60819357',
+    page_id: "{{ product.id }}",
+    review_wrapper_url: "https://zildjianshop.myshopify.com/pages/write-a-review/?pr_page_id={{ product.id }}",
+    product: {
+      name: `{{ product.title | replace: "+", " " }}`,
+      url: "https://zildjianshop.myshopify.com{{ product.url }}",
+      image_url: "https:{{ product.featured_image | product_img_url: "large" }}",
+      description: "{{ product.description | strip_html | strip_newlines | replace: "%0A", "%20" | replace: '"', '%27' | escape }}",
+      category_name: {% if product.type != '' %}"{{ product.type }}"{% else %} "Default" {% endif %},
+      upc: "{{ product.magento.upc_code }}",
+      brand_name: "{{ product.metafields.magento.family }}",
+      price: "{{ product.price | money_without_currency }}",
+      in_stock: "{{ product.available }}",
+          variants: [ {% for variant in product.variants %}
+          {% assign product_name = product.title %}
+          {% if product.variants.size > 1 %}{% assign product_name = variant.title %}{% endif %}
+      {
+        name: `{{ product_name | replace: "+", " " }}`,
+        description: `{{ product_name | escape }}`,
+        page_id_variant: "{{variant.id}}",
+        upc: "{{ variant.barcode }}"
+      }{% if forloop.last == false %}, {% endif %} {% endfor %}
+    ]},
+    components: {
+      ReviewDisplay: "pr-reviewdisplay",
+      ReviewSnippet: "pr-reviewsnippet",
+      CategorySnippet: 'pr-categorysnippet'
+    }	
+  });
+</script> 
+
+<script>
+  window.addEventListener('load', function() {
+  var _learnq = window._learnq || [];
+  function addedToCart() {
+    fetch(`${window.location.origin}/cart.js`)
+    .then(res => res.clone().json().then(data => {
+      var cart = {
+        total_price: data.total_price/100,
+        $value: data.total_price/100,
+        total_discount: data.total_discount,
+        original_total_price: data.original_total_price/100,
+        items: data.items
+      }
+      if (item !== 'undefined') {
+        cart = Object.assign(cart, item)
+      }
+      if (klAjax) {
+          _learnq.push(['track', 'Added to Cart', cart]);
+          klAjax = false;
+        }
+    }))
+  };
+  (function (ns, fetch) {
+    ns.fetch = function() {
+      const response = fetch.apply(this, arguments);
+      response.then(res => {
+        if (`${window.location.origin}/cart/add.js`
+          .includes(res.url)) {
+            addedToCart()
+        }
+      });
+      return response
+    }
+  }(window, window.fetch));
+  var klAjax = true;
+  var atcButtons = document.querySelectorAll("form[action*='/cart/add'] button[type='submit']");
+  for (var i = 0; i < atcButtons.length; i++) {
+      atcButtons[i].addEventListener("click", function() {
+        if (klAjax) {
+          _learnq.push(['track', 'Added to Cart', item]);
+          klAjax = false;
+        }
+      })
+  }
+  });
+</script>
 
 
 {% schema %}

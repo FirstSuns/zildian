@@ -57,6 +57,7 @@
     },
     "34758241-3bd5-42d4-9f75-11681aa19355": {
       "type": "main-article-image-with-text",
+      "disabled": true,
       "blocks": {
         "1e484bb5-34aa-4b2d-b407-39972304e80d": {
           "type": "text",
@@ -95,6 +96,34 @@
       ],
       "custom_css": [],
       "settings": {}
+    },
+    "78d1b415-f34a-4ae8-a625-ebc64591daf2": {
+      "type": "artist-featured-collection",
+      "settings": {
+        "title": "{{ article.title }}’S GO-TO’S",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "sticks-mallets-sticks-hickory-series",
+        "new_blank": false,
+        "products_to_show": 2,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     },
     "8e9a10d2-b668-46a5-b460-734a6e6191e3": {
       "type": "video-artist",
@@ -150,38 +179,11 @@
     "4e376b5d-654c-4027-a078-b4fc0245f366": {
       "type": "recent_articles",
       "custom_css": [
-        ".blog {margin-top: 100px;}",
+        ".blog {margin-bottom: 100px;}",
         "@media only screen and (min-width: 750px) and (max-width: 1100px) {.card__heading {font-size: 10px; } .card__information {padding: 0; } .card__information p {font-size: 10px; line-height: 15px; }}"
       ],
       "settings": {
         "title": "CHECK OUT OUR OTHER ARTISTS"
-      }
-    },
-    "78d1b415-f34a-4ae8-a625-ebc64591daf2": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Artist’s products",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "sticks-mallets-sticks-hickory-series",
-        "products_to_show": 2,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     }
   },
@@ -190,9 +192,9 @@
     "739072ab-dc09-4b92-a996-7be196ed69cb",
     "34758241-3bd5-42d4-9f75-11681aa19355",
     "e7781307-f31f-4a54-95ff-5595afb29365",
+    "78d1b415-f34a-4ae8-a625-ebc64591daf2",
     "8e9a10d2-b668-46a5-b460-734a6e6191e3",
     "97e8c916-868c-40ca-bc78-69a8202d6384",
-    "4e376b5d-654c-4027-a078-b4fc0245f366",
-    "78d1b415-f34a-4ae8-a625-ebc64591daf2"
+    "4e376b5d-654c-4027-a078-b4fc0245f366"
   ]
 }

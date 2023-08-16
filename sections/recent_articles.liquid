@@ -96,12 +96,12 @@
         </div>
       {%- endif -%}
     </slider-component>
-    <div class="bottom">
+    <!-- <div class="bottom">
       <strong>Photo Credits:</strong>
       <br>
       <strong>Profile, Header, Artist In 3:</strong> I.A Images
     </div>
-    
+     -->
   </div>
 </div>
 <style>
@@ -138,6 +138,11 @@
     {% comment %} height: 80px; {% endcomment %}
 }.artist-page-inn slider-component .blog__posts .blog__post .article-card .card__heading {
     font-size: 15px;
+}.artist-page-inn slider-component .blog__posts .blog__post .article-card p {
+  overflow-wrap: anywhere;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: normal;
 }.artist-page-inn .card__content {
     display: grid;
     grid-template-rows: minmax(0,1fr) max-content minmax(0,1fr);

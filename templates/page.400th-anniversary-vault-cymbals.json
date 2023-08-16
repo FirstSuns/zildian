@@ -1,0 +1,443 @@
+{
+  "sections": {
+    "3141c904-b6a6-4f2b-a1fe-aa2b9e911af8": {
+      "type": "image-banner",
+      "blocks": {
+        "template--18142515003684__3141c904-b6a6-4f2b-a1fe-aa2b9e911af8-1679425999b0455fe5-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "400th Anniversary Limited Edition Vault Cymbals",
+            "heading_size": "h1",
+            "uppercase": false
+          }
+        },
+        "fcda1b36-4f0c-4742-b3a6-6f381c333ee2": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "400 YEARS OF HISTORY",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "template--18142515003684__3141c904-b6a6-4f2b-a1fe-aa2b9e911af8-1679425999b0455fe5-0",
+        "fcda1b36-4f0c-4742-b3a6-6f381c333ee2"
+      ],
+      "custom_css": [
+        ".banner__box .banner__heading + * {margin-top: 0;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/400th-Cymbal-Vault-Hero-Banner.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/400th-Cymbal-Vault-Hero-Banner-Mobile.jpg",
+        "image_overlay_opacity": 20,
+        "image_height": "adapt",
+        "content_width": "850",
+        "padding_left": "",
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false,
+        "center_mobile": true,
+        "full_mobile": false,
+        "content_padding": 20,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 100
+      }
+    },
+    "c01aff62-c55f-45fa-8bb0-2a2cf12f80fd": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "cover_image": "shopify:\/\/shop_images\/400th-Family-Vault-Video-Thumbnail-Higher-res.jpg",
+        "cover_mobile_image": "shopify:\/\/shop_images\/400th-Family-Vault-Video-Thumbnail-Higher-res.jpg",
+        "video_url": "https:\/\/youtu.be\/iizd5AHafKA",
+        "description": "",
+        "full_width": false,
+        "mobile_full_width": false,
+        "color_scheme": "background-1",
+        "caption_color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "e07b17f6-47e3-47e4-b76c-66172e4060a1": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--19042043822372__e07b17f6-47e3-47e4-b76c-66172e4060a1-1684662487b3dc82be-1": {
+          "type": "column",
+          "settings": {
+            "badge": "",
+            "title": "",
+            "heading_size": "h3",
+            "heading_color": "",
+            "download_label": "",
+            "download_link": "",
+            "text": "<p>To celebrate Zildjian’s 400th anniversary, we are releasing 400 limited edition vintage cymbals from the Zildjian family's private vault. We’ve selected 200 of our finest 20” vintage A rides, which were produced during the mid-1940’s, and 200 15” vintage A crash cymbals produced between the mid-1930s and mid-1950s. These cymbals were produced in the original U.S. factory in Quincy, MA. <\/p><p> <\/p><p>Each cymbal in this collection features individual characteristics such as stick marks and fingerprints, some of which belonged to Armand Zildjian and Avedis Zildjian III. <\/p><p> <\/p><p>Explore the list of participating dealers for the opportunity to add one of these incredible instruments to your collection.<\/p>",
+            "link_label": "",
+            "link": "",
+            "full_link": false,
+            "link_list": "",
+            "blank_link": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19042043822372__e07b17f6-47e3-47e4-b76c-66172e4060a1-1684662487b3dc82be-1"
+      ],
+      "settings": {
+        "side_banner": false,
+        "full_width": false,
+        "title": "400 HAND SELECTECTED CYMBALS",
+        "heading_size": "h1",
+        "heading_align": "center",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "mobile_image_ratio": "adapt",
+        "overlay_image": false,
+        "columns_desktop": 2,
+        "swipe_on_desktop": false,
+        "step_style": false,
+        "column_alignment": "left",
+        "no_gap": false,
+        "no_padding": false,
+        "number": false,
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "mobile_overlay": false,
+        "padding_top": 20,
+        "padding_bottom": 52,
+        "max_width": "1200"
+      }
+    },
+    "dba55eb0-9090-4ecd-bcdd-60fd780c959a": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19042043822372__dba55eb0-9090-4ecd-bcdd-60fd780c959a-16862207273b358c05-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>CONTACT A PARTICIPATING DEALER<\/p>",
+            "heading_size": "h1",
+            "max_width": ""
+          }
+        },
+        "template--19042043822372__dba55eb0-9090-4ecd-bcdd-60fd780c959a-16862207273b358c05-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "blank": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19042043822372__dba55eb0-9090-4ecd-bcdd-60fd780c959a-16862207273b358c05-0",
+        "template--19042043822372__dba55eb0-9090-4ecd-bcdd-60fd780c959a-16862207273b358c05-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "contnet_type": "list",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "max_width": ""
+      }
+    },
+    "b6193c33-b037-4344-b1a4-e6a1756b4752": {
+      "type": "multicolumn",
+      "blocks": {
+        "f9ba6a67-1fb2-473f-ac3e-3bf786ead108": {
+          "type": "column",
+          "settings": {
+            "badge": "",
+            "title": "U.S. Dealers",
+            "heading_size": "h3",
+            "heading_color": "",
+            "download_label": "",
+            "download_link": "",
+            "text": "<p><a href=\"https:\/\/bentleysdrumshop.com\/\" target=\"_blank\" title=\"https:\/\/bentleysdrumshop.com\/\">Bentley’s Drum Shop<\/a><\/p><p><a href=\"http:\/\/arizonadrumshop.com\/\" target=\"_blank\" title=\"http:\/\/arizonadrumshop.com\/\">Arizona Drum Shop <\/a><\/p><p><a href=\"https:\/\/www.denverpercussion.com\/?utm_source=Google&utm_medium=organic&utm_campaign=GoogleBusiness\" target=\"_blank\" title=\"https:\/\/www.denverpercussion.com\/?utm_source=Google&utm_medium=organic&utm_campaign=GoogleBusiness\">Denver Percussion <\/a><\/p><p><a href=\"https:\/\/dallaspercussion.com\/\" target=\"_blank\" title=\"https:\/\/dallaspercussion.com\/\">Dallas Percussion <\/a><\/p><p><a href=\"https:\/\/www.kennellykeysmusic.com\/\" target=\"_blank\" title=\"https:\/\/www.kennellykeysmusic.com\/\">Kennelley Keys <\/a><\/p><p><a href=\"https:\/\/prodrumshop.com\/\" target=\"_blank\" title=\"https:\/\/prodrumshop.com\/\">Professional Drum Shop <\/a><\/p><p><a href=\"https:\/\/www.wcdrumshop.com\/\" target=\"_blank\">West Coast Drum Shop<\/a> <\/p><p><a href=\"https:\/\/www.palenmusic.com\/\" target=\"_blank\" title=\"https:\/\/www.palenmusic.com\/\">Palen Music<\/a><\/p><p><a href=\"https:\/\/www.supersonicmusic.com\/#\/\" target=\"_blank\" title=\"https:\/\/www.supersonicmusic.com\/#\/\">Supersonic Music <\/a><\/p><p><a href=\"https:\/\/www.klashdrums.com\/\" target=\"_blank\" title=\"https:\/\/www.klashdrums.com\/\">Klash Drums<\/a><\/p><p><a href=\"https:\/\/reverb.com\/shop\/goodhandsdrumshop\" target=\"_blank\" title=\"https:\/\/reverb.com\/shop\/goodhandsdrumshop\">Good Hands Drum Shop <\/a><\/p><p><a href=\"https:\/\/locations.samash.com\/ct\/new-haven\/82\/?utm_source=Google&utm_medium=Maps&utm_campaign=Google+Places\" target=\"_blank\" title=\"https:\/\/locations.samash.com\/ct\/new-haven\/82\/?utm_source=Google&utm_medium=Maps&utm_campaign=Google+Places\">Sam Ash Music <\/a><\/p><p><a href=\"https:\/\/www.steveweissmusic.com\/\" target=\"_blank\" title=\"https:\/\/www.steveweissmusic.com\/\">Steve Weiss Music<\/a><\/p><p><a href=\"https:\/\/www.altomusic.com\/\" target=\"_blank\" title=\"https:\/\/www.altomusic.com\/\">Alto Music <\/a><\/p><p><a href=\"https:\/\/themusicden.com\/\" target=\"_blank\" title=\"https:\/\/themusicden.com\/\">The Music Den NJ<\/a><\/p><p><a href=\"https:\/\/memphisdrumshop.com\/\" target=\"_blank\" title=\"https:\/\/memphisdrumshop.com\/\">Memphis Drum Shop<\/a><\/p><p><a href=\"http:\/\/www.maxwelldrums.com\/\" target=\"_blank\" title=\"http:\/\/www.maxwelldrums.com\/\">Steve Maxwell Drum – IL<\/a><\/p><p><a href=\"https:\/\/www.forksdrumcloset.com\/\" target=\"_blank\" title=\"https:\/\/www.forksdrumcloset.com\/\">Fork’s Drum Closet<\/a><\/p><p><a href=\"https:\/\/www.2112percussion.com\/\" target=\"_blank\" title=\"https:\/\/www.2112percussion.com\/\">2112 Percussion<\/a><\/p><p><a href=\"https:\/\/www.chicagomusicexchange.com\/\" target=\"_blank\" title=\"https:\/\/www.chicagomusicexchange.com\/\">Chicago Music Exchange<\/a><\/p><p><a href=\"https:\/\/www.muganmusicgroup.com\/\" target=\"_blank\" title=\"https:\/\/www.muganmusicgroup.com\/\">Mugan Music<\/a><\/p><p><a href=\"https:\/\/www.columbuspercussion.com\/store\/\" target=\"_blank\" title=\"https:\/\/www.columbuspercussion.com\/store\/\">Columbus Pro<\/a><\/p><p><a href=\"https:\/\/reverb.com\/shop\/percussion-king\" target=\"_blank\" title=\"https:\/\/reverb.com\/shop\/percussion-king\">Cymbal King<\/a><\/p><p><a href=\"https:\/\/www.ruppsdrums.com\/\" target=\"_blank\" title=\"https:\/\/www.ruppsdrums.com\/\">Rupp's Drums<\/a><\/p><p><a href=\"https:\/\/www.guitarcenter.com\/\" target=\"_blank\" title=\"https:\/\/www.guitarcenter.com\/\">Guitar Center<\/a><\/p><p><a href=\"https:\/\/www.sweetwater.com\/\" target=\"_blank\" title=\"https:\/\/www.sweetwater.com\/\">Sweetwater<\/a><\/p>",
+            "link_label": "",
+            "link": "",
+            "full_link": false,
+            "link_list": "",
+            "blank_link": false
+          }
+        }
+      },
+      "block_order": [
+        "f9ba6a67-1fb2-473f-ac3e-3bf786ead108"
+      ],
+      "settings": {
+        "side_banner": false,
+        "full_width": false,
+        "title": "",
+        "heading_size": "h1",
+        "heading_align": "center",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "mobile_image_ratio": "adapt",
+        "overlay_image": false,
+        "columns_desktop": 2,
+        "swipe_on_desktop": false,
+        "step_style": false,
+        "column_alignment": "center",
+        "no_gap": false,
+        "no_padding": false,
+        "number": false,
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "mobile_overlay": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "max_width": ""
+      }
+    },
+    "b921e32f-6c86-4cd1-9c28-51599b6bf8bf": {
+      "type": "image-banner",
+      "disabled": true,
+      "blocks": {
+        "template--19042043822372__b921e32f-6c86-4cd1-9c28-51599b6bf8bf-16846625169927cc7b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "PEOPLE AND CULTURE",
+            "heading_size": "h1",
+            "uppercase": false
+          }
+        },
+        "template--19042043822372__b921e32f-6c86-4cd1-9c28-51599b6bf8bf-16846625169927cc7b-1": {
+          "type": "text",
+          "settings": {
+            "text": "We strive to hire and develop the best talent. People who are passionate about music and our vision. People who are dedicated to growing with our company and shaping the future of our brands. Our diverse team is made up of hardworking, driven, and forward-thinking individuals who really believe that our day-to-day work contributes to the greater good of inspiring musical expression.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--19042043822372__b921e32f-6c86-4cd1-9c28-51599b6bf8bf-16846625169927cc7b-0",
+        "template--19042043822372__b921e32f-6c86-4cd1-9c28-51599b6bf8bf-16846625169927cc7b-1"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.banner__heading {font-size: 20px; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/People-and-Culture-Image_2_1.png",
+        "mobile_image": "shopify:\/\/shop_images\/People-and-Culture-Image_2_1.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "content_width": "675",
+        "padding_left": "",
+        "desktop_content_position": "bottom-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "inverse-2",
+        "mobile_content_alignment": "left",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "center_mobile": false,
+        "full_mobile": false,
+        "content_padding": 60,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "d00001f0-06ae-4173-a192-491dc4a7eda3": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--19042043822372__d00001f0-06ae-4173-a192-491dc4a7eda3-168466256289770156-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "CERTIFICATE OF AUTHENTICITY",
+            "heading_link": "",
+            "heading_size": "h1",
+            "heading_color": "",
+            "max_width": ""
+          }
+        },
+        "template--19042043822372__d00001f0-06ae-4173-a192-491dc4a7eda3-168466256289770156-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Each case will include a certificate of authenticity signed by Craigie Zildjian. This piece will certify that each cymbal is one of the 400 hand selected cymbals picked out of the family's private cymbal vault.<\/p>",
+            "text_style": "body",
+            "color": "#5c5d60"
+          }
+        },
+        "template--19042043822372__d00001f0-06ae-4173-a192-491dc4a7eda3-168466256289770156-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "See our values",
+            "button_link": "shopify:\/\/pages\/about-us",
+            "link": true,
+            "blank_button": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19042043822372__d00001f0-06ae-4173-a192-491dc4a7eda3-168466256289770156-0",
+        "template--19042043822372__d00001f0-06ae-4173-a192-491dc4a7eda3-168466256289770156-1",
+        "template--19042043822372__d00001f0-06ae-4173-a192-491dc4a7eda3-168466256289770156-2"
+      ],
+      "settings": {
+        "tag": "",
+        "side_banner": false,
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/Certificate-of-Authenticityr.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Certificate-of-Authenticityr.jpg",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "container_image": false,
+        "media_max_width": "",
+        "desktop_content_position": "top",
+        "content_align": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "background-2",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "overlay_section": false,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "quote": false,
+        "max_width": "560"
+      }
+    },
+    "47129bfb-4f12-40f4-a4e8-98bf30e1acc6": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--19042043822372__47129bfb-4f12-40f4-a4e8-98bf30e1acc6-168466256289770156-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "CYMBAL ADAPTER & CYMBAL GLOVES",
+            "heading_link": "",
+            "heading_size": "h1",
+            "heading_color": "",
+            "max_width": ""
+          }
+        },
+        "template--19042043822372__47129bfb-4f12-40f4-a4e8-98bf30e1acc6-168466256289770156-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>These vintage cymbals feature the original mounting hole on the bell. For your convenience, an adapter has been included so you can play this cymbal on a modern cymbal stand. Special cymbal gloves will also be included for the handling of these instruments.<\/p>",
+            "text_style": "body",
+            "color": "#5c5d60"
+          }
+        },
+        "template--19042043822372__47129bfb-4f12-40f4-a4e8-98bf30e1acc6-168466256289770156-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "ZILDJIAN ON LINKEDIN",
+            "button_link": "https:\/\/www.linkedin.com\/company\/avedis-zildjian-company\/",
+            "link": true,
+            "blank_button": true
+          }
+        }
+      },
+      "block_order": [
+        "template--19042043822372__47129bfb-4f12-40f4-a4e8-98bf30e1acc6-168466256289770156-0",
+        "template--19042043822372__47129bfb-4f12-40f4-a4e8-98bf30e1acc6-168466256289770156-1",
+        "template--19042043822372__47129bfb-4f12-40f4-a4e8-98bf30e1acc6-168466256289770156-2"
+      ],
+      "settings": {
+        "tag": "",
+        "side_banner": false,
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/Gloves-Cymbal-Adaptor.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Gloves-Cymbal-Adaptor.jpg",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "container_image": false,
+        "media_max_width": "",
+        "desktop_content_position": "top",
+        "content_align": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "background-2",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "overlay_section": false,
+        "padding_top": 0,
+        "padding_bottom": 28,
+        "quote": false,
+        "max_width": "560"
+      }
+    },
+    "3ff34e09-f9ac-40b1-babc-85f50028d668": {
+      "type": "multicolumn",
+      "custom_css": [
+        "@media screen and (min-width: 770px) {.multicolumn-card__info {position: relative; } .multicolumn-card__info h3 {color: #000; }}"
+      ],
+      "settings": {
+        "side_banner": false,
+        "full_width": false,
+        "title": "",
+        "heading_size": "h1",
+        "heading_align": "left",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "mobile_image_ratio": "adapt",
+        "overlay_image": true,
+        "columns_desktop": 4,
+        "swipe_on_desktop": false,
+        "step_style": false,
+        "column_alignment": "left",
+        "no_gap": false,
+        "no_padding": false,
+        "number": false,
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "mobile_overlay": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "max_width": ""
+      }
+    }
+  },
+  "order": [
+    "3141c904-b6a6-4f2b-a1fe-aa2b9e911af8",
+    "main",
+    "c01aff62-c55f-45fa-8bb0-2a2cf12f80fd",
+    "e07b17f6-47e3-47e4-b76c-66172e4060a1",
+    "dba55eb0-9090-4ecd-bcdd-60fd780c959a",
+    "b6193c33-b037-4344-b1a4-e6a1756b4752",
+    "b921e32f-6c86-4cd1-9c28-51599b6bf8bf",
+    "d00001f0-06ae-4173-a192-491dc4a7eda3",
+    "47129bfb-4f12-40f4-a4e8-98bf30e1acc6",
+    "3ff34e09-f9ac-40b1-babc-85f50028d668"
+  ]
+}

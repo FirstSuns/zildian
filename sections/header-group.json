@@ -5,6 +5,15 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "ca5fa64f-eeb2-48bd-8559-6c7389bdd503": {
+          "type": "announcement",
+          "settings": {
+            "text": "Zildjian Trunk Sale – 50%+ Off ",
+            "text_alignment": "center",
+            "color_scheme": "accent-1",
+            "link": ""
+          }
+        },
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
@@ -26,6 +35,7 @@
         }
       },
       "block_order": [
+        "ca5fa64f-eeb2-48bd-8559-6c7389bdd503",
         "announcement-bar-0",
         "ff2f82f0-865a-4c46-8109-ac61b57a69f2"
       ],
@@ -56,7 +66,7 @@
           "settings": {
             "menu_title": "Drum Set",
             "menu": "drum-set",
-            "banner_1": "shopify:\/\/shop_images\/Rectangle_23.jpg",
+            "banner_1": "shopify:\/\/shop_images\/Cymbal-Finder.jpg",
             "title_1": "Cymbal finder",
             "text_1": "Fine-tune your search for the perfect cymbal",
             "link_1": "shopify:\/\/collections\/cymbals",
@@ -73,7 +83,7 @@
           "settings": {
             "menu_title": "Band & orchestral",
             "menu": "band-orchestral",
-            "banner_1": "shopify:\/\/shop_images\/Rectangle_23.jpg",
+            "banner_1": "shopify:\/\/shop_images\/Cymbal-Finder.jpg",
             "title_1": "Cymbal finder",
             "text_1": "Fine-tune your search for the perfect cymbal",
             "link_1": "shopify:\/\/collections\/cymbals",

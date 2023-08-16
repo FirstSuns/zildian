@@ -1371,7 +1371,7 @@ TagalysCustomizations.initSimilarProductsRecommendation = function () {
           rightArrow: false,
           product: {
             callbacks: {
-              afterEveryRender: function(helpers, args) {
+              afterInitialRender: function(helpers, args) {
                 var product = args.product;
                 window.pwr = window.pwr || function () {
                   (pwr.q = pwr.q || []).push(arguments); 

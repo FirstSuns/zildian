@@ -3,8 +3,57 @@
     "d75dd4ef-8e47-487d-9740-f50edc07b08d": {
       "type": "slideshow",
       "blocks": {
+        "36360435-53e0-4241-a9c7-31f081f4c453": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Landing_Page_desktop_0226670e-47dc-4630-aed2-2e97b9341222.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Zildjian_Web_Banner_mobile_0ca371b9-199e-476d-b01c-648782833d80.jpg",
+            "video": "",
+            "content_width": "",
+            "heading": "Zildjian <br> Trunk Sale",
+            "uppercase": true,
+            "heading_size": "h0",
+            "heading_color": "",
+            "subheading": "",
+            "button_label": "SAVE NOW",
+            "link": "https:\/\/zildjian.com\/collections\/zildjian-trunk-sale",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 30,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center",
+            "mobile_box_align": "middle"
+          }
+        },
+        "f0e7bcce-b325-4dbc-be47-c48b5d35dd7f": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Zildjian_Website_Horizontal_1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Zildjian_Website_Vertical_a323751a-33b7-4e7f-88ef-20e0c6c22df0.jpg",
+            "video": "",
+            "content_width": "",
+            "heading": "",
+            "uppercase": true,
+            "heading_size": "h1",
+            "heading_color": "",
+            "subheading": "",
+            "button_label": "SHOP NOW",
+            "link": "shopify:\/\/products\/k-paper-thin-crashes",
+            "button_style_secondary": false,
+            "box_align": "bottom-right",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center",
+            "mobile_box_align": "bottom"
+          }
+        },
         "template--18142514905380__d75dd4ef-8e47-487d-9740-f50edc07b08d-16790924773f344ee0-0": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/400th-Anniversary-Apparel-_-Sticks.jpg",
             "mobile_image": "shopify:\/\/shop_images\/400th-Anniversary-Apparel-_-Sticks-Mobile.jpg",
@@ -23,7 +72,32 @@
             "text_alignment": "left",
             "image_overlay_opacity": 0,
             "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
+            "text_alignment_mobile": "center",
+            "mobile_box_align": "bottom"
+          }
+        },
+        "7f88c126-5dff-4436-b170-d5f6632fda2a": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/400th-Anniversary-Concert-Banner.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/400th-Anniversary-Concert-Banner-Mobile-1.jpg",
+            "video": "",
+            "content_width": "",
+            "heading": "",
+            "uppercase": true,
+            "heading_size": "h0",
+            "heading_color": "",
+            "subheading": "",
+            "button_label": "Learn more",
+            "link": "shopify:\/\/pages\/400th-anniversary-concert",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center",
+            "mobile_box_align": "bottom"
           }
         },
         "1c0db94a-65c0-4189-a840-d44eba8c3c9a": {
@@ -46,42 +120,19 @@
             "text_alignment": "left",
             "image_overlay_opacity": 0,
             "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "dfcc2a23-0043-442f-b782-0bbbaf4d30d6": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Art-Blakey-Tee.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Art-Blakey-Tee-Mobile.jpg",
-            "video": "",
-            "content_width": "355",
-            "heading": "Zildjian Legends Art Blakey Tee",
-            "uppercase": true,
-            "heading_size": "h0",
-            "heading_color": "",
-            "subheading": "",
-            "button_label": "SHOP NOW",
-            "link": "https:\/\/zildjianshop.myshopify.com\/products\/zildjian-legends-art-blakey-tee",
-            "button_style_secondary": false,
-            "box_align": "middle-left",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
+            "text_alignment_mobile": "center",
+            "mobile_box_align": "bottom"
           }
         }
       },
       "block_order": [
+        "36360435-53e0-4241-a9c7-31f081f4c453",
+        "f0e7bcce-b325-4dbc-be47-c48b5d35dd7f",
         "template--18142514905380__d75dd4ef-8e47-487d-9740-f50edc07b08d-16790924773f344ee0-0",
-        "1c0db94a-65c0-4189-a840-d44eba8c3c9a",
-        "dfcc2a23-0043-442f-b782-0bbbaf4d30d6"
+        "7f88c126-5dff-4436-b170-d5f6632fda2a",
+        "1c0db94a-65c0-4189-a840-d44eba8c3c9a"
       ],
-      "custom_css": [
-        "@media screen and (max-width: 749px) {splide-slideshow-component .slideshow .slideshow__slide {max-height: 450px; } .banner__box {margin-bottom: 100px; }}",
-        "@media screen and (min-width: 750px) {.slideshow__text-wrapper.banner__content {padding: 10rem; }}"
-      ],
+      "custom_css": [],
       "settings": {
         "layout": "full_bleed",
         "slide_height": "adapt_image",
@@ -231,7 +282,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "400th-anniversary-apparel-stick",
+        "collection": "frontpage",
         "new_blank": false,
         "products_to_show": 25,
         "columns_desktop": 3,
@@ -353,7 +404,8 @@
             "text_alignment": "left",
             "image_overlay_opacity": 0,
             "color_scheme": "inverse",
-            "text_alignment_mobile": "left"
+            "text_alignment_mobile": "left",
+            "mobile_box_align": "top"
           }
         },
         "dcd8463d-c92e-4c2d-81d0-475dd32c3eb9": {
@@ -376,7 +428,8 @@
             "text_alignment": "left",
             "image_overlay_opacity": 0,
             "color_scheme": "inverse",
-            "text_alignment_mobile": "left"
+            "text_alignment_mobile": "left",
+            "mobile_box_align": "top"
           }
         },
         "40c78409-57fa-478e-99ed-bfc8aeecd9b5": {
@@ -399,7 +452,8 @@
             "text_alignment": "left",
             "image_overlay_opacity": 0,
             "color_scheme": "inverse",
-            "text_alignment_mobile": "left"
+            "text_alignment_mobile": "left",
+            "mobile_box_align": "top"
           }
         }
       },
@@ -495,7 +549,6 @@
     },
     "ab44bd6b-401a-47f9-b721-313abef56522": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "template--18142514905380__ab44bd6b-401a-47f9-b721-313abef56522-16793108128ebf7015-0": {
           "type": "heading",
@@ -531,6 +584,7 @@
         "template--18142514905380__ab44bd6b-401a-47f9-b721-313abef56522-16793108128ebf7015-1",
         "template--18142514905380__ab44bd6b-401a-47f9-b721-313abef56522-16793108128ebf7015-2"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "contnet_type": "list",

@@ -10,41 +10,56 @@
 {%- endstyle -%}
 {%- style -%}
   .collection-hero--with-image::after {
-    opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
+    {% unless collection.metafields.global.hide_title %}
+    opacity: 0!important;
+    {% else %}
+    opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }}!important;
+    {% endunless %}
   }
 {%- endstyle -%}
 
-<div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %} color-{{ section.settings.color_scheme }} gradient">
+<div class="collection-hero{% if section.settings.show_collection_image %} collection-hero--with-image{% endif %} color-{{ section.settings.color_scheme }} gradient  original-banner-height--{{collection.metafields.global.display_full_banner_image}}">
   <div class="collection-hero__inner page-width">
+    {% unless collection.metafields.global.hide_title %}
     <div class="collection-hero__text-wrapper">
       <h1 class="collection-hero__title h0 uppercase">
         {% if collection.metafields.global.header_banner_logo != blank %}
           <img class="collection-hero__icon" src="{{collection.metafields.global.header_banner_logo | img_url: '186x' }}" loading="lazy" >
         {% endif %}
-        {% comment %} <span>{{-  collection.metafields.global.header_banner_title | default: collection.title | escape -}}</span> {% endcomment %}
-        <span>{{-  collection.metafields.global.header_banner_title | escape -}}</span>
+        <span>{{-  collection.metafields.global.header_banner_title | default: collection.title | escape -}}</span>
       </h1>
 
       {%- if section.settings.show_collection_description -%}
         <div class="collection-hero__description rte">{{ collection.metafields.global.header_banner_subtext | metafield_tag | default: collection.description }}</div>
       {%- endif -%}
     </div>
+    {% endunless %}
+    
 
-    {%- if section.settings.show_collection_image and collection.image -%}
-      {% assign image = collection.metafields.global.header_banner_image | default: collection.image %}
+    {%- if section.settings.show_collection_image -%}
+      
       <div class="collection-hero__image-container media gradient">
+        {% assign image = collection.metafields.global.header_banner_image | default: collection.image %}
+        {% if image == blank %}
+          {% assign image = section.settings.image %}
+        {% endif %}
         <img
           class="small-hide medium-hide"
           src="{{ image | image_url: width: 2048 }}"
           alt="{{collection.title}}"
+          loading="lazy" 
           width="{{ image.width }}"
           height="{{ image.height }}"
         >
         {% assign mobile_image = collection.metafields.global.mobile_header_banner_image | default: collection.image %}
+        {% if mobile_image == blank %}
+          {% assign mobile_image = section.settings.image %}
+        {% endif %}
         <img
           class="large-up-hide"
           src="{{ mobile_image | image_url: width: 750 }}"
           alt="{{collection.title}}"
+          loading="lazy"
           width="{{ mobile_image.width }}"
           height="{{ mobile_image.height }}"
         >
@@ -58,6 +73,11 @@
   "name": "t:sections.main-collection-banner.name",
   "class": "section",
   "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
     {
       "type": "paragraph",
       "content": "t:sections.main-collection-banner.settings.paragraph.content"

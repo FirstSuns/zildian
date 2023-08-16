@@ -1238,9 +1238,6 @@ tab-component {
 
 
 @media only screen and (max-width: 767px) {
-.banner__content.banner__content--bottom-left {
-    margin-top: 43px;
-}
   .topic1-innright {
     padding-left: 0;
     margin-top: 40px;
@@ -1277,4 +1274,15 @@ tab-component {
 
 .pr-category-snippet__total {
   white-space: nowrap;
+}
+
+#shopify-pc__banner {
+  .shopify-pc__banner__btns {
+    .shopify-pc__banner__btn-accept:hover, .shopify-pc__banner__btn-decline:hover {
+      border-color: #cc9f53;
+      background: #cc9f53;
+      color: white;
+    }
+
+  }
 }

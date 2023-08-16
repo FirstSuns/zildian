@@ -6,7 +6,7 @@
         "template--18142515003684__3141c904-b6a6-4f2b-a1fe-aa2b9e911af8-1679425999b0455fe5-0": {
           "type": "heading",
           "settings": {
-            "heading": "BE APART OF ZILDJIAN'S 400 YEARS OF HISTORY",
+            "heading": "THE ZILDJIAN 400TH ANNIVERSARY CONCERT",
             "heading_size": "h1",
             "uppercase": false
           }
@@ -56,8 +56,58 @@
         "padding_bottom": 100
       }
     },
+    "d0b6d7cd-c260-41c2-b710-b98eca0b0bce": {
+      "type": "rich-text",
+      "blocks": {
+        "4f322f27-1049-47f9-89e6-e1f9909aa97e": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>BE A PART OF ZILDJIAN’S 400 YEARS OF HISTORY<\/p>",
+            "heading_size": "h1",
+            "max_width": ""
+          }
+        },
+        "0600afb3-d296-49f9-aee5-3cd78cdc2e94": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Join us to celebrate Zildjian’s 400th Anniversary! Fred Armisen will host this once-in-a-lifetime event as we honor eight living legends of music, and feature performances by today’s greatest drummers.<\/p>",
+            "hide_mobile": false,
+            "max_width": "900"
+          }
+        },
+        "c604a278-cb45-4654-8405-16ec9ebc054b": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "blank": false
+          }
+        }
+      },
+      "block_order": [
+        "4f322f27-1049-47f9-89e6-e1f9909aa97e",
+        "0600afb3-d296-49f9-aee5-3cd78cdc2e94",
+        "c604a278-cb45-4654-8405-16ec9ebc054b"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "contnet_type": "list",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "max_width": ""
+      }
+    },
     "e07b17f6-47e3-47e4-b76c-66172e4060a1": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "template--19042043822372__e07b17f6-47e3-47e4-b76c-66172e4060a1-1684662487b3dc82be-1": {
           "type": "column",
@@ -68,7 +118,7 @@
             "heading_color": "",
             "download_label": "",
             "download_link": "",
-            "text": "<p>Join Zildjian in celebrating our 400th Anniversary. Founded in 1623, Zildjian has been changing the sound of music across decades, centuries, and genres. Join us as we celebrate by honoring eight living legends of music. Hosted by Fred Armisen and featuring today's hottest drummers, it's bound to be a night to remember. So, join the celebration with our partners from around the globe, our major retailers, hundreds of our signed artists, the world's greatest music aficionados and 3 generations of Zildjians!<\/p>",
+            "text": "<p>Join us to celebrate Zildjian’s 400th Anniversary! Fred Armisen will host this once-in-a-lifetime event as we honor eight living legends of music, and feature performances by today’s greatest drummers.<\/p>",
             "link_label": "",
             "link": "",
             "full_link": false,
@@ -83,8 +133,8 @@
       "settings": {
         "side_banner": false,
         "full_width": false,
-        "title": "THE ZILDJIAN 400TH ANNIVERSARY CONCERT",
-        "heading_size": "h1",
+        "title": "BE A PART OF ZILDJIAN’S 400 YEARS OF HISTORY",
+        "heading_size": "h2",
         "heading_align": "center",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -109,36 +159,59 @@
         "max_width": "1200"
       }
     },
-    "b6193c33-b037-4344-b1a4-e6a1756b4752": {
-      "type": "multicolumn",
+    "2dea256a-89e8-4e9f-9cd2-f01fa81b5afa": {
+      "type": "rich-text",
       "blocks": {
-        "template--19042043822372__b6193c33-b037-4344-b1a4-e6a1756b4752-1686220806041c50d0-0": {
-          "type": "column",
+        "template--19721964355876__2dea256a-89e8-4e9f-9cd2-f01fa81b5afa-text-1": {
+          "type": "text",
           "settings": {
-            "badge": "",
-            "title": "CONCERT DETAILS",
-            "heading_size": "h3",
-            "heading_color": "",
-            "download_label": "",
-            "download_link": "",
-            "text": "<p><strong>VIP Pre-Party:<\/strong><\/p><p>Wednesday, September 20, 2023<br\/>From 5:00 p.m. to 7:00 p.m.<\/p><p><br\/><strong>The Zildjian 400th Anniversary Concert:<\/strong><\/p><p>Wednesday, September 20, 2023<br\/>From 7:00 p.m. to 11:00 p.m.<\/p>",
-            "link_label": "",
-            "link": "",
-            "full_link": false,
-            "link_list": "",
-            "blank_link": false
+            "text": "<p><strong>Date and Time:<\/strong><\/p><p>Wednesday, September 20, 2023<br\/>From 7:00 p.m. to 11:00 p.m.<\/p><p><strong>Location:<\/strong><\/p><p><a href=\"https:\/\/roadrunnerboston.com\/events\/detail\/?event_id=492665\" target=\"_blank\" title=\"https:\/\/roadrunnerboston.com\/events\/detail\/?event_id=492665\">Roadrunner<\/a><br\/>89 Guest Street, Boston, MA 02135<\/p>",
+            "hide_mobile": false,
+            "max_width": "720"
           }
         },
+        "template--19721964355876__2dea256a-89e8-4e9f-9cd2-f01fa81b5afa-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "BUY TICKETS",
+            "button_link": "https:\/\/roadrunnerboston.com\/events\/detail\/?event_id=492665",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "blank": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19721964355876__2dea256a-89e8-4e9f-9cd2-f01fa81b5afa-text-1",
+        "template--19721964355876__2dea256a-89e8-4e9f-9cd2-f01fa81b5afa-button-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "contnet_type": "list",
+        "content_alignment": "center",
+        "color_scheme": "background-2",
+        "full_width": false,
+        "padding_top": 28,
+        "padding_bottom": 40,
+        "max_width": ""
+      }
+    },
+    "b6193c33-b037-4344-b1a4-e6a1756b4752": {
+      "type": "multicolumn",
+      "disabled": true,
+      "blocks": {
         "template--19042043822372__b6193c33-b037-4344-b1a4-e6a1756b4752-1686220806041c50d0-1": {
           "type": "column",
           "settings": {
             "badge": "",
-            "title": "LOCATION & DATE",
+            "title": "",
             "heading_size": "h3",
             "heading_color": "",
             "download_label": "",
             "download_link": "",
-            "text": "<p><strong>Date:<\/strong><\/p><p>Wednesday, September 20, 2023<\/p><p><br\/><strong>Location:<\/strong><\/p><p><a href=\"https:\/\/roadrunnerboston.com\/events\/detail\/?event_id=492665\" target=\"_blank\" title=\"https:\/\/roadrunnerboston.com\/events\/detail\/?event_id=492665\">Roadrunner<\/a><br\/>89 Guest Street, Boston, MA 02135<\/p>",
+            "text": "<p><\/p><p><strong>Date and Time:<\/strong><\/p><p>Wednesday, September 20, 2023<br\/>From 7:00 p.m. to 11:00 p.m.<\/p>",
             "link_label": "",
             "link": "",
             "full_link": false,
@@ -148,7 +221,6 @@
         }
       },
       "block_order": [
-        "template--19042043822372__b6193c33-b037-4344-b1a4-e6a1756b4752-1686220806041c50d0-0",
         "template--19042043822372__b6193c33-b037-4344-b1a4-e6a1756b4752-1686220806041c50d0-1"
       ],
       "settings": {
@@ -175,106 +247,63 @@
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "mobile_overlay": false,
-        "padding_top": 36,
-        "padding_bottom": 36,
+        "padding_top": 20,
+        "padding_bottom": 0,
         "max_width": ""
       }
     },
-    "dba55eb0-9090-4ecd-bcdd-60fd780c959a": {
-      "type": "rich-text",
-      "blocks": {
-        "template--19042043822372__dba55eb0-9090-4ecd-bcdd-60fd780c959a-16862207273b358c05-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>SPONSORSHIPS INQUIRIES<\/p>",
-            "heading_size": "h1",
-            "max_width": ""
-          }
-        },
-        "template--19042043822372__dba55eb0-9090-4ecd-bcdd-60fd780c959a-16862207273b358c05-1": {
-          "type": "text",
-          "settings": {
-            "text": "<h3>Contact Nancy Smith at nsmith@zildjian.com <\/h3><h3>781-427-6939 | Line Extension: (402)<\/h3><h3>22 Longwater Drive, Norwell, MA 02061<\/h3>",
-            "hide_mobile": false,
-            "max_width": ""
-          }
-        },
-        "template--19042043822372__dba55eb0-9090-4ecd-bcdd-60fd780c959a-16862207273b358c05-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false,
-            "blank": false
-          }
-        }
-      },
-      "block_order": [
-        "template--19042043822372__dba55eb0-9090-4ecd-bcdd-60fd780c959a-16862207273b358c05-0",
-        "template--19042043822372__dba55eb0-9090-4ecd-bcdd-60fd780c959a-16862207273b358c05-1",
-        "template--19042043822372__dba55eb0-9090-4ecd-bcdd-60fd780c959a-16862207273b358c05-2"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "contnet_type": "list",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52,
-        "max_width": ""
-      }
-    },
-    "b921e32f-6c86-4cd1-9c28-51599b6bf8bf": {
-      "type": "image-banner",
+    "5136213b-9f56-48f4-b932-b8ae681a2286": {
+      "type": "multicolumn",
       "disabled": true,
       "blocks": {
-        "template--19042043822372__b921e32f-6c86-4cd1-9c28-51599b6bf8bf-16846625169927cc7b-0": {
-          "type": "heading",
+        "38d4a181-e911-40a2-8a58-095ad8a6d975": {
+          "type": "column",
           "settings": {
-            "heading": "PEOPLE AND CULTURE",
-            "heading_size": "h1",
-            "uppercase": false
-          }
-        },
-        "template--19042043822372__b921e32f-6c86-4cd1-9c28-51599b6bf8bf-16846625169927cc7b-1": {
-          "type": "text",
-          "settings": {
-            "text": "We strive to hire and develop the best talent. People who are passionate about music and our vision. People who are dedicated to growing with our company and shaping the future of our brands. Our diverse team is made up of hardworking, driven, and forward-thinking individuals who really believe that our day-to-day work contributes to the greater good of inspiring musical expression.",
-            "text_style": "body"
+            "badge": "",
+            "title": "Location",
+            "heading_size": "h5",
+            "heading_color": "",
+            "download_label": "",
+            "download_link": "",
+            "text": "<p><a href=\"https:\/\/roadrunnerboston.com\/events\/detail\/?event_id=492665\" target=\"_blank\" title=\"https:\/\/roadrunnerboston.com\/events\/detail\/?event_id=492665\">Roadrunner<\/a><br\/>89 Guest Street, Boston, MA 02135<\/p>",
+            "link_label": "",
+            "link": "",
+            "full_link": false,
+            "link_list": "",
+            "blank_link": false
           }
         }
       },
       "block_order": [
-        "template--19042043822372__b921e32f-6c86-4cd1-9c28-51599b6bf8bf-16846625169927cc7b-0",
-        "template--19042043822372__b921e32f-6c86-4cd1-9c28-51599b6bf8bf-16846625169927cc7b-1"
-      ],
-      "custom_css": [
-        "@media screen and (max-width: 749px) {.banner__heading {font-size: 20px; }}"
+        "38d4a181-e911-40a2-8a58-095ad8a6d975"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/People-and-Culture-Image_2_1.png",
-        "mobile_image": "shopify:\/\/shop_images\/People-and-Culture-Image_2_1.png",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "content_width": "675",
-        "padding_left": "",
-        "desktop_content_position": "bottom-left",
-        "show_text_box": false,
-        "desktop_content_alignment": "left",
-        "color_scheme": "inverse-2",
-        "mobile_content_alignment": "left",
-        "stack_images_on_mobile": true,
-        "show_text_below": true,
-        "center_mobile": false,
-        "full_mobile": false,
-        "content_padding": 60,
+        "side_banner": false,
+        "full_width": false,
+        "title": "",
+        "heading_size": "h1",
+        "heading_align": "center",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "mobile_image_ratio": "adapt",
+        "overlay_image": false,
+        "columns_desktop": 2,
+        "swipe_on_desktop": false,
+        "step_style": false,
+        "column_alignment": "center",
+        "no_gap": false,
+        "no_padding": false,
+        "number": false,
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "mobile_overlay": false,
         "padding_top": 0,
-        "padding_bottom": 36
+        "padding_bottom": 20,
+        "max_width": ""
       }
     },
     "7a943954-1fa4-4dae-bd9c-dfe6d0b5c793": {
@@ -283,6 +312,7 @@
       "blocks": {
         "template--19042043822372__7a943954-1fa4-4dae-bd9c-dfe6d0b5c793-16862207273b358c05-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "<p>SPECIAL PERFORMANCES<\/p>",
             "heading_size": "h0",
@@ -300,10 +330,9 @@
         },
         "template--19042043822372__7a943954-1fa4-4dae-bd9c-dfe6d0b5c793-16862207273b358c05-2": {
           "type": "button",
-          "disabled": true,
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
+            "button_label": "BUY TICKETS",
+            "button_link": "https:\/\/roadrunnerboston.com\/events\/detail\/?event_id=492665",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -323,7 +352,7 @@
         "content_alignment": "center",
         "color_scheme": "background-1",
         "full_width": true,
-        "padding_top": 40,
+        "padding_top": 20,
         "padding_bottom": 52,
         "max_width": ""
       }
@@ -385,7 +414,7 @@
         "mobile_layout": "image_first",
         "mobile_content_alignment": "left",
         "overlay_section": false,
-        "padding_top": 40,
+        "padding_top": 80,
         "padding_bottom": 28,
         "quote": false,
         "max_width": "560"
@@ -455,10 +484,10 @@
         "max_width": "560"
       }
     },
-    "042ba84b-14be-4969-bde9-f288094d5714": {
+    "8aaf1826-487d-4cca-a915-a7abdad5e3ad": {
       "type": "image-with-text",
       "blocks": {
-        "ea473a64-45aa-4c4e-b51e-4662574eaf34": {
+        "3c851483-3475-4b5c-bd9c-f26519bf7142": {
           "type": "heading",
           "settings": {
             "heading": "HONORING EIGHT LIVING LEGENDS",
@@ -468,7 +497,7 @@
             "max_width": ""
           }
         },
-        "0efba39e-6324-4752-9210-3be233273f88": {
+        "9523f6bd-3230-4e86-b8f2-26844955dd9f": {
           "type": "text",
           "settings": {
             "text": "<p>Eight of the world's most iconic drummers will be honored by today's top drummers!<\/p>",
@@ -476,7 +505,7 @@
             "color": "#5c5d60"
           }
         },
-        "81e884cd-c121-4cad-abd3-a897030c0d28": {
+        "7a9fdfbd-d686-49a6-82de-5a9307618780": {
           "type": "button",
           "disabled": true,
           "settings": {
@@ -488,9 +517,9 @@
         }
       },
       "block_order": [
-        "ea473a64-45aa-4c4e-b51e-4662574eaf34",
-        "0efba39e-6324-4752-9210-3be233273f88",
-        "81e884cd-c121-4cad-abd3-a897030c0d28"
+        "3c851483-3475-4b5c-bd9c-f26519bf7142",
+        "9523f6bd-3230-4e86-b8f2-26844955dd9f",
+        "7a9fdfbd-d686-49a6-82de-5a9307618780"
       ],
       "settings": {
         "tag": "",
@@ -513,7 +542,7 @@
         "mobile_content_alignment": "left",
         "overlay_section": false,
         "padding_top": 0,
-        "padding_bottom": 28,
+        "padding_bottom": 56,
         "quote": false,
         "max_width": "560"
       }
@@ -525,7 +554,7 @@
         "template--19042043822372__4727ef57-76ba-48fc-a3a3-b382c8f6566d-168466256289770156-0": {
           "type": "heading",
           "settings": {
-            "heading": "HONORING EIGHT LIVING LEGENDS",
+            "heading": "HONORING 8 LIVING LEGENDS",
             "heading_link": "",
             "heading_size": "h1",
             "heading_color": "",
@@ -535,7 +564,7 @@
         "template--19042043822372__4727ef57-76ba-48fc-a3a3-b382c8f6566d-168466256289770156-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Eight of the world's most iconic drummers will be honored by today's top drummers!<\/p>",
+            "text": "<p>Eight of the world's most iconic drummers will be honored by today's top touring drummers!<br\/><br\/>Shelia E. | Eddie Bayers | Dennis Chambers  | Terri Lyne Carrington | Omar Hakim | Steve Smith | Peter Erskine | Ringo Starr<\/p>",
             "text_style": "body",
             "color": "#5c5d60"
           }
@@ -627,13 +656,77 @@
         "content_alignment": "center",
         "color_scheme": "background-1",
         "full_width": true,
-        "padding_top": 72,
-        "padding_bottom": 52,
+        "padding_top": 48,
+        "padding_bottom": 28,
         "max_width": ""
+      }
+    },
+    "ac19b386-4842-488d-bf83-471c39bea9cd": {
+      "type": "image-with-text",
+      "blocks": {
+        "9e17d123-8f33-4018-b78f-b69dea83f911": {
+          "type": "heading",
+          "settings": {
+            "heading": "MUSIC MEMORABILIA",
+            "heading_link": "",
+            "heading_size": "h1",
+            "heading_color": "",
+            "max_width": ""
+          }
+        },
+        "3d3717ef-47ac-4955-80e1-26f78ac2dfc4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Check out some of the amazing music memorabilia Zildjian has curated over 400 years.<\/p>",
+            "text_style": "body",
+            "color": "#5c5d60"
+          }
+        },
+        "cbbabc13-60a5-49a8-8b18-c1671e72c62c": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "See our values",
+            "button_link": "shopify:\/\/pages\/about-us",
+            "link": true,
+            "blank_button": false
+          }
+        }
+      },
+      "block_order": [
+        "9e17d123-8f33-4018-b78f-b69dea83f911",
+        "3d3717ef-47ac-4955-80e1-26f78ac2dfc4",
+        "cbbabc13-60a5-49a8-8b18-c1671e72c62c"
+      ],
+      "settings": {
+        "tag": "",
+        "side_banner": false,
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/Music-Memorabilia.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Music-Memorabilia.jpg",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "container_image": false,
+        "media_max_width": "",
+        "desktop_content_position": "top",
+        "content_align": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "background-2",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "overlay_section": false,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "quote": false,
+        "max_width": "560"
       }
     },
     "4aa0d38a-eef4-489c-bccb-200b9ee21311": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "template--19042043822372__4aa0d38a-eef4-489c-bccb-200b9ee21311-168466256289770156-0": {
           "type": "heading",
@@ -697,6 +790,7 @@
     },
     "05064312-c9e7-4de7-8b74-f49f6906a2aa": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "template--19042043822372__05064312-c9e7-4de7-8b74-f49f6906a2aa-168622136299a30cf9-0": {
           "type": "heading",
@@ -774,7 +868,7 @@
         "template--19042043822372__a70e8f86-c43b-4bba-970b-7d6db22cfe5f-168622136299a30cf9-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Help us raise money for Music Cares through both an in-person and online auction.<\/p>",
+            "text": "<p>Help us raise money for MusiCares through both an in-person and online auction.<\/p>",
             "text_style": "body",
             "color": ""
           }
@@ -827,10 +921,10 @@
         "template--19042043822372__66c2b6d0-a6ed-4061-b763-7fc31b26bbdd-1686222299077580c7-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/EDDIE-BAYERS_243155e1-6f7f-4b9d-809c-4a7004849436.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/EDDIE-BAYERS_80bde096-6e04-4cff-8103-65fa6b91f0ef.jpg",
+            "image": "shopify:\/\/shop_images\/EDDIE-BAYERS_a64cc21a-5d8b-4e83-a72d-0e42f0134bea.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/EDDIE-BAYERS_6354c150-cba7-404c-af40-c1388081ef14.jpg",
             "badge": "",
-            "title": "Eddie Bayers",
+            "title": "EDDIE BAYERS",
             "heading_size": "h3",
             "heading_color": "",
             "download_label": "",
@@ -846,8 +940,8 @@
         "template--19042043822372__66c2b6d0-a6ed-4061-b763-7fc31b26bbdd-1686222299077580c7-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/TERRI-LYNE-CARRINGTON_d52632c7-1af1-43dd-91fb-688d63d0a38e.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/TERRI-LYNE-CARRINGTON_339f13f1-c005-4af0-944f-ac073e9c5f26.jpg",
+            "image": "shopify:\/\/shop_images\/TERRI-LYNE-CARRINGTON_dc773e3b-2b65-4328-a420-2752fac67544.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/TERRI-LYNE-CARRINGTON_819a7cb0-a3ac-4de8-be4a-46b92c8f7d9e.jpg",
             "badge": "",
             "title": "Terri Lyne Carrington",
             "heading_size": "h3",
@@ -865,8 +959,8 @@
         "template--19042043822372__66c2b6d0-a6ed-4061-b763-7fc31b26bbdd-1686222299077580c7-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/DENNIS-CHAMBERS_f6ac7bf5-56af-4673-af1d-93ddf6bd2386.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/DENNIS-CHAMBERS_2afe7034-2f9f-4d45-8a8a-985b2e665d3f.jpg",
+            "image": "shopify:\/\/shop_images\/DENNIS-CHAMBERS_1c01f42d-a7a3-42d0-8093-42d8c6abc3b1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/DENNIS-CHAMBERS_60cb3207-4c0d-4686-94cb-af447cb60297.jpg",
             "badge": "",
             "title": "Dennis Chambers",
             "heading_size": "h3",
@@ -884,8 +978,8 @@
         "6c829150-8037-4aff-9171-2ff46764f607": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/SHEILA-E_87e65085-8819-4e22-bb18-4934011bbe0f.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/SHEILA-E_aaa3a35d-c04c-4ac2-917d-1883c4132afa.jpg",
+            "image": "shopify:\/\/shop_images\/SHEILA-E_b628df8c-d314-4784-a8f6-53d1629f223b.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/SHEILA-E_e13011f9-4497-4058-87e5-eb8d912fe2b4.jpg",
             "badge": "",
             "title": "Sheila E.",
             "heading_size": "h3",
@@ -903,8 +997,8 @@
         "template--19042043822372__3ff34e09-f9ac-40b1-babc-85f50028d668-1686222299077580c7-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/PETER-ERSKINE_9edf47c5-4d10-4961-97ff-44ea89693704.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/PETER-ERSKINE_1a273342-8951-4b8b-8cfe-e76cb7a99cec.jpg",
+            "image": "shopify:\/\/shop_images\/PETER-ERSKINE_a4aca7d7-7d94-4b3e-b26d-bb27276a5e4e.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/PETER-ERSKINE_b7742cb9-0c02-44f3-96c8-8822fb7e7c91.jpg",
             "badge": "",
             "title": "Peter Erskine",
             "heading_size": "h3",
@@ -922,8 +1016,8 @@
         "template--19042043822372__3ff34e09-f9ac-40b1-babc-85f50028d668-1686222299077580c7-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/OMAR-HAKIM_e2b46ee3-46fe-4318-a7f9-959af319baec.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/OMAR-HAKIM_b0cc5cc9-4ad0-4c83-ad3f-d5a68ed8177c.jpg",
+            "image": "shopify:\/\/shop_images\/OMAR-HAKIM_30eac27c-839d-4377-a336-6a794d8a7f38.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/OMAR-HAKIM_6ff3fa6d-df6e-4368-89e5-70ff604a6d09.jpg",
             "badge": "",
             "title": "Omar Hakim",
             "heading_size": "h3",
@@ -941,8 +1035,8 @@
         "template--19042043822372__3ff34e09-f9ac-40b1-babc-85f50028d668-1686222299077580c7-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/STEVE-SMITH_7aeed0c0-92d1-410d-8e67-022839a09222.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/STEVE-SMITH_ccab2818-72b6-438e-81c2-d8884cd7643e.jpg",
+            "image": "shopify:\/\/shop_images\/STEVE-SMITH_c6dec188-ed98-4d94-a178-f085cafbcde8.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/STEVE-SMITH_35e5f2a4-a2ee-4ec6-a399-9eae247f2e91.jpg",
             "badge": "",
             "title": "STEVE SMITH",
             "heading_size": "h3",
@@ -960,8 +1054,8 @@
         "607a6041-cebf-4e98-a36b-62e258919a10": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/RINGO-STARR_2e4e18ea-67f1-4de9-be0f-6e28db717576.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/RINGO-STARR_f168f920-2dfc-4ac8-93d3-90fd23b17d18.jpg",
+            "image": "shopify:\/\/shop_images\/RINGO-STARR_67a93b27-fad2-4809-a8de-fadd8348f12f.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/RINGO-STARR_f45ef49d-ce19-4fcd-9817-366d499c376d.jpg",
             "badge": "",
             "title": "Ringo Starr",
             "heading_size": "h3",
@@ -1014,7 +1108,7 @@
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "mobile_overlay": false,
-        "padding_top": 36,
+        "padding_top": 68,
         "padding_bottom": 36,
         "max_width": ""
       }
@@ -1033,9 +1127,9 @@
         "template--19042043822372__da823f7b-0858-4e43-9747-29d978c04a22-168622207121272d94-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Our honorees and tribute artists have played with (or are in their own right) some of the biggest names in music. With thousands of hit songs, countless awards, and fans across the globe, this never before assembled lineup creates a once in a lifetime opportunity for you.<\/p>",
+            "text": "<p>Our honorees and tribute artists have played with (or are in their own right) some of the biggest names in music. With thousands of hit songs, countless awards, and fans across the globe, this never before assembled lineup creates a once-in-a-lifetime opportunity for you.<\/p>",
             "hide_mobile": false,
-            "max_width": "780"
+            "max_width": "760"
           }
         },
         "template--19042043822372__da823f7b-0858-4e43-9747-29d978c04a22-168622207121272d94-2": {
@@ -1063,8 +1157,8 @@
         "content_alignment": "center",
         "color_scheme": "background-1",
         "full_width": true,
-        "padding_top": 52,
-        "padding_bottom": 24,
+        "padding_top": 40,
+        "padding_bottom": 52,
         "max_width": ""
       }
     },
@@ -1126,188 +1220,32 @@
         "show_text_below": true,
         "center_mobile": false,
         "full_mobile": false,
-        "content_padding": 20,
+        "content_padding": 28,
         "padding_top": 0,
-        "padding_bottom": 48
-      }
-    },
-    "6e4a8862-83be-49ea-b26e-b39fd38dcae0": {
-      "type": "rich-text",
-      "blocks": {
-        "template--19042043822372__6e4a8862-83be-49ea-b26e-b39fd38dcae0-168622207121272d94-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>AVAILABLE SPONSORSHIPS<\/p>",
-            "heading_size": "h1",
-            "max_width": ""
-          }
-        },
-        "template--19042043822372__6e4a8862-83be-49ea-b26e-b39fd38dcae0-168622207121272d94-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
-            "hide_mobile": false,
-            "max_width": ""
-          }
-        },
-        "template--19042043822372__6e4a8862-83be-49ea-b26e-b39fd38dcae0-168622207121272d94-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false,
-            "blank": false
-          }
-        }
-      },
-      "block_order": [
-        "template--19042043822372__6e4a8862-83be-49ea-b26e-b39fd38dcae0-168622207121272d94-0",
-        "template--19042043822372__6e4a8862-83be-49ea-b26e-b39fd38dcae0-168622207121272d94-1",
-        "template--19042043822372__6e4a8862-83be-49ea-b26e-b39fd38dcae0-168622207121272d94-2"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "contnet_type": "list",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 28,
-        "max_width": ""
-      }
-    },
-    "68c942e6-c365-41b7-9949-5dc3f589d49d": {
-      "type": "multicolumn",
-      "blocks": {
-        "template--19042043822372__68c942e6-c365-41b7-9949-5dc3f589d49d-1686220806041c50d0-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled-3.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Untitled-3.jpg",
-            "badge": "",
-            "title": "",
-            "heading_size": "h3",
-            "heading_color": "",
-            "download_label": "",
-            "download_link": "",
-            "text": "",
-            "link_label": "",
-            "link": "",
-            "full_link": false,
-            "link_list": "",
-            "blank_link": false
-          }
-        }
-      },
-      "block_order": [
-        "template--19042043822372__68c942e6-c365-41b7-9949-5dc3f589d49d-1686220806041c50d0-0"
-      ],
-      "settings": {
-        "side_banner": false,
-        "full_width": false,
-        "title": "",
-        "heading_size": "h1",
-        "heading_align": "left",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "mobile_image_ratio": "adapt",
-        "overlay_image": false,
-        "columns_desktop": 1,
-        "swipe_on_desktop": false,
-        "step_style": false,
-        "column_alignment": "center",
-        "no_gap": false,
-        "no_padding": false,
-        "number": false,
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "mobile_overlay": false,
-        "padding_top": 0,
-        "padding_bottom": 36,
-        "max_width": "800"
-      }
-    },
-    "6183ac13-1753-43c5-bd7e-c56fcabcc6db": {
-      "type": "rich-text",
-      "blocks": {
-        "template--19042043822372__6183ac13-1753-43c5-bd7e-c56fcabcc6db-1684662601b8b1f698-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>SPONSORSHIPS INQUIRIES<\/p>",
-            "heading_size": "h1",
-            "max_width": ""
-          }
-        },
-        "template--19042043822372__6183ac13-1753-43c5-bd7e-c56fcabcc6db-1684662601b8b1f698-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "See Job Openings",
-            "button_link": "https:\/\/recruiting.paylocity.com\/Recruiting\/Jobs\/All\/d11b52b1-5f1f-4f49-b717-27723027dfaf\/AZC-INC",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false,
-            "blank": true
-          }
-        },
-        "df5b0c08-a475-4032-aa63-4eb8b08d635c": {
-          "type": "text",
-          "settings": {
-            "text": "<h3>Contact Nancy Smith at nsmith@zildjian.com <\/h3><h3>781-427-6939 | Line Extension: (402)<\/h3><h3>22 Longwater Drive, Norwell, MA 02061<\/h3>",
-            "hide_mobile": false,
-            "max_width": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--19042043822372__6183ac13-1753-43c5-bd7e-c56fcabcc6db-1684662601b8b1f698-0",
-        "template--19042043822372__6183ac13-1753-43c5-bd7e-c56fcabcc6db-1684662601b8b1f698-2",
-        "df5b0c08-a475-4032-aa63-4eb8b08d635c"
-      ],
-      "custom_css": [],
-      "settings": {
-        "desktop_content_position": "center",
-        "contnet_type": "list",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52,
-        "max_width": ""
+        "padding_bottom": 88
       }
     }
   },
   "order": [
     "3141c904-b6a6-4f2b-a1fe-aa2b9e911af8",
     "main",
+    "d0b6d7cd-c260-41c2-b710-b98eca0b0bce",
     "e07b17f6-47e3-47e4-b76c-66172e4060a1",
+    "2dea256a-89e8-4e9f-9cd2-f01fa81b5afa",
     "b6193c33-b037-4344-b1a4-e6a1756b4752",
-    "dba55eb0-9090-4ecd-bcdd-60fd780c959a",
-    "b921e32f-6c86-4cd1-9c28-51599b6bf8bf",
+    "5136213b-9f56-48f4-b932-b8ae681a2286",
     "7a943954-1fa4-4dae-bd9c-dfe6d0b5c793",
     "d00001f0-06ae-4173-a192-491dc4a7eda3",
     "47129bfb-4f12-40f4-a4e8-98bf30e1acc6",
-    "042ba84b-14be-4969-bde9-f288094d5714",
+    "8aaf1826-487d-4cca-a915-a7abdad5e3ad",
     "4727ef57-76ba-48fc-a3a3-b382c8f6566d",
     "1e4eeb5c-b1d7-419d-b7f4-d9f5eef2ba25",
+    "ac19b386-4842-488d-bf83-471c39bea9cd",
     "4aa0d38a-eef4-489c-bccb-200b9ee21311",
     "05064312-c9e7-4de7-8b74-f49f6906a2aa",
     "a70e8f86-c43b-4bba-970b-7d6db22cfe5f",
     "66c2b6d0-a6ed-4061-b763-7fc31b26bbdd",
     "da823f7b-0858-4e43-9747-29d978c04a22",
-    "78b4ab7a-ab3c-40b1-9cfb-6e62c209c76e",
-    "6e4a8862-83be-49ea-b26e-b39fd38dcae0",
-    "68c942e6-c365-41b7-9949-5dc3f589d49d",
-    "6183ac13-1753-43c5-bd7e-c56fcabcc6db"
+    "78b4ab7a-ab3c-40b1-9cfb-6e62c209c76e"
   ]
 }

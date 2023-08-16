@@ -1,13 +1,24 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}">
   <head>
+    <link rel="preload" href="https://cdn.shopify.com/s/files/1/0729/7938/2564/files/white-bg_460x.png?v=1689839554" as="image">
+    {% if template == 'index' %}
+    <link rel="preload" href="https://zildjian.com/cdn/shop/files/Zildjian_Website_Horizontal_1.jpg?v=1691155350&width=1500" as="image">  
+    {% elsif template contains 'collection' %}
+    {% assign image = collection.metafields.global.header_banner_image | default: collection.image %}
+    <link rel="preload" href="{{image | image_url: width: 2048}}" as="image">  
+    {% elsif template contains 'product' %}
+    {% assign image = product.selected_variant.featured_image | default: product.featured_image %}
+    <link rel="preload" href="{{image | image_url: width: 823}}" as="image">  
+    {% endif %}
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
-
+    <link rel="preload" href="https://ui.powerreviews.com/stable/4.1/ui.js" as="script">
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
     {%- endif -%}
@@ -39,7 +50,7 @@
 
       gtag('config', 'UA-152752418-1');
     </script>
-
+    
     <!-- Facebook tracking code. -->
 
     <script>
@@ -54,15 +65,27 @@
       fbq('init', '1789827234600651');
       fbq('track', 'PageView');
     </script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    </noscript>
+
+    <link rel="preload" href="{{'tagalys-customisations.css' | asset_url}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet" href="{{'tagalys-customisations.css' | asset_url}}">
+    </noscript>
     <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'global.min.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
-    {% assign content_for_header = content_for_header | remove_first: '"https:\/\/cdn.shopify.com\/s\/files\/1\/0729\/7938\/2564\/t\/1\/assets\/zendesk-embeddable.js?v=1680563681\u0026shop=zildjianshop.myshopify.com"' %}
-    {{ content_for_header }}
+      
+    {% assign content_for_header = content_for_header 
+      | replace: "const previewBarInjector", "let ticking = false;addEventListener('scroll', (event) => {if (!ticking) {ticking = true;const previewBarInjector" 
+      | replace: 'previewBarInjector.init();', 'previewBarInjector.init();}});'
+     %}
+    {{ content_for_header  }}
 
     {%- liquid
       assign body_font_bold = settings.type_body_font | font_modify: 'weight', '700'
@@ -70,201 +93,8 @@
       assign body_font_bold_italic = body_font_bold | font_modify: 'style', 'italic'
     %}
 
-    {% style %}
-      {{ settings.type_body_font | font_face: font_display: 'swap' }}
-      {{ body_font_bold | font_face: font_display: 'swap' }}
-      {{ body_font_italic | font_face: font_display: 'swap' }}
-      {{ body_font_bold_italic | font_face: font_display: 'swap' }}
-      {{ settings.type_header_font | font_face: font_display: 'swap' }}
+    {% include 'base_style' %}
 
-      @font-face {
-        font-family: 'Century Old Style Std';
-        src: url({{'CenturyOldStyleStd-Regular.woff2' | asset_url }}) format('woff2'),
-            url({{'CenturyOldStyleStd-Regular.woff' | asset_url }}) format('woff');
-        font-weight: normal;
-        font-style: normal;
-        font-display: swap;
-      }
-
-      :root {
-        --font-spec-family: 'Century Old Style Std';
-        --font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
-        --font-body-style: {{ settings.type_body_font.style }};
-        --font-body-weight: {{ settings.type_body_font.weight }};
-        --font-body-weight-bold: {{ settings.type_body_font.weight | plus: 300 | at_most: 1000 }};
-
-        --font-heading-family: {{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }};
-        --font-heading-style: {{ settings.type_header_font.style }};
-        --font-heading-weight: {{ settings.type_header_font.weight }};
-
-        --font-body-scale: {{ settings.body_scale | divided_by: 100.0 }};
-        --font-heading-scale: {{ settings.heading_scale | times: 1.0 | divided_by: settings.body_scale }};
-
-        --color-base-text: {{ settings.colors_text.red }}, {{ settings.colors_text.green }}, {{ settings.colors_text.blue }};
-        --color-shadow: {{ settings.colors_text.red }}, {{ settings.colors_text.green }}, {{ settings.colors_text.blue }};
-        --color-base-background-1: {{ settings.colors_background_1.red }}, {{ settings.colors_background_1.green }}, {{ settings.colors_background_1.blue }};
-        --color-base-background-2: {{ settings.colors_background_2.red }}, {{ settings.colors_background_2.green }}, {{ settings.colors_background_2.blue }};
-        --color-base-solid-button-labels: {{ settings.colors_solid_button_labels.red }}, {{ settings.colors_solid_button_labels.green }}, {{ settings.colors_solid_button_labels.blue }};
-        --color-base-outline-button-labels: {{ settings.colors_outline_button_labels.red }}, {{ settings.colors_outline_button_labels.green }}, {{ settings.colors_outline_button_labels.blue }};
-        --color-base-accent-1: {{ settings.colors_accent_1.red }}, {{ settings.colors_accent_1.green }}, {{ settings.colors_accent_1.blue }};
-        --color-base-accent-2: {{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }};
-        --payment-terms-background-color: {{ settings.colors_background_1 }};
-
-        --gradient-base-background-1: {% if settings.gradient_background_1 != blank %}{{ settings.gradient_background_1 }}{% else %}{{ settings.colors_background_1 }}{% endif %};
-        --gradient-base-background-2: {% if settings.gradient_background_2 != blank %}{{ settings.gradient_background_2 }}{% else %}{{ settings.colors_background_2 }}{% endif %};
-        --gradient-base-accent-1: {% if settings.gradient_accent_1 != blank %}{{ settings.gradient_accent_1 }}{% else %}{{ settings.colors_accent_1 }}{% endif %};
-        --gradient-base-accent-2: {% if settings.gradient_accent_2 != blank %}{{ settings.gradient_accent_2 }}{% else %}{{ settings.colors_accent_2 }}{% endif %};
-
-        --media-padding: {{ settings.media_padding }}px;
-        --media-border-opacity: {{ settings.media_border_opacity | divided_by: 100.0 }};
-        --media-border-width: {{ settings.media_border_thickness }}px;
-        --media-radius: {{ settings.media_radius }}px;
-        --media-shadow-opacity: {{ settings.media_shadow_opacity | divided_by: 100.0 }};
-        --media-shadow-horizontal-offset: {{ settings.media_shadow_horizontal_offset }}px;
-        --media-shadow-vertical-offset: {{ settings.media_shadow_vertical_offset }}px;
-        --media-shadow-blur-radius: {{ settings.media_shadow_blur }}px;
-        --media-shadow-visible: {% if settings.media_shadow_opacity > 0 %}1{% else %}0{% endif %};
-
-        --page-width: {{ settings.page_width | divided_by: 10 }}rem;
-        --page-width-margin: {% if settings.page_width == '1600' %}2{% else %}0{% endif %}rem;
-
-        --product-card-image-padding: {{ settings.card_image_padding | divided_by: 10.0 }}rem;
-        --product-card-corner-radius: {{ settings.card_corner_radius | divided_by: 10.0 }}rem;
-        --product-card-text-alignment: {{ settings.card_text_alignment }};
-        --product-card-border-width: {{ settings.card_border_thickness | divided_by: 10.0 }}rem;
-        --product-card-border-opacity: {{ settings.card_border_opacity | divided_by: 100.0 }};
-        --product-card-shadow-opacity: {{ settings.card_shadow_opacity | divided_by: 100.0 }};
-        --product-card-shadow-visible: {% if settings.card_shadow_opacity > 0 %}1{% else %}0{% endif %};
-        --product-card-shadow-horizontal-offset: {{ settings.card_shadow_horizontal_offset | divided_by: 10.0 }}rem;
-        --product-card-shadow-vertical-offset: {{ settings.card_shadow_vertical_offset | divided_by: 10.0 }}rem;
-        --product-card-shadow-blur-radius: {{ settings.card_shadow_blur | divided_by: 10.0 }}rem;
-
-        --collection-card-image-padding: {{ settings.collection_card_image_padding | divided_by: 10.0 }}rem;
-        --collection-card-corner-radius: {{ settings.collection_card_corner_radius | divided_by: 10.0 }}rem;
-        --collection-card-text-alignment: {{ settings.collection_card_text_alignment }};
-        --collection-card-border-width: {{ settings.collection_card_border_thickness | divided_by: 10.0 }}rem;
-        --collection-card-border-opacity: {{ settings.collection_card_border_opacity | divided_by: 100.0 }};
-        --collection-card-shadow-opacity: {{ settings.collection_card_shadow_opacity | divided_by: 100.0 }};
-        --collection-card-shadow-visible: {% if settings.collection_card_shadow_opacity > 0 %}1{% else %}0{% endif %};
-        --collection-card-shadow-horizontal-offset: {{ settings.collection_card_shadow_horizontal_offset | divided_by: 10.0 }}rem;
-        --collection-card-shadow-vertical-offset: {{ settings.collection_card_shadow_vertical_offset | divided_by: 10.0 }}rem;
-        --collection-card-shadow-blur-radius: {{ settings.collection_card_shadow_blur | divided_by: 10.0 }}rem;
-
-        --blog-card-image-padding: {{ settings.blog_card_image_padding | divided_by: 10.0 }}rem;
-        --blog-card-corner-radius: {{ settings.blog_card_corner_radius | divided_by: 10.0 }}rem;
-        --blog-card-text-alignment: {{ settings.blog_card_text_alignment }};
-        --blog-card-border-width: {{ settings.blog_card_border_thickness | divided_by: 10.0 }}rem;
-        --blog-card-border-opacity: {{ settings.blog_card_border_opacity | divided_by: 100.0 }};
-        --blog-card-shadow-opacity: {{ settings.blog_card_shadow_opacity | divided_by: 100.0 }};
-        --blog-card-shadow-visible: {% if settings.blog_card_shadow_opacity > 0 %}1{% else %}0{% endif %};
-        --blog-card-shadow-horizontal-offset: {{ settings.blog_card_shadow_horizontal_offset | divided_by: 10.0 }}rem;
-        --blog-card-shadow-vertical-offset: {{ settings.blog_card_shadow_vertical_offset | divided_by: 10.0 }}rem;
-        --blog-card-shadow-blur-radius: {{ settings.blog_card_shadow_blur | divided_by: 10.0 }}rem;
-
-        --badge-corner-radius: {{ settings.badge_corner_radius | divided_by: 10.0 }}rem;
-
-        --popup-border-width: {{ settings.popup_border_thickness }}px;
-        --popup-border-opacity: {{ settings.popup_border_opacity | divided_by: 100.0 }};
-        --popup-corner-radius: {{ settings.popup_corner_radius }}px;
-        --popup-shadow-opacity: {{ settings.popup_shadow_opacity | divided_by: 100.0 }};
-        --popup-shadow-horizontal-offset: {{ settings.popup_shadow_horizontal_offset }}px;
-        --popup-shadow-vertical-offset: {{ settings.popup_shadow_vertical_offset }}px;
-        --popup-shadow-blur-radius: {{ settings.popup_shadow_blur }}px;
-
-        --drawer-border-width: {{ settings.drawer_border_thickness }}px;
-        --drawer-border-opacity: {{ settings.drawer_border_opacity | divided_by: 100.0 }};
-        --drawer-shadow-opacity: {{ settings.drawer_shadow_opacity | divided_by: 100.0 }};
-        --drawer-shadow-horizontal-offset: {{ settings.drawer_shadow_horizontal_offset }}px;
-        --drawer-shadow-vertical-offset: {{ settings.drawer_shadow_vertical_offset }}px;
-        --drawer-shadow-blur-radius: {{ settings.drawer_shadow_blur }}px;
-
-        --spacing-sections-desktop: {{ settings.spacing_sections }}px;
-        --spacing-sections-mobile: {% if settings.spacing_sections < 24 %}{{ settings.spacing_sections }}{% else %}{{ settings.spacing_sections | times: 0.7 | round | at_least: 20 }}{% endif %}px;
-
-        --grid-desktop-vertical-spacing: {{ settings.spacing_grid_vertical }}px;
-        --grid-desktop-horizontal-spacing: {{ settings.spacing_grid_horizontal }}px;
-        --grid-mobile-vertical-spacing: {{ settings.spacing_grid_vertical | divided_by: 2 }}px;
-        --grid-mobile-horizontal-spacing: {{ settings.spacing_grid_horizontal | divided_by: 2 }}px;
-
-        --text-boxes-border-opacity: {{ settings.text_boxes_border_opacity | divided_by: 100.0 }};
-        --text-boxes-border-width: {{ settings.text_boxes_border_thickness }}px;
-        --text-boxes-radius: {{ settings.text_boxes_radius }}px;
-        --text-boxes-shadow-opacity: {{ settings.text_boxes_shadow_opacity | divided_by: 100.0 }};
-        --text-boxes-shadow-visible: {% if settings.text_boxes_shadow_opacity > 0 %}1{% else %}0{% endif %};
-        --text-boxes-shadow-horizontal-offset: {{ settings.text_boxes_shadow_horizontal_offset }}px;
-        --text-boxes-shadow-vertical-offset: {{ settings.text_boxes_shadow_vertical_offset }}px;
-        --text-boxes-shadow-blur-radius: {{ settings.text_boxes_shadow_blur }}px;
-
-        --buttons-radius: {{ settings.buttons_radius }}px;
-        --buttons-radius-outset: {% if settings.buttons_radius > 0 %}{{ settings.buttons_radius | plus: settings.buttons_border_thickness }}{% else %}0{% endif %}px;
-        --buttons-border-width: {% if settings.buttons_border_opacity > 0 %}{{ settings.buttons_border_thickness }}{% else %}0{% endif %}px;
-        --buttons-border-opacity: {{ settings.buttons_border_opacity | divided_by: 100.0 }};
-        --buttons-shadow-opacity: {{ settings.buttons_shadow_opacity | divided_by: 100.0 }};
-        --buttons-shadow-visible: {% if settings.buttons_shadow_opacity > 0 %}1{% else %}0{% endif %};
-        --buttons-shadow-horizontal-offset: {{ settings.buttons_shadow_horizontal_offset }}px;
-        --buttons-shadow-vertical-offset: {{ settings.buttons_shadow_vertical_offset }}px;
-        --buttons-shadow-blur-radius: {{ settings.buttons_shadow_blur }}px;
-        --buttons-border-offset: {% if settings.buttons_radius > 0 or settings.buttons_shadow_opacity > 0 %}0.3{% else %}0{% endif %}px;
-
-        --inputs-radius: {{ settings.inputs_radius }}px;
-        --inputs-border-width: {{ settings.inputs_border_thickness }}px;
-        --inputs-border-opacity: {{ settings.inputs_border_opacity | divided_by: 100.0 }};
-        --inputs-shadow-opacity: {{ settings.inputs_shadow_opacity | divided_by: 100.0 }};
-        --inputs-shadow-horizontal-offset: {{ settings.inputs_shadow_horizontal_offset }}px;
-        --inputs-margin-offset: {% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_opacity > 0 %}{{ settings.inputs_shadow_vertical_offset | abs }}{% else %}0{% endif %}px;
-        --inputs-shadow-vertical-offset: {{ settings.inputs_shadow_vertical_offset }}px;
-        --inputs-shadow-blur-radius: {{ settings.inputs_shadow_blur }}px;
-        --inputs-radius-outset: {% if settings.inputs_radius > 0 %}{{ settings.inputs_radius | plus: settings.inputs_border_thickness }}{% else %}0{% endif %}px;
-
-        --variant-pills-radius: {{ settings.variant_pills_radius }}px;
-        --variant-pills-border-width: {{ settings.variant_pills_border_thickness }}px;
-        --variant-pills-border-opacity: {{ settings.variant_pills_border_opacity | divided_by: 100.0 }};
-        --variant-pills-shadow-opacity: {{ settings.variant_pills_shadow_opacity | divided_by: 100.0 }};
-        --variant-pills-shadow-horizontal-offset: {{ settings.variant_pills_shadow_horizontal_offset }}px;
-        --variant-pills-shadow-vertical-offset: {{ settings.variant_pills_shadow_vertical_offset }}px;
-        --variant-pills-shadow-blur-radius: {{ settings.variant_pills_shadow_blur }}px;
-      }
-
-      *,
-      *::before,
-      *::after {
-        box-sizing: inherit;
-      }
-
-      html {
-        box-sizing: border-box;
-        font-size: calc(var(--font-body-scale) * 62.5%);
-        height: 100%;
-      }
-
-      body {
-        display: grid;
-        grid-template-rows: auto auto 1fr auto;
-        grid-template-columns: 100%;
-        min-height: 100%;
-        margin: 0;
-        font-size: 15px;
-        letter-spacing: 1px;
-        line-height: 23px;
-        font-family: var(--font-body-family);
-        font-style: var(--font-body-style);
-        font-weight: var(--font-body-weight);
-      }
-
-      [data-notify] { z-index: 1 !important; }
-
-      @media screen and (max-width: 749px) {
-        body {
-          font-size: 15px;
-          line-height: 22px;
-          letter-spacing: 0;
-        }
-      }
-    {% endstyle %}
-
-    {{ 'base.css' | asset_url | stylesheet_tag }}
-    {{'custom.scss.css' | asset_url | stylesheet_tag }}
-    {{ 'cyber.css' | asset_url | stylesheet_tag }}
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
     {%- endunless -%}
@@ -281,32 +111,21 @@
       document.documentElement.classList.add('shopify-design-mode');
     }
     </script>
-  
- <!--begin-boost-pfs-filter-css-->
-   
- <!--end-boost-pfs-filter-css-->
-
- 
-
- <!--begin-boost-pfs-filter-css-->
-   
- <!--end-boost-pfs-filter-css-->
-
- 
-
- <!--begin-boost-pfs-filter-css-->
-   {% render 'boost-pfs-style' %}
- <!--end-boost-pfs-filter-css-->
-
-  {{ 'tagalys-customisations.css' | asset_url | stylesheet_tag }}
+    {% if template contains 'collection' %}
+    <!--begin-boost-pfs-filter-css-->
+      {% render 'boost-pfs-style' %}
+    <!--end-boost-pfs-filter-css-->
+    {% endif %}
+    
   {{'custom-search.scss.css' | asset_url | stylesheet_tag }}
+  <img width="2048" height="1024" style="position: absolute;height:auto;width:100%;max-height:100vh;" src="https://cdn.shopify.com/s/files/1/0729/7938/2564/files/white-bg_460x.png?v=1689839554">
+  
 </head>
 
   <body class="gradient {{ page.handle }} {{ article.title }} {{ blog.handle }} hide-price ">
 
-    {{ 'tagalys-customisations.js' | asset_url | script_tag }}
-    {% comment %} <script src="https://storage.googleapis.com/tagalys-front-end-components/tagalys-ui-widgets-1.3.1.min.js"></script> {% endcomment %}
-    {% comment %} FS added {% endcomment %}
+    {{ 'tagalys-customisations.min.js' | asset_url | script_tag }}
+
     <script src="https://storage.googleapis.com/tagalys-front-end-components/tagalys-ui-widgets-1.3.3.min.js"></script>
     
 
@@ -319,7 +138,7 @@
     {%- endif -%}
 
     {% sections 'header-group' %}
-
+    
     <main id="MainContent" class="content-for-layout focus-none {{template}} {{template.suffix}}" role="main" tabindex="-1">
       {% if template == 'cart' %}
         <div class="page-width {% if cart == empty %}empty-cart{% endif %} ">
@@ -367,156 +186,17 @@
         playSlideshow: `{{ 'sections.slideshow.play_slideshow' | t }}`,
       }
     </script>
-
-    <script> (function(){ var s = document.createElement('script'); var h = document.querySelector('head') || document.body; s.src = 'https://acsbapp.com/apps/app/dist/js/app.js'; s.async = true; s.onload = function(){ acsbJS.init({ statementLink : '', footerHtml : '', hideMobile : false, hideTrigger : false, disableBgProcess : false, language : 'en', position : 'right', leadColor : '#146FF8', triggerColor : '#146FF8', triggerRadius : '50%', triggerPositionX : 'right', triggerPositionY : 'bottom', triggerIcon : 'people', triggerSize : 'bottom', triggerOffsetX : 30, triggerOffsetY : 30, mobile : { triggerSize : 'small', triggerPositionX : 'right', triggerPositionY : 'bottom', triggerOffsetX : 10, triggerOffsetY : 35, triggerRadius : '20' } }); }; h.appendChild(s); })(); </script>
- <!--begin-boost-pfs-js-->
-   
- <!--end-boost-pfs-js-->
-
- <!--begin-boost-pfs-js-->
-   
- <!--end-boost-pfs-js-->
-
- <!--begin-boost-pfs-js-->
-   {% render 'boost-pfs' %}
- <!--end-boost-pfs-js-->
-
- 
- {% comment %} 
-	api_key: "10803808-76df-4b55-b781-315a7e6c6f91",
-	locale: "en_US",
-	merchant_group_id: "1856964674",
-	merchant_id: "167086839",
-
-	api_key: "76a29117-f53a-4a2c-b341-b715b976ec82",
-	locale: "en_US",
-	merchant_group_id: "49888431",
-	merchant_id: "60819357",
-{% endcomment %}
-<script src="https://ui.powerreviews.com/stable/4.1/ui.js"></script>
-<script>
-  window.pwr = window.pwr || function () {
-    (pwr.q = pwr.q || []).push(arguments); 
-  };
-  pwr("render", {
-    api_key: '76a29117-f53a-4a2c-b341-b715b976ec82',
-    locale: 'en_US',
-    merchant_group_id: '49888431',
-    merchant_id: '60819357',
-	page_id: "{{ product.id }}",
-	review_wrapper_url: "https://zildjianshop.myshopify.com/pages/write-a-review/?pr_page_id={{ product.id }}",
-	product: {
-		name: `{{ product.title | replace: "+", " " }}`,
-		url: "https://zildjianshop.myshopify.com{{ product.url }}",
-		image_url: "https:{{ product.featured_image | product_img_url: "large" }}",
-		description: "{{ product.description | strip_html | strip_newlines | replace: "%0A", "%20" | replace: '"', '%27' | escape }}",
-		category_name: {% if product.type != '' %}"{{ product.type }}"{% else %} "Default" {% endif %},
-		upc: "{{ product.magento.upc_code }}",
-		brand_name: "{{ product.metafields.magento.family }}",
-		price: "{{ product.price | money_without_currency }}",
-		in_stock: "{{ product.available }}",
-        variants: [ {% for variant in product.variants %}
-        {% assign product_name = product.title %}
-        {% if product.variants.size > 1 %}{% assign product_name = variant.title %}{% endif %}
-		{
-		   name: `{{ product_name | replace: "+", " " }}`,
-		   description: `{{ product_name | escape }}`,
-		   page_id_variant: "{{variant.id}}",
-		   upc: "{{ variant.barcode }}"
-		}{% if forloop.last == false %}, {% endif %} {% endfor %}
-	]},
-	components: {
-		ReviewDisplay: "pr-reviewdisplay",
-		ReviewSnippet: "pr-reviewsnippet",
-    CategorySnippet: 'pr-categorysnippet'
-	}	
-  });
-</script> 
-
-
-<script src="https://a.klaviyo.com/media/js/onsite/onsite.js"></script>
-<script>
-  var klaviyo = klaviyo || [];
-  klaviyo.init({
-    account: "UBRz8g",
-    platform: "shopify"
-  });
-  klaviyo.enable("backinstock",{ 
-  trigger: {
-    product_page_text: "NOTIFY ME WHEN AVAILABLE",
-    product_page_class: "product-form__submit",
-    product_page_text_align: "center",
-    product_page_margin: "0px",
-    replace_anchor: false
-  },
-  modal: {
-  headline: '{{product.title}}',
-  body_content: "Register to receive a notification when this item comes back in stock.",
-  email_field_label: "Email",
-  button_label: "NOTIFY ME WHEN AVAILABLE",
-  subscription_success_label: "You're in! We'll let you know when it's back.",
-  footer_content: '',
-  additional_styles: "@import url('https://fonts.googleapis.com/css?family=Helvetica+Neue');",
-  drop_background_color: "#000",
-  background_color: "#fff",
-  text_color: "#222",
-  button_text_color: "#fff",
-  button_background_color: "#cc9f53",
-  close_button_color: "#ccc",
-  error_background_color: "#fcd6d7",
-  error_text_color: "#C72E2F",
-  success_background_color: "#d3efcd",
-  success_text_color: "#1B9500"
-  }
-});
-</script>
-{% if template contains 'product' %}
-<script>
-  window.addEventListener('load', function() {
-  var _learnq = window._learnq || [];
-  function addedToCart() {
-    fetch(`${window.location.origin}/cart.js`)
-    .then(res => res.clone().json().then(data => {
-      var cart = {
-        total_price: data.total_price/100,
-        $value: data.total_price/100,
-        total_discount: data.total_discount,
-        original_total_price: data.original_total_price/100,
-        items: data.items
-      }
-      if (item !== 'undefined') {
-        cart = Object.assign(cart, item)
-      }
-      if (klAjax) {
-          _learnq.push(['track', 'Added to Cart', cart]);
-          klAjax = false;
-        }
-    }))
-  };
-  (function (ns, fetch) {
-    ns.fetch = function() {
-      const response = fetch.apply(this, arguments);
-      response.then(res => {
-        if (`${window.location.origin}/cart/add.js`
-          .includes(res.url)) {
-            addedToCart()
-        }
-      });
-      return response
-    }
-  }(window, window.fetch));
-  var klAjax = true;
-  var atcButtons = document.querySelectorAll("form[action*='/cart/add'] button[type='submit']");
-  for (var i = 0; i < atcButtons.length; i++) {
-      atcButtons[i].addEventListener("click", function() {
-        if (klAjax) {
-          _learnq.push(['track', 'Added to Cart', item]);
-          klAjax = false;
-        }
+    
+    <script>
+      addEventListener('scroll', (event) => {
+        var s = document.createElement('script'); var h = document.querySelector('head') || document.body; s.src = 'https://acsbapp.com/apps/app/dist/js/app.js'; s.async = true; s.onload = function(){ acsbJS.init({ statementLink : '', footerHtml : '', hideMobile : false, hideTrigger : false, disableBgProcess : false, language : 'en', position : 'right', leadColor : '#146FF8', triggerColor : '#146FF8', triggerRadius : '50%', triggerPositionX : 'right', triggerPositionY : 'bottom', triggerIcon : 'people', triggerSize : 'bottom', triggerOffsetX : 30, triggerOffsetY : 140, mobile : { triggerSize : 'small', triggerPositionX : 'left', triggerPositionY : 'bottom', triggerOffsetX : 30, triggerOffsetY : 30, triggerRadius : '20' } }); }; h.appendChild(s);    
       })
-  }
-  });
-  </script>
-{% endif %}
+    </script>
+    {% if template contains 'collection' %}
+    <!--begin-boost-pfs-js-->
+    {% render 'boost-pfs' %}
+    <!--end-boost-pfs-js-->
+    {% endif %}
+    <script src="https://ui.powerreviews.com/stable/4.1/ui.js" defer></script>
 </body>
 </html>
